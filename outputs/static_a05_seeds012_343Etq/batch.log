@@ -1,0 +1,46 @@
+STATIC_CONFIRM alpha=0.5 seeds=0,1,2
+
+START dataset=cora alpha=0.5 seed=0
+DONE 1/6 dataset=cora alpha=0.5 seed=0
+Best ValAcc: 0.7880 in epoch 299 --- 
+real	2m18.022s
+user	1m32.090s
+sys	0m5.131s
+
+START dataset=cora alpha=0.5 seed=1
+DONE 2/6 dataset=cora alpha=0.5 seed=1
+Best ValAcc: 0.7940 in epoch 5 --- 
+real	2m21.515s
+user	1m33.103s
+sys	0m5.333s
+
+START dataset=cora alpha=0.5 seed=2
+DONE 3/6 dataset=cora alpha=0.5 seed=2
+Best ValAcc: 0.7880 in epoch 299 --- 
+real	2m19.294s
+user	1m33.457s
+sys	0m5.233s
+
+START dataset=citeseer alpha=0.5 seed=0
+DONE 4/6 dataset=citeseer alpha=0.5 seed=0
+Best ValAcc: 0.7180 in epoch 2 --- 
+real	1m3.292s
+user	0m34.057s
+sys	0m3.573s
+
+START dataset=citeseer alpha=0.5 seed=1
+DONE 5/6 dataset=citeseer alpha=0.5 seed=1
+Best ValAcc: 0.7480 in epoch 2 --- 
+real	1m2.868s
+user	0m34.178s
+sys	0m3.517s
+
+START dataset=citeseer alpha=0.5 seed=2
+DONE 6/6 dataset=citeseer alpha=0.5 seed=2
+Best ValAcc: 0.7180 in epoch 4 --- 
+real	1m3.042s
+user	0m33.975s
+sys	0m3.435s
+
+ALL_DONE 6/6
+STATIC_BATCH_EXIT_CODE=0

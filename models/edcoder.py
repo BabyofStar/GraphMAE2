@@ -8,6 +8,7 @@ from functools import partial
 from .gat import GAT
 
 from .loss_func import sce_loss
+from .input_masking import StructureInputMask
 
 
 def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
@@ -74,8 +75,20 @@ class PreModel(nn.Module):
             momentum: float = 0.996,
             replace_rate: float = 0.0,
             zero_init: bool = False,
+            input_mask_mode: str = "random",
+            structure_alpha_max: float = 0.5,
+            structure_warmup_ratio: float = 0.2,
+            structure_ramp_end_ratio: float = 0.8,
+            mask_log_interval: int = 100,
          ):
         super(PreModel, self).__init__()
+        self.input_masker = StructureInputMask(
+            mode=input_mask_mode,
+            alpha_max=structure_alpha_max,
+            warmup_ratio=structure_warmup_ratio,
+            ramp_end_ratio=structure_ramp_end_ratio,
+            log_interval=mask_log_interval,
+        )
         self._mask_rate = mask_rate
         self._remask_rate = remask_rate
         self._mask_method = mask_method
@@ -322,7 +335,11 @@ class PreModel(nn.Module):
     
     def encoding_mask_noise(self, g, x, mask_rate=0.3):
         num_nodes = g.num_nodes()
-        perm = torch.randperm(num_nodes, device=x.device)
+        if self.input_masker.enabled:
+            perm = self.input_masker.permutation(g, x.device, mask_rate)
+        else:
+            # Keep the original API and RNG consumption when disabled or alpha_max=0.
+            perm = torch.randperm(num_nodes, device=x.device)
         num_mask_nodes = int(mask_rate * num_nodes)
 
         # exclude isolated nodes
@@ -348,6 +365,12 @@ class PreModel(nn.Module):
 
         return use_g, out_x, (mask_nodes, keep_nodes)
     
+    def prepare_input_mask(self, graph, device):
+        self.input_masker.prepare(graph, device)
+
+    def set_input_mask_progress(self, step, total_steps):
+        self.input_masker.set_progress(step, total_steps)
+
     def random_remask(self,g,rep,remask_rate=0.5):
         
         num_nodes = g.num_nodes()

@@ -1,0 +1,112 @@
+已有 Citeseer 基线：仅提取验证指标
+BASELINE citeseer seed=0 Best ValAcc=0.7200
+BASELINE citeseer seed=1 Best ValAcc=0.7500
+BASELINE citeseer seed=2 Best ValAcc=0.7120
+
+START dataset=cora alpha=0.5 seed=0
+DONE 1/15 dataset=cora alpha=0.5 seed=0
+Best ValAcc: 0.8060 in epoch 131 --- 
+real	2m18.510s
+user	1m32.559s
+sys	0m4.873s
+
+START dataset=cora alpha=0.5 seed=1
+DONE 2/15 dataset=cora alpha=0.5 seed=1
+Best ValAcc: 0.7960 in epoch 291 --- 
+real	2m20.614s
+user	1m33.720s
+sys	0m5.241s
+
+START dataset=cora alpha=0.5 seed=2
+DONE 3/15 dataset=cora alpha=0.5 seed=2
+Best ValAcc: 0.8220 in epoch 124 --- 
+real	2m19.035s
+user	1m32.393s
+sys	0m5.041s
+
+START dataset=cora alpha=0.7 seed=0
+DONE 4/15 dataset=cora alpha=0.7 seed=0
+Best ValAcc: 0.8080 in epoch 131 --- 
+real	2m19.091s
+user	1m33.161s
+sys	0m5.023s
+
+START dataset=cora alpha=0.7 seed=1
+DONE 5/15 dataset=cora alpha=0.7 seed=1
+Best ValAcc: 0.7940 in epoch 6 --- 
+real	2m20.104s
+user	1m34.333s
+sys	0m5.368s
+
+START dataset=cora alpha=0.7 seed=2
+DONE 6/15 dataset=cora alpha=0.7 seed=2
+Best ValAcc: 0.8180 in epoch 268 --- 
+real	2m19.214s
+user	1m32.339s
+sys	0m5.234s
+
+START dataset=citeseer alpha=0.3 seed=0
+DONE 7/15 dataset=citeseer alpha=0.3 seed=0
+Best ValAcc: 0.7200 in epoch 19 --- 
+real	1m3.407s
+user	0m34.284s
+sys	0m3.418s
+
+START dataset=citeseer alpha=0.3 seed=1
+DONE 8/15 dataset=citeseer alpha=0.3 seed=1
+Best ValAcc: 0.7540 in epoch 2 --- 
+real	1m3.644s
+user	0m34.495s
+sys	0m3.535s
+
+START dataset=citeseer alpha=0.3 seed=2
+DONE 9/15 dataset=citeseer alpha=0.3 seed=2
+Best ValAcc: 0.7180 in epoch 340 --- 
+real	1m4.948s
+user	0m34.646s
+sys	0m3.549s
+
+START dataset=citeseer alpha=0.5 seed=0
+DONE 10/15 dataset=citeseer alpha=0.5 seed=0
+Best ValAcc: 0.7220 in epoch 9 --- 
+real	1m5.807s
+user	0m34.022s
+sys	0m3.615s
+
+START dataset=citeseer alpha=0.5 seed=1
+DONE 11/15 dataset=citeseer alpha=0.5 seed=1
+Best ValAcc: 0.7560 in epoch 2 --- 
+real	1m4.007s
+user	0m34.178s
+sys	0m3.520s
+
+START dataset=citeseer alpha=0.5 seed=2
+DONE 12/15 dataset=citeseer alpha=0.5 seed=2
+Best ValAcc: 0.7180 in epoch 347 --- 
+real	1m3.744s
+user	0m33.849s
+sys	0m3.540s
+
+START dataset=citeseer alpha=0.7 seed=0
+DONE 13/15 dataset=citeseer alpha=0.7 seed=0
+Best ValAcc: 0.7160 in epoch 9 --- 
+real	1m2.846s
+user	0m34.313s
+sys	0m3.346s
+
+START dataset=citeseer alpha=0.7 seed=1
+DONE 14/15 dataset=citeseer alpha=0.7 seed=1
+Best ValAcc: 0.7580 in epoch 2 --- 
+real	1m2.751s
+user	0m34.343s
+sys	0m3.460s
+
+START dataset=citeseer alpha=0.7 seed=2
+DONE 15/15 dataset=citeseer alpha=0.7 seed=2
+Best ValAcc: 0.7180 in epoch 380 --- 
+real	1m3.579s
+user	0m33.911s
+sys	0m3.567s
+
+ALL_DONE 15/15
+GRID_EXIT_CODE=0

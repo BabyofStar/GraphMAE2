@@ -1,0 +1,63 @@
+test_cli_factory_and_official_yaml_keep_new_flags (test_input_masking.IntegrationTests) ... 2026-10-25 13:21:12,809 - INFO - ----- Using best configs from configs/cora.yaml -----
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_disabled_and_zero_strength_match_original_training_and_rng (test_input_masking.IntegrationTests) ... === Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_positive_strength_backward_is_finite_and_progress_does_not_change_ema_epoch (test_input_masking.IntegrationTests) ... === Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_default_is_disabled_and_has_no_checkpoint_keys (test_input_masking.SamplingTests) ... ok
+test_empty_edge_graph_and_statistics (test_input_masking.SamplingTests) ... 2026-10-25 13:22:01,454 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_static', 'alpha': 0.5, 'masked': 2, 'nodes': 5, 'actual_mask_rate': 0.4, 'masked_degree_mean': 0.0, 'kept_degree_mean': 0.0, 'masked_degree_q25_q50_q75': [0.0, 0.0, 0.0]}
+2026-10-25 13:22:01,519 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_static', 'alpha': 0.5, 'masked': 2, 'nodes': 5, 'actual_mask_rate': 0.4, 'masked_degree_mean': 0.0, 'kept_degree_mean': 0.0, 'masked_degree_q25_q50_q75': [0.0, 0.0, 0.0]}
+ok
+test_invalid_parameters_and_unprepared_graph_fail (test_input_masking.SamplingTests) ... ok
+test_partition_count_reproducibility_and_extreme_rates (test_input_masking.SamplingTests) ... ok
+test_schedule_boundaries_monotonicity_and_missing_progress (test_input_masking.SamplingTests) ... ok
+test_score_excludes_self_loops_and_does_not_use_labels (test_input_masking.SamplingTests) ... ok
+test_weighted_sampling_actually_favors_high_degree (test_input_masking.SamplingTests) ... ok
+test_zero_alpha_and_curriculum_warmup_keep_randperm_rng (test_input_masking.SamplingTests) ... 2026-10-25 13:22:01,847 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_curriculum', 'alpha': 0.0, 'masked': 2, 'nodes': 4, 'actual_mask_rate': 0.5, 'masked_degree_mean': 2.0, 'kept_degree_mean': 1.0, 'masked_degree_q25_q50_q75': [2.0, 2.0, 2.0]}
+2026-10-25 13:22:01,852 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_curriculum', 'alpha': 0.0, 'masked': 2, 'nodes': 4, 'actual_mask_rate': 0.5, 'masked_degree_mean': 1.5, 'kept_degree_mean': 1.5, 'masked_degree_q25_q50_q75': [1.25, 1.5, 1.75]}
+ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 49.067s
+
+OK

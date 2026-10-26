@@ -1,0 +1,50 @@
+START dataset=cora seed=1 log=/home/jovyan/work/GraphMAE2/outputs/baseline_seeds12_APTjuE/cora_seed1/train.log
+DONE 1/6 dataset=cora seed=1
+# final_acc: 0.8310±0.0000
+# early-stopping_acc: 0.8310±0.0000
+
+real	2m16.845s
+user	1m30.683s
+sys	0m4.855s
+START dataset=cora seed=2 log=/home/jovyan/work/GraphMAE2/outputs/baseline_seeds12_APTjuE/cora_seed2/train.log
+DONE 2/6 dataset=cora seed=2
+# final_acc: 0.8430±0.0000
+# early-stopping_acc: 0.8460±0.0000
+
+real	2m21.015s
+user	1m30.696s
+sys	0m5.033s
+START dataset=citeseer seed=1 log=/home/jovyan/work/GraphMAE2/outputs/baseline_seeds12_APTjuE/citeseer_seed1/train.log
+DONE 3/6 dataset=citeseer seed=1
+# final_acc: 0.7300±0.0000
+# early-stopping_acc: 0.7380±0.0000
+
+real	1m1.148s
+user	0m32.891s
+sys	0m3.257s
+START dataset=citeseer seed=2 log=/home/jovyan/work/GraphMAE2/outputs/baseline_seeds12_APTjuE/citeseer_seed2/train.log
+DONE 4/6 dataset=citeseer seed=2
+# final_acc: 0.7350±0.0000
+# early-stopping_acc: 0.7340±0.0000
+
+real	1m1.677s
+user	0m33.692s
+sys	0m3.265s
+START dataset=pubmed seed=1 log=/home/jovyan/work/GraphMAE2/outputs/baseline_seeds12_APTjuE/pubmed_seed1/train.log
+DONE 5/6 dataset=pubmed seed=1
+# final_acc: 0.8150±0.0000
+# early-stopping_acc: 0.8140±0.0000
+
+real	4m19.355s
+user	2m2.200s
+sys	0m6.721s
+START dataset=pubmed seed=2 log=/home/jovyan/work/GraphMAE2/outputs/baseline_seeds12_APTjuE/pubmed_seed2/train.log
+DONE 6/6 dataset=pubmed seed=2
+# final_acc: 0.8110±0.0000
+# early-stopping_acc: 0.8020±0.0000
+
+real	4m19.468s
+user	2m1.652s
+sys	0m6.777s
+ALL_DONE 6/6
+BATCH_EXIT_CODE=0

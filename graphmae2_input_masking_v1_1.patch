@@ -1,0 +1,569 @@
+diff --git a/main_full_batch.py b/main_full_batch.py
+index 598220a..0727d77 100644
+--- a/main_full_batch.py
++++ b/main_full_batch.py
+@@ -23,12 +23,15 @@ def pretrain(model, graph, feat, optimizer, max_epoch, device, scheduler, num_cl
+     logging.info("start training..")
+     graph = graph.to(device)
+     x = feat.to(device)
++    model.prepare_input_mask(graph, x.device)
+ 
+     target_nodes = torch.arange(x.shape[0], device=x.device, dtype=torch.long)
+     epoch_iter = tqdm(range(max_epoch))
+ 
+     for epoch in epoch_iter:
+         model.train()
++        # Separate masking progress: do NOT change the original forward(epoch=0)/EMA.
++        model.set_input_mask_progress(epoch, max_epoch)
+ 
+         loss = model(graph, x, targets=target_nodes)
+ 
+diff --git a/models/__init__.py b/models/__init__.py
+index b12940a..0a5b661 100644
+--- a/models/__init__.py
++++ b/models/__init__.py
+@@ -60,5 +60,10 @@ def build_model(args):
+         remask_method=remask_method,
+         momentum=momentum,
+         zero_init=zero_init,
++        input_mask_mode=getattr(args, "input_mask_mode", "random"),
++        structure_alpha_max=getattr(args, "structure_alpha_max", 0.5),
++        structure_warmup_ratio=getattr(args, "structure_warmup_ratio", 0.2),
++        structure_ramp_end_ratio=getattr(args, "structure_ramp_end_ratio", 0.8),
++        mask_log_interval=getattr(args, "mask_log_interval", 100),
+     )
+     return model
+diff --git a/models/edcoder.py b/models/edcoder.py
+index d3b6c45..803c411 100644
+--- a/models/edcoder.py
++++ b/models/edcoder.py
+@@ -8,6 +8,7 @@ from functools import partial
+ from .gat import GAT
+ 
+ from .loss_func import sce_loss
++from .input_masking import StructureInputMask
+ 
+ 
+ def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
+@@ -74,8 +75,20 @@ class PreModel(nn.Module):
+             momentum: float = 0.996,
+             replace_rate: float = 0.0,
+             zero_init: bool = False,
++            input_mask_mode: str = "random",
++            structure_alpha_max: float = 0.5,
++            structure_warmup_ratio: float = 0.2,
++            structure_ramp_end_ratio: float = 0.8,
++            mask_log_interval: int = 100,
+          ):
+         super(PreModel, self).__init__()
++        self.input_masker = StructureInputMask(
++            mode=input_mask_mode,
++            alpha_max=structure_alpha_max,
++            warmup_ratio=structure_warmup_ratio,
++            ramp_end_ratio=structure_ramp_end_ratio,
++            log_interval=mask_log_interval,
++        )
+         self._mask_rate = mask_rate
+         self._remask_rate = remask_rate
+         self._mask_method = mask_method
+@@ -322,7 +335,11 @@ class PreModel(nn.Module):
+     
+     def encoding_mask_noise(self, g, x, mask_rate=0.3):
+         num_nodes = g.num_nodes()
+-        perm = torch.randperm(num_nodes, device=x.device)
++        if self.input_masker.enabled:
++            perm = self.input_masker.permutation(g, x.device, mask_rate)
++        else:
++            # Keep the original API and RNG consumption when disabled or alpha_max=0.
++            perm = torch.randperm(num_nodes, device=x.device)
+         num_mask_nodes = int(mask_rate * num_nodes)
+ 
+         # exclude isolated nodes
+@@ -348,6 +365,12 @@ class PreModel(nn.Module):
+ 
+         return use_g, out_x, (mask_nodes, keep_nodes)
+     
++    def prepare_input_mask(self, graph, device):
++        self.input_masker.prepare(graph, device)
++
++    def set_input_mask_progress(self, step, total_steps):
++        self.input_masker.set_progress(step, total_steps)
++
+     def random_remask(self,g,rep,remask_rate=0.5):
+         
+         num_nodes = g.num_nodes()
+@@ -364,4 +387,4 @@ class PreModel(nn.Module):
+ 
+     def fixed_remask(self, g, rep, masked_nodes):
+         rep[masked_nodes] = 0
+-        return rep
+\ No newline at end of file
++        return rep
+diff --git a/models/input_masking.py b/models/input_masking.py
+new file mode 100644
+index 0000000..3219674
+--- /dev/null
++++ b/models/input_masking.py
+@@ -0,0 +1,143 @@
++"""Input masking for a fixed full-batch graph; no labels or feature values are read."""
++
++import logging
++import math
++
++import torch
++from torch import nn
++
++
++class StructureInputMask(nn.Module):
++    MODES = ("random", "structure_static", "structure_curriculum")
++
++    def __init__(self, mode="random", alpha_max=0.5, warmup_ratio=0.2,
++                 ramp_end_ratio=0.8, log_interval=100):
++        super().__init__()
++        if mode not in self.MODES:
++            raise ValueError("Unknown input_mask_mode: %s" % mode)
++        if not math.isfinite(alpha_max) or not 0 <= alpha_max <= 1:
++            raise ValueError("structure_alpha_max must be finite and in [0, 1]")
++        if not 0 <= warmup_ratio < ramp_end_ratio <= 1:
++            raise ValueError("Require 0 <= warmup_ratio < ramp_end_ratio <= 1")
++        if not isinstance(log_interval, int) or log_interval < 0:
++            raise ValueError("mask_log_interval must be a nonnegative integer")
++        self.mode = mode
++        self.alpha_max = float(alpha_max)
++        self.warmup_ratio = float(warmup_ratio)
++        self.ramp_end_ratio = float(ramp_end_ratio)
++        self.log_interval = log_interval
++        # No parameters, no random initialization, and no additional checkpoint keys.
++        self.register_buffer("degree", torch.empty(0), persistent=False)
++        self.register_buffer("score_weights", torch.empty(0), persistent=False)
++        self._graph_key = None
++        self._step = None
++        self._total_steps = None
++        self.last_stats = None
++        self._last_logged_step = None
++
++    @property
++    def enabled(self):
++        return self.mode != "random" and self.alpha_max > 0
++
++    @staticmethod
++    def _key(graph):
++        return id(graph), graph.num_nodes(), graph.num_edges()
++
++    @staticmethod
++    def _device(device):
++        device = torch.device(device)
++        if device.type == "cuda" and device.index is None:
++            device = torch.device("cuda", torch.cuda.current_device())
++        return device
++
++    @torch.no_grad()
++    def prepare(self, graph, device):
++        if not self.enabled:
++            return
++        device = self._device(device)
++        key = self._key(graph)
++        if self._graph_key == key and self.score_weights.device == device:
++            return
++        n = graph.num_nodes()
++        if n <= 0:
++            raise ValueError("Input masking requires at least one node")
++        src, dst = graph.edges()
++        # Count incoming non-self edges, including any parallel edges.
++        degree = torch.bincount(dst[src != dst], minlength=n).to(
++            device=device, dtype=torch.float32)
++        raw = torch.log1p(degree) + 1e-8
++        self.degree = degree
++        self.score_weights = raw / raw.sum()
++        self._graph_key = key
++        self._last_logged_step = None
++
++    def set_progress(self, step, total_steps):
++        if not isinstance(step, int) or not isinstance(total_steps, int):
++            raise ValueError("Masking progress must use integer steps")
++        if total_steps <= 0 or not 0 <= step < total_steps:
++            raise ValueError("Require 0 <= step < total_steps and total_steps > 0")
++        self._step, self._total_steps = step, total_steps
++
++    def effective_alpha(self):
++        if not self.enabled:
++            return 0.0
++        if self.mode == "structure_static":
++            return self.alpha_max
++        if self._step is None:
++            raise RuntimeError("Curriculum requires set_progress(step, total_steps)")
++        progress = self._step / max(self._total_steps - 1, 1)
++        fraction = (progress - self.warmup_ratio) / (
++            self.ramp_end_ratio - self.warmup_ratio)
++        return self.alpha_max * min(max(fraction, 0.0), 1.0)
++
++    @torch.no_grad()
++    def permutation(self, graph, device, mask_rate):
++        n = graph.num_nodes()
++        if n <= 0 or not math.isfinite(mask_rate) or not 0 <= mask_rate <= 1:
++            raise ValueError("Require a nonempty graph and mask_rate in [0, 1]")
++        # Important: alpha=0 uses randperm, NOT multinomial with uniform weights.
++        if not self.enabled:
++            return torch.randperm(n, device=device)
++        device = self._device(device)
++        if self._graph_key != self._key(graph) or self.score_weights.device != device:
++            raise RuntimeError("Call prepare(graph, x.device) for this fixed graph first")
++        alpha = self.effective_alpha()
++        k = int(mask_rate * n)
++        if alpha == 0.0 or k == 0:
++            perm = torch.randperm(n, device=device)
++        else:
++            weights = (1.0 - alpha) / n + alpha * self.score_weights
++            masked = torch.multinomial(weights, k, replacement=False)
++            keep = torch.ones(n, dtype=torch.bool, device=device)
++            keep[masked] = False
++            perm = torch.cat((masked, keep.nonzero(as_tuple=False).flatten()))
++        self._record(perm, k, alpha)
++        return perm
++
++    @torch.no_grad()
++    def _record(self, perm, k, alpha):
++        if self.log_interval == 0 or self._step is None:
++            return
++        if self._last_logged_step == self._step:
++            return
++        if self._step % self.log_interval and self._step != self._total_steps - 1:
++            return
++        masked_degree = self.degree[perm[:k]]
++        keep_degree = self.degree[perm[k:]]
++        stats = {
++            "step": self._step,
++            "mode": self.mode,
++            "alpha": alpha,
++            "masked": k,
++            "nodes": perm.numel(),
++            "actual_mask_rate": k / perm.numel(),
++            "masked_degree_mean": masked_degree.mean().item() if k else None,
++            "kept_degree_mean": keep_degree.mean().item() if keep_degree.numel() else None,
++            "masked_degree_q25_q50_q75": (
++                torch.quantile(masked_degree, masked_degree.new_tensor([.25, .5, .75]))
++                .cpu().tolist() if k else None
++            ),
++        }
++        self.last_stats = stats
++        self._last_logged_step = self._step
++        logging.info("INPUT_MASK %s", stats)
+diff --git a/tests/test_input_masking.py b/tests/test_input_masking.py
+new file mode 100644
+index 0000000..8eb7acd
+--- /dev/null
++++ b/tests/test_input_masking.py
+@@ -0,0 +1,297 @@
++"""Run from the repository root: python -m unittest discover -s tests -p test_input_masking.py -v"""
++
++import subprocess
++import types
++import unittest
++from unittest import mock
++import sys
++
++import dgl
++import torch
++
++from models.edcoder import PreModel
++from models.input_masking import StructureInputMask
++from models import build_model
++from utils import build_args, load_best_configs
++
++BASE_COMMIT = "bc473e8b750d6e90b7cba1c6bb20d858f617d90c"
++
++
++def devices():
++    result = [torch.device("cpu")]
++    if torch.cuda.is_available():
++        result.append(torch.device("cuda", 0))
++    return result
++
++
++def rng_state():
++    return (torch.get_rng_state().clone(),
++            [s.clone() for s in torch.cuda.get_rng_state_all()])
++
++
++def restore_rng(state):
++    torch.set_rng_state(state[0])
++    if state[1]:
++        torch.cuda.set_rng_state_all(state[1])
++
++
++def assert_rng_equal(test, first, second):
++    test.assertTrue(torch.equal(first[0], second[0]), "CPU RNG changed")
++    test.assertEqual(len(first[1]), len(second[1]))
++    for a, b in zip(first[1], second[1]):
++        test.assertTrue(torch.equal(a, b), "CUDA RNG changed")
++
++
++def graph_on(device):
++    g = dgl.graph(([0, 1, 2, 3, 0, 2], [1, 2, 3, 0, 2, 0]), num_nodes=4)
++    return dgl.add_self_loop(g).to(device)
++
++
++def model_kwargs():
++    return dict(
++        in_dim=8, num_hidden=16, num_layers=2, num_dec_layers=1,
++        num_remasking=3, nhead=2, nhead_out=1, activation="prelu",
++        feat_drop=0.2, attn_drop=0.1, negative_slope=0.2, residual=False,
++        norm=None, mask_rate=0.5, remask_rate=0.5, remask_method="fixed",
++        encoder_type="gat", decoder_type="gat", loss_fn="sce", alpha_l=2,
++        lam=0.15, momentum=0.995, zero_init=True,
++    )
++
++
++class SamplingTests(unittest.TestCase):
++    def test_default_is_disabled_and_has_no_checkpoint_keys(self):
++        state = rng_state()
++        masker = StructureInputMask()
++        self.assertFalse(masker.enabled)
++        self.assertEqual(len(masker.state_dict()), 0)
++        self.assertEqual(len(list(masker.parameters())), 0)
++        assert_rng_equal(self, state, rng_state())
++
++    def test_score_excludes_self_loops_and_does_not_use_labels(self):
++        for device in devices():
++            with self.subTest(device=str(device)):
++                g = dgl.graph(([0, 1, 1, 2, 2], [1, 0, 1, 2, 2]), num_nodes=4).to(device)
++                g.ndata["label"] = torch.full((4,), 123, device=device)
++                masker = StructureInputMask("structure_static").to(device)
++                before = rng_state()
++                masker.prepare(g, device)
++                assert_rng_equal(self, before, rng_state())
++                expected = torch.tensor([1., 1., 0., 0.], device=device)
++                torch.testing.assert_close(masker.degree, expected)
++                raw = torch.log1p(expected) + 1e-8
++                torch.testing.assert_close(masker.score_weights, raw / raw.sum())
++                self.assertTrue(torch.all(masker.score_weights > 0).item())
++                before_score = masker.score_weights.clone()
++                g.ndata["label"].fill_(-999)
++                masker.prepare(g, device)
++                torch.testing.assert_close(before_score, masker.score_weights)
++
++    def test_partition_count_reproducibility_and_extreme_rates(self):
++        for device in devices():
++            for mode in ("structure_static", "structure_curriculum"):
++                with self.subTest(device=str(device), mode=mode):
++                    g = graph_on(device)
++                    masker = StructureInputMask(mode, log_interval=0).to(device)
++                    masker.prepare(g, device)
++                    masker.set_progress(8, 11)
++                    for rate in (0.0, 0.25, 0.5, 0.9, 1.0):
++                        state = rng_state()
++                        perm = masker.permutation(g, device, rate)
++                        after = rng_state()
++                        restore_rng(state)
++                        repeated = masker.permutation(g, device, rate)
++                        self.assertTrue(torch.equal(perm, repeated))
++                        assert_rng_equal(self, after, rng_state())
++                        self.assertEqual(perm.device, device)
++                        self.assertEqual(perm.dtype, torch.int64)
++                        self.assertEqual(perm[:int(rate * 4)].numel(), int(rate * 4))
++                        self.assertTrue(torch.equal(
++                            perm.sort().values, torch.arange(4, device=device)))
++
++    def test_zero_alpha_and_curriculum_warmup_keep_randperm_rng(self):
++        for device in devices():
++            for mode, alpha, step in (
++                ("random", 0.5, 0),
++                ("structure_static", 0.0, 7),
++                ("structure_curriculum", 0.0, 7),
++                ("structure_curriculum", 0.5, 0),
++            ):
++                with self.subTest(device=str(device), mode=mode, alpha=alpha, step=step):
++                    g = graph_on(device)
++                    masker = StructureInputMask(mode, alpha_max=alpha).to(device)
++                    masker.prepare(g, device)
++                    masker.set_progress(step, 11)
++                    state = rng_state()
++                    expected = torch.randperm(4, device=device)
++                    after = rng_state()
++                    restore_rng(state)
++                    actual = masker.permutation(g, device, .5)
++                    self.assertTrue(torch.equal(actual, expected))
++                    assert_rng_equal(self, after, rng_state())
++
++    def test_schedule_boundaries_monotonicity_and_missing_progress(self):
++        masker = StructureInputMask("structure_curriculum", alpha_max=.5)
++        with self.assertRaises(RuntimeError):
++            masker.effective_alpha()
++        values = []
++        for step in range(11):
++            masker.set_progress(step, 11)
++            values.append(masker.effective_alpha())
++        self.assertAlmostEqual(values[0], 0.)
++        self.assertAlmostEqual(values[2], 0.)
++        self.assertAlmostEqual(values[5], .25)
++        self.assertAlmostEqual(values[8], .5)
++        self.assertAlmostEqual(values[10], .5)
++        self.assertEqual(values, sorted(values))
++        masker.set_progress(0, 1)
++        self.assertEqual(masker.effective_alpha(), 0.)
++
++    def test_empty_edge_graph_and_statistics(self):
++        for device in devices():
++            with self.subTest(device=str(device)):
++                g = dgl.graph(([], []), num_nodes=5).to(device)
++                masker = StructureInputMask("structure_static", log_interval=1).to(device)
++                masker.prepare(g, device)
++                torch.testing.assert_close(
++                    masker.score_weights, torch.full((5,), .2, device=device))
++                masker.set_progress(0, 1)
++                perm = masker.permutation(g, device, .5)
++                self.assertEqual(perm.unique().numel(), 5)
++                self.assertEqual(masker.last_stats["masked"], 2)
++                self.assertAlmostEqual(masker.last_stats["actual_mask_rate"], .4)
++
++    def test_weighted_sampling_actually_favors_high_degree(self):
++        g = dgl.graph(
++            ([0] * 8 + list(range(1, 9)), list(range(1, 9)) + [0] * 8),
++            num_nodes=9,
++        )
++        masker = StructureInputMask("structure_static", alpha_max=1., log_interval=0)
++        masker.prepare(g, torch.device("cpu"))
++        state = rng_state()
++        torch.manual_seed(1234)
++        counts = torch.zeros(9)
++        for _ in range(1000):
++            counts[masker.permutation(g, "cpu", 1 / 9)[0]] += 1
++        restore_rng(state)
++        self.assertGreater(counts[0].item(), 2 * counts[1:].mean().item())
++
++    def test_invalid_parameters_and_unprepared_graph_fail(self):
++        for kwargs in (
++            dict(mode="not-a-mode"), dict(alpha_max=-.1), dict(alpha_max=1.1),
++            dict(alpha_max=float("nan")), dict(warmup_ratio=.8, ramp_end_ratio=.2),
++            dict(log_interval=-1),
++        ):
++            with self.subTest(kwargs=kwargs), self.assertRaises(ValueError):
++                StructureInputMask(**kwargs)
++        masker = StructureInputMask("structure_static")
++        with self.assertRaises(RuntimeError):
++            masker.permutation(graph_on("cpu"), "cpu", .5)
++
++
++class IntegrationTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        text = subprocess.run(
++            ["git", "show", BASE_COMMIT + ":models/edcoder.py"],
++            check=True, capture_output=True, encoding="utf-8",
++        ).stdout
++        module = types.ModuleType("models._original_edcoder_for_test")
++        module.__package__ = "models"
++        exec(compile(text, "<original-edcoder>", "exec"), module.__dict__)
++        cls.OriginalPreModel = module.PreModel
++
++    def test_cli_factory_and_official_yaml_keep_new_flags(self):
++        argv = ["test", "--dataset", "cora", "--use_cfg",
++                "--input_mask_mode", "structure_static",
++                "--structure_alpha_max", "0.3", "--mask_log_interval", "0"]
++        with mock.patch.object(sys, "argv", argv):
++            args = load_best_configs(build_args())
++        self.assertEqual(args.input_mask_mode, "structure_static")
++        self.assertAlmostEqual(args.structure_alpha_max, .3)
++        self.assertEqual(args.num_hidden, 1024)
++        self.assertEqual(args.max_epoch, 2000)
++        self.assertEqual(args.remask_method, "fixed")
++        self.assertEqual(args.mask_rate, .5)
++        # Use a small graph-model only for the factory wiring test.
++        args.num_features, args.num_hidden, args.num_heads = 8, 16, 2
++        model = build_model(args)
++        self.assertEqual(model.input_masker.mode, "structure_static")
++        self.assertAlmostEqual(model.input_masker.alpha_max, .3)
++
++    def test_disabled_and_zero_strength_match_original_training_and_rng(self):
++        for device in devices():
++            for mode, strength in (("random", .5), ("random", 0.),
++                                   ("structure_static", 0.), ("structure_curriculum", 0.)):
++                with self.subTest(device=str(device), mode=mode, strength=strength):
++                    torch.manual_seed(42)
++                    original = self.OriginalPreModel(**model_kwargs()).to(device)
++                    init_rng = rng_state()
++                    torch.manual_seed(42)
++                    changed = PreModel(
++                        **model_kwargs(), input_mask_mode=mode,
++                        structure_alpha_max=strength, mask_log_interval=0,
++                    ).to(device)
++                    assert_rng_equal(self, init_rng, rng_state())
++                    original_keys = set(original.state_dict())
++                    self.assertEqual(original_keys, set(changed.state_dict()))
++                    for key, value in original.state_dict().items():
++                        torch.testing.assert_close(value, changed.state_dict()[key])
++
++                    g = graph_on(device)
++                    x = torch.randn(4, 8, device=device)
++                    targets = torch.arange(4, device=device)
++                    changed.prepare_input_mask(g, device)
++                    opt_old = torch.optim.Adam(original.parameters(), lr=.001)
++                    opt_new = torch.optim.Adam(changed.parameters(), lr=.001)
++                    for step in range(3):
++                        state = rng_state()
++                        original.train()
++                        opt_old.zero_grad()
++                        loss_old = original(g, x, targets=targets)
++                        loss_old.backward()
++                        opt_old.step()
++                        after = rng_state()
++
++                        restore_rng(state)
++                        changed.train()
++                        changed.set_input_mask_progress(step, 3)
++                        opt_new.zero_grad()
++                        loss_new = changed(g, x, targets=targets)
++                        loss_new.backward()
++                        opt_new.step()
++
++                        assert_rng_equal(self, after, rng_state())
++                        torch.testing.assert_close(loss_old, loss_new, rtol=1e-4, atol=1e-6)
++                        for key, value in original.state_dict().items():
++                            torch.testing.assert_close(
++                                value, changed.state_dict()[key], rtol=1e-4, atol=1e-6)
++
++    def test_positive_strength_backward_is_finite_and_progress_does_not_change_ema_epoch(self):
++        for device in devices():
++            for mode in ("structure_static", "structure_curriculum"):
++                with self.subTest(device=str(device), mode=mode):
++                    model = PreModel(
++                        **model_kwargs(), delayed_ema_epoch=1,
++                        input_mask_mode=mode, mask_log_interval=0,
++                    ).to(device)
++                    g = graph_on(device)
++                    x = torch.randn(4, 8, device=device)
++                    model.prepare_input_mask(g, device)
++                    model.set_input_mask_progress(8, 11)
++                    teacher_before = {
++                        k: v.clone() for k, v in model.encoder_ema.state_dict().items()
++                    }
++                    with torch.no_grad():
++                        next(model.encoder.parameters()).add_(.1)
++                    loss = model(g, x, targets=torch.arange(4, device=device))
++                    loss.backward()
++                    self.assertTrue(torch.isfinite(loss).item())
++                    gradients = [p.grad for p in model.parameters() if p.grad is not None]
++                    self.assertTrue(gradients)
++                    self.assertTrue(all(torch.isfinite(g).all().item() for g in gradients))
++                    for key, value in teacher_before.items():
++                        torch.testing.assert_close(value, model.encoder_ema.state_dict()[key])
++
++
++if __name__ == "__main__":
++    unittest.main(verbosity=2)
+diff --git a/utils.py b/utils.py
+index 5a6eff3..a19a6d9 100644
+--- a/utils.py
++++ b/utils.py
+@@ -119,6 +119,11 @@ def build_args():
+     parser.add_argument("--delayed_ema_epoch", type=int, default=0)
+     parser.add_argument("--replace_rate", type=float, default=0.0)
+     parser.add_argument("--momentum", type=float, default=0.996)
++    parser.add_argument("--input_mask_mode", choices=("random", "structure_static", "structure_curriculum"), default="random")
++    parser.add_argument("--structure_alpha_max", type=float, default=0.5)
++    parser.add_argument("--structure_warmup_ratio", type=float, default=0.2)
++    parser.add_argument("--structure_ramp_end_ratio", type=float, default=0.8)
++    parser.add_argument("--mask_log_interval", type=int, default=100)
+ 
+     args = parser.parse_args()
+     return args

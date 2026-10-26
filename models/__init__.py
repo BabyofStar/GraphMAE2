@@ -60,5 +60,10 @@ def build_model(args):
         remask_method=remask_method,
         momentum=momentum,
         zero_init=zero_init,
+        input_mask_mode=getattr(args, "input_mask_mode", "random"),
+        structure_alpha_max=getattr(args, "structure_alpha_max", 0.5),
+        structure_warmup_ratio=getattr(args, "structure_warmup_ratio", 0.2),
+        structure_ramp_end_ratio=getattr(args, "structure_ramp_end_ratio", 0.8),
+        mask_log_interval=getattr(args, "mask_log_interval", 100),
     )
     return model

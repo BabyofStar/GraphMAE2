@@ -23,12 +23,15 @@ def pretrain(model, graph, feat, optimizer, max_epoch, device, scheduler, num_cl
     logging.info("start training..")
     graph = graph.to(device)
     x = feat.to(device)
+    model.prepare_input_mask(graph, x.device)
 
     target_nodes = torch.arange(x.shape[0], device=x.device, dtype=torch.long)
     epoch_iter = tqdm(range(max_epoch))
 
     for epoch in epoch_iter:
         model.train()
+        # Separate masking progress: do NOT change the original forward(epoch=0)/EMA.
+        model.set_input_mask_progress(epoch, max_epoch)
 
         loss = model(graph, x, targets=target_nodes)
 

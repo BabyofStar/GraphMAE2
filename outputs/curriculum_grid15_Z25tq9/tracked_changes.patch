@@ -1,0 +1,117 @@
+diff --git a/main_full_batch.py b/main_full_batch.py
+index 598220a..0727d77 100644
+--- a/main_full_batch.py
++++ b/main_full_batch.py
+@@ -23,12 +23,15 @@ def pretrain(model, graph, feat, optimizer, max_epoch, device, scheduler, num_cl
+     logging.info("start training..")
+     graph = graph.to(device)
+     x = feat.to(device)
++    model.prepare_input_mask(graph, x.device)
+ 
+     target_nodes = torch.arange(x.shape[0], device=x.device, dtype=torch.long)
+     epoch_iter = tqdm(range(max_epoch))
+ 
+     for epoch in epoch_iter:
+         model.train()
++        # Separate masking progress: do NOT change the original forward(epoch=0)/EMA.
++        model.set_input_mask_progress(epoch, max_epoch)
+ 
+         loss = model(graph, x, targets=target_nodes)
+ 
+diff --git a/models/__init__.py b/models/__init__.py
+index b12940a..0a5b661 100644
+--- a/models/__init__.py
++++ b/models/__init__.py
+@@ -60,5 +60,10 @@ def build_model(args):
+         remask_method=remask_method,
+         momentum=momentum,
+         zero_init=zero_init,
++        input_mask_mode=getattr(args, "input_mask_mode", "random"),
++        structure_alpha_max=getattr(args, "structure_alpha_max", 0.5),
++        structure_warmup_ratio=getattr(args, "structure_warmup_ratio", 0.2),
++        structure_ramp_end_ratio=getattr(args, "structure_ramp_end_ratio", 0.8),
++        mask_log_interval=getattr(args, "mask_log_interval", 100),
+     )
+     return model
+diff --git a/models/edcoder.py b/models/edcoder.py
+index d3b6c45..803c411 100644
+--- a/models/edcoder.py
++++ b/models/edcoder.py
+@@ -8,6 +8,7 @@ from functools import partial
+ from .gat import GAT
+ 
+ from .loss_func import sce_loss
++from .input_masking import StructureInputMask
+ 
+ 
+ def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
+@@ -74,8 +75,20 @@ class PreModel(nn.Module):
+             momentum: float = 0.996,
+             replace_rate: float = 0.0,
+             zero_init: bool = False,
++            input_mask_mode: str = "random",
++            structure_alpha_max: float = 0.5,
++            structure_warmup_ratio: float = 0.2,
++            structure_ramp_end_ratio: float = 0.8,
++            mask_log_interval: int = 100,
+          ):
+         super(PreModel, self).__init__()
++        self.input_masker = StructureInputMask(
++            mode=input_mask_mode,
++            alpha_max=structure_alpha_max,
++            warmup_ratio=structure_warmup_ratio,
++            ramp_end_ratio=structure_ramp_end_ratio,
++            log_interval=mask_log_interval,
++        )
+         self._mask_rate = mask_rate
+         self._remask_rate = remask_rate
+         self._mask_method = mask_method
+@@ -322,7 +335,11 @@ class PreModel(nn.Module):
+     
+     def encoding_mask_noise(self, g, x, mask_rate=0.3):
+         num_nodes = g.num_nodes()
+-        perm = torch.randperm(num_nodes, device=x.device)
++        if self.input_masker.enabled:
++            perm = self.input_masker.permutation(g, x.device, mask_rate)
++        else:
++            # Keep the original API and RNG consumption when disabled or alpha_max=0.
++            perm = torch.randperm(num_nodes, device=x.device)
+         num_mask_nodes = int(mask_rate * num_nodes)
+ 
+         # exclude isolated nodes
+@@ -348,6 +365,12 @@ class PreModel(nn.Module):
+ 
+         return use_g, out_x, (mask_nodes, keep_nodes)
+     
++    def prepare_input_mask(self, graph, device):
++        self.input_masker.prepare(graph, device)
++
++    def set_input_mask_progress(self, step, total_steps):
++        self.input_masker.set_progress(step, total_steps)
++
+     def random_remask(self,g,rep,remask_rate=0.5):
+         
+         num_nodes = g.num_nodes()
+@@ -364,4 +387,4 @@ class PreModel(nn.Module):
+ 
+     def fixed_remask(self, g, rep, masked_nodes):
+         rep[masked_nodes] = 0
+-        return rep
+\ No newline at end of file
++        return rep
+diff --git a/utils.py b/utils.py
+index 5a6eff3..a19a6d9 100644
+--- a/utils.py
++++ b/utils.py
+@@ -119,6 +119,11 @@ def build_args():
+     parser.add_argument("--delayed_ema_epoch", type=int, default=0)
+     parser.add_argument("--replace_rate", type=float, default=0.0)
+     parser.add_argument("--momentum", type=float, default=0.996)
++    parser.add_argument("--input_mask_mode", choices=("random", "structure_static", "structure_curriculum"), default="random")
++    parser.add_argument("--structure_alpha_max", type=float, default=0.5)
++    parser.add_argument("--structure_warmup_ratio", type=float, default=0.2)
++    parser.add_argument("--structure_ramp_end_ratio", type=float, default=0.8)
++    parser.add_argument("--mask_log_interval", type=int, default=100)
+ 
+     args = parser.parse_args()
+     return args

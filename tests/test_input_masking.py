@@ -1,5 +1,7 @@
 """Run from the repository root: python -m unittest discover -s tests -p test_input_masking.py -v"""
 
+import importlib.util
+from pathlib import Path
 import subprocess
 import types
 import unittest
@@ -88,7 +90,7 @@ class SamplingTests(unittest.TestCase):
 
     def test_partition_count_reproducibility_and_extreme_rates(self):
         for device in devices():
-            for mode in ("structure_static", "structure_curriculum"):
+            for mode in ("structure_static", "structure_curriculum", "structure_curriculum_shuffled"):
                 with self.subTest(device=str(device), mode=mode):
                     g = graph_on(device)
                     masker = StructureInputMask(mode, log_interval=0).to(device)
@@ -115,6 +117,8 @@ class SamplingTests(unittest.TestCase):
                 ("structure_static", 0.0, 7),
                 ("structure_curriculum", 0.0, 7),
                 ("structure_curriculum", 0.5, 0),
+                ("structure_curriculum_shuffled", 0.0, 7),
+                ("structure_curriculum_shuffled", 0.5, 0),
             ):
                 with self.subTest(device=str(device), mode=mode, alpha=alpha, step=step):
                     g = graph_on(device)
@@ -221,7 +225,8 @@ class IntegrationTests(unittest.TestCase):
     def test_disabled_and_zero_strength_match_original_training_and_rng(self):
         for device in devices():
             for mode, strength in (("random", .5), ("random", 0.),
-                                   ("structure_static", 0.), ("structure_curriculum", 0.)):
+                                   ("structure_static", 0.), ("structure_curriculum", 0.),
+                                   ("structure_curriculum_shuffled", 0.)):
                 with self.subTest(device=str(device), mode=mode, strength=strength):
                     torch.manual_seed(42)
                     original = self.OriginalPreModel(**model_kwargs()).to(device)
@@ -268,7 +273,7 @@ class IntegrationTests(unittest.TestCase):
 
     def test_positive_strength_backward_is_finite_and_progress_does_not_change_ema_epoch(self):
         for device in devices():
-            for mode in ("structure_static", "structure_curriculum"):
+            for mode in ("structure_static", "structure_curriculum", "structure_curriculum_shuffled"):
                 with self.subTest(device=str(device), mode=mode):
                     model = PreModel(
                         **model_kwargs(), delayed_ema_epoch=1,
@@ -291,6 +296,231 @@ class IntegrationTests(unittest.TestCase):
                     self.assertTrue(all(torch.isfinite(g).all().item() for g in gradients))
                     for key, value in teacher_before.items():
                         torch.testing.assert_close(value, model.encoder_ema.state_dict()[key])
+
+
+class ShuffledControlTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        path = Path(__file__).parent / "fixtures" / "input_masking_v1_1_reference.py"
+        spec = importlib.util.spec_from_file_location("_input_masking_v11_reference", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        cls.ReferenceMask = module.StructureInputMask
+
+    @staticmethod
+    def varied_graph(device):
+        # Incoming non-self degrees are exactly 0, 1, ..., 15.
+        src = [j for i in range(1, 16) for j in range(i)]
+        dst = [i for i in range(1, 16) for j in range(i)]
+        return dgl.add_self_loop(dgl.graph((src, dst), num_nodes=16)).to(device)
+
+    def test_score_shuffle_preserves_distribution_and_global_rng(self):
+        for device in devices():
+            with self.subTest(device=str(device)):
+                g = self.varied_graph(device)
+                before = rng_state()
+                real = StructureInputMask("structure_curriculum", log_interval=0).to(device)
+                shuffled = StructureInputMask(
+                    "structure_curriculum_shuffled", log_interval=0).to(device)
+                real.prepare(g, device)
+                shuffled.prepare(g, device)
+                assert_rng_equal(self, before, rng_state())
+
+                generator = torch.Generator(device="cpu")
+                generator.manual_seed(20261025)
+                expected_perm = torch.randperm(16, generator=generator, device="cpu").to(device)
+                torch.testing.assert_close(
+                    shuffled.score_weights, real.score_weights[expected_perm], rtol=0, atol=0)
+                torch.testing.assert_close(
+                    shuffled.score_weights.sort().values,
+                    real.score_weights.sort().values, rtol=0, atol=0)
+                torch.testing.assert_close(shuffled.degree, real.degree, rtol=0, atol=0)
+                self.assertFalse(torch.equal(shuffled.score_weights, real.score_weights))
+                self.assertEqual(len(shuffled.state_dict()), 0)
+                self.assertEqual(len(list(shuffled.parameters())), 0)
+                assert_rng_equal(self, before, rng_state())
+
+    def test_shuffle_is_fixed_cached_and_independent_of_training_seed(self):
+        for device in devices():
+            with self.subTest(device=str(device)):
+                g = self.varied_graph(device)
+                state = rng_state()
+                try:
+                    maps = []
+                    for training_seed in (101, 987):
+                        torch.manual_seed(training_seed)
+                        masker = StructureInputMask(
+                            "structure_curriculum_shuffled", log_interval=0).to(device)
+                        masker.prepare(g, device)
+                        maps.append(masker.score_weights.clone())
+                    torch.testing.assert_close(maps[0], maps[1], rtol=0, atol=0)
+                    pointer = masker.score_weights.data_ptr()
+                    for step in (0, 5, 10):
+                        masker.set_progress(step, 11)
+                        masker.permutation(g, device, .5)
+                        before = rng_state()
+                        masker.prepare(g, device)
+                        assert_rng_equal(self, before, rng_state())
+                        self.assertEqual(pointer, masker.score_weights.data_ptr())
+                        torch.testing.assert_close(maps[0], masker.score_weights, rtol=0, atol=0)
+                finally:
+                    restore_rng(state)
+
+    def test_different_shuffle_seed_changes_assignment_not_distribution(self):
+        for device in devices():
+            with self.subTest(device=str(device)):
+                g = self.varied_graph(device)
+                masks = [StructureInputMask(
+                    "structure_curriculum_shuffled", log_interval=0, shuffle_seed=seed
+                ).to(device) for seed in (20261025, 20261026)]
+                before = rng_state()
+                for masker in masks:
+                    masker.prepare(g, device)
+                assert_rng_equal(self, before, rng_state())
+                self.assertFalse(torch.equal(masks[0].score_weights, masks[1].score_weights))
+                torch.testing.assert_close(
+                    masks[0].score_weights.sort().values,
+                    masks[1].score_weights.sort().values, rtol=0, atol=0)
+
+    def test_previous_modes_match_v11_sampling_schedule_and_rng(self):
+        cases = (("random", .5), ("random", 0.),
+                 ("structure_static", .3), ("structure_static", .5),
+                 ("structure_static", 0.), ("structure_curriculum", .3),
+                 ("structure_curriculum", .5), ("structure_curriculum", 0.))
+        for device in devices():
+            for mode, alpha in cases:
+                with self.subTest(device=str(device), mode=mode, alpha=alpha):
+                    g = self.varied_graph(device)
+                    before = rng_state()
+                    old = self.ReferenceMask(mode, alpha_max=alpha, log_interval=0).to(device)
+                    new = StructureInputMask(
+                        mode, alpha_max=alpha, log_interval=0, shuffle_seed=20261026).to(device)
+                    old.prepare(g, device)
+                    new.prepare(g, device)
+                    assert_rng_equal(self, before, rng_state())
+                    torch.testing.assert_close(old.degree, new.degree, rtol=0, atol=0)
+                    torch.testing.assert_close(old.score_weights, new.score_weights, rtol=0, atol=0)
+                    for step in (0, 2, 5, 8, 10):
+                        old.set_progress(step, 11)
+                        new.set_progress(step, 11)
+                        self.assertEqual(old.effective_alpha(), new.effective_alpha())
+                        for rate in (0., .25, .5, .9, 1.):
+                            before = rng_state()
+                            expected = old.permutation(g, device, rate)
+                            after = rng_state()
+                            restore_rng(before)
+                            actual = new.permutation(g, device, rate)
+                            self.assertTrue(torch.equal(expected, actual))
+                            assert_rng_equal(self, after, rng_state())
+
+    def test_shuffled_curriculum_has_identical_alpha_schedule(self):
+        real = StructureInputMask("structure_curriculum")
+        shuffled = StructureInputMask("structure_curriculum_shuffled")
+        with self.assertRaises(RuntimeError):
+            shuffled.effective_alpha()
+        for total in (1, 11, 2000):
+            for step in range(total):
+                real.set_progress(step, total)
+                shuffled.set_progress(step, total)
+                self.assertEqual(real.effective_alpha(), shuffled.effective_alpha())
+
+    def test_shuffled_diagnostics_use_real_degrees_and_no_extra_rng(self):
+        for device in devices():
+            with self.subTest(device=str(device)):
+                g = self.varied_graph(device)
+                quiet = StructureInputMask(
+                    "structure_curriculum_shuffled", log_interval=0).to(device)
+                logged = StructureInputMask(
+                    "structure_curriculum_shuffled", log_interval=1).to(device)
+                for masker in (quiet, logged):
+                    masker.prepare(g, device)
+                    masker.set_progress(8, 11)
+                before = rng_state()
+                expected = quiet.permutation(g, device, .5)
+                after = rng_state()
+                restore_rng(before)
+                actual = logged.permutation(g, device, .5)
+                self.assertTrue(torch.equal(expected, actual))
+                assert_rng_equal(self, after, rng_state())
+                stats = logged.last_stats
+                self.assertEqual(stats["mode"], "structure_curriculum_shuffled")
+                self.assertEqual(stats["score_shuffle_seed"], 20261025)
+                self.assertEqual(stats["masked"], 8)
+                self.assertEqual(stats["actual_mask_rate"], .5)
+                self.assertEqual(stats["masked_degree_mean"], logged.degree[actual[:8]].mean().item())
+                self.assertEqual(stats["kept_degree_mean"], logged.degree[actual[8:]].mean().item())
+
+    def test_shuffled_scores_do_not_read_labels_or_features(self):
+        for device in devices():
+            with self.subTest(device=str(device)):
+                g = self.varied_graph(device)
+                g.ndata["label"] = torch.arange(16, device=device)
+                g.ndata["feat"] = torch.full((16, 3), 123., device=device)
+                first = StructureInputMask("structure_curriculum_shuffled").to(device)
+                first.prepare(g, device)
+                g.ndata["label"].fill_(-999)
+                g.ndata["feat"].fill_(999.)
+                # A fresh instance avoids a false pass due only to cached scores.
+                second = StructureInputMask("structure_curriculum_shuffled").to(device)
+                before = rng_state()
+                second.prepare(g, device)
+                assert_rng_equal(self, before, rng_state())
+                torch.testing.assert_close(first.score_weights, second.score_weights, rtol=0, atol=0)
+
+    def test_b3_cli_yaml_and_factory_forward_seed(self):
+        with mock.patch.object(sys, "argv", ["test"]):
+            defaults = build_args()
+        self.assertEqual(defaults.input_mask_mode, "random")
+        self.assertEqual(defaults.structure_shuffle_seed, 20261025)
+        for dataset, epochs, rate in (("cora", 2000, .5),
+                                     ("citeseer", 500, .5), ("pubmed", 2000, .9)):
+            with self.subTest(dataset=dataset):
+                argv = ["test", "--dataset", dataset, "--use_cfg",
+                        "--input_mask_mode", "structure_curriculum_shuffled",
+                        "--structure_alpha_max", "0.5", "--mask_log_interval", "0",
+                        "--structure_shuffle_seed", "20261026"]
+                with mock.patch.object(sys, "argv", argv):
+                    args = load_best_configs(build_args())
+                self.assertEqual(args.structure_shuffle_seed, 20261026)
+                self.assertEqual(args.input_mask_mode, "structure_curriculum_shuffled")
+                self.assertEqual(args.max_epoch, epochs)
+                self.assertEqual(args.mask_rate, rate)
+                self.assertEqual(args.remask_method, "fixed")
+                args.num_features, args.num_hidden, args.num_heads = 8, 16, 2
+                model = build_model(args)
+                self.assertEqual(model.input_masker.mode, "structure_curriculum_shuffled")
+                self.assertEqual(model.input_masker.shuffle_seed, 20261026)
+                self.assertEqual(model.input_masker.alpha_max, .5)
+
+    def test_invalid_shuffle_seeds_fail_early(self):
+        for seed in (-1, 2 ** 63, True, False, .5, None, "123"):
+            with self.subTest(seed=seed), self.assertRaises(ValueError):
+                StructureInputMask("structure_curriculum_shuffled", shuffle_seed=seed)
+        for seed in (0, 2 ** 63 - 1):
+            masker = StructureInputMask("structure_curriculum_shuffled", shuffle_seed=seed)
+            masker.prepare(self.varied_graph("cpu"), "cpu")
+
+    def test_shuffled_mode_preserves_model_initialization_and_rng(self):
+        for device in devices():
+            with self.subTest(device=str(device)):
+                torch.manual_seed(2026)
+                real = PreModel(
+                    **model_kwargs(), input_mask_mode="structure_curriculum",
+                    mask_log_interval=0).to(device)
+                expected_rng = rng_state()
+                torch.manual_seed(2026)
+                shuffled = PreModel(
+                    **model_kwargs(), input_mask_mode="structure_curriculum_shuffled",
+                    mask_log_interval=0).to(device)
+                assert_rng_equal(self, expected_rng, rng_state())
+                self.assertEqual(set(real.state_dict()), set(shuffled.state_dict()))
+                for key, value in real.state_dict().items():
+                    torch.testing.assert_close(value, shuffled.state_dict()[key], rtol=0, atol=0)
+                g = graph_on(device)
+                before = rng_state()
+                real.prepare_input_mask(g, device)
+                shuffled.prepare_input_mask(g, device)
+                assert_rng_equal(self, before, rng_state())
 
 
 if __name__ == "__main__":

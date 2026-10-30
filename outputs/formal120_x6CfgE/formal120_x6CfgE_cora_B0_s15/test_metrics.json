@@ -1,0 +1,7 @@
+{
+  "accuracy_scale": "fraction",
+  "primary": "val_selected_test_acc",
+  "final_test_acc": 0.836,
+  "val_selected_test_acc": 0.836,
+  "selection": "final_pretrained_encoder_then_validation_selected_linear_classifier"
+}

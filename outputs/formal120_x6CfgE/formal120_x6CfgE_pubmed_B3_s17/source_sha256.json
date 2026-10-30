@@ -1,0 +1,23 @@
+{
+  "configs/citeseer.yaml": "d9d9302aca6148a322861bb160300ff32e97e615f0638771ea1f5a2d9f3d7688",
+  "configs/cora.yaml": "3a5a6b87a73fd986ed0bd94ce224f37059739a7df7defa3cc89e6ad78f8aaca6",
+  "configs/pubmed.yaml": "19f7897bab0097f2a6f3a85f9a7b02914cbb0e6627701832ea33c07aeb48a50a",
+  "datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "datasets/data_proc.py": "d43cc47fb81e3d021dbaa15438b7a117054a5172855372f7fc4e17475671f88f",
+  "datasets/lc_sampler.py": "0aca1c668e93bd6842220396a216a098b10e29aa9b3eb416ddd1fac472fea2cb",
+  "datasets/localclustering.py": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
+  "datasets/saint_sampler.py": "729cca3522d9927b65df00e8e6234ccf8f64140eddabe3332ee03c7eb4412a8e",
+  "main_full_batch.py": "10567a6173362ca3aca12218fce59d30597b8145ecbbddb4b604340ac9f7d0d2",
+  "models/__init__.py": "249ebfe22f6afa6e0f44f5987d2d66f35e5a9ed2e775bb44df867a385f72c7f7",
+  "models/edcoder.py": "209584ec044e3053241ab3bb448d920bb0d2ba09a26c82d75a85d6d5ae9ca668",
+  "models/finetune.py": "3c3f6e8f1154035a9a6d62420dc964f600cf672116c4fb3b12e7bb10f71de248",
+  "models/gat.py": "2e536f955793d4190bfae9ed4161bedab53928ed43d2012bbb9e5e126d0a4a3c",
+  "models/gcn.py": "55e3f0fac56ce78d7ed4856f83a3a84d61edde00be454f2db885b66ab992ac70",
+  "models/input_masking.py": "230a45cf29255bfc46272f8774e5650aea46e85e48b558f82b286019e7d5d4b9",
+  "models/loss_func.py": "b71a86e278b039ea77a2943b3ead804bb222ad28e437c379a1c22dd02e30140e",
+  "record_full_batch.py": "7744e2e3ed17305b5b8428bc04f771c3a64eaa3e53b4c6331427c9055f025c95",
+  "test_record_full_batch.py": "2cb961fe1b54fb90495c01c0a8a01d5f4f2146a3b02909cb8e3811345f25fbd9",
+  "tests/fixtures/input_masking_v1_1_reference.py": "1c73f7899c9338cae8c0420b6a8ce4223561309894f42f49be028e8ef9a06518",
+  "tests/test_input_masking.py": "574e801ca550f28cd7b4a8626e58654002cab2c0d9acd7506070538e8c7eea9a",
+  "utils.py": "2df99927eac847e1880e1aa1d380bb9411c70b912cdbb753c95af64cd5c923f1"
+}

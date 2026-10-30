@@ -8,10 +8,13 @@ from torch import nn
 
 
 class StructureInputMask(nn.Module):
-    MODES = ("random", "structure_static", "structure_curriculum")
+    MODES = (
+        "random", "structure_static", "structure_curriculum",
+        "structure_curriculum_shuffled",
+    )
 
     def __init__(self, mode="random", alpha_max=0.5, warmup_ratio=0.2,
-                 ramp_end_ratio=0.8, log_interval=100):
+                 ramp_end_ratio=0.8, log_interval=100, shuffle_seed=20261025):
         super().__init__()
         if mode not in self.MODES:
             raise ValueError("Unknown input_mask_mode: %s" % mode)
@@ -21,11 +24,15 @@ class StructureInputMask(nn.Module):
             raise ValueError("Require 0 <= warmup_ratio < ramp_end_ratio <= 1")
         if not isinstance(log_interval, int) or log_interval < 0:
             raise ValueError("mask_log_interval must be a nonnegative integer")
+        if (isinstance(shuffle_seed, bool) or not isinstance(shuffle_seed, int)
+                or not 0 <= shuffle_seed < 2 ** 63):
+            raise ValueError("structure_shuffle_seed must be an integer in [0, 2**63)")
         self.mode = mode
         self.alpha_max = float(alpha_max)
         self.warmup_ratio = float(warmup_ratio)
         self.ramp_end_ratio = float(ramp_end_ratio)
         self.log_interval = log_interval
+        self.shuffle_seed = shuffle_seed
         # No parameters, no random initialization, and no additional checkpoint keys.
         self.register_buffer("degree", torch.empty(0), persistent=False)
         self.register_buffer("score_weights", torch.empty(0), persistent=False)
@@ -68,6 +75,13 @@ class StructureInputMask(nn.Module):
         raw = torch.log1p(degree) + 1e-8
         self.degree = degree
         self.score_weights = raw / raw.sum()
+        if self.mode == "structure_curriculum_shuffled":
+            # Fixed once for this graph, independently of all training RNG streams.
+            generator = torch.Generator(device="cpu")
+            generator.manual_seed(self.shuffle_seed)
+            permutation = torch.randperm(
+                n, generator=generator, device="cpu").to(device)
+            self.score_weights = self.score_weights[permutation]
         self._graph_key = key
         self._last_logged_step = None
 
@@ -138,6 +152,8 @@ class StructureInputMask(nn.Module):
                 .cpu().tolist() if k else None
             ),
         }
+        if self.mode == "structure_curriculum_shuffled":
+            stats["score_shuffle_seed"] = self.shuffle_seed
         self.last_stats = stats
         self._last_logged_step = self._step
         logging.info("INPUT_MASK %s", stats)

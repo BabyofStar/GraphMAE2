@@ -1,0 +1,106 @@
+test_cli_factory_and_official_yaml_keep_new_flags (test_input_masking.IntegrationTests) ... 2026-10-26 11:59:47,050 - INFO - ----- Using best configs from configs/cora.yaml -----
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_disabled_and_zero_strength_match_original_training_and_rng (test_input_masking.IntegrationTests) ... === Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_positive_strength_backward_is_finite_and_progress_does_not_change_ema_epoch (test_input_masking.IntegrationTests) ... === Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_default_is_disabled_and_has_no_checkpoint_keys (test_input_masking.SamplingTests) ... ok
+test_empty_edge_graph_and_statistics (test_input_masking.SamplingTests) ... 2026-10-26 12:00:54,116 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_static', 'alpha': 0.5, 'masked': 2, 'nodes': 5, 'actual_mask_rate': 0.4, 'masked_degree_mean': 0.0, 'kept_degree_mean': 0.0, 'masked_degree_q25_q50_q75': [0.0, 0.0, 0.0]}
+2026-10-26 12:00:54,127 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_static', 'alpha': 0.5, 'masked': 2, 'nodes': 5, 'actual_mask_rate': 0.4, 'masked_degree_mean': 0.0, 'kept_degree_mean': 0.0, 'masked_degree_q25_q50_q75': [0.0, 0.0, 0.0]}
+ok
+test_invalid_parameters_and_unprepared_graph_fail (test_input_masking.SamplingTests) ... ok
+test_partition_count_reproducibility_and_extreme_rates (test_input_masking.SamplingTests) ... ok
+test_schedule_boundaries_monotonicity_and_missing_progress (test_input_masking.SamplingTests) ... ok
+test_score_excludes_self_loops_and_does_not_use_labels (test_input_masking.SamplingTests) ... ok
+test_weighted_sampling_actually_favors_high_degree (test_input_masking.SamplingTests) ... ok
+test_zero_alpha_and_curriculum_warmup_keep_randperm_rng (test_input_masking.SamplingTests) ... 2026-10-26 12:00:54,302 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_curriculum', 'alpha': 0.0, 'masked': 2, 'nodes': 4, 'actual_mask_rate': 0.5, 'masked_degree_mean': 1.0, 'kept_degree_mean': 2.0, 'masked_degree_q25_q50_q75': [1.0, 1.0, 1.0]}
+2026-10-26 12:00:54,304 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_curriculum_shuffled', 'alpha': 0.0, 'masked': 2, 'nodes': 4, 'actual_mask_rate': 0.5, 'masked_degree_mean': 2.0, 'kept_degree_mean': 1.0, 'masked_degree_q25_q50_q75': [2.0, 2.0, 2.0], 'score_shuffle_seed': 20261025}
+2026-10-26 12:00:54,310 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_curriculum', 'alpha': 0.0, 'masked': 2, 'nodes': 4, 'actual_mask_rate': 0.5, 'masked_degree_mean': 1.5, 'kept_degree_mean': 1.5, 'masked_degree_q25_q50_q75': [1.25, 1.5, 1.75]}
+2026-10-26 12:00:54,313 - INFO - INPUT_MASK {'step': 0, 'mode': 'structure_curriculum_shuffled', 'alpha': 0.0, 'masked': 2, 'nodes': 4, 'actual_mask_rate': 0.5, 'masked_degree_mean': 1.5, 'kept_degree_mean': 1.5, 'masked_degree_q25_q50_q75': [1.25, 1.5, 1.75], 'score_shuffle_seed': 20261025}
+ok
+test_b3_cli_yaml_and_factory_forward_seed (test_input_masking.ShuffledControlTests) ... 2026-10-26 12:00:54,339 - INFO - ----- Using best configs from configs/cora.yaml -----
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+2026-10-26 12:00:54,346 - INFO - ----- Using best configs from configs/citeseer.yaml -----
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+2026-10-26 12:00:54,353 - INFO - ----- Using best configs from configs/pubmed.yaml -----
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_different_shuffle_seed_changes_assignment_not_distribution (test_input_masking.ShuffledControlTests) ... ok
+test_invalid_shuffle_seeds_fail_early (test_input_masking.ShuffledControlTests) ... ok
+test_previous_modes_match_v11_sampling_schedule_and_rng (test_input_masking.ShuffledControlTests) ... ok
+test_score_shuffle_preserves_distribution_and_global_rng (test_input_masking.ShuffledControlTests) ... ok
+test_shuffle_is_fixed_cached_and_independent_of_training_seed (test_input_masking.ShuffledControlTests) ... ok
+test_shuffled_curriculum_has_identical_alpha_schedule (test_input_masking.ShuffledControlTests) ... ok
+test_shuffled_diagnostics_use_real_degrees_and_no_extra_rng (test_input_masking.ShuffledControlTests) ... 2026-10-26 12:00:54,536 - INFO - INPUT_MASK {'step': 8, 'mode': 'structure_curriculum_shuffled', 'alpha': 0.5, 'masked': 8, 'nodes': 16, 'actual_mask_rate': 0.5, 'masked_degree_mean': 5.875, 'kept_degree_mean': 9.125, 'masked_degree_q25_q50_q75': [3.25, 5.5, 9.25], 'score_shuffle_seed': 20261025}
+2026-10-26 12:00:54,539 - INFO - INPUT_MASK {'step': 8, 'mode': 'structure_curriculum_shuffled', 'alpha': 0.5, 'masked': 8, 'nodes': 16, 'actual_mask_rate': 0.5, 'masked_degree_mean': 6.375, 'kept_degree_mean': 8.625, 'masked_degree_q25_q50_q75': [1.75, 5.5, 10.75], 'score_shuffle_seed': 20261025}
+ok
+test_shuffled_mode_preserves_model_initialization_and_rng (test_input_masking.ShuffledControlTests) ... === Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+=== Use sce_loss and alpha_l=2 ===
+num_encoder_params: 482, num_decoder_params: 152, num_params_in_total: 9652
+ok
+test_shuffled_scores_do_not_read_labels_or_features (test_input_masking.ShuffledControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 67.547s
+
+OK

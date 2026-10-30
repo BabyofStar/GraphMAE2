@@ -1,0 +1,346 @@
+{
+  "recorder_version": "1.0.0",
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "versions": {
+    "torch": "2.1.2+cu118",
+    "dgl": "1.1.3+cu118",
+    "numpy": "1.26.4"
+  },
+  "torch_cuda_runtime": "11.8",
+  "gpu_name": "NVIDIA A800 80GB PCIe",
+  "visible_gpu_memory_bytes": 16777216000,
+  "torch_cpu_threads": 48,
+  "deterministic_algorithms": false,
+  "cudnn_deterministic": false,
+  "cudnn_benchmark": false,
+  "cuda_matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "runtime_environment": {
+    "OMP_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OPENBLAS_NUM_THREADS": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "PYTHONHASHSEED": null,
+    "DGLBACKEND": "pytorch"
+  },
+  "core_sha256": {
+    "main_full_batch.py": "10567a6173362ca3aca12218fce59d30597b8145ecbbddb4b604340ac9f7d0d2",
+    "utils.py": "2df99927eac847e1880e1aa1d380bb9411c70b912cdbb753c95af64cd5c923f1",
+    "models/__init__.py": "249ebfe22f6afa6e0f44f5987d2d66f35e5a9ed2e775bb44df867a385f72c7f7",
+    "models/edcoder.py": "209584ec044e3053241ab3bb448d920bb0d2ba09a26c82d75a85d6d5ae9ca668",
+    "models/input_masking.py": "230a45cf29255bfc46272f8774e5650aea46e85e48b558f82b286019e7d5d4b9",
+    "models/finetune.py": "3c3f6e8f1154035a9a6d62420dc964f600cf672116c4fb3b12e7bb10f71de248",
+    "models/gat.py": "2e536f955793d4190bfae9ed4161bedab53928ed43d2012bbb9e5e126d0a4a3c",
+    "models/gcn.py": "55e3f0fac56ce78d7ed4856f83a3a84d61edde00be454f2db885b66ab992ac70",
+    "models/loss_func.py": "b71a86e278b039ea77a2943b3ead804bb222ad28e437c379a1c22dd02e30140e",
+    "datasets/data_proc.py": "d43cc47fb81e3d021dbaa15438b7a117054a5172855372f7fc4e17475671f88f",
+    "datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "datasets/lc_sampler.py": "0aca1c668e93bd6842220396a216a098b10e29aa9b3eb416ddd1fac472fea2cb",
+    "datasets/localclustering.py": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
+    "datasets/saint_sampler.py": "729cca3522d9927b65df00e8e6234ccf8f64140eddabe3332ee03c7eb4412a8e",
+    "configs/cora.yaml": "3a5a6b87a73fd986ed0bd94ce224f37059739a7df7defa3cc89e6ad78f8aaca6",
+    "configs/citeseer.yaml": "d9d9302aca6148a322861bb160300ff32e97e615f0638771ea1f5a2d9f3d7688",
+    "configs/pubmed.yaml": "19f7897bab0097f2a6f3a85f9a7b02914cbb0e6627701832ea33c07aeb48a50a"
+  },
+  "packages": [
+    [
+      "GitPython",
+      "3.2.1"
+    ],
+    [
+      "Jinja2",
+      "3.1.6"
+    ],
+    [
+      "MarkupSafe",
+      "3.0.3"
+    ],
+    [
+      "PyYAML",
+      "6.0.2"
+    ],
+    [
+      "autocommand",
+      "2.2.2"
+    ],
+    [
+      "backports.tarfile",
+      "1.2.0"
+    ],
+    [
+      "certifi",
+      "2026.10.19"
+    ],
+    [
+      "charset-normalizer",
+      "3.5.2"
+    ],
+    [
+      "click",
+      "8.5.0"
+    ],
+    [
+      "cloudpickle",
+      "3.1.2"
+    ],
+    [
+      "contourpy",
+      "1.3.2"
+    ],
+    [
+      "cycler",
+      "0.12.1"
+    ],
+    [
+      "dgl",
+      "1.1.3+cu118"
+    ],
+    [
+      "docker-pycreds",
+      "0.4.0"
+    ],
+    [
+      "filelock",
+      "3.32.3"
+    ],
+    [
+      "fonttools",
+      "4.65.0"
+    ],
+    [
+      "fsspec",
+      "2026.7.0"
+    ],
+    [
+      "gitdb",
+      "4.0.12"
+    ],
+    [
+      "idna",
+      "3.20"
+    ],
+    [
+      "importlib_metadata",
+      "8.0.0"
+    ],
+    [
+      "inflect",
+      "7.3.1"
+    ],
+    [
+      "jaraco.collections",
+      "5.1.0"
+    ],
+    [
+      "jaraco.context",
+      "5.3.0"
+    ],
+    [
+      "jaraco.functools",
+      "4.0.1"
+    ],
+    [
+      "jaraco.text",
+      "3.12.1"
+    ],
+    [
+      "joblib",
+      "1.6.0"
+    ],
+    [
+      "kiwisolver",
+      "1.5.1"
+    ],
+    [
+      "littleutils",
+      "0.2.4"
+    ],
+    [
+      "matplotlib",
+      "3.8.4"
+    ],
+    [
+      "more-itertools",
+      "10.3.0"
+    ],
+    [
+      "mpmath",
+      "1.3.0"
+    ],
+    [
+      "networkx",
+      "3.4.2"
+    ],
+    [
+      "numpy",
+      "1.26.4"
+    ],
+    [
+      "nvidia-cublas-cu11",
+      "11.11.3.6"
+    ],
+    [
+      "nvidia-cuda-runtime-cu11",
+      "11.8.89"
+    ],
+    [
+      "nvidia-cusparse-cu11",
+      "11.7.5.86"
+    ],
+    [
+      "ogb",
+      "1.3.6"
+    ],
+    [
+      "outdated",
+      "0.2.2"
+    ],
+    [
+      "packaging",
+      "24.2"
+    ],
+    [
+      "packaging",
+      "26.3"
+    ],
+    [
+      "pandas",
+      "2.2.3"
+    ],
+    [
+      "pillow",
+      "12.3.0"
+    ],
+    [
+      "pip",
+      "26.2.1"
+    ],
+    [
+      "platformdirs",
+      "4.12.4"
+    ],
+    [
+      "platformdirs",
+      "4.2.2"
+    ],
+    [
+      "protobuf",
+      "5.29.6"
+    ],
+    [
+      "psutil",
+      "5.9.8"
+    ],
+    [
+      "pyparsing",
+      "3.3.3"
+    ],
+    [
+      "python-dateutil",
+      "3.0.0"
+    ],
+    [
+      "pytz",
+      "2026.5"
+    ],
+    [
+      "requests",
+      "2.34.2"
+    ],
+    [
+      "scikit-learn",
+      "1.4.2"
+    ],
+    [
+      "scipy",
+      "1.15.3"
+    ],
+    [
+      "sentry-sdk",
+      "2.73.0"
+    ],
+    [
+      "setproctitle",
+      "1.3.8"
+    ],
+    [
+      "setuptools",
+      "80.9.0"
+    ],
+    [
+      "six",
+      "1.17.0"
+    ],
+    [
+      "smmap",
+      "5.0.3"
+    ],
+    [
+      "sympy",
+      "1.14.0"
+    ],
+    [
+      "tensorboardX",
+      "2.6.2.2"
+    ],
+    [
+      "threadpoolctl",
+      "3.7.0"
+    ],
+    [
+      "tomli",
+      "2.0.1"
+    ],
+    [
+      "torch",
+      "2.1.2+cu118"
+    ],
+    [
+      "tqdm",
+      "4.67.1"
+    ],
+    [
+      "triton",
+      "2.1.0"
+    ],
+    [
+      "typeguard",
+      "4.3.0"
+    ],
+    [
+      "typing_extensions",
+      "4.12.2"
+    ],
+    [
+      "typing_extensions",
+      "4.16.0"
+    ],
+    [
+      "tzdata",
+      "2026.5"
+    ],
+    [
+      "urllib3",
+      "2.8.0"
+    ],
+    [
+      "wandb",
+      "0.17.9"
+    ],
+    [
+      "wheel",
+      "0.45.1"
+    ],
+    [
+      "wheel",
+      "0.48.0"
+    ],
+    [
+      "zipp",
+      "3.19.2"
+    ]
+  ],
+  "git_head": "c07512cd8d24185f68cbf49616e30788744202ad"
+}

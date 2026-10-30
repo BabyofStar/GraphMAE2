@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "phase": "formal",
+  "method": "B3",
+  "dataset": "citeseer",
+  "seed": 12,
+  "recorder_version": "1.0.0",
+  "best_val_acc": 0.718,
+  "best_val_epoch": 16,
+  "dataset_info": {
+    "nodes": 3327,
+    "edges_with_self_loops": 12431,
+    "features": 3703,
+    "classes": 6,
+    "splits": {
+      "train_mask": 120,
+      "val_mask": 500,
+      "test_mask": 1000
+    },
+    "split_mask_sha256": {
+      "train_mask": "8efce52f9800be63f1ac0858b52958bbdde930d20ce5a0b4e5431c13a7d16eab",
+      "val_mask": "b11b25e3892ac2656e35555f2ea1ddcbccba18f2f1233baffbfdaacf3a7fda63",
+      "test_mask": "e5f2dd697aa940453faf3ca12682f7ddb7da9a7b011e141672be2b230889b30a"
+    }
+  },
+  "intermediate_probe_calls": 2,
+  "mask_records": 6,
+  "checkpoint_path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s12/models.pt",
+  "checkpoint_sha256": "628440e5c7c12ed2ece260a530b3c142fdcf1db5c02869f0c77645de32222392",
+  "checkpoint_readback_equal": true,
+  "test_metrics_file": "test_metrics.json"
+}

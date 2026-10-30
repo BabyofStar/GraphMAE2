@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "phase": "formal",
+  "method": "B1",
+  "dataset": "cora",
+  "seed": 12,
+  "recorder_version": "1.0.0",
+  "best_val_acc": 0.79,
+  "best_val_epoch": 299,
+  "dataset_info": {
+    "nodes": 2708,
+    "edges_with_self_loops": 13264,
+    "features": 1433,
+    "classes": 7,
+    "splits": {
+      "train_mask": 140,
+      "val_mask": 500,
+      "test_mask": 1000
+    },
+    "split_mask_sha256": {
+      "train_mask": "b211325c561d6f73f978a4b0f3d44571c58eb70ca55a2aa27b9d4988344476c1",
+      "val_mask": "96c8f5dc197fc3c014b3d655f1c28d0d276221e867ca01d64f74edb39cfb7173",
+      "test_mask": "ec05c123cc125ff38ad3963cba5d85415a2e7b125dc68064bbf65fb0661644e6"
+    }
+  },
+  "intermediate_probe_calls": 10,
+  "mask_records": 21,
+  "checkpoint_path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s12/models.pt",
+  "checkpoint_sha256": "8e30e274cce9d676a1505fdb4894ea4d13a6042743c55c45536f050202768a53",
+  "checkpoint_readback_equal": true,
+  "test_metrics_file": "test_metrics.json"
+}

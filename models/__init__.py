@@ -65,5 +65,6 @@ def build_model(args):
         structure_warmup_ratio=getattr(args, "structure_warmup_ratio", 0.2),
         structure_ramp_end_ratio=getattr(args, "structure_ramp_end_ratio", 0.8),
         mask_log_interval=getattr(args, "mask_log_interval", 100),
+        structure_shuffle_seed=getattr(args, "structure_shuffle_seed", 20261025),
     )
     return model

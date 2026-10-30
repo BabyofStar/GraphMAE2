@@ -1,0 +1,2283 @@
+
+START dataset=cora method=B0 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s10
+Best ValAcc: 0.8100 in epoch 79
+Pretrain wall seconds: 129.184
+Final probe wall seconds: 0.738
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 1/120 dataset=cora method=B0 seed=10
+
+START dataset=cora method=B1 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s10
+Best ValAcc: 0.7880 in epoch 299
+Pretrain wall seconds: 129.545
+Final probe wall seconds: 0.730
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 2/120 dataset=cora method=B1 seed=10
+
+START dataset=cora method=B2 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s10
+Best ValAcc: 0.8140 in epoch 299
+Pretrain wall seconds: 129.419
+Final probe wall seconds: 0.775
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 3/120 dataset=cora method=B2 seed=10
+
+START dataset=cora method=B3 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s10
+Best ValAcc: 0.8120 in epoch 129
+Pretrain wall seconds: 128.969
+Final probe wall seconds: 0.729
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 4/120 dataset=cora method=B3 seed=10
+
+START dataset=cora method=B0 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s11
+Best ValAcc: 0.8140 in epoch 123
+Pretrain wall seconds: 128.701
+Final probe wall seconds: 0.739
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 5/120 dataset=cora method=B0 seed=11
+
+START dataset=cora method=B1 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s11
+Best ValAcc: 0.7940 in epoch 227
+Pretrain wall seconds: 128.567
+Final probe wall seconds: 0.735
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 6/120 dataset=cora method=B1 seed=11
+
+START dataset=cora method=B2 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s11
+Best ValAcc: 0.8180 in epoch 205
+Pretrain wall seconds: 129.215
+Final probe wall seconds: 0.751
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 7/120 dataset=cora method=B2 seed=11
+
+START dataset=cora method=B3 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s11
+Best ValAcc: 0.8100 in epoch 105
+Pretrain wall seconds: 129.102
+Final probe wall seconds: 0.759
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 8/120 dataset=cora method=B3 seed=11
+
+START dataset=cora method=B0 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s12
+Best ValAcc: 0.8060 in epoch 239
+Pretrain wall seconds: 129.364
+Final probe wall seconds: 0.747
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 9/120 dataset=cora method=B0 seed=12
+
+START dataset=cora method=B1 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s12
+Best ValAcc: 0.7900 in epoch 299
+Pretrain wall seconds: 129.281
+Final probe wall seconds: 0.742
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 10/120 dataset=cora method=B1 seed=12
+
+START dataset=cora method=B2 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s12
+Best ValAcc: 0.8100 in epoch 299
+Pretrain wall seconds: 128.732
+Final probe wall seconds: 0.765
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 11/120 dataset=cora method=B2 seed=12
+
+START dataset=cora method=B3 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s12
+Best ValAcc: 0.8060 in epoch 90
+Pretrain wall seconds: 129.077
+Final probe wall seconds: 0.723
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 12/120 dataset=cora method=B3 seed=12
+
+START dataset=cora method=B0 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s13
+Best ValAcc: 0.8040 in epoch 81
+Pretrain wall seconds: 128.300
+Final probe wall seconds: 0.738
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 13/120 dataset=cora method=B0 seed=13
+
+START dataset=cora method=B1 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s13
+Best ValAcc: 0.7900 in epoch 195
+Pretrain wall seconds: 129.027
+Final probe wall seconds: 0.735
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 14/120 dataset=cora method=B1 seed=13
+
+START dataset=cora method=B2 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s13
+Best ValAcc: 0.8080 in epoch 149
+Pretrain wall seconds: 129.437
+Final probe wall seconds: 0.745
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 15/120 dataset=cora method=B2 seed=13
+
+START dataset=cora method=B3 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s13
+Best ValAcc: 0.8080 in epoch 93
+Pretrain wall seconds: 129.085
+Final probe wall seconds: 0.707
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 16/120 dataset=cora method=B3 seed=13
+
+START dataset=cora method=B0 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s14
+Best ValAcc: 0.8000 in epoch 236
+Pretrain wall seconds: 128.327
+Final probe wall seconds: 0.748
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 17/120 dataset=cora method=B0 seed=14
+
+START dataset=cora method=B1 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s14
+Best ValAcc: 0.7900 in epoch 135
+Pretrain wall seconds: 129.041
+Final probe wall seconds: 0.768
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 18/120 dataset=cora method=B1 seed=14
+
+START dataset=cora method=B2 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s14
+Best ValAcc: 0.8080 in epoch 299
+Pretrain wall seconds: 129.598
+Final probe wall seconds: 0.755
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 19/120 dataset=cora method=B2 seed=14
+
+START dataset=cora method=B3 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s14
+Best ValAcc: 0.7980 in epoch 80
+Pretrain wall seconds: 129.462
+Final probe wall seconds: 0.750
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 20/120 dataset=cora method=B3 seed=14
+
+START dataset=cora method=B0 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s15
+Best ValAcc: 0.7980 in epoch 299
+Pretrain wall seconds: 128.892
+Final probe wall seconds: 0.766
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 21/120 dataset=cora method=B0 seed=15
+
+START dataset=cora method=B1 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s15
+Best ValAcc: 0.7920 in epoch 299
+Pretrain wall seconds: 128.817
+Final probe wall seconds: 0.777
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 22/120 dataset=cora method=B1 seed=15
+
+START dataset=cora method=B2 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s15
+Best ValAcc: 0.8020 in epoch 299
+Pretrain wall seconds: 128.430
+Final probe wall seconds: 0.741
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 23/120 dataset=cora method=B2 seed=15
+
+START dataset=cora method=B3 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s15
+Best ValAcc: 0.7980 in epoch 155
+Pretrain wall seconds: 129.494
+Final probe wall seconds: 0.740
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 24/120 dataset=cora method=B3 seed=15
+
+START dataset=cora method=B0 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s16
+Best ValAcc: 0.8100 in epoch 299
+Pretrain wall seconds: 128.850
+Final probe wall seconds: 0.768
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 25/120 dataset=cora method=B0 seed=16
+
+START dataset=cora method=B1 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s16
+Best ValAcc: 0.7980 in epoch 171
+Pretrain wall seconds: 129.440
+Final probe wall seconds: 0.714
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 26/120 dataset=cora method=B1 seed=16
+
+START dataset=cora method=B2 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s16
+Best ValAcc: 0.8160 in epoch 252
+Pretrain wall seconds: 129.643
+Final probe wall seconds: 0.764
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 27/120 dataset=cora method=B2 seed=16
+
+START dataset=cora method=B3 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s16
+Best ValAcc: 0.8120 in epoch 299
+Pretrain wall seconds: 129.208
+Final probe wall seconds: 0.744
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 28/120 dataset=cora method=B3 seed=16
+
+START dataset=cora method=B0 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s17
+Best ValAcc: 0.8140 in epoch 162
+Pretrain wall seconds: 128.879
+Final probe wall seconds: 0.723
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 29/120 dataset=cora method=B0 seed=17
+
+START dataset=cora method=B1 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s17
+Best ValAcc: 0.7900 in epoch 299
+Pretrain wall seconds: 129.117
+Final probe wall seconds: 0.762
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 30/120 dataset=cora method=B1 seed=17
+
+START dataset=cora method=B2 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s17
+Best ValAcc: 0.8160 in epoch 299
+Pretrain wall seconds: 129.631
+Final probe wall seconds: 0.799
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 31/120 dataset=cora method=B2 seed=17
+
+START dataset=cora method=B3 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s17
+Best ValAcc: 0.8100 in epoch 142
+Pretrain wall seconds: 129.335
+Final probe wall seconds: 0.754
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 32/120 dataset=cora method=B3 seed=17
+
+START dataset=cora method=B0 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s18
+Best ValAcc: 0.8100 in epoch 91
+Pretrain wall seconds: 129.106
+Final probe wall seconds: 0.723
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 33/120 dataset=cora method=B0 seed=18
+
+START dataset=cora method=B1 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s18
+Best ValAcc: 0.7900 in epoch 207
+Pretrain wall seconds: 129.191
+Final probe wall seconds: 0.743
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 34/120 dataset=cora method=B1 seed=18
+
+START dataset=cora method=B2 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s18
+Best ValAcc: 0.8060 in epoch 295
+Pretrain wall seconds: 129.505
+Final probe wall seconds: 0.747
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 35/120 dataset=cora method=B2 seed=18
+
+START dataset=cora method=B3 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s18
+Best ValAcc: 0.8100 in epoch 22
+Pretrain wall seconds: 128.934
+Final probe wall seconds: 0.736
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 36/120 dataset=cora method=B3 seed=18
+
+START dataset=cora method=B0 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B0_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s19
+Best ValAcc: 0.8100 in epoch 200
+Pretrain wall seconds: 128.689
+Final probe wall seconds: 0.744
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 37/120 dataset=cora method=B0 seed=19
+
+START dataset=cora method=B1 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B1_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s19
+Best ValAcc: 0.7940 in epoch 102
+Pretrain wall seconds: 129.181
+Final probe wall seconds: 0.719
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 38/120 dataset=cora method=B1 seed=19
+
+START dataset=cora method=B2 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B2_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s19
+Best ValAcc: 0.8080 in epoch 159
+Pretrain wall seconds: 129.650
+Final probe wall seconds: 0.721
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 39/120 dataset=cora method=B2 seed=19
+
+START dataset=cora method=B3 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_cora_B3_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s19
+Best ValAcc: 0.8080 in epoch 136
+Pretrain wall seconds: 129.013
+Final probe wall seconds: 0.760
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 40/120 dataset=cora method=B3 seed=19
+
+START dataset=citeseer method=B0 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s10
+Best ValAcc: 0.7180 in epoch 10
+Pretrain wall seconds: 52.853
+Final probe wall seconds: 1.117
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 41/120 dataset=citeseer method=B0 seed=10
+
+START dataset=citeseer method=B1 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s10
+Best ValAcc: 0.7240 in epoch 16
+Pretrain wall seconds: 54.038
+Final probe wall seconds: 1.071
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 42/120 dataset=citeseer method=B1 seed=10
+
+START dataset=citeseer method=B2 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s10
+Best ValAcc: 0.7120 in epoch 9
+Pretrain wall seconds: 53.479
+Final probe wall seconds: 1.095
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 43/120 dataset=citeseer method=B2 seed=10
+
+START dataset=citeseer method=B3 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s10
+Best ValAcc: 0.7280 in epoch 9
+Pretrain wall seconds: 53.237
+Final probe wall seconds: 1.073
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 44/120 dataset=citeseer method=B3 seed=10
+
+START dataset=citeseer method=B0 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s11
+Best ValAcc: 0.7120 in epoch 91
+Pretrain wall seconds: 53.010
+Final probe wall seconds: 1.072
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 45/120 dataset=citeseer method=B0 seed=11
+
+START dataset=citeseer method=B1 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s11
+Best ValAcc: 0.7220 in epoch 18
+Pretrain wall seconds: 53.547
+Final probe wall seconds: 1.069
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 46/120 dataset=citeseer method=B1 seed=11
+
+START dataset=citeseer method=B2 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s11
+Best ValAcc: 0.7140 in epoch 38
+Pretrain wall seconds: 53.238
+Final probe wall seconds: 1.038
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 47/120 dataset=citeseer method=B2 seed=11
+
+START dataset=citeseer method=B3 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s11
+Best ValAcc: 0.7140 in epoch 13
+Pretrain wall seconds: 53.775
+Final probe wall seconds: 1.109
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 48/120 dataset=citeseer method=B3 seed=11
+
+START dataset=citeseer method=B0 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s12
+Best ValAcc: 0.7160 in epoch 18
+Pretrain wall seconds: 53.041
+Final probe wall seconds: 1.033
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 49/120 dataset=citeseer method=B0 seed=12
+
+START dataset=citeseer method=B1 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s12
+Best ValAcc: 0.7300 in epoch 1
+Pretrain wall seconds: 53.939
+Final probe wall seconds: 1.081
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 50/120 dataset=citeseer method=B1 seed=12
+
+START dataset=citeseer method=B2 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s12
+Best ValAcc: 0.7140 in epoch 16
+Pretrain wall seconds: 53.461
+Final probe wall seconds: 1.017
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 51/120 dataset=citeseer method=B2 seed=12
+
+START dataset=citeseer method=B3 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s12
+Best ValAcc: 0.7180 in epoch 16
+Pretrain wall seconds: 53.497
+Final probe wall seconds: 1.084
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 52/120 dataset=citeseer method=B3 seed=12
+
+START dataset=citeseer method=B0 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s13
+Best ValAcc: 0.7220 in epoch 11
+Pretrain wall seconds: 53.257
+Final probe wall seconds: 1.068
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 53/120 dataset=citeseer method=B0 seed=13
+
+START dataset=citeseer method=B1 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s13
+Best ValAcc: 0.7220 in epoch 28
+Pretrain wall seconds: 53.497
+Final probe wall seconds: 1.081
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 54/120 dataset=citeseer method=B1 seed=13
+
+START dataset=citeseer method=B2 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s13
+Best ValAcc: 0.7240 in epoch 12
+Pretrain wall seconds: 54.008
+Final probe wall seconds: 1.052
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 55/120 dataset=citeseer method=B2 seed=13
+
+START dataset=citeseer method=B3 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s13
+Best ValAcc: 0.7160 in epoch 29
+Pretrain wall seconds: 53.708
+Final probe wall seconds: 1.040
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 56/120 dataset=citeseer method=B3 seed=13
+
+START dataset=citeseer method=B0 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s14
+Best ValAcc: 0.7180 in epoch 26
+Pretrain wall seconds: 53.531
+Final probe wall seconds: 1.021
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 57/120 dataset=citeseer method=B0 seed=14
+
+START dataset=citeseer method=B1 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s14
+Best ValAcc: 0.7280 in epoch 26
+Pretrain wall seconds: 53.311
+Final probe wall seconds: 1.057
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 58/120 dataset=citeseer method=B1 seed=14
+
+START dataset=citeseer method=B2 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s14
+Best ValAcc: 0.7240 in epoch 26
+Pretrain wall seconds: 53.489
+Final probe wall seconds: 1.066
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 59/120 dataset=citeseer method=B2 seed=14
+
+START dataset=citeseer method=B3 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s14
+Best ValAcc: 0.7240 in epoch 9
+Pretrain wall seconds: 53.390
+Final probe wall seconds: 1.064
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 60/120 dataset=citeseer method=B3 seed=14
+
+START dataset=citeseer method=B0 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s15
+Best ValAcc: 0.7240 in epoch 22
+Pretrain wall seconds: 53.551
+Final probe wall seconds: 1.117
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 61/120 dataset=citeseer method=B0 seed=15
+
+START dataset=citeseer method=B1 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s15
+Best ValAcc: 0.7220 in epoch 22
+Pretrain wall seconds: 53.557
+Final probe wall seconds: 1.051
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 62/120 dataset=citeseer method=B1 seed=15
+
+START dataset=citeseer method=B2 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s15
+Best ValAcc: 0.7220 in epoch 22
+Pretrain wall seconds: 53.341
+Final probe wall seconds: 1.051
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 63/120 dataset=citeseer method=B2 seed=15
+
+START dataset=citeseer method=B3 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s15
+Best ValAcc: 0.7240 in epoch 22
+Pretrain wall seconds: 53.375
+Final probe wall seconds: 1.081
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 64/120 dataset=citeseer method=B3 seed=15
+
+START dataset=citeseer method=B0 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s16
+Best ValAcc: 0.7360 in epoch 8
+Pretrain wall seconds: 53.082
+Final probe wall seconds: 1.081
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 65/120 dataset=citeseer method=B0 seed=16
+
+START dataset=citeseer method=B1 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s16
+Best ValAcc: 0.7340 in epoch 9
+Pretrain wall seconds: 53.523
+Final probe wall seconds: 1.039
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 66/120 dataset=citeseer method=B1 seed=16
+
+START dataset=citeseer method=B2 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s16
+Best ValAcc: 0.7340 in epoch 8
+Pretrain wall seconds: 53.560
+Final probe wall seconds: 1.043
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 67/120 dataset=citeseer method=B2 seed=16
+
+START dataset=citeseer method=B3 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s16
+Best ValAcc: 0.7280 in epoch 8
+Pretrain wall seconds: 53.659
+Final probe wall seconds: 1.062
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 68/120 dataset=citeseer method=B3 seed=16
+
+START dataset=citeseer method=B0 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s17
+Best ValAcc: 0.7200 in epoch 18
+Pretrain wall seconds: 53.361
+Final probe wall seconds: 1.081
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 69/120 dataset=citeseer method=B0 seed=17
+
+START dataset=citeseer method=B1 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s17
+Best ValAcc: 0.7400 in epoch 27
+Pretrain wall seconds: 53.600
+Final probe wall seconds: 1.062
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 70/120 dataset=citeseer method=B1 seed=17
+
+START dataset=citeseer method=B2 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s17
+Best ValAcc: 0.7100 in epoch 54
+Pretrain wall seconds: 53.257
+Final probe wall seconds: 1.076
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 71/120 dataset=citeseer method=B2 seed=17
+
+START dataset=citeseer method=B3 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s17
+Best ValAcc: 0.7180 in epoch 18
+Pretrain wall seconds: 53.337
+Final probe wall seconds: 1.042
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 72/120 dataset=citeseer method=B3 seed=17
+
+START dataset=citeseer method=B0 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s18
+Best ValAcc: 0.7260 in epoch 8
+Pretrain wall seconds: 53.269
+Final probe wall seconds: 1.061
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 73/120 dataset=citeseer method=B0 seed=18
+
+START dataset=citeseer method=B1 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s18
+Best ValAcc: 0.7300 in epoch 6
+Pretrain wall seconds: 53.389
+Final probe wall seconds: 1.112
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 74/120 dataset=citeseer method=B1 seed=18
+
+START dataset=citeseer method=B2 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s18
+Best ValAcc: 0.7300 in epoch 8
+Pretrain wall seconds: 53.227
+Final probe wall seconds: 1.034
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 75/120 dataset=citeseer method=B2 seed=18
+
+START dataset=citeseer method=B3 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s18
+Best ValAcc: 0.7280 in epoch 8
+Pretrain wall seconds: 53.462
+Final probe wall seconds: 1.032
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 76/120 dataset=citeseer method=B3 seed=18
+
+START dataset=citeseer method=B0 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B0_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s19
+Best ValAcc: 0.7280 in epoch 3
+Pretrain wall seconds: 53.643
+Final probe wall seconds: 1.055
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 77/120 dataset=citeseer method=B0 seed=19
+
+START dataset=citeseer method=B1 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B1_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s19
+Best ValAcc: 0.7500 in epoch 3
+Pretrain wall seconds: 53.385
+Final probe wall seconds: 1.020
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 78/120 dataset=citeseer method=B1 seed=19
+
+START dataset=citeseer method=B2 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B2_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s19
+Best ValAcc: 0.7340 in epoch 3
+Pretrain wall seconds: 53.469
+Final probe wall seconds: 1.054
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 79/120 dataset=citeseer method=B2 seed=19
+
+START dataset=citeseer method=B3 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_citeseer_B3_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s19
+Best ValAcc: 0.7340 in epoch 3
+Pretrain wall seconds: 53.479
+Final probe wall seconds: 1.055
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 80/120 dataset=citeseer method=B3 seed=19
+
+START dataset=pubmed method=B0 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s10
+Best ValAcc: 0.8420 in epoch 125
+Pretrain wall seconds: 248.241
+Final probe wall seconds: 1.167
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 81/120 dataset=pubmed method=B0 seed=10
+
+START dataset=pubmed method=B1 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s10
+Best ValAcc: 0.8260 in epoch 487
+Pretrain wall seconds: 250.553
+Final probe wall seconds: 1.209
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 82/120 dataset=pubmed method=B1 seed=10
+
+START dataset=pubmed method=B2 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s10
+Best ValAcc: 0.8420 in epoch 44
+Pretrain wall seconds: 251.865
+Final probe wall seconds: 1.134
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 83/120 dataset=pubmed method=B2 seed=10
+
+START dataset=pubmed method=B3 seed=10
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s10
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s10
+Best ValAcc: 0.8380 in epoch 72
+Pretrain wall seconds: 252.070
+Final probe wall seconds: 1.140
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 84/120 dataset=pubmed method=B3 seed=10
+
+START dataset=pubmed method=B0 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s11
+Best ValAcc: 0.8340 in epoch 297
+Pretrain wall seconds: 249.948
+Final probe wall seconds: 1.197
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 85/120 dataset=pubmed method=B0 seed=11
+
+START dataset=pubmed method=B1 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s11
+Best ValAcc: 0.8360 in epoch 173
+Pretrain wall seconds: 250.777
+Final probe wall seconds: 1.176
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 86/120 dataset=pubmed method=B1 seed=11
+
+START dataset=pubmed method=B2 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s11
+Best ValAcc: 0.8300 in epoch 499
+Pretrain wall seconds: 249.646
+Final probe wall seconds: 1.242
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 87/120 dataset=pubmed method=B2 seed=11
+
+START dataset=pubmed method=B3 seed=11
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s11
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s11
+Best ValAcc: 0.8360 in epoch 499
+Pretrain wall seconds: 249.370
+Final probe wall seconds: 1.279
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 88/120 dataset=pubmed method=B3 seed=11
+
+START dataset=pubmed method=B0 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s12
+Best ValAcc: 0.8400 in epoch 499
+Pretrain wall seconds: 250.249
+Final probe wall seconds: 1.281
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 89/120 dataset=pubmed method=B0 seed=12
+
+START dataset=pubmed method=B1 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s12
+Best ValAcc: 0.8300 in epoch 499
+Pretrain wall seconds: 252.268
+Final probe wall seconds: 1.220
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 90/120 dataset=pubmed method=B1 seed=12
+
+START dataset=pubmed method=B2 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s12
+Best ValAcc: 0.8320 in epoch 499
+Pretrain wall seconds: 250.424
+Final probe wall seconds: 1.207
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 91/120 dataset=pubmed method=B2 seed=12
+
+START dataset=pubmed method=B3 seed=12
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s12
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s12
+Best ValAcc: 0.8280 in epoch 175
+Pretrain wall seconds: 250.663
+Final probe wall seconds: 1.231
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 92/120 dataset=pubmed method=B3 seed=12
+
+START dataset=pubmed method=B0 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s13
+Best ValAcc: 0.8240 in epoch 193
+Pretrain wall seconds: 248.325
+Final probe wall seconds: 1.218
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 93/120 dataset=pubmed method=B0 seed=13
+
+START dataset=pubmed method=B1 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s13
+Best ValAcc: 0.8240 in epoch 499
+Pretrain wall seconds: 252.314
+Final probe wall seconds: 1.231
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 94/120 dataset=pubmed method=B1 seed=13
+
+START dataset=pubmed method=B2 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s13
+Best ValAcc: 0.8340 in epoch 416
+Pretrain wall seconds: 251.908
+Final probe wall seconds: 1.240
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 95/120 dataset=pubmed method=B2 seed=13
+
+START dataset=pubmed method=B3 seed=13
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s13
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s13
+Best ValAcc: 0.8240 in epoch 63
+Pretrain wall seconds: 252.526
+Final probe wall seconds: 1.144
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 96/120 dataset=pubmed method=B3 seed=13
+
+START dataset=pubmed method=B0 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s14
+Best ValAcc: 0.8280 in epoch 152
+Pretrain wall seconds: 248.522
+Final probe wall seconds: 1.211
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 97/120 dataset=pubmed method=B0 seed=14
+
+START dataset=pubmed method=B1 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s14
+Best ValAcc: 0.8260 in epoch 217
+Pretrain wall seconds: 251.149
+Final probe wall seconds: 1.135
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 98/120 dataset=pubmed method=B1 seed=14
+
+START dataset=pubmed method=B2 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s14
+Best ValAcc: 0.8320 in epoch 192
+Pretrain wall seconds: 251.711
+Final probe wall seconds: 1.173
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 99/120 dataset=pubmed method=B2 seed=14
+
+START dataset=pubmed method=B3 seed=14
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s14
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s14
+Best ValAcc: 0.8300 in epoch 109
+Pretrain wall seconds: 251.857
+Final probe wall seconds: 1.134
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 100/120 dataset=pubmed method=B3 seed=14
+
+START dataset=pubmed method=B0 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s15
+Best ValAcc: 0.8340 in epoch 236
+Pretrain wall seconds: 250.337
+Final probe wall seconds: 1.237
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 101/120 dataset=pubmed method=B0 seed=15
+
+START dataset=pubmed method=B1 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s15
+Best ValAcc: 0.8200 in epoch 268
+Pretrain wall seconds: 250.364
+Final probe wall seconds: 1.161
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 102/120 dataset=pubmed method=B1 seed=15
+
+START dataset=pubmed method=B2 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s15
+Best ValAcc: 0.8420 in epoch 71
+Pretrain wall seconds: 252.385
+Final probe wall seconds: 1.217
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 103/120 dataset=pubmed method=B2 seed=15
+
+START dataset=pubmed method=B3 seed=15
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s15
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s15
+Best ValAcc: 0.8340 in epoch 337
+Pretrain wall seconds: 252.236
+Final probe wall seconds: 1.206
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 104/120 dataset=pubmed method=B3 seed=15
+
+START dataset=pubmed method=B0 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s16
+Best ValAcc: 0.8360 in epoch 96
+Pretrain wall seconds: 250.118
+Final probe wall seconds: 1.145
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 105/120 dataset=pubmed method=B0 seed=16
+
+START dataset=pubmed method=B1 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s16
+Best ValAcc: 0.8240 in epoch 190
+Pretrain wall seconds: 252.396
+Final probe wall seconds: 1.221
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 106/120 dataset=pubmed method=B1 seed=16
+
+START dataset=pubmed method=B2 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s16
+Best ValAcc: 0.8400 in epoch 140
+Pretrain wall seconds: 252.437
+Final probe wall seconds: 1.169
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 107/120 dataset=pubmed method=B2 seed=16
+
+START dataset=pubmed method=B3 seed=16
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s16
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s16
+Best ValAcc: 0.8300 in epoch 139
+Pretrain wall seconds: 249.450
+Final probe wall seconds: 1.175
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 108/120 dataset=pubmed method=B3 seed=16
+
+START dataset=pubmed method=B0 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s17
+Best ValAcc: 0.8320 in epoch 73
+Pretrain wall seconds: 250.143
+Final probe wall seconds: 1.214
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 109/120 dataset=pubmed method=B0 seed=17
+
+START dataset=pubmed method=B1 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s17
+Best ValAcc: 0.8140 in epoch 499
+Pretrain wall seconds: 252.294
+Final probe wall seconds: 1.261
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 110/120 dataset=pubmed method=B1 seed=17
+
+START dataset=pubmed method=B2 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s17
+Best ValAcc: 0.8340 in epoch 262
+Pretrain wall seconds: 252.125
+Final probe wall seconds: 1.193
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 111/120 dataset=pubmed method=B2 seed=17
+
+START dataset=pubmed method=B3 seed=17
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s17
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s17
+Best ValAcc: 0.8300 in epoch 275
+Pretrain wall seconds: 252.052
+Final probe wall seconds: 1.215
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 112/120 dataset=pubmed method=B3 seed=17
+
+START dataset=pubmed method=B0 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s18
+Best ValAcc: 0.8320 in epoch 82
+Pretrain wall seconds: 250.903
+Final probe wall seconds: 1.172
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 113/120 dataset=pubmed method=B0 seed=18
+
+START dataset=pubmed method=B1 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s18
+Best ValAcc: 0.8240 in epoch 499
+Pretrain wall seconds: 252.548
+Final probe wall seconds: 1.242
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 114/120 dataset=pubmed method=B1 seed=18
+
+START dataset=pubmed method=B2 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s18
+Best ValAcc: 0.8340 in epoch 101
+Pretrain wall seconds: 252.612
+Final probe wall seconds: 1.230
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 115/120 dataset=pubmed method=B2 seed=18
+
+START dataset=pubmed method=B3 seed=18
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s18
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s18
+Best ValAcc: 0.8280 in epoch 499
+Pretrain wall seconds: 252.227
+Final probe wall seconds: 1.238
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 116/120 dataset=pubmed method=B3 seed=18
+
+START dataset=pubmed method=B0 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B0_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s19
+Best ValAcc: 0.8400 in epoch 119
+Pretrain wall seconds: 250.234
+Final probe wall seconds: 1.167
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 117/120 dataset=pubmed method=B0 seed=19
+
+START dataset=pubmed method=B1 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B1_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s19
+Best ValAcc: 0.8280 in epoch 139
+Pretrain wall seconds: 252.152
+Final probe wall seconds: 1.219
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 118/120 dataset=pubmed method=B1 seed=19
+
+START dataset=pubmed method=B2 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B2_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s19
+Best ValAcc: 0.8400 in epoch 499
+Pretrain wall seconds: 252.195
+Final probe wall seconds: 1.253
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 119/120 dataset=pubmed method=B2 seed=19
+
+START dataset=pubmed method=B3 seed=19
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/formal120_x6CfgE/formal120_x6CfgE_pubmed_B3_s19
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s19
+Best ValAcc: 0.8380 in epoch 198
+Pretrain wall seconds: 250.043
+Final probe wall seconds: 1.230
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.
+DONE 120/120 dataset=pubmed method=B3 seed=19
+
+ALL_DONE 120/120
+BATCH_EXIT_CODE=0

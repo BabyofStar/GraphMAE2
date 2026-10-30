@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "phase": "smoke",
+  "method": "B3",
+  "dataset": "cora",
+  "seed": 0,
+  "recorder_version": "1.0.0"
+}

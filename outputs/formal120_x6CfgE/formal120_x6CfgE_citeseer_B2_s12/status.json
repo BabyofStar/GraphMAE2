@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "phase": "formal",
+  "method": "B2",
+  "dataset": "citeseer",
+  "seed": 12,
+  "recorder_version": "1.0.0"
+}

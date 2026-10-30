@@ -80,6 +80,7 @@ class PreModel(nn.Module):
             structure_warmup_ratio: float = 0.2,
             structure_ramp_end_ratio: float = 0.8,
             mask_log_interval: int = 100,
+            structure_shuffle_seed: int = 20261025,
          ):
         super(PreModel, self).__init__()
         self.input_masker = StructureInputMask(
@@ -88,6 +89,7 @@ class PreModel(nn.Module):
             warmup_ratio=structure_warmup_ratio,
             ramp_end_ratio=structure_ramp_end_ratio,
             log_interval=mask_log_interval,
+            shuffle_seed=structure_shuffle_seed,
         )
         self._mask_rate = mask_rate
         self._remask_rate = remask_rate

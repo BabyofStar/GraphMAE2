@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "phase": "formal",
+  "method": "B2",
+  "dataset": "pubmed",
+  "seed": 15,
+  "recorder_version": "1.0.0"
+}

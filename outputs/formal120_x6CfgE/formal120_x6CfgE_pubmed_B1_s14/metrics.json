@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "phase": "formal",
+  "method": "B1",
+  "dataset": "pubmed",
+  "seed": 14,
+  "recorder_version": "1.0.0",
+  "best_val_acc": 0.826,
+  "best_val_epoch": 217,
+  "dataset_info": {
+    "nodes": 19717,
+    "edges_with_self_loops": 108365,
+    "features": 500,
+    "classes": 3,
+    "splits": {
+      "train_mask": 60,
+      "val_mask": 500,
+      "test_mask": 1000
+    },
+    "split_mask_sha256": {
+      "train_mask": "c212c436a88f7ca1f236f4e98a2ce1070e4a7e1bdf1d9f8e3899ee8d0aa8b429",
+      "val_mask": "71f6cee77418b9ccab03e3c6a04a71f1fe0c07007ba3f006589bdda856de0b8b",
+      "test_mask": "fd659d892af41768c740746a0ecccdb3984e5277939e9264588b5f6efb4d5385"
+    }
+  },
+  "intermediate_probe_calls": 10,
+  "mask_records": 21,
+  "checkpoint_path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s14/models.pt",
+  "checkpoint_sha256": "77a444b846a868ce8b55e983a76664e4fbc48a70959c703b79f86a7e2da6559c",
+  "checkpoint_readback_equal": true,
+  "test_metrics_file": "test_metrics.json"
+}

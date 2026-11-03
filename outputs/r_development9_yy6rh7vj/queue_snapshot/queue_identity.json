@@ -1,0 +1,31 @@
+{
+  "package": "graphmae2_r_development9",
+  "version": 1,
+  "queue_files_sha256": {
+    "launch_r9.py": "d21049bab41aa3d215b0f4c7471c790c99c1609bbde2938a8baef8edb226ce44",
+    "legacy_candidate.py": "34fa7ca3a6415c025f83a0bd37281c251660b1dd00c46a7410af154436add12f",
+    "legacy_reference.py": "ebfa750def8e66ae26deec251a1de830b52a41f736e682f818adedca1928d603",
+    "local_validation.json": "76c56d8c8b6d2da9e122e7d003a0bfc3abca907dd12312f820cb313e541e9eaa",
+    "README.md": "6404cda92205a7393e34ff483a21d7422ee54559fc785f86d24e18836953fb60",
+    "run_r9.py": "d98943f903f42521986912606d95fa41c8e9620acd2eaa409c85d98578083804",
+    "start.sh": "fbe509c604c34360841205d42a8d854536dc18b98d59f4a5bd6932da6a020ffe",
+    "test_r9_contract.py": "fcbdc5ce0f628a039056fe9bf283ff78678e8e2013e5b4e4bb75b8eda79c6a61"
+  },
+  "accepted_r_package_files_sha256": {
+    "manifest.json": "d9189ce6c30e5082eacdd60c2f0c2ae4d051b64fdd33db8e3a9f333356c982b5",
+    "run_stage1_r.py": "fa97866ccd803211e90c266553557b16b00d9333b00513b6333755055375519a"
+  },
+  "accepted_stage1_directory": "/home/jovyan/work/GraphMAE2/outputs/r_dev1_stage1_osgce2je",
+  "development_runs": 9,
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "random_group_seeds": {
+    "cora": 2026110301,
+    "citeseer": 2026110302,
+    "pubmed": 2026110303
+  },
+  "test_metrics_used_for_selection": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "tampered_preimage_rejected": true,
+  "real_git_apply_and_postimage_verified": true,
+  "second_install_is_noop": true,
+  "postimage_files": 34,
+  "fixture": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\work\\r_install_fixture_ar4m5d_4",
+  "server_runtime_tests": "NOT_RUN",
+  "local_recorder_contract_tests": "6 PASS",
+  "local_math_tests": "NOT_RUN: system Python has no NumPy; import failed; no dependencies installed",
+  "local_shell_syntax_check": "NOT_RUN: Git Bash could not start (NtCreateDirectoryObject access denied); acceptance.sh must be run on Linux server",
+  "status_scope": "PASS covers installer and six standard-library recorder contract tests only; server acceptance remains pending"
+}

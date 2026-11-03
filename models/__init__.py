@@ -66,5 +66,11 @@ def build_model(args):
         structure_ramp_end_ratio=getattr(args, "structure_ramp_end_ratio", 0.8),
         mask_log_interval=getattr(args, "mask_log_interval", 100),
         structure_shuffle_seed=getattr(args, "structure_shuffle_seed", 20261025),
+        input_mask_diagnostics=getattr(args, "input_mask_diagnostics", False),
+        difficulty_ema_beta=getattr(args, "difficulty_ema_beta", 0.9),
+        difficulty_clip_quantile=getattr(args, "difficulty_clip_quantile", 0.95),
+        density_bins=getattr(args, "density_bins", 4),
+        density_chunk_size=getattr(args, "density_chunk_size", 256),
+        random_group_seed=getattr(args, "random_group_seed", 2026110301),
     )
     return model

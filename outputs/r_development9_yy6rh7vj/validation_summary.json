@@ -1,0 +1,685 @@
+{
+  "groups": [
+    {
+      "dataset": "cora",
+      "n": 3,
+      "R_val_percent_mean": 81.0,
+      "R_val_percent_population_std": 0.6531972647421785,
+      "R_minus_S_paired_pp": [
+        -0.5999999999999894,
+        -1.0000000000000009,
+        -0.40000000000000036
+      ],
+      "R_minus_S_mean_pp": -0.6666666666666635,
+      "R_vs_S_win_tie_loss": [
+        0,
+        0,
+        3
+      ],
+      "R_minus_B0_paired_pp": [
+        0.8000000000000007,
+        0.8000000000000007,
+        -0.20000000000000018
+      ],
+      "R_minus_B0_mean_pp": 0.46666666666666706,
+      "R_vs_B0_win_tie_loss": [
+        2,
+        0,
+        1
+      ],
+      "R_minus_B2_paired_pp": [
+        0.20000000000000018,
+        0.40000000000000036,
+        -0.40000000000000036
+      ],
+      "R_minus_B2_mean_pp": 0.06666666666666672,
+      "R_vs_B2_win_tie_loss": [
+        2,
+        0,
+        1
+      ],
+      "S_minus_R_paired_pp": [
+        0.5999999999999894,
+        1.0000000000000009,
+        0.40000000000000036
+      ],
+      "S_minus_R_mean_pp": 0.6666666666666635,
+      "S_minus_B0_paired_pp": [
+        1.3999999999999901,
+        1.8000000000000016,
+        0.20000000000000018
+      ],
+      "S_minus_B0_mean_pp": 1.1333333333333306,
+      "S_minus_B2_paired_pp": [
+        0.7999999999999896,
+        1.4000000000000012,
+        0.0
+      ],
+      "S_minus_B2_mean_pp": 0.7333333333333303
+    },
+    {
+      "dataset": "citeseer",
+      "n": 3,
+      "R_val_percent_mean": 72.0,
+      "R_val_percent_population_std": 1.0198039027185604,
+      "R_minus_S_paired_pp": [
+        -0.6000000000000005,
+        0.0,
+        -0.40000000000000036
+      ],
+      "R_minus_S_mean_pp": -0.33333333333333365,
+      "R_vs_S_win_tie_loss": [
+        0,
+        1,
+        2
+      ],
+      "R_minus_B0_paired_pp": [
+        -1.0000000000000009,
+        -1.4000000000000012,
+        0.20000000000000018
+      ],
+      "R_minus_B0_mean_pp": -0.733333333333334,
+      "R_vs_B0_win_tie_loss": [
+        1,
+        0,
+        2
+      ],
+      "R_minus_B2_paired_pp": [
+        -1.200000000000001,
+        -2.200000000000002,
+        -0.20000000000000018
+      ],
+      "R_minus_B2_mean_pp": -1.200000000000001,
+      "R_vs_B2_win_tie_loss": [
+        0,
+        0,
+        3
+      ],
+      "S_minus_R_paired_pp": [
+        0.6000000000000005,
+        -0.0,
+        0.40000000000000036
+      ],
+      "S_minus_R_mean_pp": 0.33333333333333365,
+      "S_minus_B0_paired_pp": [
+        -0.40000000000000036,
+        -1.4000000000000012,
+        0.6000000000000005
+      ],
+      "S_minus_B0_mean_pp": -0.40000000000000036,
+      "S_minus_B2_paired_pp": [
+        -0.6000000000000005,
+        -2.200000000000002,
+        0.20000000000000018
+      ],
+      "S_minus_B2_mean_pp": -0.8666666666666675
+    },
+    {
+      "dataset": "pubmed",
+      "n": 3,
+      "R_val_percent_mean": 83.06666666666666,
+      "R_val_percent_population_std": 0.5249338582674549,
+      "R_minus_S_paired_pp": [
+        0.20000000000000018,
+        -1.200000000000001,
+        -1.6000000000000014
+      ],
+      "R_minus_S_mean_pp": -0.8666666666666675,
+      "R_vs_S_win_tie_loss": [
+        1,
+        0,
+        2
+      ],
+      "R_minus_B0_paired_pp": [
+        1.0000000000000009,
+        -0.8000000000000007,
+        -1.0000000000000009
+      ],
+      "R_minus_B0_mean_pp": -0.2666666666666669,
+      "R_vs_B0_win_tie_loss": [
+        1,
+        0,
+        2
+      ],
+      "R_minus_B2_paired_pp": [
+        0.6000000000000005,
+        -1.0000000000000009,
+        -1.200000000000001
+      ],
+      "R_minus_B2_mean_pp": -0.5333333333333338,
+      "R_vs_B2_win_tie_loss": [
+        1,
+        0,
+        2
+      ],
+      "S_minus_R_paired_pp": [
+        -0.20000000000000018,
+        1.200000000000001,
+        1.6000000000000014
+      ],
+      "S_minus_R_mean_pp": 0.8666666666666675,
+      "S_minus_B0_paired_pp": [
+        0.8000000000000007,
+        0.40000000000000036,
+        0.6000000000000005
+      ],
+      "S_minus_B0_mean_pp": 0.6000000000000005,
+      "S_minus_B2_paired_pp": [
+        0.40000000000000036,
+        0.20000000000000018,
+        0.40000000000000036
+      ],
+      "S_minus_B2_mean_pp": 0.33333333333333365
+    }
+  ],
+  "runs": [
+    {
+      "dataset": "cora",
+      "method": "R",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 117,
+      "pretrain_wall_seconds": 323.75645162095316,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0",
+      "random_group_plan": {
+        "random_group_seed": 2026110301,
+        "nodes": 2708,
+        "group_sizes": [
+          677,
+          677,
+          677,
+          677
+        ],
+        "masked": 1354,
+        "quotas": [
+          339,
+          339,
+          338,
+          338
+        ],
+        "ordered_group_nodes_sha256": "fc9a8af03f4f8c0e444f80f93f33b745b4a87946ac56f04db433c06202e42b87",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "89859dec0d6005e4d57680116aa3973f1438116848544d71992eb6fbb6eff389",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05206619901582599,
+          "cpu_seconds": 0.05133781199999987,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 672075776
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 323.75645162095316,
+          "cpu_seconds": 145.429031787,
+          "pytorch_peak_allocated_bytes": 436539392,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1268076544
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.0998847868759185,
+          "cpu_seconds": 1.114258102000008,
+          "pytorch_peak_allocated_bytes": 209964544,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1332170752
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.22024650708772242,
+        "checkpoint_write_and_readback_wall_seconds": 6.414110162993893,
+        "runner_wall_seconds_to_artifact_export": 338.17535327211954
+      }
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "seed": 1,
+      "best_val_acc": 0.802,
+      "best_val_epoch": 299,
+      "pretrain_wall_seconds": 216.55279300687835,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1",
+      "random_group_plan": {
+        "random_group_seed": 2026110301,
+        "nodes": 2708,
+        "group_sizes": [
+          677,
+          677,
+          677,
+          677
+        ],
+        "masked": 1354,
+        "quotas": [
+          339,
+          339,
+          338,
+          338
+        ],
+        "ordered_group_nodes_sha256": "fc9a8af03f4f8c0e444f80f93f33b745b4a87946ac56f04db433c06202e42b87",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "af90af5b64c25921f4a8bfef361d2535e880f4acdf153da91995fb211ae688da",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.053075585048645735,
+          "cpu_seconds": 0.05062105500000058,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 675123200
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 216.55279300687835,
+          "cpu_seconds": 111.282467739,
+          "pytorch_peak_allocated_bytes": 436539392,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1254555648
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.3413726708386093,
+          "cpu_seconds": 1.3613231589999941,
+          "pytorch_peak_allocated_bytes": 209964544,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1318256640
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.21712068584747612,
+        "checkpoint_write_and_readback_wall_seconds": 6.528764245798811,
+        "runner_wall_seconds_to_artifact_export": 231.23754607117735
+      }
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "seed": 2,
+      "best_val_acc": 0.818,
+      "best_val_epoch": 236,
+      "pretrain_wall_seconds": 332.8086418618914,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2",
+      "random_group_plan": {
+        "random_group_seed": 2026110301,
+        "nodes": 2708,
+        "group_sizes": [
+          677,
+          677,
+          677,
+          677
+        ],
+        "masked": 1354,
+        "quotas": [
+          339,
+          339,
+          338,
+          338
+        ],
+        "ordered_group_nodes_sha256": "fc9a8af03f4f8c0e444f80f93f33b745b4a87946ac56f04db433c06202e42b87",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "dbbef0bd2d8ba07c8af76a030c14aca6f9b277e6540b51758129b145047ab01b",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05309898010455072,
+          "cpu_seconds": 0.05178117999999987,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 675106816
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 332.8086418618914,
+          "cpu_seconds": 145.60719515199997,
+          "pytorch_peak_allocated_bytes": 436539392,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1275715584
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.2022358099929988,
+          "cpu_seconds": 1.2170602940000208,
+          "pytorch_peak_allocated_bytes": 209964544,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1339809792
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.21189446584321558,
+        "checkpoint_write_and_readback_wall_seconds": 6.5015320831444114,
+        "runner_wall_seconds_to_artifact_export": 346.5998282430228
+      }
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "seed": 0,
+      "best_val_acc": 0.71,
+      "best_val_epoch": 9,
+      "pretrain_wall_seconds": 98.84052825300023,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0",
+      "random_group_plan": {
+        "random_group_seed": 2026110302,
+        "nodes": 3327,
+        "group_sizes": [
+          832,
+          832,
+          832,
+          831
+        ],
+        "masked": 1663,
+        "quotas": [
+          416,
+          416,
+          416,
+          415
+        ],
+        "ordered_group_nodes_sha256": "37ee6eaa8a882e3519059eba6ffe97e74f103c9e1409cbb2cc5f9ce03723f3fe",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "9fec7f7e499f5cdacc4d9043e46af3f7c7c288e80a950fc5a4ca893b31b52a24",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.06969207595102489,
+          "cpu_seconds": 0.06826012900000045,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 707358720
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 98.84052825300023,
+          "cpu_seconds": 42.397520488,
+          "pytorch_peak_allocated_bytes": 832807424,
+          "pytorch_peak_reserved_bytes": 908066816,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1269784576
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.6788479459937662,
+          "cpu_seconds": 1.7019869929999984,
+          "pytorch_peak_allocated_bytes": 337134592,
+          "pytorch_peak_reserved_bytes": 908066816,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1379885056
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.29864585888572037,
+        "checkpoint_write_and_readback_wall_seconds": 6.7187059668358415,
+        "runner_wall_seconds_to_artifact_export": 113.63034606305882
+      }
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "seed": 1,
+      "best_val_acc": 0.734,
+      "best_val_epoch": 2,
+      "pretrain_wall_seconds": 101.11909606307745,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1",
+      "random_group_plan": {
+        "random_group_seed": 2026110302,
+        "nodes": 3327,
+        "group_sizes": [
+          832,
+          832,
+          832,
+          831
+        ],
+        "masked": 1663,
+        "quotas": [
+          416,
+          416,
+          416,
+          415
+        ],
+        "ordered_group_nodes_sha256": "37ee6eaa8a882e3519059eba6ffe97e74f103c9e1409cbb2cc5f9ce03723f3fe",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "b71d990637569a07f545408f660d9d523df218c1412b9aa932dd79c1938fe30a",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.07211359008215368,
+          "cpu_seconds": 0.07023563,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 706568192
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 101.11909606307745,
+          "cpu_seconds": 42.348528103999996,
+          "pytorch_peak_allocated_bytes": 832807424,
+          "pytorch_peak_reserved_bytes": 908066816,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1260343296
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.7776559530757368,
+          "cpu_seconds": 1.8021978470000022,
+          "pytorch_peak_allocated_bytes": 337134592,
+          "pytorch_peak_reserved_bytes": 908066816,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1370836992
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.2985961730591953,
+        "checkpoint_write_and_readback_wall_seconds": 6.9099837590474635,
+        "runner_wall_seconds_to_artifact_export": 116.37898959009908
+      }
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "seed": 2,
+      "best_val_acc": 0.716,
+      "best_val_epoch": 10,
+      "pretrain_wall_seconds": 131.26952365785837,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2",
+      "random_group_plan": {
+        "random_group_seed": 2026110302,
+        "nodes": 3327,
+        "group_sizes": [
+          832,
+          832,
+          832,
+          831
+        ],
+        "masked": 1663,
+        "quotas": [
+          416,
+          416,
+          416,
+          415
+        ],
+        "ordered_group_nodes_sha256": "37ee6eaa8a882e3519059eba6ffe97e74f103c9e1409cbb2cc5f9ce03723f3fe",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "479b4ad73c80742890bc76813e22985e8f09b01cf941a6605af6d7b1a36fddd2",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.07230809493921697,
+          "cpu_seconds": 0.06988263900000025,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 707874816
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 131.26952365785837,
+          "cpu_seconds": 33.978064794999995,
+          "pytorch_peak_allocated_bytes": 832807424,
+          "pytorch_peak_reserved_bytes": 908066816,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1284767744
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.5765607811044902,
+          "cpu_seconds": 1.597395726000002,
+          "pytorch_peak_allocated_bytes": 337134592,
+          "pytorch_peak_reserved_bytes": 908066816,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1395261440
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.31872117100283504,
+        "checkpoint_write_and_readback_wall_seconds": 5.797073232010007,
+        "runner_wall_seconds_to_artifact_export": 144.9367733350955
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "seed": 0,
+      "best_val_acc": 0.838,
+      "best_val_epoch": 90,
+      "pretrain_wall_seconds": 554.4438239489682,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0",
+      "random_group_plan": {
+        "random_group_seed": 2026110303,
+        "nodes": 19717,
+        "group_sizes": [
+          4930,
+          4929,
+          4929,
+          4929
+        ],
+        "masked": 17745,
+        "quotas": [
+          4437,
+          4436,
+          4436,
+          4436
+        ],
+        "ordered_group_nodes_sha256": "3e49823ffaebbe030154b35a188a58efc3c5d7a7b5ad56c9ceecc79a157ae1a2",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "c404c0c76ec02ce4dc55c81d5cffc4df4aaebf70fc97e156a1a5076c66c02d0a",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 1.0592208469752222,
+          "cpu_seconds": 3.0960900789999997,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 756346880
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 554.4438239489682,
+          "cpu_seconds": 192.610247525,
+          "pytorch_peak_allocated_bytes": 1102345216,
+          "pytorch_peak_reserved_bytes": 1329594368,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1281114112
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 2.5374377509579062,
+          "cpu_seconds": 2.5758927740000104,
+          "pytorch_peak_allocated_bytes": 289694720,
+          "pytorch_peak_reserved_bytes": 1329594368,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1295663104
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.9730084389448166,
+        "checkpoint_write_and_readback_wall_seconds": 7.04384404188022,
+        "runner_wall_seconds_to_artifact_export": 573.1355908950791
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "seed": 1,
+      "best_val_acc": 0.826,
+      "best_val_epoch": 499,
+      "pretrain_wall_seconds": 522.901794024976,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1",
+      "random_group_plan": {
+        "random_group_seed": 2026110303,
+        "nodes": 19717,
+        "group_sizes": [
+          4930,
+          4929,
+          4929,
+          4929
+        ],
+        "masked": 17745,
+        "quotas": [
+          4437,
+          4436,
+          4436,
+          4436
+        ],
+        "ordered_group_nodes_sha256": "3e49823ffaebbe030154b35a188a58efc3c5d7a7b5ad56c9ceecc79a157ae1a2",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "b6f2e334a09885cdfeeef3d76becd95798fd514cfaaf4214e0b7a2171c1ebd28",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 1.130725999828428,
+          "cpu_seconds": 3.3064306499999994,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 759652352
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 522.901794024976,
+          "cpu_seconds": 182.390079996,
+          "pytorch_peak_allocated_bytes": 1102345216,
+          "pytorch_peak_reserved_bytes": 1329594368,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1287516160
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 2.1519509439822286,
+          "cpu_seconds": 2.1844401469999752,
+          "pytorch_peak_allocated_bytes": 289694720,
+          "pytorch_peak_reserved_bytes": 1329594368,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1302065152
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.9826629140879959,
+        "checkpoint_write_and_readback_wall_seconds": 6.860359004000202,
+        "runner_wall_seconds_to_artifact_export": 539.0313697990496
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "seed": 2,
+      "best_val_acc": 0.828,
+      "best_val_epoch": 102,
+      "pretrain_wall_seconds": 542.5729798548855,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2",
+      "random_group_plan": {
+        "random_group_seed": 2026110303,
+        "nodes": 19717,
+        "group_sizes": [
+          4930,
+          4929,
+          4929,
+          4929
+        ],
+        "masked": 17745,
+        "quotas": [
+          4437,
+          4436,
+          4436,
+          4436
+        ],
+        "ordered_group_nodes_sha256": "3e49823ffaebbe030154b35a188a58efc3c5d7a7b5ad56c9ceecc79a157ae1a2",
+        "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+        "density_layer_semantics": "true local-feature-density partitions"
+      },
+      "checkpoint_sha256": "8c7ef252839d73e2c0f3f8cb8c135e0c3dcabd15bd00c8b41acb0a8edca178e0",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 1.0282482330221683,
+          "cpu_seconds": 3.1034233760000003,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 761339904
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 542.5729798548855,
+          "cpu_seconds": 187.24611416099998,
+          "pytorch_peak_allocated_bytes": 1102345216,
+          "pytorch_peak_reserved_bytes": 1329594368,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1267564544
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.9936149530112743,
+          "cpu_seconds": 2.0230978269999866,
+          "pytorch_peak_allocated_bytes": 289694720,
+          "pytorch_peak_reserved_bytes": 1329594368,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1282506752
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 1.0159668740816414,
+        "checkpoint_write_and_readback_wall_seconds": 6.683162573026493,
+        "runner_wall_seconds_to_artifact_export": 558.3899236561265
+      }
+    }
+  ],
+  "primary_comparison": "S_minus_R",
+  "equal_dataset_mean_S_minus_R_pp": 0.6222222222222215,
+  "test_metrics_opened": false,
+  "interpretation": "Exploratory development validation, n=3; one fixed random grouping per dataset; no significance or equivalence claim"
+}

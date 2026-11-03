@@ -1,0 +1,65 @@
+CANDIDATES18_DIR=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS
+REFERENCE_AUDIT=PASS 18/18; validation only
+PLAN=D x 9, then S x 9; official full budgets; no DS
+START dataset=cora method=D seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_cora_D_s0/train.log
+DONE 1/18 dataset=cora method=D seed=0 BestVal=0.8060 PretrainSeconds=133.63
+START dataset=cora method=D seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_cora_D_s1/train.log
+DONE 2/18 dataset=cora method=D seed=1 BestVal=0.7960 PretrainSeconds=132.56
+START dataset=cora method=D seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_cora_D_s2/train.log
+DONE 3/18 dataset=cora method=D seed=2 BestVal=0.8220 PretrainSeconds=133.75
+START dataset=citeseer method=D seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_D_s0/train.log
+DONE 4/18 dataset=citeseer method=D seed=0 BestVal=0.7220 PretrainSeconds=55.43
+START dataset=citeseer method=D seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_D_s1/train.log
+DONE 5/18 dataset=citeseer method=D seed=1 BestVal=0.7480 PretrainSeconds=55.22
+START dataset=citeseer method=D seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_D_s2/train.log
+DONE 6/18 dataset=citeseer method=D seed=2 BestVal=0.7200 PretrainSeconds=55.02
+START dataset=pubmed method=D seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_pubmed_D_s0/train.log
+DONE 7/18 dataset=pubmed method=D seed=0 BestVal=0.8300 PretrainSeconds=259.30
+START dataset=pubmed method=D seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_pubmed_D_s1/train.log
+DONE 8/18 dataset=pubmed method=D seed=1 BestVal=0.8320 PretrainSeconds=259.09
+START dataset=pubmed method=D seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_pubmed_D_s2/train.log
+DONE 9/18 dataset=pubmed method=D seed=2 BestVal=0.8340 PretrainSeconds=259.38
+START dataset=cora method=S seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_cora_S_s0/train.log
+DONE 10/18 dataset=cora method=S seed=0 BestVal=0.8160 PretrainSeconds=132.65
+START dataset=cora method=S seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_cora_S_s1/train.log
+DONE 11/18 dataset=cora method=S seed=1 BestVal=0.8120 PretrainSeconds=132.29
+START dataset=cora method=S seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_cora_S_s2/train.log
+DONE 12/18 dataset=cora method=S seed=2 BestVal=0.8220 PretrainSeconds=132.02
+START dataset=citeseer method=S seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_S_s0/train.log
+DONE 13/18 dataset=citeseer method=S seed=0 BestVal=0.7160 PretrainSeconds=54.73
+START dataset=citeseer method=S seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_S_s1/train.log
+DONE 14/18 dataset=citeseer method=S seed=1 BestVal=0.7340 PretrainSeconds=54.94
+START dataset=citeseer method=S seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_S_s2/train.log
+DONE 15/18 dataset=citeseer method=S seed=2 BestVal=0.7200 PretrainSeconds=54.48
+START dataset=pubmed method=S seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_pubmed_S_s0/train.log
+DONE 16/18 dataset=pubmed method=S seed=0 BestVal=0.8360 PretrainSeconds=257.50
+START dataset=pubmed method=S seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_pubmed_S_s1/train.log
+DONE 17/18 dataset=pubmed method=S seed=1 BestVal=0.8380 PretrainSeconds=257.90
+START dataset=pubmed method=S seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_pubmed_S_s2/train.log
+DONE 18/18 dataset=pubmed method=S seed=2 BestVal=0.8440 PretrainSeconds=257.78
+VAL_COMPARE cora D n=3 80.800 +/- 1.071 % delta_B0=+0.267pp delta_B2=-0.133pp
+VAL_COMPARE cora S n=3 81.667 +/- 0.411 % delta_B0=+1.133pp delta_B2=+0.733pp
+VAL_COMPARE citeseer D n=3 73.000 +/- 1.275 % delta_B0=+0.267pp delta_B2=-0.200pp
+VAL_COMPARE citeseer S n=3 72.333 +/- 0.772 % delta_B0=-0.400pp delta_B2=-0.867pp
+VAL_COMPARE pubmed D n=3 83.200 +/- 0.163 % delta_B0=-0.133pp delta_B2=-0.400pp
+VAL_COMPARE pubmed S n=3 83.933 +/- 0.340 % delta_B0=+0.600pp delta_B2=+0.333pp
+ALL_DONE 18/18
+BATCH_EXIT_CODE=0

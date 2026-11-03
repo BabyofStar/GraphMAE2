@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "phase": "development",
+  "method": "R",
+  "dataset": "citeseer",
+  "seed": 1,
+  "recorder_version": "2.0.0-r-dev1",
+  "official_epoch_budget": true,
+  "reviewed_github_commit": "9f693f995993ed33b9372b48cd2322b956eaf14c",
+  "best_val_acc": 0.734,
+  "best_val_epoch": 2,
+  "dataset_info": {
+    "nodes": 3327,
+    "edges_with_self_loops": 12431,
+    "features": 3703,
+    "classes": 6,
+    "splits": {
+      "train_mask": 120,
+      "val_mask": 500,
+      "test_mask": 1000
+    },
+    "split_mask_sha256": {
+      "train_mask": "8efce52f9800be63f1ac0858b52958bbdde930d20ce5a0b4e5431c13a7d16eab",
+      "val_mask": "b11b25e3892ac2656e35555f2ea1ddcbccba18f2f1233baffbfdaacf3a7fda63",
+      "test_mask": "e5f2dd697aa940453faf3ca12682f7ddb7da9a7b011e141672be2b230889b30a"
+    },
+    "feature_matrix_sha256": "d00c6fd7410af29646fb4678926e72ece1ef8a9a910b09d100ca0db4abfcb849",
+    "ordered_edge_index_sha256": "43e5c6a62a56f84a3f8f3201faa396445649758836e38a599837504f7571590c"
+  },
+  "intermediate_probe_calls": 2,
+  "mask_records": 6,
+  "feedback_records": 6,
+  "mask_node_statistics_file": "mask_node_statistics.npz",
+  "mask_node_statistics_sha256": "6f7f1a7482380471fb7d6cb74a6b1bdbc47357a69d9c439fa9c18bde47ba1a84",
+  "checkpoint_path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_citeseer_R_s1/models.pt",
+  "checkpoint_sha256": "b71d990637569a07f545408f660d9d523df218c1412b9aa932dd79c1938fe30a",
+  "checkpoint_readback_equal": true,
+  "test_metrics_file": "test_metrics.json",
+  "random_group_plan_file": "random_group_plan.json",
+  "random_group_plan_sha256": "2553bb133d701bebf7733d2d110c59002af6464429e4ce169bab4c53a0a366e2"
+}

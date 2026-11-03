@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "phase": "development",
+  "method": "D",
+  "dataset": "pubmed",
+  "seed": 1,
+  "recorder_version": "2.0.0-dev1",
+  "official_epoch_budget": true,
+  "reviewed_github_commit": "9f693f995993ed33b9372b48cd2322b956eaf14c",
+  "best_val_acc": 0.832,
+  "best_val_epoch": 138,
+  "dataset_info": {
+    "nodes": 19717,
+    "edges_with_self_loops": 108365,
+    "features": 500,
+    "classes": 3,
+    "splits": {
+      "train_mask": 60,
+      "val_mask": 500,
+      "test_mask": 1000
+    },
+    "split_mask_sha256": {
+      "train_mask": "c212c436a88f7ca1f236f4e98a2ce1070e4a7e1bdf1d9f8e3899ee8d0aa8b429",
+      "val_mask": "71f6cee77418b9ccab03e3c6a04a71f1fe0c07007ba3f006589bdda856de0b8b",
+      "test_mask": "fd659d892af41768c740746a0ecccdb3984e5277939e9264588b5f6efb4d5385"
+    },
+    "feature_matrix_sha256": "d8f35ece8f48972c55c7c5e9c909f74a192ec10fdc20812c06ef31abcd63dd98",
+    "ordered_edge_index_sha256": "32a590a2f9cb4cf86a5c612d8a56709b991f93b25f677cabbced2f44815ed90b"
+  },
+  "intermediate_probe_calls": 10,
+  "mask_records": 21,
+  "feedback_records": 21,
+  "mask_node_statistics_file": "mask_node_statistics.npz",
+  "mask_node_statistics_sha256": "3a76e139b8ee91b777cad2238b29f90b12c3b70901e58ab4e2aea78fbacd7a54",
+  "checkpoint_path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_D_s1/models.pt",
+  "checkpoint_sha256": "58e0faa1af229a103dfa2daab8f6ae282875f8615540ec0553f56743eff04088",
+  "checkpoint_readback_equal": true,
+  "test_metrics_file": "test_metrics.json"
+}

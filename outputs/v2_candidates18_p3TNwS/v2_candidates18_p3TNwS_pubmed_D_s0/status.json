@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "phase": "development",
+  "method": "D",
+  "dataset": "pubmed",
+  "seed": 0,
+  "recorder_version": "2.0.0-dev1",
+  "official_epoch_budget": true,
+  "reviewed_github_commit": "9f693f995993ed33b9372b48cd2322b956eaf14c"
+}

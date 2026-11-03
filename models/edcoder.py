@@ -8,7 +8,8 @@ from functools import partial
 from .gat import GAT
 
 from .loss_func import sce_loss
-from .input_masking import StructureInputMask
+from .adaptive_masking import AdaptiveInputMask
+from .random_group_masking import RandomGroupInputMask
 
 
 def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
@@ -81,16 +82,33 @@ class PreModel(nn.Module):
             structure_ramp_end_ratio: float = 0.8,
             mask_log_interval: int = 100,
             structure_shuffle_seed: int = 20261025,
+            input_mask_diagnostics: bool = False,
+            difficulty_ema_beta: float = 0.9,
+            difficulty_clip_quantile: float = 0.95,
+            density_bins: int = 4,
+            density_chunk_size: int = 256,
+            random_group_seed: int = 2026110301,
          ):
         super(PreModel, self).__init__()
-        self.input_masker = StructureInputMask(
+        masker = RandomGroupInputMask if input_mask_mode == "random_group_stratified" else AdaptiveInputMask
+        extra = {"random_group_seed": random_group_seed} if masker is RandomGroupInputMask else {}
+        self.input_masker = masker(
             mode=input_mask_mode,
             alpha_max=structure_alpha_max,
             warmup_ratio=structure_warmup_ratio,
             ramp_end_ratio=structure_ramp_end_ratio,
             log_interval=mask_log_interval,
             shuffle_seed=structure_shuffle_seed,
+            diagnostics=input_mask_diagnostics,
+            ema_beta=difficulty_ema_beta,
+            clip_quantile=difficulty_clip_quantile,
+            density_bins=density_bins,
+            density_chunk_size=density_chunk_size,
+            **extra,
         )
+        if self.input_masker.requires_feedback and remask_method != "fixed":
+            raise ValueError("v2 feedback/diagnostics currently require fixed decoder remasking")
+        self._input_feedback_loss = loss_fn
         self._mask_rate = mask_rate
         self._remask_rate = remask_rate
         self._mask_method = mask_method
@@ -295,6 +313,12 @@ class PreModel(nn.Module):
 
         loss = loss_rec + self._lam * loss_latent
 
+        # Diagnostic/adaptive scores are detached, computed from the existing
+        # decoder output, and affect only masks in subsequent training steps.
+        if self.input_masker.requires_feedback:
+            self.input_masker.observe_reconstruction(
+                mask_nodes, x_init, x_rec, self._input_feedback_loss, self._alpha_l)
+
         if epoch >= self._delayed_ema_epoch:
             self.ema_update()
         return loss
@@ -368,7 +392,8 @@ class PreModel(nn.Module):
         return use_g, out_x, (mask_nodes, keep_nodes)
     
     def prepare_input_mask(self, graph, device):
-        self.input_masker.prepare(graph, device)
+        features = graph.ndata["feat"] if self.input_masker.needs_features else None
+        self.input_masker.prepare(graph, device, features=features)
 
     def set_input_mask_progress(self, step, total_steps):
         self.input_masker.set_progress(step, total_steps)

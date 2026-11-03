@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "unit_tests": "10 PASS",
+  "historical_anchor_runs": 27,
+  "historical_snapshot_byte_checks": 756,
+  "original_archive_sha256": "e523cba3998593b9a95050a42088dfde6533de82fee39f371d9e840a46884199",
+  "test_metrics_opened": false,
+  "model_weights_loaded": false,
+  "runtime_npz_and_gpu_checks": "Pending server queue execution; no NumPy/Torch/DGL locally",
+  "linux_background_dispatch_and_lock_inheritance": "Pending server execution",
+  "fixture_directory": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\work\\r9_anchors_vxfsdgs1"
+}

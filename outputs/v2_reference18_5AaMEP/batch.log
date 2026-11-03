@@ -1,0 +1,64 @@
+REFERENCE18_DIR=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP
+PLAN=3 datasets x B0/B2 x seeds 0,1,2; full official epoch budgets
+START dataset=cora method=B0 seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B0_s0/train.log
+DONE 1/18 dataset=cora method=B0 seed=0 BestVal=0.8020 PretrainSeconds=130.83
+START dataset=cora method=B2 seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B2_s0/train.log
+DONE 2/18 dataset=cora method=B2 seed=0 BestVal=0.8080 PretrainSeconds=131.06
+START dataset=cora method=B0 seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B0_s1/train.log
+DONE 3/18 dataset=cora method=B0 seed=1 BestVal=0.7940 PretrainSeconds=130.96
+START dataset=cora method=B2 seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B2_s1/train.log
+DONE 4/18 dataset=cora method=B2 seed=1 BestVal=0.7980 PretrainSeconds=131.57
+START dataset=cora method=B0 seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B0_s2/train.log
+DONE 5/18 dataset=cora method=B0 seed=2 BestVal=0.8200 PretrainSeconds=130.23
+START dataset=cora method=B2 seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B2_s2/train.log
+DONE 6/18 dataset=cora method=B2 seed=2 BestVal=0.8220 PretrainSeconds=130.70
+START dataset=citeseer method=B0 seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_citeseer_B0_s0/train.log
+DONE 7/18 dataset=citeseer method=B0 seed=0 BestVal=0.7200 PretrainSeconds=54.84
+START dataset=citeseer method=B2 seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_citeseer_B2_s0/train.log
+DONE 8/18 dataset=citeseer method=B2 seed=0 BestVal=0.7220 PretrainSeconds=54.64
+START dataset=citeseer method=B0 seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_citeseer_B0_s1/train.log
+DONE 9/18 dataset=citeseer method=B0 seed=1 BestVal=0.7480 PretrainSeconds=54.75
+START dataset=citeseer method=B2 seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_citeseer_B2_s1/train.log
+DONE 10/18 dataset=citeseer method=B2 seed=1 BestVal=0.7560 PretrainSeconds=54.67
+START dataset=citeseer method=B0 seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_citeseer_B0_s2/train.log
+DONE 11/18 dataset=citeseer method=B0 seed=2 BestVal=0.7140 PretrainSeconds=54.90
+START dataset=citeseer method=B2 seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_citeseer_B2_s2/train.log
+DONE 12/18 dataset=citeseer method=B2 seed=2 BestVal=0.7180 PretrainSeconds=54.54
+START dataset=pubmed method=B0 seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_pubmed_B0_s0/train.log
+DONE 13/18 dataset=pubmed method=B0 seed=0 BestVal=0.8280 PretrainSeconds=254.69
+START dataset=pubmed method=B2 seed=0
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_pubmed_B2_s0/train.log
+DONE 14/18 dataset=pubmed method=B2 seed=0 BestVal=0.8320 PretrainSeconds=257.41
+START dataset=pubmed method=B0 seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_pubmed_B0_s1/train.log
+DONE 15/18 dataset=pubmed method=B0 seed=1 BestVal=0.8340 PretrainSeconds=255.79
+START dataset=pubmed method=B2 seed=1
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_pubmed_B2_s1/train.log
+DONE 16/18 dataset=pubmed method=B2 seed=1 BestVal=0.8360 PretrainSeconds=257.32
+START dataset=pubmed method=B0 seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_pubmed_B0_s2/train.log
+DONE 17/18 dataset=pubmed method=B0 seed=2 BestVal=0.8380 PretrainSeconds=254.64
+START dataset=pubmed method=B2 seed=2
+TRAIN_LOG=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_pubmed_B2_s2/train.log
+DONE 18/18 dataset=pubmed method=B2 seed=2 BestVal=0.8400 PretrainSeconds=256.85
+VAL_SUMMARY cora B0 n=3 80.533 +/- 1.087 %
+VAL_SUMMARY cora B2 n=3 80.933 +/- 0.984 %
+VAL_SUMMARY citeseer B0 n=3 72.733 +/- 1.482 %
+VAL_SUMMARY citeseer B2 n=3 73.200 +/- 1.705 %
+VAL_SUMMARY pubmed B0 n=3 83.333 +/- 0.411 %
+VAL_SUMMARY pubmed B2 n=3 83.600 +/- 0.327 %
+ALL_DONE 18/18
+BATCH_EXIT_CODE=0

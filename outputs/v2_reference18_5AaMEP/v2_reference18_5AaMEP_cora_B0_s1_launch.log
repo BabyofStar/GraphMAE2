@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/v2_reference18_5AaMEP/v2_reference18_5AaMEP_cora_B0_s1
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B0_s1
+Best ValAcc: 0.7940 in epoch 299
+Pretrain wall seconds: 130.958
+Final probe wall seconds: 0.758
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+V2_DEVELOPMENT_RUN=PASS

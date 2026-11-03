@@ -1,0 +1,1938 @@
+--- a/models/__init__.py
++++ b/models/__init__.py
+@@ -71,5 +71,6 @@
+         difficulty_clip_quantile=getattr(args, "difficulty_clip_quantile", 0.95),
+         density_bins=getattr(args, "density_bins", 4),
+         density_chunk_size=getattr(args, "density_chunk_size", 256),
++        random_group_seed=getattr(args, "random_group_seed", 2026110301),
+     )
+     return model
+--- a/models/edcoder.py
++++ b/models/edcoder.py
+@@ -9,6 +9,7 @@
+ 
+ from .loss_func import sce_loss
+ from .adaptive_masking import AdaptiveInputMask
++from .random_group_masking import RandomGroupInputMask
+ 
+ 
+ def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
+@@ -86,9 +87,12 @@
+             difficulty_clip_quantile: float = 0.95,
+             density_bins: int = 4,
+             density_chunk_size: int = 256,
++            random_group_seed: int = 2026110301,
+          ):
+         super(PreModel, self).__init__()
+-        self.input_masker = AdaptiveInputMask(
++        masker = RandomGroupInputMask if input_mask_mode == "random_group_stratified" else AdaptiveInputMask
++        extra = {"random_group_seed": random_group_seed} if masker is RandomGroupInputMask else {}
++        self.input_masker = masker(
+             mode=input_mask_mode,
+             alpha_max=structure_alpha_max,
+             warmup_ratio=structure_warmup_ratio,
+@@ -100,6 +104,7 @@
+             clip_quantile=difficulty_clip_quantile,
+             density_bins=density_bins,
+             density_chunk_size=density_chunk_size,
++            **extra,
+         )
+         if self.input_masker.requires_feedback and remask_method != "fixed":
+             raise ValueError("v2 feedback/diagnostics currently require fixed decoder remasking")
+--- a/models/adaptive_masking.py
++++ b/models/adaptive_masking.py
+@@ -231,9 +231,13 @@
+                  "error_ema_seen_mean": (float(ema[group][seen[group]].mean())
+                                          if seen[group].any() else None)}
+                 for i, group in enumerate(self._partitions)]
++        stats.update(self.extra_feedback(ids, keep))
+         self.last_feedback = stats
+         self.feedback_records += 1
+         logging.info("INPUT_MASK_FEEDBACK %s", stats)
++
++    def extra_feedback(self, ids, keep):
++        return {}
+ 
+     @torch.no_grad()
+     def export_node_statistics(self, path):
+--- a/utils.py
++++ b/utils.py
+@@ -122,7 +122,8 @@
+     parser.add_argument("--input_mask_mode", choices=(
+         "random", "structure_static", "structure_curriculum",
+         "structure_curriculum_shuffled", "reconstruction_curriculum",
+-        "density_stratified", "reconstruction_density_curriculum"), default="random")
++        "density_stratified", "reconstruction_density_curriculum",
++        "random_group_stratified"), default="random")
+     parser.add_argument("--structure_alpha_max", type=float, default=0.5)
+     parser.add_argument("--structure_warmup_ratio", type=float, default=0.2)
+     parser.add_argument("--structure_ramp_end_ratio", type=float, default=0.8)
+@@ -132,6 +133,7 @@
+     parser.add_argument("--input_mask_diagnostics", action="store_true", default=False)
+     parser.add_argument("--difficulty_ema_beta", type=float, default=0.9)
+     parser.add_argument("--difficulty_clip_quantile", type=float, default=0.95)
++    parser.add_argument("--random_group_seed", type=int, default=2026110301)
+     parser.add_argument("--density_bins", type=int, default=4)
+     parser.add_argument("--density_chunk_size", type=int, default=256)
+ 
+--- /dev/null
++++ b/models/random_group_masking.py
+@@ -0,0 +1,109 @@
++"""Fixed random-group control; true density diagnostics retain their meaning."""
++import hashlib
++import time
++
++import numpy as np
++import torch
++
++from .adaptive_masking import AdaptiveInputMask
++from .masking_math import proportional_quotas
++
++
++class RandomGroupInputMask(AdaptiveInputMask):
++    MODE = "random_group_stratified"
++    NEW_MODES = AdaptiveInputMask.NEW_MODES + (MODE,)
++    MODES = AdaptiveInputMask.MODES + (MODE,)
++    STRATIFIED = AdaptiveInputMask.STRATIFIED + (MODE,)
++
++    def __init__(self, mode=MODE, random_group_seed=2026110301, **kwargs):
++        if mode != self.MODE:
++            raise ValueError("RandomGroupInputMask requires random_group_stratified")
++        if (isinstance(random_group_seed, bool) or not isinstance(random_group_seed, int)
++                or not 0 <= random_group_seed < 2**63):
++            raise ValueError("random_group_seed must be an integer in [0, 2**63)")
++        super().__init__(mode=mode, **kwargs)
++        self.random_group_seed = random_group_seed
++        self._sampling_groups = ()
++        self._sampling_tensors = ()
++        self._sampling_membership = None
++        self._sampling_key = None
++
++    @torch.no_grad()
++    def prepare(self, graph, device, features=None):
++        device = self._device(device)
++        key = self._key(graph), str(device)
++        if self._sampling_key == key:
++            return
++        super().prepare(graph, device, features)
++        started = time.perf_counter()
++        generator = torch.Generator(device="cpu")
++        generator.manual_seed(self.random_group_seed)
++        order = torch.randperm(graph.num_nodes(), generator=generator, device="cpu").numpy()
++        sizes = [len(group) for group in self._partitions]
++        boundaries = np.cumsum(sizes)[:-1]
++        self._sampling_groups = tuple(np.split(order, boundaries))
++        self._sampling_membership = np.empty(graph.num_nodes(), dtype=np.int64)
++        for i, group in enumerate(self._sampling_groups):
++            self._sampling_membership[group] = i
++        self._sampling_tensors = tuple(torch.as_tensor(group, dtype=torch.long, device=device)
++                                       for group in self._sampling_groups)
++        self._sampling_key = key
++        self.preparation_seconds += time.perf_counter() - started
++
++    def effective_alpha(self):
++        return 0.0
++
++    @torch.no_grad()
++    def permutation(self, graph, device, mask_rate):
++        if self._sampling_key != (self._key(graph), str(self._device(device))):
++            raise RuntimeError("Call prepare for this fixed graph/device first")
++        # Reuse the exact S sampler, with only the membership changed. Restore the
++        # true density tensors before any feedback or diagnostic can observe them.
++        density_tensors = self._partition_tensors
++        try:
++            self._partition_tensors = self._sampling_tensors
++            return super().permutation(graph, device, mask_rate)
++        finally:
++            self._partition_tensors = density_tensors
++
++    def group_plan(self, mask_rate):
++        if self._sampling_key is None:
++            raise RuntimeError("Call prepare before exporting groups")
++        n = len(self._sampling_membership)
++        sizes = [len(group) for group in self._sampling_groups]
++        k = int(mask_rate * n)
++        order = np.concatenate(self._sampling_groups).astype('<i8', copy=False)
++        return {"random_group_seed": self.random_group_seed, "nodes": n,
++                "group_sizes": sizes, "masked": k,
++                "quotas": proportional_quotas(sizes, k),
++                "ordered_group_nodes_sha256": hashlib.sha256(order.tobytes()).hexdigest(),
++                "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
++                "density_layer_semantics": "true local-feature-density partitions"}
++
++    def extra_feedback(self, ids, keep):
++        plan = self.group_plan(len(ids) / len(keep))
++        # Count actual selections independently; do not infer them from the plan.
++        return {"random_group_seed": self.random_group_seed,
++                "sampling_group_order_sha256": plan["ordered_group_nodes_sha256"],
++                "sampling_groups": [
++                    {"group": i, "nodes": len(group),
++                     "masked": int(np.count_nonzero(~keep[group]))}
++                    for i, group in enumerate(self._sampling_groups)]}
++
++    @torch.no_grad()
++    def export_node_statistics(self, path):
++        if self._sampling_key is None:
++            raise RuntimeError("No prepared random groups to export")
++        arrays = {
++            "node_id": np.arange(self.error_ema.numel(), dtype=np.int64),
++            "nonself_in_degree": self.degree.detach().cpu().numpy(),
++            "reconstruction_error_ema": self.error_ema.detach().cpu().numpy(),
++            "observation_count": self.observation_count.detach().cpu().numpy(),
++            "local_feature_density": self._density,
++            "density_layer": self._membership,
++            "sampling_group": self._sampling_membership,
++            "sampling_group_node_order": np.concatenate(self._sampling_groups),
++            "random_group_seed": np.asarray(self.random_group_seed, dtype=np.int64),
++        }
++        with open(path, "xb") as stream:
++            np.savez_compressed(stream, **arrays)
+--- /dev/null
++++ b/tests/test_random_group_masking.py
+@@ -0,0 +1,229 @@
++"""Run on both real CPU and CUDA in the frozen server environment."""
++import contextlib
++import importlib.util
++import io
++import math
++from pathlib import Path
++import tempfile
++import unittest
++
++import numpy as np
++import torch
++import dgl
++
++from models.adaptive_masking import AdaptiveInputMask
++from models.edcoder import PreModel
++from models.random_group_masking import RandomGroupInputMask
++from models.masking_math import proportional_quotas
++
++
++def states():
++    return [torch.get_rng_state().clone()] + [x.clone() for x in torch.cuda.get_rng_state_all()]
++
++
++def restore(value):
++    torch.set_rng_state(value[0])
++    if len(value) > 1:
++        torch.cuda.set_rng_state_all(value[1:])
++
++
++def devices():
++    return ['cpu'] + (['cuda:0'] if torch.cuda.is_available() else [])
++
++
++def graph(n, device):
++    nodes = torch.arange(n)
++    g = dgl.add_self_loop(dgl.graph((nodes, (nodes + 1) % n), num_nodes=n)).to(device)
++    g.ndata['feat'] = ((torch.arange(n*8).reshape(n,8) % 13).float()/13).to(device)
++    return g
++
++
++def fixture(name, module):
++    spec = importlib.util.spec_from_file_location(module, Path(__file__).parent/'fixtures'/name)
++    obj = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(obj)
++    return obj
++
++
++class RandomGroupTests(unittest.TestCase):
++    def assert_states(self, a, b):
++        self.assertEqual(len(a),len(b))
++        for x,y in zip(a,b):
++            self.assertTrue(torch.equal(x,y))
++
++    def assert_feedback(self, a, b):
++        if isinstance(a, dict):
++            self.assertEqual(set(a), set(b))
++            for key in a:
++                self.assert_feedback(a[key], b[key])
++        elif isinstance(a, list):
++            self.assertEqual(len(a), len(b))
++            for x, y in zip(a, b):
++                self.assert_feedback(x, y)
++        elif isinstance(a, float):
++            self.assertTrue(math.isclose(a, b, rel_tol=1e-4, abs_tol=1e-6), (a, b))
++        else:
++            self.assertEqual(a, b)
++
++    def test_prepare_is_private_reproducible_and_preserves_density(self):
++        for device in devices():
++            g = graph(23,device)
++            before = states()
++            a = RandomGroupInputMask().to(device)
++            a.prepare(g,device,g.ndata['feat'])
++            self.assert_states(before,states())
++            b = RandomGroupInputMask().to(device)
++            torch.manual_seed(222)
++            b.prepare(g,device,g.ndata['feat'])
++            np.testing.assert_array_equal(a._sampling_membership,b._sampling_membership)
++            self.assertEqual(a.group_plan(.5),b.group_plan(.5))
++            s = AdaptiveInputMask('density_stratified').to(device)
++            s.prepare(g,device,g.ndata['feat'])
++            np.testing.assert_array_equal(a._membership,s._membership)
++            self.assertEqual([len(x) for x in a._sampling_groups],[len(x) for x in s._partitions])
++            self.assertEqual(dict(a.state_dict()),{})
++            self.assertEqual(list(a.parameters()),[])
++            before=states()
++            a.prepare(g,device,g.ndata['feat'])
++            self.assert_states(before,states())
++
++    def test_exact_budget_quotas_rounding_and_sampling_rng_match_s(self):
++        for device in devices():
++            for n in (1,2,3,4,5,11,23):
++                g=graph(n,device)
++                a=RandomGroupInputMask(log_interval=0).to(device)
++                s=AdaptiveInputMask('density_stratified',log_interval=0).to(device)
++                for item in (a,s):
++                    item.prepare(g,device,g.ndata['feat'])
++                    item.set_progress(0,1)
++                for rate in (0.,.1,.5,.9,1.):
++                    with self.subTest(device=device,n=n,rate=rate):
++                        before=states()
++                        perm=a.permutation(g,device,rate)
++                        after=states()
++                        restore(before)
++                        s.permutation(g,device,rate)
++                        self.assert_states(after,states())
++                        self.assertEqual(perm.unique().numel(),n)
++                        self.assertEqual(perm.numel(),n)
++                        k=int(rate*n)
++                        actual=np.bincount(a._sampling_membership[perm[:k].cpu().numpy()],minlength=min(4,n))
++                        self.assertEqual(actual.tolist(),proportional_quotas([len(x) for x in a._sampling_groups],k))
++
++    def test_labels_splits_and_feature_values_cannot_choose_random_groups(self):
++        g=graph(23,'cpu')
++        a=RandomGroupInputMask()
++        a.prepare(g,'cpu',g.ndata['feat'])
++        g.ndata['label']=torch.full((23,),999)
++        for key in ('train_mask','val_mask','test_mask'):
++            g.ndata[key]=torch.ones(23,dtype=torch.bool)
++        g.ndata['feat']=g.ndata['feat'].flip(0)
++        b=RandomGroupInputMask()
++        b.prepare(g,'cpu',g.ndata['feat'])
++        np.testing.assert_array_equal(a._sampling_membership,b._sampling_membership)
++
++    def test_feedback_logs_and_npz_keep_both_group_meanings(self):
++        for device in devices():
++            g=graph(23,device)
++            a=RandomGroupInputMask(log_interval=1).to(device)
++            a.prepare(g,device,g.ndata['feat'])
++            a.set_progress(0,1)
++            ids=a.permutation(g,device,.5)[:11]
++            with self.assertLogs(level='INFO') as logs:
++                a.observe_reconstruction(ids,g.ndata['feat'][ids],g.ndata['feat'][ids])
++            self.assertIn('sampling_groups',' '.join(logs.output))
++            self.assertEqual([x['masked'] for x in a.last_feedback['sampling_groups']],a.group_plan(.5)['quotas'])
++            self.assertEqual(sum(x['masked'] for x in a.last_feedback['density_layers']),11)
++            with tempfile.TemporaryDirectory() as tmp:
++                path=Path(tmp)/'nodes.npz'
++                before=states()
++                a.export_node_statistics(path)
++                self.assert_states(before,states())
++                with np.load(path,allow_pickle=False) as data:
++                    np.testing.assert_array_equal(data['density_layer'],a._membership)
++                    np.testing.assert_array_equal(data['sampling_group'],a._sampling_membership)
++                    self.assertEqual(int(data['observation_count'].sum()),11)
++                with self.assertRaises(FileExistsError):
++                    a.export_node_statistics(path)
++
++    def test_invalid_seed_and_prepare_fail_early(self):
++        for seed in (True,-1,2**63,1.2):
++            with self.assertRaises(ValueError):
++                RandomGroupInputMask(random_group_seed=seed)
++        with self.assertRaises(RuntimeError):
++            RandomGroupInputMask().permutation(graph(4,'cpu'),'cpu',.5)
++        with self.assertRaises(ValueError):
++            RandomGroupInputMask().prepare(graph(4,'cpu'),'cpu')
++
++    def test_group_membership_is_identical_on_cpu_and_cuda(self):
++        reference=None
++        for device in devices():
++            g=graph(23,device)
++            sampler=RandomGroupInputMask().to(device)
++            sampler.prepare(g,device,g.ndata['feat'])
++            if reference is not None:
++                np.testing.assert_array_equal(reference,sampler._sampling_membership)
++            reference=sampler._sampling_membership.copy()
++
++    def test_all_v2_modes_match_pinned_losses_weights_rng_and_feedback(self):
++        pinned=fixture('adaptive_masking_v2_dev1.py','models._pinned_adaptive_v2')
++        old=fixture('edcoder_v2_dev1.py','models._pinned_edcoder_v2')
++        old.AdaptiveInputMask=pinned.AdaptiveInputMask
++        from test_adaptive_masking_v2 import kwargs
++        previous=torch.get_num_threads()
++        torch.set_num_threads(1)
++        try:
++            for device in devices():
++                g=graph(12,device)
++                for mode in AdaptiveInputMask.MODES:
++                    results=[]
++                    for factory in (old.PreModel,PreModel):
++                        torch.manual_seed(127)
++                        with contextlib.redirect_stdout(io.StringIO()):
++                            model=factory(**dict(kwargs(),input_mask_mode=mode,input_mask_diagnostics=True,mask_log_interval=1)).to(device)
++                        optimizer=torch.optim.Adam(model.parameters(),lr=.001)
++                        model.prepare_input_mask(g,device)
++                        losses=[]
++                        for step in range(3):
++                            model.set_input_mask_progress(step,3)
++                            loss=model(g,g.ndata['feat'],targets=torch.arange(12,device=device))
++                            losses.append(loss.detach())
++                            optimizer.zero_grad()
++                            loss.backward()
++                            optimizer.step()
++                        results.append((model,torch.stack(losses),states(),model.input_masker.last_feedback))
++                    a,b=results
++                    torch.testing.assert_close(a[1],b[1],rtol=1e-4,atol=1e-6)
++                    self.assert_states(a[2],b[2])
++                    self.assert_feedback(a[3],b[3])
++                    for key,value in a[0].state_dict().items():
++                        torch.testing.assert_close(value,b[0].state_dict()[key],rtol=1e-4,atol=1e-6)
++        finally:
++            torch.set_num_threads(previous)
++
++    def test_r_real_forward_backward_checkpoint_and_cli(self):
++        import sys
++        from unittest import mock
++        from models import build_model
++        from utils import build_args,load_best_configs
++        for device in devices():
++            with mock.patch.object(sys,'argv',['test','--dataset','cora','--use_cfg','--input_mask_mode','random_group_stratified','--random_group_seed','2026110301']):
++                args=load_best_configs(build_args())
++            args.num_features,args.num_hidden,args.num_heads=8,16,2
++            with contextlib.redirect_stdout(io.StringIO()):
++                model=build_model(args).to(device)
++            self.assertIsInstance(model.input_masker,RandomGroupInputMask)
++            g=graph(12,device)
++            model.prepare_input_mask(g,device)
++            model.set_input_mask_progress(0,1)
++            loss=model(g,g.ndata['feat'],targets=torch.arange(12,device=device))
++            loss.backward()
++            self.assertTrue(torch.isfinite(loss).item())
++            self.assertTrue(any(p.grad is not None and p.grad.abs().sum().item()>0 for p in model.encoder.parameters()))
++            with contextlib.redirect_stdout(io.StringIO()):
++                fresh=build_model(args)
++            fresh.load_state_dict({k:v.cpu() for k,v in model.state_dict().items()},strict=True)
++
++
++if __name__ == '__main__':
++    unittest.main(verbosity=2)
+--- /dev/null
++++ b/tests/fixtures/adaptive_masking_v2_dev1.py
+@@ -0,0 +1,252 @@
++"""v2: detached reconstruction difficulty and density-stratified input masks.
++
++Legacy B0--B3 sampling is delegated to the unchanged v1.2 implementation.
++All adaptive state is ephemeral: saved model weights do not resume training.
++"""
++
++import logging
++import math
++import time
++
++import numpy as np
++import torch
++import torch.nn.functional as F
++
++from .input_masking import StructureInputMask
++from .masking_math import (context_summary, density_partitions, finite_correlation,
++                           local_density, neighborhoods, proportional_quotas)
++
++
++class AdaptiveInputMask(StructureInputMask):
++    DIFFICULTY = ("reconstruction_curriculum", "reconstruction_density_curriculum")
++    STRATIFIED = ("density_stratified", "reconstruction_density_curriculum")
++    NEW_MODES = ("reconstruction_curriculum", "density_stratified",
++                 "reconstruction_density_curriculum")
++    MODES = StructureInputMask.MODES + NEW_MODES
++
++    def __init__(self, mode="random", alpha_max=0.5, warmup_ratio=0.2,
++                 ramp_end_ratio=0.8, log_interval=100, shuffle_seed=20261025,
++                 diagnostics=False, ema_beta=0.9, clip_quantile=0.95,
++                 density_bins=4, density_chunk_size=256):
++        if mode not in self.MODES:
++            raise ValueError("Unknown input_mask_mode: " + str(mode))
++        super().__init__(mode="random" if mode in self.NEW_MODES else mode,
++                         alpha_max=alpha_max, warmup_ratio=warmup_ratio,
++                         ramp_end_ratio=ramp_end_ratio, log_interval=log_interval,
++                         shuffle_seed=shuffle_seed)
++        if not math.isfinite(ema_beta) or not 0 <= ema_beta < 1:
++            raise ValueError("difficulty_ema_beta must be finite and in [0, 1)")
++        if not math.isfinite(clip_quantile) or not 0 < clip_quantile <= 1:
++            raise ValueError("difficulty_clip_quantile must be in (0, 1]")
++        for name, value in (("density_bins", density_bins),
++                            ("density_chunk_size", density_chunk_size)):
++            if isinstance(value, bool) or not isinstance(value, int) or value <= 0:
++                raise ValueError(name + " must be a positive integer")
++        self.mode, self.diagnostics = mode, bool(diagnostics)
++        self.ema_beta, self.clip_quantile = float(ema_beta), float(clip_quantile)
++        self.density_bins, self.density_chunk_size = density_bins, density_chunk_size
++        self.register_buffer("error_ema", torch.empty(0), persistent=False)
++        self.register_buffer("observation_count", torch.empty(0, dtype=torch.long),
++                             persistent=False)
++        self._adaptive_key = None
++        self._feedback_step = None
++        self._contexts = None
++        self._density = None
++        self._membership = None
++        self._partitions = ()
++        self._partition_tensors = ()
++        self.preparation_seconds = 0.0
++        self.feedback_records = 0
++        self.last_feedback = None
++
++    @property
++    def enabled(self):
++        return self.mode in self.STRATIFIED or super().enabled
++
++    @property
++    def requires_feedback(self):
++        return self.mode in self.NEW_MODES or self.diagnostics
++
++    @property
++    def needs_features(self):
++        return self.mode in self.STRATIFIED or self.diagnostics
++
++    @torch.no_grad()
++    def prepare(self, graph, device, features=None):
++        if not self.requires_feedback:
++            return super().prepare(graph, device)
++        device = self._device(device)
++        key = self._key(graph), str(device)
++        if self._adaptive_key == key:
++            return
++        started = time.perf_counter()
++        n = graph.num_nodes()
++        if n <= 0:
++            raise ValueError("A nonempty fixed full-batch graph is required")
++        # Calls the original scorer (including private B3 RNG) for legacy modes.
++        if self.mode not in self.NEW_MODES:
++            super().prepare(graph, device)
++        src, dst = graph.edges()
++        self.degree = torch.bincount(dst[src != dst], minlength=n).to(
++            device=device, dtype=torch.float32)
++        self.error_ema = torch.zeros(n, dtype=torch.float32, device=device)
++        self.observation_count = torch.zeros(n, dtype=torch.long, device=device)
++        if self.needs_features:
++            if features is None or tuple(features.shape[:1]) != (n,):
++                raise ValueError("Density/diagnostics require original node features")
++            self._contexts = neighborhoods(
++                n, src.detach().cpu().numpy(), dst.detach().cpu().numpy())
++            self._density = local_density(
++                features.detach().to(device="cpu", dtype=torch.float32).numpy(),
++                self._contexts[1], self.density_chunk_size)
++            self._partitions, self._membership = density_partitions(
++                self._density, self.density_bins)
++            self._partition_tensors = tuple(torch.as_tensor(
++                group, dtype=torch.long, device=device) for group in self._partitions)
++        self._graph_key = self._key(graph)
++        self._adaptive_key = key
++        self._feedback_step = None
++        self._last_logged_step = None
++        self.last_feedback, self.feedback_records = None, 0
++        self.preparation_seconds = time.perf_counter() - started
++
++    def effective_alpha(self):
++        if self.mode == "density_stratified":
++            return 0.0
++        return super().effective_alpha()
++
++    @torch.no_grad()
++    def difficulty_scores(self):
++        if not self.error_ema.numel():
++            raise RuntimeError("Call prepare before calculating difficulty")
++        seen = self.observation_count > 0
++        if not seen.any().item():
++            return torch.ones_like(self.error_ema)
++        observed = self.error_ema[seen]
++        upper = torch.quantile(observed, self.clip_quantile)
++        scores = torch.minimum(self.error_ema, upper).clamp_min(1e-8)
++        # Previously unseen nodes get a neutral observed median, not zero weight.
++        scores[~seen] = torch.minimum(observed.median().clamp_min(1e-8),
++                                     upper.clamp_min(1e-8))
++        return scores
++
++    @torch.no_grad()
++    def permutation(self, graph, device, mask_rate):
++        if self.mode not in self.NEW_MODES:
++            return super().permutation(graph, device, mask_rate)
++        n = graph.num_nodes()
++        if n <= 0 or not math.isfinite(mask_rate) or not 0 <= mask_rate <= 1:
++            raise ValueError("Require nonempty graph and mask_rate in [0, 1]")
++        device = self._device(device)
++        if self._adaptive_key != (self._key(graph), str(device)):
++            raise RuntimeError("Call prepare for this fixed graph/device first")
++        alpha, k = self.effective_alpha(), int(mask_rate * n)
++        if k == 0 or (self.mode not in self.STRATIFIED and alpha == 0):
++            perm = torch.randperm(n, device=device)
++        else:
++            scores = self.difficulty_scores() if self.mode in self.DIFFICULTY else None
++            if self.mode in self.STRATIFIED:
++                groups = self._partition_tensors
++                quotas = proportional_quotas([len(g) for g in groups], k)
++            else:
++                groups, quotas = (torch.arange(n, device=device),), [k]
++            selections = []
++            for group, quota in zip(groups, quotas):
++                if quota == 0:
++                    continue
++                if alpha == 0:
++                    local = torch.randperm(len(group), device=device)[:quota]
++                else:
++                    raw = scores[group]
++                    weights = (1 - alpha) / len(group) + alpha * raw / raw.sum()
++                    local = torch.multinomial(weights, quota, replacement=False)
++                selections.append(group[local])
++            masked = torch.cat(selections)
++            keep = torch.ones(n, dtype=torch.bool, device=device)
++            keep[masked] = False
++            perm = torch.cat((masked, keep.nonzero(as_tuple=False).flatten()))
++        self._record(perm, k, alpha)
++        return perm
++
++    @torch.no_grad()
++    def observe_reconstruction(self, mask_nodes, target, reconstruction,
++                               loss_name="sce", alpha_l=2):
++        """Update only AFTER this mask has been sampled and its loss computed."""
++        if not self.requires_feedback:
++            return
++        if self._adaptive_key is None or self._step is None:
++            raise RuntimeError("Feedback requires prepare and set_progress")
++        if self._feedback_step == self._step:
++            raise RuntimeError("Exactly one feedback update per training step is supported")
++        if (mask_nodes.ndim != 1 or mask_nodes.numel() == 0
++                or mask_nodes.unique().numel() != mask_nodes.numel()
++                or target.ndim != 2 or reconstruction.shape != target.shape
++                or target.shape[0] != mask_nodes.numel()):
++            raise ValueError("Feedback needs nonempty, unique masked nodes and paired features")
++        if loss_name == "sce":
++            a = F.normalize(target.detach(), p=2, dim=-1)
++            b = F.normalize(reconstruction.detach(), p=2, dim=-1)
++            # Clamp only the diagnostic score; the original training loss is untouched.
++            error = (1 - (a * b).sum(dim=-1)).clamp_min(0).pow(alpha_l)
++        elif loss_name == "mse":
++            error = (target.detach() - reconstruction.detach()).square().mean(dim=-1)
++        else:
++            raise ValueError("Unsupported feedback loss: " + str(loss_name))
++        if not torch.isfinite(error).all().item():
++            raise ValueError("Nonfinite reconstruction difficulty")
++        previous = self.observation_count[mask_nodes]
++        old = self.error_ema[mask_nodes]
++        self.error_ema[mask_nodes] = torch.where(
++            previous > 0, self.ema_beta * old + (1 - self.ema_beta) * error, error)
++        self.observation_count[mask_nodes] += 1
++        self._feedback_step = self._step
++        if not self.log_interval or (self._step % self.log_interval
++                                     and self._step != self._total_steps - 1):
++            return
++        ids = mask_nodes.detach().cpu().numpy()
++        degree = self.degree.detach().cpu().numpy()
++        counts = self.observation_count.detach().cpu().numpy()
++        ema = self.error_ema.detach().cpu().numpy()
++        seen = counts > 0
++        keep = np.ones(len(counts), dtype=bool)
++        keep[ids] = False
++        stats = {
++            "step": self._step, "mode": self.mode, "alpha": self.effective_alpha(),
++            "masked": len(ids), "nodes": len(counts),
++            "actual_mask_rate": len(ids) / len(counts),
++            "batch_reconstruction_error_mean": float(error.mean().item()),
++            "observed_nodes": int(seen.sum()),
++            "observation_count_min_mean_max": [int(counts.min()),
++                                                float(counts.mean()), int(counts.max())],
++            "degree_error_pearson_seen": finite_correlation(degree[seen], ema[seen]),
++            "masked_degree_mean": float(degree[ids].mean()),
++            "kept_degree_mean": float(degree[keep].mean()) if keep.any() else None,
++        }
++        if self._contexts is not None:
++            stats.update(context_summary(ids, *self._contexts))
++            stats["density_layers"] = [
++                {"layer": i, "nodes": len(group),
++                 "masked": int(np.count_nonzero(~keep[group])),
++                 "observed": int(np.count_nonzero(seen[group])),
++                 "error_ema_seen_mean": (float(ema[group][seen[group]].mean())
++                                         if seen[group].any() else None)}
++                for i, group in enumerate(self._partitions)]
++        self.last_feedback = stats
++        self.feedback_records += 1
++        logging.info("INPUT_MASK_FEEDBACK %s", stats)
++
++    @torch.no_grad()
++    def export_node_statistics(self, path):
++        if not self.requires_feedback or self._adaptive_key is None:
++            raise RuntimeError("No adaptive/diagnostic state to export")
++        arrays = {
++            "node_id": np.arange(self.error_ema.numel(), dtype=np.int64),
++            "nonself_in_degree": self.degree.detach().cpu().numpy(),
++            "reconstruction_error_ema": self.error_ema.detach().cpu().numpy(),
++            "observation_count": self.observation_count.detach().cpu().numpy(),
++        }
++        if self._density is not None:
++            arrays.update(local_feature_density=self._density,
++                          density_layer=self._membership)
++        with open(path, "xb") as stream:
++            np.savez_compressed(stream, **arrays)
+--- /dev/null
++++ b/tests/fixtures/edcoder_v2_dev1.py
+@@ -0,0 +1,412 @@
++from itertools import chain
++
++from typing import Optional
++import torch
++import torch.nn as nn
++from functools import partial
++
++from .gat import GAT
++
++from .loss_func import sce_loss
++from .adaptive_masking import AdaptiveInputMask
++
++
++def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
++    if m_type in ("gat", "tsgat"):
++        mod = GAT(
++            in_dim=in_dim,
++            num_hidden=num_hidden,
++            out_dim=out_dim,
++            num_layers=num_layers,
++            nhead=nhead,
++            nhead_out=nhead_out,
++            concat_out=concat_out,
++            activation=activation,
++            feat_drop=dropout,
++            attn_drop=attn_drop,
++            negative_slope=negative_slope,
++            residual=residual,
++            norm=norm,
++            encoding=(enc_dec == "encoding"),
++            **kwargs,
++        )
++    elif m_type == "mlp":
++        # * just for decoder
++        mod = nn.Sequential(
++            nn.Linear(in_dim, num_hidden * 2),
++            nn.PReLU(),
++            nn.Dropout(0.2),
++            nn.Linear(num_hidden * 2, out_dim)
++        )
++    elif m_type == "linear":
++        mod = nn.Linear(in_dim, out_dim)
++    else:
++        raise NotImplementedError
++
++    return mod
++
++class PreModel(nn.Module):
++    def __init__(
++            self,
++            in_dim: int,
++            num_hidden: int,
++            num_layers: int,
++            num_dec_layers: int,
++            num_remasking: int,
++            nhead: int,
++            nhead_out: int,
++            activation: str,
++            feat_drop: float,
++            attn_drop: float,
++            negative_slope: float,
++            residual: bool,
++            norm: Optional[str],
++            mask_rate: float = 0.3,
++            remask_rate: float = 0.5,
++            remask_method: str = "random",
++            mask_method: str = "random",
++            encoder_type: str = "gat",
++            decoder_type: str = "gat",
++            loss_fn: str = "byol",
++            drop_edge_rate: float = 0.0,
++            alpha_l: float = 2,
++            lam: float = 1.0,
++            delayed_ema_epoch: int = 0,
++            momentum: float = 0.996,
++            replace_rate: float = 0.0,
++            zero_init: bool = False,
++            input_mask_mode: str = "random",
++            structure_alpha_max: float = 0.5,
++            structure_warmup_ratio: float = 0.2,
++            structure_ramp_end_ratio: float = 0.8,
++            mask_log_interval: int = 100,
++            structure_shuffle_seed: int = 20261025,
++            input_mask_diagnostics: bool = False,
++            difficulty_ema_beta: float = 0.9,
++            difficulty_clip_quantile: float = 0.95,
++            density_bins: int = 4,
++            density_chunk_size: int = 256,
++         ):
++        super(PreModel, self).__init__()
++        self.input_masker = AdaptiveInputMask(
++            mode=input_mask_mode,
++            alpha_max=structure_alpha_max,
++            warmup_ratio=structure_warmup_ratio,
++            ramp_end_ratio=structure_ramp_end_ratio,
++            log_interval=mask_log_interval,
++            shuffle_seed=structure_shuffle_seed,
++            diagnostics=input_mask_diagnostics,
++            ema_beta=difficulty_ema_beta,
++            clip_quantile=difficulty_clip_quantile,
++            density_bins=density_bins,
++            density_chunk_size=density_chunk_size,
++        )
++        if self.input_masker.requires_feedback and remask_method != "fixed":
++            raise ValueError("v2 feedback/diagnostics currently require fixed decoder remasking")
++        self._input_feedback_loss = loss_fn
++        self._mask_rate = mask_rate
++        self._remask_rate = remask_rate
++        self._mask_method = mask_method
++        self._alpha_l = alpha_l
++        self._delayed_ema_epoch = delayed_ema_epoch
++
++        self.num_remasking = num_remasking
++        self._encoder_type = encoder_type
++        self._decoder_type = decoder_type
++        self._drop_edge_rate = drop_edge_rate
++        self._output_hidden_size = num_hidden
++        self._momentum = momentum
++        self._replace_rate = replace_rate
++        self._num_remasking = num_remasking
++        self._remask_method = remask_method
++
++        self._token_rate = 1 - self._replace_rate
++        self._lam = lam
++
++        assert num_hidden % nhead == 0
++        assert num_hidden % nhead_out == 0
++        if encoder_type in ("gat",):
++            enc_num_hidden = num_hidden // nhead
++            enc_nhead = nhead
++        else:
++            enc_num_hidden = num_hidden
++            enc_nhead = 1
++
++        dec_in_dim = num_hidden
++        dec_num_hidden = num_hidden // nhead if decoder_type in ("gat",) else num_hidden
++
++        # build encoder
++        self.encoder = setup_module(
++            m_type=encoder_type,
++            enc_dec="encoding",
++            in_dim=in_dim,
++            num_hidden=enc_num_hidden,
++            out_dim=enc_num_hidden,
++            num_layers=num_layers,
++            nhead=enc_nhead,
++            nhead_out=enc_nhead,
++            concat_out=True,
++            activation=activation,
++            dropout=feat_drop,
++            attn_drop=attn_drop,
++            negative_slope=negative_slope,
++            residual=residual,
++            norm=norm,
++        )
++
++        self.decoder = setup_module(
++                m_type=decoder_type,
++                enc_dec="decoding",
++                in_dim=dec_in_dim,
++                num_hidden=dec_num_hidden,
++                out_dim=in_dim,
++                nhead_out=nhead_out,
++                num_layers=num_dec_layers,
++                nhead=nhead,
++                activation=activation,
++                dropout=feat_drop,
++                attn_drop=attn_drop,
++                negative_slope=negative_slope,
++                residual=residual,
++                norm=norm,
++                concat_out=True,
++            )
++
++        self.enc_mask_token = nn.Parameter(torch.zeros(1, in_dim))
++        self.dec_mask_token = nn.Parameter(torch.zeros(1, num_hidden))
++
++        self.encoder_to_decoder = nn.Linear(dec_in_dim, dec_in_dim, bias=False)
++
++        if not zero_init:
++            self.reset_parameters_for_token()
++
++
++        # * setup loss function
++        self.criterion = self.setup_loss_fn(loss_fn, alpha_l)
++
++        self.projector = nn.Sequential(
++            nn.Linear(num_hidden, 256),
++            nn.PReLU(),
++            nn.Linear(256, num_hidden),
++        )
++        self.projector_ema = nn.Sequential(
++            nn.Linear(num_hidden, 256),
++            nn.PReLU(),
++            nn.Linear(256, num_hidden),
++        )
++        self.predictor = nn.Sequential(
++            nn.PReLU(),
++            nn.Linear(num_hidden, num_hidden)
++        )
++
++        self.encoder_ema = setup_module(
++            m_type=encoder_type,
++            enc_dec="encoding",
++            in_dim=in_dim,
++            num_hidden=enc_num_hidden,
++            out_dim=enc_num_hidden,
++            num_layers=num_layers,
++            nhead=enc_nhead,
++            nhead_out=enc_nhead,
++            concat_out=True,
++            activation=activation,
++            dropout=feat_drop,
++            attn_drop=attn_drop,
++            negative_slope=negative_slope,
++            residual=residual,
++            norm=norm,
++        )
++        self.encoder_ema.load_state_dict(self.encoder.state_dict())
++        self.projector_ema.load_state_dict(self.projector.state_dict())
++
++        for p in self.encoder_ema.parameters():
++            p.requires_grad = False
++            p.detach_()
++        for p in self.projector_ema.parameters():
++            p.requires_grad = False
++            p.detach_()
++
++        self.print_num_parameters()
++
++    def print_num_parameters(self):
++        num_encoder_params = [p.numel() for p in self.encoder.parameters() if  p.requires_grad]
++        num_decoder_params = [p.numel() for p in self.decoder.parameters() if  p.requires_grad]
++        num_params = [p.numel() for p in self.parameters() if p.requires_grad]
++
++        print(f"num_encoder_params: {sum(num_encoder_params)}, num_decoder_params: {sum(num_decoder_params)}, num_params_in_total: {sum(num_params)}")
++
++    def reset_parameters_for_token(self):
++        nn.init.xavier_normal_(self.enc_mask_token)
++        nn.init.xavier_normal_(self.dec_mask_token)
++        nn.init.xavier_normal_(self.encoder_to_decoder.weight, gain=1.414)
++
++    @property
++    def output_hidden_dim(self):
++        return self._output_hidden_size
++
++    def setup_loss_fn(self, loss_fn, alpha_l):
++        if loss_fn == "mse":
++            print(f"=== Use mse_loss ===")
++            criterion = nn.MSELoss()
++        elif loss_fn == "sce":
++            print(f"=== Use sce_loss and alpha_l={alpha_l} ===")
++            criterion = partial(sce_loss, alpha=alpha_l)
++        else:
++            raise NotImplementedError
++        return criterion
++
++    def forward(self, g, x, targets=None, epoch=0, drop_g1=None, drop_g2=None):        # ---- attribute reconstruction ----
++        loss = self.mask_attr_prediction(g, x, targets, epoch, drop_g1, drop_g2)
++
++        return loss
++
++    def mask_attr_prediction(self, g, x, targets, epoch, drop_g1=None, drop_g2=None):
++        pre_use_g, use_x, (mask_nodes, keep_nodes) = self.encoding_mask_noise(g, x, self._mask_rate)
++        use_g = drop_g1 if drop_g1 is not None else g
++
++        enc_rep = self.encoder(use_g, use_x,)
++
++        with torch.no_grad():
++            drop_g2 = drop_g2 if drop_g2 is not None else g
++            latent_target = self.encoder_ema(drop_g2, x,)
++            if targets is not None:
++                latent_target = self.projector_ema(latent_target[targets])
++            else:
++                latent_target = self.projector_ema(latent_target[keep_nodes])
++
++        if targets is not None:
++            latent_pred = self.projector(enc_rep[targets])
++            latent_pred = self.predictor(latent_pred)
++            loss_latent = sce_loss(latent_pred, latent_target, 1)
++        else:
++            latent_pred = self.projector(enc_rep[keep_nodes])
++            latent_pred = self.predictor(latent_pred)
++            loss_latent = sce_loss(latent_pred, latent_target, 1)
++
++        # ---- attribute reconstruction ----
++        origin_rep = self.encoder_to_decoder(enc_rep)
++
++        loss_rec_all = 0
++        if self._remask_method == "random":
++            for i in range(self._num_remasking):
++                rep = origin_rep.clone()
++                rep, remask_nodes, rekeep_nodes = self.random_remask(use_g, rep, self._remask_rate)
++                recon = self.decoder(pre_use_g, rep)
++
++                x_init = x[mask_nodes]
++                x_rec = recon[mask_nodes]
++                loss_rec = self.criterion(x_init, x_rec)
++                loss_rec_all += loss_rec
++            loss_rec = loss_rec_all
++        elif self._remask_method == "fixed":
++            rep = self.fixed_remask(g, origin_rep, mask_nodes)
++            x_rec = self.decoder(pre_use_g, rep)[mask_nodes]
++            x_init = x[mask_nodes]
++            loss_rec = self.criterion(x_init, x_rec)
++        else:
++            raise NotImplementedError
++
++        loss = loss_rec + self._lam * loss_latent
++
++        # Diagnostic/adaptive scores are detached, computed from the existing
++        # decoder output, and affect only masks in subsequent training steps.
++        if self.input_masker.requires_feedback:
++            self.input_masker.observe_reconstruction(
++                mask_nodes, x_init, x_rec, self._input_feedback_loss, self._alpha_l)
++
++        if epoch >= self._delayed_ema_epoch:
++            self.ema_update()
++        return loss
++
++    def ema_update(self):
++        def update(student, teacher):
++            with torch.no_grad():
++            # m = momentum_schedule[it]  # momentum parameter
++                m = self._momentum
++                for param_q, param_k in zip(student.parameters(), teacher.parameters()):
++                    param_k.data.mul_(m).add_((1 - m) * param_q.detach().data)
++        update(self.encoder, self.encoder_ema)
++        update(self.projector, self.projector_ema)
++
++    def embed(self, g, x):
++        rep = self.encoder(g, x)
++        return rep
++
++    def get_encoder(self):
++        #self.encoder.reset_classifier(out_size)
++        return self.encoder
++
++    def reset_encoder(self, out_size):
++        self.encoder.reset_classifier(out_size)
++
++    @property
++    def enc_params(self):
++        return self.encoder.parameters()
++
++    @property
++    def dec_params(self):
++        return chain(*[self.encoder_to_decoder.parameters(), self.decoder.parameters()])
++
++    def output_grad(self):
++        grad_dict = {}
++        for n, p in self.named_parameters():
++            if p.grad is not None:
++                grad_dict[n] = p.grad.abs().mean().item()
++        return grad_dict
++
++    def encoding_mask_noise(self, g, x, mask_rate=0.3):
++        num_nodes = g.num_nodes()
++        if self.input_masker.enabled:
++            perm = self.input_masker.permutation(g, x.device, mask_rate)
++        else:
++            # Keep the original API and RNG consumption when disabled or alpha_max=0.
++            perm = torch.randperm(num_nodes, device=x.device)
++        num_mask_nodes = int(mask_rate * num_nodes)
++
++        # exclude isolated nodes
++        # isolated_nodes = torch.where(g.in_degrees() <= 1)[0]
++        # mask_nodes = perm[: num_mask_nodes]
++        # mask_nodes = torch.index_fill(torch.full((num_nodes,), False, device=device), 0, mask_nodes, True)
++        # mask_nodes[isolated_nodes] = False
++        # keep_nodes = torch.where(~mask_nodes)[0]
++        # mask_nodes = torch.where(mask_nodes)[0]
++        # num_mask_nodes = mask_nodes.shape[0]
++
++        # random masking
++        num_mask_nodes = int(mask_rate * num_nodes)
++        mask_nodes = perm[: num_mask_nodes]
++        keep_nodes = perm[num_mask_nodes: ]
++
++        out_x = x.clone()
++        token_nodes = mask_nodes
++        out_x[mask_nodes] = 0.0
++
++        out_x[token_nodes] += self.enc_mask_token
++        use_g = g.clone()
++
++        return use_g, out_x, (mask_nodes, keep_nodes)
++
++    def prepare_input_mask(self, graph, device):
++        features = graph.ndata["feat"] if self.input_masker.needs_features else None
++        self.input_masker.prepare(graph, device, features=features)
++
++    def set_input_mask_progress(self, step, total_steps):
++        self.input_masker.set_progress(step, total_steps)
++
++    def random_remask(self,g,rep,remask_rate=0.5):
++
++        num_nodes = g.num_nodes()
++        perm = torch.randperm(num_nodes, device=rep.device)
++        num_remask_nodes = int(remask_rate * num_nodes)
++        remask_nodes = perm[: num_remask_nodes]
++        rekeep_nodes = perm[num_remask_nodes: ]
++
++        rep = rep.clone()
++        rep[remask_nodes] = 0
++        rep[remask_nodes] += self.dec_mask_token
++
++        return rep, remask_nodes, rekeep_nodes
++
++    def fixed_remask(self, g, rep, masked_nodes):
++        rep[masked_nodes] = 0
++        return rep
+--- /dev/null
++++ b/record_full_batch_r.py
+@@ -0,0 +1,686 @@
++"""Record the development-only GraphMAE2 v2 experiments without replacing training.
++
++Use one process and one training seed per run. Test scores are written separately,
++not printed. This saves final model weights, not a resumable optimizer checkpoint.
++"""
++
++import argparse
++import ast
++import contextlib
++import hashlib
++import importlib.metadata
++import inspect
++import io
++import json
++import logging
++import math
++import os
++from pathlib import Path
++import platform
++import random
++import re
++import subprocess
++import sys
++import tarfile
++import threading
++import time
++import traceback
++import types
++
++
++VERSION = "2.0.0-r-dev1"
++REVIEWED_GITHUB_COMMIT = "9f693f995993ed33b9372b48cd2322b956eaf14c"
++BASE_COMMIT = "bc473e8b750d6e90b7cba1c6bb20d858f617d90c"
++METHODS = {
++    "B0": "random",
++    "B2": "structure_curriculum",
++    "D": "reconstruction_curriculum",
++    "S": "density_stratified",
++    "DS": "reconstruction_density_curriculum",
++    "R": "random_group_stratified",
++}
++CONTRACT = {
++    "main_full_batch.py": "10567a6173362ca3aca12218fce59d30597b8145ecbbddb4b604340ac9f7d0d2",
++    "utils.py": "0f7e9a6d76a8c5744d07465e15574a71709c8687afa8b3a42c5d9f0c42905b88",
++    "models/__init__.py": "8829c9bee27d1596e615ee4046f997825edf67843e28ac220fb10a9ac25b865f",
++    "models/edcoder.py": "330b68603293f93e66e51d1e86af59989bb3dc20ab89fe25060ea9c03b264445",
++    "models/input_masking.py": "230a45cf29255bfc46272f8774e5650aea46e85e48b558f82b286019e7d5d4b9",
++    "models/finetune.py": "3c3f6e8f1154035a9a6d62420dc964f600cf672116c4fb3b12e7bb10f71de248",
++    "models/gat.py": "2e536f955793d4190bfae9ed4161bedab53928ed43d2012bbb9e5e126d0a4a3c",
++    "models/gcn.py": "55e3f0fac56ce78d7ed4856f83a3a84d61edde00be454f2db885b66ab992ac70",
++    "models/loss_func.py": "b71a86e278b039ea77a2943b3ead804bb222ad28e437c379a1c22dd02e30140e",
++    "datasets/data_proc.py": "d43cc47fb81e3d021dbaa15438b7a117054a5172855372f7fc4e17475671f88f",
++    "datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
++    "datasets/lc_sampler.py": "0aca1c668e93bd6842220396a216a098b10e29aa9b3eb416ddd1fac472fea2cb",
++    "datasets/localclustering.py": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
++    "datasets/saint_sampler.py": "729cca3522d9927b65df00e8e6234ccf8f64140eddabe3332ee03c7eb4412a8e",
++    "configs/cora.yaml": "3a5a6b87a73fd986ed0bd94ce224f37059739a7df7defa3cc89e6ad78f8aaca6",
++    "configs/citeseer.yaml": "d9d9302aca6148a322861bb160300ff32e97e615f0638771ea1f5a2d9f3d7688",
++    "configs/pubmed.yaml": "19f7897bab0097f2a6f3a85f9a7b02914cbb0e6627701832ea33c07aeb48a50a",
++    "models/adaptive_masking.py": "136b4f2d9cd86fceed091417b64ba7aaba8bb8cea11794175e2c8cc8aa996420",
++    "models/masking_math.py": "ff32da677a5600dcc2a812f5a76c1cbada66875295bcdff9a0388d01f099a9aa",
++    "record_full_batch.py": "7744e2e3ed17305b5b8428bc04f771c3a64eaa3e53b4c6331427c9055f025c95",
++    "test_record_full_batch.py": "2cb961fe1b54fb90495c01c0a8a01d5f4f2146a3b02909cb8e3811345f25fbd9",
++    "tests/test_input_masking.py": "574e801ca550f28cd7b4a8626e58654002cab2c0d9acd7506070538e8c7eea9a",
++    "tests/fixtures/edcoder_v1_2_reference.py": "b7994fdce33baf76964afbad1fb5f25d0091321e5d4985c6998754f38f77af44",
++    "tests/test_adaptive_masking_v2.py": "c4ae7e18019b18bc5679bcf983ab25649e76118e2bf0b033ccf7cbd929f11335",
++    "tests/test_masking_math_v2.py": "ec1af1f30a4773bf5dec51778b92b17f39f5c1eac9615f5df11bcad9a4b89296",
++    "test_record_full_batch_v2.py": "84870be035acbdef9116d18450954f9fee904df8edcf8c4f42f2ebc5d513afed",
++    "record_full_batch_v2.py": "033012c493b602357e4fe55d3758c91586593b6b27210f5cf9dcfd9592ef8fc0",
++    "tests/fixtures/input_masking_v1_1_reference.py": "1c73f7899c9338cae8c0420b6a8ce4223561309894f42f49be028e8ef9a06518",
++    "models/random_group_masking.py": "57d9f8acccf18d74923a7dbd0cb085a636080184ea5617198979910b7d81f8be",
++    "tests/test_random_group_masking.py": "4c27d598a0fc921176bd450a4b03c8e485963112671afed334bbbf6cdf782d59",
++    "tests/fixtures/adaptive_masking_v2_dev1.py": "1709e8a1ab5029ea75136253f93272c8fdb58d843a2755ec39f9a99023062939",
++    "tests/fixtures/edcoder_v2_dev1.py": "7268fb466da2a6a67cbd987ae35756933c1df7b61fd885445f0ec870e88c6d28",
++    "test_record_full_batch_r.py": "a7aa57b6fc9a37f8c2007e2bb3145e50827e59415f6311a5f480b52920bea6b5"
++}
++
++SUMMARY = re.compile(
++    r"^--- TestAcc:.*?Best ValAcc:\s*([0-9.]+)\s+in epoch\s+(\d+)\s*---"
++)
++
++
++def redact(text):
++    text = re.sub(
++        r"(test_loss|test_acc|early-stopping-TestAcc|TestAcc):\s*[^,\s]+",
++        r"\1:[HIDDEN]", text,
++    )
++    return re.sub(
++        r"(# (?:final_acc|early-stopping_acc):)[^\r\n]*",
++        r"\1 [HIDDEN]", text,
++    )
++
++
++def sha256(path):
++    digest = hashlib.sha256()
++    with Path(path).open("rb") as stream:
++        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
++            digest.update(chunk)
++    return digest.hexdigest()
++
++
++def write_json(path, value):
++    # All destinations belong to the newly created, empty run directory.
++    path = Path(path)
++    serialized = json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
++    temporary = path.with_name(path.name + ".tmp")
++    with temporary.open("x", encoding="utf-8", newline="\n") as stream:
++        stream.write(serialized)
++    os.replace(temporary, path)
++
++
++def check_sources(root):
++    actual = {}
++    for relative, expected in CONTRACT.items():
++        path = root / relative
++        if path.is_symlink() or not path.is_file():
++            raise RuntimeError("Missing or linked source: " + relative)
++        actual[relative] = sha256(path)
++        if actual[relative] != expected:
++            raise RuntimeError("Source SHA256 mismatch; do not bypass: " + relative)
++    return actual
++
++
++def prepare_directories(output, checkpoint_root, repo_root):
++    output = Path(output).resolve()
++    checkpoint_root = Path(checkpoint_root).resolve()
++    repo_root = Path(repo_root).resolve()
++    if checkpoint_root == repo_root or checkpoint_root.is_relative_to(repo_root):
++        raise RuntimeError("Checkpoint root must be outside the Git project directory")
++    if output.exists() and (not output.is_dir() or any(output.iterdir())):
++        raise RuntimeError("Output directory must be new or empty; never overwrite a run")
++    output.mkdir(parents=True, exist_ok=True)
++    weights = checkpoint_root / output.name
++    weights.mkdir(parents=True, exist_ok=False)
++    return output, weights
++
++
++def snapshot_sources(root, output):
++    files = {root / name for name in CONTRACT}
++    files.add(Path(__file__).resolve())
++    for name in ("test_record_full_batch.py", "test_record_full_batch_v2.py"):
++        if (root / name).is_file():
++            files.add(root / name)
++    for directory in ("models", "datasets", "tests"):
++        files.update(path for path in (root / directory).rglob("*.py")
++                     if "__pycache__" not in path.parts)
++    fingerprints = {}
++    with tarfile.open(output / "source.tar", "x") as archive:
++        for path in sorted(files):
++            if path.is_symlink() or not path.resolve().is_relative_to(root):
++                raise RuntimeError("Unexpected linked/outside source: " + str(path))
++            name = path.relative_to(root).as_posix()
++            fingerprints[name] = sha256(path)
++            archive.add(path, arcname=name, recursive=False)
++    write_json(output / "source_sha256.json", fingerprints)
++    return fingerprints
++
++
++def process_max_rss_bytes():
++    try:
++        import resource
++        value = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
++        return int(value if sys.platform == "darwin" else value * 1024)
++    except ImportError:
++        return None
++
++
++class CaptureStream(io.TextIOBase):
++    """Buffer partial writes so split test-score messages cannot leak to disk."""
++
++    def __init__(self, console, channel):
++        self.console, self.channel, self.pending = console, channel, ""
++
++    @property
++    def encoding(self):
++        return "utf-8"
++
++    def isatty(self):
++        return False
++
++    def write(self, text):
++        with self.console.lock:
++            self.pending += str(text)
++            parts = re.split(r"[\r\n]", self.pending)
++            self.pending = parts.pop()
++            for line in parts:
++                if line:
++                    self.console.emit(self.channel, line)
++        return len(text)
++
++    def flush(self):
++        # Do not emit an incomplete record: the next write may contain its score.
++        if not self.console.log.closed:
++            self.console.log.flush()
++
++    def finish(self):
++        with self.console.lock:
++            if self.pending:
++                self.console.emit(self.channel, self.pending)
++                self.pending = ""
++            self.flush()
++
++
++class CaptureConsole:
++    def __init__(self, log):
++        self.log, self.observer = log, None
++        self.lock = threading.RLock()
++        self.stdout = CaptureStream(self, "stdout")
++        self.stderr = CaptureStream(self, "stderr")
++
++    def emit(self, channel, line):
++        if self.observer is not None:
++            self.observer(channel, line)
++        self.log.write(redact(line) + "\n")
++
++    @staticmethod
++    def handlers():
++        loggers = [logging.getLogger()]
++        loggers.extend(value for value in logging.Logger.manager.loggerDict.values()
++                       if isinstance(value, logging.Logger))
++        return {handler for logger in loggers for handler in logger.handlers}
++
++    @contextlib.contextmanager
++    def redirect(self):
++        old_out, old_err = sys.stdout, sys.stderr
++        changed = {}
++        for handler in self.handlers():
++            stream = getattr(handler, "stream", None)
++            if stream is old_out or stream is old_err:
++                changed[handler] = stream
++                handler.setStream(self.stdout if stream is old_out else self.stderr)
++        try:
++            with contextlib.redirect_stdout(self.stdout), contextlib.redirect_stderr(self.stderr):
++                yield self
++        finally:
++            self.stdout.finish()
++            self.stderr.finish()
++            for handler in self.handlers():
++                stream = getattr(handler, "stream", None)
++                if handler in changed:
++                    handler.setStream(changed[handler])
++                elif stream is self.stdout or stream is self.stderr:
++                    handler.setStream(old_out if stream is self.stdout else old_err)
++
++
++class CopyCapture:
++    """Delegate exactly one original deepcopy per original best-model update."""
++
++    def __init__(self, original, observer):
++        self.original, self.observer = original, observer
++
++    def __getattr__(self, name):
++        return getattr(self.original, name)
++
++    def deepcopy(self, *args, **kwargs):
++        result = self.original.deepcopy(*args, **kwargs)
++        self.observer(result)
++        return result
++
++
++class RunRecorder:
++    def __init__(self, torch, device, mask_stream=None, feedback_stream=None):
++        self.torch, self.device, self.mask_stream = torch, device, mask_stream
++        self.feedback_stream, self.feedback_records = feedback_stream, 0
++        self.pretrain_calls = self.intermediate_calls = self.final_calls = 0
++        self.inner_calls = self.summary_count = 0
++        self.pretrained = self.best_probe = self.last_probe = None
++        self.final_scores = self.best_val_acc = self.best_val_epoch = None
++        self.stage = "idle"
++        self.resources, self.dataset = {}, None
++        self.nonfinite = False
++        self.mask_records = 0
++
++    def sync(self):
++        if str(self.device).startswith("cuda"):
++            self.torch.cuda.synchronize(self.device)
++
++    def measured(self, name, function):
++        self.sync()
++        cuda = str(self.device).startswith("cuda")
++        if cuda:
++            self.torch.cuda.reset_peak_memory_stats(self.device)
++        wall, cpu = time.perf_counter(), time.process_time()
++        result = function()
++        self.sync()
++        self.resources[name] = {
++            "wall_seconds": time.perf_counter() - wall,
++            "cpu_seconds": time.process_time() - cpu,
++            "pytorch_peak_allocated_bytes": (
++                int(self.torch.cuda.max_memory_allocated(self.device)) if cuda else None),
++            "pytorch_peak_reserved_bytes": (
++                int(self.torch.cuda.max_memory_reserved(self.device)) if cuda else None),
++            "process_lifetime_max_rss_bytes_at_phase_end": process_max_rss_bytes(),
++        }
++        return result
++
++    def observe(self, channel, line):
++        if re.search(r"\b(?:train_loss|val_loss):\s*(?:nan|[+-]?inf)\b", line, re.I):
++            self.nonfinite = True
++        if channel == "stdout" and self.stage == "final_probe":
++            match = SUMMARY.search(line)
++            if match:
++                self.summary_count += 1
++                self.best_val_acc, self.best_val_epoch = float(match[1]), int(match[2])
++        mask = re.search(r"\bINPUT_MASK\s+(\{.*\})$", line)
++        if mask:
++            stats = ast.literal_eval(mask[1])
++            if self.mask_stream is not None:
++                self.mask_stream.write(json.dumps(stats, allow_nan=False) + "\n")
++            self.mask_records += 1
++        feedback = re.search(r"\bINPUT_MASK_FEEDBACK\s+(\{.*\})$", line)
++        if feedback:
++            stats = ast.literal_eval(feedback[1])
++            if self.feedback_stream is not None:
++                self.feedback_stream.write(json.dumps(stats, allow_nan=False) + "\n")
++            self.feedback_records += 1
++
++    @contextlib.contextmanager
++    def install(self, entry, finetune):
++        train, probe, loader = entry.pretrain, entry.linear_probing_full_batch, entry.load_small_dataset
++
++        def load_recorded(*args, **kwargs):
++            result = self.measured("data_loading", lambda: loader(*args, **kwargs))
++            graph, (features, classes) = result
++            splits, split_hashes = {}, {}
++            for name in ("train_mask", "val_mask", "test_mask"):
++                value = graph.ndata[name].detach().cpu().contiguous()
++                splits[name] = int(value.sum().item())
++                split_hashes[name] = hashlib.sha256(value.numpy().tobytes()).hexdigest()
++            self.dataset = {
++                "nodes": int(graph.num_nodes()), "edges_with_self_loops": int(graph.num_edges()),
++                "features": int(features), "classes": int(classes),
++                "splits": splits, "split_mask_sha256": split_hashes,
++                "feature_matrix_sha256": hashlib.sha256(
++                    graph.ndata["feat"].detach().cpu().contiguous().numpy().tobytes()).hexdigest(),
++                "ordered_edge_index_sha256": hashlib.sha256(b"".join(
++                    endpoint.detach().cpu().contiguous().numpy().tobytes()
++                    for endpoint in graph.edges())).hexdigest(),
++            }
++            return result
++
++        def train_recorded(*args, **kwargs):
++            self.pretrain_calls += 1
++            self.stage = "pretrain"
++            try:
++                result = self.measured("pretrain_including_intermediate_probes",
++                                       lambda: train(*args, **kwargs))
++                self.pretrained = result
++                return result
++            finally:
++                self.stage = "idle"
++
++        def probe_recorded(*args, **kwargs):
++            bound = inspect.signature(probe).bind(*args, **kwargs)
++            if bound.arguments.get("mute", False):
++                self.intermediate_calls += 1
++                return probe(*args, **kwargs)
++            self.final_calls += 1
++            self.stage = "final_probe"
++            old_copy, old_inner = finetune.copy, finetune._linear_probing_full_batch
++
++            def selected(model):
++                self.best_probe = model
++
++            def inner_recorded(*inner_args, **inner_kwargs):
++                self.inner_calls += 1
++                values = inspect.signature(old_inner).bind(*inner_args, **inner_kwargs)
++                self.last_probe = values.arguments["model"]
++                return old_inner(*inner_args, **inner_kwargs)
++
++            finetune.copy = CopyCapture(old_copy, selected)
++            finetune._linear_probing_full_batch = inner_recorded
++            try:
++                result = self.measured("final_embedding_and_linear_probe",
++                                       lambda: probe(*args, **kwargs))
++                self.final_scores = tuple(float(value) for value in result)
++                return result
++            finally:
++                finetune.copy, finetune._linear_probing_full_batch = old_copy, old_inner
++                self.stage = "idle"
++
++        entry.pretrain, entry.linear_probing_full_batch, entry.load_small_dataset = (
++            train_recorded, probe_recorded, load_recorded)
++        try:
++            yield self
++        finally:
++            entry.pretrain, entry.linear_probing_full_batch, entry.load_small_dataset = train, probe, loader
++
++    def validate(self, epochs):
++        if (self.pretrain_calls, self.final_calls, self.inner_calls, self.summary_count) != (1, 1, 1, 1):
++            raise RuntimeError("Unexpected training/probe/summary call count")
++        if self.intermediate_calls != epochs // 200:
++            raise RuntimeError("Original intermediate evaluation frequency changed")
++        if any(value is None for value in (self.pretrained, self.best_probe, self.last_probe, self.dataset)):
++            raise RuntimeError("Missing model, classifier or dataset record")
++        if self.nonfinite or not 0 <= self.best_val_acc <= 1:
++            raise RuntimeError("Invalid loss/validation record")
++        if any(not math.isfinite(value) or not 0 <= value <= 1 for value in self.final_scores):
++            raise RuntimeError("Invalid final evaluation result")
++
++
++def rng_digest(torch, numpy):
++    digest = hashlib.sha256(repr(random.getstate()).encode())
++    state = numpy.random.get_state()
++    digest.update(state[0].encode())
++    digest.update(state[1].tobytes())
++    digest.update(repr(state[2:]).encode())
++    digest.update(torch.get_rng_state().numpy().tobytes())
++    for value in torch.cuda.get_rng_state_all():
++        digest.update(value.numpy().tobytes())
++    return digest.hexdigest()
++
++
++def cpu_state(model, torch):
++    state = model.state_dict()
++    for key, value in list(state.items()):
++        state[key] = value.detach().cpu().clone()
++        if (state[key].is_floating_point() or state[key].is_complex()) and not torch.isfinite(state[key]).all().item():
++            raise RuntimeError("Nonfinite model state: " + key)
++    return state
++
++
++def save_models(path, recorder, args, torch, numpy):
++    before = rng_digest(torch, numpy)
++    bundle = {
++        "format_version": 1,
++        "effective_args": vars(args).copy(),
++        "model_state_dict": cpu_state(recorder.pretrained, torch),
++        "linear_probe_best_state_dict": cpu_state(recorder.best_probe, torch),
++        "linear_probe_last_state_dict": cpu_state(recorder.last_probe, torch),
++        "probe_spec": {
++            "in_features": int(recorder.last_probe.linear.in_features),
++            "out_features": int(recorder.last_probe.linear.out_features),
++        },
++        "best_val_acc": recorder.best_val_acc,
++        "best_val_epoch": recorder.best_val_epoch,
++        "checkpoint_kind": "final_weights_not_training_resume",
++    }
++    with Path(path).open("xb") as stream:
++        torch.save(bundle, stream)
++    loaded = torch.load(path, map_location="cpu", weights_only=True)
++    for group in ("model_state_dict", "linear_probe_best_state_dict", "linear_probe_last_state_dict"):
++        if set(bundle[group]) != set(loaded[group]):
++            raise RuntimeError("Saved checkpoint keys changed")
++        for key, value in bundle[group].items():
++            if not torch.equal(value, loaded[group][key]):
++                raise RuntimeError("Saved checkpoint tensor changed: " + key)
++    if before != rng_digest(torch, numpy):
++        raise RuntimeError("Checkpoint recording changed global RNG state")
++    return sha256(path)
++
++
++def official_arguments(entry, cli):
++    arguments = [
++        "main_full_batch.py", "--dataset", cli.dataset, "--device", str(cli.device),
++        "--use_cfg", "--seeds", str(cli.seed), "--input_mask_mode", METHODS[cli.method],
++        "--structure_alpha_max", "0.5", "--structure_warmup_ratio", "0.2",
++        "--structure_ramp_end_ratio", "0.8", "--structure_shuffle_seed", "20261025",
++        "--mask_log_interval", "1" if cli.phase == "smoke" else "100",
++        "--input_mask_diagnostics", "--difficulty_ema_beta", "0.9",
++        "--difficulty_clip_quantile", "0.95", "--density_bins", "4",
++        "--density_chunk_size", "256",
++        "--random_group_seed", str({"cora": 2026110301, "citeseer": 2026110302, "pubmed": 2026110303}[cli.dataset]),
++    ]
++    old = sys.argv
++    try:
++        sys.argv = arguments
++        args = entry.load_best_configs(entry.build_args())
++        if cli.phase == "smoke":
++            args.max_epoch, args.max_epoch_f = 5, 5
++        return args
++    finally:
++        sys.argv = old
++
++
++def validate_development_cli(cli):
++    if cli.phase not in ("smoke", "development"):
++        raise RuntimeError("r-dev1 has no formal-experiment entry point")
++    if cli.phase == "smoke" and cli.seed != 0:
++        raise RuntimeError("Short smoke checks use seed 0 only")
++    if cli.phase == "development" and cli.seed not in (0, 1, 2):
++        raise RuntimeError("Development seeds are fixed to 0, 1, 2")
++    if cli.method not in METHODS:
++        raise RuntimeError("Unsupported development method")
++
++
++def run(cli):
++    started = time.perf_counter()
++    root = Path.cwd().resolve()
++    if Path(__file__).resolve().parent != root:
++        raise RuntimeError("Upload this script into the repository root and run from that root")
++    validate_development_cli(cli)
++    core = check_sources(root)
++    output, weights = prepare_directories(cli.output_dir, cli.checkpoint_root, root)
++    checkpoint = weights / "models.pt"
++    status = {"status": "running", "phase": cli.phase, "method": cli.method,
++              "dataset": cli.dataset, "seed": cli.seed, "recorder_version": VERSION,
++              "official_epoch_budget": cli.phase == "development",
++              "reviewed_github_commit": REVIEWED_GITHUB_COMMIT}
++    write_json(output / "status.json", status)
++    print("RECORD_DIR=" + str(output), flush=True)
++    print("CHECKPOINT_DIR=" + str(weights), flush=True)
++    with (output / "train.log").open("x", encoding="utf-8", buffering=1) as log, \
++         (output / "mask_stats.jsonl").open("x", encoding="utf-8", buffering=1) as masks, \
++         (output / "mask_feedback.jsonl").open("x", encoding="utf-8", buffering=1) as feedback:
++        console = CaptureConsole(log)
++        with console.redirect():
++            try:
++                snapshots = snapshot_sources(root, output)
++                import torch
++                import numpy
++                import dgl
++                import main_full_batch as entry
++                import models.finetune as finetune
++                versions = {"torch": str(torch.__version__), "dgl": str(dgl.__version__),
++                            "numpy": str(numpy.__version__)}
++                if versions != {"torch": "2.1.2+cu118", "dgl": "1.1.3+cu118", "numpy": "1.26.4"}:
++                    raise RuntimeError("Training package versions differ from the verified baseline: " + str(versions))
++                if not torch.cuda.is_available() or not 0 <= cli.device < torch.cuda.device_count():
++                    raise RuntimeError("Requested CUDA device is unavailable")
++                device = torch.device("cuda", cli.device)
++                args = official_arguments(entry, cli)
++                print(args)
++                write_json(output / "effective_args.json", vars(args))
++                metadata = {
++                    "recorder_version": VERSION, "python": sys.version,
++                    "platform": platform.platform(), "versions": versions,
++                    "torch_cuda_runtime": torch.version.cuda,
++                    "gpu_name": torch.cuda.get_device_name(device),
++                    "visible_gpu_memory_bytes": int(torch.cuda.get_device_properties(device).total_memory),
++                    "torch_cpu_threads": torch.get_num_threads(),
++                    "deterministic_algorithms": torch.are_deterministic_algorithms_enabled(),
++                    "cudnn_deterministic": bool(torch.backends.cudnn.deterministic),
++                    "cudnn_benchmark": bool(torch.backends.cudnn.benchmark),
++                    "cuda_matmul_allow_tf32": bool(torch.backends.cuda.matmul.allow_tf32),
++                    "cudnn_allow_tf32": bool(torch.backends.cudnn.allow_tf32),
++                    "runtime_environment": {
++                        name: os.environ.get(name) for name in (
++                            "OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS",
++                            "CUDA_VISIBLE_DEVICES", "CUBLAS_WORKSPACE_CONFIG",
++                            "PYTHONHASHSEED", "DGLBACKEND")
++                    },
++                    "core_sha256": core,
++                    "packages": sorted((dist.metadata.get("Name") or "", dist.version)
++                                       for dist in importlib.metadata.distributions()),
++                }
++                head = subprocess.run(["git", "rev-parse", "HEAD"], check=True,
++                                      capture_output=True, text=True).stdout.strip()
++                metadata["git_head"] = head
++                subprocess.run(["git", "cat-file", "-e", BASE_COMMIT + "^{commit}"], check=True)
++                write_json(output / "environment.json", metadata)
++                recorder = RunRecorder(torch, device, masks, feedback)
++                console.observer = recorder.observe
++                with recorder.install(entry, finetune):
++                    entry.main(args)
++                recorder.validate(args.max_epoch)
++                expected_steps = set(range(0, args.max_epoch, args.mask_log_interval)) | {args.max_epoch - 1}
++                if recorder.feedback_records != len(expected_steps):
++                    raise RuntimeError("Missing/duplicate reconstruction feedback records")
++                sampler = recorder.pretrained.input_masker
++                expected_observations = int(args.mask_rate * sampler.error_ema.numel()) * args.max_epoch
++                if int(sampler.observation_count.sum().item()) != expected_observations:
++                    raise RuntimeError("Reconstruction feedback count differs from exact mask budget")
++                # main() sets num_features during loading; export the final effective namespace.
++                write_json(output / "effective_args.json", vars(args))
++                if any(sha256(root / name) != value for name, value in snapshots.items()):
++                    raise RuntimeError("Source changed during the run")
++                save_start = time.perf_counter()
++                checkpoint_hash = save_models(checkpoint, recorder, args, torch, numpy)
++                if cli.method == "R":
++                    write_json(output / "random_group_plan.json", sampler.group_plan(args.mask_rate))
++                node_path = output / "mask_node_statistics.npz"
++                before_export = rng_digest(torch, numpy)
++                sampler.export_node_statistics(node_path)
++                if before_export != rng_digest(torch, numpy):
++                    raise RuntimeError("Node-statistic export changed RNG state")
++                resources = recorder.resources
++                resources["input_mask_preparation_wall_seconds_included_in_pretrain"] = sampler.preparation_seconds
++                resources["checkpoint_write_and_readback_wall_seconds"] = time.perf_counter() - save_start
++                resources["runner_wall_seconds_to_artifact_export"] = time.perf_counter() - started
++                write_json(output / "resources.json", resources)
++                write_json(output / "test_metrics.json", {
++                    "accuracy_scale": "fraction", "primary": "val_selected_test_acc",
++                    "final_test_acc": recorder.final_scores[0],
++                    "val_selected_test_acc": recorder.final_scores[1],
++                    "selection": "final_pretrained_encoder_then_validation_selected_linear_classifier",
++                })
++                metrics = dict(status, status="complete", best_val_acc=recorder.best_val_acc,
++                               best_val_epoch=recorder.best_val_epoch, dataset_info=recorder.dataset,
++                               intermediate_probe_calls=recorder.intermediate_calls,
++                               mask_records=recorder.mask_records,
++                               feedback_records=recorder.feedback_records,
++                               mask_node_statistics_file=node_path.name,
++                               mask_node_statistics_sha256=sha256(node_path),
++                               checkpoint_path=str(checkpoint),
++                               checkpoint_sha256=checkpoint_hash, checkpoint_readback_equal=True,
++                               test_metrics_file="test_metrics.json")
++                if cli.method == "R":
++                    metrics.update(random_group_plan_file="random_group_plan.json",
++                                   random_group_plan_sha256=sha256(output / "random_group_plan.json"))
++                write_json(output / "metrics.json", metrics)
++                write_json(output / "status.json", dict(status, status="complete"))
++            except BaseException as error:
++                traceback.print_exc()
++                write_json(output / "status.json", dict(status, status="failed",
++                           error_type=type(error).__name__, error=redact(str(error))))
++                raise
++    print("Best ValAcc: %.4f in epoch %d" % (recorder.best_val_acc, recorder.best_val_epoch))
++    print("Pretrain wall seconds: %.3f" % resources["pretrain_including_intermediate_probes"]["wall_seconds"])
++    print("Final probe wall seconds: %.3f" % resources["final_embedding_and_linear_probe"]["wall_seconds"])
++    print("CHECKPOINT_READBACK=PASS")
++    print("RECORDED_RUN=PASS")
++    print("R_DEV1_" + cli.phase.upper() + "_RUN=PASS")
++
++
++def verify(cli):
++    output = Path(cli.output_dir).resolve()
++    status = json.loads((output / "status.json").read_text(encoding="utf-8"))
++    if status["status"] != "complete":
++        raise RuntimeError("Only a complete run can be verified")
++    metrics = json.loads((output / "metrics.json").read_text(encoding="utf-8"))
++    path = Path(metrics["checkpoint_path"])
++    node_path = output / metrics["mask_node_statistics_file"]
++    if sha256(node_path) != metrics["mask_node_statistics_sha256"]:
++        raise RuntimeError("Node-statistic SHA256 mismatch")
++    if status["method"] == "R" and sha256(output / metrics["random_group_plan_file"]) != metrics["random_group_plan_sha256"]:
++        raise RuntimeError("Random-group plan SHA256 mismatch")
++    if sha256(path) != metrics["checkpoint_sha256"]:
++        raise RuntimeError("Checkpoint SHA256 mismatch")
++    check_sources(Path.cwd().resolve())
++    import torch
++    from models import build_model
++    from models.finetune import LogisticRegression
++    payload = torch.load(path, map_location="cpu", weights_only=True)
++    args = argparse.Namespace(**payload["effective_args"])
++    model = build_model(args)
++    model.load_state_dict(payload["model_state_dict"], strict=True)
++    for name in ("linear_probe_best_state_dict", "linear_probe_last_state_dict"):
++        probe = LogisticRegression(payload["probe_spec"]["in_features"],
++                                   payload["probe_spec"]["out_features"])
++        probe.load_state_dict(payload[name], strict=True)
++    print("CHECKPOINT_SHA256=PASS")
++    print("MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS")
++    print("This is a weight-loading check, not resumed training or a new accuracy evaluation.")
++
++
++def require_inherited_lock():
++    """The stage/queue parent must lend the common lock to this subprocess."""
++    value = os.environ.get("GRAPHMAE2_R_LOCK_FD")
++    if value is None:
++        raise RuntimeError("Use the approved R stage/queue entry point; inherited batch lock required")
++    fd = int(value)
++    expected = (Path.cwd() / "outputs/.formal_record_v1.lock").stat()
++    actual = os.fstat(fd)
++    if (actual.st_dev, actual.st_ino) != (expected.st_dev, expected.st_ino):
++        raise RuntimeError("Inherited descriptor is not the common batch lock")
++    import fcntl
++    fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    commands = parser.add_subparsers(dest="command", required=True)
++    run_parser = commands.add_parser("run")
++    run_parser.add_argument("--dataset", required=True, choices=("cora", "citeseer", "pubmed"))
++    run_parser.add_argument("--method", required=True, choices=tuple(METHODS))
++    run_parser.add_argument("--seed", required=True, type=int)
++    run_parser.add_argument("--phase", required=True, choices=("smoke", "development"))
++    run_parser.add_argument("--device", type=int, default=0)
++    run_parser.add_argument("--output-dir", required=True, type=Path)
++    run_parser.add_argument("--checkpoint-root", required=True, type=Path)
++    verify_parser = commands.add_parser("verify")
++    verify_parser.add_argument("--output-dir", required=True, type=Path)
++    cli = parser.parse_args()
++    try:
++        if cli.command == "run":
++            require_inherited_lock()
++        run(cli) if cli.command == "run" else verify(cli)
++    except Exception as error:
++        print("R_DEV1_RECORDER_ERROR: " + redact(str(error)), file=sys.stderr)
++        return 1
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+--- /dev/null
++++ b/test_record_full_batch_r.py
+@@ -0,0 +1,155 @@
++"""v2 recorder contract tests plus one real-model recording regression."""
++
++import argparse
++import contextlib
++import importlib.util
++import io
++import json
++from pathlib import Path
++import types
++import unittest
++
++import record_full_batch_r as recorded
++
++
++class V2RecorderTests(unittest.TestCase):
++    def test_six_explicit_methods(self):
++        self.assertEqual(recorded.METHODS, {
++            "B0": "random", "B2": "structure_curriculum",
++            "D": "reconstruction_curriculum", "S": "density_stratified",
++            "DS": "reconstruction_density_curriculum", "R": "random_group_stratified"})
++
++    def test_formal_and_outside_development_seeds_are_rejected(self):
++        for phase, seed in (("formal", 10), ("development", 3), ("smoke", 1)):
++            with self.assertRaises(RuntimeError):
++                recorded.validate_development_cli(argparse.Namespace(
++                    phase=phase, seed=seed, method="D"))
++        recorded.validate_development_cli(argparse.Namespace(
++            phase="development", seed=2, method="DS"))
++
++    def test_official_configuration_is_loaded_before_smoke_epoch_override(self):
++        import sys
++        from unittest import mock
++        def build():
++            self.assertIn("--input_mask_diagnostics", sys.argv)
++            return argparse.Namespace()
++        def official(args):
++            args.max_epoch, args.max_epoch_f = 2000, 300
++            args.num_hidden, args.mask_rate = 1024, 0.5
++            return args
++        entry = types.SimpleNamespace(build_args=build, load_best_configs=official)
++        for phase, epochs in (("smoke", 5), ("development", 2000)):
++            cli = argparse.Namespace(dataset="cora", device=0, seed=0, method="D", phase=phase)
++            with mock.patch.object(sys, "argv", ["unchanged"]):
++                args = recorded.official_arguments(entry, cli)
++                self.assertEqual(sys.argv, ["unchanged"])
++            self.assertEqual(args.max_epoch, epochs)
++            self.assertEqual(args.num_hidden, 1024)
++            self.assertEqual(args.mask_rate, 0.5)
++
++    def test_feedback_stream_is_distinct_from_old_mask_statistics(self):
++        masks, feedback = io.StringIO(), io.StringIO()
++        recorder = recorded.RunRecorder(None, "cpu", masks, feedback)
++        recorder.observe("stderr", "INFO INPUT_MASK_FEEDBACK {'step': 0, 'masked': 4}")
++        self.assertEqual(recorder.feedback_records, 1)
++        self.assertEqual(recorder.mask_records, 0)
++        self.assertEqual(json.loads(feedback.getvalue())["masked"], 4)
++        self.assertEqual(masks.getvalue(), "")
++
++    def test_actual_source_contract_matches_and_legacy_recorder_is_frozen(self):
++        root = Path(__file__).resolve().parent
++        self.assertEqual(recorded.check_sources(root), recorded.CONTRACT)
++        self.assertEqual(recorded.CONTRACT["record_full_batch.py"],
++                         "7744e2e3ed17305b5b8428bc04f771c3a64eaa3e53b4c6331427c9055f025c95")
++
++    def test_test_metrics_remain_hidden(self):
++        text = "test_acc: 0.9999, TestAcc: 0.8888, Best ValAcc: 0.7000 in epoch 2 ---"
++        redacted = recorded.redact(text)
++        self.assertNotIn("0.9999", redacted)
++        self.assertNotIn("0.8888", redacted)
++        self.assertIn("0.7000", redacted)
++
++
++HAS_RUNTIME = (importlib.util.find_spec("torch") is not None
++               and importlib.util.find_spec("dgl") is not None)
++
++
++@unittest.skipUnless(HAS_RUNTIME, "Requires actual PyTorch/DGL; must run on server")
++class V2RecorderIntegrationTests(unittest.TestCase):
++    def test_v2_recorder_preserves_training_and_saves_difficulty_artifacts(self):
++        import numpy
++        import torch
++        import dgl
++        import main_full_batch as entry
++        import models.finetune as finetune
++        from models import build_model
++        import tempfile
++        before_threads = torch.get_num_threads()
++        torch.set_num_threads(1)
++        old_loader, old_builder, old_probe = entry.load_small_dataset, entry.build_model, entry.linear_probing_full_batch
++        try:
++            for device in [-1] + ([0] if torch.cuda.is_available() else []):
++                for method in recorded.METHODS:
++                    with self.subTest(device=device, method=method):
++                        g = dgl.add_self_loop(dgl.to_bidirected(dgl.graph(
++                            ([0, 1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 0]), num_nodes=6)))
++                        g.ndata["feat"] = torch.arange(48).float().reshape(6, 8) / 48
++                        g.ndata["label"] = torch.tensor([0, 1, 0, 1, 0, 1])
++                        for i, name in enumerate(("train_mask", "val_mask", "test_mask")):
++                            ids = torch.arange(6)
++                            g.ndata[name] = (ids >= i * 2) & (ids < i * 2 + 2)
++                        entry.load_small_dataset = lambda name: (g, (8, 2))
++                        cli = argparse.Namespace(dataset="cora", device=device, seed=0,
++                                                 method=method, phase="smoke")
++                        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
++                            args = recorded.official_arguments(entry, cli)
++                        args.num_hidden, args.num_heads = 16, 2
++                        args.max_epoch, args.max_epoch_f = 3, 3
++                        captured = {}
++                        def builder(*a, **k):
++                            captured["model"] = old_builder(*a, **k)
++                            return captured["model"]
++                        def probe(*a, **k):
++                            result = old_probe(*a, **k)
++                            if not k.get("mute", False):
++                                captured["scores"] = result
++                            return result
++                        entry.build_model, entry.linear_probing_full_batch = builder, probe
++                        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
++                            entry.main(args)
++                        expected_state = recorded.cpu_state(captured["model"], torch)
++                        expected_rng = recorded.rng_digest(torch, numpy)
++                        entry.build_model, entry.linear_probing_full_batch = old_builder, old_probe
++                        stream = io.StringIO()
++                        console = recorded.CaptureConsole(io.StringIO())
++                        recorder = recorded.RunRecorder(torch,
++                            torch.device("cpu" if device < 0 else "cuda:%d" % device),
++                            feedback_stream=stream)
++                        console.observer = recorder.observe
++                        with console.redirect(), recorder.install(entry, finetune):
++                            entry.main(args)
++                        recorder.validate(args.max_epoch)
++                        self.assertEqual(recorder.feedback_records, 3)
++                        self.assertEqual(len(stream.getvalue().splitlines()), 3)
++                        self.assertEqual(recorded.rng_digest(torch, numpy), expected_rng)
++                        self.assertEqual(recorder.final_scores, tuple(float(x) for x in captured["scores"]))
++                        for name, value in recorded.cpu_state(recorder.pretrained, torch).items():
++                            torch.testing.assert_close(value, expected_state[name], rtol=1e-4, atol=1e-6)
++                        with tempfile.TemporaryDirectory() as temporary:
++                            path = Path(temporary)
++                            recorded.save_models(path / "models.pt", recorder, args, torch, numpy)
++                            sampler = recorder.pretrained.input_masker
++                            sampler.export_node_statistics(path / "nodes.npz")
++                            with numpy.load(path / "nodes.npz", allow_pickle=False) as nodes:
++                                self.assertEqual(nodes["observation_count"].sum(), 9)
++                            payload = torch.load(path / "models.pt", map_location="cpu", weights_only=True)
++                            with contextlib.redirect_stdout(io.StringIO()):
++                                fresh = build_model(argparse.Namespace(**payload["effective_args"]))
++                            fresh.load_state_dict(payload["model_state_dict"], strict=True)
++        finally:
++            entry.load_small_dataset, entry.build_model, entry.linear_probing_full_batch = old_loader, old_builder, old_probe
++            torch.set_num_threads(before_threads)
++
++
++if __name__ == "__main__":
++    unittest.main(verbosity=2)

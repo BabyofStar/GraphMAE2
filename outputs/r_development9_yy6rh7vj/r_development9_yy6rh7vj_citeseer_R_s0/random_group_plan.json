@@ -1,0 +1,20 @@
+{
+  "random_group_seed": 2026110302,
+  "nodes": 3327,
+  "group_sizes": [
+    832,
+    832,
+    832,
+    831
+  ],
+  "masked": 1663,
+  "quotas": [
+    416,
+    416,
+    416,
+    415
+  ],
+  "ordered_group_nodes_sha256": "37ee6eaa8a882e3519059eba6ffe97e74f103c9e1409cbb2cc5f9ce03723f3fe",
+  "fingerprint_encoding": "concatenated groups, little-endian int64 node IDs",
+  "density_layer_semantics": "true local-feature-density partitions"
+}

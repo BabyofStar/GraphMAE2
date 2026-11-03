@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/v2_candidates18_p3TNwS/v2_candidates18_p3TNwS_citeseer_S_s0
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_S_s0
+Best ValAcc: 0.7160 in epoch 8
+Pretrain wall seconds: 54.728
+Final probe wall seconds: 1.075
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+V2_DEVELOPMENT_RUN=PASS

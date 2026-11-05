@@ -1,0 +1,24 @@
+DS_SMOKE=PASS (5 pretrain / 5 probe; CPU reload)
+START dataset=cora method=DS seed=0
+DONE 1/9 dataset=cora seed=0 BestVal=0.8160
+START dataset=cora method=DS seed=1
+DONE 2/9 dataset=cora seed=1 BestVal=0.8100
+START dataset=cora method=DS seed=2
+DONE 3/9 dataset=cora seed=2 BestVal=0.8200
+START dataset=citeseer method=DS seed=0
+DONE 4/9 dataset=citeseer seed=0 BestVal=0.7140
+START dataset=citeseer method=DS seed=1
+DONE 5/9 dataset=citeseer seed=1 BestVal=0.7380
+START dataset=citeseer method=DS seed=2
+DONE 6/9 dataset=citeseer seed=2 BestVal=0.7160
+START dataset=pubmed method=DS seed=0
+DONE 7/9 dataset=pubmed seed=0 BestVal=0.8400
+START dataset=pubmed method=DS seed=1
+DONE 8/9 dataset=pubmed seed=1 BestVal=0.8340
+START dataset=pubmed method=DS seed=2
+DONE 9/9 dataset=pubmed seed=2 BestVal=0.8380
+VAL_COMPARE cora DS=81.533 +/- 0.411 % DS-minus-S=-0.133pp DS-minus-B2=+0.600pp
+VAL_COMPARE citeseer DS=72.267 +/- 1.087 % DS-minus-S=-0.067pp DS-minus-B2=-0.933pp
+VAL_COMPARE pubmed DS=83.733 +/- 0.249 % DS-minus-S=-0.200pp DS-minus-B2=+0.133pp
+ALL_DONE 9/9
+BATCH_EXIT_CODE=0

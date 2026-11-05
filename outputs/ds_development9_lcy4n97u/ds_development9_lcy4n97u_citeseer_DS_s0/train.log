@@ -1,0 +1,1418 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-05 08:16:39,605 - INFO - ----- Using best configs from configs/citeseer.yaml -----
+Namespace(seeds=[0], dataset='citeseer', device=0, max_epoch=500, warmup_steps=-1, num_heads=4, num_out_heads=1, num_layers=2, num_dec_layers=1, num_remasking=3, num_hidden=1024, residual=False, in_drop=0.2, attn_drop=0.1, norm=None, lr=0.0005, weight_decay=0.0001, negative_slope=0.2, activation='prelu', mask_rate=0.5, remask_rate=0.5, remask_method='fixed', mask_type='mask', mask_method='random', drop_edge_rate=0.0, drop_edge_rate_f=0.0, encoder='gat', decoder='gat', loss_fn='sce', alpha_l=1, optimizer='adam', max_epoch_f=500, lr_f=0.025, weight_decay_f=0.01, linear_prob=True, no_pretrain=False, load_model=False, checkpoint_path=None, use_cfg=True, logging=False, scheduler=True, batch_size=256, batch_size_f=128, sampling_method='saint', label_rate=1.0, ego_graph_file_path=None, data_dir='data', lam=0.1, full_graph_forward=False, delayed_ema_epoch=0, replace_rate=0.0, momentum=1, input_mask_mode='reconstruction_density_curriculum', structure_alpha_max=0.5, structure_warmup_ratio=0.2, structure_ramp_end_ratio=0.8, mask_log_interval=100, structure_shuffle_seed=20261025, input_mask_diagnostics=True, difficulty_ema_beta=0.9, difficulty_clip_quantile=0.95, random_group_seed=2026110302, density_bins=4, density_chunk_size=256)
+  NumNodes: 3327
+  NumEdges: 9228
+  NumFeats: 3703
+  NumClasses: 6
+  NumTrainingSamples: 120
+  NumValidationSamples: 500
+  NumTestSamples: 1000
+Done loading data from cached files.
+####### Run 0 for seed 0
+=== Use sce_loss and alpha_l=1 ===
+num_encoder_params: 4846594, num_decoder_params: 3802981, num_params_in_total: 11278048
+2026-11-05 08:16:40,623 - INFO - Use schedular
+2026-11-05 08:16:40,624 - INFO - start training..
+  0%|                                            | 0/500 [00:00<?, ?it/s]2026-11-05 08:16:41,033 - INFO - INPUT_MASK {'step': 0, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.0, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'masked_degree_mean': 2.7059531211853027, 'kept_degree_mean': 2.76682710647583, 'masked_degree_q25_q50_q75': [1.0, 2.0, 3.0]}
+2026-11-05 08:16:41,191 - INFO - INPUT_MASK_FEEDBACK {'step': 0, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.0, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'batch_reconstruction_error_mean': 1.0011796951293945, 'observed_nodes': 1663, 'observation_count_min_mean_max': [0, 0.4998497144574692, 1], 'degree_error_pearson_seen': -0.03058709513741292, 'masked_degree_mean': 2.7059531211853027, 'kept_degree_mean': 2.766826868057251, 'masked_one_hop_visible_mean': 1.3974744437763078, 'masked_one_hop_zero_visible_fraction': 0.27059530968129886, 'masked_two_hop_visible_mean': 7.08959711365003, 'masked_two_hop_zero_visible_fraction': 0.12567648827420325, 'density_layers': [{'layer': 0, 'nodes': 832, 'masked': 416, 'observed': 416, 'error_ema_seen_mean': 1.0017335414886475}, {'layer': 1, 'nodes': 832, 'masked': 416, 'observed': 416, 'error_ema_seen_mean': 0.9999894499778748}, {'layer': 2, 'nodes': 832, 'masked': 416, 'observed': 416, 'error_ema_seen_mean': 1.0019117593765259}, {'layer': 3, 'nodes': 831, 'masked': 415, 'observed': 415, 'error_ema_seen_mean': 1.0010837316513062}]}
+# Epoch 0: train_loss: 1.1011:   0%|             | 0/500 [00:00<?, ?it/s]
+# Epoch 0: train_loss: 1.1011:   0%|     | 1/500 [00:00<02:54,  2.86it/s]
+# Epoch 1: train_loss: 0.9734:   0%|     | 1/500 [00:00<02:54,  2.86it/s]
+# Epoch 2: train_loss: 0.9243:   0%|     | 1/500 [00:00<02:54,  2.86it/s]
+# Epoch 3: train_loss: 0.8943:   0%|     | 1/500 [00:00<02:54,  2.86it/s]
+# Epoch 3: train_loss: 0.8943:   1%|     | 4/500 [00:00<00:48, 10.14it/s]
+# Epoch 4: train_loss: 0.8741:   1%|     | 4/500 [00:00<00:48, 10.14it/s]
+# Epoch 5: train_loss: 0.8587:   1%|     | 4/500 [00:00<00:48, 10.14it/s]
+# Epoch 6: train_loss: 0.8508:   1%|     | 4/500 [00:00<00:48, 10.14it/s]
+# Epoch 6: train_loss: 0.8508:   1%|     | 7/500 [00:00<00:32, 15.14it/s]
+# Epoch 7: train_loss: 0.8455:   1%|     | 7/500 [00:00<00:32, 15.14it/s]
+# Epoch 8: train_loss: 0.8446:   1%|     | 7/500 [00:00<00:32, 15.14it/s]
+# Epoch 9: train_loss: 0.8431:   1%|     | 7/500 [00:00<00:32, 15.14it/s]
+# Epoch 9: train_loss: 0.8431:   2%|    | 10/500 [00:00<00:29, 16.52it/s]
+# Epoch 10: train_loss: 0.8403:   2%|   | 10/500 [00:00<00:29, 16.52it/s]
+# Epoch 11: train_loss: 0.8388:   2%|   | 10/500 [00:00<00:29, 16.52it/s]
+# Epoch 12: train_loss: 0.8407:   2%|   | 10/500 [00:00<00:29, 16.52it/s]
+# Epoch 12: train_loss: 0.8407:   3%|   | 13/500 [00:00<00:26, 18.32it/s]
+# Epoch 13: train_loss: 0.8387:   3%|   | 13/500 [00:00<00:26, 18.32it/s]
+# Epoch 14: train_loss: 0.8330:   3%|   | 13/500 [00:00<00:26, 18.32it/s]
+# Epoch 15: train_loss: 0.8328:   3%|   | 13/500 [00:01<00:26, 18.32it/s]
+# Epoch 15: train_loss: 0.8328:   3%|   | 16/500 [00:01<00:26, 18.49it/s]
+# Epoch 16: train_loss: 0.8359:   3%|   | 16/500 [00:01<00:26, 18.49it/s]
+# Epoch 17: train_loss: 0.8328:   3%|   | 16/500 [00:01<00:26, 18.49it/s]
+# Epoch 18: train_loss: 0.8333:   3%|   | 16/500 [00:01<00:26, 18.49it/s]
+# Epoch 18: train_loss: 0.8333:   4%|   | 19/500 [00:01<00:28, 17.14it/s]
+# Epoch 19: train_loss: 0.8327:   4%|   | 19/500 [00:01<00:28, 17.14it/s]
+# Epoch 20: train_loss: 0.8332:   4%|   | 19/500 [00:01<00:28, 17.14it/s]
+# Epoch 20: train_loss: 0.8332:   4%|▏  | 21/500 [00:01<00:28, 16.75it/s]
+# Epoch 21: train_loss: 0.8330:   4%|▏  | 21/500 [00:02<00:28, 16.75it/s]
+# Epoch 22: train_loss: 0.8306:   4%|▏  | 21/500 [00:02<00:28, 16.75it/s]
+# Epoch 22: train_loss: 0.8306:   5%|▏  | 23/500 [00:02<01:35,  5.00it/s]
+# Epoch 23: train_loss: 0.8292:   5%|▏  | 23/500 [00:02<01:35,  5.00it/s]
+# Epoch 24: train_loss: 0.8297:   5%|▏  | 23/500 [00:02<01:35,  5.00it/s]
+# Epoch 24: train_loss: 0.8297:   5%|▏  | 25/500 [00:02<01:32,  5.12it/s]
+# Epoch 25: train_loss: 0.8278:   5%|▏  | 25/500 [00:03<01:32,  5.12it/s]
+# Epoch 26: train_loss: 0.8305:   5%|▏  | 25/500 [00:03<01:32,  5.12it/s]
+# Epoch 26: train_loss: 0.8305:   5%|▏  | 27/500 [00:03<01:30,  5.23it/s]
+# Epoch 27: train_loss: 0.8268:   5%|▏  | 27/500 [00:03<01:30,  5.23it/s]
+# Epoch 27: train_loss: 0.8268:   6%|▏  | 28/500 [00:03<01:25,  5.54it/s]
+# Epoch 28: train_loss: 0.8289:   6%|▏  | 28/500 [00:03<01:25,  5.54it/s]
+# Epoch 28: train_loss: 0.8289:   6%|▏  | 29/500 [00:03<01:20,  5.85it/s]
+# Epoch 29: train_loss: 0.8303:   6%|▏  | 29/500 [00:03<01:20,  5.85it/s]
+# Epoch 29: train_loss: 0.8303:   6%|▏  | 30/500 [00:03<01:14,  6.28it/s]
+# Epoch 30: train_loss: 0.8288:   6%|▏  | 30/500 [00:03<01:14,  6.28it/s]
+# Epoch 30: train_loss: 0.8288:   6%|▏  | 31/500 [00:03<01:11,  6.60it/s]
+# Epoch 31: train_loss: 0.8290:   6%|▏  | 31/500 [00:03<01:11,  6.60it/s]
+# Epoch 31: train_loss: 0.8290:   6%|▏  | 32/500 [00:03<01:06,  6.99it/s]
+# Epoch 32: train_loss: 0.8270:   6%|▏  | 32/500 [00:04<01:06,  6.99it/s]
+# Epoch 32: train_loss: 0.8270:   7%|▏  | 33/500 [00:04<01:02,  7.45it/s]
+# Epoch 33: train_loss: 0.8261:   7%|▏  | 33/500 [00:04<01:02,  7.45it/s]
+# Epoch 34: train_loss: 0.8276:   7%|▏  | 33/500 [00:04<01:02,  7.45it/s]
+# Epoch 34: train_loss: 0.8276:   7%|▏  | 35/500 [00:04<00:51,  9.07it/s]
+# Epoch 35: train_loss: 0.8260:   7%|▏  | 35/500 [00:04<00:51,  9.07it/s]
+# Epoch 36: train_loss: 0.8262:   7%|▏  | 35/500 [00:04<00:51,  9.07it/s]
+# Epoch 36: train_loss: 0.8262:   7%|▏  | 37/500 [00:04<00:50,  9.21it/s]
+# Epoch 37: train_loss: 0.8264:   7%|▏  | 37/500 [00:04<00:50,  9.21it/s]
+# Epoch 38: train_loss: 0.8270:   7%|▏  | 37/500 [00:04<00:50,  9.21it/s]
+# Epoch 38: train_loss: 0.8270:   8%|▏  | 39/500 [00:04<00:44, 10.45it/s]
+# Epoch 39: train_loss: 0.8248:   8%|▏  | 39/500 [00:04<00:44, 10.45it/s]
+# Epoch 40: train_loss: 0.8258:   8%|▏  | 39/500 [00:04<00:44, 10.45it/s]
+# Epoch 40: train_loss: 0.8258:   8%|▏  | 41/500 [00:04<00:45,  9.98it/s]
+# Epoch 41: train_loss: 0.8227:   8%|▏  | 41/500 [00:04<00:45,  9.98it/s]
+# Epoch 42: train_loss: 0.8230:   8%|▏  | 41/500 [00:04<00:45,  9.98it/s]
+# Epoch 42: train_loss: 0.8230:   9%|▎  | 43/500 [00:04<00:41, 10.96it/s]
+# Epoch 43: train_loss: 0.8208:   9%|▎  | 43/500 [00:05<00:41, 10.96it/s]
+# Epoch 44: train_loss: 0.8235:   9%|▎  | 43/500 [00:05<00:41, 10.96it/s]
+# Epoch 44: train_loss: 0.8235:   9%|▎  | 45/500 [00:05<00:44, 10.19it/s]
+# Epoch 45: train_loss: 0.8239:   9%|▎  | 45/500 [00:05<00:44, 10.19it/s]
+# Epoch 46: train_loss: 0.8260:   9%|▎  | 45/500 [00:05<00:44, 10.19it/s]
+# Epoch 46: train_loss: 0.8260:   9%|▎  | 47/500 [00:05<00:46,  9.71it/s]
+# Epoch 47: train_loss: 0.8209:   9%|▎  | 47/500 [00:05<00:46,  9.71it/s]
+# Epoch 48: train_loss: 0.8227:   9%|▎  | 47/500 [00:05<00:46,  9.71it/s]
+# Epoch 48: train_loss: 0.8227:  10%|▎  | 49/500 [00:05<00:49,  9.08it/s]
+# Epoch 49: train_loss: 0.8193:  10%|▎  | 49/500 [00:05<00:49,  9.08it/s]
+# Epoch 49: train_loss: 0.8193:  10%|▎  | 50/500 [00:05<00:51,  8.82it/s]
+# Epoch 50: train_loss: 0.8184:  10%|▎  | 50/500 [00:05<00:51,  8.82it/s]
+# Epoch 50: train_loss: 0.8184:  10%|▎  | 51/500 [00:05<00:51,  8.74it/s]
+# Epoch 51: train_loss: 0.8189:  10%|▎  | 51/500 [00:05<00:51,  8.74it/s]
+# Epoch 51: train_loss: 0.8189:  10%|▎  | 52/500 [00:05<00:51,  8.63it/s]
+# Epoch 52: train_loss: 0.8155:  10%|▎  | 52/500 [00:06<00:51,  8.63it/s]
+# Epoch 52: train_loss: 0.8155:  11%|▎  | 53/500 [00:06<00:52,  8.55it/s]
+# Epoch 53: train_loss: 0.8174:  11%|▎  | 53/500 [00:06<00:52,  8.55it/s]
+# Epoch 54: train_loss: 0.8192:  11%|▎  | 53/500 [00:06<00:52,  8.55it/s]
+# Epoch 54: train_loss: 0.8192:  11%|▎  | 55/500 [00:06<00:44,  9.92it/s]
+# Epoch 55: train_loss: 0.8187:  11%|▎  | 55/500 [00:06<00:44,  9.92it/s]
+# Epoch 55: train_loss: 0.8187:  11%|▎  | 56/500 [00:06<00:45,  9.76it/s]
+# Epoch 56: train_loss: 0.8116:  11%|▎  | 56/500 [00:06<00:45,  9.76it/s]
+# Epoch 56: train_loss: 0.8116:  11%|▎  | 57/500 [00:06<00:46,  9.53it/s]
+# Epoch 57: train_loss: 0.8162:  11%|▎  | 57/500 [00:06<00:46,  9.53it/s]
+# Epoch 57: train_loss: 0.8162:  12%|▎  | 58/500 [00:06<00:46,  9.44it/s]
+# Epoch 58: train_loss: 0.8138:  12%|▎  | 58/500 [00:06<00:46,  9.44it/s]
+# Epoch 59: train_loss: 0.8189:  12%|▎  | 58/500 [00:06<00:46,  9.44it/s]
+# Epoch 59: train_loss: 0.8189:  12%|▎  | 60/500 [00:06<00:40, 10.93it/s]
+# Epoch 60: train_loss: 0.8173:  12%|▎  | 60/500 [00:06<00:40, 10.93it/s]
+# Epoch 61: train_loss: 0.8153:  12%|▎  | 60/500 [00:06<00:40, 10.93it/s]
+# Epoch 61: train_loss: 0.8153:  12%|▎  | 62/500 [00:06<00:43, 10.12it/s]
+# Epoch 62: train_loss: 0.8164:  12%|▎  | 62/500 [00:06<00:43, 10.12it/s]
+# Epoch 63: train_loss: 0.8166:  12%|▎  | 62/500 [00:07<00:43, 10.12it/s]
+# Epoch 63: train_loss: 0.8166:  13%|▍  | 64/500 [00:07<00:39, 11.09it/s]
+# Epoch 64: train_loss: 0.8154:  13%|▍  | 64/500 [00:07<00:39, 11.09it/s]
+# Epoch 65: train_loss: 0.8111:  13%|▍  | 64/500 [00:07<00:39, 11.09it/s]
+# Epoch 65: train_loss: 0.8111:  13%|▍  | 66/500 [00:07<00:42, 10.26it/s]
+# Epoch 66: train_loss: 0.8119:  13%|▍  | 66/500 [00:07<00:42, 10.26it/s]
+# Epoch 67: train_loss: 0.8117:  13%|▍  | 66/500 [00:07<00:42, 10.26it/s]
+# Epoch 67: train_loss: 0.8117:  14%|▍  | 68/500 [00:07<00:44,  9.64it/s]
+# Epoch 68: train_loss: 0.8098:  14%|▍  | 68/500 [00:07<00:44,  9.64it/s]
+# Epoch 69: train_loss: 0.8134:  14%|▍  | 68/500 [00:07<00:44,  9.64it/s]
+# Epoch 69: train_loss: 0.8134:  14%|▍  | 70/500 [00:07<00:40, 10.55it/s]
+# Epoch 70: train_loss: 0.8098:  14%|▍  | 70/500 [00:07<00:40, 10.55it/s]
+# Epoch 71: train_loss: 0.8098:  14%|▍  | 70/500 [00:07<00:40, 10.55it/s]
+# Epoch 71: train_loss: 0.8098:  14%|▍  | 72/500 [00:07<00:44,  9.68it/s]
+# Epoch 72: train_loss: 0.8086:  14%|▍  | 72/500 [00:08<00:44,  9.68it/s]
+# Epoch 73: train_loss: 0.8093:  14%|▍  | 72/500 [00:08<00:44,  9.68it/s]
+# Epoch 73: train_loss: 0.8093:  15%|▍  | 74/500 [00:08<00:45,  9.30it/s]
+# Epoch 74: train_loss: 0.8064:  15%|▍  | 74/500 [00:08<00:45,  9.30it/s]
+# Epoch 74: train_loss: 0.8064:  15%|▍  | 75/500 [00:08<00:46,  9.08it/s]
+# Epoch 75: train_loss: 0.8027:  15%|▍  | 75/500 [00:08<00:46,  9.08it/s]
+# Epoch 75: train_loss: 0.8027:  15%|▍  | 76/500 [00:08<00:47,  8.87it/s]
+# Epoch 76: train_loss: 0.8063:  15%|▍  | 76/500 [00:08<00:47,  8.87it/s]
+# Epoch 76: train_loss: 0.8063:  15%|▍  | 77/500 [00:08<00:47,  8.84it/s]
+# Epoch 77: train_loss: 0.8056:  15%|▍  | 77/500 [00:08<00:47,  8.84it/s]
+# Epoch 78: train_loss: 0.8052:  15%|▍  | 77/500 [00:08<00:47,  8.84it/s]
+# Epoch 78: train_loss: 0.8052:  16%|▍  | 79/500 [00:08<00:41, 10.15it/s]
+# Epoch 79: train_loss: 0.8061:  16%|▍  | 79/500 [00:08<00:41, 10.15it/s]
+# Epoch 80: train_loss: 0.8047:  16%|▍  | 79/500 [00:08<00:41, 10.15it/s]
+# Epoch 80: train_loss: 0.8047:  16%|▍  | 81/500 [00:08<00:42,  9.84it/s]
+# Epoch 81: train_loss: 0.8039:  16%|▍  | 81/500 [00:08<00:42,  9.84it/s]
+# Epoch 82: train_loss: 0.7998:  16%|▍  | 81/500 [00:09<00:42,  9.84it/s]
+# Epoch 82: train_loss: 0.7998:  17%|▍  | 83/500 [00:09<00:36, 11.34it/s]
+# Epoch 83: train_loss: 0.8018:  17%|▍  | 83/500 [00:09<00:36, 11.34it/s]
+# Epoch 84: train_loss: 0.7997:  17%|▍  | 83/500 [00:09<00:36, 11.34it/s]
+# Epoch 84: train_loss: 0.7997:  17%|▌  | 85/500 [00:09<00:34, 11.96it/s]
+# Epoch 85: train_loss: 0.7990:  17%|▌  | 85/500 [00:09<00:34, 11.96it/s]
+# Epoch 86: train_loss: 0.8034:  17%|▌  | 85/500 [00:09<00:34, 11.96it/s]
+# Epoch 86: train_loss: 0.8034:  17%|▌  | 87/500 [00:09<00:37, 11.11it/s]
+# Epoch 87: train_loss: 0.8034:  17%|▌  | 87/500 [00:09<00:37, 11.11it/s]
+# Epoch 88: train_loss: 0.8029:  17%|▌  | 87/500 [00:09<00:37, 11.11it/s]
+# Epoch 88: train_loss: 0.8029:  18%|▌  | 89/500 [00:09<00:34, 11.91it/s]
+# Epoch 89: train_loss: 0.8040:  18%|▌  | 89/500 [00:09<00:34, 11.91it/s]
+# Epoch 90: train_loss: 0.8021:  18%|▌  | 89/500 [00:09<00:34, 11.91it/s]
+# Epoch 90: train_loss: 0.8021:  18%|▌  | 91/500 [00:09<00:37, 10.94it/s]
+# Epoch 91: train_loss: 0.8004:  18%|▌  | 91/500 [00:09<00:37, 10.94it/s]
+# Epoch 92: train_loss: 0.7995:  18%|▌  | 91/500 [00:09<00:37, 10.94it/s]
+# Epoch 92: train_loss: 0.7995:  19%|▌  | 93/500 [00:09<00:35, 11.37it/s]
+# Epoch 93: train_loss: 0.7964:  19%|▌  | 93/500 [00:10<00:35, 11.37it/s]
+# Epoch 94: train_loss: 0.8047:  19%|▌  | 93/500 [00:10<00:35, 11.37it/s]
+# Epoch 94: train_loss: 0.8047:  19%|▌  | 95/500 [00:10<00:44,  9.09it/s]
+# Epoch 95: train_loss: 0.7995:  19%|▌  | 95/500 [00:10<00:44,  9.09it/s]
+# Epoch 96: train_loss: 0.8039:  19%|▌  | 95/500 [00:10<00:44,  9.09it/s]
+# Epoch 96: train_loss: 0.8039:  19%|▌  | 97/500 [00:10<00:46,  8.70it/s]
+# Epoch 97: train_loss: 0.7992:  19%|▌  | 97/500 [00:10<00:46,  8.70it/s]
+# Epoch 97: train_loss: 0.7992:  20%|▌  | 98/500 [00:10<00:47,  8.48it/s]
+# Epoch 98: train_loss: 0.7989:  20%|▌  | 98/500 [00:10<00:47,  8.48it/s]
+# Epoch 98: train_loss: 0.7989:  20%|▌  | 99/500 [00:10<00:47,  8.40it/s]
+# Epoch 99: train_loss: 0.8017:  20%|▌  | 99/500 [00:10<00:47,  8.40it/s]
+# Epoch 99: train_loss: 0.8017:  20%|▍ | 100/500 [00:10<00:48,  8.31it/s]2026-11-05 08:16:51,822 - INFO - INPUT_MASK {'step': 100, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.00033400133600533966, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'masked_degree_mean': 2.776909112930298, 'kept_degree_mean': 2.695913553237915, 'masked_degree_q25_q50_q75': [1.0, 2.0, 3.0]}
+2026-11-05 08:16:51,926 - INFO - INPUT_MASK_FEEDBACK {'step': 100, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.00033400133600533966, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'batch_reconstruction_error_mean': 0.8008455634117126, 'observed_nodes': 3327, 'observation_count_min_mean_max': [34, 50.48482116020439, 66], 'degree_error_pearson_seen': -0.4830046635363666, 'masked_degree_mean': 2.776909112930298, 'kept_degree_mean': 2.695913553237915, 'masked_one_hop_visible_mean': 1.3613950691521346, 'masked_one_hop_zero_visible_fraction': 0.31930246542393265, 'masked_two_hop_visible_mean': 7.0625375826819, 'masked_two_hop_zero_visible_fraction': 0.15033072760072158, 'density_layers': [{'layer': 0, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.8316475749015808}, {'layer': 1, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7845177054405212}, {'layer': 2, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7966601252555847}, {'layer': 3, 'nodes': 831, 'masked': 415, 'observed': 831, 'error_ema_seen_mean': 0.8135225176811218}]}
+# Epoch 100: train_loss: 0.8009:  20%|▏| 100/500 [00:11<00:48,  8.31it/s]
+# Epoch 100: train_loss: 0.8009:  20%|▏| 101/500 [00:11<00:58,  6.80it/s]
+# Epoch 101: train_loss: 0.7980:  20%|▏| 101/500 [00:11<00:58,  6.80it/s]
+# Epoch 101: train_loss: 0.7980:  20%|▏| 102/500 [00:11<00:56,  7.02it/s]
+# Epoch 102: train_loss: 0.7995:  20%|▏| 102/500 [00:11<00:56,  7.02it/s]
+# Epoch 102: train_loss: 0.7995:  21%|▏| 103/500 [00:11<01:06,  6.01it/s]
+# Epoch 103: train_loss: 0.7949:  21%|▏| 103/500 [00:11<01:06,  6.01it/s]
+# Epoch 103: train_loss: 0.7949:  21%|▏| 104/500 [00:11<01:01,  6.41it/s]
+# Epoch 104: train_loss: 0.7998:  21%|▏| 104/500 [00:11<01:01,  6.41it/s]
+# Epoch 104: train_loss: 0.7998:  21%|▏| 105/500 [00:11<01:10,  5.61it/s]
+# Epoch 105: train_loss: 0.7966:  21%|▏| 105/500 [00:11<01:10,  5.61it/s]
+# Epoch 105: train_loss: 0.7966:  21%|▏| 106/500 [00:11<01:05,  6.01it/s]
+# Epoch 106: train_loss: 0.8010:  21%|▏| 106/500 [00:12<01:05,  6.01it/s]
+# Epoch 106: train_loss: 0.8010:  21%|▏| 107/500 [00:12<01:01,  6.43it/s]
+# Epoch 107: train_loss: 0.7946:  21%|▏| 107/500 [00:12<01:01,  6.43it/s]
+# Epoch 107: train_loss: 0.7946:  22%|▏| 108/500 [00:12<01:09,  5.64it/s]
+# Epoch 108: train_loss: 0.7958:  22%|▏| 108/500 [00:12<01:09,  5.64it/s]
+# Epoch 108: train_loss: 0.7958:  22%|▏| 109/500 [00:12<01:03,  6.15it/s]
+# Epoch 109: train_loss: 0.7940:  22%|▏| 109/500 [00:12<01:03,  6.15it/s]
+# Epoch 109: train_loss: 0.7940:  22%|▏| 110/500 [00:12<00:58,  6.65it/s]
+# Epoch 110: train_loss: 0.7938:  22%|▏| 110/500 [00:12<00:58,  6.65it/s]
+# Epoch 110: train_loss: 0.7938:  22%|▏| 111/500 [00:12<00:55,  7.06it/s]
+# Epoch 111: train_loss: 0.7924:  22%|▏| 111/500 [00:12<00:55,  7.06it/s]
+# Epoch 111: train_loss: 0.7924:  22%|▏| 112/500 [00:12<00:52,  7.40it/s]
+# Epoch 112: train_loss: 0.7954:  22%|▏| 112/500 [00:12<00:52,  7.40it/s]
+# Epoch 112: train_loss: 0.7954:  23%|▏| 113/500 [00:12<00:50,  7.69it/s]
+# Epoch 113: train_loss: 0.8018:  23%|▏| 113/500 [00:13<00:50,  7.69it/s]
+# Epoch 113: train_loss: 0.8018:  23%|▏| 114/500 [00:13<00:49,  7.74it/s]
+# Epoch 114: train_loss: 0.7918:  23%|▏| 114/500 [00:13<00:49,  7.74it/s]
+# Epoch 114: train_loss: 0.7918:  23%|▏| 115/500 [00:13<00:48,  7.95it/s]
+# Epoch 115: train_loss: 0.7959:  23%|▏| 115/500 [00:13<00:48,  7.95it/s]
+# Epoch 115: train_loss: 0.7959:  23%|▏| 116/500 [00:13<00:47,  8.06it/s]
+# Epoch 116: train_loss: 0.7974:  23%|▏| 116/500 [00:13<00:47,  8.06it/s]
+# Epoch 117: train_loss: 0.7967:  23%|▏| 116/500 [00:13<00:47,  8.06it/s]
+# Epoch 117: train_loss: 0.7967:  24%|▏| 118/500 [00:13<00:37, 10.11it/s]
+# Epoch 118: train_loss: 0.7962:  24%|▏| 118/500 [00:13<00:37, 10.11it/s]
+# Epoch 119: train_loss: 0.7926:  24%|▏| 118/500 [00:13<00:37, 10.11it/s]
+# Epoch 119: train_loss: 0.7926:  24%|▏| 120/500 [00:13<00:40,  9.47it/s]
+# Epoch 120: train_loss: 0.7940:  24%|▏| 120/500 [00:13<00:40,  9.47it/s]
+# Epoch 120: train_loss: 0.7940:  24%|▏| 121/500 [00:13<00:40,  9.41it/s]
+# Epoch 121: train_loss: 0.7958:  24%|▏| 121/500 [00:13<00:40,  9.41it/s]
+# Epoch 122: train_loss: 0.7954:  24%|▏| 121/500 [00:13<00:40,  9.41it/s]
+# Epoch 122: train_loss: 0.7954:  25%|▏| 123/500 [00:13<00:34, 10.84it/s]
+# Epoch 123: train_loss: 0.7942:  25%|▏| 123/500 [00:14<00:34, 10.84it/s]
+# Epoch 124: train_loss: 0.7918:  25%|▏| 123/500 [00:14<00:34, 10.84it/s]
+# Epoch 124: train_loss: 0.7918:  25%|▎| 125/500 [00:14<00:37, 10.00it/s]
+# Epoch 125: train_loss: 0.8003:  25%|▎| 125/500 [00:14<00:37, 10.00it/s]
+# Epoch 126: train_loss: 0.7940:  25%|▎| 125/500 [00:14<00:37, 10.00it/s]
+# Epoch 126: train_loss: 0.7940:  25%|▎| 127/500 [00:14<00:35, 10.63it/s]
+# Epoch 127: train_loss: 0.7944:  25%|▎| 127/500 [00:14<00:35, 10.63it/s]
+# Epoch 128: train_loss: 0.7974:  25%|▎| 127/500 [00:14<00:35, 10.63it/s]
+# Epoch 128: train_loss: 0.7974:  26%|▎| 129/500 [00:14<00:36, 10.12it/s]
+# Epoch 129: train_loss: 0.8006:  26%|▎| 129/500 [00:14<00:36, 10.12it/s]
+# Epoch 130: train_loss: 0.7955:  26%|▎| 129/500 [00:14<00:36, 10.12it/s]
+# Epoch 130: train_loss: 0.7955:  26%|▎| 131/500 [00:14<00:39,  9.41it/s]
+# Epoch 131: train_loss: 0.7914:  26%|▎| 131/500 [00:14<00:39,  9.41it/s]
+# Epoch 131: train_loss: 0.7914:  26%|▎| 132/500 [00:14<00:40,  9.14it/s]
+# Epoch 132: train_loss: 0.7960:  26%|▎| 132/500 [00:15<00:40,  9.14it/s]
+# Epoch 132: train_loss: 0.7960:  27%|▎| 133/500 [00:15<00:40,  8.96it/s]
+# Epoch 133: train_loss: 0.7943:  27%|▎| 133/500 [00:15<00:40,  8.96it/s]
+# Epoch 133: train_loss: 0.7943:  27%|▎| 134/500 [00:15<00:41,  8.76it/s]
+# Epoch 134: train_loss: 0.7939:  27%|▎| 134/500 [00:15<00:41,  8.76it/s]
+# Epoch 134: train_loss: 0.7939:  27%|▎| 135/500 [00:15<00:41,  8.81it/s]
+# Epoch 135: train_loss: 0.7921:  27%|▎| 135/500 [00:15<00:41,  8.81it/s]
+# Epoch 135: train_loss: 0.7921:  27%|▎| 136/500 [00:15<00:42,  8.64it/s]
+# Epoch 136: train_loss: 0.7937:  27%|▎| 136/500 [00:15<00:42,  8.64it/s]
+# Epoch 136: train_loss: 0.7937:  27%|▎| 137/500 [00:15<00:43,  8.37it/s]
+# Epoch 137: train_loss: 0.7965:  27%|▎| 137/500 [00:15<00:43,  8.37it/s]
+# Epoch 137: train_loss: 0.7965:  28%|▎| 138/500 [00:15<00:42,  8.47it/s]
+# Epoch 138: train_loss: 0.7935:  28%|▎| 138/500 [00:15<00:42,  8.47it/s]
+# Epoch 138: train_loss: 0.7935:  28%|▎| 139/500 [00:15<00:43,  8.39it/s]
+# Epoch 139: train_loss: 0.7970:  28%|▎| 139/500 [00:15<00:43,  8.39it/s]
+# Epoch 139: train_loss: 0.7970:  28%|▎| 140/500 [00:15<00:43,  8.28it/s]
+# Epoch 140: train_loss: 0.7932:  28%|▎| 140/500 [00:16<00:43,  8.28it/s]
+# Epoch 140: train_loss: 0.7932:  28%|▎| 141/500 [00:16<00:54,  6.55it/s]
+# Epoch 141: train_loss: 0.7941:  28%|▎| 141/500 [00:16<00:54,  6.55it/s]
+# Epoch 141: train_loss: 0.7941:  28%|▎| 142/500 [00:16<00:52,  6.82it/s]
+# Epoch 142: train_loss: 0.7931:  28%|▎| 142/500 [00:16<00:52,  6.82it/s]
+# Epoch 142: train_loss: 0.7931:  29%|▎| 143/500 [00:16<00:50,  7.11it/s]
+# Epoch 143: train_loss: 0.7926:  29%|▎| 143/500 [00:16<00:50,  7.11it/s]
+# Epoch 143: train_loss: 0.7926:  29%|▎| 144/500 [00:16<00:47,  7.44it/s]
+# Epoch 144: train_loss: 0.7913:  29%|▎| 144/500 [00:16<00:47,  7.44it/s]
+# Epoch 144: train_loss: 0.7913:  29%|▎| 145/500 [00:16<00:47,  7.49it/s]
+# Epoch 145: train_loss: 0.7954:  29%|▎| 145/500 [00:16<00:47,  7.49it/s]
+# Epoch 145: train_loss: 0.7954:  29%|▎| 146/500 [00:16<00:46,  7.64it/s]
+# Epoch 146: train_loss: 0.7950:  29%|▎| 146/500 [00:16<00:46,  7.64it/s]
+# Epoch 146: train_loss: 0.7950:  29%|▎| 147/500 [00:16<00:45,  7.82it/s]
+# Epoch 147: train_loss: 0.7928:  29%|▎| 147/500 [00:16<00:45,  7.82it/s]
+# Epoch 147: train_loss: 0.7928:  30%|▎| 148/500 [00:16<00:44,  7.97it/s]
+# Epoch 148: train_loss: 0.7965:  30%|▎| 148/500 [00:17<00:44,  7.97it/s]
+# Epoch 148: train_loss: 0.7965:  30%|▎| 149/500 [00:17<00:43,  8.13it/s]
+# Epoch 149: train_loss: 0.7891:  30%|▎| 149/500 [00:17<00:43,  8.13it/s]
+# Epoch 149: train_loss: 0.7891:  30%|▎| 150/500 [00:17<00:41,  8.48it/s]
+# Epoch 150: train_loss: 0.7916:  30%|▎| 150/500 [00:17<00:41,  8.48it/s]
+# Epoch 151: train_loss: 0.7962:  30%|▎| 150/500 [00:17<00:41,  8.48it/s]
+# Epoch 151: train_loss: 0.7962:  30%|▎| 152/500 [00:17<00:34, 10.18it/s]
+# Epoch 152: train_loss: 0.7911:  30%|▎| 152/500 [00:17<00:34, 10.18it/s]
+# Epoch 152: train_loss: 0.7911:  31%|▎| 153/500 [00:17<00:34, 10.03it/s]
+# Epoch 153: train_loss: 0.7995:  31%|▎| 153/500 [00:17<00:34, 10.03it/s]
+# Epoch 153: train_loss: 0.7995:  31%|▎| 154/500 [00:17<00:36,  9.39it/s]
+# Epoch 154: train_loss: 0.7879:  31%|▎| 154/500 [00:17<00:36,  9.39it/s]
+# Epoch 154: train_loss: 0.7879:  31%|▎| 155/500 [00:17<00:37,  9.14it/s]
+# Epoch 155: train_loss: 0.7900:  31%|▎| 155/500 [00:17<00:37,  9.14it/s]
+# Epoch 155: train_loss: 0.7900:  31%|▎| 156/500 [00:17<00:39,  8.73it/s]
+# Epoch 156: train_loss: 0.7941:  31%|▎| 156/500 [00:18<00:39,  8.73it/s]
+# Epoch 156: train_loss: 0.7941:  31%|▎| 157/500 [00:18<00:51,  6.69it/s]
+# Epoch 157: train_loss: 0.7924:  31%|▎| 157/500 [00:18<00:51,  6.69it/s]
+# Epoch 157: train_loss: 0.7924:  32%|▎| 158/500 [00:18<01:00,  5.67it/s]
+# Epoch 158: train_loss: 0.7963:  32%|▎| 158/500 [00:18<01:00,  5.67it/s]
+# Epoch 158: train_loss: 0.7963:  32%|▎| 159/500 [00:18<01:06,  5.12it/s]
+# Epoch 159: train_loss: 0.7897:  32%|▎| 159/500 [00:18<01:06,  5.12it/s]
+# Epoch 159: train_loss: 0.7897:  32%|▎| 160/500 [00:18<01:11,  4.77it/s]
+# Epoch 160: train_loss: 0.7912:  32%|▎| 160/500 [00:18<01:11,  4.77it/s]
+# Epoch 160: train_loss: 0.7912:  32%|▎| 161/500 [00:18<01:03,  5.32it/s]
+# Epoch 161: train_loss: 0.7894:  32%|▎| 161/500 [00:19<01:03,  5.32it/s]
+# Epoch 161: train_loss: 0.7894:  32%|▎| 162/500 [00:19<01:07,  4.98it/s]
+# Epoch 162: train_loss: 0.7934:  32%|▎| 162/500 [00:19<01:07,  4.98it/s]
+# Epoch 162: train_loss: 0.7934:  33%|▎| 163/500 [00:19<01:00,  5.57it/s]
+# Epoch 163: train_loss: 0.7940:  33%|▎| 163/500 [00:19<01:00,  5.57it/s]
+# Epoch 163: train_loss: 0.7940:  33%|▎| 164/500 [00:19<01:05,  5.16it/s]
+# Epoch 164: train_loss: 0.7952:  33%|▎| 164/500 [00:19<01:05,  5.16it/s]
+# Epoch 164: train_loss: 0.7952:  33%|▎| 165/500 [00:19<00:58,  5.71it/s]
+# Epoch 165: train_loss: 0.7913:  33%|▎| 165/500 [00:19<00:58,  5.71it/s]
+# Epoch 165: train_loss: 0.7913:  33%|▎| 166/500 [00:19<00:53,  6.24it/s]
+# Epoch 166: train_loss: 0.7911:  33%|▎| 166/500 [00:19<00:53,  6.24it/s]
+# Epoch 166: train_loss: 0.7911:  33%|▎| 167/500 [00:19<01:01,  5.44it/s]
+# Epoch 167: train_loss: 0.7906:  33%|▎| 167/500 [00:20<01:01,  5.44it/s]
+# Epoch 167: train_loss: 0.7906:  34%|▎| 168/500 [00:20<00:54,  6.07it/s]
+# Epoch 168: train_loss: 0.7936:  34%|▎| 168/500 [00:20<00:54,  6.07it/s]
+# Epoch 168: train_loss: 0.7936:  34%|▎| 169/500 [00:20<00:51,  6.42it/s]
+# Epoch 169: train_loss: 0.7894:  34%|▎| 169/500 [00:20<00:51,  6.42it/s]
+# Epoch 169: train_loss: 0.7894:  34%|▎| 170/500 [00:20<00:57,  5.70it/s]
+# Epoch 170: train_loss: 0.7930:  34%|▎| 170/500 [00:20<00:57,  5.70it/s]
+# Epoch 170: train_loss: 0.7930:  34%|▎| 171/500 [00:20<00:52,  6.26it/s]
+# Epoch 171: train_loss: 0.7902:  34%|▎| 171/500 [00:20<00:52,  6.26it/s]
+# Epoch 171: train_loss: 0.7902:  34%|▎| 172/500 [00:20<00:47,  6.84it/s]
+# Epoch 172: train_loss: 0.7911:  34%|▎| 172/500 [00:20<00:47,  6.84it/s]
+# Epoch 172: train_loss: 0.7911:  35%|▎| 173/500 [00:20<00:45,  7.21it/s]
+# Epoch 173: train_loss: 0.7866:  35%|▎| 173/500 [00:20<00:45,  7.21it/s]
+# Epoch 174: train_loss: 0.7907:  35%|▎| 173/500 [00:20<00:45,  7.21it/s]
+# Epoch 174: train_loss: 0.7907:  35%|▎| 175/500 [00:20<00:36,  8.96it/s]
+# Epoch 175: train_loss: 0.7944:  35%|▎| 175/500 [00:21<00:36,  8.96it/s]
+# Epoch 175: train_loss: 0.7944:  35%|▎| 176/500 [00:21<00:35,  9.19it/s]
+# Epoch 176: train_loss: 0.7914:  35%|▎| 176/500 [00:21<00:35,  9.19it/s]
+# Epoch 176: train_loss: 0.7914:  35%|▎| 177/500 [00:21<00:35,  8.99it/s]
+# Epoch 177: train_loss: 0.7874:  35%|▎| 177/500 [00:21<00:35,  8.99it/s]
+# Epoch 177: train_loss: 0.7874:  36%|▎| 178/500 [00:21<00:36,  8.85it/s]
+# Epoch 178: train_loss: 0.7884:  36%|▎| 178/500 [00:21<00:36,  8.85it/s]
+# Epoch 178: train_loss: 0.7884:  36%|▎| 179/500 [00:21<00:35,  8.92it/s]
+# Epoch 179: train_loss: 0.7923:  36%|▎| 179/500 [00:21<00:35,  8.92it/s]
+# Epoch 180: train_loss: 0.7851:  36%|▎| 179/500 [00:21<00:35,  8.92it/s]
+# Epoch 180: train_loss: 0.7851:  36%|▎| 181/500 [00:21<00:31, 10.14it/s]
+# Epoch 181: train_loss: 0.7885:  36%|▎| 181/500 [00:21<00:31, 10.14it/s]
+# Epoch 181: train_loss: 0.7885:  36%|▎| 182/500 [00:21<00:32,  9.91it/s]
+# Epoch 182: train_loss: 0.7893:  36%|▎| 182/500 [00:21<00:32,  9.91it/s]
+# Epoch 182: train_loss: 0.7893:  37%|▎| 183/500 [00:21<00:33,  9.45it/s]
+# Epoch 183: train_loss: 0.7910:  37%|▎| 183/500 [00:21<00:33,  9.45it/s]
+# Epoch 183: train_loss: 0.7910:  37%|▎| 184/500 [00:21<00:33,  9.34it/s]
+# Epoch 184: train_loss: 0.7900:  37%|▎| 184/500 [00:22<00:33,  9.34it/s]
+# Epoch 184: train_loss: 0.7900:  37%|▎| 185/500 [00:22<00:34,  9.06it/s]
+# Epoch 185: train_loss: 0.7866:  37%|▎| 185/500 [00:22<00:34,  9.06it/s]
+# Epoch 185: train_loss: 0.7866:  37%|▎| 186/500 [00:22<00:35,  8.80it/s]
+# Epoch 186: train_loss: 0.7875:  37%|▎| 186/500 [00:22<00:35,  8.80it/s]
+# Epoch 186: train_loss: 0.7875:  37%|▎| 187/500 [00:22<00:36,  8.56it/s]
+# Epoch 187: train_loss: 0.7908:  37%|▎| 187/500 [00:22<00:36,  8.56it/s]
+# Epoch 187: train_loss: 0.7908:  38%|▍| 188/500 [00:22<00:37,  8.41it/s]
+# Epoch 188: train_loss: 0.7917:  38%|▍| 188/500 [00:22<00:37,  8.41it/s]
+# Epoch 188: train_loss: 0.7917:  38%|▍| 189/500 [00:22<00:37,  8.40it/s]
+# Epoch 189: train_loss: 0.7865:  38%|▍| 189/500 [00:22<00:37,  8.40it/s]
+# Epoch 189: train_loss: 0.7865:  38%|▍| 190/500 [00:22<00:37,  8.36it/s]
+# Epoch 190: train_loss: 0.7891:  38%|▍| 190/500 [00:22<00:37,  8.36it/s]
+# Epoch 190: train_loss: 0.7891:  38%|▍| 191/500 [00:22<00:37,  8.29it/s]
+# Epoch 191: train_loss: 0.7862:  38%|▍| 191/500 [00:22<00:37,  8.29it/s]
+# Epoch 191: train_loss: 0.7862:  38%|▍| 192/500 [00:22<00:36,  8.40it/s]
+# Epoch 192: train_loss: 0.7859:  38%|▍| 192/500 [00:23<00:36,  8.40it/s]
+# Epoch 192: train_loss: 0.7859:  39%|▍| 193/500 [00:23<00:36,  8.40it/s]
+# Epoch 193: train_loss: 0.7882:  39%|▍| 193/500 [00:23<00:36,  8.40it/s]
+# Epoch 193: train_loss: 0.7882:  39%|▍| 194/500 [00:23<00:36,  8.48it/s]
+# Epoch 194: train_loss: 0.7907:  39%|▍| 194/500 [00:23<00:36,  8.48it/s]
+# Epoch 195: train_loss: 0.7900:  39%|▍| 194/500 [00:23<00:36,  8.48it/s]
+# Epoch 195: train_loss: 0.7900:  39%|▍| 196/500 [00:23<00:29, 10.25it/s]
+# Epoch 196: train_loss: 0.7899:  39%|▍| 196/500 [00:23<00:29, 10.25it/s]
+# Epoch 197: train_loss: 0.7878:  39%|▍| 196/500 [00:23<00:29, 10.25it/s]
+# Epoch 197: train_loss: 0.7878:  40%|▍| 198/500 [00:23<00:31,  9.58it/s]
+# Epoch 198: train_loss: 0.7891:  40%|▍| 198/500 [00:23<00:31,  9.58it/s]
+# Epoch 198: train_loss: 0.7891:  40%|▍| 199/500 [00:23<00:31,  9.47it/s]
+# IGNORE: --- TestAcc:[HIDDEN], early-stopping-TestAcc:[HIDDEN], Best ValAcc: 0.7240 in epoch 22 --- 
+# Epoch 199: train_loss: 0.7883:  40%|▍| 199/500 [00:23<00:31,  9.47it/s]
+# Epoch 199: train_loss: 0.7883:  40%|▍| 200/500 [00:26<03:40,  1.36it/s]2026-11-05 08:17:07,283 - INFO - INPUT_MASK {'step': 200, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.16733466933867733, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'masked_degree_mean': 2.7450389862060547, 'kept_degree_mean': 2.72776460647583, 'masked_degree_q25_q50_q75': [1.0, 2.0, 3.0]}
+2026-11-05 08:17:07,309 - INFO - INPUT_MASK_FEEDBACK {'step': 200, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.16733466933867733, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'batch_reconstruction_error_mean': 0.785760223865509, 'observed_nodes': 3327, 'observation_count_min_mean_max': [73, 100.46979260595131, 124], 'degree_error_pearson_seen': -0.48360453406754605, 'masked_degree_mean': 2.7450389862060547, 'kept_degree_mean': 2.727764368057251, 'masked_one_hop_visible_mean': 1.4040889957907396, 'masked_one_hop_zero_visible_fraction': 0.2880336740829826, 'masked_two_hop_visible_mean': 7.067949488875526, 'masked_two_hop_zero_visible_fraction': 0.13469633193024655, 'density_layers': [{'layer': 0, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.8231268525123596}, {'layer': 1, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7662352323532104}, {'layer': 2, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7752664089202881}, {'layer': 3, 'nodes': 831, 'masked': 415, 'observed': 831, 'error_ema_seen_mean': 0.7922338247299194}]}
+# Epoch 200: train_loss: 0.7858:  40%|▍| 200/500 [00:26<03:40,  1.36it/s]
+# Epoch 201: train_loss: 0.7855:  40%|▍| 200/500 [00:26<03:40,  1.36it/s]
+# Epoch 201: train_loss: 0.7855:  40%|▍| 202/500 [00:26<02:16,  2.18it/s]
+# Epoch 202: train_loss: 0.7843:  40%|▍| 202/500 [00:26<02:16,  2.18it/s]
+# Epoch 203: train_loss: 0.7858:  40%|▍| 202/500 [00:27<02:16,  2.18it/s]
+# Epoch 203: train_loss: 0.7858:  41%|▍| 204/500 [00:27<02:23,  2.06it/s]
+# Epoch 204: train_loss: 0.7899:  41%|▍| 204/500 [00:27<02:23,  2.06it/s]
+# Epoch 204: train_loss: 0.7899:  41%|▍| 205/500 [00:27<02:08,  2.29it/s]
+# Epoch 205: train_loss: 0.7882:  41%|▍| 205/500 [00:28<02:08,  2.29it/s]
+# Epoch 205: train_loss: 0.7882:  41%|▍| 206/500 [00:28<01:54,  2.56it/s]
+# Epoch 206: train_loss: 0.7850:  41%|▍| 206/500 [00:28<01:54,  2.56it/s]
+# Epoch 206: train_loss: 0.7850:  41%|▍| 207/500 [00:28<01:35,  3.07it/s]
+# Epoch 207: train_loss: 0.7859:  41%|▍| 207/500 [00:28<01:35,  3.07it/s]
+# Epoch 207: train_loss: 0.7859:  42%|▍| 208/500 [00:28<01:18,  3.70it/s]
+# Epoch 208: train_loss: 0.7896:  42%|▍| 208/500 [00:28<01:18,  3.70it/s]
+# Epoch 208: train_loss: 0.7896:  42%|▍| 209/500 [00:28<01:06,  4.39it/s]
+# Epoch 209: train_loss: 0.7911:  42%|▍| 209/500 [00:28<01:06,  4.39it/s]
+# Epoch 210: train_loss: 0.7874:  42%|▍| 209/500 [00:28<01:06,  4.39it/s]
+# Epoch 210: train_loss: 0.7874:  42%|▍| 211/500 [00:28<00:46,  6.15it/s]
+# Epoch 211: train_loss: 0.7848:  42%|▍| 211/500 [00:28<00:46,  6.15it/s]
+# Epoch 211: train_loss: 0.7848:  42%|▍| 212/500 [00:28<00:43,  6.65it/s]
+# Epoch 212: train_loss: 0.7909:  42%|▍| 212/500 [00:28<00:43,  6.65it/s]
+# Epoch 212: train_loss: 0.7909:  43%|▍| 213/500 [00:28<00:40,  7.15it/s]
+# Epoch 213: train_loss: 0.7865:  43%|▍| 213/500 [00:28<00:40,  7.15it/s]
+# Epoch 213: train_loss: 0.7865:  43%|▍| 214/500 [00:28<00:37,  7.67it/s]
+# Epoch 214: train_loss: 0.7880:  43%|▍| 214/500 [00:28<00:37,  7.67it/s]
+# Epoch 215: train_loss: 0.7863:  43%|▍| 214/500 [00:28<00:37,  7.67it/s]
+# Epoch 215: train_loss: 0.7863:  43%|▍| 216/500 [00:28<00:30,  9.36it/s]
+# Epoch 216: train_loss: 0.7896:  43%|▍| 216/500 [00:29<00:30,  9.36it/s]
+# Epoch 217: train_loss: 0.7838:  43%|▍| 216/500 [00:29<00:30,  9.36it/s]
+# Epoch 217: train_loss: 0.7838:  44%|▍| 218/500 [00:29<00:36,  7.68it/s]
+# Epoch 218: train_loss: 0.7922:  44%|▍| 218/500 [00:29<00:36,  7.68it/s]
+# Epoch 218: train_loss: 0.7922:  44%|▍| 219/500 [00:29<00:36,  7.60it/s]
+# Epoch 219: train_loss: 0.7866:  44%|▍| 219/500 [00:29<00:36,  7.60it/s]
+# Epoch 219: train_loss: 0.7866:  44%|▍| 220/500 [00:29<00:52,  5.35it/s]
+# Epoch 220: train_loss: 0.7912:  44%|▍| 220/500 [00:30<00:52,  5.35it/s]
+# Epoch 220: train_loss: 0.7912:  44%|▍| 221/500 [00:30<01:03,  4.38it/s]
+# Epoch 221: train_loss: 0.7885:  44%|▍| 221/500 [00:30<01:03,  4.38it/s]
+# Epoch 221: train_loss: 0.7885:  44%|▍| 222/500 [00:30<01:04,  4.31it/s]
+# Epoch 222: train_loss: 0.7844:  44%|▍| 222/500 [00:30<01:04,  4.31it/s]
+# Epoch 222: train_loss: 0.7844:  45%|▍| 223/500 [00:30<00:57,  4.84it/s]
+# Epoch 223: train_loss: 0.7828:  45%|▍| 223/500 [00:30<00:57,  4.84it/s]
+# Epoch 223: train_loss: 0.7828:  45%|▍| 224/500 [00:30<00:51,  5.35it/s]
+# Epoch 224: train_loss: 0.7868:  45%|▍| 224/500 [00:30<00:51,  5.35it/s]
+# Epoch 224: train_loss: 0.7868:  45%|▍| 225/500 [00:30<00:45,  5.98it/s]
+# Epoch 225: train_loss: 0.7861:  45%|▍| 225/500 [00:30<00:45,  5.98it/s]
+# Epoch 225: train_loss: 0.7861:  45%|▍| 226/500 [00:30<00:43,  6.37it/s]
+# Epoch 226: train_loss: 0.7904:  45%|▍| 226/500 [00:31<00:43,  6.37it/s]
+# Epoch 226: train_loss: 0.7904:  45%|▍| 227/500 [00:31<00:39,  6.87it/s]
+# Epoch 227: train_loss: 0.7855:  45%|▍| 227/500 [00:31<00:39,  6.87it/s]
+# Epoch 227: train_loss: 0.7855:  46%|▍| 228/500 [00:31<00:37,  7.27it/s]
+# Epoch 228: train_loss: 0.7850:  46%|▍| 228/500 [00:31<00:37,  7.27it/s]
+# Epoch 228: train_loss: 0.7850:  46%|▍| 229/500 [00:31<00:34,  7.77it/s]
+# Epoch 229: train_loss: 0.7836:  46%|▍| 229/500 [00:31<00:34,  7.77it/s]
+# Epoch 229: train_loss: 0.7836:  46%|▍| 230/500 [00:31<00:33,  8.18it/s]
+# Epoch 230: train_loss: 0.7866:  46%|▍| 230/500 [00:31<00:33,  8.18it/s]
+# Epoch 231: train_loss: 0.7849:  46%|▍| 230/500 [00:31<00:33,  8.18it/s]
+# Epoch 231: train_loss: 0.7849:  46%|▍| 232/500 [00:31<00:26, 10.15it/s]
+# Epoch 232: train_loss: 0.7851:  46%|▍| 232/500 [00:31<00:26, 10.15it/s]
+# Epoch 233: train_loss: 0.7883:  46%|▍| 232/500 [00:31<00:26, 10.15it/s]
+# Epoch 233: train_loss: 0.7883:  47%|▍| 234/500 [00:31<00:23, 11.48it/s]
+# Epoch 234: train_loss: 0.7867:  47%|▍| 234/500 [00:31<00:23, 11.48it/s]
+# Epoch 235: train_loss: 0.7877:  47%|▍| 234/500 [00:31<00:23, 11.48it/s]
+# Epoch 235: train_loss: 0.7877:  47%|▍| 236/500 [00:31<00:21, 12.45it/s]
+# Epoch 236: train_loss: 0.7858:  47%|▍| 236/500 [00:31<00:21, 12.45it/s]
+# Epoch 237: train_loss: 0.7843:  47%|▍| 236/500 [00:32<00:21, 12.45it/s]
+# Epoch 237: train_loss: 0.7843:  48%|▍| 238/500 [00:32<00:22, 11.51it/s]
+# Epoch 238: train_loss: 0.7886:  48%|▍| 238/500 [00:32<00:22, 11.51it/s]
+# Epoch 239: train_loss: 0.7827:  48%|▍| 238/500 [00:32<00:22, 11.51it/s]
+# Epoch 239: train_loss: 0.7827:  48%|▍| 240/500 [00:32<00:20, 12.44it/s]
+# Epoch 240: train_loss: 0.7887:  48%|▍| 240/500 [00:32<00:20, 12.44it/s]
+# Epoch 241: train_loss: 0.7846:  48%|▍| 240/500 [00:32<00:20, 12.44it/s]
+# Epoch 241: train_loss: 0.7846:  48%|▍| 242/500 [00:32<00:20, 12.46it/s]
+# Epoch 242: train_loss: 0.7863:  48%|▍| 242/500 [00:32<00:20, 12.46it/s]
+# Epoch 243: train_loss: 0.7869:  48%|▍| 242/500 [00:32<00:20, 12.46it/s]
+# Epoch 243: train_loss: 0.7869:  49%|▍| 244/500 [00:32<00:22, 11.57it/s]
+# Epoch 244: train_loss: 0.7829:  49%|▍| 244/500 [00:32<00:22, 11.57it/s]
+# Epoch 245: train_loss: 0.7874:  49%|▍| 244/500 [00:32<00:22, 11.57it/s]
+# Epoch 245: train_loss: 0.7874:  49%|▍| 246/500 [00:32<00:21, 12.04it/s]
+# Epoch 246: train_loss: 0.7847:  49%|▍| 246/500 [00:32<00:21, 12.04it/s]
+# Epoch 247: train_loss: 0.7870:  49%|▍| 246/500 [00:32<00:21, 12.04it/s]
+# Epoch 247: train_loss: 0.7870:  50%|▍| 248/500 [00:32<00:22, 11.11it/s]
+# Epoch 248: train_loss: 0.7838:  50%|▍| 248/500 [00:32<00:22, 11.11it/s]
+# Epoch 249: train_loss: 0.7847:  50%|▍| 248/500 [00:33<00:22, 11.11it/s]
+# Epoch 249: train_loss: 0.7847:  50%|▌| 250/500 [00:33<00:24, 10.16it/s]
+# Epoch 250: train_loss: 0.7832:  50%|▌| 250/500 [00:33<00:24, 10.16it/s]
+# Epoch 251: train_loss: 0.7847:  50%|▌| 250/500 [00:33<00:24, 10.16it/s]
+# Epoch 251: train_loss: 0.7847:  50%|▌| 252/500 [00:33<00:22, 10.81it/s]
+# Epoch 252: train_loss: 0.7868:  50%|▌| 252/500 [00:33<00:22, 10.81it/s]
+# Epoch 253: train_loss: 0.7875:  50%|▌| 252/500 [00:33<00:22, 10.81it/s]
+# Epoch 253: train_loss: 0.7875:  51%|▌| 254/500 [00:33<00:24, 10.12it/s]
+# Epoch 254: train_loss: 0.7824:  51%|▌| 254/500 [00:33<00:24, 10.12it/s]
+# Epoch 255: train_loss: 0.7861:  51%|▌| 254/500 [00:33<00:24, 10.12it/s]
+# Epoch 255: train_loss: 0.7861:  51%|▌| 256/500 [00:33<00:25,  9.39it/s]
+# Epoch 256: train_loss: 0.7879:  51%|▌| 256/500 [00:33<00:25,  9.39it/s]
+# Epoch 256: train_loss: 0.7879:  51%|▌| 257/500 [00:33<00:26,  9.14it/s]
+# Epoch 257: train_loss: 0.7831:  51%|▌| 257/500 [00:34<00:26,  9.14it/s]
+# Epoch 257: train_loss: 0.7831:  52%|▌| 258/500 [00:34<00:27,  8.76it/s]
+# Epoch 258: train_loss: 0.7864:  52%|▌| 258/500 [00:34<00:27,  8.76it/s]
+# Epoch 258: train_loss: 0.7864:  52%|▌| 259/500 [00:34<00:31,  7.59it/s]
+# Epoch 259: train_loss: 0.7857:  52%|▌| 259/500 [00:34<00:31,  7.59it/s]
+# Epoch 259: train_loss: 0.7857:  52%|▌| 260/500 [00:34<00:31,  7.68it/s]
+# Epoch 260: train_loss: 0.7851:  52%|▌| 260/500 [00:34<00:31,  7.68it/s]
+# Epoch 261: train_loss: 0.7827:  52%|▌| 260/500 [00:34<00:31,  7.68it/s]
+# Epoch 261: train_loss: 0.7827:  52%|▌| 262/500 [00:34<00:26,  9.09it/s]
+# Epoch 262: train_loss: 0.7835:  52%|▌| 262/500 [00:34<00:26,  9.09it/s]
+# Epoch 262: train_loss: 0.7835:  53%|▌| 263/500 [00:34<00:26,  9.09it/s]
+# Epoch 263: train_loss: 0.7812:  53%|▌| 263/500 [00:34<00:26,  9.09it/s]
+# Epoch 263: train_loss: 0.7812:  53%|▌| 264/500 [00:34<00:26,  8.93it/s]
+# Epoch 264: train_loss: 0.7859:  53%|▌| 264/500 [00:34<00:26,  8.93it/s]
+# Epoch 264: train_loss: 0.7859:  53%|▌| 265/500 [00:34<00:26,  8.97it/s]
+# Epoch 265: train_loss: 0.7890:  53%|▌| 265/500 [00:34<00:26,  8.97it/s]
+# Epoch 265: train_loss: 0.7890:  53%|▌| 266/500 [00:34<00:26,  8.82it/s]
+# Epoch 266: train_loss: 0.7836:  53%|▌| 266/500 [00:34<00:26,  8.82it/s]
+# Epoch 267: train_loss: 0.7828:  53%|▌| 266/500 [00:35<00:26,  8.82it/s]
+# Epoch 267: train_loss: 0.7828:  54%|▌| 268/500 [00:35<00:22, 10.12it/s]
+# Epoch 268: train_loss: 0.7860:  54%|▌| 268/500 [00:35<00:22, 10.12it/s]
+# Epoch 269: train_loss: 0.7861:  54%|▌| 268/500 [00:35<00:22, 10.12it/s]
+# Epoch 269: train_loss: 0.7861:  54%|▌| 270/500 [00:35<00:23,  9.82it/s]
+# Epoch 270: train_loss: 0.7863:  54%|▌| 270/500 [00:35<00:23,  9.82it/s]
+# Epoch 271: train_loss: 0.7825:  54%|▌| 270/500 [00:35<00:23,  9.82it/s]
+# Epoch 271: train_loss: 0.7825:  54%|▌| 272/500 [00:35<00:20, 10.98it/s]
+# Epoch 272: train_loss: 0.7851:  54%|▌| 272/500 [00:35<00:20, 10.98it/s]
+# Epoch 273: train_loss: 0.7829:  54%|▌| 272/500 [00:35<00:20, 10.98it/s]
+# Epoch 273: train_loss: 0.7829:  55%|▌| 274/500 [00:35<00:22, 10.26it/s]
+# Epoch 274: train_loss: 0.7839:  55%|▌| 274/500 [00:35<00:22, 10.26it/s]
+# Epoch 275: train_loss: 0.7803:  55%|▌| 274/500 [00:35<00:22, 10.26it/s]
+# Epoch 275: train_loss: 0.7803:  55%|▌| 276/500 [00:35<00:19, 11.57it/s]
+# Epoch 276: train_loss: 0.7861:  55%|▌| 276/500 [00:35<00:19, 11.57it/s]
+# Epoch 277: train_loss: 0.7854:  55%|▌| 276/500 [00:35<00:19, 11.57it/s]
+# Epoch 277: train_loss: 0.7854:  56%|▌| 278/500 [00:35<00:18, 12.02it/s]
+# Epoch 278: train_loss: 0.7835:  56%|▌| 278/500 [00:36<00:18, 12.02it/s]
+# Epoch 279: train_loss: 0.7843:  56%|▌| 278/500 [00:36<00:18, 12.02it/s]
+# Epoch 279: train_loss: 0.7843:  56%|▌| 280/500 [00:36<00:19, 11.34it/s]
+# Epoch 280: train_loss: 0.7822:  56%|▌| 280/500 [00:36<00:19, 11.34it/s]
+# Epoch 281: train_loss: 0.7838:  56%|▌| 280/500 [00:36<00:19, 11.34it/s]
+# Epoch 281: train_loss: 0.7838:  56%|▌| 282/500 [00:36<00:17, 12.15it/s]
+# Epoch 282: train_loss: 0.7825:  56%|▌| 282/500 [00:36<00:17, 12.15it/s]
+# Epoch 283: train_loss: 0.7856:  56%|▌| 282/500 [00:36<00:17, 12.15it/s]
+# Epoch 283: train_loss: 0.7856:  57%|▌| 284/500 [00:36<00:17, 12.45it/s]
+# Epoch 284: train_loss: 0.7790:  57%|▌| 284/500 [00:36<00:17, 12.45it/s]
+# Epoch 285: train_loss: 0.7848:  57%|▌| 284/500 [00:36<00:17, 12.45it/s]
+# Epoch 285: train_loss: 0.7848:  57%|▌| 286/500 [00:36<00:16, 13.21it/s]
+# Epoch 286: train_loss: 0.7829:  57%|▌| 286/500 [00:36<00:16, 13.21it/s]
+# Epoch 287: train_loss: 0.7871:  57%|▌| 286/500 [00:36<00:16, 13.21it/s]
+# Epoch 287: train_loss: 0.7871:  58%|▌| 288/500 [00:36<00:17, 12.29it/s]
+# Epoch 288: train_loss: 0.7840:  58%|▌| 288/500 [00:36<00:17, 12.29it/s]
+# Epoch 289: train_loss: 0.7817:  58%|▌| 288/500 [00:36<00:17, 12.29it/s]
+# Epoch 289: train_loss: 0.7817:  58%|▌| 290/500 [00:36<00:16, 12.96it/s]
+# Epoch 290: train_loss: 0.7845:  58%|▌| 290/500 [00:37<00:16, 12.96it/s]
+# Epoch 291: train_loss: 0.7826:  58%|▌| 290/500 [00:37<00:16, 12.96it/s]
+# Epoch 291: train_loss: 0.7826:  58%|▌| 292/500 [00:37<00:18, 11.34it/s]
+# Epoch 292: train_loss: 0.7838:  58%|▌| 292/500 [00:37<00:18, 11.34it/s]
+# Epoch 293: train_loss: 0.7852:  58%|▌| 292/500 [00:37<00:18, 11.34it/s]
+# Epoch 293: train_loss: 0.7852:  59%|▌| 294/500 [00:37<00:17, 12.01it/s]
+# Epoch 294: train_loss: 0.7824:  59%|▌| 294/500 [00:37<00:17, 12.01it/s]
+# Epoch 295: train_loss: 0.7813:  59%|▌| 294/500 [00:37<00:17, 12.01it/s]
+# Epoch 295: train_loss: 0.7813:  59%|▌| 296/500 [00:37<00:19, 10.64it/s]
+# Epoch 296: train_loss: 0.7856:  59%|▌| 296/500 [00:37<00:19, 10.64it/s]
+# Epoch 297: train_loss: 0.7868:  59%|▌| 296/500 [00:37<00:19, 10.64it/s]
+# Epoch 297: train_loss: 0.7868:  60%|▌| 298/500 [00:37<00:23,  8.51it/s]
+# Epoch 298: train_loss: 0.7814:  60%|▌| 298/500 [00:37<00:23,  8.51it/s]
+# Epoch 298: train_loss: 0.7814:  60%|▌| 299/500 [00:37<00:24,  8.35it/s]
+# Epoch 299: train_loss: 0.7841:  60%|▌| 299/500 [00:38<00:24,  8.35it/s]
+# Epoch 299: train_loss: 0.7841:  60%|▌| 300/500 [00:38<00:24,  8.15it/s]2026-11-05 08:17:19,057 - INFO - INPUT_MASK {'step': 300, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.33433533734134935, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'masked_degree_mean': 2.7288033962249756, 'kept_degree_mean': 2.743990421295166, 'masked_degree_q25_q50_q75': [1.0, 2.0, 3.0]}
+2026-11-05 08:17:19,175 - INFO - INPUT_MASK_FEEDBACK {'step': 300, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.33433533734134935, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'batch_reconstruction_error_mean': 0.7790859341621399, 'observed_nodes': 3327, 'observation_count_min_mean_max': [122, 150.45476405169822, 181], 'degree_error_pearson_seen': -0.4718209025144278, 'masked_degree_mean': 2.7288033962249756, 'kept_degree_mean': 2.743990421295166, 'masked_one_hop_visible_mean': 1.3686109440769694, 'masked_one_hop_zero_visible_fraction': 0.28382441371016237, 'masked_two_hop_visible_mean': 7.067348165965123, 'masked_two_hop_zero_visible_fraction': 0.12146722790138305, 'density_layers': [{'layer': 0, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.8218872547149658}, {'layer': 1, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7610260248184204}, {'layer': 2, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7676659822463989}, {'layer': 3, 'nodes': 831, 'masked': 415, 'observed': 831, 'error_ema_seen_mean': 0.780281662940979}]}
+# Epoch 300: train_loss: 0.7791:  60%|▌| 300/500 [00:38<00:24,  8.15it/s]
+# Epoch 300: train_loss: 0.7791:  60%|▌| 301/500 [00:38<00:28,  6.86it/s]
+# Epoch 301: train_loss: 0.7846:  60%|▌| 301/500 [00:38<00:28,  6.86it/s]
+# Epoch 301: train_loss: 0.7846:  60%|▌| 302/500 [00:38<00:28,  7.00it/s]
+# Epoch 302: train_loss: 0.7811:  60%|▌| 302/500 [00:38<00:28,  7.00it/s]
+# Epoch 302: train_loss: 0.7811:  61%|▌| 303/500 [00:38<00:27,  7.20it/s]
+# Epoch 303: train_loss: 0.7834:  61%|▌| 303/500 [00:38<00:27,  7.20it/s]
+# Epoch 303: train_loss: 0.7834:  61%|▌| 304/500 [00:38<00:26,  7.47it/s]
+# Epoch 304: train_loss: 0.7825:  61%|▌| 304/500 [00:38<00:26,  7.47it/s]
+# Epoch 304: train_loss: 0.7825:  61%|▌| 305/500 [00:38<00:26,  7.43it/s]
+# Epoch 305: train_loss: 0.7823:  61%|▌| 305/500 [00:39<00:26,  7.43it/s]
+# Epoch 305: train_loss: 0.7823:  61%|▌| 306/500 [00:39<00:30,  6.36it/s]
+# Epoch 306: train_loss: 0.7824:  61%|▌| 306/500 [00:39<00:30,  6.36it/s]
+# Epoch 306: train_loss: 0.7824:  61%|▌| 307/500 [00:39<00:28,  6.78it/s]
+# Epoch 307: train_loss: 0.7840:  61%|▌| 307/500 [00:39<00:28,  6.78it/s]
+# Epoch 307: train_loss: 0.7840:  62%|▌| 308/500 [00:39<00:27,  7.11it/s]
+# Epoch 308: train_loss: 0.7803:  62%|▌| 308/500 [00:39<00:27,  7.11it/s]
+# Epoch 308: train_loss: 0.7803:  62%|▌| 309/500 [00:39<00:25,  7.51it/s]
+# Epoch 309: train_loss: 0.7761:  62%|▌| 309/500 [00:39<00:25,  7.51it/s]
+# Epoch 309: train_loss: 0.7761:  62%|▌| 310/500 [00:39<00:25,  7.56it/s]
+# Epoch 310: train_loss: 0.7861:  62%|▌| 310/500 [00:39<00:25,  7.56it/s]
+# Epoch 310: train_loss: 0.7861:  62%|▌| 311/500 [00:39<00:23,  7.98it/s]
+# Epoch 311: train_loss: 0.7807:  62%|▌| 311/500 [00:39<00:23,  7.98it/s]
+# Epoch 311: train_loss: 0.7807:  62%|▌| 312/500 [00:39<00:23,  8.06it/s]
+# Epoch 312: train_loss: 0.7801:  62%|▌| 312/500 [00:39<00:23,  8.06it/s]
+# Epoch 313: train_loss: 0.7815:  62%|▌| 312/500 [00:39<00:23,  8.06it/s]
+# Epoch 313: train_loss: 0.7815:  63%|▋| 314/500 [00:39<00:19,  9.67it/s]
+# Epoch 314: train_loss: 0.7829:  63%|▋| 314/500 [00:40<00:19,  9.67it/s]
+# Epoch 314: train_loss: 0.7829:  63%|▋| 315/500 [00:40<00:19,  9.43it/s]
+# Epoch 315: train_loss: 0.7821:  63%|▋| 315/500 [00:40<00:19,  9.43it/s]
+# Epoch 315: train_loss: 0.7821:  63%|▋| 316/500 [00:40<00:20,  9.19it/s]
+# Epoch 316: train_loss: 0.7780:  63%|▋| 316/500 [00:40<00:20,  9.19it/s]
+# Epoch 316: train_loss: 0.7780:  63%|▋| 317/500 [00:40<00:20,  9.03it/s]
+# Epoch 317: train_loss: 0.7852:  63%|▋| 317/500 [00:40<00:20,  9.03it/s]
+# Epoch 317: train_loss: 0.7852:  64%|▋| 318/500 [00:40<00:19,  9.10it/s]
+# Epoch 318: train_loss: 0.7835:  64%|▋| 318/500 [00:40<00:19,  9.10it/s]
+# Epoch 319: train_loss: 0.7816:  64%|▋| 318/500 [00:40<00:19,  9.10it/s]
+# Epoch 319: train_loss: 0.7816:  64%|▋| 320/500 [00:40<00:17, 10.12it/s]
+# Epoch 320: train_loss: 0.7849:  64%|▋| 320/500 [00:40<00:17, 10.12it/s]
+# Epoch 320: train_loss: 0.7849:  64%|▋| 321/500 [00:40<00:17, 10.08it/s]
+# Epoch 321: train_loss: 0.7827:  64%|▋| 321/500 [00:40<00:17, 10.08it/s]
+# Epoch 321: train_loss: 0.7827:  64%|▋| 322/500 [00:40<00:22,  7.76it/s]
+# Epoch 322: train_loss: 0.7817:  64%|▋| 322/500 [00:41<00:22,  7.76it/s]
+# Epoch 322: train_loss: 0.7817:  65%|▋| 323/500 [00:41<00:23,  7.70it/s]
+# Epoch 323: train_loss: 0.7817:  65%|▋| 323/500 [00:41<00:23,  7.70it/s]
+# Epoch 323: train_loss: 0.7817:  65%|▋| 324/500 [00:41<00:33,  5.20it/s]
+# Epoch 324: train_loss: 0.7830:  65%|▋| 324/500 [00:41<00:33,  5.20it/s]
+# Epoch 324: train_loss: 0.7830:  65%|▋| 325/500 [00:41<00:41,  4.18it/s]
+# Epoch 325: train_loss: 0.7812:  65%|▋| 325/500 [00:41<00:41,  4.18it/s]
+# Epoch 325: train_loss: 0.7812:  65%|▋| 326/500 [00:41<00:42,  4.10it/s]
+# Epoch 326: train_loss: 0.7830:  65%|▋| 326/500 [00:42<00:42,  4.10it/s]
+# Epoch 326: train_loss: 0.7830:  65%|▋| 327/500 [00:42<00:36,  4.76it/s]
+# Epoch 327: train_loss: 0.7864:  65%|▋| 327/500 [00:42<00:36,  4.76it/s]
+# Epoch 327: train_loss: 0.7864:  66%|▋| 328/500 [00:42<00:32,  5.32it/s]
+# Epoch 328: train_loss: 0.7838:  66%|▋| 328/500 [00:42<00:32,  5.32it/s]
+# Epoch 328: train_loss: 0.7838:  66%|▋| 329/500 [00:42<00:28,  6.00it/s]
+# Epoch 329: train_loss: 0.7794:  66%|▋| 329/500 [00:42<00:28,  6.00it/s]
+# Epoch 329: train_loss: 0.7794:  66%|▋| 330/500 [00:42<00:26,  6.53it/s]
+# Epoch 330: train_loss: 0.7788:  66%|▋| 330/500 [00:42<00:26,  6.53it/s]
+# Epoch 331: train_loss: 0.7797:  66%|▋| 330/500 [00:42<00:26,  6.53it/s]
+# Epoch 331: train_loss: 0.7797:  66%|▋| 332/500 [00:42<00:19,  8.81it/s]
+# Epoch 332: train_loss: 0.7807:  66%|▋| 332/500 [00:42<00:19,  8.81it/s]
+# Epoch 332: train_loss: 0.7807:  67%|▋| 333/500 [00:42<00:18,  8.98it/s]
+# Epoch 333: train_loss: 0.7799:  67%|▋| 333/500 [00:42<00:18,  8.98it/s]
+# Epoch 334: train_loss: 0.7840:  67%|▋| 333/500 [00:42<00:18,  8.98it/s]
+# Epoch 334: train_loss: 0.7840:  67%|▋| 335/500 [00:42<00:15, 10.89it/s]
+# Epoch 335: train_loss: 0.7859:  67%|▋| 335/500 [00:42<00:15, 10.89it/s]
+# Epoch 336: train_loss: 0.7834:  67%|▋| 335/500 [00:42<00:15, 10.89it/s]
+# Epoch 336: train_loss: 0.7834:  67%|▋| 337/500 [00:42<00:12, 12.65it/s]
+# Epoch 337: train_loss: 0.7835:  67%|▋| 337/500 [00:43<00:12, 12.65it/s]
+# Epoch 338: train_loss: 0.7812:  67%|▋| 337/500 [00:43<00:12, 12.65it/s]
+# Epoch 338: train_loss: 0.7812:  68%|▋| 339/500 [00:43<00:11, 13.72it/s]
+# Epoch 339: train_loss: 0.7856:  68%|▋| 339/500 [00:43<00:11, 13.72it/s]
+# Epoch 340: train_loss: 0.7883:  68%|▋| 339/500 [00:43<00:11, 13.72it/s]
+# Epoch 340: train_loss: 0.7883:  68%|▋| 341/500 [00:43<00:11, 14.42it/s]
+# Epoch 341: train_loss: 0.7788:  68%|▋| 341/500 [00:43<00:11, 14.42it/s]
+# Epoch 342: train_loss: 0.7833:  68%|▋| 341/500 [00:43<00:11, 14.42it/s]
+# Epoch 342: train_loss: 0.7833:  69%|▋| 343/500 [00:43<00:10, 15.05it/s]
+# Epoch 343: train_loss: 0.7799:  69%|▋| 343/500 [00:43<00:10, 15.05it/s]
+# Epoch 344: train_loss: 0.7787:  69%|▋| 343/500 [00:43<00:10, 15.05it/s]
+# Epoch 344: train_loss: 0.7787:  69%|▋| 345/500 [00:43<00:10, 14.82it/s]
+# Epoch 345: train_loss: 0.7835:  69%|▋| 345/500 [00:44<00:10, 14.82it/s]
+# Epoch 346: train_loss: 0.7785:  69%|▋| 345/500 [00:45<00:10, 14.82it/s]
+# Epoch 346: train_loss: 0.7785:  69%|▋| 347/500 [00:45<00:43,  3.50it/s]
+# Epoch 347: train_loss: 0.7819:  69%|▋| 347/500 [00:45<00:43,  3.50it/s]
+# Epoch 348: train_loss: 0.7797:  69%|▋| 347/500 [00:45<00:43,  3.50it/s]
+# Epoch 348: train_loss: 0.7797:  70%|▋| 349/500 [00:45<00:38,  3.90it/s]
+# Epoch 349: train_loss: 0.7817:  70%|▋| 349/500 [00:45<00:38,  3.90it/s]
+# Epoch 349: train_loss: 0.7817:  70%|▋| 350/500 [00:45<00:37,  3.95it/s]
+# Epoch 350: train_loss: 0.7774:  70%|▋| 350/500 [00:45<00:37,  3.95it/s]
+# Epoch 350: train_loss: 0.7774:  70%|▋| 351/500 [00:45<00:37,  4.01it/s]
+# Epoch 351: train_loss: 0.7787:  70%|▋| 351/500 [00:46<00:37,  4.01it/s]
+# Epoch 351: train_loss: 0.7787:  70%|▋| 352/500 [00:46<00:32,  4.50it/s]
+# Epoch 352: train_loss: 0.7814:  70%|▋| 352/500 [00:46<00:32,  4.50it/s]
+# Epoch 352: train_loss: 0.7814:  71%|▋| 353/500 [00:46<00:29,  4.98it/s]
+# Epoch 353: train_loss: 0.7856:  71%|▋| 353/500 [00:46<00:29,  4.98it/s]
+# Epoch 353: train_loss: 0.7856:  71%|▋| 354/500 [00:46<00:26,  5.52it/s]
+# Epoch 354: train_loss: 0.7814:  71%|▋| 354/500 [00:46<00:26,  5.52it/s]
+# Epoch 354: train_loss: 0.7814:  71%|▋| 355/500 [00:46<00:27,  5.22it/s]
+# Epoch 355: train_loss: 0.7816:  71%|▋| 355/500 [00:46<00:27,  5.22it/s]
+# Epoch 355: train_loss: 0.7816:  71%|▋| 356/500 [00:46<00:24,  5.78it/s]
+# Epoch 356: train_loss: 0.7823:  71%|▋| 356/500 [00:46<00:24,  5.78it/s]
+# Epoch 356: train_loss: 0.7823:  71%|▋| 357/500 [00:46<00:22,  6.28it/s]
+# Epoch 357: train_loss: 0.7825:  71%|▋| 357/500 [00:46<00:22,  6.28it/s]
+# Epoch 357: train_loss: 0.7825:  72%|▋| 358/500 [00:46<00:21,  6.72it/s]
+# Epoch 358: train_loss: 0.7763:  72%|▋| 358/500 [00:46<00:21,  6.72it/s]
+# Epoch 358: train_loss: 0.7763:  72%|▋| 359/500 [00:46<00:19,  7.09it/s]
+# Epoch 359: train_loss: 0.7772:  72%|▋| 359/500 [00:47<00:19,  7.09it/s]
+# Epoch 359: train_loss: 0.7772:  72%|▋| 360/500 [00:47<00:18,  7.39it/s]
+# Epoch 360: train_loss: 0.7822:  72%|▋| 360/500 [00:47<00:18,  7.39it/s]
+# Epoch 360: train_loss: 0.7822:  72%|▋| 361/500 [00:47<00:18,  7.71it/s]
+# Epoch 361: train_loss: 0.7825:  72%|▋| 361/500 [00:47<00:18,  7.71it/s]
+# Epoch 361: train_loss: 0.7825:  72%|▋| 362/500 [00:47<00:17,  7.79it/s]
+# Epoch 362: train_loss: 0.7792:  72%|▋| 362/500 [00:47<00:17,  7.79it/s]
+# Epoch 362: train_loss: 0.7792:  73%|▋| 363/500 [00:47<00:17,  7.98it/s]
+# Epoch 363: train_loss: 0.7851:  73%|▋| 363/500 [00:47<00:17,  7.98it/s]
+# Epoch 363: train_loss: 0.7851:  73%|▋| 364/500 [00:47<00:16,  8.14it/s]
+# Epoch 364: train_loss: 0.7800:  73%|▋| 364/500 [00:47<00:16,  8.14it/s]
+# Epoch 365: train_loss: 0.7822:  73%|▋| 364/500 [00:47<00:16,  8.14it/s]
+# Epoch 365: train_loss: 0.7822:  73%|▋| 366/500 [00:47<00:14,  9.49it/s]
+# Epoch 366: train_loss: 0.7836:  73%|▋| 366/500 [00:47<00:14,  9.49it/s]
+# Epoch 366: train_loss: 0.7836:  73%|▋| 367/500 [00:47<00:14,  9.42it/s]
+# Epoch 367: train_loss: 0.7822:  73%|▋| 367/500 [00:47<00:14,  9.42it/s]
+# Epoch 367: train_loss: 0.7822:  74%|▋| 368/500 [00:47<00:14,  9.28it/s]
+# Epoch 368: train_loss: 0.7812:  74%|▋| 368/500 [00:48<00:14,  9.28it/s]
+# Epoch 368: train_loss: 0.7812:  74%|▋| 369/500 [00:48<00:14,  9.08it/s]
+# Epoch 369: train_loss: 0.7801:  74%|▋| 369/500 [00:48<00:14,  9.08it/s]
+# Epoch 369: train_loss: 0.7801:  74%|▋| 370/500 [00:48<00:14,  8.95it/s]
+# Epoch 370: train_loss: 0.7803:  74%|▋| 370/500 [00:48<00:14,  8.95it/s]
+# Epoch 370: train_loss: 0.7803:  74%|▋| 371/500 [00:48<00:14,  8.81it/s]
+# Epoch 371: train_loss: 0.7815:  74%|▋| 371/500 [00:48<00:14,  8.81it/s]
+# Epoch 371: train_loss: 0.7815:  74%|▋| 372/500 [00:48<00:14,  8.71it/s]
+# Epoch 372: train_loss: 0.7848:  74%|▋| 372/500 [00:48<00:14,  8.71it/s]
+# Epoch 372: train_loss: 0.7848:  75%|▋| 373/500 [00:48<00:14,  8.65it/s]
+# Epoch 373: train_loss: 0.7792:  75%|▋| 373/500 [00:48<00:14,  8.65it/s]
+# Epoch 374: train_loss: 0.7801:  75%|▋| 373/500 [00:48<00:14,  8.65it/s]
+# Epoch 374: train_loss: 0.7801:  75%|▊| 375/500 [00:48<00:12, 10.25it/s]
+# Epoch 375: train_loss: 0.7807:  75%|▊| 375/500 [00:48<00:12, 10.25it/s]
+# Epoch 375: train_loss: 0.7807:  75%|▊| 376/500 [00:48<00:12,  9.98it/s]
+# Epoch 376: train_loss: 0.7830:  75%|▊| 376/500 [00:48<00:12,  9.98it/s]
+# Epoch 376: train_loss: 0.7830:  75%|▊| 377/500 [00:48<00:13,  9.31it/s]
+# Epoch 377: train_loss: 0.7797:  75%|▊| 377/500 [00:49<00:13,  9.31it/s]
+# Epoch 377: train_loss: 0.7797:  76%|▊| 378/500 [00:49<00:13,  9.00it/s]
+# Epoch 378: train_loss: 0.7800:  76%|▊| 378/500 [00:49<00:13,  9.00it/s]
+# Epoch 378: train_loss: 0.7800:  76%|▊| 379/500 [00:49<00:13,  8.88it/s]
+# Epoch 379: train_loss: 0.7869:  76%|▊| 379/500 [00:49<00:13,  8.88it/s]
+# Epoch 379: train_loss: 0.7869:  76%|▊| 380/500 [00:49<00:13,  8.72it/s]
+# Epoch 380: train_loss: 0.7834:  76%|▊| 380/500 [00:49<00:13,  8.72it/s]
+# Epoch 380: train_loss: 0.7834:  76%|▊| 381/500 [00:49<00:13,  8.62it/s]
+# Epoch 381: train_loss: 0.7806:  76%|▊| 381/500 [00:49<00:13,  8.62it/s]
+# Epoch 381: train_loss: 0.7806:  76%|▊| 382/500 [00:49<00:13,  8.54it/s]
+# Epoch 382: train_loss: 0.7834:  76%|▊| 382/500 [00:49<00:13,  8.54it/s]
+# Epoch 382: train_loss: 0.7834:  77%|▊| 383/500 [00:49<00:13,  8.48it/s]
+# Epoch 383: train_loss: 0.7854:  77%|▊| 383/500 [00:49<00:13,  8.48it/s]
+# Epoch 383: train_loss: 0.7854:  77%|▊| 384/500 [00:49<00:13,  8.46it/s]
+# Epoch 384: train_loss: 0.7802:  77%|▊| 384/500 [00:49<00:13,  8.46it/s]
+# Epoch 384: train_loss: 0.7802:  77%|▊| 385/500 [00:49<00:13,  8.44it/s]
+# Epoch 385: train_loss: 0.7811:  77%|▊| 385/500 [00:50<00:13,  8.44it/s]
+# Epoch 385: train_loss: 0.7811:  77%|▊| 386/500 [00:50<00:13,  8.59it/s]
+# Epoch 386: train_loss: 0.7811:  77%|▊| 386/500 [00:50<00:13,  8.59it/s]
+# Epoch 387: train_loss: 0.7805:  77%|▊| 386/500 [00:50<00:13,  8.59it/s]
+# Epoch 387: train_loss: 0.7805:  78%|▊| 388/500 [00:50<00:11, 10.05it/s]
+# Epoch 388: train_loss: 0.7795:  78%|▊| 388/500 [00:50<00:11, 10.05it/s]
+# Epoch 388: train_loss: 0.7795:  78%|▊| 389/500 [00:50<00:11,  9.85it/s]
+# Epoch 389: train_loss: 0.7830:  78%|▊| 389/500 [00:50<00:11,  9.85it/s]
+# Epoch 389: train_loss: 0.7830:  78%|▊| 390/500 [00:50<00:11,  9.53it/s]
+# Epoch 390: train_loss: 0.7818:  78%|▊| 390/500 [00:50<00:11,  9.53it/s]
+# Epoch 390: train_loss: 0.7818:  78%|▊| 391/500 [00:50<00:11,  9.46it/s]
+# Epoch 391: train_loss: 0.7812:  78%|▊| 391/500 [00:50<00:11,  9.46it/s]
+# Epoch 392: train_loss: 0.7838:  78%|▊| 391/500 [00:50<00:11,  9.46it/s]
+# Epoch 392: train_loss: 0.7838:  79%|▊| 393/500 [00:50<00:09, 10.90it/s]
+# Epoch 393: train_loss: 0.7815:  79%|▊| 393/500 [00:50<00:09, 10.90it/s]
+# Epoch 394: train_loss: 0.7825:  79%|▊| 393/500 [00:50<00:09, 10.90it/s]
+# Epoch 394: train_loss: 0.7825:  79%|▊| 395/500 [00:50<00:10, 10.17it/s]
+# Epoch 395: train_loss: 0.7847:  79%|▊| 395/500 [00:50<00:10, 10.17it/s]
+# Epoch 396: train_loss: 0.7796:  79%|▊| 395/500 [00:51<00:10, 10.17it/s]
+# Epoch 396: train_loss: 0.7796:  79%|▊| 397/500 [00:51<00:09, 11.20it/s]
+# Epoch 397: train_loss: 0.7843:  79%|▊| 397/500 [00:51<00:09, 11.20it/s]
+# Epoch 398: train_loss: 0.7880:  79%|▊| 397/500 [00:51<00:09, 11.20it/s]
+# Epoch 398: train_loss: 0.7880:  80%|▊| 399/500 [00:51<00:08, 11.68it/s]
+# IGNORE: --- TestAcc:[HIDDEN], early-stopping-TestAcc:[HIDDEN], Best ValAcc: 0.7300 in epoch 6 --- 
+# Epoch 399: train_loss: 0.7811:  80%|▊| 399/500 [00:51<00:08, 11.68it/s]2026-11-05 08:17:33,836 - INFO - INPUT_MASK {'step': 400, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.5, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'masked_degree_mean': 2.6626579761505127, 'kept_degree_mean': 2.810096263885498, 'masked_degree_q25_q50_q75': [1.0, 2.0, 3.0]}
+2026-11-05 08:17:33,859 - INFO - INPUT_MASK_FEEDBACK {'step': 400, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.5, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'batch_reconstruction_error_mean': 0.7806511521339417, 'observed_nodes': 3327, 'observation_count_min_mean_max': [165, 200.43973549744516, 235], 'degree_error_pearson_seen': -0.477594031734342, 'masked_degree_mean': 2.6626577377319336, 'kept_degree_mean': 2.810096263885498, 'masked_one_hop_visible_mean': 1.4010823812387252, 'masked_one_hop_zero_visible_fraction': 0.291040288634997, 'masked_two_hop_visible_mean': 7.064341551413109, 'masked_two_hop_zero_visible_fraction': 0.1449188214070956, 'density_layers': [{'layer': 0, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.8199349641799927}, {'layer': 1, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7586129903793335}, {'layer': 2, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7638727426528931}, {'layer': 3, 'nodes': 831, 'masked': 415, 'observed': 831, 'error_ema_seen_mean': 0.7786442041397095}]}
+# Epoch 400: train_loss: 0.7807:  80%|▊| 399/500 [00:52<00:08, 11.68it/s]
+# Epoch 400: train_loss: 0.7807:  80%|▊| 401/500 [00:52<00:34,  2.89it/s]
+# Epoch 401: train_loss: 0.7808:  80%|▊| 401/500 [00:52<00:34,  2.89it/s]
+# Epoch 402: train_loss: 0.7852:  80%|▊| 401/500 [00:53<00:34,  2.89it/s]
+# Epoch 403: train_loss: 0.7807:  80%|▊| 401/500 [00:54<00:34,  2.89it/s]
+# Epoch 403: train_loss: 0.7807:  81%|▊| 404/500 [00:54<00:33,  2.83it/s]
+# Epoch 404: train_loss: 0.7798:  81%|▊| 404/500 [00:54<00:33,  2.83it/s]
+# Epoch 404: train_loss: 0.7798:  81%|▊| 405/500 [00:54<00:32,  2.96it/s]
+# Epoch 405: train_loss: 0.7844:  81%|▊| 405/500 [00:54<00:32,  2.96it/s]
+# Epoch 405: train_loss: 0.7844:  81%|▊| 406/500 [00:54<00:29,  3.15it/s]
+# Epoch 406: train_loss: 0.7753:  81%|▊| 406/500 [00:54<00:29,  3.15it/s]
+# Epoch 406: train_loss: 0.7753:  81%|▊| 407/500 [00:54<00:25,  3.61it/s]
+# Epoch 407: train_loss: 0.7792:  81%|▊| 407/500 [00:54<00:25,  3.61it/s]
+# Epoch 407: train_loss: 0.7792:  82%|▊| 408/500 [00:54<00:22,  4.17it/s]
+# Epoch 408: train_loss: 0.7844:  82%|▊| 408/500 [00:54<00:22,  4.17it/s]
+# Epoch 408: train_loss: 0.7844:  82%|▊| 409/500 [00:54<00:19,  4.72it/s]
+# Epoch 409: train_loss: 0.7812:  82%|▊| 409/500 [00:55<00:19,  4.72it/s]
+# Epoch 409: train_loss: 0.7812:  82%|▊| 410/500 [00:55<00:16,  5.31it/s]
+# Epoch 410: train_loss: 0.7822:  82%|▊| 410/500 [00:55<00:16,  5.31it/s]
+# Epoch 410: train_loss: 0.7822:  82%|▊| 411/500 [00:55<00:14,  5.93it/s]
+# Epoch 411: train_loss: 0.7802:  82%|▊| 411/500 [00:55<00:14,  5.93it/s]
+# Epoch 411: train_loss: 0.7802:  82%|▊| 412/500 [00:55<00:13,  6.52it/s]
+# Epoch 412: train_loss: 0.7779:  82%|▊| 412/500 [00:55<00:13,  6.52it/s]
+# Epoch 413: train_loss: 0.7816:  82%|▊| 412/500 [00:55<00:13,  6.52it/s]
+# Epoch 413: train_loss: 0.7816:  83%|▊| 414/500 [00:55<00:10,  8.05it/s]
+# Epoch 414: train_loss: 0.7791:  83%|▊| 414/500 [00:55<00:10,  8.05it/s]
+# Epoch 415: train_loss: 0.7791:  83%|▊| 414/500 [00:55<00:10,  8.05it/s]
+# Epoch 415: train_loss: 0.7791:  83%|▊| 416/500 [00:55<00:09,  8.73it/s]
+# Epoch 416: train_loss: 0.7837:  83%|▊| 416/500 [00:55<00:09,  8.73it/s]
+# Epoch 416: train_loss: 0.7837:  83%|▊| 417/500 [00:55<00:09,  8.69it/s]
+# Epoch 417: train_loss: 0.7798:  83%|▊| 417/500 [00:55<00:09,  8.69it/s]
+# Epoch 418: train_loss: 0.7808:  83%|▊| 417/500 [00:55<00:09,  8.69it/s]
+# Epoch 418: train_loss: 0.7808:  84%|▊| 419/500 [00:55<00:08,  9.61it/s]
+# Epoch 419: train_loss: 0.7809:  84%|▊| 419/500 [00:56<00:08,  9.61it/s]
+# Epoch 420: train_loss: 0.7804:  84%|▊| 419/500 [00:56<00:08,  9.61it/s]
+# Epoch 420: train_loss: 0.7804:  84%|▊| 421/500 [00:56<00:08,  9.64it/s]
+# Epoch 421: train_loss: 0.7823:  84%|▊| 421/500 [00:56<00:08,  9.64it/s]
+# Epoch 421: train_loss: 0.7823:  84%|▊| 422/500 [00:56<00:08,  9.24it/s]
+# Epoch 422: train_loss: 0.7786:  84%|▊| 422/500 [00:56<00:08,  9.24it/s]
+# Epoch 422: train_loss: 0.7786:  85%|▊| 423/500 [00:56<00:10,  7.47it/s]
+# Epoch 423: train_loss: 0.7792:  85%|▊| 423/500 [00:56<00:10,  7.47it/s]
+# Epoch 423: train_loss: 0.7792:  85%|▊| 424/500 [00:56<00:12,  6.28it/s]
+# Epoch 424: train_loss: 0.7807:  85%|▊| 424/500 [00:56<00:12,  6.28it/s]
+# Epoch 424: train_loss: 0.7807:  85%|▊| 425/500 [00:56<00:11,  6.48it/s]
+# Epoch 425: train_loss: 0.7780:  85%|▊| 425/500 [00:57<00:11,  6.48it/s]
+# Epoch 425: train_loss: 0.7780:  85%|▊| 426/500 [00:57<00:13,  5.60it/s]
+# Epoch 426: train_loss: 0.7810:  85%|▊| 426/500 [00:57<00:13,  5.60it/s]
+# Epoch 426: train_loss: 0.7810:  85%|▊| 427/500 [00:57<00:14,  5.09it/s]
+# Epoch 427: train_loss: 0.7823:  85%|▊| 427/500 [00:57<00:14,  5.09it/s]
+# Epoch 427: train_loss: 0.7823:  86%|▊| 428/500 [00:57<00:14,  4.92it/s]
+# Epoch 428: train_loss: 0.7776:  86%|▊| 428/500 [00:57<00:14,  4.92it/s]
+# Epoch 428: train_loss: 0.7776:  86%|▊| 429/500 [00:57<00:13,  5.45it/s]
+# Epoch 429: train_loss: 0.7820:  86%|▊| 429/500 [00:57<00:13,  5.45it/s]
+# Epoch 429: train_loss: 0.7820:  86%|▊| 430/500 [00:57<00:11,  5.97it/s]
+# Epoch 430: train_loss: 0.7787:  86%|▊| 430/500 [00:58<00:11,  5.97it/s]
+# Epoch 430: train_loss: 0.7787:  86%|▊| 431/500 [00:58<00:12,  5.37it/s]
+# Epoch 431: train_loss: 0.7788:  86%|▊| 431/500 [00:58<00:12,  5.37it/s]
+# Epoch 431: train_loss: 0.7788:  86%|▊| 432/500 [00:58<00:11,  5.90it/s]
+# Epoch 432: train_loss: 0.7774:  86%|▊| 432/500 [00:58<00:11,  5.90it/s]
+# Epoch 432: train_loss: 0.7774:  87%|▊| 433/500 [00:58<00:10,  6.39it/s]
+# Epoch 433: train_loss: 0.7809:  87%|▊| 433/500 [00:58<00:10,  6.39it/s]
+# Epoch 433: train_loss: 0.7809:  87%|▊| 434/500 [00:58<00:09,  6.83it/s]
+# Epoch 434: train_loss: 0.7793:  87%|▊| 434/500 [00:58<00:09,  6.83it/s]
+# Epoch 434: train_loss: 0.7793:  87%|▊| 435/500 [00:58<00:08,  7.28it/s]
+# Epoch 435: train_loss: 0.7834:  87%|▊| 435/500 [00:58<00:08,  7.28it/s]
+# Epoch 435: train_loss: 0.7834:  87%|▊| 436/500 [00:58<00:08,  7.35it/s]
+# Epoch 436: train_loss: 0.7820:  87%|▊| 436/500 [00:58<00:08,  7.35it/s]
+# Epoch 436: train_loss: 0.7820:  87%|▊| 437/500 [00:58<00:08,  7.57it/s]
+# Epoch 437: train_loss: 0.7805:  87%|▊| 437/500 [00:58<00:08,  7.57it/s]
+# Epoch 437: train_loss: 0.7805:  88%|▉| 438/500 [00:58<00:07,  7.92it/s]
+# Epoch 438: train_loss: 0.7791:  88%|▉| 438/500 [00:59<00:07,  7.92it/s]
+# Epoch 438: train_loss: 0.7791:  88%|▉| 439/500 [00:59<00:07,  8.04it/s]
+# Epoch 439: train_loss: 0.7831:  88%|▉| 439/500 [00:59<00:07,  8.04it/s]
+# Epoch 439: train_loss: 0.7831:  88%|▉| 440/500 [00:59<00:07,  8.16it/s]
+# Epoch 440: train_loss: 0.7818:  88%|▉| 440/500 [00:59<00:07,  8.16it/s]
+# Epoch 440: train_loss: 0.7818:  88%|▉| 441/500 [00:59<00:07,  8.07it/s]
+# Epoch 441: train_loss: 0.7796:  88%|▉| 441/500 [00:59<00:07,  8.07it/s]
+# Epoch 441: train_loss: 0.7796:  88%|▉| 442/500 [00:59<00:06,  8.48it/s]
+# Epoch 442: train_loss: 0.7810:  88%|▉| 442/500 [00:59<00:06,  8.48it/s]
+# Epoch 443: train_loss: 0.7769:  88%|▉| 442/500 [00:59<00:06,  8.48it/s]
+# Epoch 443: train_loss: 0.7769:  89%|▉| 444/500 [00:59<00:05, 10.00it/s]
+# Epoch 444: train_loss: 0.7799:  89%|▉| 444/500 [00:59<00:05, 10.00it/s]
+# Epoch 444: train_loss: 0.7799:  89%|▉| 445/500 [00:59<00:05,  9.76it/s]
+# Epoch 445: train_loss: 0.7824:  89%|▉| 445/500 [00:59<00:05,  9.76it/s]
+# Epoch 445: train_loss: 0.7824:  89%|▉| 446/500 [00:59<00:05,  9.54it/s]
+# Epoch 446: train_loss: 0.7836:  89%|▉| 446/500 [00:59<00:05,  9.54it/s]
+# Epoch 447: train_loss: 0.7771:  89%|▉| 446/500 [00:59<00:05,  9.54it/s]
+# Epoch 447: train_loss: 0.7771:  90%|▉| 448/500 [00:59<00:04, 11.07it/s]
+# Epoch 448: train_loss: 0.7790:  90%|▉| 448/500 [01:00<00:04, 11.07it/s]
+# Epoch 449: train_loss: 0.7782:  90%|▉| 448/500 [01:00<00:04, 11.07it/s]
+# Epoch 449: train_loss: 0.7782:  90%|▉| 450/500 [01:00<00:04, 10.24it/s]
+# Epoch 450: train_loss: 0.7826:  90%|▉| 450/500 [01:00<00:04, 10.24it/s]
+# Epoch 451: train_loss: 0.7780:  90%|▉| 450/500 [01:00<00:04, 10.24it/s]
+# Epoch 451: train_loss: 0.7780:  90%|▉| 452/500 [01:00<00:04, 11.37it/s]
+# Epoch 452: train_loss: 0.7761:  90%|▉| 452/500 [01:00<00:04, 11.37it/s]
+# Epoch 453: train_loss: 0.7789:  90%|▉| 452/500 [01:00<00:04, 11.37it/s]
+# Epoch 453: train_loss: 0.7789:  91%|▉| 454/500 [01:00<00:04, 10.58it/s]
+# Epoch 454: train_loss: 0.7812:  91%|▉| 454/500 [01:00<00:04, 10.58it/s]
+# Epoch 455: train_loss: 0.7789:  91%|▉| 454/500 [01:00<00:04, 10.58it/s]
+# Epoch 455: train_loss: 0.7789:  91%|▉| 456/500 [01:00<00:03, 11.38it/s]
+# Epoch 456: train_loss: 0.7828:  91%|▉| 456/500 [01:00<00:03, 11.38it/s]
+# Epoch 457: train_loss: 0.7804:  91%|▉| 456/500 [01:00<00:03, 11.38it/s]
+# Epoch 457: train_loss: 0.7804:  92%|▉| 458/500 [01:00<00:03, 12.01it/s]
+# Epoch 458: train_loss: 0.7829:  92%|▉| 458/500 [01:00<00:03, 12.01it/s]
+# Epoch 459: train_loss: 0.7815:  92%|▉| 458/500 [01:00<00:03, 12.01it/s]
+# Epoch 459: train_loss: 0.7815:  92%|▉| 460/500 [01:00<00:03, 11.24it/s]
+# Epoch 460: train_loss: 0.7772:  92%|▉| 460/500 [01:01<00:03, 11.24it/s]
+# Epoch 461: train_loss: 0.7815:  92%|▉| 460/500 [01:01<00:03, 11.24it/s]
+# Epoch 461: train_loss: 0.7815:  92%|▉| 462/500 [01:01<00:03, 12.31it/s]
+# Epoch 462: train_loss: 0.7778:  92%|▉| 462/500 [01:01<00:03, 12.31it/s]
+# Epoch 463: train_loss: 0.7778:  92%|▉| 462/500 [01:01<00:03, 12.31it/s]
+# Epoch 463: train_loss: 0.7778:  93%|▉| 464/500 [01:01<00:02, 12.50it/s]
+# Epoch 464: train_loss: 0.7812:  93%|▉| 464/500 [01:01<00:02, 12.50it/s]
+# Epoch 465: train_loss: 0.7833:  93%|▉| 464/500 [01:01<00:02, 12.50it/s]
+# Epoch 465: train_loss: 0.7833:  93%|▉| 466/500 [01:01<00:02, 11.52it/s]
+# Epoch 466: train_loss: 0.7763:  93%|▉| 466/500 [01:01<00:02, 11.52it/s]
+# Epoch 467: train_loss: 0.7796:  93%|▉| 466/500 [01:01<00:02, 11.52it/s]
+# Epoch 467: train_loss: 0.7796:  94%|▉| 468/500 [01:01<00:02, 12.49it/s]
+# Epoch 468: train_loss: 0.7804:  94%|▉| 468/500 [01:01<00:02, 12.49it/s]
+# Epoch 469: train_loss: 0.7818:  94%|▉| 468/500 [01:01<00:02, 12.49it/s]
+# Epoch 469: train_loss: 0.7818:  94%|▉| 470/500 [01:01<00:02, 11.02it/s]
+# Epoch 470: train_loss: 0.7818:  94%|▉| 470/500 [01:01<00:02, 11.02it/s]
+# Epoch 471: train_loss: 0.7798:  94%|▉| 470/500 [01:01<00:02, 11.02it/s]
+# Epoch 471: train_loss: 0.7798:  94%|▉| 472/500 [01:01<00:02, 11.31it/s]
+# Epoch 472: train_loss: 0.7770:  94%|▉| 472/500 [01:02<00:02, 11.31it/s]
+# Epoch 473: train_loss: 0.7813:  94%|▉| 472/500 [01:02<00:02, 11.31it/s]
+# Epoch 473: train_loss: 0.7813:  95%|▉| 474/500 [01:02<00:02, 10.53it/s]
+# Epoch 474: train_loss: 0.7830:  95%|▉| 474/500 [01:02<00:02, 10.53it/s]
+# Epoch 475: train_loss: 0.7775:  95%|▉| 474/500 [01:02<00:02, 10.53it/s]
+# Epoch 475: train_loss: 0.7775:  95%|▉| 476/500 [01:02<00:02,  9.73it/s]
+# Epoch 476: train_loss: 0.7822:  95%|▉| 476/500 [01:02<00:02,  9.73it/s]
+# Epoch 477: train_loss: 0.7795:  95%|▉| 476/500 [01:02<00:02,  9.73it/s]
+# Epoch 477: train_loss: 0.7795:  96%|▉| 478/500 [01:02<00:02,  8.13it/s]
+# Epoch 478: train_loss: 0.7776:  96%|▉| 478/500 [01:02<00:02,  8.13it/s]
+# Epoch 478: train_loss: 0.7776:  96%|▉| 479/500 [01:02<00:02,  8.03it/s]
+# Epoch 479: train_loss: 0.7763:  96%|▉| 479/500 [01:03<00:02,  8.03it/s]
+# Epoch 479: train_loss: 0.7763:  96%|▉| 480/500 [01:03<00:02,  7.98it/s]
+# Epoch 480: train_loss: 0.7820:  96%|▉| 480/500 [01:03<00:02,  7.98it/s]
+# Epoch 480: train_loss: 0.7820:  96%|▉| 481/500 [01:03<00:02,  7.96it/s]
+# Epoch 481: train_loss: 0.7826:  96%|▉| 481/500 [01:03<00:02,  7.96it/s]
+# Epoch 481: train_loss: 0.7826:  96%|▉| 482/500 [01:03<00:02,  7.96it/s]
+# Epoch 482: train_loss: 0.7773:  96%|▉| 482/500 [01:03<00:02,  7.96it/s]
+# Epoch 482: train_loss: 0.7773:  97%|▉| 483/500 [01:03<00:02,  7.98it/s]
+# Epoch 483: train_loss: 0.7792:  97%|▉| 483/500 [01:03<00:02,  7.98it/s]
+# Epoch 483: train_loss: 0.7792:  97%|▉| 484/500 [01:03<00:01,  8.02it/s]
+# Epoch 484: train_loss: 0.7836:  97%|▉| 484/500 [01:03<00:01,  8.02it/s]
+# Epoch 484: train_loss: 0.7836:  97%|▉| 485/500 [01:03<00:01,  8.22it/s]
+# Epoch 485: train_loss: 0.7772:  97%|▉| 485/500 [01:03<00:01,  8.22it/s]
+# Epoch 485: train_loss: 0.7772:  97%|▉| 486/500 [01:03<00:01,  8.25it/s]
+# Epoch 486: train_loss: 0.7767:  97%|▉| 486/500 [01:03<00:01,  8.25it/s]
+# Epoch 486: train_loss: 0.7767:  97%|▉| 487/500 [01:03<00:01,  8.22it/s]
+# Epoch 487: train_loss: 0.7791:  97%|▉| 487/500 [01:04<00:01,  8.22it/s]
+# Epoch 487: train_loss: 0.7791:  98%|▉| 488/500 [01:04<00:01,  8.27it/s]
+# Epoch 488: train_loss: 0.7760:  98%|▉| 488/500 [01:04<00:01,  8.27it/s]
+# Epoch 488: train_loss: 0.7760:  98%|▉| 489/500 [01:04<00:01,  8.37it/s]
+# Epoch 489: train_loss: 0.7834:  98%|▉| 489/500 [01:04<00:01,  8.37it/s]
+# Epoch 489: train_loss: 0.7834:  98%|▉| 490/500 [01:04<00:01,  8.55it/s]
+# Epoch 490: train_loss: 0.7834:  98%|▉| 490/500 [01:04<00:01,  8.55it/s]
+# Epoch 491: train_loss: 0.7838:  98%|▉| 490/500 [01:04<00:01,  8.55it/s]
+# Epoch 491: train_loss: 0.7838:  98%|▉| 492/500 [01:04<00:00, 10.04it/s]
+# Epoch 492: train_loss: 0.7808:  98%|▉| 492/500 [01:04<00:00, 10.04it/s]
+# Epoch 492: train_loss: 0.7808:  99%|▉| 493/500 [01:04<00:00,  9.83it/s]
+# Epoch 493: train_loss: 0.7793:  99%|▉| 493/500 [01:04<00:00,  9.83it/s]
+# Epoch 493: train_loss: 0.7793:  99%|▉| 494/500 [01:04<00:00,  9.53it/s]
+# Epoch 494: train_loss: 0.7807:  99%|▉| 494/500 [01:04<00:00,  9.53it/s]
+# Epoch 494: train_loss: 0.7807:  99%|▉| 495/500 [01:04<00:00,  9.20it/s]
+# Epoch 495: train_loss: 0.7829:  99%|▉| 495/500 [01:04<00:00,  9.20it/s]
+# Epoch 495: train_loss: 0.7829:  99%|▉| 496/500 [01:04<00:00,  9.01it/s]
+# Epoch 496: train_loss: 0.7813:  99%|▉| 496/500 [01:04<00:00,  9.01it/s]
+# Epoch 496: train_loss: 0.7813:  99%|▉| 497/500 [01:04<00:00,  8.79it/s]
+# Epoch 497: train_loss: 0.7779:  99%|▉| 497/500 [01:05<00:00,  8.79it/s]
+# Epoch 497: train_loss: 0.7779: 100%|▉| 498/500 [01:05<00:00,  8.62it/s]
+# Epoch 498: train_loss: 0.7803: 100%|▉| 498/500 [01:05<00:00,  8.62it/s]
+# Epoch 498: train_loss: 0.7803: 100%|▉| 499/500 [01:05<00:00,  8.45it/s]2026-11-05 08:17:46,179 - INFO - INPUT_MASK {'step': 499, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.5, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'masked_degree_mean': 2.7444376945495605, 'kept_degree_mean': 2.728365421295166, 'masked_degree_q25_q50_q75': [1.0, 2.0, 3.0]}
+2026-11-05 08:17:46,214 - INFO - INPUT_MASK_FEEDBACK {'step': 499, 'mode': 'reconstruction_density_curriculum', 'alpha': 0.5, 'masked': 1663, 'nodes': 3327, 'actual_mask_rate': 0.4998497144574692, 'batch_reconstruction_error_mean': 0.7819582223892212, 'observed_nodes': 3327, 'observation_count_min_mean_max': [205, 249.9248572287346, 294], 'degree_error_pearson_seen': -0.4694978533408457, 'masked_degree_mean': 2.7444376945495605, 'kept_degree_mean': 2.728365421295166, 'masked_one_hop_visible_mean': 1.3770294648226098, 'masked_one_hop_zero_visible_fraction': 0.306674684305472, 'masked_two_hop_visible_mean': 7.038484666265784, 'masked_two_hop_zero_visible_fraction': 0.15153337342152737, 'density_layers': [{'layer': 0, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.8181396126747131}, {'layer': 1, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7562771439552307}, {'layer': 2, 'nodes': 832, 'masked': 416, 'observed': 832, 'error_ema_seen_mean': 0.7622101306915283}, {'layer': 3, 'nodes': 831, 'masked': 415, 'observed': 831, 'error_ema_seen_mean': 0.7760299444198608}]}
+# Epoch 499: train_loss: 0.7820: 100%|▉| 499/500 [01:05<00:00,  8.45it/s]
+# Epoch 499: train_loss: 0.7820: 100%|█| 500/500 [01:05<00:00,  8.32it/s]
+# Epoch 499: train_loss: 0.7820: 100%|█| 500/500 [01:05<00:00,  7.65it/s]
+num parameters for finetuning: 6150
+  0%|                                            | 0/500 [00:00<?, ?it/s]
+# Epoch: 0, train_loss: 1.7919, val_loss: 1.7736, val_acc:0.57, test_loss
+# Epoch: 1, train_loss: 1.7745, val_loss: 1.7620, val_acc:0.682, test_los
+# Epoch: 2, train_loss: 1.7619, val_loss: 1.7550, val_acc:0.696, test_los
+# Epoch: 3, train_loss: 1.7547, val_loss: 1.7518, val_acc:0.684, test_los
+# Epoch: 4, train_loss: 1.7520, val_loss: 1.7512, val_acc:0.672, test_los
+# Epoch: 5, train_loss: 1.7522, val_loss: 1.7524, val_acc:0.672, test_los
+# Epoch: 6, train_loss: 1.7539, val_loss: 1.7545, val_acc:0.682, test_los
+# Epoch: 7, train_loss: 1.7562, val_loss: 1.7571, val_acc:0.7, test_loss:
+# Epoch: 8, train_loss: 1.7586, val_loss: 1.7596, val_acc:0.714, test_los
+# Epoch: 9, train_loss: 1.7606, val_loss: 1.7616, val_acc:0.714, test_los
+# Epoch: 10, train_loss: 1.7622, val_loss: 1.7627, val_acc:0.704, test_lo
+# Epoch: 11, train_loss: 1.7633, val_loss: 1.7631, val_acc:0.702, test_lo
+# Epoch: 12, train_loss: 1.7639, val_loss: 1.7630, val_acc:0.686, test_lo
+# Epoch: 13, train_loss: 1.7640, val_loss: 1.7626, val_acc:0.68, test_los
+# Epoch: 14, train_loss: 1.7638, val_loss: 1.7621, val_acc:0.694, test_lo
+# Epoch: 15, train_loss: 1.7633, val_loss: 1.7618, val_acc:0.706, test_lo
+# Epoch: 16, train_loss: 1.7627, val_loss: 1.7616, val_acc:0.712, test_lo
+# Epoch: 17, train_loss: 1.7621, val_loss: 1.7614, val_acc:0.71, test_los
+# Epoch: 18, train_loss: 1.7616, val_loss: 1.7611, val_acc:0.706, test_lo
+# Epoch: 19, train_loss: 1.7613, val_loss: 1.7607, val_acc:0.71, test_los
+# Epoch: 20, train_loss: 1.7611, val_loss: 1.7604, val_acc:0.696, test_lo
+# Epoch: 21, train_loss: 1.7612, val_loss: 1.7603, val_acc:0.682, test_lo
+# Epoch: 22, train_loss: 1.7614, val_loss: 1.7603, val_acc:0.686, test_lo
+# Epoch: 23, train_loss: 1.7616, val_loss: 1.7606, val_acc:0.692, test_lo
+# Epoch: 24, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.708, test_lo
+# Epoch: 25, train_loss: 1.7618, val_loss: 1.7613, val_acc:0.712, test_lo
+# Epoch: 26, train_loss: 1.7618, val_loss: 1.7614, val_acc:0.708, test_lo
+# Epoch: 27, train_loss: 1.7618, val_loss: 1.7614, val_acc:0.708, test_lo
+# Epoch: 28, train_loss: 1.7618, val_loss: 1.7612, val_acc:0.71, test_los
+# Epoch: 29, train_loss: 1.7619, val_loss: 1.7610, val_acc:0.708, test_lo
+# Epoch: 29, train_loss: 1.7619, val_loss: 1.7610, val_acc:0.708, test_lo
+# Epoch: 30, train_loss: 1.7619, val_loss: 1.7609, val_acc:0.702, test_lo
+# Epoch: 31, train_loss: 1.7620, val_loss: 1.7610, val_acc:0.7, test_loss
+# Epoch: 32, train_loss: 1.7620, val_loss: 1.7611, val_acc:0.698, test_lo
+# Epoch: 33, train_loss: 1.7619, val_loss: 1.7611, val_acc:0.704, test_lo
+# Epoch: 34, train_loss: 1.7618, val_loss: 1.7611, val_acc:0.708, test_lo
+# Epoch: 35, train_loss: 1.7617, val_loss: 1.7609, val_acc:0.71, test_los
+# Epoch: 36, train_loss: 1.7616, val_loss: 1.7607, val_acc:0.712, test_lo
+# Epoch: 37, train_loss: 1.7615, val_loss: 1.7606, val_acc:0.708, test_lo
+# Epoch: 38, train_loss: 1.7615, val_loss: 1.7607, val_acc:0.712, test_lo
+# Epoch: 39, train_loss: 1.7616, val_loss: 1.7608, val_acc:0.708, test_lo
+# Epoch: 40, train_loss: 1.7616, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 41, train_loss: 1.7617, val_loss: 1.7611, val_acc:0.706, test_lo
+# Epoch: 42, train_loss: 1.7618, val_loss: 1.7611, val_acc:0.706, test_lo
+# Epoch: 43, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.712, test_lo
+# Epoch: 44, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 45, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 46, train_loss: 1.7619, val_loss: 1.7611, val_acc:0.71, test_los
+# Epoch: 47, train_loss: 1.7619, val_loss: 1.7611, val_acc:0.708, test_lo
+# Epoch: 48, train_loss: 1.7619, val_loss: 1.7611, val_acc:0.708, test_lo
+# Epoch: 49, train_loss: 1.7618, val_loss: 1.7611, val_acc:0.71, test_los
+# Epoch: 50, train_loss: 1.7618, val_loss: 1.7609, val_acc:0.712, test_lo
+# Epoch: 51, train_loss: 1.7617, val_loss: 1.7608, val_acc:0.712, test_lo
+# Epoch: 52, train_loss: 1.7617, val_loss: 1.7608, val_acc:0.712, test_lo
+# Epoch: 53, train_loss: 1.7616, val_loss: 1.7608, val_acc:0.71, test_los
+# Epoch: 54, train_loss: 1.7616, val_loss: 1.7609, val_acc:0.71, test_los
+# Epoch: 55, train_loss: 1.7616, val_loss: 1.7609, val_acc:0.706, test_lo
+# Epoch: 56, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.704, test_lo
+# Epoch: 57, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.706, test_lo
+# Epoch: 58, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.714, test_lo
+# Epoch: 59, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.714, test_lo
+# Epoch: 59, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.714, test_lo
+# Epoch: 60, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.712, test_lo
+# Epoch: 61, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.712, test_lo
+# Epoch: 62, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.708, test_lo
+# Epoch: 63, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.706, test_lo
+# Epoch: 64, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.706, test_lo
+# Epoch: 65, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 66, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 67, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 68, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.712, test_lo
+# Epoch: 69, train_loss: 1.7617, val_loss: 1.7609, val_acc:0.71, test_los
+# Epoch: 70, train_loss: 1.7617, val_loss: 1.7609, val_acc:0.708, test_lo
+# Epoch: 71, train_loss: 1.7617, val_loss: 1.7609, val_acc:0.71, test_los
+# Epoch: 72, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 73, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 74, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 75, train_loss: 1.7617, val_loss: 1.7609, val_acc:0.71, test_los
+# Epoch: 76, train_loss: 1.7617, val_loss: 1.7609, val_acc:0.708, test_lo
+# Epoch: 77, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.708, test_lo
+# Epoch: 78, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 79, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 80, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 81, train_loss: 1.7618, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 82, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 82, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 83, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 84, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 85, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 86, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 87, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 88, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 89, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 90, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 91, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 92, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 93, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 94, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 95, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 96, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 97, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 98, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 99, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_los
+# Epoch: 100, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 101, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 101, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 102, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 103, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 104, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 105, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 106, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 107, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 108, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 109, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 110, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 111, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 112, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 113, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 114, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 115, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 116, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 117, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 118, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 118, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 119, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 120, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 121, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 122, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 123, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 124, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 125, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 126, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 127, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 128, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 129, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 130, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 131, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 132, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 133, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 134, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 134, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 135, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 136, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 137, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 138, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 139, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 140, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 141, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 142, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 143, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 144, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 145, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 146, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 147, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 148, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 149, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 149, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 150, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 151, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 152, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 153, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 154, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 155, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 156, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 157, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 158, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 159, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 160, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 161, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 162, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 163, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 164, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 164, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 165, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 166, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 167, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 168, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 169, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 170, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 171, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 172, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 173, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 174, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 175, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 176, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 177, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 178, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 179, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 180, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 181, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 182, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 183, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 184, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 185, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 186, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 187, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 188, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 189, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 190, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 191, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 191, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 192, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 193, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 194, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 195, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 196, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 197, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 198, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 199, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 200, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 201, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 202, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 203, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 204, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 205, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 206, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 207, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 208, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 209, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 210, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 211, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 212, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 213, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 214, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 215, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 216, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 217, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 218, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 219, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 220, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 221, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 222, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 223, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 224, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 225, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 226, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 227, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 228, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 229, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 230, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 231, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 232, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 233, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 234, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 234, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 235, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 236, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 237, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 238, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 239, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 240, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 241, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 242, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 243, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 244, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 245, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 246, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 247, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 248, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 249, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 250, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 251, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 252, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 253, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 254, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 255, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 256, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 257, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 258, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 259, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 260, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 261, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 262, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 263, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 264, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 265, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 266, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 267, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 268, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 269, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 270, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 271, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 272, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 273, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 274, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 275, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 276, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 277, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 277, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 278, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 279, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 280, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 281, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 282, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 283, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 284, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 285, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 286, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 287, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 288, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 289, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 290, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 291, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 292, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 293, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 294, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 295, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 296, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 297, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 298, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 299, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 300, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 301, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 302, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 303, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 304, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 305, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 306, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 307, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 308, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 309, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 310, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 311, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 312, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 313, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 314, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 315, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 316, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 317, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 318, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 319, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 320, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 320, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 321, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 322, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 323, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 324, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 325, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 326, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 327, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 328, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 329, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 330, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 331, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 332, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 333, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 334, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 335, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 336, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 337, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 338, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 339, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 340, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 341, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 342, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 343, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 344, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 345, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 346, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 347, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 348, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 349, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 350, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 351, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 352, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 353, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 354, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 355, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 356, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 357, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 358, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 359, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 360, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 361, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 362, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 363, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 363, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 364, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 365, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 366, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 367, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 368, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 369, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 370, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 371, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 372, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 373, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 374, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 375, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 376, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 377, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 378, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 379, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 380, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 381, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 382, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 383, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 384, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 385, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 386, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 387, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 388, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 389, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 390, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 391, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 392, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 393, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 394, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 395, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 396, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 397, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 398, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 399, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 400, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 401, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 402, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 403, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 404, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 404, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 405, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 406, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 407, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 408, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 409, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 410, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 411, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 412, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 413, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 414, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 415, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 416, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 417, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 418, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 419, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 420, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 421, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 422, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 423, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 424, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 425, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 426, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 427, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 428, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 429, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 430, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 431, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 432, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 433, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 434, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 435, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 436, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 437, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 438, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 439, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 440, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 441, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 442, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 442, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 443, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 444, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 445, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 446, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 447, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 448, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 449, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 450, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 451, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 452, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 453, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 454, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 455, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 456, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 457, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 458, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 459, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 460, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 461, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 462, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 463, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 464, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 465, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 466, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 467, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 468, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 469, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 470, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 471, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 472, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 473, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 474, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 475, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 476, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 477, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 478, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 479, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 480, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 481, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 482, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 483, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 483, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 484, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 485, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 486, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 487, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 488, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 489, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 490, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 491, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 492, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 493, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 494, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 495, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 496, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 497, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 498, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 499, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+# Epoch: 499, train_loss: 1.7617, val_loss: 1.7610, val_acc:0.71, test_lo
+--- TestAcc:[HIDDEN], early-stopping-TestAcc:[HIDDEN], Best ValAcc: 0.7140 in epoch 59 --- 
+# final_acc: [HIDDEN]
+# early-stopping_acc: [HIDDEN]
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()

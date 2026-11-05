@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "local_queue_tests": 8,
+  "unchanged_model_contract_files": 34,
+  "DS_server_smoke": "NOT_RUN; automatically required before full DS runs",
+  "DS_full_development_runs": "NOT_STARTED",
+  "runtime_scope": "Local has no Torch/DGL/NumPy; true runtime/NPZ validation executes on server",
+  "R9_audit_commit": "705cdc51f63763996975f0305dec9f9806b11597"
+}

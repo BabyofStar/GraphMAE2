@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/ds_development9_lcy4n97u/ds_development9_lcy4n97u_citeseer_DS_s2
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_citeseer_DS_s2
+Best ValAcc: 0.7160 in epoch 372
+Pretrain wall seconds: 78.473
+Final probe wall seconds: 1.423
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+R_DEV1_DEVELOPMENT_RUN=PASS

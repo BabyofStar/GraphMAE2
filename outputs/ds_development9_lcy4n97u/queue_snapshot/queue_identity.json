@@ -1,0 +1,36 @@
+{
+  "package": "graphmae2_ds_development9",
+  "version": 1,
+  "queue_files_sha256": {
+    "launch_ds9.py": "3b7303a72905ffae73a956622b77a98ad140d63b4cc78944f3c45b3da2d7561e",
+    "legacy_candidate.py": "34fa7ca3a6415c025f83a0bd37281c251660b1dd00c46a7410af154436add12f",
+    "legacy_reference.py": "ebfa750def8e66ae26deec251a1de830b52a41f736e682f818adedca1928d603",
+    "local_validation.json": "0d83e5fb98120ce1cf662a320a6dcfdfce8c08cea3bea71db30c5e1f0ddc38b3",
+    "README.md": "416137bd1e788a1b9418248999cfb9805944beefc4bbb925fd4d3d4af469eb77",
+    "reference_r9.py": "d98943f903f42521986912606d95fa41c8e9620acd2eaa409c85d98578083804",
+    "run_ds9.py": "eac11c66a071f43a30b2c81a4f6d8bafaf91abb8edce258b1ccaa0efd9d3fd02",
+    "start.sh": "bbd16d3bc72e4dd2de98f8850b796431ab8325dc027bca952132b571fc229c3b",
+    "test_ds9.py": "9b603fb389d29c935188e914019209162d27e6e2e6e053c496a3c782f57cfe08"
+  },
+  "accepted_r_package_files_sha256": {
+    "manifest.json": "d9189ce6c30e5082eacdd60c2f0c2ae4d051b64fdd33db8e3a9f333356c982b5",
+    "run_stage1_r.py": "fa97866ccd803211e90c266553557b16b00d9333b00513b6333755055375519a"
+  },
+  "accepted_stage1_directory": "/home/jovyan/work/GraphMAE2/outputs/r_dev1_stage1_osgce2je",
+  "development_runs": 9,
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "test_metrics_used_for_selection": false,
+  "primary_comparison": "DS_minus_S",
+  "secondary_comparisons": [
+    "DS_minus_B2",
+    "DS_minus_D",
+    "DS_minus_B0"
+  ],
+  "method": "DS",
+  "smoke_before_full": true,
+  "R9_audit_commit": "705cdc51f63763996975f0305dec9f9806b11597"
+}

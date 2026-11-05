@@ -1,0 +1,169 @@
+{
+  "method": "DS",
+  "runs": [
+    [
+      "cora",
+      0
+    ],
+    [
+      "cora",
+      1
+    ],
+    [
+      "cora",
+      2
+    ],
+    [
+      "citeseer",
+      0
+    ],
+    [
+      "citeseer",
+      1
+    ],
+    [
+      "citeseer",
+      2
+    ],
+    [
+      "pubmed",
+      0
+    ],
+    [
+      "pubmed",
+      1
+    ],
+    [
+      "pubmed",
+      2
+    ]
+  ],
+  "official_configs": {
+    "cora": {
+      "max_epoch": 2000,
+      "max_epoch_f": 300,
+      "num_hidden": 1024,
+      "num_heads": 8,
+      "mask_rate": 0.5,
+      "lr": 0.001,
+      "lr_f": 0.025,
+      "weight_decay": 0.0002,
+      "weight_decay_f": 0.0001,
+      "alpha_l": 3,
+      "lam": 0.15,
+      "momentum": 0,
+      "replace_rate": 0.15
+    },
+    "citeseer": {
+      "max_epoch": 500,
+      "max_epoch_f": 500,
+      "num_hidden": 1024,
+      "num_heads": 4,
+      "mask_rate": 0.5,
+      "lr": 0.0005,
+      "lr_f": 0.025,
+      "weight_decay": 0.0001,
+      "weight_decay_f": 0.01,
+      "alpha_l": 1,
+      "lam": 0.1,
+      "momentum": 1,
+      "replace_rate": 0.0
+    },
+    "pubmed": {
+      "max_epoch": 2000,
+      "max_epoch_f": 500,
+      "num_hidden": 512,
+      "num_heads": 2,
+      "mask_rate": 0.9,
+      "lr": 0.005,
+      "lr_f": 0.025,
+      "weight_decay": 1e-05,
+      "weight_decay_f": 0.0005,
+      "alpha_l": 4,
+      "lam": 1,
+      "momentum": 0.995,
+      "replace_rate": 0.0
+    }
+  },
+  "primary_comparison": "DS_minus_S",
+  "secondary_comparisons": [
+    "DS_minus_B2",
+    "DS_minus_D",
+    "DS_minus_B0"
+  ],
+  "source_sha256": {
+    "main_full_batch.py": "10567a6173362ca3aca12218fce59d30597b8145ecbbddb4b604340ac9f7d0d2",
+    "utils.py": "0f7e9a6d76a8c5744d07465e15574a71709c8687afa8b3a42c5d9f0c42905b88",
+    "models/__init__.py": "8829c9bee27d1596e615ee4046f997825edf67843e28ac220fb10a9ac25b865f",
+    "models/edcoder.py": "330b68603293f93e66e51d1e86af59989bb3dc20ab89fe25060ea9c03b264445",
+    "models/input_masking.py": "230a45cf29255bfc46272f8774e5650aea46e85e48b558f82b286019e7d5d4b9",
+    "models/finetune.py": "3c3f6e8f1154035a9a6d62420dc964f600cf672116c4fb3b12e7bb10f71de248",
+    "models/gat.py": "2e536f955793d4190bfae9ed4161bedab53928ed43d2012bbb9e5e126d0a4a3c",
+    "models/gcn.py": "55e3f0fac56ce78d7ed4856f83a3a84d61edde00be454f2db885b66ab992ac70",
+    "models/loss_func.py": "b71a86e278b039ea77a2943b3ead804bb222ad28e437c379a1c22dd02e30140e",
+    "datasets/data_proc.py": "d43cc47fb81e3d021dbaa15438b7a117054a5172855372f7fc4e17475671f88f",
+    "datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "datasets/lc_sampler.py": "0aca1c668e93bd6842220396a216a098b10e29aa9b3eb416ddd1fac472fea2cb",
+    "datasets/localclustering.py": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
+    "datasets/saint_sampler.py": "729cca3522d9927b65df00e8e6234ccf8f64140eddabe3332ee03c7eb4412a8e",
+    "configs/cora.yaml": "3a5a6b87a73fd986ed0bd94ce224f37059739a7df7defa3cc89e6ad78f8aaca6",
+    "configs/citeseer.yaml": "d9d9302aca6148a322861bb160300ff32e97e615f0638771ea1f5a2d9f3d7688",
+    "configs/pubmed.yaml": "19f7897bab0097f2a6f3a85f9a7b02914cbb0e6627701832ea33c07aeb48a50a",
+    "models/adaptive_masking.py": "136b4f2d9cd86fceed091417b64ba7aaba8bb8cea11794175e2c8cc8aa996420",
+    "models/masking_math.py": "ff32da677a5600dcc2a812f5a76c1cbada66875295bcdff9a0388d01f099a9aa",
+    "record_full_batch.py": "7744e2e3ed17305b5b8428bc04f771c3a64eaa3e53b4c6331427c9055f025c95",
+    "test_record_full_batch.py": "2cb961fe1b54fb90495c01c0a8a01d5f4f2146a3b02909cb8e3811345f25fbd9",
+    "tests/test_input_masking.py": "574e801ca550f28cd7b4a8626e58654002cab2c0d9acd7506070538e8c7eea9a",
+    "tests/fixtures/edcoder_v1_2_reference.py": "b7994fdce33baf76964afbad1fb5f25d0091321e5d4985c6998754f38f77af44",
+    "tests/test_adaptive_masking_v2.py": "c4ae7e18019b18bc5679bcf983ab25649e76118e2bf0b033ccf7cbd929f11335",
+    "tests/test_masking_math_v2.py": "ec1af1f30a4773bf5dec51778b92b17f39f5c1eac9615f5df11bcad9a4b89296",
+    "test_record_full_batch_v2.py": "84870be035acbdef9116d18450954f9fee904df8edcf8c4f42f2ebc5d513afed",
+    "record_full_batch_v2.py": "033012c493b602357e4fe55d3758c91586593b6b27210f5cf9dcfd9592ef8fc0",
+    "tests/fixtures/input_masking_v1_1_reference.py": "1c73f7899c9338cae8c0420b6a8ce4223561309894f42f49be028e8ef9a06518",
+    "models/random_group_masking.py": "57d9f8acccf18d74923a7dbd0cb085a636080184ea5617198979910b7d81f8be",
+    "tests/test_random_group_masking.py": "4c27d598a0fc921176bd450a4b03c8e485963112671afed334bbbf6cdf782d59",
+    "tests/fixtures/adaptive_masking_v2_dev1.py": "1709e8a1ab5029ea75136253f93272c8fdb58d843a2755ec39f9a99023062939",
+    "tests/fixtures/edcoder_v2_dev1.py": "7268fb466da2a6a67cbd987ae35756933c1df7b61fd885445f0ec870e88c6d28",
+    "test_record_full_batch_r.py": "a7aa57b6fc9a37f8c2007e2bb3145e50827e59415f6311a5f480b52920bea6b5",
+    "record_full_batch_r.py": "2226412317b8658d5089cfc3db142d1f4d5123eb00364c0482ec254c029a3bc4"
+  },
+  "queue_identity": {
+    "package": "graphmae2_ds_development9",
+    "version": 1,
+    "queue_files_sha256": {
+      "launch_ds9.py": "3b7303a72905ffae73a956622b77a98ad140d63b4cc78944f3c45b3da2d7561e",
+      "legacy_candidate.py": "34fa7ca3a6415c025f83a0bd37281c251660b1dd00c46a7410af154436add12f",
+      "legacy_reference.py": "ebfa750def8e66ae26deec251a1de830b52a41f736e682f818adedca1928d603",
+      "local_validation.json": "0d83e5fb98120ce1cf662a320a6dcfdfce8c08cea3bea71db30c5e1f0ddc38b3",
+      "README.md": "416137bd1e788a1b9418248999cfb9805944beefc4bbb925fd4d3d4af469eb77",
+      "reference_r9.py": "d98943f903f42521986912606d95fa41c8e9620acd2eaa409c85d98578083804",
+      "run_ds9.py": "eac11c66a071f43a30b2c81a4f6d8bafaf91abb8edce258b1ccaa0efd9d3fd02",
+      "start.sh": "bbd16d3bc72e4dd2de98f8850b796431ab8325dc027bca952132b571fc229c3b",
+      "test_ds9.py": "9b603fb389d29c935188e914019209162d27e6e2e6e053c496a3c782f57cfe08"
+    },
+    "accepted_r_package_files_sha256": {
+      "manifest.json": "d9189ce6c30e5082eacdd60c2f0c2ae4d051b64fdd33db8e3a9f333356c982b5",
+      "run_stage1_r.py": "fa97866ccd803211e90c266553557b16b00d9333b00513b6333755055375519a"
+    },
+    "accepted_stage1_directory": "/home/jovyan/work/GraphMAE2/outputs/r_dev1_stage1_osgce2je",
+    "development_runs": 9,
+    "training_seeds": [
+      0,
+      1,
+      2
+    ],
+    "test_metrics_used_for_selection": false,
+    "primary_comparison": "DS_minus_S",
+    "secondary_comparisons": [
+      "DS_minus_B2",
+      "DS_minus_D",
+      "DS_minus_B0"
+    ],
+    "method": "DS",
+    "smoke_before_full": true,
+    "R9_audit_commit": "705cdc51f63763996975f0305dec9f9806b11597"
+  },
+  "stage1_dir": "/home/jovyan/work/GraphMAE2/outputs/r_dev1_stage1_osgce2je",
+  "smoke_before_full": true,
+  "test_metrics_used_for_selection": false
+}

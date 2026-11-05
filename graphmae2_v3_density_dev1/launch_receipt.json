@@ -1,0 +1,9 @@
+{
+  "status": "launched",
+  "batch_directory": "/home/jovyan/work/GraphMAE2/outputs/c_development9_mtay1pty",
+  "created_utc": "2026-11-05T11:18:05.344758+00:00",
+  "stage1_directory": "/home/jovyan/work/GraphMAE2/outputs/c_dev1_stage1_z7j505g9",
+  "total": 9,
+  "test_metrics_used_for_selection": false,
+  "pid": 138395
+}

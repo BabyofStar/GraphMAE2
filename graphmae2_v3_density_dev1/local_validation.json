@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "tampered_preimage_rejected": true,
+  "real_git_apply_and_postimage_verified": true,
+  "second_install_is_noop": true,
+  "postimage_files": 41,
+  "fixture": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\work\\c_install_fixture_hqnklm08",
+  "server_runtime_tests": "NOT_RUN",
+  "local_recorder_contract_tests": "6 PASS",
+  "local_math_tests": "5 PASS (pure route scheduling math); real runtime math tests remain server-only",
+  "local_math_test_count": 5,
+  "local_recorder_contract_test_count": 6,
+  "local_queue_test_count": 9,
+  "local_test_total": 20,
+  "source_contract_files": 41,
+  "server_engineering_test_count_expected": 94,
+  "server_engineering_tests": "NOT_RUN",
+  "C_smoke": "NOT_RUN",
+  "C_full_development_runs": "NOT_STARTED",
+  "approved_full_runs": 9,
+  "route_order_control_runs": 0,
+  "legacy_recorder_files_preserved": [
+    "record_full_batch.py",
+    "record_full_batch_v2.py",
+    "record_full_batch_r.py"
+  ]
+}

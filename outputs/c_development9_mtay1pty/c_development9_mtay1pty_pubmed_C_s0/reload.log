@@ -1,0 +1,9 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+=== Use sce_loss and alpha_l=4 ===
+num_encoder_params: 521218, num_decoder_params: 257500, num_params_in_total: 1567444
+CHECKPOINT_SHA256=PASS
+MODEL_AND_CLASSIFIERS_CPU_RELOAD=PASS
+This is a weight-loading check, not resumed training or a new accuracy evaluation.

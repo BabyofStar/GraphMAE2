@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/c_dev1_stage1_z7j505g9/c_dev1_stage1_z7j505g9_cora_C_s0
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_dev1_stage1_z7j505g9_cora_C_s0
+Best ValAcc: 0.7120 in epoch 4
+Pretrain wall seconds: 0.696
+Final probe wall seconds: 0.057
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+C_DEV1_SMOKE_RUN=PASS

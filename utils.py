@@ -123,7 +123,7 @@ def build_args():
         "random", "structure_static", "structure_curriculum",
         "structure_curriculum_shuffled", "reconstruction_curriculum",
         "density_stratified", "reconstruction_density_curriculum",
-        "random_group_stratified"), default="random")
+        "random_group_stratified", "density_curriculum"), default="random")
     parser.add_argument("--structure_alpha_max", type=float, default=0.5)
     parser.add_argument("--structure_warmup_ratio", type=float, default=0.2)
     parser.add_argument("--structure_ramp_end_ratio", type=float, default=0.8)
@@ -133,6 +133,7 @@ def build_args():
     parser.add_argument("--input_mask_diagnostics", action="store_true", default=False)
     parser.add_argument("--difficulty_ema_beta", type=float, default=0.9)
     parser.add_argument("--difficulty_clip_quantile", type=float, default=0.95)
+    parser.add_argument("--density_route_seed", type=int, default=2026110501)
     parser.add_argument("--random_group_seed", type=int, default=2026110301)
     parser.add_argument("--density_bins", type=int, default=4)
     parser.add_argument("--density_chunk_size", type=int, default=256)

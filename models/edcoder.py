@@ -10,6 +10,7 @@ from .gat import GAT
 from .loss_func import sce_loss
 from .adaptive_masking import AdaptiveInputMask
 from .random_group_masking import RandomGroupInputMask
+from .density_curriculum import DensityCurriculumInputMask
 
 
 def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
@@ -88,10 +89,14 @@ class PreModel(nn.Module):
             density_bins: int = 4,
             density_chunk_size: int = 256,
             random_group_seed: int = 2026110301,
+            density_route_seed: int = 2026110501,
          ):
         super(PreModel, self).__init__()
         masker = RandomGroupInputMask if input_mask_mode == "random_group_stratified" else AdaptiveInputMask
         extra = {"random_group_seed": random_group_seed} if masker is RandomGroupInputMask else {}
+        if input_mask_mode == "density_curriculum":
+            masker = DensityCurriculumInputMask
+            extra = {"density_route_seed": density_route_seed}
         self.input_masker = masker(
             mode=input_mask_mode,
             alpha_max=structure_alpha_max,

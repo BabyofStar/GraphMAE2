@@ -1,0 +1,25 @@
+{
+  "density_route_seed": 2026110501,
+  "epochs": 5,
+  "warmup_ratio": 0.2,
+  "ramp_end_ratio": 0.8,
+  "probability_max": 1.0,
+  "routes": [
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "route_probabilities": [
+    0.0,
+    0.0833333333333333,
+    0.4999999999999999,
+    0.9166666666666666,
+    1.0
+  ],
+  "density_epochs": 3,
+  "uniform_epochs": 2,
+  "routes_sha256": "8e0c5acc0a2f5318a160746b497253cd00ffc3c75e838fd5b0deab2a23eeaff7",
+  "route_encoding": "0=uniform; 1=true density quotas; one fixed route plan per dataset"
+}

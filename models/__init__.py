@@ -72,5 +72,6 @@ def build_model(args):
         density_bins=getattr(args, "density_bins", 4),
         density_chunk_size=getattr(args, "density_chunk_size", 256),
         random_group_seed=getattr(args, "random_group_seed", 2026110301),
+        density_route_seed=getattr(args, "density_route_seed", 2026110501),
     )
     return model

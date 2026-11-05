@@ -1,0 +1,23 @@
+START dataset=cora method=C seed=0
+DONE 1/9 dataset=cora seed=0 BestVal=0.8040
+START dataset=cora method=C seed=1
+DONE 2/9 dataset=cora seed=1 BestVal=0.7940
+START dataset=cora method=C seed=2
+DONE 3/9 dataset=cora seed=2 BestVal=0.8200
+START dataset=citeseer method=C seed=0
+DONE 4/9 dataset=citeseer seed=0 BestVal=0.7260
+START dataset=citeseer method=C seed=1
+DONE 5/9 dataset=citeseer seed=1 BestVal=0.7520
+START dataset=citeseer method=C seed=2
+DONE 6/9 dataset=citeseer seed=2 BestVal=0.7080
+START dataset=pubmed method=C seed=0
+DONE 7/9 dataset=pubmed seed=0 BestVal=0.8340
+START dataset=pubmed method=C seed=1
+DONE 8/9 dataset=pubmed seed=1 BestVal=0.8340
+START dataset=pubmed method=C seed=2
+DONE 9/9 dataset=pubmed seed=2 BestVal=0.8380
+VAL_COMPARE cora C=80.600 +/- 1.071 % C-minus-S=-1.067pp C-minus-B2=-0.333pp
+VAL_COMPARE citeseer C=72.867 +/- 1.806 % C-minus-S=+0.533pp C-minus-B2=-0.333pp
+VAL_COMPARE pubmed C=83.533 +/- 0.189 % C-minus-S=-0.400pp C-minus-B2=-0.067pp
+ALL_DONE 9/9
+BATCH_EXIT_CODE=0

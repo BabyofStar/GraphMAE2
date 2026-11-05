@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "phase": "development",
+  "method": "C",
+  "dataset": "citeseer",
+  "seed": 0,
+  "recorder_version": "3.0.0-density-dev1",
+  "official_epoch_budget": true,
+  "reviewed_github_commit": "705cdc51f63763996975f0305dec9f9806b11597"
+}

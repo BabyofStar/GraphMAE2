@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/c_development9_mtay1pty/c_development9_mtay1pty_pubmed_C_s2
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_pubmed_C_s2
+Best ValAcc: 0.8380 in epoch 106
+Pretrain wall seconds: 305.983
+Final probe wall seconds: 2.042
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+C_DEV1_DEVELOPMENT_RUN=PASS

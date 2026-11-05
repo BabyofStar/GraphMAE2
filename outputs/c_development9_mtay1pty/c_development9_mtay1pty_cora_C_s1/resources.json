@@ -1,0 +1,26 @@
+{
+  "data_loading": {
+    "wall_seconds": 0.05455774418078363,
+    "cpu_seconds": 0.05325910499999953,
+    "pytorch_peak_allocated_bytes": 0,
+    "pytorch_peak_reserved_bytes": 0,
+    "process_lifetime_max_rss_bytes_at_phase_end": 676163584
+  },
+  "pretrain_including_intermediate_probes": {
+    "wall_seconds": 196.2699498659931,
+    "cpu_seconds": 103.808021569,
+    "pytorch_peak_allocated_bytes": 436516864,
+    "pytorch_peak_reserved_bytes": 520093696,
+    "process_lifetime_max_rss_bytes_at_phase_end": 1273933824
+  },
+  "final_embedding_and_linear_probe": {
+    "wall_seconds": 1.0558192781172693,
+    "cpu_seconds": 1.0709336949999937,
+    "pytorch_peak_allocated_bytes": 209942016,
+    "pytorch_peak_reserved_bytes": 520093696,
+    "process_lifetime_max_rss_bytes_at_phase_end": 1337634816
+  },
+  "input_mask_preparation_wall_seconds_included_in_pretrain": 0.2097957308869809,
+  "checkpoint_write_and_readback_wall_seconds": 5.0706727909855545,
+  "runner_wall_seconds_to_artifact_export": 208.20488037797622
+}

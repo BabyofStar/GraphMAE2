@@ -123,7 +123,10 @@ def build_args():
         "random", "structure_static", "structure_curriculum",
         "structure_curriculum_shuffled", "reconstruction_curriculum",
         "density_stratified", "reconstruction_density_curriculum",
-        "random_group_stratified", "density_curriculum"), default="random")
+        "random_group_stratified", "density_curriculum",
+        "rank_difficulty", "rank_progress", "rank_progress_shuffled",
+        "pair_uniform_reference", "pair_semantic_antithetic", "pair_random_antithetic",
+        "pair_semantic_comask"), default="random")
     parser.add_argument("--structure_alpha_max", type=float, default=0.5)
     parser.add_argument("--structure_warmup_ratio", type=float, default=0.2)
     parser.add_argument("--structure_ramp_end_ratio", type=float, default=0.8)

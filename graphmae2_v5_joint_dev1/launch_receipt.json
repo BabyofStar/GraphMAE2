@@ -1,0 +1,9 @@
+{
+  "status": "launched",
+  "batch_directory": "/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv",
+  "stage1_directory": "/home/jovyan/work/GraphMAE2/outputs/j_dev1_stage1_mer3ss5j",
+  "total": 12,
+  "created_utc": "2026-11-06T06:07:38.955382+00:00",
+  "test_metrics_used_for_selection": false,
+  "pid": 184032
+}

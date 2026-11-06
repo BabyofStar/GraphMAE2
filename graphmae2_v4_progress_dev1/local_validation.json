@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_files": 48,
+  "modified_files": 2,
+  "new_files": 7,
+  "pure_math_tests_passed": 8,
+  "recorder_contract_tests_passed": 6,
+  "queue_tests_passed": 6,
+  "actual_installer_git_apply_and_hashes": "PASS",
+  "changed_preimage_rejected": true,
+  "existing_new_file_preserved": true,
+  "repeated_install_noop": true,
+  "server_runtime_tests": "NOT_RUN; 114 CPU/CUDA tests required on server",
+  "diagnostic_runs": "NOT_RUN; four 100/5 runs required on server before launch",
+  "full_runs": "NOT_STARTED; approved 12 Cora-only runs",
+  "bash_runtime_validation": "NOT_RUN on Windows",
+  "fixture": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\work\\p_install_fixture_x1fiwho4"
+}

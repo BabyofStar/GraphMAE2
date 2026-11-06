@@ -1,0 +1,94 @@
+{
+  "package": "graphmae2_v5_joint_dev1",
+  "version": 1,
+  "approved_full_runs": 12,
+  "dataset": "cora",
+  "methods": [
+    "S",
+    "NA",
+    "NR",
+    "NC"
+  ],
+  "jobs": [
+    [
+      "S",
+      0
+    ],
+    [
+      "NA",
+      0
+    ],
+    [
+      "NR",
+      0
+    ],
+    [
+      "NC",
+      0
+    ],
+    [
+      "NA",
+      1
+    ],
+    [
+      "NR",
+      1
+    ],
+    [
+      "NC",
+      1
+    ],
+    [
+      "S",
+      1
+    ],
+    [
+      "NR",
+      2
+    ],
+    [
+      "NC",
+      2
+    ],
+    [
+      "S",
+      2
+    ],
+    [
+      "NA",
+      2
+    ]
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_comparison": "NA_minus_S",
+  "secondary_comparisons": [
+    "NA_minus_NR",
+    "NA_minus_NC"
+  ],
+  "diagnostic_runs": 4,
+  "diagnostic_pretrain_epochs": 100,
+  "diagnostic_probe_epochs": 5,
+  "source_files": 55,
+  "server_test_count": 134,
+  "test_metrics_used_for_selection": false,
+  "structural_gate_uses_validation_scores": false,
+  "prior_auditor_sha256": "002901d6b8b92665677b534d5e54091494c33d1fcbf44abbce7ba8932307c231",
+  "queue_files_sha256": {
+    "gate_p12.py": "22a754e73e04cdee33fbdeef34a1a2cec0c267b387adf0434e8dbdcc9e0d4896",
+    "graphmae2_v5_joint_dev1.patch": "d9704b7186b1508f9401c60386c3c637f8fd8646fe33e3aa8ce3cab2d40aae55",
+    "install_j.py": "1a6873f2df07d2f0ed54751fe62445225490f9df8db3c54dfacfefb22959218e",
+    "launch_j12.py": "836b5226c507def2fb494d6213734ec693cb9fcbc8de4803fe7b94143f364453",
+    "local_validation.json": "834f7b7207b47ff830222a1ebf39ef52df0121b3701d7b2d89e1932ffec88479",
+    "manifest.json": "64a3fcf2396b63c6a7a138e56b01818e5bcbeb735f13c6aa44086151fe0d7cc8",
+    "protocol.py": "dc2cfbab73f7b9e6c4dcab296ee8da3e006044499c6afb6c02d92834100ecc72",
+    "README.md": "f24a162dc4e75d0723a6c60b7cebb943e7dd9b093067d12dc3874b6adbe0c86e",
+    "run_j12.py": "aeea09551e337ada2d316e829b617b56dab0b94a2c70db11063bf51ab2390844",
+    "run_stage1_j.py": "7be4c056165aa4ec9440a10de1dfdeef383cb49369c56f93bee822e5ca9edfb5",
+    "start.sh": "512d40b956956873fbfff1cd3c745e56e174acdf4fdcabc2e845de2f6937aa9f",
+    "test_j_queue.py": "0dff6b87c32556f01a4901eff15ce51da4f4e427e858743866fe96a52bdff4f4"
+  }
+}

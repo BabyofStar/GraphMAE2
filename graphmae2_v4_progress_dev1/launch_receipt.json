@@ -1,0 +1,9 @@
+{
+  "status": "launched",
+  "batch_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr",
+  "stage1_directory": "/home/jovyan/work/GraphMAE2/outputs/p_dev1_stage1_9w06z2r4",
+  "total": 12,
+  "created_utc": "2026-11-05T13:57:13.288984+00:00",
+  "test_metrics_used_for_selection": false,
+  "pid": 160080
+}

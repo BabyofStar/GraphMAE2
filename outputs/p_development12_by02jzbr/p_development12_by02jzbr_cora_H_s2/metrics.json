@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "phase": "development",
+  "method": "H",
+  "dataset": "cora",
+  "seed": 2,
+  "recorder_version": "4.0.0-progress-dev1",
+  "official_epoch_budget": true,
+  "reviewed_github_commit": "40de08f6b42c050e94ed65444beeb4f2b6520a06",
+  "best_val_acc": 0.818,
+  "best_val_epoch": 155,
+  "dataset_info": {
+    "nodes": 2708,
+    "edges_with_self_loops": 13264,
+    "features": 1433,
+    "classes": 7,
+    "splits": {
+      "train_mask": 140,
+      "val_mask": 500,
+      "test_mask": 1000
+    },
+    "split_mask_sha256": {
+      "train_mask": "b211325c561d6f73f978a4b0f3d44571c58eb70ca55a2aa27b9d4988344476c1",
+      "val_mask": "96c8f5dc197fc3c014b3d655f1c28d0d276221e867ca01d64f74edb39cfb7173",
+      "test_mask": "ec05c123cc125ff38ad3963cba5d85415a2e7b125dc68064bbf65fb0661644e6"
+    },
+    "feature_matrix_sha256": "f665a31d59f68feb41da8d96a9b001fd22283bd6901982f1e9ecfc9820211fa4",
+    "ordered_edge_index_sha256": "88728b6ec26535f10238659d8e9ea0d895a49bdf272aeb43e6e9c64dd5a21ba3"
+  },
+  "intermediate_probe_calls": 10,
+  "mask_records": 21,
+  "feedback_records": 21,
+  "mask_node_statistics_file": "mask_node_statistics.npz",
+  "mask_node_statistics_sha256": "d300df08196d79ffdb164e83cd32ab686c63248a181613340f3d710087ff9502",
+  "checkpoint_path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_H_s2/models.pt",
+  "checkpoint_sha256": "236bb0d83760f944522985fc0b27ae6f87f4565ed7cb33e66b25cd09966dad71",
+  "checkpoint_readback_equal": true,
+  "test_metrics_file": "test_metrics.json",
+  "rank_trace_file": "rank_trace.npz",
+  "rank_trace_sha256": "9a0b012c6953cf3514635eca40ba337ac734b8e80e86ca8bac6ea27bb8c9b486",
+  "rank_protocol": "fixed-rank-linear-v1",
+  "fast_beta": 0.9,
+  "slow_beta": 0.99,
+  "rank_tie_seed": 2026110504,
+  "rank_shuffle_seed": 2026110505
+}

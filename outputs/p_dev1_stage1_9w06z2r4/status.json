@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "stage": "tests_and_measurement",
+  "started_utc": "2026-11-05T13:53:34.040370+00:00",
+  "diagnostic_pretrain_epochs": 100,
+  "diagnostic_probe_epochs": 5,
+  "diagnostic_methods": [
+    "S",
+    "H",
+    "P",
+    "PS"
+  ],
+  "test_scores_used_for_selection": false,
+  "validation_scores_used_for_gate": false,
+  "wall_seconds": 215.9024751991965
+}

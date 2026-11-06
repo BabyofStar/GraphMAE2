@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "reasons": [],
+  "semantic": {
+    "mean_pair_cosine": 0.15944403867628534,
+    "graph_matching_pair_fraction": 0.4896449704142012,
+    "pairs": 1352
+  },
+  "random": {
+    "mean_pair_cosine": 0.057339023958516894,
+    "graph_matching_pair_fraction": 0.0,
+    "pairs": 1352
+  },
+  "thresholds": {
+    "min_graph_matching_fraction": 0.1,
+    "min_cosine_difference": 1e-06
+  },
+  "test_scores_used": false,
+  "validation_scores_used": false,
+  "interpretation": "Input-only contrast/manipulation check; no downstream performance guarantee; independent P12 audit required before installation"
+}

@@ -11,6 +11,8 @@ from .loss_func import sce_loss
 from .adaptive_masking import AdaptiveInputMask
 from .random_group_masking import RandomGroupInputMask
 from .density_curriculum import DensityCurriculumInputMask
+from .progress_masking import ProgressInputMask
+from .joint_masking import JointInputMask
 
 
 def setup_module(m_type, enc_dec, in_dim, num_hidden, out_dim, num_layers, dropout, activation, residual, norm, nhead, nhead_out, attn_drop, negative_slope=0.2, concat_out=True, **kwargs) -> nn.Module:
@@ -97,6 +99,12 @@ class PreModel(nn.Module):
         if input_mask_mode == "density_curriculum":
             masker = DensityCurriculumInputMask
             extra = {"density_route_seed": density_route_seed}
+        if input_mask_mode in ProgressInputMask.PROGRESS_MODES:
+            masker = ProgressInputMask
+            extra = {}
+        if input_mask_mode in JointInputMask.JOINT_MODES:
+            masker = JointInputMask
+            extra = {}
         self.input_masker = masker(
             mode=input_mask_mode,
             alpha_max=structure_alpha_max,

@@ -1,0 +1,7 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/p_dev1_stage1_9w06z2r4/p_dev1_stage1_9w06z2r4_cora_PS_s0
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_dev1_stage1_9w06z2r4_cora_PS_s0
+Pretrain wall seconds: 9.356
+Final probe wall seconds: 0.043
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+P_DEV1_DIAGNOSTIC_RUN=PASS

@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s0
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_P_s0
+Best ValAcc: 0.8100 in epoch 195
+Pretrain wall seconds: 345.012
+Final probe wall seconds: 1.213
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+P_DEV1_DEVELOPMENT_RUN=PASS

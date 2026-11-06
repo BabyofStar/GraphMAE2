@@ -1,0 +1,190 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-05 13:56:48,096 - INFO - ----- Using best configs from configs/cora.yaml -----
+Namespace(seeds=[0], dataset='cora', device=0, max_epoch=100, warmup_steps=-1, num_heads=8, num_out_heads=1, num_layers=2, num_dec_layers=1, num_remasking=3, num_hidden=1024, residual=False, in_drop=0.2, attn_drop=0.1, norm=None, lr=0.001, weight_decay=0.0002, negative_slope=0.2, activation='prelu', mask_rate=0.5, remask_rate=0.5, remask_method='fixed', mask_type='mask', mask_method='random', drop_edge_rate=0.0, drop_edge_rate_f=0.0, encoder='gat', decoder='gat', loss_fn='sce', alpha_l=3, optimizer='adam', max_epoch_f=5, lr_f=0.025, weight_decay_f=0.0001, linear_prob=True, no_pretrain=False, load_model=False, checkpoint_path=None, use_cfg=True, logging=False, scheduler=True, batch_size=256, batch_size_f=128, sampling_method='saint', label_rate=1.0, ego_graph_file_path=None, data_dir='data', lam=0.15, full_graph_forward=False, delayed_ema_epoch=0, replace_rate=0.15, momentum=0, input_mask_mode='rank_progress_shuffled', structure_alpha_max=0.5, structure_warmup_ratio=0.2, structure_ramp_end_ratio=0.8, mask_log_interval=10, structure_shuffle_seed=20261025, input_mask_diagnostics=True, difficulty_ema_beta=0.9, difficulty_clip_quantile=0.95, density_route_seed=2026110501, random_group_seed=2026110301, density_bins=4, density_chunk_size=256)
+  NumNodes: 2708
+  NumEdges: 10556
+  NumFeats: 1433
+  NumClasses: 7
+  NumTrainingSamples: 140
+  NumValidationSamples: 500
+  NumTestSamples: 1000
+Done loading data from cached files.
+####### Run 0 for seed 0
+=== Use sce_loss and alpha_l=3 ===
+num_encoder_params: 2522114, num_decoder_params: 1471691, num_params_in_total: 6620008
+2026-11-05 13:56:49,171 - INFO - Use schedular
+2026-11-05 13:56:49,172 - INFO - start training..
+  0%|                            | 0/100 [00:00<?, ?it/s]2026-11-05 13:56:49,497 - INFO - INPUT_MASK {'step': 0, 'mode': 'rank_progress_shuffled', 'alpha': 0.0, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.963810920715332, 'kept_degree_mean': 3.832348585128784, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:49,705 - INFO - INPUT_MASK_FEEDBACK {'step': 0, 'mode': 'rank_progress_shuffled', 'alpha': 0.0, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.9957321882247925, 'observed_nodes': 1354, 'observation_count_min_mean_max': [0, 0.5, 1], 'degree_error_pearson_seen': -0.01331049220309291, 'masked_degree_mean': 3.963810920715332, 'kept_degree_mean': 3.832348585128784, 'masked_one_hop_visible_mean': 1.9194977843426884, 'masked_one_hop_zero_visible_fraction': 0.1986706056129985, 'masked_two_hop_visible_mean': 17.76440177252585, 'masked_two_hop_zero_visible_fraction': 0.0413589364844904, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 339, 'error_ema_seen_mean': 0.9936783313751221}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 339, 'error_ema_seen_mean': 0.9875792264938354}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 338, 'error_ema_seen_mean': 1.0002654790878296}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 338, 'error_ema_seen_mean': 1.0014357566833496}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': 'e4c181e5a273aa695ca4c58e9a797382c0168809013cbe1b50204e8f98ff2f8e', 'progress_positive_fraction': 0.0, 'progress_ema_mean': 0.0, 'progress_age_pearson': None, 'progress_count_pearson': None, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 0: train_loss: 1.1595:   0%| | 0/100 [00:00<?, ?i
+# Epoch 0: train_loss: 1.1595:   1%| | 1/100 [00:00<00:37
+# Epoch 1: train_loss: 0.7079:   1%| | 1/100 [00:00<00:37
+# Epoch 2: train_loss: 0.5987:   1%| | 1/100 [00:00<00:37
+# Epoch 3: train_loss: 0.5579:   1%| | 1/100 [00:00<00:37
+# Epoch 4: train_loss: 0.5452:   1%| | 1/100 [00:00<00:37
+# Epoch 4: train_loss: 0.5452:   5%| | 5/100 [00:00<00:07
+# Epoch 5: train_loss: 0.5485:   5%| | 5/100 [00:00<00:07
+# Epoch 6: train_loss: 0.5376:   5%| | 5/100 [00:00<00:07
+# Epoch 7: train_loss: 0.5362:   5%| | 5/100 [00:00<00:07
+# Epoch 7: train_loss: 0.5362:   8%| | 8/100 [00:00<00:05
+# Epoch 8: train_loss: 0.5324:   8%| | 8/100 [00:00<00:05
+# Epoch 9: train_loss: 0.5302:   8%| | 8/100 [00:00<00:052026-11-05 13:56:50,080 - INFO - INPUT_MASK {'step': 10, 'mode': 'rank_progress_shuffled', 'alpha': 0.0, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.792466640472412, 'kept_degree_mean': 4.003692626953125, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:50,094 - INFO - INPUT_MASK_FEEDBACK {'step': 10, 'mode': 'rank_progress_shuffled', 'alpha': 0.0, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.5096085667610168, 'observed_nodes': 2706, 'observation_count_min_mean_max': [0, 5.5, 11], 'degree_error_pearson_seen': -0.07032389700537126, 'masked_degree_mean': 3.792466878890991, 'kept_degree_mean': 4.003692626953125, 'masked_one_hop_visible_mean': 1.9283604135893648, 'masked_one_hop_zero_visible_fraction': 0.1587887740029542, 'masked_two_hop_visible_mean': 17.938700147710488, 'masked_two_hop_zero_visible_fraction': 0.0310192023633678, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 676, 'error_ema_seen_mean': 0.7368120551109314}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.6740826964378357}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 676, 'error_ema_seen_mean': 0.666653037071228}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.6943904161453247}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': 'e4c181e5a273aa695ca4c58e9a797382c0168809013cbe1b50204e8f98ff2f8e', 'progress_positive_fraction': 0.90169992609017, 'progress_ema_mean': 0.09284055978059769, 'progress_age_pearson': -0.11646029344153751, 'progress_count_pearson': 0.5205833126966037, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 10: train_loss: 0.5194:   8%| | 8/100 [00:00<00:0
+# Epoch 10: train_loss: 0.5194:  11%| | 11/100 [00:00<00:
+# Epoch 11: train_loss: 0.5232:  11%| | 11/100 [00:00<00:
+# Epoch 12: train_loss: 0.5316:  11%| | 11/100 [00:00<00:
+# Epoch 13: train_loss: 0.5280:  11%| | 11/100 [00:00<00:
+# Epoch 14: train_loss: 0.5213:  11%| | 11/100 [00:00<00:
+# Epoch 14: train_loss: 0.5213:  15%|▏| 15/100 [00:00<00:
+# Epoch 15: train_loss: 0.5138:  15%|▏| 15/100 [00:00<00:
+# Epoch 16: train_loss: 0.5189:  15%|▏| 15/100 [00:00<00:
+# Epoch 17: train_loss: 0.5199:  15%|▏| 15/100 [00:00<00:
+# Epoch 17: train_loss: 0.5199:  18%|▏| 18/100 [00:00<00:
+# Epoch 18: train_loss: 0.5232:  18%|▏| 18/100 [00:00<00:
+# Epoch 19: train_loss: 0.5249:  18%|▏| 18/100 [00:01<00:2026-11-05 13:56:50,432 - INFO - INPUT_MASK {'step': 20, 'mode': 'rank_progress_shuffled', 'alpha': 0.001683501683501671, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.90251088142395, 'kept_degree_mean': 3.893648386001587, 'masked_degree_q25_q50_q75': [2.0, 3.0, 4.0]}
+2026-11-05 13:56:50,446 - INFO - INPUT_MASK_FEEDBACK {'step': 20, 'mode': 'rank_progress_shuffled', 'alpha': 0.001683501683501671, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.507897675037384, 'observed_nodes': 2708, 'observation_count_min_mean_max': [3, 10.5, 18], 'degree_error_pearson_seen': -0.1334394395351549, 'masked_degree_mean': 3.9025111198425293, 'kept_degree_mean': 3.893648386001587, 'masked_one_hop_visible_mean': 1.9955686853766617, 'masked_one_hop_zero_visible_fraction': 0.18020679468242246, 'masked_two_hop_visible_mean': 17.985967503692763, 'masked_two_hop_zero_visible_fraction': 0.04062038404726736, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.6767030954360962}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5988085865974426}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.5864460468292236}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.6224647164344788}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '3ccbaa7e07362b6b366df5ededc0275ffd94e5537fb835baf3e7ff96e8240ad0', 'progress_positive_fraction': 0.9158050221565731, 'progress_ema_mean': 0.15202148258686066, 'progress_age_pearson': -0.05795010769107564, 'progress_count_pearson': 0.3401405203764971, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 20: train_loss: 0.5150:  18%|▏| 18/100 [00:01<00:
+# Epoch 20: train_loss: 0.5150:  21%|▏| 21/100 [00:01<00:
+# Epoch 21: train_loss: 0.5158:  21%|▏| 21/100 [00:01<00:
+# Epoch 22: train_loss: 0.5055:  21%|▏| 21/100 [00:01<00:
+# Epoch 23: train_loss: 0.5167:  21%|▏| 21/100 [00:01<00:
+# Epoch 23: train_loss: 0.5167:  24%|▏| 24/100 [00:01<00:
+# Epoch 24: train_loss: 0.5148:  24%|▏| 24/100 [00:01<00:
+# Epoch 25: train_loss: 0.5136:  24%|▏| 24/100 [00:01<00:
+# Epoch 26: train_loss: 0.5040:  24%|▏| 24/100 [00:01<00:
+# Epoch 26: train_loss: 0.5040:  27%|▎| 27/100 [00:01<00:
+# Epoch 27: train_loss: 0.5132:  27%|▎| 27/100 [00:01<00:
+# Epoch 28: train_loss: 0.5127:  27%|▎| 27/100 [00:01<00:
+# Epoch 29: train_loss: 0.5063:  27%|▎| 27/100 [00:01<00:
+# Epoch 29: train_loss: 0.5063:  30%|▎| 30/100 [00:01<00:2026-11-05 13:56:50,825 - INFO - INPUT_MASK {'step': 30, 'mode': 'rank_progress_shuffled', 'alpha': 0.08585858585858584, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.7666172981262207, 'kept_degree_mean': 4.029541969299316, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:50,839 - INFO - INPUT_MASK_FEEDBACK {'step': 30, 'mode': 'rank_progress_shuffled', 'alpha': 0.08585858585858584, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.5016567707061768, 'observed_nodes': 2708, 'observation_count_min_mean_max': [5, 15.5, 25], 'degree_error_pearson_seen': -0.17037736895720115, 'masked_degree_mean': 3.7666175365448, 'kept_degree_mean': 4.029541969299316, 'masked_one_hop_visible_mean': 1.951255539143279, 'masked_one_hop_zero_visible_fraction': 0.17651403249630723, 'masked_two_hop_visible_mean': 17.954948301329395, 'masked_two_hop_zero_visible_fraction': 0.0413589364844904, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.639336884021759}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.552345871925354}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.5335172414779663}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.5751901865005493}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '87ea69f5e343935f118d86326279999841101289eadb10a1f24a7ea18d6dadec', 'progress_positive_fraction': 0.9250369276218612, 'progress_ema_mean': 0.18509240448474884, 'progress_age_pearson': -0.04221914052340188, 'progress_count_pearson': 0.255544149987463, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 30: train_loss: 0.5038:  30%|▎| 30/100 [00:01<00:
+# Epoch 31: train_loss: 0.4962:  30%|▎| 30/100 [00:01<00:
+# Epoch 32: train_loss: 0.5010:  30%|▎| 30/100 [00:01<00:
+# Epoch 32: train_loss: 0.5010:  33%|▎| 33/100 [00:01<00:
+# Epoch 33: train_loss: 0.4995:  33%|▎| 33/100 [00:01<00:
+# Epoch 34: train_loss: 0.5078:  33%|▎| 33/100 [00:01<00:
+# Epoch 35: train_loss: 0.4931:  33%|▎| 33/100 [00:01<00:
+# Epoch 35: train_loss: 0.4931:  36%|▎| 36/100 [00:01<00:
+# Epoch 36: train_loss: 0.4873:  36%|▎| 36/100 [00:01<00:
+# Epoch 37: train_loss: 0.4968:  36%|▎| 36/100 [00:01<00:
+# Epoch 38: train_loss: 0.4840:  36%|▎| 36/100 [00:01<00:
+# Epoch 38: train_loss: 0.4840:  39%|▍| 39/100 [00:01<00:
+# Epoch 39: train_loss: 0.4826:  39%|▍| 39/100 [00:01<00:2026-11-05 13:56:51,204 - INFO - INPUT_MASK {'step': 40, 'mode': 'rank_progress_shuffled', 'alpha': 0.17003367003366998, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 4.008123874664307, 'kept_degree_mean': 3.7880353927612305, 'masked_degree_q25_q50_q75': [2.0, 3.0, 4.75]}
+2026-11-05 13:56:51,218 - INFO - INPUT_MASK_FEEDBACK {'step': 40, 'mode': 'rank_progress_shuffled', 'alpha': 0.17003367003366998, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.49383679032325745, 'observed_nodes': 2708, 'observation_count_min_mean_max': [8, 20.5, 30], 'degree_error_pearson_seen': -0.19123627334604337, 'masked_degree_mean': 4.008123874664307, 'kept_degree_mean': 3.7880353927612305, 'masked_one_hop_visible_mean': 1.9416543574593796, 'masked_one_hop_zero_visible_fraction': 0.20605612998522896, 'masked_two_hop_visible_mean': 17.69423929098966, 'masked_two_hop_zero_visible_fraction': 0.03840472673559823, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.6138527393341064}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5187820792198181}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4957841634750366}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.540566086769104}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '48af536b37a49feddc632570d4122155b1dc8ac9d1b4fd5a8f032e2502a02be9', 'progress_positive_fraction': 0.9387001477104875, 'progress_ema_mean': 0.20474880933761597, 'progress_age_pearson': -0.014947758870126449, 'progress_count_pearson': 0.20929266312487352, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 40: train_loss: 0.4946:  39%|▍| 39/100 [00:01<00:
+# Epoch 41: train_loss: 0.4898:  39%|▍| 39/100 [00:01<00:
+# Epoch 41: train_loss: 0.4898:  42%|▍| 42/100 [00:01<00:
+# Epoch 42: train_loss: 0.4848:  42%|▍| 42/100 [00:01<00:
+# Epoch 43: train_loss: 0.4790:  42%|▍| 42/100 [00:01<00:
+# Epoch 44: train_loss: 0.4849:  42%|▍| 42/100 [00:01<00:
+# Epoch 45: train_loss: 0.4820:  42%|▍| 42/100 [00:02<00:
+# Epoch 45: train_loss: 0.4820:  46%|▍| 46/100 [00:02<00:
+# Epoch 46: train_loss: 0.4834:  46%|▍| 46/100 [00:02<00:
+# Epoch 47: train_loss: 0.4752:  46%|▍| 46/100 [00:02<00:
+# Epoch 48: train_loss: 0.4853:  46%|▍| 46/100 [00:02<00:
+# Epoch 48: train_loss: 0.4853:  49%|▍| 49/100 [00:02<00:
+# Epoch 49: train_loss: 0.4709:  49%|▍| 49/100 [00:02<00:2026-11-05 13:56:51,590 - INFO - INPUT_MASK {'step': 50, 'mode': 'rank_progress_shuffled', 'alpha': 0.25420875420875416, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.9438698291778564, 'kept_degree_mean': 3.8522894382476807, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:51,604 - INFO - INPUT_MASK_FEEDBACK {'step': 50, 'mode': 'rank_progress_shuffled', 'alpha': 0.25420875420875416, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.4760720431804657, 'observed_nodes': 2708, 'observation_count_min_mean_max': [13, 25.5, 37], 'degree_error_pearson_seen': -0.21337604444046715, 'masked_degree_mean': 3.9438700675964355, 'kept_degree_mean': 3.8522894382476807, 'masked_one_hop_visible_mean': 1.93205317577548, 'masked_one_hop_zero_visible_fraction': 0.17651403249630723, 'masked_two_hop_visible_mean': 17.88404726735598, 'masked_two_hop_zero_visible_fraction': 0.03840472673559823, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.59663987159729}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.49189189076423645}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4671486020088196}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.5116716623306274}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '05ae086b94d7682863de6d30ca271b01c852470e9a1f5d47472903e110eab074', 'progress_positive_fraction': 0.948301329394387, 'progress_ema_mean': 0.21698834002017975, 'progress_age_pearson': 0.010231399082279864, 'progress_count_pearson': 0.16200078060807804, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 50: train_loss: 0.4775:  49%|▍| 49/100 [00:02<00:
+# Epoch 51: train_loss: 0.4736:  49%|▍| 49/100 [00:02<00:
+# Epoch 51: train_loss: 0.4736:  52%|▌| 52/100 [00:02<00:
+# Epoch 52: train_loss: 0.4808:  52%|▌| 52/100 [00:02<00:
+# Epoch 53: train_loss: 0.4664:  52%|▌| 52/100 [00:02<00:
+# Epoch 54: train_loss: 0.4680:  52%|▌| 52/100 [00:03<00:
+# Epoch 54: train_loss: 0.4680:  55%|▌| 55/100 [00:03<00:
+# Epoch 55: train_loss: 0.4674:  55%|▌| 55/100 [00:03<00:
+# Epoch 56: train_loss: 0.4625:  55%|▌| 55/100 [00:03<00:
+# Epoch 56: train_loss: 0.4625:  57%|▌| 57/100 [00:03<00:
+# Epoch 57: train_loss: 0.4691:  57%|▌| 57/100 [00:03<00:
+# Epoch 58: train_loss: 0.4696:  57%|▌| 57/100 [00:04<00:
+# Epoch 58: train_loss: 0.4696:  59%|▌| 59/100 [00:04<00:
+# Epoch 59: train_loss: 0.4707:  59%|▌| 59/100 [00:04<00:2026-11-05 13:56:53,542 - INFO - INPUT_MASK {'step': 60, 'mode': 'rank_progress_shuffled', 'alpha': 0.33838383838383834, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.93574595451355, 'kept_degree_mean': 3.8604135513305664, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:53,564 - INFO - INPUT_MASK_FEEDBACK {'step': 60, 'mode': 'rank_progress_shuffled', 'alpha': 0.33838383838383834, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.45933741331100464, 'observed_nodes': 2708, 'observation_count_min_mean_max': [16, 30.5, 42], 'degree_error_pearson_seen': -0.22129057197042337, 'masked_degree_mean': 3.93574595451355, 'kept_degree_mean': 3.8604135513305664, 'masked_one_hop_visible_mean': 1.984490398818316, 'masked_one_hop_zero_visible_fraction': 0.16469719350073855, 'masked_two_hop_visible_mean': 17.913589364844903, 'masked_two_hop_zero_visible_fraction': 0.03840472673559823, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5825988054275513}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.47089552879333496}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4435190260410309}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4890126883983612}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '548ab5effb1e8ee26d37c6bf539b23502591a1168342f3db18b8b0f04369b03f', 'progress_positive_fraction': 0.9527326440177253, 'progress_ema_mean': 0.2241373211145401, 'progress_age_pearson': -0.011927579729113248, 'progress_count_pearson': 0.13626807873428884, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 60: train_loss: 0.4634:  59%|▌| 59/100 [00:04<00:
+# Epoch 60: train_loss: 0.4634:  61%|▌| 61/100 [00:04<00:
+# Epoch 61: train_loss: 0.4630:  61%|▌| 61/100 [00:04<00:
+# Epoch 62: train_loss: 0.4624:  61%|▌| 61/100 [00:04<00:
+# Epoch 62: train_loss: 0.4624:  63%|▋| 63/100 [00:04<00:
+# Epoch 63: train_loss: 0.4617:  63%|▋| 63/100 [00:04<00:
+# Epoch 64: train_loss: 0.4594:  63%|▋| 63/100 [00:04<00:
+# Epoch 64: train_loss: 0.4594:  65%|▋| 65/100 [00:04<00:
+# Epoch 65: train_loss: 0.4718:  65%|▋| 65/100 [00:04<00:
+# Epoch 66: train_loss: 0.4783:  65%|▋| 65/100 [00:04<00:
+# Epoch 66: train_loss: 0.4783:  67%|▋| 67/100 [00:04<00:
+# Epoch 67: train_loss: 0.4748:  67%|▋| 67/100 [00:05<00:
+# Epoch 68: train_loss: 0.4659:  67%|▋| 67/100 [00:05<00:
+# Epoch 68: train_loss: 0.4659:  69%|▋| 69/100 [00:05<00:
+# Epoch 69: train_loss: 0.4759:  69%|▋| 69/100 [00:05<00:2026-11-05 13:56:54,642 - INFO - INPUT_MASK {'step': 70, 'mode': 'rank_progress_shuffled', 'alpha': 0.42255892255892247, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.800590753555298, 'kept_degree_mean': 3.9955685138702393, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:54,677 - INFO - INPUT_MASK_FEEDBACK {'step': 70, 'mode': 'rank_progress_shuffled', 'alpha': 0.42255892255892247, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.4507444500923157, 'observed_nodes': 2708, 'observation_count_min_mean_max': [22, 35.5, 49], 'degree_error_pearson_seen': -0.2292842945845533, 'masked_degree_mean': 3.800590753555298, 'kept_degree_mean': 3.9955687522888184, 'masked_one_hop_visible_mean': 1.9970457902511078, 'masked_one_hop_zero_visible_fraction': 0.15805022156573117, 'masked_two_hop_visible_mean': 17.90768094534712, 'masked_two_hop_zero_visible_fraction': 0.03545051698670606, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5726903676986694}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.45711857080459595}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4277268052101135}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.47179263830184937}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '721287befe5d100314118c251952d3c8e7d8c8ae5e3ec24abeeab1081c24968f', 'progress_positive_fraction': 0.9571639586410635, 'progress_ema_mean': 0.22562438249588013, 'progress_age_pearson': 0.03203655278897776, 'progress_count_pearson': 0.09734407911585508, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 70: train_loss: 0.4612:  69%|▋| 69/100 [00:05<00:
+# Epoch 70: train_loss: 0.4612:  71%|▋| 71/100 [00:05<00:
+# Epoch 71: train_loss: 0.4701:  71%|▋| 71/100 [00:05<00:
+# Epoch 72: train_loss: 0.4703:  71%|▋| 71/100 [00:05<00:
+# Epoch 72: train_loss: 0.4703:  73%|▋| 73/100 [00:05<00:
+# Epoch 73: train_loss: 0.4624:  73%|▋| 73/100 [00:05<00:
+# Epoch 74: train_loss: 0.4745:  73%|▋| 73/100 [00:05<00:
+# Epoch 74: train_loss: 0.4745:  75%|▊| 75/100 [00:05<00:
+# Epoch 75: train_loss: 0.4698:  75%|▊| 75/100 [00:05<00:
+# Epoch 76: train_loss: 0.4660:  75%|▊| 75/100 [00:05<00:
+# Epoch 76: train_loss: 0.4660:  77%|▊| 77/100 [00:05<00:
+# Epoch 77: train_loss: 0.4633:  77%|▊| 77/100 [00:05<00:
+# Epoch 78: train_loss: 0.4680:  77%|▊| 77/100 [00:06<00:
+# Epoch 78: train_loss: 0.4680:  79%|▊| 79/100 [00:06<00:
+# Epoch 79: train_loss: 0.4640:  79%|▊| 79/100 [00:06<00:2026-11-05 13:56:55,602 - INFO - INPUT_MASK {'step': 80, 'mode': 'rank_progress_shuffled', 'alpha': 0.5, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.7732644081115723, 'kept_degree_mean': 4.022894859313965, 'masked_degree_q25_q50_q75': [2.0, 3.0, 4.0]}
+2026-11-05 13:56:55,624 - INFO - INPUT_MASK_FEEDBACK {'step': 80, 'mode': 'rank_progress_shuffled', 'alpha': 0.5, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.4574359357357025, 'observed_nodes': 2708, 'observation_count_min_mean_max': [26, 40.5, 57], 'degree_error_pearson_seen': -0.23173445300603845, 'masked_degree_mean': 3.7732644081115723, 'kept_degree_mean': 4.022895336151123, 'masked_one_hop_visible_mean': 1.9519940915805023, 'masked_one_hop_zero_visible_fraction': 0.1757754800590842, 'masked_two_hop_visible_mean': 17.89290989660266, 'masked_two_hop_zero_visible_fraction': 0.04431314623338257, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5661171674728394}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.4479803740978241}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.41445061564445496}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4573643207550049}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '0bcb579df8bcbabfc3d25e5747df0dbb08eeddd03f6f13fb09fd228ae8767961', 'progress_positive_fraction': 0.9634416543574594, 'progress_ema_mean': 0.22382564842700958, 'progress_age_pearson': -0.0075196042806071695, 'progress_count_pearson': 0.07928681510533812, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 80: train_loss: 0.4701:  79%|▊| 79/100 [00:06<00:
+# Epoch 80: train_loss: 0.4701:  81%|▊| 81/100 [00:06<00:
+# Epoch 81: train_loss: 0.4648:  81%|▊| 81/100 [00:06<00:
+# Epoch 81: train_loss: 0.4648:  82%|▊| 82/100 [00:06<00:
+# Epoch 82: train_loss: 0.4662:  82%|▊| 82/100 [00:06<00:
+# Epoch 82: train_loss: 0.4662:  83%|▊| 83/100 [00:06<00:
+# Epoch 83: train_loss: 0.4633:  83%|▊| 83/100 [00:06<00:
+# Epoch 83: train_loss: 0.4633:  84%|▊| 84/100 [00:06<00:
+# Epoch 84: train_loss: 0.4709:  84%|▊| 84/100 [00:07<00:
+# Epoch 84: train_loss: 0.4709:  85%|▊| 85/100 [00:07<00:
+# Epoch 85: train_loss: 0.4618:  85%|▊| 85/100 [00:07<00:
+# Epoch 85: train_loss: 0.4618:  86%|▊| 86/100 [00:07<00:
+# Epoch 86: train_loss: 0.4720:  86%|▊| 86/100 [00:07<00:
+# Epoch 86: train_loss: 0.4720:  87%|▊| 87/100 [00:07<00:
+# Epoch 87: train_loss: 0.4643:  87%|▊| 87/100 [00:07<00:
+# Epoch 88: train_loss: 0.4527:  87%|▊| 87/100 [00:07<00:
+# Epoch 88: train_loss: 0.4527:  89%|▉| 89/100 [00:07<00:
+# Epoch 89: train_loss: 0.4695:  89%|▉| 89/100 [00:07<00:
+# Epoch 89: train_loss: 0.4695:  90%|▉| 90/100 [00:07<00:2026-11-05 13:56:56,957 - INFO - INPUT_MASK {'step': 90, 'mode': 'rank_progress_shuffled', 'alpha': 0.5, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.8382568359375, 'kept_degree_mean': 3.957902431488037, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:57,008 - INFO - INPUT_MASK_FEEDBACK {'step': 90, 'mode': 'rank_progress_shuffled', 'alpha': 0.5, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.454571932554245, 'observed_nodes': 2708, 'observation_count_min_mean_max': [28, 45.5, 60], 'degree_error_pearson_seen': -0.23271448430301764, 'masked_degree_mean': 3.838257074356079, 'kept_degree_mean': 3.957902431488037, 'masked_one_hop_visible_mean': 1.9608567208271788, 'masked_one_hop_zero_visible_fraction': 0.17651403249630723, 'masked_two_hop_visible_mean': 17.98522895125554, 'masked_two_hop_zero_visible_fraction': 0.026587887740029542, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5616918206214905}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.44062337279319763}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.40655192732810974}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.44880548119544983}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '68334e20c3c56fa26c2f78d27fa7ee94ea10b71c0401e1c00c6f323dcbb76acc', 'progress_positive_fraction': 0.9649187592319055, 'progress_ema_mean': 0.21910573542118073, 'progress_age_pearson': -0.0068731741706873515, 'progress_count_pearson': 0.06309316361932636, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 90: train_loss: 0.4668:  90%|▉| 90/100 [00:07<00:
+# Epoch 90: train_loss: 0.4668:  91%|▉| 91/100 [00:07<00:
+# Epoch 91: train_loss: 0.4729:  91%|▉| 91/100 [00:07<00:
+# Epoch 91: train_loss: 0.4729:  92%|▉| 92/100 [00:07<00:
+# Epoch 92: train_loss: 0.4737:  92%|▉| 92/100 [00:07<00:
+# Epoch 92: train_loss: 0.4737:  93%|▉| 93/100 [00:07<00:
+# Epoch 93: train_loss: 0.4709:  93%|▉| 93/100 [00:07<00:
+# Epoch 94: train_loss: 0.4645:  93%|▉| 93/100 [00:08<00:
+# Epoch 94: train_loss: 0.4645:  95%|▉| 95/100 [00:08<00:
+# Epoch 95: train_loss: 0.4721:  95%|▉| 95/100 [00:08<00:
+# Epoch 96: train_loss: 0.4777:  95%|▉| 95/100 [00:08<00:
+# Epoch 96: train_loss: 0.4777:  97%|▉| 97/100 [00:08<00:
+# Epoch 97: train_loss: 0.4753:  97%|▉| 97/100 [00:08<00:
+# Epoch 97: train_loss: 0.4753:  98%|▉| 98/100 [00:08<00:
+# Epoch 98: train_loss: 0.4629:  98%|▉| 98/100 [00:08<00:
+# Epoch 98: train_loss: 0.4629:  99%|▉| 99/100 [00:08<00:2026-11-05 13:56:58,301 - INFO - INPUT_MASK {'step': 99, 'mode': 'rank_progress_shuffled', 'alpha': 0.5, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'masked_degree_mean': 3.8810930252075195, 'kept_degree_mean': 3.9150664806365967, 'masked_degree_q25_q50_q75': [2.0, 3.0, 5.0]}
+2026-11-05 13:56:58,414 - INFO - INPUT_MASK_FEEDBACK {'step': 99, 'mode': 'rank_progress_shuffled', 'alpha': 0.5, 'masked': 1354, 'nodes': 2708, 'actual_mask_rate': 0.5, 'batch_reconstruction_error_mean': 0.45301923155784607, 'observed_nodes': 2708, 'observation_count_min_mean_max': [32, 50.0, 65], 'degree_error_pearson_seen': -0.23785146678407784, 'masked_degree_mean': 3.8810930252075195, 'kept_degree_mean': 3.9150664806365967, 'masked_one_hop_visible_mean': 1.9180206794682422, 'masked_one_hop_zero_visible_fraction': 0.16912850812407682, 'masked_two_hop_visible_mean': 17.775480059084195, 'masked_two_hop_zero_visible_fraction': 0.029542097488921712, 'density_layers': [{'layer': 0, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.5596562027931213}, {'layer': 1, 'nodes': 677, 'masked': 339, 'observed': 677, 'error_ema_seen_mean': 0.4385945796966553}, {'layer': 2, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.40443313121795654}, {'layer': 3, 'nodes': 677, 'masked': 338, 'observed': 677, 'error_ema_seen_mean': 0.4448801577091217}], 'rank_protocol': 'fixed-rank-linear-v1', 'fast_beta': 0.9, 'slow_beta': 0.99, 'rank_tie_seed': 2026110504, 'rank_shuffle_seed': 2026110505, 'sampling_weight_sha256': '9abb9f636c858b48aeb15a1f97fea9a5c3936d57d8fee54496b869a0df8e3a39', 'progress_positive_fraction': 0.9634416543574594, 'progress_ema_mean': 0.21177269518375397, 'progress_age_pearson': -0.005638290047368847, 'progress_count_pearson': 0.05440779070876747, 'measurement': 'observation-time fast/slow EMA proxy; feedback is post-update; rank_trace is pre-feedback'}
+# Epoch 99: train_loss: 0.4653:  99%|▉| 99/100 [00:09<00:
+# Epoch 99: train_loss: 0.4653: 100%|█| 100/100 [00:09<00
+# Epoch 99: train_loss: 0.4653: 100%|█| 100/100 [00:09<00
+num parameters for finetuning: 7175
+  0%|                              | 0/5 [00:00<?, ?it/s]
+# Epoch: 0, train_loss: 1.9460, val_loss: 1.8904, val_acc
+# Epoch: 1, train_loss: 1.8877, val_loss: 1.8340, val_acc
+# Epoch: 2, train_loss: 1.8312, val_loss: 1.7811, val_acc
+# Epoch: 3, train_loss: 1.7763, val_loss: 1.7295, val_acc
+# Epoch: 4, train_loss: 1.7231, val_loss: 1.6792, val_acc
+# Epoch: 4, train_loss: 1.7231, val_loss: 1.6792, val_acc
+--- TestAcc:[HIDDEN], early-stopping-TestAcc:[HIDDEN], Best ValAcc: 0.7300 in epoch 3 --- 
+# final_acc: [HIDDEN]
+# early-stopping_acc: [HIDDEN]
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()

@@ -1,0 +1,59 @@
+START dataset=cora method=S seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s0/reload.log
+DONE 1/12 dataset=cora method=S seed=0 BestVal=0.8160
+START dataset=cora method=H seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s0/reload.log
+DONE 2/12 dataset=cora method=H seed=0 BestVal=0.8100
+START dataset=cora method=P seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s0/reload.log
+DONE 3/12 dataset=cora method=P seed=0 BestVal=0.8100
+START dataset=cora method=PS seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s0/reload.log
+DONE 4/12 dataset=cora method=PS seed=0 BestVal=0.8100
+START dataset=cora method=H seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s1/reload.log
+DONE 5/12 dataset=cora method=H seed=1 BestVal=0.8140
+START dataset=cora method=P seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s1/reload.log
+DONE 6/12 dataset=cora method=P seed=1 BestVal=0.8040
+START dataset=cora method=PS seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s1/reload.log
+DONE 7/12 dataset=cora method=PS seed=1 BestVal=0.8120
+START dataset=cora method=S seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s1/reload.log
+DONE 8/12 dataset=cora method=S seed=1 BestVal=0.8080
+START dataset=cora method=P seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s2/reload.log
+DONE 9/12 dataset=cora method=P seed=2 BestVal=0.8200
+START dataset=cora method=PS seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s2/reload.log
+DONE 10/12 dataset=cora method=PS seed=2 BestVal=0.8200
+START dataset=cora method=S seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s2/reload.log
+DONE 11/12 dataset=cora method=S seed=2 BestVal=0.8240
+START dataset=cora method=H seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s2/reload.log
+DONE 12/12 dataset=cora method=H seed=2 BestVal=0.8180
+VAL_GROUP S=81.600 +/- 0.653 %
+VAL_GROUP H=81.400 +/- 0.327 %
+VAL_GROUP P=81.133 +/- 0.660 %
+VAL_GROUP PS=81.400 +/- 0.432 %
+VAL_COMPARE P-minus-S=-0.467pp
+VAL_COMPARE P-minus-H=-0.267pp
+VAL_COMPARE P-minus-PS=-0.267pp
+VAL_COMPARE H-minus-S=-0.200pp
+VAL_COMPARE PS-minus-S=-0.200pp
+ALL_DONE 12/12
+BATCH_EXIT_CODE=0

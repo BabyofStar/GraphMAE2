@@ -1,0 +1,69 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+  NumNodes: 2708
+  NumEdges: 10556
+  NumFeats: 1433
+  NumClasses: 7
+  NumTrainingSamples: 140
+  NumValidationSamples: 500
+  NumTestSamples: 1000
+Done loading data from cached files.
+START dataset=cora method=S seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_S_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_S_s0/reload.log
+DONE 1/12 dataset=cora method=S seed=0 BestVal=0.8160
+START dataset=cora method=NA seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NA_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NA_s0/reload.log
+DONE 2/12 dataset=cora method=NA seed=0 BestVal=0.8240
+START dataset=cora method=NR seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s0/reload.log
+DONE 3/12 dataset=cora method=NR seed=0 BestVal=0.8140
+START dataset=cora method=NC seed=0
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NC_s0_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NC_s0/reload.log
+DONE 4/12 dataset=cora method=NC seed=0 BestVal=0.8040
+START dataset=cora method=NA seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NA_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NA_s1/reload.log
+DONE 5/12 dataset=cora method=NA seed=1 BestVal=0.8120
+START dataset=cora method=NR seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s1/reload.log
+DONE 6/12 dataset=cora method=NR seed=1 BestVal=0.8180
+START dataset=cora method=NC seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NC_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NC_s1/reload.log
+DONE 7/12 dataset=cora method=NC seed=1 BestVal=0.7860
+START dataset=cora method=S seed=1
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_S_s1_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_S_s1/reload.log
+DONE 8/12 dataset=cora method=S seed=1 BestVal=0.8080
+START dataset=cora method=NR seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s2/reload.log
+DONE 9/12 dataset=cora method=NR seed=2 BestVal=0.8220
+START dataset=cora method=NC seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NC_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NC_s2/reload.log
+DONE 10/12 dataset=cora method=NC seed=2 BestVal=0.7840
+START dataset=cora method=S seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_S_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_S_s2/reload.log
+DONE 11/12 dataset=cora method=S seed=2 BestVal=0.8240
+START dataset=cora method=NA seed=2
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NA_s2_launch.log
+RUN_LOG=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NA_s2/reload.log
+DONE 12/12 dataset=cora method=NA seed=2 BestVal=0.8160
+VAL_GROUP S=81.600 +/- 0.653 %
+VAL_GROUP NA=81.733 +/- 0.499 %
+VAL_GROUP NR=81.800 +/- 0.327 %
+VAL_GROUP NC=79.133 +/- 0.899 %
+VAL_COMPARE NA-minus-S=+0.133pp
+VAL_COMPARE NA-minus-NR=-0.067pp
+VAL_COMPARE NA-minus-NC=+2.600pp
+VAL_COMPARE NR-minus-S=+0.200pp
+VAL_COMPARE NC-minus-S=-2.467pp
+ALL_DONE 12/12
+BATCH_EXIT_CODE=0

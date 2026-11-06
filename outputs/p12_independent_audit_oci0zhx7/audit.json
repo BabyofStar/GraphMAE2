@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "batch_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr",
+  "stage_directory": "/home/jovyan/work/GraphMAE2/outputs/p_dev1_stage1_9w06z2r4",
+  "groups": [
+    {
+      "method": "S",
+      "per_seed_val_percent": [
+        81.6,
+        80.80000000000001,
+        82.39999999999999
+      ],
+      "mean_val_percent": 81.6,
+      "population_std_percent": 0.6531972647421727
+    },
+    {
+      "method": "H",
+      "per_seed_val_percent": [
+        81.0,
+        81.39999999999999,
+        81.8
+      ],
+      "mean_val_percent": 81.39999999999999,
+      "population_std_percent": 0.32659863237108927
+    },
+    {
+      "method": "P",
+      "per_seed_val_percent": [
+        81.0,
+        80.4,
+        82.0
+      ],
+      "mean_val_percent": 81.13333333333334,
+      "population_std_percent": 0.6599663291074422
+    },
+    {
+      "method": "PS",
+      "per_seed_val_percent": [
+        81.0,
+        81.2,
+        82.0
+      ],
+      "mean_val_percent": 81.4,
+      "population_std_percent": 0.4320493798938569
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "P",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        -0.4,
+        -0.4
+      ],
+      "mean_pp": -0.4666666666666667,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "method": "P",
+      "reference": "H",
+      "differences_pp": [
+        0.0,
+        -1.0,
+        0.2
+      ],
+      "mean_pp": -0.26666666666666666,
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        0.1,
+        -0.5
+      ]
+    },
+    {
+      "method": "P",
+      "reference": "PS",
+      "differences_pp": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "mean_pp": -0.26666666666666666,
+      "wins": 0,
+      "ties": 2,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        0.0,
+        -0.4
+      ]
+    },
+    {
+      "method": "H",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        0.6,
+        -0.6
+      ],
+      "mean_pp": -0.19999999999999998,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.6,
+        0.0
+      ]
+    },
+    {
+      "method": "PS",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        0.4,
+        -0.4
+      ],
+      "mean_pp": -0.19999999999999998,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.5,
+        -0.09999999999999998
+      ]
+    }
+  ],
+  "measurement_gate": {
+    "status": "PASS",
+    "rows": [
+      {
+        "step": 50,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9446085672082718,
+        "score_std": 0.16225604712963104,
+        "age_pearson": -0.13467759417971764,
+        "count_pearson": 0.35111676551271903,
+        "error_pearson": -0.2415100385276628
+      },
+      {
+        "step": 60,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9512555391432792,
+        "score_std": 0.1613973081111908,
+        "age_pearson": -0.1866440740031489,
+        "count_pearson": 0.41891306668924516,
+        "error_pearson": -0.3094509460177425
+      },
+      {
+        "step": 70,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9497784342688331,
+        "score_std": 0.1567421555519104,
+        "age_pearson": -0.19512502900359932,
+        "count_pearson": 0.485572909760577,
+        "error_pearson": -0.3497149280938446
+      },
+      {
+        "step": 80,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9560561299852289,
+        "score_std": 0.15122860670089722,
+        "age_pearson": -0.2688865739109326,
+        "count_pearson": 0.5586693136293603,
+        "error_pearson": -0.3795103776344146
+      },
+      {
+        "step": 90,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9549483013293943,
+        "score_std": 0.14342831075191498,
+        "age_pearson": -0.2526075105154593,
+        "count_pearson": 0.624611716715896,
+        "error_pearson": -0.39491892709641174
+      },
+      {
+        "step": 99,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9549483013293943,
+        "score_std": 0.13606606423854828,
+        "age_pearson": -0.251968527961338,
+        "count_pearson": 0.6721038166450093,
+        "error_pearson": -0.40538540627527225
+      }
+    ]
+  },
+  "counters": {
+    "source_file_bytes": 768,
+    "runs": 16,
+    "node_arrays": 132,
+    "feedback_records": 296,
+    "rank_trace_snapshots": 222,
+    "cross_arm_weight_multisets": 592
+  },
+  "runs": [
+    {
+      "method": "S",
+      "seed": 0,
+      "best_val_acc": 0.816,
+      "best_val_epoch": 88,
+      "diagnostic": {
+        "count_cv": 0.022388044129421306,
+        "error_ema_mean": 0.39643171429634094,
+        "late_zero_visible_two_hop": 0.035598227474150666,
+        "pretrain_seconds": 306.22746137389913
+      }
+    },
+    {
+      "method": "H",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 235,
+      "diagnostic": {
+        "count_cv": 0.0991646497980588,
+        "error_ema_mean": 0.3902585208415985,
+        "late_zero_visible_two_hop": 0.053028064992614476,
+        "pretrain_seconds": 303.03305131406523,
+        "progress_positive_fraction": 0.5620384047267356,
+        "progress_age_pearson": 0.034537842206850716,
+        "progress_count_pearson": 0.07940089020501297
+      }
+    },
+    {
+      "method": "P",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 195,
+      "diagnostic": {
+        "count_cv": 0.04333323012524164,
+        "error_ema_mean": 0.40146997570991516,
+        "late_zero_visible_two_hop": 0.036336779911373705,
+        "pretrain_seconds": 345.01247360906564,
+        "progress_positive_fraction": 0.44719350073855246,
+        "progress_age_pearson": -0.17488899797017726,
+        "progress_count_pearson": 0.04585148237388731
+      }
+    },
+    {
+      "method": "PS",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 116,
+      "diagnostic": {
+        "count_cv": 0.02247815285966075,
+        "error_ema_mean": 0.3977349102497101,
+        "late_zero_visible_two_hop": 0.03840472673559823,
+        "pretrain_seconds": 312.42551199393347,
+        "progress_positive_fraction": 0.5336041358936484,
+        "progress_age_pearson": -0.007093097831131326,
+        "progress_count_pearson": -0.008619836426562336
+      }
+    },
+    {
+      "method": "H",
+      "seed": 1,
+      "best_val_acc": 0.814,
+      "best_val_epoch": 299,
+      "diagnostic": {
+        "count_cv": 0.1001546846469042,
+        "error_ema_mean": 0.38936734199523926,
+        "late_zero_visible_two_hop": 0.05096011816838995,
+        "pretrain_seconds": 371.63479265291244,
+        "progress_positive_fraction": 0.579394387001477,
+        "progress_age_pearson": 0.03255366567093981,
+        "progress_count_pearson": 0.12711577716521186
+      }
+    },
+    {
+      "method": "P",
+      "seed": 1,
+      "best_val_acc": 0.804,
+      "best_val_epoch": 299,
+      "diagnostic": {
+        "count_cv": 0.04265688741942087,
+        "error_ema_mean": 0.40077927708625793,
+        "late_zero_visible_two_hop": 0.03412112259970458,
+        "pretrain_seconds": 298.46463363594376,
+        "progress_positive_fraction": 0.4597488921713442,
+        "progress_age_pearson": -0.17306719334854603,
+        "progress_count_pearson": 0.06882925326133799
+      }
+    },
+    {
+      "method": "PS",
+      "seed": 1,
+      "best_val_acc": 0.812,
+      "best_val_epoch": 172,
+      "diagnostic": {
+        "count_cv": 0.02262570334805289,
+        "error_ema_mean": 0.39789673686027527,
+        "late_zero_visible_two_hop": 0.0327917282127031,
+        "pretrain_seconds": 309.54541436210275,
+        "progress_positive_fraction": 0.5454209748892171,
+        "progress_age_pearson": -0.005628326097319469,
+        "progress_count_pearson": 0.01718089251951314
+      }
+    },
+    {
+      "method": "S",
+      "seed": 1,
+      "best_val_acc": 0.808,
+      "best_val_epoch": 299,
+      "diagnostic": {
+        "count_cv": 0.021835002999364913,
+        "error_ema_mean": 0.39918947219848633,
+        "late_zero_visible_two_hop": 0.03589364844903988,
+        "pretrain_seconds": 347.4289817621466
+      }
+    },
+    {
+      "method": "P",
+      "seed": 2,
+      "best_val_acc": 0.82,
+      "best_val_epoch": 48,
+      "diagnostic": {
+        "count_cv": 0.042618320829312266,
+        "error_ema_mean": 0.39786216616630554,
+        "late_zero_visible_two_hop": 0.03604135893648449,
+        "pretrain_seconds": 390.7075200700201,
+        "progress_positive_fraction": 0.44719350073855246,
+        "progress_age_pearson": -0.1581192135979304,
+        "progress_count_pearson": 0.04695461351351807
+      }
+    },
+    {
+      "method": "PS",
+      "seed": 2,
+      "best_val_acc": 0.82,
+      "best_val_epoch": 71,
+      "diagnostic": {
+        "count_cv": 0.02248401697211518,
+        "error_ema_mean": 0.3958114683628082,
+        "late_zero_visible_two_hop": 0.04002954209748892,
+        "pretrain_seconds": 253.04059648700058,
+        "progress_positive_fraction": 0.5269571639586411,
+        "progress_age_pearson": 0.02274463144730967,
+        "progress_count_pearson": -0.0002718194654555243
+      }
+    },
+    {
+      "method": "S",
+      "seed": 2,
+      "best_val_acc": 0.824,
+      "best_val_epoch": 119,
+      "diagnostic": {
+        "count_cv": 0.022461011682251782,
+        "error_ema_mean": 0.3937547504901886,
+        "late_zero_visible_two_hop": 0.03707533234859675,
+        "pretrain_seconds": 387.714894579025
+      }
+    },
+    {
+      "method": "H",
+      "seed": 2,
+      "best_val_acc": 0.818,
+      "best_val_epoch": 155,
+      "diagnostic": {
+        "count_cv": 0.09875108959255283,
+        "error_ema_mean": 0.3855507969856262,
+        "late_zero_visible_two_hop": 0.05406203840472674,
+        "pretrain_seconds": 274.27654690714553,
+        "progress_positive_fraction": 0.5797636632200887,
+        "progress_age_pearson": 0.03316202240312231,
+        "progress_count_pearson": 0.10678220204031573
+      }
+    }
+  ],
+  "test_metrics_opened": false,
+  "model_weights_opened": false,
+  "training_started": false,
+  "decision": "Stop P expansion under the predeclared no-extra-benefit rule; n=3 on Cora does not establish general failure of learning progress.",
+  "checkpoint_scope": "Recorded server readback/hash/CPU reload evidence only; no weight files opened or local model reload."
+}

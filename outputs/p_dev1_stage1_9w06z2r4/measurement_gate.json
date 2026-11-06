@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "reasons": [],
+  "rows": [
+    {
+      "step": 50,
+      "seen_five_fraction": 1.0,
+      "positive_fraction": 0.9446085672082718,
+      "score_std": 0.16225604712963104,
+      "age_pearson": -0.13467759417971764,
+      "count_pearson": 0.35111676551271903,
+      "error_pearson": -0.2415100385276628
+    },
+    {
+      "step": 60,
+      "seen_five_fraction": 1.0,
+      "positive_fraction": 0.9512555391432792,
+      "score_std": 0.1613973081111908,
+      "age_pearson": -0.1866440740031489,
+      "count_pearson": 0.41891306668924516,
+      "error_pearson": -0.3094509460177425
+    },
+    {
+      "step": 70,
+      "seen_five_fraction": 1.0,
+      "positive_fraction": 0.9497784342688331,
+      "score_std": 0.1567421555519104,
+      "age_pearson": -0.19512502900359932,
+      "count_pearson": 0.485572909760577,
+      "error_pearson": -0.3497149280938446
+    },
+    {
+      "step": 80,
+      "seen_five_fraction": 1.0,
+      "positive_fraction": 0.9560561299852289,
+      "score_std": 0.15122860670089722,
+      "age_pearson": -0.2688865739109326,
+      "count_pearson": 0.5586693136293603,
+      "error_pearson": -0.3795103776344146
+    },
+    {
+      "step": 90,
+      "seen_five_fraction": 1.0,
+      "positive_fraction": 0.9549483013293943,
+      "score_std": 0.14342831075191498,
+      "age_pearson": -0.2526075105154593,
+      "count_pearson": 0.624611716715896,
+      "error_pearson": -0.39491892709641174
+    },
+    {
+      "step": 99,
+      "seen_five_fraction": 1.0,
+      "positive_fraction": 0.9549483013293943,
+      "score_std": 0.13606606423854828,
+      "age_pearson": -0.251968527961338,
+      "count_pearson": 0.6721038166450093,
+      "error_pearson": -0.40538540627527225
+    }
+  ],
+  "thresholds": {
+    "min_seen_five_fraction": 0.99,
+    "min_positive_fraction": 0.05,
+    "min_std": 1e-08,
+    "max_mean_abs_correlation": 0.8
+  },
+  "test_scores_used": false,
+  "validation_scores_used": false,
+  "interpretation": "Heuristic measurement screen only; PASS does not establish true learnability, causality or downstream improvement"
+}

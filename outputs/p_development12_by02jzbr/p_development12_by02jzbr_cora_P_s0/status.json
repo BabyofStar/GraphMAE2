@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "phase": "development",
+  "method": "P",
+  "dataset": "cora",
+  "seed": 0,
+  "recorder_version": "4.0.0-progress-dev1",
+  "official_epoch_budget": true,
+  "reviewed_github_commit": "40de08f6b42c050e94ed65444beeb4f2b6520a06"
+}

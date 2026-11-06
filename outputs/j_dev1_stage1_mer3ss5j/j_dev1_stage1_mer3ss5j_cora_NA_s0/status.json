@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "phase": "diagnostic",
+  "method": "NA",
+  "dataset": "cora",
+  "seed": 0,
+  "recorder_version": "5.0.0-joint-dev1",
+  "official_epoch_budget": false,
+  "reviewed_github_commit": "40de08f6b42c050e94ed65444beeb4f2b6520a06"
+}

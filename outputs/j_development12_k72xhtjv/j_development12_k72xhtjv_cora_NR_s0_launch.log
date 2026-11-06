@@ -1,0 +1,8 @@
+RECORD_DIR=/home/jovyan/work/GraphMAE2/outputs/j_development12_k72xhtjv/j_development12_k72xhtjv_cora_NR_s0
+CHECKPOINT_DIR=/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NR_s0
+Best ValAcc: 0.8140 in epoch 139
+Pretrain wall seconds: 245.820
+Final probe wall seconds: 1.254
+CHECKPOINT_READBACK=PASS
+RECORDED_RUN=PASS
+J_DEV1_DEVELOPMENT_RUN=PASS

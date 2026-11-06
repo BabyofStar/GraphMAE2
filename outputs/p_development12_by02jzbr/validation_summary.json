@@ -1,0 +1,594 @@
+{
+  "dataset": "cora",
+  "groups": [
+    {
+      "dataset": "cora",
+      "method": "S",
+      "n": 3,
+      "seed_order": [
+        0,
+        1,
+        2
+      ],
+      "per_seed_val_percent": [
+        81.6,
+        80.80000000000001,
+        82.39999999999999
+      ],
+      "mean_val_percent": 81.6,
+      "population_std_percent": 0.6531972647421727
+    },
+    {
+      "dataset": "cora",
+      "method": "H",
+      "n": 3,
+      "seed_order": [
+        0,
+        1,
+        2
+      ],
+      "per_seed_val_percent": [
+        81.0,
+        81.39999999999999,
+        81.8
+      ],
+      "mean_val_percent": 81.39999999999999,
+      "population_std_percent": 0.32659863237108927
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "n": 3,
+      "seed_order": [
+        0,
+        1,
+        2
+      ],
+      "per_seed_val_percent": [
+        81.0,
+        80.4,
+        82.0
+      ],
+      "mean_val_percent": 81.13333333333334,
+      "population_std_percent": 0.6599663291074422
+    },
+    {
+      "dataset": "cora",
+      "method": "PS",
+      "n": 3,
+      "seed_order": [
+        0,
+        1,
+        2
+      ],
+      "per_seed_val_percent": [
+        81.0,
+        81.2,
+        82.0
+      ],
+      "mean_val_percent": 81.4,
+      "population_std_percent": 0.4320493798938569
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "P",
+      "reference": "S",
+      "differences_pp": [
+        -0.5999999999999894,
+        -0.40000000000000036,
+        -0.40000000000000036
+      ],
+      "mean_pp": -0.4666666666666634,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.40000000000000036,
+        -0.4999999999999949,
+        -0.4999999999999949
+      ]
+    },
+    {
+      "method": "P",
+      "reference": "H",
+      "differences_pp": [
+        0.0,
+        -0.9999999999999898,
+        0.20000000000000018
+      ],
+      "mean_pp": -0.2666666666666632,
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.3999999999999948,
+        0.10000000000000009,
+        -0.4999999999999949
+      ]
+    },
+    {
+      "method": "P",
+      "reference": "PS",
+      "differences_pp": [
+        0.0,
+        -0.8000000000000007,
+        0.0
+      ],
+      "mean_pp": -0.2666666666666669,
+      "wins": 0,
+      "ties": 2,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.40000000000000036,
+        0.0,
+        -0.40000000000000036
+      ]
+    },
+    {
+      "method": "H",
+      "reference": "S",
+      "differences_pp": [
+        -0.5999999999999894,
+        0.5999999999999894,
+        -0.6000000000000005
+      ],
+      "mean_pp": -0.20000000000000018,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -5.551115123125783e-15,
+        -0.599999999999995,
+        0.0
+      ]
+    },
+    {
+      "method": "PS",
+      "reference": "S",
+      "differences_pp": [
+        -0.5999999999999894,
+        0.40000000000000036,
+        -0.40000000000000036
+      ],
+      "mean_pp": -0.1999999999999965,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.4999999999999949,
+        -0.09999999999999454
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 0,
+      "best_val_acc": 0.816,
+      "best_val_epoch": 88,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s0",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.051020641112700105,
+          "cpu_seconds": 0.048608159000000484,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 673554432
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 306.22746137389913,
+          "cpu_seconds": 111.57912078700001,
+          "pytorch_peak_allocated_bytes": 436516864,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1255788544
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.7970069099683315,
+          "cpu_seconds": 1.8193408320000088,
+          "pytorch_peak_allocated_bytes": 209942016,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1319882752
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.1971353660337627,
+        "checkpoint_write_and_readback_wall_seconds": 3.9090642780065536,
+        "runner_wall_seconds_to_artifact_export": 318.87295288499445
+      },
+      "checkpoint_sha256": "3b4defdf7e543389c2c8e91d3692938d096af387acdd9029b3a4ca31e5eda13d"
+    },
+    {
+      "dataset": "cora",
+      "method": "H",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 235,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s0",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05061448202468455,
+          "cpu_seconds": 0.049315173999999296,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 674140160
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 303.03305131406523,
+          "cpu_seconds": 121.78721317,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1275990016
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.2664468241855502,
+          "cpu_seconds": 1.2854483339999945,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1338904576
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.2063528939615935,
+        "checkpoint_write_and_readback_wall_seconds": 5.303193330997601,
+        "runner_wall_seconds_to_artifact_export": 315.0315500891302
+      },
+      "checkpoint_sha256": "f9811ae613aa199571825d080f8c74dae0d9c2f197a7c9bf2d7d07a9bc363b1d"
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 195,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s0",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05714861094020307,
+          "cpu_seconds": 0.049675399999999925,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 674222080
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 345.01247360906564,
+          "cpu_seconds": 153.27595358099998,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1318211584
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.2129691520240158,
+          "cpu_seconds": 1.2292352309999899,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1381126144
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.2092048090416938,
+        "checkpoint_write_and_readback_wall_seconds": 6.143178468104452,
+        "runner_wall_seconds_to_artifact_export": 360.9057964810636
+      },
+      "checkpoint_sha256": "a7816b5bfe61423c25d1596f5f39c52ddc4b5b323a41a4d75fa8130fdd403a4e"
+    },
+    {
+      "dataset": "cora",
+      "method": "PS",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 116,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s0",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05465713585726917,
+          "cpu_seconds": 0.048596907999999495,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 676835328
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 312.42551199393347,
+          "cpu_seconds": 145.427341073,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1294548992
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.3500000678468496,
+          "cpu_seconds": 1.3690098579999983,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1357463552
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.21087316004559398,
+        "checkpoint_write_and_readback_wall_seconds": 2.286748858867213,
+        "runner_wall_seconds_to_artifact_export": 322.4373474351596
+      },
+      "checkpoint_sha256": "e593368e77bf74241f025521148cf43eb8dd38fed2493423799096bd1c431272"
+    },
+    {
+      "dataset": "cora",
+      "method": "H",
+      "seed": 1,
+      "best_val_acc": 0.814,
+      "best_val_epoch": 299,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s1",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05167061579413712,
+          "cpu_seconds": 0.05023882900000043,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 675495936
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 371.63479265291244,
+          "cpu_seconds": 156.348381809,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1299333120
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.2493322589434683,
+          "cpu_seconds": 1.2658383010000023,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1362247680
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.21293497900478542,
+        "checkpoint_write_and_readback_wall_seconds": 3.1343721100129187,
+        "runner_wall_seconds_to_artifact_export": 381.65944088902324
+      },
+      "checkpoint_sha256": "dbd5c183898f1102fd9d66c61e5439993a765f1d345ab16a00de25a531e6324f"
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "seed": 1,
+      "best_val_acc": 0.804,
+      "best_val_epoch": 299,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s1",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.052284759003669024,
+          "cpu_seconds": 0.049964732999999484,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 674856960
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 298.46463363594376,
+          "cpu_seconds": 132.32400589300002,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1299165184
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.3319093720056117,
+          "cpu_seconds": 1.3501974819999987,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1362079744
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.19852447393350303,
+        "checkpoint_write_and_readback_wall_seconds": 4.723917964147404,
+        "runner_wall_seconds_to_artifact_export": 310.56671216897666
+      },
+      "checkpoint_sha256": "649d148dadad3f664603acc21b49952026f28ae3dca8389f9e81a3a2e11bed12"
+    },
+    {
+      "dataset": "cora",
+      "method": "PS",
+      "seed": 1,
+      "best_val_acc": 0.812,
+      "best_val_epoch": 172,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s1",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.050750480964779854,
+          "cpu_seconds": 0.0488544760000007,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 673378304
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 309.54541436210275,
+          "cpu_seconds": 143.263574414,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1277235200
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.2586740509141237,
+          "cpu_seconds": 1.274329520000009,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1340149760
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.2125152440275997,
+        "checkpoint_write_and_readback_wall_seconds": 6.216105632018298,
+        "runner_wall_seconds_to_artifact_export": 323.0165528981015
+      },
+      "checkpoint_sha256": "cc7d5309ace5c87496642ebd9ddc4ef72be3ee5acd393abbda2f1f41a0bd51e2"
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 1,
+      "best_val_acc": 0.808,
+      "best_val_epoch": 299,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s1",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05136639904230833,
+          "cpu_seconds": 0.049803057000000095,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 672124928
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 347.4289817621466,
+          "cpu_seconds": 139.426148259,
+          "pytorch_peak_allocated_bytes": 436516864,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1269731328
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.1057541789487004,
+          "cpu_seconds": 1.1132507629999964,
+          "pytorch_peak_allocated_bytes": 209942016,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1333432320
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.20841830293647945,
+        "checkpoint_write_and_readback_wall_seconds": 5.113161044893786,
+        "runner_wall_seconds_to_artifact_export": 359.9189117718488
+      },
+      "checkpoint_sha256": "c9dddc9f1467d7b02af52f676e72cbdac0400237f5e8b431560415a909e5d684"
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "seed": 2,
+      "best_val_acc": 0.82,
+      "best_val_epoch": 48,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_P_s2",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05086891003884375,
+          "cpu_seconds": 0.04936612199999946,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 672677888
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 390.7075200700201,
+          "cpu_seconds": 130.089452424,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1308020736
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.1467512438539416,
+          "cpu_seconds": 1.1626874090000001,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1370935296
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.21523547894321382,
+        "checkpoint_write_and_readback_wall_seconds": 3.358428582083434,
+        "runner_wall_seconds_to_artifact_export": 401.2698805630207
+      },
+      "checkpoint_sha256": "c0c0afe8e507b36073b872d8af9977b12bee03dc026691c24f42b15ecfbcb3c1"
+    },
+    {
+      "dataset": "cora",
+      "method": "PS",
+      "seed": 2,
+      "best_val_acc": 0.82,
+      "best_val_epoch": 71,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_PS_s2",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05217853607609868,
+          "cpu_seconds": 0.05058936100000011,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 671731712
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 253.04059648700058,
+          "cpu_seconds": 130.509939074,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1308086272
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.2675747270695865,
+          "cpu_seconds": 1.2859325290000072,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1371000832
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.21148036094382405,
+        "checkpoint_write_and_readback_wall_seconds": 5.349710322916508,
+        "runner_wall_seconds_to_artifact_export": 266.3205763201695
+      },
+      "checkpoint_sha256": "1fc84c394d6f6d1760f53c5b4cfb72f8bc01fd66274bb797c8a8e8139add6322"
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 2,
+      "best_val_acc": 0.824,
+      "best_val_epoch": 119,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_S_s2",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.053294216049835086,
+          "cpu_seconds": 0.0517951459999999,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 674156544
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 387.714894579025,
+          "cpu_seconds": 127.41192794199999,
+          "pytorch_peak_allocated_bytes": 436516864,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1274638336
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.3903912610840052,
+          "cpu_seconds": 1.4080580419999933,
+          "pytorch_peak_allocated_bytes": 209942016,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1338732544
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.2051210671197623,
+        "checkpoint_write_and_readback_wall_seconds": 4.4308688750024885,
+        "runner_wall_seconds_to_artifact_export": 399.0846131751314
+      },
+      "checkpoint_sha256": "7bb035667290d697ca854fae1e55f6a9b69414d9a52d000b07d946f7d839896b"
+    },
+    {
+      "dataset": "cora",
+      "method": "H",
+      "seed": 2,
+      "best_val_acc": 0.818,
+      "best_val_epoch": 155,
+      "run_directory": "/home/jovyan/work/GraphMAE2/outputs/p_development12_by02jzbr/p_development12_by02jzbr_cora_H_s2",
+      "resources": {
+        "data_loading": {
+          "wall_seconds": 0.05109729920513928,
+          "cpu_seconds": 0.04931844100000049,
+          "pytorch_peak_allocated_bytes": 0,
+          "pytorch_peak_reserved_bytes": 0,
+          "process_lifetime_max_rss_bytes_at_phase_end": 674328576
+        },
+        "pretrain_including_intermediate_probes": {
+          "wall_seconds": 274.27654690714553,
+          "cpu_seconds": 121.136390428,
+          "pytorch_peak_allocated_bytes": 436583936,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1278189568
+        },
+        "final_embedding_and_linear_probe": {
+          "wall_seconds": 1.8926859160419554,
+          "cpu_seconds": 1.1933082900000045,
+          "pytorch_peak_allocated_bytes": 209975296,
+          "pytorch_peak_reserved_bytes": 520093696,
+          "process_lifetime_max_rss_bytes_at_phase_end": 1341104128
+        },
+        "input_mask_preparation_wall_seconds_included_in_pretrain": 0.19998003309592605,
+        "checkpoint_write_and_readback_wall_seconds": 2.725538477068767,
+        "runner_wall_seconds_to_artifact_export": 284.5856944429688
+      },
+      "checkpoint_sha256": "236bb0d83760f944522985fc0b27ae6f87f4565ed7cb33e66b25cd09966dad71"
+    }
+  ],
+  "primary_comparison": "P_minus_S",
+  "secondary_comparisons": [
+    "P_minus_H",
+    "P_minus_PS"
+  ],
+  "test_metrics_opened": false,
+  "interpretation": "Exploratory single-graph n=3; matched rank-weight multisets, separate online feedback histories; no significance/causal/generalization claim"
+}

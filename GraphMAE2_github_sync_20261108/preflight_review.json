@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FROZEN_SCOPE",
+  "input_zip_sha256": "bb70cfc3b6ee6cf50cee5b3c7bf85ff7432b408a5bc658de49d7ad8bbe6dc60d",
+  "input_crc_and_manifest_verified": true,
+  "source_files": 3766,
+  "source_bytes": 558007471,
+  "weights": 235,
+  "weight_bytes": 8790751492,
+  "arxiv_A_model_hashes_matched": 13,
+  "audited_experiment_source_files": 57,
+  "source_issues": 0,
+  "weight_issues": 0,
+  "existing_API_login_ready": false,
+  "remote_main": "3356c1919530e880bff703926859ec2f5eb6771a",
+  "remote_main_can_change_before_execution": true,
+  "independent_backup_complete": false
+}

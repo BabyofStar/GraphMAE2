@@ -1,0 +1,1927 @@
+{
+  "files": [
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/final_B0.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/final_B0.pt",
+      "category": "arxiv_model_files",
+      "bytes": 40578092,
+      "sha256": "0614f90fe882ecf16be284d8d2b9e04b2b1a6a69a98f49b526e33ff8386a1c9e",
+      "mtime_ns": 1794112883000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s0_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s0_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "8a4f2ab3a8298e1fe3aa70352115e8452c47f1b78cd43fad5c7e49ac594ef572",
+      "mtime_ns": 1794113573000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s1_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s1_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "80e391fcdbedac952a1f66dac1bfc5922746eeb9f84470d7a597b47c8c5a0c05",
+      "mtime_ns": 1794114041000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s2_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s2_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "7710cf097de69e34e5cde292ef7805171092190bdfdb9accc09a91b132526d93",
+      "mtime_ns": 1794114511000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s3_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s3_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "f340efe1db7bc76338978ce6ee17a222361379e487c121687141f761351d5f65",
+      "mtime_ns": 1794114851000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s4_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s4_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "eac3b562d2056ca70f2ba11bdd0025d2ace17f0bbb7aa16c3b46b9800b729738",
+      "mtime_ns": 1794115297000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s5_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s5_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "551578850aa7bba3d8330928c6218c38a6c8d009744d12167fdc4d3440bc22bc",
+      "mtime_ns": 1794115781000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s6_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s6_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "4819aa7d5107f4242a5a2e46095dd1958e7855e55b728f5ea0f4103c19d0e7af",
+      "mtime_ns": 1794116242000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s7_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s7_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "afbb238ca1e901efac72bfa25836131430b11fb01c8ee756bf93d561ed2aeeaa",
+      "mtime_ns": 1794116728000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s8_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s8_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "6a2cf1620b4c43b349aabe15e4143f1c40562cdbdf62ec84d1d93427f4a7c6c7",
+      "mtime_ns": 1794117194000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s9_best_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/probe_s9_best_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 165592,
+      "sha256": "3fbf6d39c043045da35a7825547fff09da13d1ffabcf7cd132eb9fef208bc9bf",
+      "mtime_ns": 1794117533000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0059_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/resume_e0059_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 90111178,
+      "sha256": "4a817d370d9b193130c9a29f5669b12044be430e2ec98ea7fc98fd1ea2325362",
+      "mtime_ns": 1794112069000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0060_a0001.pt",
+      "archive_path": "arxiv_A_TxrQqJzj/resume_e0060_a0001.pt",
+      "category": "arxiv_model_files",
+      "bytes": 90111178,
+      "sha256": "1a02381037f30a28bd282b0c9cf1422bd218b8409abd996aae7ace325939660f",
+      "mtime_ns": 1794112883000000000,
+      "matches_A_receipt": true
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_l1_measurement_v2_kISgbDss/one_epoch_B0.pt",
+      "archive_path": "arxiv_l1_measurement_v2_kISgbDss/one_epoch_B0.pt",
+      "category": "arxiv_model_files",
+      "bytes": 90114378,
+      "sha256": "e598437b4801914f3dbbed9dbb3103cc5d10dec8fa1d0bba34944069cfe82e22",
+      "mtime_ns": 1794061123000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_dev1_stage1_z7j505g9_cora_C_s0/models.pt",
+      "archive_path": "checkpoints/c_dev1_stage1_z7j505g9_cora_C_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "1bd2dadc20f737b2e165184b337e43f8b773fd0d5973d7b4d16f1cd6f69fd5be",
+      "mtime_ns": 1793877057000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_citeseer_C_s0/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_citeseer_C_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "0ea6e518b9d5ee99e16e5df8c44d132f5e513b61f9fa55598abfe3d63a1c8f8a",
+      "mtime_ns": 1793877817000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_citeseer_C_s1/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_citeseer_C_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "ff60728cfc1d255697f6a08687bb4752109ce10cb14bb8ff9aa2a166d18f92c8",
+      "mtime_ns": 1793877907000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_citeseer_C_s2/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_citeseer_C_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "295df28492a9f7038409ef40fe09ad29eaf7dd5c0cce8f16c8267d3cf56b897b",
+      "mtime_ns": 1793878005000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_cora_C_s0/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_cora_C_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "fc73ac6c122a3245c7f9701cb5174d58efe2f5def27da2f0d234c6e4f1d59062",
+      "mtime_ns": 1793877287000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_cora_C_s1/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_cora_C_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "9df2d26194bb36fff591178217307619f21275292336322a4e5deb8abe04424d",
+      "mtime_ns": 1793877503000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_cora_C_s2/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_cora_C_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "43b5e08fbddf2f3e7c8ac85a107e5c4cf7d7689af18f368e186f0183a50b2ba8",
+      "mtime_ns": 1793877722000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_pubmed_C_s0/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_pubmed_C_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "cd74222d8a152eb871df73838dcd32092043deaa076b945d13e228752ec3aa91",
+      "mtime_ns": 1793878299000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_pubmed_C_s1/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_pubmed_C_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "346c0570978ce6264482f4206ae3e367a25d9264e4f38a2ac176d09ae0807531",
+      "mtime_ns": 1793878603000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/c_development9_mtay1pty_pubmed_C_s2/models.pt",
+      "archive_path": "checkpoints/c_development9_mtay1pty_pubmed_C_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "8ec32632421986b5dfbe698b9bd31b0fd8b055efb1e762050826d54ae3f5c8bb",
+      "mtime_ns": 1793878929000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_citeseer_DS_s0/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_citeseer_DS_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "4c122bfb68a34b6da5174b723dac203710deb6dd780b03126df224f2da1f619a",
+      "mtime_ns": 1793866256000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_citeseer_DS_s1/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_citeseer_DS_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "3019d80e0e7b9d14ef277bcb1532ec01774f3cc6b19d03ec2f377ab2b5ef4537",
+      "mtime_ns": 1793866349000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_citeseer_DS_s2/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_citeseer_DS_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "5861ca27ff1539d8b4703dbd3662cd7a773c474e33842d1b3652735a00a15e81",
+      "mtime_ns": 1793866450000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_cora_DS_s0/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_cora_DS_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "93eb604379174fa54c4a877e522416078867c4d430f2f20902e0c57791267ca6",
+      "mtime_ns": 1793865704000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_cora_DS_s1/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_cora_DS_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "20670d59ce8ee64073bc3f8fe0009fdc6c36fd117183037d8eef0046aade2631",
+      "mtime_ns": 1793865945000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_cora_DS_s2/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_cora_DS_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "967409ebe6428cb0837105e470b62e63d27ed1c602d30f769f7e245df28e97e6",
+      "mtime_ns": 1793866169000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_pubmed_DS_s0/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_pubmed_DS_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "45c8849bc584cca4020c36b6fa3115a2699939e98a3dc0912625f80e74ce4feb",
+      "mtime_ns": 1793866778000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_pubmed_DS_s1/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_pubmed_DS_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "ecb959fd6c0004ae9a5cd9dd175c71cb2ff91cb68ea9871b1249d324cb76ed1e",
+      "mtime_ns": 1793867107000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_pubmed_DS_s2/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_pubmed_DS_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "f9b0def9602953709ddf94510267da2f1c45541ebdcafb0d083b1bc7eaab3abe",
+      "mtime_ns": 1793867437000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/ds_development9_lcy4n97u_smoke_cora_DS_s0/models.pt",
+      "archive_path": "checkpoints/ds_development9_lcy4n97u_smoke_cora_DS_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "c504b7b7af79c8df83cb7c12aa63291e43994b187884a338527b9cc96de31ac4",
+      "mtime_ns": 1793865473000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "813a514fc117f42ec285fae665222642f6a41e2166833853f7d8bb6edab11dff",
+      "mtime_ns": 1793269218000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "8675e6514ffcab0f676473e472890ea22c34bb64e44bb99fd16f9b93f27da6c5",
+      "mtime_ns": 1793269530000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "14c419935aadeed0c4006b681b5ed343c860efc855da76687e70c2ccf719723d",
+      "mtime_ns": 1793269838000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "23286ce597b6589006f1f41d06e0cad710c31af6f9f96853c71273b6d6a7cce5",
+      "mtime_ns": 1793270146000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "a2f5fb95b2ce1ffc167e8631c9bb8e464631378e44cc0dabb23d98ca218311a7",
+      "mtime_ns": 1793270454000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "1354cae4c98d74e4ec65d2abf1a4f5be8aea6c1547f2b5bb27037bbeacdac6f4",
+      "mtime_ns": 1793270762000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "0c2054e69d8bdf009cba75fef7e197658efa1d9a4f4a8b84923c7db4f877992d",
+      "mtime_ns": 1793271067000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "b407594a7739139e469921f150ae88059822ec0295b046dd5dc6ec350a9decb7",
+      "mtime_ns": 1793271371000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "e7d62ef7a8754abdc90d814c5420eba6e79d3b905c6b238151ffefb7eed36f93",
+      "mtime_ns": 1793271677000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B0_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B0_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "e6ec14edbe34483589752d4b56fe67881384fceb21844959b19e0d0505de93fb",
+      "mtime_ns": 1793271985000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "24267989dc00f9d03f717a8612b49cab859f15805dc71454f1cd82b1b9d14317",
+      "mtime_ns": 1793269297000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "f297d8f62d9eb649762a217b4502ddeb953d0438a1a120c96fed8b3a1ee80826",
+      "mtime_ns": 1793269607000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "ec7662fabc1f70ef0fc51cf40f5ca870addbf7f52bda988662794022e30263b9",
+      "mtime_ns": 1793269915000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "56b9e7cc518040c413abd1b72fe6cd667f5ee3de82e32ebbe7528ee239531f97",
+      "mtime_ns": 1793270222000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "2e36530d5091abeb30c78b60970e5adfa4b600d9dce096b93334386f57e4776f",
+      "mtime_ns": 1793270530000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "403c6c504a83f733b88a868699df11be21114d2371feab9ca282e583364c8ae6",
+      "mtime_ns": 1793270837000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "80dacddd0d996cf65901ea95ebd56a9d93cadb24e93e74d4a96c0dda8949e33b",
+      "mtime_ns": 1793271145000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "cfddb6fbac89838cf0ed7ccb0bbcc4ec63ddd2b8a69f1908e65f37873e1e9688",
+      "mtime_ns": 1793271449000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "a73495f0a8df545f12f93284bf1a479523c143b14a5b69240eb2fdb0a44dc323",
+      "mtime_ns": 1793271755000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B1_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B1_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "4b9de43e37cdfbf39c5afd9beb67ca1844da3c9fc9e451f7c0b78b234ad4c6a4",
+      "mtime_ns": 1793272063000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "f1e0e166dc50cb05a848784f50bd993e2ef990972536c1c9d22d38fa9e7467f8",
+      "mtime_ns": 1793269373000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "46d5a502bb096ec3b6bb131cb084505c8f8c49d6500eba0a60ad5813e0c4c206",
+      "mtime_ns": 1793269683000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "4a8df17dadddc6e41514f48c8bf9f75014eac8ae518e28bad99c22fdc5b01d71",
+      "mtime_ns": 1793269991000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "4abb9d985f44ae9b6c5d8032276d6bdf995d426b49385516fe5a7cb01f236b7b",
+      "mtime_ns": 1793270299000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "a43ac76fd9cc38c045c9803f104f3362de1e9683c9ee646254ea23fcb03fdf09",
+      "mtime_ns": 1793270609000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "dfcf7fe237ec1403e3259392476eb2ce7522f87e46706b3b17606deb5fc8985a",
+      "mtime_ns": 1793270917000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "8c1063b52e864dd16012f09acfc91851f358bc61b87fc6939335e8e1c28bb4be",
+      "mtime_ns": 1793271220000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "148a7b98b5f73af4c2653460fd10d8a93ef53e5ec80c41d2dff2fd4267b9c055",
+      "mtime_ns": 1793271526000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "ea917004c4f48a8682ecbdaeef8bb8000370fc7b8234a8b81d85a0411159aabc",
+      "mtime_ns": 1793271831000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B2_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B2_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667602,
+      "sha256": "73ca9e5377637a14fd065909243133cb6ca8b93fda16461ea491743198310859",
+      "mtime_ns": 1793272136000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "51ac2e0d078eb4fb9edc0c3466b93bb83e08cdbc2ba3eeb1c5b669c982747232",
+      "mtime_ns": 1793269451000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "a2e69200c90e7d934b4664cd7b8af68daa1bede40b82f7361f8b1d08b7b9a624",
+      "mtime_ns": 1793269759000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "628440e5c7c12ed2ece260a530b3c142fdcf1db5c02869f0c77645de32222392",
+      "mtime_ns": 1793270070000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "6a3ba293f59545dbb2ee23973d6fa7a0dd1bdd4553854163e7da057e4fdbb2a2",
+      "mtime_ns": 1793270378000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "02b82e45c0c2c2b6a868afff9a471edffb30bf611c673d0672cfa02c3d84fc1c",
+      "mtime_ns": 1793270687000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "b56a5605da8e8ca91d188ce98af690fcc3386850f09fa24ed0227a8da959c2cb",
+      "mtime_ns": 1793270993000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "dcbbba1fea54b318bda16ada8833b1a399789f81371754f2101ad3c01f042e77",
+      "mtime_ns": 1793271295000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "e676d6fd51fdf5c9886066bdeb4f7bcac092fb1ca6d30226d0c5fed90fc2874d",
+      "mtime_ns": 1793271601000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "e8a0e75e55dd9f1a9865aa35dea12ee515e68fec3c66c40bb35c6dfc6ff14530",
+      "mtime_ns": 1793271907000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_citeseer_B3_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_citeseer_B3_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667666,
+      "sha256": "a75c45586e35cd7d31e0f7e9adc12fa6463bd34151beae730371650bc2ddc53a",
+      "mtime_ns": 1793272209000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "9106108a27226413a52f2ff7d153c43fcc2febbecbdb4b4bcfadbefcce19899e",
+      "mtime_ns": 1793263233000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "cb98ff164bd54a7f16b3c854939729634ec35cc9739c71d07867d9cbf7c0effd",
+      "mtime_ns": 1793263839000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "78e4dd64f790bfbeeff521aae21022120678623e24b8e5c021b37467b7b91753",
+      "mtime_ns": 1793264449000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "cb3d5fa342cc5efa1ab039381daeec87e81261cc69299ca4cb5388afe8ac2844",
+      "mtime_ns": 1793265054000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "e21ed0bf6c96f60ae447b00e745a838d21ad06b21dd374140be59f5d2085e7a9",
+      "mtime_ns": 1793265659000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "a92a8d8be32280a469039f3cdfb5dbc857db3f2aac3e2a55c1cd8529e44b8b1f",
+      "mtime_ns": 1793266262000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "3cd9b962ac352ec8accaa3b2c4cf6cf6a9dfbe5a8757febd1db3bf60fc1c5362",
+      "mtime_ns": 1793266867000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "628996c69c5593708ea1eaf8511605c01f8f354858d6b75554a5f9193bdccf15",
+      "mtime_ns": 1793267471000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "65fff7b4d45e833f5ba9419af9671ed7a6490ce9e22c9a54bddd14bed346831b",
+      "mtime_ns": 1793268080000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B0_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B0_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "362e842d7640900b3474ce44677f9477b2f1e00365b88a4650860544da58818f",
+      "mtime_ns": 1793268687000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "92289854fbaad28d61be74025cf929177bfc306168983be1e65b6392ed465099",
+      "mtime_ns": 1793263384000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "f935b3559900674ed209541846086a17cdda2416d3d93fc39e4032a79b70422a",
+      "mtime_ns": 1793263990000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "8e30e274cce9d676a1505fdb4894ea4d13a6042743c55c45536f050202768a53",
+      "mtime_ns": 1793264600000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "826b4f827f2057b93ff3c19b8a9a9d404e47ef03818d4ca52980d660a93ea300",
+      "mtime_ns": 1793265204000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "0567ec28ecd25372b5a872db18f24cff81b1222e465330f7722f449b2237746e",
+      "mtime_ns": 1793265809000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "d3962273b6d10cc7feac887553c68d751fa65783ee8b2eae9ebffbf099adc4b7",
+      "mtime_ns": 1793266413000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "7738f0a08a9addbb0890c8e602cf914277b152df954376ecf1787f99095f5567",
+      "mtime_ns": 1793267020000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "a14a279113e6839eafeff45f5a4d7e2e9f719c4f5343d7ddefb466a245976c43",
+      "mtime_ns": 1793267624000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "5d39d097693c67f36f8c68a480aa9257e0b9447736ca2be8c129ba35b8773b7f",
+      "mtime_ns": 1793268234000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B1_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B1_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "e8888cba5e9c686d3737c4f9c15371332118e34319592c38ec4e26088b1508cc",
+      "mtime_ns": 1793268840000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "3864f31bbd1027ba503b8def90b3d9369cf9625cafa146946455b1b7e86721b6",
+      "mtime_ns": 1793263536000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "68406b37b885e5633a7fdd1d61b55b4a534e666639aae621839505fcf72c8b50",
+      "mtime_ns": 1793264142000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "16fc7cb14db95890722fd50f9077d895ea6cfa96a7bfd633d56959cb3747e5b1",
+      "mtime_ns": 1793264754000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "d3bb03b2511bc152f9d582a68d3f2711c6f1639caae52589c9629d76e6f1602c",
+      "mtime_ns": 1793265357000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "6e52434eec3bc6317482823a767e70bd0778e4d6d2de168fcf495ba5a8580d9c",
+      "mtime_ns": 1793265961000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "c0acedba4db4cb015b42fa36b37dbbc993d89b74046f91ab3833652029f5813a",
+      "mtime_ns": 1793266564000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "73e2ce8f11022ae4256c4eb46f8422fa7af22edcf0d78095ac4feb2676b25574",
+      "mtime_ns": 1793267171000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "d73f5e1f99ae9c2257e14db46e89d1941d8a65b22829ea00c9c8473a68e03e7d",
+      "mtime_ns": 1793267775000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "931cc3201b60556f0e5dd489b1cfc5b562ec891eff47cd5966ab8a813b2b4c17",
+      "mtime_ns": 1793268386000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B2_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B2_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "1d3fe97f36dc60c9cd74719187eae7e8c55530531d6788767c4f05236e04551f",
+      "mtime_ns": 1793268991000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "47131e4bc545f867fe830108d622be172e5c1c1b69e07cc2e69914cc4a2b7e7a",
+      "mtime_ns": 1793263688000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "d26199ae1ea0d38661a82bb9c90fb287aa08e4f8299827c9c046818cc6a1eb93",
+      "mtime_ns": 1793264293000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "7a0e4fdf60982e044e327d10f14f115c7f3c883778e95394d5bdaf965a88f286",
+      "mtime_ns": 1793264900000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "1b4c061c20150436346986f58d5e631434521c475178ef3eec406f6b6e26e9b1",
+      "mtime_ns": 1793265508000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "eb1e527f60ab5acc4cbcadf057f0836b2202d9aebaecec4dda5a1cc4611fb277",
+      "mtime_ns": 1793266112000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "1dcd247b0650e0fec40fa419ac40e60bddce897a59c2fa0c58eb8dc2d3bdaea0",
+      "mtime_ns": 1793266717000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "d08cde9207aeac568d58f0acb9a6493b839905d9b61e8ec03b9e1c46372b53ca",
+      "mtime_ns": 1793267325000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "420a22641be175b22cac611f0eedf060ae83761d2a65fbc7ecec1c79d14e8c41",
+      "mtime_ns": 1793267930000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "1772041e625dbac1f9f27236ab17728b4cc7ce9ef08b23c1b14445c608612794",
+      "mtime_ns": 1793268538000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_cora_B3_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_cora_B3_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "7fa8f9792dffa9e31a580a9b5afe70136a5e621d90e3f445a8b125f7b81f58fd",
+      "mtime_ns": 1793269142000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "af8eda22fc498c375a99c479f012543af4971fa1a28a879e11f2bfabb913059c",
+      "mtime_ns": 1793272483000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "fa4367ae57eeb039f4bdc2cbd46ff37f37b3fbe9928ebf56d2d7ab6a72a47de5",
+      "mtime_ns": 1793273588000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "5a606509b68eca058acba6c5001e6d31451b0c0ce112552de09dd669f75f79c0",
+      "mtime_ns": 1793274691000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "37928fb8ac4ebbff444e307ade23e9cc6d8f13241ed427bc69498f0dcd45ed57",
+      "mtime_ns": 1793275796000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "62fe9edd1c1fa33ee250f81a7d8990115eb4527347f2393177473aa90a7b562d",
+      "mtime_ns": 1793276904000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "a671843116f6d10fbc4d6b29a91a0b5fa0fdee0b9c105daea765ba80f74a230a",
+      "mtime_ns": 1793278015000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "0b7429a52f141c6a345848b6ff5047628741486304b7708086ce23bdd6301edf",
+      "mtime_ns": 1793279120000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "9c1ce3eaf19e332b69f4f176e0908184641e41689dbe29602469614007c7967f",
+      "mtime_ns": 1793280229000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "5d283c16d892fe555dae7ccc2f4b2a5a303b56da52fc0796cfa9f5d8cf42ffd6",
+      "mtime_ns": 1793281338000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B0_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B0_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "b711686ab54d4a4f7681e2482bbfc7f3944b2f76c8e470de4fcdb192010e4cf7",
+      "mtime_ns": 1793282454000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "f0b32f23d4f7389084d8f64775ae4770b7c962818f5819df533d83ec273b1ddd",
+      "mtime_ns": 1793272758000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "d1d7104ef4cbb364fc45abc4ce478677361a96ccfd549cee4b106fe122dfd312",
+      "mtime_ns": 1793273865000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "bd5f991a53b6064d60a625ae0446ed806622fdff431401cb49a38a313c347e59",
+      "mtime_ns": 1793274969000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "3fc474454e4920454a3dc41421a1a0929b1e774b743abe4126b13d7e249c647b",
+      "mtime_ns": 1793276073000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "77a444b846a868ce8b55e983a76664e4fbc48a70959c703b79f86a7e2da6559c",
+      "mtime_ns": 1793277182000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "54b146da16347086e02813a5322d76edb930844d2b0891377c8dc0fab6220c73",
+      "mtime_ns": 1793278290000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "e5ba32addbc189122d513bf12906ca0b49dabd8426d6e32bf915e843ef475f8b",
+      "mtime_ns": 1793279400000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "918acea1fe6d1b6e2d67f702458e1f39f867ff38247cfec3aa2aa388511199f4",
+      "mtime_ns": 1793280506000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "97eca3105b59f9c3d52d818ca1bcb1c4e8902a51e11b646274775f2cb5beb804",
+      "mtime_ns": 1793281619000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B1_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B1_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "b68a6e21af2a9c0a18db561e1ff898758a1add00ee2aa0081749d3f379b05735",
+      "mtime_ns": 1793282731000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "a4cb08e3eb798c840a59a27273854ab0347056b28154eb783bc9a8f053799d1d",
+      "mtime_ns": 1793273036000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "71f2a7e06a765c5f8a2086fd2d012ef5df29411e4bc023eaae7e26697edfbc47",
+      "mtime_ns": 1793274137000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "a9b4e199269e81e59fc44c026956e8b344beee21bf3eec5e4cdc2e1648a71526",
+      "mtime_ns": 1793275246000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "63070afeaf921b6e7016b8be69a84019ee9915b201d7c268ed481e6030c3bbf5",
+      "mtime_ns": 1793276350000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "24f749d2b86f56458f271c993a1e743a37830db4d0680901e3028a287bbd8042",
+      "mtime_ns": 1793277459000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "442ab01d98b1ecdfd24260593f43f37398f7760efc246c0554d1e3abb504b9f3",
+      "mtime_ns": 1793278568000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "7fd39d10da346bfd007e47986b194be865628e9074d646a1466949534582c445",
+      "mtime_ns": 1793279677000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "09d77785cbbd37b2f8c35a815ed9d33a8fab89f792c7bbac57d27d8430e5b23c",
+      "mtime_ns": 1793280784000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "13c5f001c805e2bfff4571db39906a5a9ffed7f84741771c434917c674960bbc",
+      "mtime_ns": 1793281897000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B2_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B2_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436242,
+      "sha256": "251cff0b12b85b6f289e12d15a6cb029ba49f99e5f6ee2243e12075d4d72411d",
+      "mtime_ns": 1793283009000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s10/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s10/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "6a0d49683f74e2bf8cb4b04912e30299c4357722454bc20fe0deb8789b9d91ea",
+      "mtime_ns": 1793273313000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s11/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s11/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "42d1fb7f7659a16e61db878c21aa98a652271e3afca3d3bd283850d8d5a9ad03",
+      "mtime_ns": 1793274416000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s12/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s12/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "6fb0437ca6363e5334b6d408af309ec0de709a32598e2de1ba24d7a1952d7e71",
+      "mtime_ns": 1793275521000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s13/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s13/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "4a80bedc93b62a0e87689e29373722139df621a9d3d9407cf2579718e190eda9",
+      "mtime_ns": 1793276631000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s14/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s14/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "a87bee760780d53c0a09ed0638b890a9520a1494f7ddaa6609131a3c114e2532",
+      "mtime_ns": 1793277735000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s15/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s15/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "b826365cf2f75f555160c68ed67893e12294ae728a6d28fdfb8a966773a2601f",
+      "mtime_ns": 1793278847000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s16/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s16/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "c4b2c101c3303962b1b130cf4b041b064da119becdb540808826fc59b3dc174e",
+      "mtime_ns": 1793279951000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s17/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s17/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "7b99e918cd2bfbdc7ac20a552ffef59e6daec64185896f6bf9377b1958798651",
+      "mtime_ns": 1793281062000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s18/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s18/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "94b1fd2e46b107841b4cc68a1f6aeb673432a497095c22fb82b6a0549cf9c3b6",
+      "mtime_ns": 1793282174000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/formal120_x6CfgE_pubmed_B3_s19/models.pt",
+      "archive_path": "checkpoints/formal120_x6CfgE_pubmed_B3_s19/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436306,
+      "sha256": "b6f76dc4013bb0f6c20adddde49f8b154e2428b319d359491a61694ea028ce20",
+      "mtime_ns": 1793283285000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_dev1_stage1_mer3ss5j_cora_NA_s0/models.pt",
+      "archive_path": "checkpoints/j_dev1_stage1_mer3ss5j_cora_NA_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "10bfc3b4b2c82e334e0ba5774b56fc454fae52a50a94a2f84fd5c3e8da2cbec1",
+      "mtime_ns": 1793944765000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_dev1_stage1_mer3ss5j_cora_NC_s0/models.pt",
+      "archive_path": "checkpoints/j_dev1_stage1_mer3ss5j_cora_NC_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "70d3d7ac4211344b8f65eea65992db4d007c890b7822717a4f0b99625718828b",
+      "mtime_ns": 1793944826000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_dev1_stage1_mer3ss5j_cora_NR_s0/models.pt",
+      "archive_path": "checkpoints/j_dev1_stage1_mer3ss5j_cora_NR_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "741aef271d509899aa3c255afac5cbd24ae4fcc6cc4b2b29c73b46e3919d62d7",
+      "mtime_ns": 1793944788000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_dev1_stage1_mer3ss5j_cora_S_s0/models.pt",
+      "archive_path": "checkpoints/j_dev1_stage1_mer3ss5j_cora_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "44695cc955c37d2d886153fd5d151f17834f1a092df95640467bf8b7f3f0f0eb",
+      "mtime_ns": 1793944732000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NA_s0/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NA_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "c475ce9b1bb3d37d9d810dd88e51b4429ca2e276564421fd504ee7b1dc4b8f15",
+      "mtime_ns": 1793945327000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NA_s1/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NA_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "3f08a51d9286dfbc79d35a40601b9dab057f63680528f4613d28435499315aa5",
+      "mtime_ns": 1793946195000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NA_s2/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NA_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "9b7341c0998b7a4e56bb0d56d70ee0a98fce3d00bed6bc4f9ab17b43ad86746a",
+      "mtime_ns": 1793948458000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NC_s0/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NC_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "a4c15552177af085d1f1b9c6a0a4e4fc159094086da3899ff1147e139eaf1786",
+      "mtime_ns": 1793945887000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NC_s1/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NC_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "9b834789518c449b8f88bf1461cfb8476514cdc0441334d722870298b3b63bae",
+      "mtime_ns": 1793946878000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NC_s2/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NC_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "c6f28e6002701b983a82b3dfd7290331619a1af0a888b7d6d5caed2a169416dc",
+      "mtime_ns": 1793947882000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NR_s0/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NR_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "611a70c8e63e48538226db377efed6e675f7d5accce88cf687f65332fef2249c",
+      "mtime_ns": 1793945594000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NR_s1/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NR_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "706b2e2e6ad08122539612a6ca648d267fd178713d98837ac6dd743b0e24e293",
+      "mtime_ns": 1793946479000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_NR_s2/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_NR_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "ffd24bf0c378f94cb0e72b57ddbe94bc485a85b853995f7431b3545037b36a08",
+      "mtime_ns": 1793947560000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_S_s0/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "0b09ddd334a2a3e24917c86dd5fc557f66b5967c9ca7360430d6fd657abf3f04",
+      "mtime_ns": 1793945084000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_S_s1/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_S_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "cf960d4dc088fa16291d4c4b09241b2fd67a5094302995f0eaccdcdc4d28b6f4",
+      "mtime_ns": 1793947196000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/j_development12_k72xhtjv_cora_S_s2/models.pt",
+      "archive_path": "checkpoints/j_development12_k72xhtjv_cora_S_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "03da6125cd8cecfc8b0a00e666e52fcc0806c77ab25c5271c2ef4f3213d8d3c6",
+      "mtime_ns": 1793948161000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_dev1_stage1_9w06z2r4_cora_H_s0/models.pt",
+      "archive_path": "checkpoints/p_dev1_stage1_9w06z2r4_cora_H_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "a054f9663627cbe89c5e6931fcdc3515523ce23944c35abc38d858f6786d5cae",
+      "mtime_ns": 1793886545000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_dev1_stage1_9w06z2r4_cora_PS_s0/models.pt",
+      "archive_path": "checkpoints/p_dev1_stage1_9w06z2r4_cora_PS_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "e943e3ab8a9cd840af932f717ef787c847850db30e20de6fb0c99f9a816a0be1",
+      "mtime_ns": 1793886602000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_dev1_stage1_9w06z2r4_cora_P_s0/models.pt",
+      "archive_path": "checkpoints/p_dev1_stage1_9w06z2r4_cora_P_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "eaee1d0a41f764d52312bf20ea098ad24b2b033ccd34f618a42efa17c9adfc5d",
+      "mtime_ns": 1793886578000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_dev1_stage1_9w06z2r4_cora_S_s0/models.pt",
+      "archive_path": "checkpoints/p_dev1_stage1_9w06z2r4_cora_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "46f4ed1a10722f35b681e94b1c126efadf3b4fbf4c9931f6adaa39bd7bb740bd",
+      "mtime_ns": 1793886521000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_H_s0/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_H_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "f9811ae613aa199571825d080f8c74dae0d9c2f197a7c9bf2d7d07a9bc363b1d",
+      "mtime_ns": 1793887258000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_H_s1/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_H_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "dbd5c183898f1102fd9d66c61e5439993a765f1d345ab16a00de25a531e6324f",
+      "mtime_ns": 1793888353000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_H_s2/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_H_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "236bb0d83760f944522985fc0b27ae6f87f4565ed7cb33e66b25cd09966dad71",
+      "mtime_ns": 1793890765000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_PS_s0/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_PS_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "e593368e77bf74241f025521148cf43eb8dd38fed2493423799096bd1c431272",
+      "mtime_ns": 1793887963000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_PS_s1/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_PS_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "cc7d5309ace5c87496642ebd9ddc4ef72be3ee5acd393abbda2f1f41a0bd51e2",
+      "mtime_ns": 1793889004000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_PS_s2/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_PS_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "1fc84c394d6f6d1760f53c5b4cfb72f8bc01fd66274bb797c8a8e8139add6322",
+      "mtime_ns": 1793890064000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_P_s0/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_P_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "a7816b5bfe61423c25d1596f5f39c52ddc4b5b323a41a4d75fa8130fdd403a4e",
+      "mtime_ns": 1793887629000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_P_s1/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_P_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "649d148dadad3f664603acc21b49952026f28ae3dca8389f9e81a3a2e11bed12",
+      "mtime_ns": 1793888673000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_P_s2/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_P_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "c0c0afe8e507b36073b872d8af9977b12bee03dc026691c24f42b15ecfbcb3c1",
+      "mtime_ns": 1793889786000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_S_s0/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "3b4defdf7e543389c2c8e91d3692938d096af387acdd9029b3a4ca31e5eda13d",
+      "mtime_ns": 1793886936000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_S_s1/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_S_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "c9dddc9f1467d7b02af52f676e72cbdac0400237f5e8b431560415a909e5d684",
+      "mtime_ns": 1793889376000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/p_development12_by02jzbr_cora_S_s2/models.pt",
+      "archive_path": "checkpoints/p_development12_by02jzbr_cora_S_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745938,
+      "sha256": "7bb035667290d697ca854fae1e55f6a9b69414d9a52d000b07d946f7d839896b",
+      "mtime_ns": 1793890472000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_dev1_stage1_osgce2je_cora_R_s0/models.pt",
+      "archive_path": "checkpoints/r_dev1_stage1_osgce2je_cora_R_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "e06567724f13c017b4ce389907a41c12a234688f01a171c12e50873dadf4e0bd",
+      "mtime_ns": 1793715871000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_citeseer_R_s0/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_citeseer_R_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "9fec7f7e499f5cdacc4d9043e46af3f7c7c288e80a950fc5a4ca893b31b52a24",
+      "mtime_ns": 1793718439000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_citeseer_R_s1/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_citeseer_R_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "b71d990637569a07f545408f660d9d523df218c1412b9aa932dd79c1938fe30a",
+      "mtime_ns": 1793718564000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_citeseer_R_s2/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_citeseer_R_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667858,
+      "sha256": "479b4ad73c80742890bc76813e22985e8f09b01cf941a6605af6d7b1a36fddd2",
+      "mtime_ns": 1793718719000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_cora_R_s0/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_cora_R_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "89859dec0d6005e4d57680116aa3973f1438116848544d71992eb6fbb6eff389",
+      "mtime_ns": 1793717717000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_cora_R_s1/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_cora_R_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "af90af5b64c25921f4a8bfef361d2535e880f4acdf153da91995fb211ae688da",
+      "mtime_ns": 1793717958000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_cora_R_s2/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_cora_R_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "dbbef0bd2d8ba07c8af76a030c14aca6f9b277e6540b51758129b145047ab01b",
+      "mtime_ns": 1793718316000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_pubmed_R_s0/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_pubmed_R_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "c404c0c76ec02ce4dc55c81d5cffc4df4aaebf70fc97e156a1a5076c66c02d0a",
+      "mtime_ns": 1793719300000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_pubmed_R_s1/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_pubmed_R_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "b6f2e334a09885cdfeeef3d76becd95798fd514cfaaf4214e0b7a2171c1ebd28",
+      "mtime_ns": 1793719848000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/r_development9_yy6rh7vj_pubmed_R_s2/models.pt",
+      "archive_path": "checkpoints/r_development9_yy6rh7vj_pubmed_R_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436498,
+      "sha256": "8c7ef252839d73e2c0f3f8cb8c135e0c3dcabd15bd00c8b41acb0a8edca178e0",
+      "mtime_ns": 1793720415000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/record_v1_cora_b3_s0_JHQWmU/models.pt",
+      "archive_path": "checkpoints/record_v1_cora_b3_s0_JHQWmU/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745682,
+      "sha256": "754c112e1f52650f80ed782b43b2ba23e94c4ba7353600e5f0c68fd9b7675e03",
+      "mtime_ns": 1793023683000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_D_s0/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_citeseer_D_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "806fbeee728911bafaa85e34990cb4963b8e3765831706d4c1b3ae5dda5f0eca",
+      "mtime_ns": 1793358801000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_D_s1/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_citeseer_D_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "30bfc2df9c16964084f638758d272b08cbb42d53e8195f49e755ed34dcaadfad",
+      "mtime_ns": 1793358883000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_D_s2/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_citeseer_D_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "602b7f57679e6d188352367d1b835788c3936132a35c4012a72597fc1cf0bdcf",
+      "mtime_ns": 1793358963000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_S_s0/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_citeseer_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "e0da965e27668205c637531da78c4dbd1c03fe84fc131c9b95241fadd89017b9",
+      "mtime_ns": 1793360374000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_S_s1/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_citeseer_S_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "e5785306d60b3dbe8e0eff461bc2e3aca45ae1836443dd1f74971c0637787e5c",
+      "mtime_ns": 1793360453000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_citeseer_S_s2/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_citeseer_S_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "24e58324eda945e9ffe0c16356bc215ba9a3700fdc65904200822146a8f49aef",
+      "mtime_ns": 1793360532000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_cora_D_s0/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_cora_D_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "38c4e499e774ea143f70ae324e296d96765a12f1054560e251ba7cbfee8e9a2f",
+      "mtime_ns": 1793358407000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_cora_D_s1/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_cora_D_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "335176d0667dddd29e4dce74d0527baf650db7f6e1bb023eab9c3937609c20ef",
+      "mtime_ns": 1793358563000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_cora_D_s2/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_cora_D_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "3d8c9e56e3696c835724690eeff3c30e8e68f1742780090c9b03be69f6b1a6a8",
+      "mtime_ns": 1793358721000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_cora_S_s0/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_cora_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "d8ca5e3e9cff4c62994556ce1915bf18767c44a8fa35ebaeed875b084e4adedb",
+      "mtime_ns": 1793359977000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_cora_S_s1/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_cora_S_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "d6abd3afa79a714a3172d3bc64f04b5b0fbeeaf36352e566be3c40ded9904650",
+      "mtime_ns": 1793360133000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_cora_S_s2/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_cora_S_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "c91a0fcd4326a91e3e3ac3702669864123d618e5ab4a1ad7d3a1025996f146ea",
+      "mtime_ns": 1793360290000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_D_s0/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_pubmed_D_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "b288a46daa906f9d58e28855a4408d71d5006da05b334f686552be3b245d545e",
+      "mtime_ns": 1793359249000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_D_s1/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_pubmed_D_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "58e0faa1af229a103dfa2daab8f6ae282875f8615540ec0553f56743eff04088",
+      "mtime_ns": 1793359533000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_D_s2/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_pubmed_D_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "8f5a67bb339c3e0f70d64a758596a13e62cbdf9b48b4ad287e8a7c5a183c2bc7",
+      "mtime_ns": 1793359818000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_S_s0/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_pubmed_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "43c75888c9944405cf22c0c57232534d659208abe6d1fe461c671c50bd8781ad",
+      "mtime_ns": 1793360819000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_S_s1/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_pubmed_S_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "163bce22404ccb2843c0031716c365447f8caa243d5599e280e843fe1b60eff5",
+      "mtime_ns": 1793361101000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_candidates18_p3TNwS_pubmed_S_s2/models.pt",
+      "archive_path": "checkpoints/v2_candidates18_p3TNwS_pubmed_S_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "d720974b144b39e1fbefe3f3c8d895e850dafdf38abf8830ebe23444b183f638",
+      "mtime_ns": 1793361384000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_citeseer_B0_s0/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_citeseer_B0_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "0363dab4febea0d305731521239cc8db10c0fdeda6ba4026ab80614e0dc0891c",
+      "mtime_ns": 1793339462000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_citeseer_B0_s1/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_citeseer_B0_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "97212c5e5002301ef5d0622c8b706c8e65617659ff372f516ce1a0492b17a86a",
+      "mtime_ns": 1793339624000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_citeseer_B0_s2/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_citeseer_B0_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "c038e88119c9840959f3467895f30f063f3cc8ac67e8b15780d23a0539358096",
+      "mtime_ns": 1793339784000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_citeseer_B2_s0/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_citeseer_B2_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "c291dc447b6883317d280221e2229691b20ff524a40438a5ad6fc301c78fb0fe",
+      "mtime_ns": 1793339542000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_citeseer_B2_s1/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_citeseer_B2_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "e58fb9c3b5b6cdd335c4ea96a91e7de674a8fb419131b50e3f13fa7dfa1a2a51",
+      "mtime_ns": 1793339703000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_citeseer_B2_s2/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_citeseer_B2_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 66667794,
+      "sha256": "6c2b207182fc088627ba8720369f584134c022512b0658dda70d5bf45f733125",
+      "mtime_ns": 1793339865000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B0_s0/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_cora_B0_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745810,
+      "sha256": "0dd280c489f4b253930f9d300c738a44272b66dd57587e75d810dff6a19810de",
+      "mtime_ns": 1793338604000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B0_s1/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_cora_B0_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745810,
+      "sha256": "50514489c8aa304d717be427702e3c8fb16e3da708b030211f9f890d0a12004f",
+      "mtime_ns": 1793338917000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B0_s2/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_cora_B0_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745810,
+      "sha256": "5f8c6b750ac15dc749d3442ee9910f0544f8214d6ff4242040dc239230f69080",
+      "mtime_ns": 1793339226000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B2_s0/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_cora_B2_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "9b05bed7e63dd681c0aee5cf372cfedb174503bfc13e7a4deb4762693f55b2c8",
+      "mtime_ns": 1793338758000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B2_s1/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_cora_B2_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "a6adfd01f4fd7d1b48b4ab8175b462e62cdaaa1372de3311d3d5f842c402da76",
+      "mtime_ns": 1793339072000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_cora_B2_s2/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_cora_B2_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "f7586b2de834c518d119515d6192ff3d13272c55d1ae74305d51b9ab040e0d4d",
+      "mtime_ns": 1793339383000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_pubmed_B0_s0/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_pubmed_B0_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "388040447dd0130ab8c38a20846262a6ad81cc4af5f8f2432dd7568e1edbfb01",
+      "mtime_ns": 1793340145000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_pubmed_B0_s1/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_pubmed_B0_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "aea8cda7bbbc48caaf1e71cfbfd2dd678f3d8ff9f26af3e335a949aa59510422",
+      "mtime_ns": 1793340715000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_pubmed_B0_s2/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_pubmed_B0_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "c6d473c9ff475e5718f5aeb7ca886509024b6f165d7154712d0bfdb46701e1ce",
+      "mtime_ns": 1793341277000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_pubmed_B2_s0/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_pubmed_B2_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "12ea01189b82ba551c00289669967b1794c4dfec772f33db92ece592e59e6f72",
+      "mtime_ns": 1793340430000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_pubmed_B2_s1/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_pubmed_B2_s1/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "0d9162b267cd795e83916ff38d56a8bdb7c868dd9488e0f3adccde7db7f7b17f",
+      "mtime_ns": 1793340997000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_reference18_5AaMEP_pubmed_B2_s2/models.pt",
+      "archive_path": "checkpoints/v2_reference18_5AaMEP_pubmed_B2_s2/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 9436434,
+      "sha256": "9886e30dba205111de6b79c0defc119949ae7dba358d11fea3b48dffbd687b7e",
+      "mtime_ns": 1793341562000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_stage1_u5oj0lz__cora_D_s0/models.pt",
+      "archive_path": "checkpoints/v2_stage1_u5oj0lz__cora_D_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "b67c163e410b17d662b08f3a9ba6e141bd6459457f500436238a8e8a487a8a7d",
+      "mtime_ns": 1793333879000000000
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/checkpoints/v2_stage1_u5oj0lz__cora_S_s0/models.pt",
+      "archive_path": "checkpoints/v2_stage1_u5oj0lz__cora_S_s0/models.pt",
+      "category": "all_checkpoint_directory_files",
+      "bytes": 38745874,
+      "sha256": "4a6ab7da2030d1ab7b3bcf1e74cbe9a1415e19335ccae333559c12b17ba74a06",
+      "mtime_ns": 1793333901000000000
+    }
+  ],
+  "issues": [],
+  "excluded": [
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS",
+      "reason": "data/clustering or unclassified artifact root; not assumed to be model weights"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/all_root_embeddings_a0001.npy",
+      "reason": "arxiv embedding/cache rather than model weight"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/embedding_root_ids_a0001.npy",
+      "reason": "arxiv embedding/cache rather than model weight"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_pointer.json",
+      "reason": "arxiv embedding/cache rather than model weight"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_l1_measurement_v2_kISgbDss/all_root_embeddings.npy",
+      "reason": "arxiv embedding/cache rather than model weight"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_l1_measurement_v2_kISgbDss/embedding_root_ids.npy",
+      "reason": "arxiv embedding/cache rather than model weight"
+    }
+  ],
+  "model_file_count": 235,
+  "total_bytes": 8790751492,
+  "scope": "All files in checkpoints plus model files in arxiv_A_* and arxiv_l1_measurement_*; excludes raw data, clustering, full embeddings and environment binaries"
+}

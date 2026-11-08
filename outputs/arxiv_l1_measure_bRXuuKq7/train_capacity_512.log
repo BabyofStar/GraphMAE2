@@ -1,0 +1,13 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-07 14:00:30,460 - INFO - ----- Using best configs from configs/ogbn-arxiv.yaml -----
+2026-11-07 14:00:30,642 - INFO - --- to undirected graph ---
+2026-11-07 14:00:31,308 - INFO - ### scaling features ###
+=== Use sce_loss and alpha_l=6 ===
+num_encoder_params: 3428356, num_decoder_params: 131456, num_params_in_total: 6184710
+CAPACITY train_capacity batch=512 split=train PASS seconds=1.856
+[HAMI-core ERROR (pid:190101 thread=133462280312640 allocator.c:52)]: Device 0 OOM 16951281344 / 16777216000
+CAPACITY train_capacity batch=512 split=valid PASS seconds=1.390
+[HAMI-core ERROR (pid:190101 thread=133462280312640 allocator.c:52)]: Device 0 OOM 17171789056 / 16777216000
+CAPACITY train_capacity batch=512 split=test PASS seconds=3.125
+MEASUREMENT_STAGE_STATUS=PASS_CAPACITY_CHECK

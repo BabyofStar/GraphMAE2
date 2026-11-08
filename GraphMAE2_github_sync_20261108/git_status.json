@@ -1,0 +1,30 @@
+{
+  "status_records": [
+    "?? GraphMAE2_arxiv_A_full_20261107.zip",
+    "?? GraphMAE2_arxiv_A_full_20261107/",
+    "?? GraphMAE2_arxiv_L0_20261106.zip",
+    "?? GraphMAE2_arxiv_L0_20261106/",
+    "?? GraphMAE2_arxiv_L0_followup_20261106.zip",
+    "?? GraphMAE2_arxiv_L0_followup_20261106/",
+    "?? GraphMAE2_arxiv_L1_measure_20261107.zip",
+    "?? GraphMAE2_arxiv_L1_measure_20261107/",
+    "?? GraphMAE2_arxiv_L1_measure_v2_20261107.zip",
+    "?? GraphMAE2_arxiv_L1_measure_v2_20261107/",
+    "?? GraphMAE2_arxiv_cluster_prepare_20261106.zip",
+    "?? GraphMAE2_arxiv_cluster_prepare_20261106/",
+    "?? GraphMAE2_arxiv_data_prepare_20261106.zip",
+    "?? GraphMAE2_arxiv_data_prepare_20261106/",
+    "?? GraphMAE2_github_prepare_20261108.zip",
+    "?? GraphMAE2_github_prepare_20261108/",
+    "?? outputs/arxiv_A_TxrQqJzj/",
+    "?? outputs/arxiv_l0_VM8SXPAk/",
+    "?? outputs/arxiv_l0_followup_ObUeimP9/",
+    "?? outputs/arxiv_l1_measure_bRXuuKq7/",
+    "?? outputs/arxiv_l1_measure_v2_kISgbDss/",
+    "?? outputs/arxiv_lc_prepare_JGJryFgP/"
+  ],
+  "staged_diff_stat": "",
+  "unstaged_diff_stat": "",
+  "merge_in_progress": false,
+  "unmerged_paths": ""
+}

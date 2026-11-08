@@ -1,0 +1,24 @@
+{
+  "time_beijing": "2026-11-08T16:23:36.760826+08:00",
+  "python310_ast": "PASS",
+  "unit_checks_passed": 14,
+  "actual_git_integration_checks_skipped": 2,
+  "skipped_reason": "Windows host blocks MSYS sh with NtCreateDirectoryObject access denied",
+  "bash_syntax_runtime": "NOT_RUN_LOCALLY; run.sh runs bash -n before server mutations",
+  "tested": [
+    "lossless split roundtrip and restored SHA256",
+    "tampered part rejection",
+    "per-file corruption rejection",
+    "traversal and symlink rejection",
+    "existing destination preservation",
+    "resume support-file recreation",
+    "Git merge conflict control flow with both READMEs preserved and ordinary push",
+    "Release remote SHA256 and streamed fallback",
+    "Release upload then resume without duplicate uploads (mock API)",
+    "cross-host credential stripping",
+    "repository and upload-host bounds",
+    "official CLI checksum bootstrap and binary tamper rejection"
+  ],
+  "actual_server_or_GitHub_mutations": false,
+  "server_weight_files_copied_locally": false
+}

@@ -1,0 +1,9 @@
+{
+  "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0000_a0001.pt",
+  "bytes": 40595494,
+  "sha256": "88bc069500338b8bd9b9256c02acf9cea21331fb24af9c173f4afaafd8d8d389",
+  "completed_epochs": 0,
+  "job_id": "arxiv_A_TxrQqJzj",
+  "contract_sha256": "7c0236cc9dab51d74c9a731e07f4b79ea5c8728f6c81b51b6eeea2a0e95ddd3f",
+  "rotated_checkpoints": []
+}

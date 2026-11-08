@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: localgraphclustering
+Version: 0.6.1
+Summary: Package for local graph clustering
+Home-page: https://github.com/kfoynt/LocalGraphClustering
+Author: Kimon Fountoulakis, Meng Liu, David Gleich, Michael W. Mahoney
+Author-email: kimon.fountoulakis@uwaterloo.ca
+License: GPL
+Description: Check our Github page for a more detailed description.
+Keywords: local graph clustering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.5

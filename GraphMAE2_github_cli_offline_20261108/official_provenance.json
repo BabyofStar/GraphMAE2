@@ -1,0 +1,19 @@
+{
+  "repository": "cli/cli",
+  "version": "2.103.3",
+  "tag": "v2.103.3",
+  "release_id": 424663522,
+  "release_url": "https://github.com/cli/cli/releases/tag/v2.103.3",
+  "immutable": true,
+  "archive_url": "https://github.com/cli/cli/releases/download/v2.103.3/gh_2.103.3_linux_amd64.tar.gz",
+  "checksum_url": "https://github.com/cli/cli/releases/download/v2.103.3/gh_2.103.3_checksums.txt",
+  "archive_asset_id": 679195621,
+  "checksum_asset_id": 679195516,
+  "archive_bytes": 15031972,
+  "archive_sha256": "4c806978ffce1cec70853302a56d70ac6da4f19bae7adca4e1a8ab00633dd91d",
+  "checksum_sha256": "f756e7859d90dbb5e85aae5194206c37da220bec9bac23d3d659078a8e766fdc",
+  "binary_sha256": "b768184570b12536be4ac1528893f6340d1c6a7b40b56ad45bca9cd0e87ad34d",
+  "verification": "Both official API digests match downloaded bytes; official checksum file also matches archive",
+  "original_job": "sync_u0Vtv5j5",
+  "original_package_identity_sha256": "a6eb3d3ea09a442fe04c60b0c665fdb2ba869d44822d37b853cb805c56de3a5a"
+}

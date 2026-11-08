@@ -1,0 +1,6 @@
+STAGE_START=train_capacity_512 LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_bRXuuKq7/train_capacity_512.log
+STAGE_END=train_capacity_512 STATUS=PASS_CAPACITY_CHECK
+STAGE_START=pretrain LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_bRXuuKq7/pretrain.log
+STAGE_END=pretrain STATUS=STOPPED_PRESERVED
+L1_MEASUREMENT_STATUS=HELD_OR_STOPPED_DURING_PRETRAIN
+RETURN_FILE=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_bRXuuKq7/measurement_return.zip

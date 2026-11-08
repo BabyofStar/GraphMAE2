@@ -1,0 +1,20 @@
+{
+  "status": "PASS_LOCAL_LOGIC_ONLY",
+  "date": "2026-11-07 Asia/Shanghai",
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "Python_3_10_AST_pass": [
+    "formal_driver.py",
+    "formal_logic.py",
+    "formal_worker.py",
+    "measure_common.py",
+    "runtime_core.py"
+  ],
+  "test_source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-06\\yi-j\\work\\test_formal_A.py",
+  "test_source_sha256": "444f7c6f19ed7512df4176bd23e670759c4ab4325c9d77d3ff2bb073d190e154",
+  "limits": [
+    "No local Torch/DGL/CUDA; the full60-epoch job and real checkpoint resume remain unexecuted.",
+    "Ten linear probes share one encoder. No B2 or extra small-graph run is authorized by this package.",
+    "Only the existing L1v2 B0 helpers have real one-epoch server measurement evidence."
+  ]
+}

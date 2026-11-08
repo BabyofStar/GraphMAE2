@@ -1,0 +1,66 @@
+{
+  "raw_files": [
+    {
+      "path": "raw/edge.csv.gz",
+      "bytes": 5033515,
+      "sha256": "47629e986116407d27eff4c9d2e923f06bf5da5c85cbae93b660f530bc9355df",
+      "verified": true
+    },
+    {
+      "path": "raw/node-feat.csv.gz",
+      "bytes": 76357181,
+      "sha256": "60a844c7aff2f129335d34da2f6b9271bd1cac03aff8c70c229e6f0d13624718",
+      "verified": true
+    },
+    {
+      "path": "raw/node-label.csv.gz",
+      "bytes": 123505,
+      "sha256": "b06e7cf75d909de66ce49bc4188a6dc525224f85dd6dcb36137de3d9321830d1",
+      "verified": true
+    },
+    {
+      "path": "raw/num-node-list.csv.gz",
+      "bytes": 51,
+      "sha256": "9aa60a342efd209408933ace51e6b0a814e81c2894a993c44f9b173e477e2e82",
+      "verified": true
+    },
+    {
+      "path": "raw/num-edge-list.csv.gz",
+      "bytes": 52,
+      "sha256": "430f1e00ae204bbb3208c5f494ab70170e9f2995fd3548d1754a74a8f59250d1",
+      "verified": true
+    },
+    {
+      "path": "split/time/train.csv.gz",
+      "bytes": 211044,
+      "sha256": "84983391900af45194e5db8d977ec9e01d4eda96e20328f3d7575fdd45c6797c",
+      "verified": true
+    },
+    {
+      "path": "split/time/valid.csv.gz",
+      "bytes": 66916,
+      "sha256": "ebe6cdcd77c75eedbce2064a05a49bc28e2c4a631f49d66b9e9ff317eef993eb",
+      "verified": true
+    },
+    {
+      "path": "split/time/test.csv.gz",
+      "bytes": 113234,
+      "sha256": "588fb66ce57bcaef51ac0235f0a49a056370ac31fc27c8ebf556d3f5cdd02545",
+      "verified": true
+    }
+  ],
+  "cluster": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS/lc_ego_graphs/ogbn-arxiv-lc-ego-graphs-256.pt",
+    "bytes": 232390624,
+    "sha256": "799109e42902360542306d8fede242cfc166accbf0f9e834a5348b6741150aa7",
+    "nodes": 169343,
+    "generation_seconds": 993.6328127589077,
+    "split_order": [
+      "train",
+      "valid",
+      "test"
+    ],
+    "source": "Self-generated from frozen upstream ACL procedure; not the unavailable author precomputed file",
+    "save_readback_equal": true
+  }
+}

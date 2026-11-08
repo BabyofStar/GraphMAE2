@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# 不纳入版本库的运行时环境与日志
+outputs/**/preprocess_env/
+outputs/**/*.log

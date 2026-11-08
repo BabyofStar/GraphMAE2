@@ -1,0 +1,9 @@
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/create_venv.log
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/isolated_dependencies.log
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/install_lgc.log
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/native_probe.log
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/native_build.log
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/native_probe_rebuilt.log
+STEP_LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/cluster_worker.log
+CLUSTER_PREPARATION_STATUS=CLUSTERS_READY_FOR_L1
+RETURN_FILE=/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/clustering_return.zip

@@ -1,0 +1,197 @@
+{
+  "stage": "LC CPU preprocessing",
+  "time_beijing": "2026-11-07T21:15:46.941738+08:00",
+  "training_started": false,
+  "model_constructed": false,
+  "library_version": "0.6.1",
+  "actual_environment": "/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/preprocess_env",
+  "contract": {
+    "asset_root": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS",
+    "ogb_archive_sha256": "49f85c801589ecdcc52cfaca99693aaea7b8af16a9ac3f41dd85a5f3193fe276",
+    "raw_files": [
+      {
+        "path": "raw/edge.csv.gz",
+        "bytes": 5033515,
+        "sha256": "47629e986116407d27eff4c9d2e923f06bf5da5c85cbae93b660f530bc9355df"
+      },
+      {
+        "path": "raw/node-feat.csv.gz",
+        "bytes": 76357181,
+        "sha256": "60a844c7aff2f129335d34da2f6b9271bd1cac03aff8c70c229e6f0d13624718"
+      },
+      {
+        "path": "raw/node-label.csv.gz",
+        "bytes": 123505,
+        "sha256": "b06e7cf75d909de66ce49bc4188a6dc525224f85dd6dcb36137de3d9321830d1"
+      },
+      {
+        "path": "raw/num-node-list.csv.gz",
+        "bytes": 51,
+        "sha256": "9aa60a342efd209408933ace51e6b0a814e81c2894a993c44f9b173e477e2e82"
+      },
+      {
+        "path": "raw/num-edge-list.csv.gz",
+        "bytes": 52,
+        "sha256": "430f1e00ae204bbb3208c5f494ab70170e9f2995fd3548d1754a74a8f59250d1"
+      },
+      {
+        "path": "split/time/train.csv.gz",
+        "bytes": 211044,
+        "sha256": "84983391900af45194e5db8d977ec9e01d4eda96e20328f3d7575fdd45c6797c"
+      },
+      {
+        "path": "split/time/valid.csv.gz",
+        "bytes": 66916,
+        "sha256": "ebe6cdcd77c75eedbce2064a05a49bc28e2c4a631f49d66b9e9ff317eef993eb"
+      },
+      {
+        "path": "split/time/test.csv.gz",
+        "bytes": 113234,
+        "sha256": "588fb66ce57bcaef51ac0235f0a49a056370ac31fc27c8ebf556d3f5cdd02545"
+      }
+    ],
+    "expected_nodes": 169343,
+    "expected_raw_edges": 1166243,
+    "expected_split_counts": {
+      "train": 90941,
+      "valid": 29799,
+      "test": 48603
+    },
+    "localclustering_source_sha256": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
+    "localgraphclustering_version": "0.6.1",
+    "wheel_sha256": "08a5b44581af83d1f935cb9b91b90d2fbc47556186fa9195c1ed8ee925c5cac1",
+    "source_sha256": "9b8f1091e9e7ed00e6259ac8d730d2211cbbf820416f092c259fe34ddb2c5ef3",
+    "ego_size": 256,
+    "iterations": 1000,
+    "alpha": 0.15,
+    "rho": 1e-06,
+    "method": "acl",
+    "normalize": false,
+    "workers": 2,
+    "timing_pilot_counts": {
+      "train": 128,
+      "valid": 64,
+      "test": 64
+    },
+    "max_full_preprocessing_seconds": 1800
+  },
+  "memory_before": {
+    "memory.current": "34057342976\n",
+    "memory.peak": "34365947904\n",
+    "memory.max": "34359738368\n",
+    "memory.stat": "anon 171929600\nfile 33130463232\nkernel 754507776\nkernel_stack 212992\npagetables 1318912\nsec_pagetables 0\npercpu 10800\nsock 4096\nvmalloc 32768\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 18378752\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 0\nactive_anon 171855872\ninactive_file 23857823744\nactive_file 9272635392\nunevictable 0\nslab_reclaimable 751695824\nslab_unreclaimable 1104376\nslab 752800200\nworkingset_refault_anon 0\nworkingset_refault_file 6514380\nworkingset_activate_anon 0\nworkingset_activate_file 6505825\nworkingset_restore_anon 0\nworkingset_restore_file 1739\nworkingset_nodereclaim 0\npgscan 15329319\npgsteal 15329285\npgscan_kswapd 0\npgscan_direct 15329319\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 15329285\npgsteal_khugepaged 0\npgfault 180565131\npgmajfault 11047\npgrefill 4187649\npgactivate 3\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 2274\nthp_collapse_alloc 5\nthp_swpout 0\nthp_swpout_fallback 0\n",
+    "memory.events": "low 0\nhigh 0\nmax 112887\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=6010142\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=6010142\n",
+    "cpu.max": "400000 100000\n",
+    "process_lifetime_max_rss_KiB": 39936
+  },
+  "tiny_graph_exact_node_checks": 6,
+  "graph_loading_and_preparation_seconds": 5.118181588826701,
+  "graph": {
+    "nodes": 169343,
+    "edges_with_self_loops": 2484941,
+    "feature_shape": [
+      169343,
+      128
+    ],
+    "csr_indptr_sha256": "f3795e9169e9246ad50925bd2ee2bd941e2fa9b50a3f6c0af6e1bc205e43bc4a",
+    "csr_indices_sha256": "baf50afc37d978d95d9b4990e5f2c574e92efb07700341f4017f358fb727305b",
+    "split_sha256": {
+      "train": "f537262ebef28fadc8b27b320e0707fcb3fb5eaeabb365ac8d41850ee14ae683",
+      "valid": "885303bdd89d5e3270982a9750439a1df049c968262c1b2d65f03557bb950b69",
+      "test": "fd7d97cf32b0587be3d055323f67f0fd16370baa434fa2cec5a87733142487fb"
+    }
+  },
+  "arxiv_exact_node_checks": [
+    {
+      "split": "train",
+      "root": 0,
+      "nodes": 256
+    },
+    {
+      "split": "train",
+      "root": 84665,
+      "nodes": 256
+    },
+    {
+      "split": "train",
+      "root": 169251,
+      "nodes": 256
+    },
+    {
+      "split": "valid",
+      "root": 349,
+      "nodes": 256
+    },
+    {
+      "split": "valid",
+      "root": 84177,
+      "nodes": 256
+    },
+    {
+      "split": "valid",
+      "root": 169296,
+      "nodes": 256
+    },
+    {
+      "split": "test",
+      "root": 346,
+      "nodes": 256
+    },
+    {
+      "split": "test",
+      "root": 85372,
+      "nodes": 256
+    },
+    {
+      "split": "test",
+      "root": 169342,
+      "nodes": 256
+    }
+  ],
+  "pilot": {
+    "root_count": 256,
+    "serial_mean_seconds_by_split": {
+      "train": 0.009199774105582037,
+      "valid": 0.014499529639579123,
+      "test": 0.014810447770287283
+    },
+    "serial_max_seconds": 0.039596793008968234,
+    "node_count_min_mean_max": [
+      32,
+      251.7265625,
+      256
+    ],
+    "two_worker_wall_seconds": 1.6197562168817967,
+    "parallel_exact_node_checks": 256,
+    "estimated_full_two_worker_seconds": 994.2701668224136,
+    "observed_overhead_adjusted_estimate_seconds": 1054.870111764434,
+    "estimate_scope": "Extrapolated from fixed input-only pilot; no guarantee of complete runtime"
+  },
+  "cluster_file": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS/lc_ego_graphs/ogbn-arxiv-lc-ego-graphs-256.pt",
+    "bytes": 232390624,
+    "sha256": "799109e42902360542306d8fede242cfc166accbf0f9e834a5348b6741150aa7",
+    "nodes": 169343,
+    "generation_seconds": 993.6328127589077,
+    "split_order": [
+      "train",
+      "valid",
+      "test"
+    ],
+    "source": "Self-generated from frozen upstream ACL procedure; not the unavailable author precomputed file",
+    "save_readback_equal": true
+  },
+  "status": "COMPLETE_SELF_GENERATED_UPSTREAM_LC",
+  "wall_seconds": 1014.1870879749767,
+  "memory_after": {
+    "memory.current": "33855467520\n",
+    "memory.peak": "34365947904\n",
+    "memory.max": "34359738368\n",
+    "memory.stat": "anon 1748361216\nfile 31347122176\nkernel 759840768\nkernel_stack 229376\npagetables 5373952\nsec_pagetables 0\npercpu 10000\nsock 0\nvmalloc 32768\nshmem 32768\nzswap 0\nzswapped 0\nfile_mapped 211095552\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 18874368\nfile_thp 0\nshmem_thp 0\ninactive_anon 0\nactive_anon 1748385792\ninactive_file 21750546432\nactive_file 9596542976\nunevictable 0\nslab_reclaimable 752542320\nslab_unreclaimable 1523632\nslab 754065952\nworkingset_refault_anon 0\nworkingset_refault_file 6514380\nworkingset_activate_anon 0\nworkingset_activate_file 6505825\nworkingset_restore_anon 0\nworkingset_restore_file 1739\nworkingset_nodereclaim 0\npgscan 15848359\npgsteal 15848325\npgscan_kswapd 0\npgscan_direct 15848359\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 15848325\npgsteal_khugepaged 0\npgfault 182551931\npgmajfault 11061\npgrefill 4266280\npgactivate 3\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 2429\nthp_collapse_alloc 5\nthp_swpout 0\nthp_swpout_fallback 0\n",
+    "memory.events": "low 0\nhigh 0\nmax 112911\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "memory.pressure": "some avg10=0.68 avg60=0.15 avg300=0.03 total=6179840\nfull avg10=0.68 avg60=0.15 avg300=0.03 total=6179840\n",
+    "cpu.max": "400000 100000\n",
+    "process_lifetime_max_rss_KiB": 2254232
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/all_root_embeddings_a0001.npy",
+  "bytes": 693629056,
+  "sha256": "c653ce924b3cb34ee7d8a90a2e3005396537ef31b7efa45c2af6c0695bed6fac",
+  "shape": [
+    169343,
+    1024
+  ],
+  "dtype": "float32",
+  "root_ids_path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/embedding_root_ids_a0001.npy",
+  "root_ids_sha256": "d12632d40d8646dbd814ce43fe6b5e76c85fa54917ba64fe8565956acb35a30c",
+  "root_order_sha256": "df02a4bbdb3fdbb9e86816a3bcd6c3ce9d54e6fc75f7b1410a24e4a816188b09",
+  "rows": 169343,
+  "compute_and_batch_IO_seconds": 180.14011744502932,
+  "flush_verify_and_hash_seconds": 0.9986434220336378
+}

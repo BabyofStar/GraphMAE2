@@ -1,0 +1,19 @@
+{
+  "project": "/home/jovyan/work/GraphMAE2",
+  "artifacts": "/home/jovyan/work/GraphMAE2_artifacts",
+  "remote": "course_backup",
+  "remote_url": "ssh://git@ssh.github.com:443/BabyofStar/GraphMAE2.git",
+  "remote_branch": "main",
+  "original_branch": "feat/structure-curriculum",
+  "original_HEAD": "8062dd851552c4f519924d75a28e85dc068c58ab",
+  "observed_remote_main": "3356c1919530e880bff703926859ec2f5eb6771a",
+  "repo": "BabyofStar/GraphMAE2",
+  "source_files": 3766,
+  "weight_files": 235,
+  "weight_bytes": 8790751492,
+  "part_bytes": 1073741824,
+  "gh_version": "2.103.3",
+  "release_tag_prefix": "weights-backup-20261108-",
+  "source_commit_message": "backup: GraphMAE2 complete experiments and closeout evidence 2026-11-08",
+  "metadata_commit_message": "docs: verify independent GitHub weight backup 2026-11-08"
+}

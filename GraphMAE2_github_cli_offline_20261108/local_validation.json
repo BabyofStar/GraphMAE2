@@ -1,0 +1,14 @@
+{
+  "time_beijing": "2026-11-08T16:36:05.961032+08:00",
+  "checks_passed": 6,
+  "official_api_asset_digests": "MATCH",
+  "official_checksums_file_archive_hash": "MATCH",
+  "python310_ast": "PASS",
+  "actual_official_archive_extraction_and_idempotent_resume": "PASS",
+  "existing_different_binary_preserved": "PASS",
+  "wrong_job_original_identity_and_missing_receipt_rejected": "PASS",
+  "original_package_unchanged": true,
+  "server_or_GitHub_writes_performed": false,
+  "linux_binary_executed_locally": false,
+  "bash_runtime": "Not run locally; wrapper invokes bash -n on server before mutation"
+}

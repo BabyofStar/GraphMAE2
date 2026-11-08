@@ -1,0 +1,27 @@
+{
+  "pid": 191568,
+  "stage": "inference",
+  "attempt": "a0001",
+  "command": [
+    "/home/jovyan/work/envs/graphmae2/bin/python",
+    "-B",
+    "/home/jovyan/work/GraphMAE2/GraphMAE2_arxiv_A_full_20261107/formal_worker.py",
+    "--stage",
+    "inference",
+    "--snapshot",
+    "/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/frozen_source",
+    "--output-dir",
+    "/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj",
+    "--assets",
+    "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj",
+    "--result",
+    "/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/inference.json",
+    "--attempt",
+    "a0001"
+  ],
+  "inherited_job_lock_fds": [
+    8,
+    9
+  ],
+  "time_beijing": "2026-11-08T12:48:26.972845+08:00"
+}

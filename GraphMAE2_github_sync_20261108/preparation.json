@@ -1,0 +1,49 @@
+{
+  "stage": "GitHub source synchronization and Release weight-backup preparation",
+  "time_beijing": "2026-11-08T15:55:17.449080+08:00",
+  "destination": "GitHub BabyofStar/GraphMAE2: main + separate Release assets",
+  "project": "/home/jovyan/work/GraphMAE2",
+  "artifact_root": "/home/jovyan/work/GraphMAE2_artifacts",
+  "git_mutated": false,
+  "github_mutated": false,
+  "weights_archived": false,
+  "independent_backup_complete": false,
+  "branch": "feat/structure-curriculum",
+  "HEAD": "8062dd851552c4f519924d75a28e85dc068c58ab",
+  "course_backup": {
+    "fetch": {
+      "exit_code": 0,
+      "urls_redacted": [
+        "ssh://git@ssh.github.com:443/BabyofStar/GraphMAE2.git"
+      ],
+      "exact_expected_match": true
+    },
+    "push": {
+      "exit_code": 0,
+      "urls_redacted": [
+        "ssh://git@ssh.github.com:443/BabyofStar/GraphMAE2.git"
+      ],
+      "exact_expected_match": true
+    }
+  },
+  "target_remote_branch": "refs/heads/main",
+  "source_inventory_started": true,
+  "audited_source_differences": [],
+  "source_candidate_count": 3766,
+  "source_candidate_bytes": 558007471,
+  "source_issues": 0,
+  "missing_tracked_count": 0,
+  "weight_count": 235,
+  "weight_bytes": 8790751492,
+  "weight_issues": 0,
+  "existing_API_login_ready": false,
+  "staging_disk": {
+    "total": 16492674416640,
+    "used": 1026599944192,
+    "free": 15466074472448
+  },
+  "private_key_present": true,
+  "git_object_format": "sha1",
+  "status": "PREPARATION_COLLECTED_REVIEW_REQUIRED",
+  "wall_seconds": 19.545795812970027
+}

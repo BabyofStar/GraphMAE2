@@ -1,0 +1,7 @@
+{
+  "remote": "course_backup",
+  "target_branch": "main",
+  "sha": "3356c1919530e880bff703926859ec2f5eb6771a",
+  "status": "PASS",
+  "private_key_or_token_contents_saved": false
+}

@@ -1,0 +1,116 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-08 04:51:46,130 - INFO - ----- Using best configs from configs/ogbn-arxiv.yaml -----
+2026-11-08 04:51:46,316 - INFO - --- to undirected graph ---
+2026-11-08 04:51:46,976 - INFO - ### scaling features ###
+PROBE seed=0 epoch=100/1000 best_val=0.726132 elapsed=47.7
+PROBE seed=0 epoch=200/1000 best_val=0.726836 elapsed=95.6
+PROBE seed=0 epoch=300/1000 best_val=0.726937 elapsed=143.9
+PROBE seed=0 epoch=400/1000 best_val=0.726937 elapsed=192.1
+PROBE seed=0 epoch=500/1000 best_val=0.726937 elapsed=240.4
+PROBE seed=0 epoch=600/1000 best_val=0.726937 elapsed=288.5
+PROBE seed=0 epoch=700/1000 best_val=0.726937 elapsed=336.8
+PROBE seed=0 epoch=800/1000 best_val=0.726937 elapsed=385.1
+PROBE seed=0 epoch=900/1000 best_val=0.726937 elapsed=433.4
+PROBE seed=0 epoch=1000/1000 best_val=0.726937 elapsed=481.6
+PROBE_COMPLETE seed=0 test=0.715429
+PROBE seed=1 epoch=100/1000 best_val=0.726132 elapsed=47.4
+PROBE seed=1 epoch=200/1000 best_val=0.726232 elapsed=94.7
+PROBE seed=1 epoch=300/1000 best_val=0.726501 elapsed=141.4
+PROBE seed=1 epoch=400/1000 best_val=0.726534 elapsed=183.0
+PROBE seed=1 epoch=500/1000 best_val=0.726635 elapsed=228.9
+PROBE seed=1 epoch=600/1000 best_val=0.726635 elapsed=275.5
+PROBE seed=1 epoch=700/1000 best_val=0.726904 elapsed=323.3
+PROBE seed=1 epoch=800/1000 best_val=0.726904 elapsed=371.5
+PROBE seed=1 epoch=900/1000 best_val=0.726904 elapsed=419.4
+PROBE seed=1 epoch=1000/1000 best_val=0.726904 elapsed=467.5
+PROBE_COMPLETE seed=1 test=0.714832
+PROBE seed=2 epoch=100/1000 best_val=0.726065 elapsed=47.1
+PROBE seed=2 epoch=200/1000 best_val=0.726300 elapsed=94.0
+PROBE seed=2 epoch=300/1000 best_val=0.726534 elapsed=141.1
+PROBE seed=2 epoch=400/1000 best_val=0.726534 elapsed=188.2
+PROBE seed=2 epoch=500/1000 best_val=0.726534 elapsed=235.2
+PROBE seed=2 epoch=600/1000 best_val=0.726568 elapsed=281.9
+PROBE seed=2 epoch=700/1000 best_val=0.726568 elapsed=328.8
+PROBE seed=2 epoch=800/1000 best_val=0.726568 elapsed=375.7
+PROBE seed=2 epoch=900/1000 best_val=0.726568 elapsed=422.5
+PROBE seed=2 epoch=1000/1000 best_val=0.726568 elapsed=469.6
+PROBE_COMPLETE seed=2 test=0.715450
+PROBE seed=3 epoch=100/1000 best_val=0.726232 elapsed=33.8
+PROBE seed=3 epoch=200/1000 best_val=0.726300 elapsed=67.9
+PROBE seed=3 epoch=300/1000 best_val=0.726333 elapsed=102.0
+PROBE seed=3 epoch=400/1000 best_val=0.726400 elapsed=135.9
+PROBE seed=3 epoch=500/1000 best_val=0.726669 elapsed=169.6
+PROBE seed=3 epoch=600/1000 best_val=0.726669 elapsed=203.6
+PROBE seed=3 epoch=700/1000 best_val=0.726769 elapsed=237.8
+PROBE seed=3 epoch=800/1000 best_val=0.726769 elapsed=272.0
+PROBE seed=3 epoch=900/1000 best_val=0.726769 elapsed=305.8
+PROBE seed=3 epoch=1000/1000 best_val=0.726769 elapsed=339.7
+PROBE_COMPLETE seed=3 test=0.716129
+PROBE seed=4 epoch=100/1000 best_val=0.726300 elapsed=44.3
+PROBE seed=4 epoch=200/1000 best_val=0.726669 elapsed=82.3
+PROBE seed=4 epoch=300/1000 best_val=0.726870 elapsed=127.5
+PROBE seed=4 epoch=400/1000 best_val=0.726870 elapsed=172.9
+PROBE seed=4 epoch=500/1000 best_val=0.726870 elapsed=218.8
+PROBE seed=4 epoch=600/1000 best_val=0.726870 elapsed=264.4
+PROBE seed=4 epoch=700/1000 best_val=0.726870 elapsed=309.8
+PROBE seed=4 epoch=800/1000 best_val=0.726870 elapsed=355.9
+PROBE seed=4 epoch=900/1000 best_val=0.726870 elapsed=401.0
+PROBE seed=4 epoch=1000/1000 best_val=0.726870 elapsed=445.8
+PROBE_COMPLETE seed=4 test=0.714688
+PROBE seed=5 epoch=100/1000 best_val=0.726031 elapsed=47.9
+PROBE seed=5 epoch=200/1000 best_val=0.726098 elapsed=95.9
+PROBE seed=5 epoch=300/1000 best_val=0.726635 elapsed=144.5
+PROBE seed=5 epoch=400/1000 best_val=0.726635 elapsed=192.9
+PROBE seed=5 epoch=500/1000 best_val=0.726669 elapsed=241.4
+PROBE seed=5 epoch=600/1000 best_val=0.726669 elapsed=290.1
+PROBE seed=5 epoch=700/1000 best_val=0.726669 elapsed=338.7
+PROBE seed=5 epoch=800/1000 best_val=0.726669 elapsed=387.2
+PROBE seed=5 epoch=900/1000 best_val=0.726669 elapsed=435.6
+PROBE seed=5 epoch=1000/1000 best_val=0.726669 elapsed=484.1
+PROBE_COMPLETE seed=5 test=0.715100
+PROBE seed=6 epoch=100/1000 best_val=0.726132 elapsed=45.7
+PROBE seed=6 epoch=200/1000 best_val=0.726266 elapsed=91.8
+PROBE seed=6 epoch=300/1000 best_val=0.726736 elapsed=137.8
+PROBE seed=6 epoch=400/1000 best_val=0.726736 elapsed=184.6
+PROBE seed=6 epoch=500/1000 best_val=0.726736 elapsed=231.3
+PROBE seed=6 epoch=600/1000 best_val=0.726736 elapsed=277.1
+PROBE seed=6 epoch=700/1000 best_val=0.726736 elapsed=322.6
+PROBE seed=6 epoch=800/1000 best_val=0.726736 elapsed=368.6
+PROBE seed=6 epoch=900/1000 best_val=0.726736 elapsed=414.6
+PROBE seed=6 epoch=1000/1000 best_val=0.726736 elapsed=460.7
+PROBE_COMPLETE seed=6 test=0.716458
+PROBE seed=7 epoch=100/1000 best_val=0.725998 elapsed=48.6
+PROBE seed=7 epoch=200/1000 best_val=0.726065 elapsed=97.5
+PROBE seed=7 epoch=300/1000 best_val=0.726501 elapsed=145.8
+PROBE seed=7 epoch=400/1000 best_val=0.726501 elapsed=194.1
+PROBE seed=7 epoch=500/1000 best_val=0.726501 elapsed=242.6
+PROBE seed=7 epoch=600/1000 best_val=0.726568 elapsed=291.2
+PROBE seed=7 epoch=700/1000 best_val=0.726568 elapsed=339.7
+PROBE seed=7 epoch=800/1000 best_val=0.726836 elapsed=388.3
+PROBE seed=7 epoch=900/1000 best_val=0.726836 elapsed=436.8
+PROBE seed=7 epoch=1000/1000 best_val=0.726836 elapsed=485.5
+PROBE_COMPLETE seed=7 test=0.715594
+PROBE seed=8 epoch=100/1000 best_val=0.726534 elapsed=46.5
+PROBE seed=8 epoch=200/1000 best_val=0.726534 elapsed=93.1
+PROBE seed=8 epoch=300/1000 best_val=0.726736 elapsed=140.2
+PROBE seed=8 epoch=400/1000 best_val=0.726736 elapsed=187.1
+PROBE seed=8 epoch=500/1000 best_val=0.726736 elapsed=233.7
+PROBE seed=8 epoch=600/1000 best_val=0.726736 elapsed=279.8
+PROBE seed=8 epoch=700/1000 best_val=0.726736 elapsed=326.4
+PROBE seed=8 epoch=800/1000 best_val=0.726736 elapsed=372.8
+PROBE seed=8 epoch=900/1000 best_val=0.726736 elapsed=419.3
+PROBE seed=8 epoch=1000/1000 best_val=0.726736 elapsed=465.9
+PROBE_COMPLETE seed=8 test=0.714874
+PROBE seed=9 epoch=100/1000 best_val=0.726165 elapsed=33.8
+PROBE seed=9 epoch=200/1000 best_val=0.726870 elapsed=67.8
+PROBE seed=9 epoch=300/1000 best_val=0.726904 elapsed=101.8
+PROBE seed=9 epoch=400/1000 best_val=0.726904 elapsed=135.6
+PROBE seed=9 epoch=500/1000 best_val=0.726904 elapsed=169.5
+PROBE seed=9 epoch=600/1000 best_val=0.726904 elapsed=203.7
+PROBE seed=9 epoch=700/1000 best_val=0.726904 elapsed=237.6
+PROBE seed=9 epoch=800/1000 best_val=0.726904 elapsed=271.5
+PROBE seed=9 epoch=900/1000 best_val=0.726904 elapsed=305.1
+PROBE seed=9 epoch=1000/1000 best_val=0.726904 elapsed=339.1
+PROBE_COMPLETE seed=9 test=0.715655
+FORMAL_STAGE_STATUS=PASS_TEN_FULL_PROBES

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_LOCAL_LOGIC_ONLY",
+  "date": "2026-11-08 Asia/Shanghai",
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "Python_3_10_AST_pass": true,
+  "shell_LF_only": true,
+  "bash_runtime_syntax_check_completed": false,
+  "bash_check_limit": "Local MSYS process could not start because its Windows object-directory creation was denied; shell file reviewed without claiming an executed syntax check.",
+  "test_source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-06\\yi-j\\work\\test_github_prepare.py",
+  "test_source_sha256": "51b30d7f2a9b29189376df2eb41f1fb1d91149b3bfbe6472201f09d54038c17e",
+  "server_inventory_not_yet_collected": true,
+  "git_or_github_mutations_performed": false,
+  "independent_weight_backup_complete": false
+}

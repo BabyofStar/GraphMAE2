@@ -1,0 +1,27 @@
+{
+  "stage": "L0 review",
+  "time_beijing": "2026-11-06T20:59:16.911068+08:00",
+  "input_sha256": "2e410e377ffc2f6e769dff68f594eef34f0f3ce3efcdb432abd70573cf1618cd",
+  "J55_matching_files": 55,
+  "large_reference_matching_files": 6,
+  "GPU_visible_GiB": 15.625,
+  "cgroup_memory_max_GiB": 32,
+  "cgroup_memory_current_GiB": 31.75680160522461,
+  "raw_headroom_MiB": 249.03515625,
+  "cpu_quota_equivalent_cores": 4,
+  "arxiv_cache_found": false,
+  "local_cluster_found": false,
+  "OGB_installed": "1.3.6",
+  "localgraphclustering_installed": false,
+  "server_HEAD": "8062dd851552c4f519924d75a28e85dc068c58ab",
+  "tracked_worktree_clean": true,
+  "remote_HEAD_verified": false,
+  "decision": "L0 prerequisites incomplete. Need memory.stat/pressure/events and GPU visibility followup; data and LC preparation pending. Do not start training.",
+  "caveats": [
+    "memory.current includes file cache; raw headroom is not a usable-memory estimate",
+    "CPU affinity 48 is not CPU quota 4",
+    "Conflicting GPU snapshots do not establish idle",
+    "No personal disk quota established",
+    "Current J55 identity does not audit J12 per-run artifacts"
+  ]
+}

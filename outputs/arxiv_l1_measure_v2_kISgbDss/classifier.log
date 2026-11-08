@@ -1,0 +1,11 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-07 14:29:20,692 - INFO - ----- Using best configs from configs/ogbn-arxiv.yaml -----
+2026-11-07 14:29:20,876 - INFO - --- to undirected graph ---
+2026-11-07 14:29:21,538 - INFO - ### scaling features ###
+PROBE_TIMING epoch=1/5 seconds=0.548
+PROBE_TIMING epoch=2/5 seconds=0.378
+PROBE_TIMING epoch=3/5 seconds=0.375
+PROBE_TIMING epoch=4/5 seconds=0.383
+PROBE_TIMING epoch=5/5 seconds=0.387
+MEASUREMENT_STAGE_STATUS=PASS_CLASSIFIER_TIMING

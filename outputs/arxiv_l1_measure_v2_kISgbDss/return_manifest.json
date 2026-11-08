@@ -1,0 +1,135 @@
+{
+  "files": [
+    {
+      "path": "budget_estimate.json",
+      "bytes": 620,
+      "sha256": "92cee386f3f406836e298a463aebaa5b387c15b0253c68c25fcb6e2ac5b62370"
+    },
+    {
+      "path": "classifier.json",
+      "bytes": 9555,
+      "sha256": "31d756fea8805c507c61fc2559817e46393465c08f60492ef09831312e23f30c"
+    },
+    {
+      "path": "classifier.log",
+      "bytes": 816,
+      "sha256": "1d9c8e39595030d243d14b5fc27249e75518e358657ba22b8280055db844d775"
+    },
+    {
+      "path": "classifier_epochs.jsonl",
+      "bytes": 1362,
+      "sha256": "0999012593c0899af53f8f7256593f53833cde9a4da9dc887b22a57dcd737405"
+    },
+    {
+      "path": "classifier_resources.jsonl",
+      "bytes": 7079,
+      "sha256": "ed05e8268143a787b1a4e7052b1aa45c22e02d101848c5a2c510d163b06154d4"
+    },
+    {
+      "path": "embedding_receipt.json",
+      "bytes": 695,
+      "sha256": "628ff1e2ea09f611089b1d8d5ebf980dda6b044f2241bbb8c45c3ba64d3ee78a"
+    },
+    {
+      "path": "frozen_contract.json",
+      "bytes": 13759,
+      "sha256": "aa3c49d27e1406266c877de87a9ee8ede9cdf5c6b547202d195dde3824921533"
+    },
+    {
+      "path": "infer_capacity_256.json",
+      "bytes": 8617,
+      "sha256": "90cadf151d6830680561efbfbc68d503795859b5614b109d17d141c0bce7816d"
+    },
+    {
+      "path": "infer_capacity_256.log",
+      "bytes": 943,
+      "sha256": "b376befa81f3319b3e93449146c4952bacc7561be944a8faeffaf489bae4a227"
+    },
+    {
+      "path": "infer_capacity_256_resources.jsonl",
+      "bytes": 5305,
+      "sha256": "fa6c6f310f5ffc019b03770b63c1984b3ee63dbc5ad9bd8967f4609e2062910a"
+    },
+    {
+      "path": "inference.json",
+      "bytes": 8229,
+      "sha256": "a9e955f6655082259f8c85c17fe99db6978f9cdef5ff827605f4d5e5d699447f"
+    },
+    {
+      "path": "inference.log",
+      "bytes": 4166,
+      "sha256": "47d69739acc65d010fc226034435b4b3d584b2c302fe02abb8685b3ab0dcec20"
+    },
+    {
+      "path": "inference_batches.jsonl",
+      "bytes": 70598,
+      "sha256": "e67ed326fdcb88f7705a326d1793e8cbb155f43a25b491ec5ee735788f0032c6"
+    },
+    {
+      "path": "inference_resources.jsonl",
+      "bytes": 69603,
+      "sha256": "44e10cfaf6de4962ef41ae3b792a908dec0f5a8759e08fdad95a333711eccbea"
+    },
+    {
+      "path": "input_identity.json",
+      "bytes": 2056,
+      "sha256": "97311f79ea31da69409c3ace1b395aa0f6d68f7bf5e613fd7bf3019e0b191a2a"
+    },
+    {
+      "path": "measurement.json",
+      "bytes": 8794,
+      "sha256": "a91f7f3dfbf4592fe39ffef318aeaff69f017a05c4f0979e0cea98b64ff354bc"
+    },
+    {
+      "path": "pretrain.json",
+      "bytes": 10382,
+      "sha256": "95521196956907b370e1fd4119575540aa95aee5394a05a7be0a0ff9015cb907"
+    },
+    {
+      "path": "pretrain.log",
+      "bytes": 4318,
+      "sha256": "40886339871862e99ff89e80442238365303cf2065fd108c53b45b38304c3f29"
+    },
+    {
+      "path": "pretrain_batches.jsonl",
+      "bytes": 337100,
+      "sha256": "28fc52f5bcf7900ea7e3473b8e92ef96a025154e9b64f676893ffad9e3448445"
+    },
+    {
+      "path": "pretrain_resources.jsonl",
+      "bytes": 262026,
+      "sha256": "8b8b906355543f81b5b6104f74e6b4fefcc6c2826e7db4ef40394154b7b0a2c9"
+    },
+    {
+      "path": "progress.json",
+      "bytes": 2227,
+      "sha256": "1c45e31dfbc3f2fe40a8666519f2025f931453c968e94a50e76dbe7559f2c2ed"
+    },
+    {
+      "path": "source_identity.json",
+      "bytes": 5932,
+      "sha256": "a7a4c6876fb1be334d402a65513637266c13ca517097ea20123409e334a404ed"
+    },
+    {
+      "path": "source_snapshot.tar",
+      "bytes": 727040,
+      "sha256": "872898834628ce02122d8844cefd3b8e439fc44947831a44e659f23970d965df"
+    },
+    {
+      "path": "train_capacity_256.json",
+      "bytes": 9251,
+      "sha256": "4b643a0f2e9c879128aaeb06bd9b3a828f9458dfbb58130760334feea6b484cf"
+    },
+    {
+      "path": "train_capacity_256.log",
+      "bytes": 943,
+      "sha256": "1bb6afa3b26e1246563e4063ba77da4375035c17bd7fbce101075037d040508e"
+    },
+    {
+      "path": "train_capacity_256_resources.jsonl",
+      "bytes": 7071,
+      "sha256": "dc720230bc61648fd55637cc0a667cba97499748ece6df059c93f026d377eafe"
+    }
+  ],
+  "scope": "Small engineering evidence only; large measured assets remain at recorded paths"
+}

@@ -1,0 +1,809 @@
+make: Entering directory '/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/native_source/localgraphclustering-0.6.1/localgraphclustering/src/lib/graph_lib_test'
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../sweepcut.o ../sweepcut.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../aclpagerank.o ../aclpagerank.cpp
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../sweepcut.cpp:43:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../aclpagerank.cpp:46:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../MQI.o ../MQI.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../MQI_weighted.o ../MQI_weighted.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../MQI_c_interface.o ../MQI_c_interface.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../MQI_weighted_c_interface.o ../MQI_weighted_c_interface.cpp
+In file included from ../include/../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/../include/sparseheap.hpp:12,
+                 from ../include/../include/routines.hpp:7,
+                 from ../include/../MQI.cpp:36,
+                 from ../include/MQI.h:14,
+                 from ../MQI_c_interface.cpp:2:
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../MQI.cpp: In instantiation of ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’:
+../MQI_c_interface.cpp:10:17:   required from here
+../include/../MQI.cpp:108:11: warning: variable ‘nedges’ set but not used [-Wunused-but-set-variable]
+  108 |     itype nedges = 0;
+      |           ^~~~~~
+In file included from ../include/../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/../include/sparseheap.hpp:12,
+                 from ../include/../include/routines.hpp:7,
+                 from ../include/../MQI_weighted.cpp:37,
+                 from ../include/MQI_weighted.h:14,
+                 from ../MQI_weighted_c_interface.cpp:2:
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../MQI.cpp: In instantiation of ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = int]’:
+../MQI_c_interface.cpp:16:17:   required from here
+../include/../MQI.cpp:108:11: warning: variable ‘nedges’ set but not used [-Wunused-but-set-variable]
+../include/../MQI.cpp: In instantiation of ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = long int]’:
+../MQI_c_interface.cpp:22:17:   required from here
+../include/../MQI.cpp:108:11: warning: variable ‘nedges’ set but not used [-Wunused-but-set-variable]
+In file included from ../include/../include/routines.hpp:327:
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’:
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’
+../MQI_c_interface.cpp:10:17:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = int; itype = int]’:
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = int]’
+../MQI_c_interface.cpp:16:17:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<int, int>, std::allocator<Edge<int, int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../MQI_weighted.cpp: In member function ‘void graph<vtype, itype>::build_map_weighted(std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, double>&, vtype*, vtype, double*)’:
+../include/../MQI_weighted.cpp:48:44: warning: declaration of ‘degrees’ shadows a member of ‘graph<vtype, itype>’ [-Wshadow]
+   48 |                                    double* degrees)
+      |                                    ~~~~~~~~^~~~~~~
+../include/../include/routines.hpp:55:13: note: shadowed declaration is here
+   55 |     double* degrees; //degrees of vertices
+      |             ^~~~~~~
+../include/../MQI_weighted.cpp: In member function ‘void graph<vtype, itype>::build_list_weighted(std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, double>&, vtype, vtype, double, double, double*)’:
+../include/../MQI_weighted.cpp:70:56: warning: declaration of ‘degrees’ shadows a member of ‘graph<vtype, itype>’ [-Wshadow]
+   70 |     vtype src, vtype dest, double A, double C, double* degrees)
+      |                                                ~~~~~~~~^~~~~~~
+../include/../include/routines.hpp:55:13: note: shadowed declaration is here
+   55 |     double* degrees; //degrees of vertices
+      |             ^~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = int; itype = long int]’:
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = long int]’
+../MQI_c_interface.cpp:22:17:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<int, long int>, std::allocator<Edge<int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’
+../MQI_c_interface.cpp:10:17:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type’ {aka ‘long int’} and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’
+../MQI_c_interface.cpp:10:17:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = int; itype = int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = int; itype = int]’
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = int]’
+../MQI_c_interface.cpp:16:17:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type’ {aka ‘int’} and ‘std::vector<Edge<int, int>, std::allocator<Edge<int, int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = int; itype = int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = int; itype = int]’
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = int]’
+../MQI_c_interface.cpp:16:17:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<int, int>, std::allocator<Edge<int, int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = int; itype = long int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = int; itype = long int]’
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = long int]’
+../MQI_c_interface.cpp:22:17:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type’ {aka ‘int’} and ‘std::vector<Edge<int, long int>, std::allocator<Edge<int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = int; itype = long int]’
+../include/../MQI.cpp:136:35:   required from ‘vtype graph<vtype, itype>::MQI(vtype, vtype*, vtype*) [with vtype = int; itype = long int]’
+../MQI_c_interface.cpp:22:17:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<int, long int>, std::allocator<Edge<int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../MQI_weighted.cpp: In instantiation of ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’:
+../MQI_weighted_c_interface.cpp:11:26:   required from here
+../include/../MQI_weighted.cpp:114:11: warning: variable ‘nedges’ set but not used [-Wunused-but-set-variable]
+  114 |     itype nedges = 0;
+      |           ^~~~~~
+../include/../MQI_weighted.cpp: In instantiation of ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = unsigned int; itype = unsigned int]’:
+../MQI_weighted_c_interface.cpp:17:26:   required from here
+../include/../MQI_weighted.cpp:137:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  137 |     for (int i = 0; i < nverts; i ++) {
+      |                     ~~^~~~~~~~
+../include/../MQI_weighted.cpp:179:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  179 |             for (int i = 0; i < nverts; i ++) {
+      |                             ~~^~~~~~~~
+../include/../MQI_weighted.cpp:114:11: warning: variable ‘nedges’ set but not used [-Wunused-but-set-variable]
+  114 |     itype nedges = 0;
+      |           ^~~~~~
+../include/../MQI_weighted.cpp: In instantiation of ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = unsigned int; itype = long int]’:
+../MQI_weighted_c_interface.cpp:23:26:   required from here
+../include/../MQI_weighted.cpp:137:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  137 |     for (int i = 0; i < nverts; i ++) {
+      |                     ~~^~~~~~~~
+../include/../MQI_weighted.cpp:179:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  179 |             for (int i = 0; i < nverts; i ++) {
+      |                             ~~^~~~~~~~
+../include/../MQI_weighted.cpp:114:11: warning: variable ‘nedges’ set but not used [-Wunused-but-set-variable]
+  114 |     itype nedges = 0;
+      |           ^~~~~~
+In file included from ../include/../include/routines.hpp:327:
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’:
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’
+../MQI_weighted_c_interface.cpp:11:26:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = unsigned int; itype = unsigned int]’
+../MQI_weighted_c_interface.cpp:17:26:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’:
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = unsigned int; itype = long int]’
+../MQI_weighted_c_interface.cpp:23:26:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’
+../MQI_weighted_c_interface.cpp:11:26:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type’ {aka ‘long int’} and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = long int; itype = long int]’
+../MQI_weighted_c_interface.cpp:11:26:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = unsigned int; itype = unsigned int]’
+../MQI_weighted_c_interface.cpp:17:26:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’
+../include/../MQI_weighted.cpp:143:35:   required from ‘vtype graph<vtype, itype>::MQI_weighted(vtype, vtype*, vtype*) [with vtype = unsigned int; itype = long int]’
+../MQI_weighted_c_interface.cpp:23:26:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../ppr_path.o ../ppr_path.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../aclpagerank_weighted.o ../aclpagerank_weighted.cpp
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../ppr_path.cpp:78:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../aclpagerank_weighted.cpp:48:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../proxl1PRaccel.o ../proxl1PRaccel.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../proxl1PRrand.o ../proxl1PRrand.cpp
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../proxl1PRaccel.cpp:29:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../proxl1PRrand.cpp:33:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../proxl1PRrand.cpp: In instantiation of ‘vtype graph<vtype, itype>::proxl1PRrand(vtype, vtype*, vtype, double, double, double, double*, double*, double*, double*, vtype, vtype*) [with vtype = unsigned int; itype = unsigned int]’:
+../proxl1PRrand.cpp:687:44:   required from here
+../proxl1PRrand.cpp:330:12: warning: unused variable ‘stepszra’ [-Wunused-variable]
+  330 |     double stepszra = stepSize*ra;
+      |            ^~~~~~~~
+../proxl1PRrand.cpp: In instantiation of ‘vtype graph<vtype, itype>::proxl1PRrand(vtype, vtype*, vtype, double, double, double, double*, double*, double*, double*, vtype, vtype*) [with vtype = long int; itype = long int]’:
+../proxl1PRrand.cpp:698:43:   required from here
+../proxl1PRrand.cpp:330:12: warning: unused variable ‘stepszra’ [-Wunused-variable]
+../proxl1PRrand.cpp: In instantiation of ‘vtype graph<vtype, itype>::proxl1PRrand(vtype, vtype*, vtype, double, double, double, double*, double*, double*, double*, vtype, vtype*) [with vtype = unsigned int; itype = long int]’:
+../proxl1PRrand.cpp:709:44:   required from here
+../proxl1PRrand.cpp:330:12: warning: unused variable ‘stepszra’ [-Wunused-variable]
+../proxl1PRrand.cpp: At global scope:
+../proxl1PRrand.cpp:131:22: warning: ‘proxl1PRrand::g_seed’ defined but not used [-Wunused-variable]
+  131 |     static long long g_seed = 1;
+      |                      ^~~~~~
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../set_scores.o ../set_scores.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../densest_subgraph_c_interface.o ../densest_subgraph_c_interface.cpp
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../set_scores.cpp:11:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../set_scores.cpp: In instantiation of ‘void create_R_map(std::unordered_map<vtype, vtype>&, T*, T) [with T = long int]’:
+../set_scores.cpp:52:26:   required from here
+../set_scores.cpp:17:26: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+   17 |     for (size_t i = 0; i < nR; i ++) {
+      |                        ~~^~~~
+In file included from ../include/../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/../include/sparseheap.hpp:12,
+                 from ../include/../include/routines.hpp:7,
+                 from ../include/../densest_subgraph.cpp:29,
+                 from ../include/densest_subgraph.h:30,
+                 from ../densest_subgraph_c_interface.cpp:2:
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../densest_subgraph.cpp: In instantiation of ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = unsigned int; itype = unsigned int]’:
+../densest_subgraph_c_interface.cpp:8:40:   required from here
+../include/../densest_subgraph.cpp:87:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+   87 |         for (int i = 0; i < nverts; i ++) {
+      |                         ~~^~~~~~~~
+../include/../densest_subgraph.cpp:62:15: warning: variable ‘maxflow’ set but not used [-Wunused-but-set-variable]
+   62 |     double g, maxflow;
+      |               ^~~~~~~
+../include/../densest_subgraph.cpp: In instantiation of ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = unsigned int; itype = long int]’:
+../densest_subgraph_c_interface.cpp:16:40:   required from here
+../include/../densest_subgraph.cpp:87:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+   87 |         for (int i = 0; i < nverts; i ++) {
+      |                         ~~^~~~~~~~
+../include/../densest_subgraph.cpp:62:15: warning: variable ‘maxflow’ set but not used [-Wunused-but-set-variable]
+   62 |     double g, maxflow;
+      |               ^~~~~~~
+../include/../densest_subgraph.cpp: In instantiation of ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = long int; itype = long int]’:
+../densest_subgraph_c_interface.cpp:24:40:   required from here
+../include/../densest_subgraph.cpp:62:15: warning: variable ‘maxflow’ set but not used [-Wunused-but-set-variable]
+In file included from ../include/../include/routines.hpp:327:
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = unsigned int; itype = unsigned int]’
+../densest_subgraph_c_interface.cpp:8:40:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’:
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = unsigned int; itype = long int]’
+../densest_subgraph_c_interface.cpp:16:40:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’:
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = long int; itype = long int]’
+../densest_subgraph_c_interface.cpp:24:40:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = unsigned int; itype = unsigned int]’
+../densest_subgraph_c_interface.cpp:8:40:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = unsigned int; itype = long int]’
+../densest_subgraph_c_interface.cpp:16:40:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = long int; itype = long int]’
+../densest_subgraph_c_interface.cpp:24:40:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type’ {aka ‘long int’} and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../densest_subgraph.cpp:85:39:   required from ‘double graph<vtype, itype>::densest_subgraph(vtype*, vtype*) [with vtype = long int; itype = long int]’
+../densest_subgraph_c_interface.cpp:24:40:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../capacity_releasing_diffusion.o ../capacity_releasing_diffusion.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../unit_flow.o ../unit_flow.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../crd_c_interface.o ../crd_c_interface.cpp
+In file included from ../include/../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/../include/sparseheap.hpp:12,
+                 from ../include/../include/routines.hpp:7,
+                 from ../include/../capacity_releasing_diffusion.cpp:3,
+                 from ../include/crd.h:73,
+                 from ../crd_c_interface.cpp:2:
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../SimpleLocal.o ../SimpleLocal.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../SimpleLocal_c_interface.o ../SimpleLocal_c_interface.cpp
+../include/../capacity_releasing_diffusion.cpp: In instantiation of ‘vtype graph<vtype, itype>::capacity_releasing_diffusion(std::vector<_Tp>&, vtype, vtype, vtype, vtype, vtype*) [with vtype = long int; itype = long int]’:
+../crd_c_interface.cpp:30:54:   required from here
+../include/../capacity_releasing_diffusion.cpp:110:26: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  110 |     for (size_t i = 0; i < iterations; i ++) {
+      |                        ~~^~~~~~~~~~~~
+In file included from ../include/../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/../include/sparseheap.hpp:12,
+                 from ../include/../include/routines.hpp:7,
+                 from ../include/../SimpleLocal.cpp:11,
+                 from ../include/SimpleLocal.h:9,
+                 from ../SimpleLocal_c_interface.cpp:2:
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../SimpleLocal.cpp: In instantiation of ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’:
+../SimpleLocal_c_interface.cpp:7:25:   required from here
+../include/../SimpleLocal.cpp:402:92: warning: comparison of integer expressions of different signedness: ‘std::unordered_map<long int, long int, std::hash<long int>, std::equal_to<long int>, std::allocator<std::pair<const long int, long int> > >::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  402 |         if ((get<0>(set_stats) <= 0) || (fullyvisited.size() == 0) || (fullyvisited.size() == n)) {
+      |                                                                       ~~~~~~~~~~~~~~~~~~~~~^~~~~
+../include/../SimpleLocal.cpp:429:70: warning: comparison of integer expressions of different signedness: ‘std::unordered_map<long int, long int, std::hash<long int>, std::equal_to<long int>, std::allocator<std::pair<const long int, long int> > >::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  429 |         if ((get<0>(set_stats) <= 0) || (S.size() == 0) || (S.size() == n)) {
+      |                                                            ~~~~~~~~~~^~~~~
+../include/../SimpleLocal.cpp:464:74: warning: comparison of integer expressions of different signedness: ‘std::unordered_map<long int, long int, std::hash<long int>, std::equal_to<long int>, std::allocator<std::pair<const long int, long int> > >::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  464 |             if ((get<0>(set_stats) <= 0) || (S.size() == 0) || (S.size() == n)) {
+      |                                                                ~~~~~~~~~~^~~~~
+In file included from ../include/../include/routines.hpp:327:
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’:
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_c_interface.cpp:7:25:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../SimpleLocal.cpp: In instantiation of ‘void graph<vtype, itype>::update_VL(std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::vector<vtype>&) [with vtype = long int; itype = long int]’:
+../include/../SimpleLocal.cpp:316:9:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_c_interface.cpp:7:25:   required from here
+../include/../SimpleLocal.cpp:111:25: warning: comparison of integer expressions of different signedness: ‘long int’ and ‘std::vector<long int, std::allocator<long int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  111 |     for (vtype i = 0; i < E.size(); i ++) {
+      |                       ~~^~~~~~~~~~
+../include/../SimpleLocal.cpp: In instantiation of ‘void graph<vtype, itype>::update_EL(std::vector<std::tuple<vtype, vtype, double> >&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, vtype, vtype, double, double) [with vtype = long int; itype = long int]’:
+../include/../SimpleLocal.cpp:318:9:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_c_interface.cpp:7:25:   required from here
+../include/../SimpleLocal.cpp:140:11: warning: unused variable ‘ARR’ [-Wunused-variable]
+  140 |     vtype ARR  = 0;
+      |           ^~~
+../include/../SimpleLocal.cpp:141:11: warning: unused variable ‘ABR’ [-Wunused-variable]
+  141 |     vtype ABR  = 0;
+      |           ^~~
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = unsigned int]’
+../SimpleLocal_c_interface.cpp:13:25:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../SimpleLocal.cpp: In instantiation of ‘void graph<vtype, itype>::update_EL(std::vector<std::tuple<vtype, vtype, double> >&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, vtype, vtype, double, double) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../SimpleLocal.cpp:318:9:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = unsigned int]’
+../SimpleLocal_c_interface.cpp:13:25:   required from here
+../include/../SimpleLocal.cpp:140:11: warning: unused variable ‘ARR’ [-Wunused-variable]
+  140 |     vtype ARR  = 0;
+      |           ^~~
+../include/../SimpleLocal.cpp:141:11: warning: unused variable ‘ABR’ [-Wunused-variable]
+  141 |     vtype ABR  = 0;
+      |           ^~~
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’:
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = long int]’
+../SimpleLocal_c_interface.cpp:19:25:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../SimpleLocal.cpp: In instantiation of ‘void graph<vtype, itype>::update_EL(std::vector<std::tuple<vtype, vtype, double> >&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, vtype, vtype, double, double) [with vtype = unsigned int; itype = long int]’:
+../include/../SimpleLocal.cpp:318:9:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = long int]’
+../SimpleLocal_c_interface.cpp:19:25:   required from here
+../include/../SimpleLocal.cpp:140:11: warning: unused variable ‘ARR’ [-Wunused-variable]
+  140 |     vtype ARR  = 0;
+      |           ^~~
+../include/../SimpleLocal.cpp:141:11: warning: unused variable ‘ABR’ [-Wunused-variable]
+  141 |     vtype ABR  = 0;
+      |           ^~~
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_c_interface.cpp:7:25:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type’ {aka ‘long int’} and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_c_interface.cpp:7:25:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = unsigned int]’
+../SimpleLocal_c_interface.cpp:13:25:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal.cpp:294:35:   required from ‘void graph<vtype, itype>::STAGEFLOW(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal.cpp:425:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = long int]’
+../SimpleLocal_c_interface.cpp:19:25:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../SimpleLocal_weighted.o ../SimpleLocal_weighted.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../SimpleLocal_weighted_c_interface.o ../SimpleLocal_weighted_c_interface.cpp
+g++ -g -std=c++11 -Wall -Wshadow -fPIC   -c -o ../triangleclusters.o ../triangleclusters.cpp
+In file included from ../include/../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/../include/sparseheap.hpp:12,
+                 from ../include/../include/routines.hpp:7,
+                 from ../include/../SimpleLocal_weighted.cpp:11,
+                 from ../include/SimpleLocal_weighted.h:9,
+                 from ../SimpleLocal_weighted_c_interface.cpp:2:
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/../SimpleLocal_weighted.cpp: In instantiation of ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’:
+../SimpleLocal_weighted_c_interface.cpp:7:34:   required from here
+../include/../SimpleLocal_weighted.cpp:370:92: warning: comparison of integer expressions of different signedness: ‘std::unordered_map<long int, long int, std::hash<long int>, std::equal_to<long int>, std::allocator<std::pair<const long int, long int> > >::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  370 |         if ((get<0>(set_stats) <= 0) || (fullyvisited.size() == 0) || (fullyvisited.size() == n)) {
+      |                                                                       ~~~~~~~~~~~~~~~~~~~~~^~~~~
+../include/../SimpleLocal_weighted.cpp:402:70: warning: comparison of integer expressions of different signedness: ‘std::unordered_map<long int, long int, std::hash<long int>, std::equal_to<long int>, std::allocator<std::pair<const long int, long int> > >::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  402 |         if ((get<0>(set_stats) <= 0) || (S.size() == 0) || (S.size() == n)) {
+      |                                                            ~~~~~~~~~~^~~~~
+../include/../SimpleLocal_weighted.cpp:438:74: warning: comparison of integer expressions of different signedness: ‘std::unordered_map<long int, long int, std::hash<long int>, std::equal_to<long int>, std::allocator<std::pair<const long int, long int> > >::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  438 |             if ((get<0>(set_stats) <= 0) || (S.size() == 0) || (S.size() == n)) {
+      |                                                                ~~~~~~~~~~^~~~~
+In file included from ../include/sparsehash/internal/densehashtable.h:100,
+                 from ../include/sparsehash/dense_hash_map.h:104,
+                 from ../include/sparseheap.hpp:12,
+                 from ../include/routines.hpp:7,
+                 from ../triangleclusters.cpp:10:
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::read_bigendian_number(INPUT*, IntType*, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:167:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  167 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+../include/sparsehash/internal/hashtable-common.h: In function ‘bool google::sparsehash_internal::write_bigendian_number(OUTPUT*, IntType, size_t)’:
+../include/sparsehash/internal/hashtable-common.h:180:29: warning: typedef ‘serializing_int_requires_an_unsigned_type’ locally defined but not used [-Wunused-local-typedefs]
+  180 |                             serializing_int_requires_an_unsigned_type);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/sparsehash/internal/hashtable-common.h:54:49: note: in definition of macro ‘SPARSEHASH_COMPILE_ASSERT’
+   54 |   typedef SparsehashCompileAssert<(bool(expr))> msg[bool(expr) ? 1 : -1]
+      |                                                 ^~~
+In file included from ../include/../include/routines.hpp:327:
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’:
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:7:34:   required from here
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../SimpleLocal_weighted.cpp: In instantiation of ‘void graph<vtype, itype>::update_VL_weighted(std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::vector<vtype>&) [with vtype = long int; itype = long int]’:
+../include/../SimpleLocal_weighted.cpp:294:9:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:7:34:   required from here
+../include/../SimpleLocal_weighted.cpp:112:25: warning: comparison of integer expressions of different signedness: ‘long int’ and ‘std::vector<long int, std::allocator<long int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  112 |     for (vtype i = 0; i < E.size(); i ++) {
+      |                       ~~^~~~~~~~~~
+../include/../SimpleLocal_weighted.cpp: In instantiation of ‘void graph<vtype, itype>::update_EL_weighted(std::vector<std::tuple<vtype, vtype, double> >&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, vtype, vtype, double, double) [with vtype = long int; itype = long int]’:
+../include/../SimpleLocal_weighted.cpp:296:9:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:7:34:   required from here
+../include/../SimpleLocal_weighted.cpp:141:11: warning: unused variable ‘ARR’ [-Wunused-variable]
+  141 |     vtype ARR  = 0;
+      |           ^~~
+../include/../SimpleLocal_weighted.cpp:142:11: warning: unused variable ‘ABR’ [-Wunused-variable]
+  142 |     vtype ABR  = 0;
+      |           ^~~
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = unsigned int]’
+../SimpleLocal_weighted_c_interface.cpp:13:34:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../SimpleLocal_weighted.cpp: In instantiation of ‘void graph<vtype, itype>::update_EL_weighted(std::vector<std::tuple<vtype, vtype, double> >&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, vtype, vtype, double, double) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../SimpleLocal_weighted.cpp:296:9:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = unsigned int]’
+../SimpleLocal_weighted_c_interface.cpp:13:34:   required from here
+../include/../SimpleLocal_weighted.cpp:141:11: warning: unused variable ‘ARR’ [-Wunused-variable]
+  141 |     vtype ARR  = 0;
+      |           ^~~
+../include/../SimpleLocal_weighted.cpp:142:11: warning: unused variable ‘ABR’ [-Wunused-variable]
+  142 |     vtype ABR  = 0;
+      |           ^~~
+../include/../include/maxflow.cpp: In instantiation of ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’:
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:19:34:   required from here
+../include/../include/maxflow.cpp:238:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+  238 |     for(int i = 0; i < V; i ++){
+      |                    ~~^~~
+../include/../include/maxflow.cpp:239:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  239 |         for(int j = 0; j < adj[i].size(); j ++){
+      |                        ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp:240:32: warning: unused variable ‘e’ [-Wunused-variable]
+  240 |             Edge<vtype,itype> &e = adj[i][j];
+      |                                ^
+../include/../SimpleLocal_weighted.cpp: In instantiation of ‘void graph<vtype, itype>::update_EL_weighted(std::vector<std::tuple<vtype, vtype, double> >&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, vtype, vtype, double, double) [with vtype = unsigned int; itype = long int]’:
+../include/../SimpleLocal_weighted.cpp:296:9:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:19:34:   required from here
+../include/../SimpleLocal_weighted.cpp:141:11: warning: unused variable ‘ARR’ [-Wunused-variable]
+  141 |     vtype ARR  = 0;
+      |           ^~~
+../include/../SimpleLocal_weighted.cpp:142:11: warning: unused variable ‘ABR’ [-Wunused-variable]
+  142 |     vtype ABR  = 0;
+      |           ^~~
+../include/../include/maxflow.cpp: In instantiation of ‘double graph<vtype, itype>::sendFlow(vtype, double, vtype, std::vector<vtype>&, std::vector<std::pair<int, double> >&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:260:23:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:7:34:   required from here
+../include/../include/maxflow.cpp:125:45: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<long int>, long int>::value_type’ {aka ‘long int’} and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  125 |             if (retVal <= 0 && (start[u]+1) < adj[u].size()) {
+      |                                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = long int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = long int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = long int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:7:34:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<long int, long int>, std::allocator<Edge<long int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  202 |         for (int i = 0 ; i < adj[u].size(); i ++) {
+      |                          ~~^~~~~~~~~~~~~~~
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = unsigned int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = unsigned int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = unsigned int]’
+../SimpleLocal_weighted_c_interface.cpp:13:34:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, unsigned int>, std::allocator<Edge<unsigned int, unsigned int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+../include/../include/maxflow.cpp: In instantiation of ‘void graph<vtype, itype>::find_cut(vtype, std::vector<bool>&, vtype&) [with vtype = unsigned int; itype = long int]’:
+../include/../include/maxflow.cpp:272:5:   required from ‘std::pair<double, vtype> graph<vtype, itype>::DinicMaxflow(vtype, vtype, vtype, std::vector<bool>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:274:35:   required from ‘void graph<vtype, itype>::STAGEFLOW_weighted(double, double, double, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&, std::unordered_map<vtype, vtype>&) [with vtype = unsigned int; itype = long int]’
+../include/../SimpleLocal_weighted.cpp:394:5:   required from ‘vtype graph<vtype, itype>::SimpleLocal_weighted(vtype, vtype*, vtype*, double, bool) [with vtype = unsigned int; itype = long int]’
+../SimpleLocal_weighted_c_interface.cpp:19:34:   required from here
+../include/../include/maxflow.cpp:202:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<Edge<unsigned int, long int>, std::allocator<Edge<unsigned int, long int> > >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+g++ -shared -o libgraph.so ../sweepcut.o ../aclpagerank.o ../MQI.o ../MQI_weighted.o ../MQI_c_interface.o ../MQI_weighted_c_interface.o ../ppr_path.o ../aclpagerank_weighted.o ../proxl1PRaccel.o ../proxl1PRrand.o ../set_scores.o ../densest_subgraph_c_interface.o ../capacity_releasing_diffusion.o ../unit_flow.o ../crd_c_interface.o ../SimpleLocal.o ../SimpleLocal_c_interface.o ../SimpleLocal_weighted.o ../SimpleLocal_weighted_c_interface.o ../triangleclusters.o
+make: Leaving directory '/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/native_source/localgraphclustering-0.6.1/localgraphclustering/src/lib/graph_lib_test'

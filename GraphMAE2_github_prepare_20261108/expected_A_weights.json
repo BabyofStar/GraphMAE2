@@ -1,0 +1,67 @@
+{
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s0_best_a0001.pt": {
+    "sha256": "8a4f2ab3a8298e1fe3aa70352115e8452c47f1b78cd43fad5c7e49ac594ef572",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s1_best_a0001.pt": {
+    "sha256": "80e391fcdbedac952a1f66dac1bfc5922746eeb9f84470d7a597b47c8c5a0c05",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s2_best_a0001.pt": {
+    "sha256": "7710cf097de69e34e5cde292ef7805171092190bdfdb9accc09a91b132526d93",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s3_best_a0001.pt": {
+    "sha256": "f340efe1db7bc76338978ce6ee17a222361379e487c121687141f761351d5f65",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s4_best_a0001.pt": {
+    "sha256": "eac3b562d2056ca70f2ba11bdd0025d2ace17f0bbb7aa16c3b46b9800b729738",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s5_best_a0001.pt": {
+    "sha256": "551578850aa7bba3d8330928c6218c38a6c8d009744d12167fdc4d3440bc22bc",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s6_best_a0001.pt": {
+    "sha256": "4819aa7d5107f4242a5a2e46095dd1958e7855e55b728f5ea0f4103c19d0e7af",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s7_best_a0001.pt": {
+    "sha256": "afbb238ca1e901efac72bfa25836131430b11fb01c8ee756bf93d561ed2aeeaa",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s8_best_a0001.pt": {
+    "sha256": "6a2cf1620b4c43b349aabe15e4143f1c40562cdbdf62ec84d1d93427f4a7c6c7",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s9_best_a0001.pt": {
+    "sha256": "3fbf6d39c043045da35a7825547fff09da13d1ffabcf7cd132eb9fef208bc9bf",
+    "kind": "best_linear_head",
+    "bytes": "not_in_receipt"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0059_a0001.pt": {
+    "sha256": "4a817d370d9b193130c9a29f5669b12044be430e2ec98ea7fc98fd1ea2325362",
+    "kind": "retained_resume_epoch_59",
+    "bytes": "90111178"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0060_a0001.pt": {
+    "sha256": "1a02381037f30a28bd282b0c9cf1422bd218b8409abd996aae7ace325939660f",
+    "kind": "retained_resume_epoch_60",
+    "bytes": "90111178"
+  },
+  "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/final_B0.pt": {
+    "sha256": "0614f90fe882ecf16be284d8d2b9e04b2b1a6a69a98f49b526e33ff8386a1c9e",
+    "kind": "final_encoder",
+    "bytes": "40578092"
+  }
+}

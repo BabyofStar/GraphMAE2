@@ -1,0 +1,70 @@
+{
+  "asset_root": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS",
+  "ogb_archive_sha256": "49f85c801589ecdcc52cfaca99693aaea7b8af16a9ac3f41dd85a5f3193fe276",
+  "raw_files": [
+    {
+      "path": "raw/edge.csv.gz",
+      "bytes": 5033515,
+      "sha256": "47629e986116407d27eff4c9d2e923f06bf5da5c85cbae93b660f530bc9355df"
+    },
+    {
+      "path": "raw/node-feat.csv.gz",
+      "bytes": 76357181,
+      "sha256": "60a844c7aff2f129335d34da2f6b9271bd1cac03aff8c70c229e6f0d13624718"
+    },
+    {
+      "path": "raw/node-label.csv.gz",
+      "bytes": 123505,
+      "sha256": "b06e7cf75d909de66ce49bc4188a6dc525224f85dd6dcb36137de3d9321830d1"
+    },
+    {
+      "path": "raw/num-node-list.csv.gz",
+      "bytes": 51,
+      "sha256": "9aa60a342efd209408933ace51e6b0a814e81c2894a993c44f9b173e477e2e82"
+    },
+    {
+      "path": "raw/num-edge-list.csv.gz",
+      "bytes": 52,
+      "sha256": "430f1e00ae204bbb3208c5f494ab70170e9f2995fd3548d1754a74a8f59250d1"
+    },
+    {
+      "path": "split/time/train.csv.gz",
+      "bytes": 211044,
+      "sha256": "84983391900af45194e5db8d977ec9e01d4eda96e20328f3d7575fdd45c6797c"
+    },
+    {
+      "path": "split/time/valid.csv.gz",
+      "bytes": 66916,
+      "sha256": "ebe6cdcd77c75eedbce2064a05a49bc28e2c4a631f49d66b9e9ff317eef993eb"
+    },
+    {
+      "path": "split/time/test.csv.gz",
+      "bytes": 113234,
+      "sha256": "588fb66ce57bcaef51ac0235f0a49a056370ac31fc27c8ebf556d3f5cdd02545"
+    }
+  ],
+  "expected_nodes": 169343,
+  "expected_raw_edges": 1166243,
+  "expected_split_counts": {
+    "train": 90941,
+    "valid": 29799,
+    "test": 48603
+  },
+  "localclustering_source_sha256": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
+  "localgraphclustering_version": "0.6.1",
+  "wheel_sha256": "08a5b44581af83d1f935cb9b91b90d2fbc47556186fa9195c1ed8ee925c5cac1",
+  "source_sha256": "9b8f1091e9e7ed00e6259ac8d730d2211cbbf820416f092c259fe34ddb2c5ef3",
+  "ego_size": 256,
+  "iterations": 1000,
+  "alpha": 0.15,
+  "rho": 1e-06,
+  "method": "acl",
+  "normalize": false,
+  "workers": 2,
+  "timing_pilot_counts": {
+    "train": 128,
+    "valid": 64,
+    "test": 64
+  },
+  "max_full_preprocessing_seconds": 1800
+}

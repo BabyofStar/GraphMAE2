@@ -1,0 +1,59 @@
+{
+  "status": "PASS_FINITE_L1_RETURN_AUDIT",
+  "input_sha256": "66e80e47cf2167a66165e3a03d6940bd8055e6d0f53e8a4c34bb3070ded63a64",
+  "manifest_files_checked": 26,
+  "prior_failed_manifest_files_checked": 12,
+  "runtime_kit_files_checked": 5,
+  "source_files_checked": 57,
+  "complete_training_batches_checked": 662,
+  "complete_inference_batches_checked": 662,
+  "root_count": 169343,
+  "total_ego_node_positions": 42884864,
+  "mask_positions": 21442271,
+  "classifier_epochs_checked": 5,
+  "whole_measurement_minutes": 16.283099217751683,
+  "pretrain_epoch_minutes": 11.994213395519182,
+  "embedding_minutes": 2.99643068931764,
+  "probe_steady_epoch_seconds": 0.3803440340561792,
+  "estimated_B0_hours": 13.105759957815042,
+  "estimated_six_run_hours": 78.63455974689025,
+  "pretrain_peak_allocated_GiB": 6.2876787185668945,
+  "pretrain_peak_reserved_GiB": 11.759765625,
+  "dev_shm_MiB": 64.0,
+  "checkpoint_server_receipt": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_l1_measurement_v2_kISgbDss/one_epoch_B0.pt",
+    "bytes": 90114378,
+    "sha256": "e598437b4801914f3dbbed9dbb3103cc5d10dec8fa1d0bba34944069cfe82e22",
+    "write_and_CPU_sample_seconds": 0.2806928039062768,
+    "total_save_reload_seconds": 0.7126015620306134,
+    "strict_state_readback_equal": true,
+    "CPU_embedding_exact_equal": true,
+    "sample_roots": 2,
+    "excluded_from_formal_runs": true
+  },
+  "embedding_server_receipt": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_l1_measurement_v2_kISgbDss/all_root_embeddings.npy",
+    "bytes": 693629056,
+    "sha256": "ffaa8892c16588b371739751ae338f25e5c794e0c44df6ce8ed48178d875afa2",
+    "shape": [
+      169343,
+      1024
+    ],
+    "dtype": "float32",
+    "root_ids_path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_l1_measurement_v2_kISgbDss/embedding_root_ids.npy",
+    "root_ids_sha256": "d12632d40d8646dbd814ce43fe6b5e76c85fa54917ba64fe8565956acb35a30c",
+    "root_order_sha256": "df02a4bbdb3fdbb9e86816a3bcd6c3ce9d54e6fc75f7b1410a24e4a816188b09",
+    "rows": 169343,
+    "compute_and_batch_IO_seconds": 178.7089971799869,
+    "flush_verify_and_hash_seconds": 1.070925772888586
+  },
+  "observed_first_unclipped_gradient_norm": 2946206464.0,
+  "gradient_clip_threshold": 3,
+  "full_budget_user_selection": "A: one independent B0 pretrain with ten fixed linear probes",
+  "limits": [
+    "Complete checkpoint and 694 MB embeddings remain on server; local checks verify their receipts, not a fresh local replay.",
+    "Root identity per batch is hashed. Full unique-root and data alignment assertions were executed by the byte-matched runtime, not independently replayed locally.",
+    "One measured epoch and five classifier epochs support approximate extrapolation, not a runtime guarantee or accuracy conclusion.",
+    "Initial unclipped gradient norm is large but finite; frozen upstream clipping at 3 was applied. No clipping threshold or loss was retuned."
+  ]
+}

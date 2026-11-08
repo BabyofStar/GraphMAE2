@@ -1,0 +1,1277 @@
+{
+  "repository": "BabyofStar/GraphMAE2",
+  "commit": "705cdc51f63763996975f0305dec9f9806b11597",
+  "downloaded_utc": "2026-11-05T07:31:40.167882+00:00",
+  "purpose": "Independent R9 audit; public evidence whitelist only",
+  "test_metrics_downloaded": false,
+  "weights_downloaded": false,
+  "files": [
+    {
+      "path": "configs/citeseer.yaml",
+      "status": "downloaded",
+      "bytes": 421,
+      "sha256": "d9d9302aca6148a322861bb160300ff32e97e615f0638771ea1f5a2d9f3d7688",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/configs/citeseer.yaml"
+    },
+    {
+      "path": "configs/cora.yaml",
+      "status": "downloaded",
+      "bytes": 416,
+      "sha256": "3a5a6b87a73fd986ed0bd94ce224f37059739a7df7defa3cc89e6ad78f8aaca6",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/configs/cora.yaml"
+    },
+    {
+      "path": "configs/pubmed.yaml",
+      "status": "downloaded",
+      "bytes": 415,
+      "sha256": "19f7897bab0097f2a6f3a85f9a7b02914cbb0e6627701832ea33c07aeb48a50a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/configs/pubmed.yaml"
+    },
+    {
+      "path": "datasets/__init__.py",
+      "status": "downloaded",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/datasets/__init__.py"
+    },
+    {
+      "path": "datasets/data_proc.py",
+      "status": "downloaded",
+      "bytes": 2541,
+      "sha256": "d43cc47fb81e3d021dbaa15438b7a117054a5172855372f7fc4e17475671f88f",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/datasets/data_proc.py"
+    },
+    {
+      "path": "datasets/lc_sampler.py",
+      "status": "downloaded",
+      "bytes": 6697,
+      "sha256": "0aca1c668e93bd6842220396a216a098b10e29aa9b3eb416ddd1fac472fea2cb",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/datasets/lc_sampler.py"
+    },
+    {
+      "path": "datasets/localclustering.py",
+      "status": "downloaded",
+      "bytes": 5597,
+      "sha256": "a94c0b9f9c7db2656e75614aa66af6de2a2f8de82c0dab9609d7c490267aaf0c",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/datasets/localclustering.py"
+    },
+    {
+      "path": "datasets/saint_sampler.py",
+      "status": "downloaded",
+      "bytes": 12253,
+      "sha256": "729cca3522d9927b65df00e8e6234ccf8f64140eddabe3332ee03c7eb4412a8e",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/datasets/saint_sampler.py"
+    },
+    {
+      "path": "graphmae2_v2_r_dev1/manifest.json",
+      "status": "downloaded",
+      "bytes": 7299,
+      "sha256": "d9189ce6c30e5082eacdd60c2f0c2ae4d051b64fdd33db8e3a9f333356c982b5",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/graphmae2_v2_r_dev1/manifest.json"
+    },
+    {
+      "path": "graphmae2_v2_r_dev1/run_stage1_r.py",
+      "status": "downloaded",
+      "bytes": 9606,
+      "sha256": "fa97866ccd803211e90c266553557b16b00d9333b00513b6333755055375519a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/graphmae2_v2_r_dev1/run_stage1_r.py"
+    },
+    {
+      "path": "main_full_batch.py",
+      "status": "downloaded",
+      "bytes": 4551,
+      "sha256": "10567a6173362ca3aca12218fce59d30597b8145ecbbddb4b604340ac9f7d0d2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/main_full_batch.py"
+    },
+    {
+      "path": "models/__init__.py",
+      "status": "downloaded",
+      "bytes": 2749,
+      "sha256": "8829c9bee27d1596e615ee4046f997825edf67843e28ac220fb10a9ac25b865f",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/__init__.py"
+    },
+    {
+      "path": "models/adaptive_masking.py",
+      "status": "downloaded",
+      "bytes": 12667,
+      "sha256": "136b4f2d9cd86fceed091417b64ba7aaba8bb8cea11794175e2c8cc8aa996420",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/adaptive_masking.py"
+    },
+    {
+      "path": "models/edcoder.py",
+      "status": "downloaded",
+      "bytes": 15180,
+      "sha256": "330b68603293f93e66e51d1e86af59989bb3dc20ab89fe25060ea9c03b264445",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/edcoder.py"
+    },
+    {
+      "path": "models/finetune.py",
+      "status": "downloaded",
+      "bytes": 14559,
+      "sha256": "3c3f6e8f1154035a9a6d62420dc964f600cf672116c4fb3b12e7bb10f71de248",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/finetune.py"
+    },
+    {
+      "path": "models/gat.py",
+      "status": "downloaded",
+      "bytes": 12554,
+      "sha256": "2e536f955793d4190bfae9ed4161bedab53928ed43d2012bbb9e5e126d0a4a3c",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/gat.py"
+    },
+    {
+      "path": "models/gcn.py",
+      "status": "downloaded",
+      "bytes": 6153,
+      "sha256": "55e3f0fac56ce78d7ed4856f83a3a84d61edde00be454f2db885b66ab992ac70",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/gcn.py"
+    },
+    {
+      "path": "models/input_masking.py",
+      "status": "downloaded",
+      "bytes": 6861,
+      "sha256": "230a45cf29255bfc46272f8774e5650aea46e85e48b558f82b286019e7d5d4b9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/input_masking.py"
+    },
+    {
+      "path": "models/loss_func.py",
+      "status": "downloaded",
+      "bytes": 5932,
+      "sha256": "b71a86e278b039ea77a2943b3ead804bb222ad28e437c379a1c22dd02e30140e",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/loss_func.py"
+    },
+    {
+      "path": "models/masking_math.py",
+      "status": "downloaded",
+      "bytes": 6090,
+      "sha256": "ff32da677a5600dcc2a812f5a76c1cbada66875295bcdff9a0388d01f099a9aa",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/masking_math.py"
+    },
+    {
+      "path": "models/random_group_masking.py",
+      "status": "downloaded",
+      "bytes": 5262,
+      "sha256": "57d9f8acccf18d74923a7dbd0cb085a636080184ea5617198979910b7d81f8be",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/models/random_group_masking.py"
+    },
+    {
+      "path": "outputs/r_dev1_stage1_osgce2je/reload_R.log",
+      "status": "downloaded",
+      "bytes": 1051,
+      "sha256": "06781e413f56ee2c536d04a6d1c98ccb040a561b2650efe8fdcbef00a0f92c5a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_dev1_stage1_osgce2je/reload_R.log"
+    },
+    {
+      "path": "outputs/r_dev1_stage1_osgce2je/status.json",
+      "status": "downloaded",
+      "bytes": 326,
+      "sha256": "afa1895f39788638fad231647062c3b6886b945ecfc9b12931a510f6ab66d188",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_dev1_stage1_osgce2je/status.json"
+    },
+    {
+      "path": "outputs/r_dev1_stage1_osgce2je/tests.log",
+      "status": "downloaded",
+      "bytes": 183489,
+      "sha256": "5fd267a1eb49161c455ce16e8c5bafdce3e04ab933e42ec8852dea1bf138e7d2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_dev1_stage1_osgce2je/tests.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/batch.log",
+      "status": "downloaded",
+      "bytes": 955,
+      "sha256": "cfb5fead1bea5fa9b3055f1d8ca280c7ba64fa50fa043ae590c3a49fc3c234de",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/batch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/batch_status.json",
+      "status": "downloaded",
+      "bytes": 148,
+      "sha256": "9df2b73fcaf19ed4c08f28fe92ecbf70757f3878317eda06eb79a90d0ca143e0",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/batch_status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/historical_anchors.json",
+      "status": "downloaded",
+      "bytes": 124559,
+      "sha256": "0c03c8376a6b8fd25b9baa63a2437d9dc97300827988512dbcdd0dd817b11026",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/historical_anchors.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/plan.json",
+      "status": "downloaded",
+      "bytes": 6648,
+      "sha256": "40c28b13bd759b3e3a94d8d3701f7ace6c20214a4fa572aeaba52f0b2b404a2e",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/README.md",
+      "status": "downloaded",
+      "bytes": 4254,
+      "sha256": "6404cda92205a7393e34ff483a21d7422ee54559fc785f86d24e18836953fb60",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/README.md"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/SHA256SUMS.txt",
+      "status": "downloaded",
+      "bytes": 738,
+      "sha256": "a68b52fe4ade5ef67598c1f7c779dbe22383a427522019d521497306803f4edb",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/SHA256SUMS.txt"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/launch_r9.py",
+      "status": "downloaded",
+      "bytes": 3044,
+      "sha256": "d21049bab41aa3d215b0f4c7471c790c99c1609bbde2938a8baef8edb226ce44",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/launch_r9.py"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/legacy_candidate.py",
+      "status": "downloaded",
+      "bytes": 15147,
+      "sha256": "34fa7ca3a6415c025f83a0bd37281c251660b1dd00c46a7410af154436add12f",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/legacy_candidate.py"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/legacy_reference.py",
+      "status": "downloaded",
+      "bytes": 15900,
+      "sha256": "ebfa750def8e66ae26deec251a1de830b52a41f736e682f818adedca1928d603",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/legacy_reference.py"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/local_validation.json",
+      "status": "downloaded",
+      "bytes": 565,
+      "sha256": "76c56d8c8b6d2da9e122e7d003a0bfc3abca907dd12312f820cb313e541e9eaa",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/local_validation.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/queue_identity.json",
+      "status": "downloaded",
+      "bytes": 1354,
+      "sha256": "3eb3e3d06515d43606bad34c7f00dc1438dddbc60ee5a7fd0b07d063521f7783",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/queue_identity.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/run_r9.py",
+      "status": "downloaded",
+      "bytes": 21930,
+      "sha256": "d98943f903f42521986912606d95fa41c8e9620acd2eaa409c85d98578083804",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/run_r9.py"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/start.sh",
+      "status": "downloaded",
+      "bytes": 758,
+      "sha256": "fbe509c604c34360841205d42a8d854536dc18b98d59f4a5bd6932da6a020ffe",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/start.sh"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/queue_snapshot/test_r9_contract.py",
+      "status": "downloaded",
+      "bytes": 6222,
+      "sha256": "fcbdc5ce0f628a039056fe9bf283ff78678e8e2013e5b4e4bb75b8eda79c6a61",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/queue_snapshot/test_r9_contract.py"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1575,
+      "sha256": "50bb7e58323d2f1cb1ba2cbcfe92106ebe816d5f8847249feb9cd47428de8a07",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 8315,
+      "sha256": "3eedc448fdcfbf2798be28dcb9c499355608d8685be0a9c9e3945b3434279cb1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 53702,
+      "sha256": "74de50ed9564480096c4c735c44a42867c3089ef5712a076346d296d78f82b64",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 1559,
+      "sha256": "29d46cd7fa168397e3743824493502f771d091fe225f869a52b28a6ca8f4087a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/metrics.json",
+      "status": "downloaded",
+      "bytes": 1689,
+      "sha256": "f5b588e0cce5ec0c7fe3182d39e7b739cc91a3cdf8d8684cf18291f9042486f9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 435,
+      "sha256": "2553bb133d701bebf7733d2d110c59002af6464429e4ce169bab4c53a0a366e2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/reload.log",
+      "status": "downloaded",
+      "bytes": 1052,
+      "sha256": "bfec863bdd654e7c556803dea6b3e49cc4dd5dda57a312021cb7f9ba3667dc69",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/resources.json",
+      "status": "downloaded",
+      "bytes": 1019,
+      "sha256": "f6d0f6245141840902b778b4f40c9c375148c1897da3cbb06ac3ff58bfa146dd",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/status.json",
+      "status": "downloaded",
+      "bytes": 251,
+      "sha256": "dbfbf2023631fe2240284f88296bb1596a9e183323f888c561d5769e1d94dd13",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/train.log",
+      "status": "downloaded",
+      "bytes": 126197,
+      "sha256": "2558d5a4c62c0e7675ef31011672bb197b590f7c43248c222f73eaa942322452",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0_launch.log",
+      "status": "downloaded",
+      "bytes": 376,
+      "sha256": "c77a775b1d061523a63ba465d4b2144850e869ded0f3cac12e8bb031d9d65c5d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s0_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1575,
+      "sha256": "a30dd37a13e870232ae9c92a4dd139c1498b24303297b47f7cbf9ef2923375c5",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 8321,
+      "sha256": "bf7a18e8935085adf965e18349a1ee3d141e85e1cb3ebb8d8feb11c41ca6bdbd",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 53701,
+      "sha256": "6f7f1a7482380471fb7d6cb74a6b1bdbc47357a69d9c439fa9c18bde47ba1a84",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 1562,
+      "sha256": "95303f2856af6c7b5d028c6c88687c593e6325ebc410943f5c2c43a560f45eea",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/metrics.json",
+      "status": "downloaded",
+      "bytes": 1690,
+      "sha256": "fe894331fd8559df090d4190f3a97e944041f782a3fe4a7d82594acea1f5054c",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 435,
+      "sha256": "2553bb133d701bebf7733d2d110c59002af6464429e4ce169bab4c53a0a366e2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/reload.log",
+      "status": "downloaded",
+      "bytes": 1052,
+      "sha256": "bfec863bdd654e7c556803dea6b3e49cc4dd5dda57a312021cb7f9ba3667dc69",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/resources.json",
+      "status": "downloaded",
+      "bytes": 1016,
+      "sha256": "fd63ea4a91bb1c707bc8ca6ca6f5143e23982430f6b85b45097c16f57e9e8ec1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/status.json",
+      "status": "downloaded",
+      "bytes": 251,
+      "sha256": "6bb63f8237411641784646f73a9bb63c94bc7076364c39e963b72b6d310e4250",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/train.log",
+      "status": "downloaded",
+      "bytes": 125747,
+      "sha256": "267bd227f26a5daa5efdffa63a27dbc950cdca7a54097b460eb7116815b557d2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1_launch.log",
+      "status": "downloaded",
+      "bytes": 377,
+      "sha256": "d66d9e5ba14749d0f96025450c452e8b09f675f8fb8018f9357015287bad9018",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s1_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1575,
+      "sha256": "2426a3e747814ad7f7eca3725ed38d064dbd1a7aeecbaaed90b0912feffd3cd7",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 8325,
+      "sha256": "267da9e886e25dc9b5d6b13d306ea77a98589117b9662b313ab1486d9a27fe05",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 53702,
+      "sha256": "7ef41687ead1f66ea86c865815ac48eb7a576ac8b0b9c44943f3014ca0dcaf40",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 1560,
+      "sha256": "ec187178834eb1de8222dbe911d403ea0272fc5bfa790ab6d45d661961579d28",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/metrics.json",
+      "status": "downloaded",
+      "bytes": 1691,
+      "sha256": "9e33af87cfdec3cdccbc4154da22f4acb85450c0dc775772e02c4f8d6216635c",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 435,
+      "sha256": "2553bb133d701bebf7733d2d110c59002af6464429e4ce169bab4c53a0a366e2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/reload.log",
+      "status": "downloaded",
+      "bytes": 1052,
+      "sha256": "bfec863bdd654e7c556803dea6b3e49cc4dd5dda57a312021cb7f9ba3667dc69",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/resources.json",
+      "status": "downloaded",
+      "bytes": 1023,
+      "sha256": "03aaeead03ded074e930c9900fee8de78726cf9988401703b84094690695d23d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/status.json",
+      "status": "downloaded",
+      "bytes": 251,
+      "sha256": "d7b9c896bc6e2dcf8f766affce69d7c45933b8ebce669e7a0da7d82fdcf5b3f5",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/train.log",
+      "status": "downloaded",
+      "bytes": 125066,
+      "sha256": "de7b0479330310709e0d7c2463db95d90e48698cbe9147e0d8ef1aef13242a15",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2_launch.log",
+      "status": "downloaded",
+      "bytes": 378,
+      "sha256": "319a656fb266cc21fc30d4bf860579b2848733917b2aa24a6d0c96ee01a37cf1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_citeseer_R_s2_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1575,
+      "sha256": "3e4770fcd338573ae09ef800e5d99341ca7d2b85f65452b3da359be7810862a3",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 28663,
+      "sha256": "f610d37c2ca43f798b0a0f810786c257abf5baa303a5aed9f17e4714f4fd6429",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 47145,
+      "sha256": "bb21f13556b83c31b17906039f4f235310f77a1afa271941f817dc1bbc1c982c",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 5180,
+      "sha256": "71ae43e757f642d148825ea257d110e7b266bca76086c38cc017feeebc054083",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/metrics.json",
+      "status": "downloaded",
+      "bytes": 1686,
+      "sha256": "3a51bf012ea41c6448ea834ede2de8ed37724c87f3203f64511c9052fd9ce753",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 435,
+      "sha256": "03598e13901359370d8074cc93381ef80037fc657f5313b4223a6fd90e477e23",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/reload.log",
+      "status": "downloaded",
+      "bytes": 1051,
+      "sha256": "06781e413f56ee2c536d04a6d1c98ccb040a561b2650efe8fdcbef00a0f92c5a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/resources.json",
+      "status": "downloaded",
+      "bytes": 1019,
+      "sha256": "5872e3cb851047c86233c3643b7e5cd59b4a7db3c1f3aeab94626068872635d3",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/status.json",
+      "status": "downloaded",
+      "bytes": 247,
+      "sha256": "e67607f8443b9a082a365b7fe79c4f5af5f0fb3cac757985187095e28b058cf2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/train.log",
+      "status": "downloaded",
+      "bytes": 331294,
+      "sha256": "4bae6b34451ad7bdfbda8c395df4c40511a708a23b773ad18aefa47dbf7d8cd6",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0_launch.log",
+      "status": "downloaded",
+      "bytes": 371,
+      "sha256": "df7ba47e6e47cab8012a56e87e5927fa91ce355278f7e605e474479c221e176e",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s0_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1575,
+      "sha256": "78ae0f8910a0532f066b1c911fdca87f9d90690336cdea49208be4960491daf8",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 28635,
+      "sha256": "265a52f578b9af99092da03b6f0926ef9e7e6a9718e63c358d2152986c291db8",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 47157,
+      "sha256": "f7b7dcd5c4adce94a992c885286a66eef0d076ec0ebbef7479fa7e25381a68f5",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 5175,
+      "sha256": "c68bb08ebe7617baa24c30aa25245dc64bdfc4ea079e7b785ab9f1730960e803",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/metrics.json",
+      "status": "downloaded",
+      "bytes": 1687,
+      "sha256": "a7a2113515f56e3f2edfb89f58dad233f3d128b98b71132cb7552d72678a6b56",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 435,
+      "sha256": "03598e13901359370d8074cc93381ef80037fc657f5313b4223a6fd90e477e23",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/reload.log",
+      "status": "downloaded",
+      "bytes": 1051,
+      "sha256": "06781e413f56ee2c536d04a6d1c98ccb040a561b2650efe8fdcbef00a0f92c5a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/resources.json",
+      "status": "downloaded",
+      "bytes": 1021,
+      "sha256": "d1276630f4ac042d573c9ab5a04f7bec16080405df9def440453f75009594249",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/status.json",
+      "status": "downloaded",
+      "bytes": 247,
+      "sha256": "e8d6389e8582bd72d081320f7b0a521fb3e4cfd3ae80f795165ca903eb30abb1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/train.log",
+      "status": "downloaded",
+      "bytes": 303259,
+      "sha256": "9d4d5f30ee3a70115a04067fe9205bee1bf7aff10d87775aa81fb5c012f188bd",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1_launch.log",
+      "status": "downloaded",
+      "bytes": 371,
+      "sha256": "5fbf47eab59be4db22e2260947698a1cd568db9ad56b4b693b09e91b45f2f5b9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s1_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1575,
+      "sha256": "8692a4e66d27bbbb0af00d3d785b9c591899d920c4cd4196721fa4da603ff7b9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 28642,
+      "sha256": "4b41a3aec7376c8584b83b771ecdde824abe3356c5e70eb11a9c69e25cc8c819",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 47135,
+      "sha256": "c959e10813252e2819487bb6f7e69074217534062a2fd8962a888abdf51eb0a5",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 5179,
+      "sha256": "d899a76b12199de750d0634a213ae420157a0ebdcd407b8313c98bd4402b5ed1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/metrics.json",
+      "status": "downloaded",
+      "bytes": 1687,
+      "sha256": "ec8042897783c4128e282438f695f2581b1b150925af8f144a48a667388bf23c",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 435,
+      "sha256": "03598e13901359370d8074cc93381ef80037fc657f5313b4223a6fd90e477e23",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/reload.log",
+      "status": "downloaded",
+      "bytes": 1051,
+      "sha256": "06781e413f56ee2c536d04a6d1c98ccb040a561b2650efe8fdcbef00a0f92c5a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/resources.json",
+      "status": "downloaded",
+      "bytes": 1024,
+      "sha256": "ecbf96941e192fd9007d8c2273755def806219936307901758e7b67c7c573a12",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/status.json",
+      "status": "downloaded",
+      "bytes": 247,
+      "sha256": "01da7e2908dc405678e615844b0e41adee31cc697631a78ca40dcc74f5944b99",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/train.log",
+      "status": "downloaded",
+      "bytes": 333434,
+      "sha256": "bd98bf450606a6f0ecb63a5b3740c4ff5daa621f38fdfb69c64f99654ea55833",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2_launch.log",
+      "status": "downloaded",
+      "bytes": 371,
+      "sha256": "db2328e62b866d135da8547f71ecb2b5f81f55e2dbf3d3ec2fb1a660b34af992",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_cora_R_s2_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1574,
+      "sha256": "2bd50d085529110af9d27883de872256ee6026a88b34022fd1693356d853e9e2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 29683,
+      "sha256": "8f36d548d86eed0dfe4af4918f830612fc1731cc69e4396811ec559e2ed7e1e0",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 335178,
+      "sha256": "273a1f1caf8aff99974c158040356368a63071728c6e7251254e80141a030553",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 5512,
+      "sha256": "9a5f27f95f833d069220d5ba6afcc018ec8bd229d5f597401ac5dcaa14f345b1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/metrics.json",
+      "status": "downloaded",
+      "bytes": 1690,
+      "sha256": "3827148096f99d581d672b862b5ad7df478f05fb86f9bcce92362408d4fb1793",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 445,
+      "sha256": "657d553e17f6d2e99bf737723ae3540e19c00070212d4a015bdc83ccaed2d971",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/reload.log",
+      "status": "downloaded",
+      "bytes": 1049,
+      "sha256": "97d7beaf415374caac2dd7a103eaea3d92777884ddf7a7eb4f526db0106a39ae",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/resources.json",
+      "status": "downloaded",
+      "bytes": 1017,
+      "sha256": "0a95fd43beab85aee2b21d53d2cb002dcf01cdd3cc795d52542ed71639d0ae25",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/status.json",
+      "status": "downloaded",
+      "bytes": 249,
+      "sha256": "80bcde6fa3226d66fca004b22a7166517dab2e6aabeae616777d0063334f7e85",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/train.log",
+      "status": "downloaded",
+      "bytes": 376017,
+      "sha256": "8fc7df921c9e1ac3f4388f2f162aed6c6ffcef5acee59df942e5cd8c24dacdb6",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0_launch.log",
+      "status": "downloaded",
+      "bytes": 374,
+      "sha256": "0d35989d49b550e5e797bd5c2f220a0df8db8d52db9585bd6771dbfaaf5897f2",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s0_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1574,
+      "sha256": "58549655a7a02778f7fa09be82836d484240a99669a9febc09825cd0e59f5cb9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 29682,
+      "sha256": "75c858c5a55560ed6d24a7f32280f397a2703195697f293008363ffe42bc23df",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 335261,
+      "sha256": "b3554f32a0e1e45f46f69dfd45b399d91dca7f44443e0f34a6cf45c1e575c133",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 5511,
+      "sha256": "81490226b05a36efc07a86667aa50e7c49e6ef2df50f11e57ee2d66a677c56ae",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/metrics.json",
+      "status": "downloaded",
+      "bytes": 1691,
+      "sha256": "f1f71abf7d9c3804953642fbf0e8a321dbb469e5d803747faa20e9f00f5cc375",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 445,
+      "sha256": "657d553e17f6d2e99bf737723ae3540e19c00070212d4a015bdc83ccaed2d971",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/reload.log",
+      "status": "downloaded",
+      "bytes": 1049,
+      "sha256": "97d7beaf415374caac2dd7a103eaea3d92777884ddf7a7eb4f526db0106a39ae",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/resources.json",
+      "status": "downloaded",
+      "bytes": 1016,
+      "sha256": "fb360dd054776bdb4e8d4bc5b9b9d7502b6190cd09bde339cb2dc7df16857012",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/status.json",
+      "status": "downloaded",
+      "bytes": 249,
+      "sha256": "0b65ad7e93395d8b91fd964c8110004bf7c176fda9895f89814fb2b064f9db73",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/train.log",
+      "status": "downloaded",
+      "bytes": 375269,
+      "sha256": "02c35c39db7f0d02a27d40f79428c4e55086058eab8a864b2c610bd76db2a5a9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1_launch.log",
+      "status": "downloaded",
+      "bytes": 375,
+      "sha256": "eeebf3b9fbb45a5a667970d794d6eba2d6380066cb3bddee93d1c6fb09659317",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s1_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/effective_args.json",
+      "status": "downloaded",
+      "bytes": 1574,
+      "sha256": "5ed110e10f400264cd42f4c300b77e29451d1e35b333443a3fd97ed51fe1161f",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/effective_args.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/environment.json",
+      "status": "downloaded",
+      "bytes": 7733,
+      "sha256": "e9ca2af1bee6905a4d5daf3632f435ed396d3412fc8d48e9e8ff723eb2857ea4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/environment.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/mask_feedback.jsonl",
+      "status": "downloaded",
+      "bytes": 29667,
+      "sha256": "c6c52bc4afec7ad4e7b87b8e03c548a194dcf33dca9d4c8c3a8d004ef7eaad95",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/mask_feedback.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/mask_node_statistics.npz",
+      "status": "downloaded",
+      "bytes": 335220,
+      "sha256": "15a2165e963329ca4c7fd031c1146e7bb0a72f27f8f4bd58a2fdfee25c89a795",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/mask_node_statistics.npz"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/mask_stats.jsonl",
+      "status": "downloaded",
+      "bytes": 5509,
+      "sha256": "9ea68ff8078b286603b48c6325a927a946f9790e48c9b59f35fd520b71ec018a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/mask_stats.jsonl"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/metrics.json",
+      "status": "downloaded",
+      "bytes": 1691,
+      "sha256": "460ba92d622e27701378168e122f849936be05e7ba185fe1b64c8058607d6497",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/metrics.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/random_group_plan.json",
+      "status": "downloaded",
+      "bytes": 445,
+      "sha256": "657d553e17f6d2e99bf737723ae3540e19c00070212d4a015bdc83ccaed2d971",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/random_group_plan.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/reload.log",
+      "status": "downloaded",
+      "bytes": 1049,
+      "sha256": "97d7beaf415374caac2dd7a103eaea3d92777884ddf7a7eb4f526db0106a39ae",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/reload.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/resources.json",
+      "status": "downloaded",
+      "bytes": 1023,
+      "sha256": "a6f8960c40f4e40f21030f15008b7168e46cf7ace559623466e4f267a2a0f747",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/resources.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/source.tar",
+      "status": "downloaded",
+      "bytes": 430080,
+      "sha256": "13457d740619803f83820221e18456e90c3d8032b0919fccc9491522caf0311d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/source.tar"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/source_sha256.json",
+      "status": "downloaded",
+      "bytes": 3345,
+      "sha256": "f24e736dc729055f7718cb1ec9ee6280dbee22392ecefd84e14ffd9090fbd58d",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/source_sha256.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/status.json",
+      "status": "downloaded",
+      "bytes": 249,
+      "sha256": "7e86d87995b8b9372f775c25da3b84224124589e500d66ce91621a4ad16620ec",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/status.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/train.log",
+      "status": "downloaded",
+      "bytes": 374567,
+      "sha256": "f6290d5fdbf31d6b5fedafdfb5ec7e3e67a1a6d819bfd423afec8535d8e49224",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2/train.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2_launch.log",
+      "status": "downloaded",
+      "bytes": 375,
+      "sha256": "01a6b4d6b61699857e23d9523dc8225152180845daae0454540449acbb2b3845",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/r_development9_yy6rh7vj_pubmed_R_s2_launch.log"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/validated_runs.json",
+      "status": "downloaded",
+      "bytes": 18539,
+      "sha256": "ec49c1a9852027c8ea79c96b5f52a5328e0f34801f3b5d3e8e7380933f19d23f",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/validated_runs.json"
+    },
+    {
+      "path": "outputs/r_development9_yy6rh7vj/validation_summary.json",
+      "status": "downloaded",
+      "bytes": 24038,
+      "sha256": "4e96acb886873c612dbe1e82bfa4f0147a2dd41dc0c75b6411d1ada7277950b1",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/outputs/r_development9_yy6rh7vj/validation_summary.json"
+    },
+    {
+      "path": "record_full_batch.py",
+      "status": "downloaded",
+      "bytes": 27097,
+      "sha256": "7744e2e3ed17305b5b8428bc04f771c3a64eaa3e53b4c6331427c9055f025c95",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/record_full_batch.py"
+    },
+    {
+      "path": "record_full_batch_r.py",
+      "status": "downloaded",
+      "bytes": 33601,
+      "sha256": "2226412317b8658d5089cfc3db142d1f4d5123eb00364c0482ec254c029a3bc4",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/record_full_batch_r.py"
+    },
+    {
+      "path": "record_full_batch_v2.py",
+      "status": "downloaded",
+      "bytes": 31419,
+      "sha256": "033012c493b602357e4fe55d3758c91586593b6b27210f5cf9dcfd9592ef8fc0",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/record_full_batch_v2.py"
+    },
+    {
+      "path": "test_record_full_batch.py",
+      "status": "downloaded",
+      "bytes": 15446,
+      "sha256": "2cb961fe1b54fb90495c01c0a8a01d5f4f2146a3b02909cb8e3811345f25fbd9",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/test_record_full_batch.py"
+    },
+    {
+      "path": "test_record_full_batch_r.py",
+      "status": "downloaded",
+      "bytes": 8591,
+      "sha256": "a7aa57b6fc9a37f8c2007e2bb3145e50827e59415f6311a5f480b52920bea6b5",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/test_record_full_batch_r.py"
+    },
+    {
+      "path": "test_record_full_batch_v2.py",
+      "status": "downloaded",
+      "bytes": 8561,
+      "sha256": "84870be035acbdef9116d18450954f9fee904df8edcf8c4f42f2ebc5d513afed",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/test_record_full_batch_v2.py"
+    },
+    {
+      "path": "tests/fixtures/adaptive_masking_v2_dev1.py",
+      "status": "downloaded",
+      "bytes": 12554,
+      "sha256": "1709e8a1ab5029ea75136253f93272c8fdb58d843a2755ec39f9a99023062939",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/fixtures/adaptive_masking_v2_dev1.py"
+    },
+    {
+      "path": "tests/fixtures/edcoder_v1_2_reference.py",
+      "status": "downloaded",
+      "bytes": 13669,
+      "sha256": "b7994fdce33baf76964afbad1fb5f25d0091321e5d4985c6998754f38f77af44",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/fixtures/edcoder_v1_2_reference.py"
+    },
+    {
+      "path": "tests/fixtures/edcoder_v2_dev1.py",
+      "status": "downloaded",
+      "bytes": 14795,
+      "sha256": "7268fb466da2a6a67cbd987ae35756933c1df7b61fd885445f0ec870e88c6d28",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/fixtures/edcoder_v2_dev1.py"
+    },
+    {
+      "path": "tests/fixtures/input_masking_v1_1_reference.py",
+      "status": "downloaded",
+      "bytes": 5983,
+      "sha256": "1c73f7899c9338cae8c0420b6a8ce4223561309894f42f49be028e8ef9a06518",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/fixtures/input_masking_v1_1_reference.py"
+    },
+    {
+      "path": "tests/test_adaptive_masking_v2.py",
+      "status": "downloaded",
+      "bytes": 16707,
+      "sha256": "c4ae7e18019b18bc5679bcf983ab25649e76118e2bf0b033ccf7cbd929f11335",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/test_adaptive_masking_v2.py"
+    },
+    {
+      "path": "tests/test_input_masking.py",
+      "status": "downloaded",
+      "bytes": 26649,
+      "sha256": "574e801ca550f28cd7b4a8626e58654002cab2c0d9acd7506070538e8c7eea9a",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/test_input_masking.py"
+    },
+    {
+      "path": "tests/test_masking_math_v2.py",
+      "status": "downloaded",
+      "bytes": 5936,
+      "sha256": "ec1af1f30a4773bf5dec51778b92b17f39f5c1eac9615f5df11bcad9a4b89296",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/test_masking_math_v2.py"
+    },
+    {
+      "path": "tests/test_random_group_masking.py",
+      "status": "downloaded",
+      "bytes": 10569,
+      "sha256": "4c27d598a0fc921176bd450a4b03c8e485963112671afed334bbbf6cdf782d59",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/tests/test_random_group_masking.py"
+    },
+    {
+      "path": "utils.py",
+      "status": "downloaded",
+      "bytes": 11636,
+      "sha256": "0f7e9a6d76a8c5744d07465e15574a71709c8687afa8b3a42c5d9f0c42905b88",
+      "url": "https://raw.githubusercontent.com/BabyofStar/GraphMAE2/705cdc51f63763996975f0305dec9f9806b11597/utils.py"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "commit": "40de08f6b42c050e94ed65444beeb4f2b6520a06",
+  "downloaded_files_verified": 357,
+  "downloaded_bytes": 24343527,
+  "full_runs": 18,
+  "smoke_runs": 2,
+  "checks": {
+    "source_snapshot_file_bytes": 750,
+    "pretrain_and_final_probe_epoch_logs": 20,
+    "route_plans": 10,
+    "runs": 20,
+    "node_arrays": 120,
+    "feedback_records": 298,
+    "cpu_reload_records": 20,
+    "prior_terminal_seed_values": 18
+  },
+  "published_source_files_matched": 41,
+  "source_versions": {
+    "DS": 34,
+    "C": 41
+  },
+  "server_C_test_count": 94,
+  "server_C_skipped_count": 0,
+  "historical_archive_sha256": "e523cba3998593b9a95050a42088dfde6533de82fee39f371d9e840a46884199",
+  "saved_summaries_recomputed": true,
+  "test_metrics_opened": false,
+  "weights_downloaded": false,
+  "training_started": false,
+  "limitations": [
+    "No local Torch/DGL runtime, no independent local RNG replay; route formula/hash/endpoints/cross-seed identity checked, server validation records seeded replay.",
+    "Checkpoint evidence is server hashes, save/readback and CPU reload logs; model weights were not downloaded.",
+    "Validation exploration n=3, historical controls across batches, sparse context feedback, no matched C route-order control."
+  ]
+}

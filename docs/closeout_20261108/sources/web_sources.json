@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-11-06 Asia/Shanghai",
+  "purpose": "Primary literature and implementation references for the course report; no experimental values taken from web pages.",
+  "verified_references": [
+    {
+      "title": "GraphMAE2: A Decoding-Enhanced Masked Self-Supervised Graph Learner",
+      "url": "https://arxiv.org/abs/2304.04779",
+      "full_text_url": "https://arxiv.org/html/2304.04779v1",
+      "use": "Paper identity and original method components"
+    },
+    {
+      "title": "GraphMAE2 fixed upstream model implementation",
+      "url": "https://raw.githubusercontent.com/THUDM/GraphMAE2/bc473e8b750d6e90b7cba1c6bb20d858f617d90c/models/edcoder.py",
+      "use": "Original model and decoder implementation"
+    },
+    {
+      "title": "Where to Mask: Structure-Guided Masking for Graph Masked Autoencoders",
+      "url": "https://ijcai.org/proceedings/2024/241",
+      "use": "StructMAE motivation and bibliographic identity; no transfer-success claim"
+    },
+    {
+      "title": "Rethinking Graph Masked Autoencoders through Alignment and Uniformity",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29479",
+      "use": "AUG-MAE bibliographic identity and distinction from the D proxy; publisher direct access was denied, publisher search-index text supported the citation"
+    },
+    {
+      "title": "Reconstruction Outcomes Look Similar but Processes Differ: Improving Context Consistency and Coverage in Graph Masked Auto-Encoder",
+      "url": "https://proceedings.mlr.press/v306/tang26l.html",
+      "use": "C2-GMAE bibliographic identity and distinction from S-only sampling"
+    }
+  ],
+  "remote_repository_check": {
+    "url": "https://github.com/BabyofStar/GraphMAE2",
+    "latest_commit_verified": false,
+    "P_J_inventory_verified": false,
+    "observation": "Repository page available with old progress text; commits, branch inventory and commit API did not yield a verifiable current revision through the browsing tool.",
+    "interpretation": "Neither proves nor disproves P/J upload. Current sync status remains unverified."
+  }
+}

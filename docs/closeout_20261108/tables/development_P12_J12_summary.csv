@@ -1,0 +1,9 @@
+﻿batch,dataset,method,metric,n,seeds,mean_percent,population_sd_percent,sd_ddof,per_seed_percent,evidence_status,source
+P12,cora,S,best_val_acc,3,"[0, 1, 2]",81.6,0.6531972647421843,0,"[81.6, 80.8, 82.4]",服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组,sources/P12/server_return.json
+P12,cora,H,best_val_acc,3,"[0, 1, 2]",81.4,0.32659863237108927,0,"[81.0, 81.4, 81.8]",服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组,sources/P12/server_return.json
+P12,cora,P,best_val_acc,3,"[0, 1, 2]",81.13333333333334,0.6599663291074422,0,"[81.0, 80.4, 82.0]",服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组,sources/P12/server_return.json
+P12,cora,PS,best_val_acc,3,"[0, 1, 2]",81.4,0.4320493798938569,0,"[81.0, 81.2, 82.0]",服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组,sources/P12/server_return.json
+J12,cora,S,best_val_acc,3,"[0, 1, 2]",81.6,0.6531972647421843,0,"[81.6, 80.8, 82.4]",现有原始产物有限独立核验PASS；未重放Torch随机流或模型,sources/J12/analysis_results.json
+J12,cora,NA,best_val_acc,3,"[0, 1, 2]",81.73333333333333,0.49888765156986087,0,"[82.4, 81.2, 81.6]",现有原始产物有限独立核验PASS；未重放Torch随机流或模型,sources/J12/analysis_results.json
+J12,cora,NR,best_val_acc,3,"[0, 1, 2]",81.8,0.32659863237108927,0,"[81.4, 81.8, 82.2]",现有原始产物有限独立核验PASS；未重放Torch随机流或模型,sources/J12/analysis_results.json
+J12,cora,NC,best_val_acc,3,"[0, 1, 2]",79.13333333333334,0.8993825042154717,0,"[80.4, 78.6, 78.4]",现有原始产物有限独立核验PASS；未重放Torch随机流或模型,sources/J12/analysis_results.json

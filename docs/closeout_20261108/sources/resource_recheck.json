@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "raw_resources_equal_saved_analysis": 60,
+  "source_archive_sha256": "2f9a797f5e15eb833ae4f612d1e0f56243030657e7025bf495ba97c753dbb036",
+  "maxima_MiB": {
+    "cora:B0": 394.01416015625,
+    "cora:B2": 394.03564453125,
+    "citeseer:B0": 723.96533203125,
+    "citeseer:B2": 723.99072265625,
+    "pubmed:B0": 978.53466796875,
+    "pubmed:B2": 978.68603515625
+  },
+  "scope": "Resource table B0/B2 only; no isolated performance benchmark",
+  "minor_historical_text_discrepancy": "Historical formal120_report.md says Citeseer B0 723.96 and PubMed B0 978.54; raw maxima round to 723.97 and 978.53 MiB. Current draft uses raw maxima; historical report retained unchanged."
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "date": "2026-11-08 Asia/Shanghai",
+  "csv_rows": {
+    "formal_test_runs_120.csv": 120,
+    "formal_test_summary.csv": 12,
+    "formal_B2_minus_B0_per_seed.csv": 30,
+    "formal_B2_minus_B0_statistics.csv": 3,
+    "development_validation_runs_87.csv": 87,
+    "development_3graphs_summary.csv": 21,
+    "development_P12_J12_summary.csv": 8,
+    "development_paired_comparisons.csv": 52,
+    "mechanism_S_R.csv": 9,
+    "run_ledger.csv": 8,
+    "run_ledger_all.csv": 9,
+    "arxiv_A_probe_results_10.csv": 10,
+    "arxiv_A_epochs_60.csv": 60,
+    "arxiv_A_validation_curves_10000.csv": 10000,
+    "arxiv_A_server_asset_receipts.csv": 15
+  },
+  "relative_links_checked": 16,
+  "historical_source_hashes_unchanged": 25,
+  "figure_assets": [
+    {
+      "stem": "formal_B2_minus_B0",
+      "width": 3000,
+      "height": 1550
+    },
+    {
+      "stem": "mechanism_S_R",
+      "width": 3125,
+      "height": 1550
+    },
+    {
+      "stem": "arxiv_A_training_and_probe",
+      "width": 3125,
+      "height": 1550
+    }
+  ],
+  "formal_development_arxiv_populations_separate": true,
+  "report_cells_match_tables": true,
+  "self_contained_HTML_images": 3,
+  "audit_scope": "Numeric/document consistency plus finite A artifact audit; no local model inference",
+  "unconfirmed": [
+    "Latest remote branch sync",
+    "Independent copies of complete external weights/data/environment",
+    "Course-specific final format/submission"
+  ]
+}

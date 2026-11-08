@@ -1,0 +1,4144 @@
+{
+  "groups": [
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "mean_val_percent": 80.53333333333335,
+      "population_std_percent": 1.0873004286866703,
+      "per_seed_val_percent": [
+        80.2,
+        79.4,
+        82.0
+      ],
+      "best_val_epochs": [
+        299,
+        299,
+        138
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "B2",
+      "mean_val_percent": 80.93333333333334,
+      "population_std_percent": 0.9843215373488836,
+      "per_seed_val_percent": [
+        80.80000000000001,
+        79.80000000000001,
+        82.19999999999999
+      ],
+      "best_val_epochs": [
+        109,
+        299,
+        116
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "mean_val_percent": 80.8,
+      "population_std_percent": 1.0708252269472587,
+      "per_seed_val_percent": [
+        80.60000000000001,
+        79.60000000000001,
+        82.19999999999999
+      ],
+      "best_val_epochs": [
+        100,
+        299,
+        57
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "mean_val_percent": 81.66666666666667,
+      "population_std_percent": 0.4109609335312594,
+      "per_seed_val_percent": [
+        81.6,
+        81.2,
+        82.19999999999999
+      ],
+      "best_val_epochs": [
+        104,
+        5,
+        121
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "mean_val_percent": 72.73333333333333,
+      "population_std_percent": 1.481740718059526,
+      "per_seed_val_percent": [
+        72.0,
+        74.8,
+        71.39999999999999
+      ],
+      "best_val_epochs": [
+        19,
+        2,
+        305
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B2",
+      "mean_val_percent": 73.2,
+      "population_std_percent": 1.704894913672587,
+      "per_seed_val_percent": [
+        72.2,
+        75.6,
+        71.8
+      ],
+      "best_val_epochs": [
+        9,
+        2,
+        20
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "mean_val_percent": 73.0,
+      "population_std_percent": 1.2754084313139307,
+      "per_seed_val_percent": [
+        72.2,
+        74.8,
+        72.0
+      ],
+      "best_val_epochs": [
+        28,
+        2,
+        330
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "mean_val_percent": 72.33333333333333,
+      "population_std_percent": 0.7717224601860194,
+      "per_seed_val_percent": [
+        71.6,
+        73.4,
+        72.0
+      ],
+      "best_val_epochs": [
+        8,
+        2,
+        5
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "mean_val_percent": 83.33333333333333,
+      "population_std_percent": 0.4109609335312648,
+      "per_seed_val_percent": [
+        82.8,
+        83.39999999999999,
+        83.8
+      ],
+      "best_val_epochs": [
+        168,
+        499,
+        132
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B2",
+      "mean_val_percent": 83.60000000000001,
+      "population_std_percent": 0.32659863237108927,
+      "per_seed_val_percent": [
+        83.2,
+        83.6,
+        84.0
+      ],
+      "best_val_epochs": [
+        130,
+        299,
+        167
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "mean_val_percent": 83.19999999999999,
+      "population_std_percent": 0.16329931618554175,
+      "per_seed_val_percent": [
+        83.0,
+        83.2,
+        83.39999999999999
+      ],
+      "best_val_epochs": [
+        95,
+        138,
+        193
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "mean_val_percent": 83.93333333333332,
+      "population_std_percent": 0.3399346342395173,
+      "per_seed_val_percent": [
+        83.6,
+        83.8,
+        84.39999999999999
+      ],
+      "best_val_epochs": [
+        56,
+        153,
+        71
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "cora",
+      "method": "D",
+      "reference": "B0",
+      "differences_pp": [
+        0.40000000000000036,
+        0.20000000000000018,
+        0.20000000000000018
+      ],
+      "mean_pp": 0.2666666666666669,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.20000000000000018,
+        0.30000000000000027,
+        0.30000000000000027
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "reference": "B2",
+      "differences_pp": [
+        -0.20000000000000018,
+        -0.20000000000000018,
+        0.0
+      ],
+      "mean_pp": -0.13333333333333344,
+      "wins": 0,
+      "ties": 1,
+      "losses": 2,
+      "leave_one_out_mean_pp": [
+        -0.10000000000000009,
+        -0.10000000000000009,
+        -0.20000000000000018
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        1.3999999999999901,
+        1.8000000000000016,
+        0.20000000000000018
+      ],
+      "mean_pp": 1.1333333333333306,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        1.0000000000000009,
+        0.7999999999999952,
+        1.5999999999999959
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        0.7999999999999896,
+        1.4000000000000012,
+        0.0
+      ],
+      "mean_pp": 0.7333333333333303,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.7000000000000006,
+        0.3999999999999948,
+        1.0999999999999954
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "reference": "B0",
+      "differences_pp": [
+        0.20000000000000018,
+        0.0,
+        0.6000000000000005
+      ],
+      "mean_pp": 0.2666666666666669,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.30000000000000027,
+        0.40000000000000036,
+        0.10000000000000009
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "reference": "B2",
+      "differences_pp": [
+        0.0,
+        -0.8000000000000007,
+        0.20000000000000018
+      ],
+      "mean_pp": -0.20000000000000018,
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "leave_one_out_mean_pp": [
+        -0.30000000000000027,
+        0.10000000000000009,
+        -0.40000000000000036
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        -0.40000000000000036,
+        -1.4000000000000012,
+        0.6000000000000005
+      ],
+      "mean_pp": -0.40000000000000036,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_out_mean_pp": [
+        -0.40000000000000036,
+        0.10000000000000009,
+        -0.9000000000000008
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        -0.6000000000000005,
+        -2.200000000000002,
+        0.20000000000000018
+      ],
+      "mean_pp": -0.8666666666666675,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_out_mean_pp": [
+        -1.0000000000000009,
+        -0.20000000000000018,
+        -1.4000000000000012
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "reference": "B0",
+      "differences_pp": [
+        0.20000000000000018,
+        -0.20000000000000018,
+        -0.40000000000000036
+      ],
+      "mean_pp": -0.13333333333333344,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_out_mean_pp": [
+        -0.30000000000000027,
+        -0.10000000000000009,
+        0.0
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "reference": "B2",
+      "differences_pp": [
+        -0.20000000000000018,
+        -0.40000000000000036,
+        -0.6000000000000005
+      ],
+      "mean_pp": -0.40000000000000036,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_out_mean_pp": [
+        -0.5000000000000004,
+        -0.40000000000000036,
+        -0.30000000000000027
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        0.8000000000000007,
+        0.40000000000000036,
+        0.6000000000000005
+      ],
+      "mean_pp": 0.6000000000000005,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.5000000000000004,
+        0.7000000000000006,
+        0.6000000000000005
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        0.40000000000000036,
+        0.20000000000000018,
+        0.40000000000000036
+      ],
+      "mean_pp": 0.33333333333333365,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.30000000000000027,
+        0.40000000000000036,
+        0.30000000000000027
+      ]
+    }
+  ],
+  "diagnostics": [
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "seed": 0,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        919.0,
+        1000.0,
+        1068.0
+      ],
+      "count_cv": 0.02236209997986775,
+      "error_ema_mean": 0.3977778853306566,
+      "error_degree_pearson": -0.2622643233915328,
+      "error_log_degree_pearson": -0.5135193054008563,
+      "error_density_pearson": -0.2893412401578988,
+      "count_error_pearson": -0.01171327362283259,
+      "count_density_pearson": 0.004658745576184045,
+      "count_log_degree_pearson": -0.0063439554828829195,
+      "late_degree_gap": 0.02717881202697754,
+      "final_clipped_error_cv": 0.3033854350288679,
+      "late_masked_one_hop_visible_mean": 1.9432791728212702,
+      "late_masked_one_hop_zero_visible_fraction": 0.17355982274741505,
+      "late_masked_two_hop_visible_mean": 17.85745937961595,
+      "late_masked_two_hop_zero_visible_fraction": 0.03338257016248154,
+      "layer_mask_rate_percent_mean": [
+        50.158261236547794,
+        49.94724625448407,
+        49.7643666033622,
+        50.13012590560597
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.449822912686391,
+        1.7185310259988997,
+        1.741125807051994,
+        1.46543621385061
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 999.5849335302806,
+          "error_ema_mean": 0.5032093439972031,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.3781388478582,
+          "error_ema_mean": 0.384013878696074,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 999.4460856720827,
+          "error_ema_mean": 0.3399093484992995,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 1000.5908419497785,
+          "error_ema_mean": 0.3639789701300499,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 1.0008474226804123,
+          "error_ema_mean": 0.5231146931648254
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9996491803278689,
+          "error_ema_mean": 0.3934634867896799
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.0001776504297994,
+          "error_ema_mean": 0.32011471337566744
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9984022140221402,
+      "baseline_hard_top10_error_ema_mean": 0.6430633624541363,
+      "pretrain_seconds": 130.83401400898583,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.20637142204213887,
+      "runner_seconds": 149.1883860770613
+    },
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "seed": 1,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        932.0,
+        1000.0,
+        1071.0
+      ],
+      "count_cv": 0.021998925715680247,
+      "error_ema_mean": 0.4027854565288899,
+      "error_degree_pearson": -0.26035923062376215,
+      "error_log_degree_pearson": -0.5059230553786855,
+      "error_density_pearson": -0.28930211359154506,
+      "count_error_pearson": 0.00838386138152749,
+      "count_density_pearson": 0.008539203999546703,
+      "count_log_degree_pearson": -0.02455326642246233,
+      "late_degree_gap": 0.043722343444824216,
+      "final_clipped_error_cv": 0.30317873943402185,
+      "late_masked_one_hop_visible_mean": 1.9503692762186113,
+      "late_masked_one_hop_zero_visible_fraction": 0.17666174298375187,
+      "late_masked_two_hop_visible_mean": 17.9288035450517,
+      "late_masked_two_hop_zero_visible_fraction": 0.03308714918759233,
+      "layer_mask_rate_percent_mean": [
+        49.778434268833074,
+        49.919110923542235,
+        50.60842653161708,
+        49.69402827600761
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.8672938206752532,
+        1.7390786941244494,
+        2.017839768963717,
+        2.171643885824165
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1000.165435745938,
+          "error_ema_mean": 0.511129326975328,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.5790251107828,
+          "error_ema_mean": 0.3867260001302646,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.8626292466765,
+          "error_ema_mean": 0.34128224747351743,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 1000.3929098966026,
+          "error_ema_mean": 0.3720042515364496,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 1.0008474226804123,
+          "error_ema_mean": 0.526960209349996
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 1.0001744262295083,
+          "error_ema_mean": 0.39888476810494405
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 0.9990300859598854,
+          "error_ema_mean": 0.3250258501224156
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9994022140221402,
+      "baseline_hard_top10_error_ema_mean": 0.652624789199266,
+      "pretrain_seconds": 130.9583092899993,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.2172653659945354,
+      "runner_seconds": 145.79958044202067
+    },
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "seed": 2,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        921.0,
+        1000.0,
+        1070.0
+      ],
+      "count_cv": 0.02234876962368985,
+      "error_ema_mean": 0.39636265139812205,
+      "error_degree_pearson": -0.2647261186051492,
+      "error_log_degree_pearson": -0.5200414208778095,
+      "error_density_pearson": -0.2864249740664078,
+      "count_error_pearson": 0.008671704669733545,
+      "count_density_pearson": -0.040205095595398956,
+      "count_log_degree_pearson": 0.025370816180925272,
+      "late_degree_gap": -0.0688331127166748,
+      "final_clipped_error_cv": 0.3051230933365205,
+      "late_masked_one_hop_visible_mean": 1.9389955686853768,
+      "late_masked_one_hop_zero_visible_fraction": 0.17917282127031017,
+      "late_masked_two_hop_visible_mean": 17.897341211225996,
+      "late_masked_two_hop_zero_visible_fraction": 0.03500738552437223,
+      "layer_mask_rate_percent_mean": [
+        49.876907927129494,
+        49.62368994865302,
+        50.214531898431446,
+        50.28487022578604
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.5674245643445428,
+        1.7010245076867232,
+        1.9315524560542565,
+        1.4120671048171864
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 999.9423929098966,
+          "error_ema_mean": 0.5033352114425276,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.9468242245199,
+          "error_ema_mean": 0.380456410029262,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 1000.2038404726735,
+          "error_ema_mean": 0.33702998208858764,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.9069423929099,
+          "error_ema_mean": 0.3646290020321109,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 0.9992536082474227,
+          "error_ema_mean": 0.5244184927842052
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 1.0000104918032786,
+          "error_ema_mean": 0.3916011690458313
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.0004957020057306,
+          "error_ema_mean": 0.3177869744855046
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0015756457564575,
+      "baseline_hard_top10_error_ema_mean": 0.6420575848804628,
+      "pretrain_seconds": 130.2337100849254,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.2079158970154822,
+      "runner_seconds": 144.72566949599423
+    },
+    {
+      "dataset": "cora",
+      "method": "B2",
+      "seed": 0,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        843.0,
+        1000.0,
+        1287.0
+      ],
+      "count_cv": 0.06586105063797092,
+      "error_ema_mean": 0.4103908479830011,
+      "error_degree_pearson": -0.29150919035098577,
+      "error_log_degree_pearson": -0.5395084407989504,
+      "error_density_pearson": -0.3307819239103328,
+      "count_error_pearson": -0.532837714353951,
+      "count_density_pearson": -0.16462619255211403,
+      "count_log_degree_pearson": 0.9372420942081986,
+      "late_degree_gap": 0.6794682502746582,
+      "final_clipped_error_cv": 0.2948695164160498,
+      "late_masked_one_hop_visible_mean": 1.963072378138848,
+      "late_masked_one_hop_zero_visible_fraction": 0.1843426883308715,
+      "late_masked_two_hop_visible_mean": 17.888626292466768,
+      "late_masked_two_hop_zero_visible_fraction": 0.027031019202363366,
+      "layer_mask_rate_percent_mean": [
+        50.17936273475417,
+        50.953084335654495,
+        50.23563339663782,
+        48.63191953295351
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.67248509984675,
+        1.7052946865038534,
+        1.774813160376524,
+        1.2623721333395315
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 997.4579025110783,
+          "error_ema_mean": 0.5145672645359307,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1013.9512555391433,
+          "error_ema_mean": 0.4018510768473412,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 1008.9143279172821,
+          "error_ema_mean": 0.3559382325877467,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 979.6765140324964,
+          "error_ema_mean": 0.36920681796098564,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 0.9087999999999999,
+          "error_ema_mean": 0.526800079382572
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9934636065573771,
+          "error_ema_mean": 0.41328000616831856
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.077650429799427,
+          "error_ema_mean": 0.3231925049150912
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9558523985239853,
+      "baseline_hard_top10_error_ema_mean": 0.6357722758586997,
+      "pretrain_seconds": 131.06199792400002,
+      "pretrain_peak_allocated_MiB": 416.3056640625,
+      "mask_preparation_seconds": 0.22641649807337672,
+      "runner_seconds": 145.43758568295743
+    },
+    {
+      "dataset": "cora",
+      "method": "B2",
+      "seed": 1,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        828.0,
+        1000.0,
+        1318.0
+      ],
+      "count_cv": 0.06697511608275401,
+      "error_ema_mean": 0.41726805148935125,
+      "error_degree_pearson": -0.2882090345330627,
+      "error_log_degree_pearson": -0.5337826188703065,
+      "error_density_pearson": -0.3357736266409556,
+      "count_error_pearson": -0.5331010358946406,
+      "count_density_pearson": -0.17675276676753407,
+      "count_log_degree_pearson": 0.9380540495591018,
+      "late_degree_gap": 0.8274741172790527,
+      "final_clipped_error_cv": 0.2917660530708512,
+      "late_masked_one_hop_visible_mean": 1.920088626292467,
+      "late_masked_one_hop_zero_visible_fraction": 0.20576070901033972,
+      "late_masked_two_hop_visible_mean": 17.712998522895127,
+      "late_masked_two_hop_zero_visible_fraction": 0.029098966026587892,
+      "layer_mask_rate_percent_mean": [
+        50.14419357107689,
+        50.390377716817895,
+        50.580291200675255,
+        48.88513751142999
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.4325553484533682,
+        2.091072233270732,
+        1.5374677672601584,
+        1.643239421212447
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 998.6070901033974,
+          "error_ema_mean": 0.5232782720903174,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1014.698670605613,
+          "error_ema_mean": 0.4064892437556646,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 1009.6912850812407,
+          "error_ema_mean": 0.36427962197818997,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 977.0029542097489,
+          "error_ema_mean": 0.37502506813323305,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 0.907498969072165,
+          "error_ema_mean": 0.5346155769431714
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9928026229508197,
+          "error_ema_mean": 0.41919128521544036
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.0799985673352435,
+          "error_ema_mean": 0.3315281069658718
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9525608856088561,
+      "baseline_hard_top10_error_ema_mean": 0.6480064042379935,
+      "pretrain_seconds": 131.5692181850318,
+      "pretrain_peak_allocated_MiB": 416.3056640625,
+      "mask_preparation_seconds": 0.22523154004011303,
+      "runner_seconds": 145.99590825592168
+    },
+    {
+      "dataset": "cora",
+      "method": "B2",
+      "seed": 2,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        843.0,
+        1000.0,
+        1365.0
+      ],
+      "count_cv": 0.06749112311015876,
+      "error_ema_mean": 0.4127411789328212,
+      "error_degree_pearson": -0.2975349743508454,
+      "error_log_degree_pearson": -0.5513329718558679,
+      "error_density_pearson": -0.3162430070974433,
+      "count_error_pearson": -0.5372394111029353,
+      "count_density_pearson": -0.18537551637614105,
+      "count_log_degree_pearson": 0.9387153546602147,
+      "late_degree_gap": 0.9220088005065918,
+      "final_clipped_error_cv": 0.29528830649019017,
+      "late_masked_one_hop_visible_mean": 1.9389955686853768,
+      "late_masked_one_hop_zero_visible_fraction": 0.19497784342688332,
+      "late_masked_two_hop_visible_mean": 17.811521418020682,
+      "late_masked_two_hop_zero_visible_fraction": 0.03131462333825702,
+      "layer_mask_rate_percent_mean": [
+        49.79953576703946,
+        49.97538158542591,
+        50.917915171977214,
+        49.30716747555744
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.3677504338000797,
+        1.4603632616509135,
+        1.1835664623237103,
+        1.5170919000681344
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 998.3692762186115,
+          "error_ema_mean": 0.5161886735540021,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1014.7075332348596,
+          "error_ema_mean": 0.4034512073153759,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 1010.1211225997046,
+          "error_ema_mean": 0.3581556322347466,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 976.8020679468242,
+          "error_ema_mean": 0.3731692026271602,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 0.9057463917525773,
+          "error_ema_mean": 0.5338348741383897
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9931370491803279,
+          "error_ema_mean": 0.4155466137362308
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.0804856733524355,
+          "error_ema_mean": 0.3224707917553135
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9553616236162362,
+      "baseline_hard_top10_error_ema_mean": 0.6386729453542576,
+      "pretrain_seconds": 130.70280117797665,
+      "pretrain_peak_allocated_MiB": 416.3056640625,
+      "mask_preparation_seconds": 0.2238832920556888,
+      "runner_seconds": 147.80786838603672
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "seed": 0,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        839.0,
+        1000.0,
+        1146.0
+      ],
+      "count_cv": 0.05501826606847661,
+      "error_ema_mean": 0.39243814669428406,
+      "error_degree_pearson": -0.2545228810172818,
+      "error_log_degree_pearson": -0.504575264164206,
+      "error_density_pearson": -0.2972158317022303,
+      "count_error_pearson": 0.872022894411106,
+      "count_density_pearson": -0.2572232154681011,
+      "count_log_degree_pearson": -0.5093309571757823,
+      "late_degree_gap": -0.4351551055908203,
+      "final_clipped_error_cv": 0.3022329975646457,
+      "late_masked_one_hop_visible_mean": 1.9735598227474154,
+      "late_masked_one_hop_zero_visible_fraction": 0.1723781388478582,
+      "late_masked_two_hop_visible_mean": 17.9109305760709,
+      "late_masked_two_hop_zero_visible_fraction": 0.04121122599704579,
+      "layer_mask_rate_percent_mean": [
+        52.3106140535978,
+        50.228599563902364,
+        48.52641204192164,
+        48.93437434057819
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.9298355543656756,
+        1.5115050283222027,
+        1.61527186825995,
+        1.1524329092838261
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1042.2629246676513,
+          "error_ema_mean": 0.4974081286035225,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 996.8124076809454,
+          "error_ema_mean": 0.3797080960768541,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 974.4903988183161,
+          "error_ema_mean": 0.334838137239702,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 986.4342688330871,
+          "error_ema_mean": 0.35779822485705776,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 1.0534948453608246,
+          "error_ema_mean": 0.5167649663600725
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9982668852459017,
+          "error_ema_mean": 0.38640178367251254
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 0.9666160458452722,
+          "error_ema_mean": 0.31923892902994905
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.083878228782288,
+      "baseline_hard_top10_error_ema_mean": 0.6200830222715751,
+      "pretrain_seconds": 133.63113308802713,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.2054387569660321,
+      "runner_seconds": 152.62194953102153
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "seed": 1,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        846.0,
+        1000.0,
+        1146.0
+      ],
+      "count_cv": 0.05391399272472239,
+      "error_ema_mean": 0.3988884577811028,
+      "error_degree_pearson": -0.2515694286961061,
+      "error_log_degree_pearson": -0.49770910244173666,
+      "error_density_pearson": -0.29106154992593386,
+      "count_error_pearson": 0.8682800302734622,
+      "count_density_pearson": -0.2727464751445995,
+      "count_log_degree_pearson": -0.4894558257815618,
+      "late_degree_gap": -0.34948296546936036,
+      "final_clipped_error_cv": 0.30409450667319227,
+      "late_masked_one_hop_visible_mean": 1.9280649926144755,
+      "late_masked_one_hop_zero_visible_fraction": 0.1883308714918759,
+      "late_masked_two_hop_visible_mean": 17.805022156573113,
+      "late_masked_two_hop_zero_visible_fraction": 0.042097488921713444,
+      "layer_mask_rate_percent_mean": [
+        52.38095238095239,
+        49.72919743968489,
+        48.65302103115989,
+        49.23682914820285
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        2.4727098592074084,
+        2.320034851502277,
+        1.597717726329825,
+        1.5406823475181426
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1042.599704579025,
+          "error_ema_mean": 0.5064017486537049,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 997.4017725258493,
+          "error_ema_mean": 0.38507235479407687,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 974.8094534711964,
+          "error_ema_mean": 0.33934266781613254,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 985.1890694239291,
+          "error_ema_mean": 0.36473705986049715,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 1.0510453608247423,
+          "error_ema_mean": 0.5250139202653747
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.997816393442623,
+          "error_ema_mean": 0.39232165020997406
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 0.9693022922636103,
+          "error_ema_mean": 0.3255983893586093
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0812177121771218,
+      "baseline_hard_top10_error_ema_mean": 0.6326877613349154,
+      "pretrain_seconds": 132.56154934002552,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.20742539502680302,
+      "runner_seconds": 147.06621414690744
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "seed": 2,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        836.0,
+        1000.0,
+        1145.0
+      ],
+      "count_cv": 0.0546394114905665,
+      "error_ema_mean": 0.3925929984196118,
+      "error_degree_pearson": -0.25959263327560644,
+      "error_log_degree_pearson": -0.5178662166380615,
+      "error_density_pearson": -0.27666788286951455,
+      "count_error_pearson": 0.8730858269384526,
+      "count_density_pearson": -0.2836339673169037,
+      "count_log_degree_pearson": -0.49480303465426656,
+      "late_degree_gap": -0.3701624870300293,
+      "final_clipped_error_cv": 0.3070732252159309,
+      "late_masked_one_hop_visible_mean": 1.956129985228951,
+      "late_masked_one_hop_zero_visible_fraction": 0.17784342688330873,
+      "late_masked_two_hop_visible_mean": 17.92540620384047,
+      "late_masked_two_hop_zero_visible_fraction": 0.047267355982274745,
+      "layer_mask_rate_percent_mean": [
+        52.02926074417951,
+        49.32123514102836,
+        49.10318632622916,
+        49.54631778856298
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.9590202818914568,
+        1.3583130536169141,
+        1.9788960566764515,
+        1.1874476342501328
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1043.063515509601,
+          "error_ema_mean": 0.4974770470683296,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 997.8596750369276,
+          "error_ema_mean": 0.37897127761094224,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 974.7562776957164,
+          "error_ema_mean": 0.33484001492908116,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 984.3205317577548,
+          "error_ema_mean": 0.3590836540700942,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 1.0514742268041237,
+          "error_ema_mean": 0.5248254073034857
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.997936393442623,
+          "error_ema_mean": 0.3854404488450191
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 0.9687421203438396,
+          "error_ema_mean": 0.31633930184736975
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0839483394833949,
+      "baseline_hard_top10_error_ema_mean": 0.620949623329613,
+      "pretrain_seconds": 133.74794631893747,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.21045937098097056,
+      "runner_seconds": 148.34588888997678
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 0,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        930.0,
+        1000.0,
+        1083.0
+      ],
+      "count_cv": 0.022388044129421306,
+      "error_ema_mean": 0.3964287198315123,
+      "error_degree_pearson": -0.2596719555973739,
+      "error_log_degree_pearson": -0.5061938525884147,
+      "error_density_pearson": -0.315082379827536,
+      "count_error_pearson": 0.008375996948012188,
+      "count_density_pearson": -0.06426437500963815,
+      "count_log_degree_pearson": 0.011874462605078127,
+      "late_degree_gap": -0.11137380599975585,
+      "final_clipped_error_cv": 0.30083793426524397,
+      "late_masked_one_hop_visible_mean": 1.9682422451994093,
+      "late_masked_one_hop_zero_visible_fraction": 0.17695716395864106,
+      "late_masked_two_hop_visible_mean": 17.896602658788773,
+      "late_masked_two_hop_zero_visible_fraction": 0.035598227474150666,
+      "layer_mask_rate_percent_mean": [
+        50.073855243722306,
+        50.073855243722306,
+        49.926144756277694,
+        49.926144756277694
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.0,
+        0.0,
+        5.551115123125783e-15,
+        5.551115123125783e-15
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461,
+          "error_ema_mean": 0.5054363653481975,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461,
+          "error_ema_mean": 0.3828213511356751,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.5228951255539,
+          "error_ema_mean": 0.3372537525070823,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.5228951255539,
+          "error_ema_mean": 0.36020341033509423,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 0.9994927835051547,
+          "error_ema_mean": 0.5182307407413561
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9998747540983607,
+          "error_ema_mean": 0.3925094351905291
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.0006260744985673,
+          "error_ema_mean": 0.3203584174478806
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.000819188191882,
+      "baseline_hard_top10_error_ema_mean": 0.6252148547295715,
+      "pretrain_seconds": 132.64637398300692,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.21244294301141053,
+      "runner_seconds": 147.73521527496632
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 1,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        921.0,
+        1000.0,
+        1083.0
+      ],
+      "count_cv": 0.021835002999364913,
+      "error_ema_mean": 0.3992023930019607,
+      "error_degree_pearson": -0.26406043623832764,
+      "error_log_degree_pearson": -0.517243878810621,
+      "error_density_pearson": -0.3044167617641515,
+      "count_error_pearson": 0.021022490789141878,
+      "count_density_pearson": -0.057395893835937024,
+      "count_log_degree_pearson": 0.0011146019250794104,
+      "late_degree_gap": -0.0050221443176269535,
+      "final_clipped_error_cv": 0.3055536878279922,
+      "late_masked_one_hop_visible_mean": 1.9522895125553916,
+      "late_masked_one_hop_zero_visible_fraction": 0.17488921713441657,
+      "late_masked_two_hop_visible_mean": 17.927917282127034,
+      "late_masked_two_hop_zero_visible_fraction": 0.035893648449039875,
+      "layer_mask_rate_percent_mean": [
+        50.073855243722306,
+        50.073855243722306,
+        49.926144756277694,
+        49.926144756277694
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.0,
+        0.0,
+        5.551115123125783e-15,
+        5.551115123125783e-15
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461,
+          "error_ema_mean": 0.5072861933637757,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461,
+          "error_ema_mean": 0.3838410395551115,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.5228951255539,
+          "error_ema_mean": 0.3426569261900431,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.5228951255539,
+          "error_ema_mean": 0.3630254128989124,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 0.9990907216494845,
+          "error_ema_mean": 0.5275891853976495
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 1.000312131147541,
+          "error_ema_mean": 0.394520939559233
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 0.9999498567335243,
+          "error_ema_mean": 0.3202219090309731
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0011992619926198,
+      "baseline_hard_top10_error_ema_mean": 0.6336686978480912,
+      "pretrain_seconds": 132.29236708802637,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.2112879779888317,
+      "runner_seconds": 147.17784524010494
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 2,
+      "observed_nodes": 2708,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        910.0,
+        1000.0,
+        1072.0
+      ],
+      "count_cv": 0.022461011682251782,
+      "error_ema_mean": 0.393755831113264,
+      "error_degree_pearson": -0.2662475010850161,
+      "error_log_degree_pearson": -0.5228708015918029,
+      "error_density_pearson": -0.29377668846896504,
+      "count_error_pearson": 0.0063598672078250176,
+      "count_density_pearson": -0.05039627511735335,
+      "count_log_degree_pearson": 0.026399041327947344,
+      "late_degree_gap": -0.0466766357421875,
+      "final_clipped_error_cv": 0.30396331593594744,
+      "late_masked_one_hop_visible_mean": 1.9548005908419497,
+      "late_masked_one_hop_zero_visible_fraction": 0.1831610044313146,
+      "late_masked_two_hop_visible_mean": 17.899409158050222,
+      "late_masked_two_hop_zero_visible_fraction": 0.03707533234859675,
+      "layer_mask_rate_percent_mean": [
+        50.073855243722306,
+        50.073855243722306,
+        49.926144756277694,
+        49.926144756277694
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.0,
+        0.0,
+        5.551115123125783e-15,
+        5.551115123125783e-15
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461,
+          "error_ema_mean": 0.49947943145538537,
+          "density_mean": 0.06372805984543449
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461,
+          "error_ema_mean": 0.37832028805065016,
+          "density_mean": 0.10895222019843183
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.5228951255539,
+          "error_ema_mean": 0.33570290087244886,
+          "density_mean": 0.143959707414694
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.5228951255539,
+          "error_ema_mean": 0.36152070407457154,
+          "density_mean": 0.2301435782982442
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 485,
+          "count_ratio_to_all": 1.0006082474226803,
+          "error_ema_mean": 0.5212307251605791
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1525,
+          "count_ratio_to_all": 0.9992498360655737,
+          "error_ema_mean": 0.38898631120314364
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 698,
+          "count_ratio_to_all": 1.0012163323782235,
+          "error_ema_mean": 0.31560138161467616
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0006273062730626,
+      "baseline_hard_top10_error_ema_mean": 0.6243356549871804,
+      "pretrain_seconds": 132.0194298780989,
+      "pretrain_peak_allocated_MiB": 416.294921875,
+      "mask_preparation_seconds": 0.21297234995290637,
+      "runner_seconds": 146.90129500604235
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "seed": 0,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        214.0,
+        249.9248572287346,
+        289.0
+      ],
+      "count_cv": 0.04474557256082422,
+      "error_ema_mean": 0.7798790151842873,
+      "error_degree_pearson": -0.47342952883140005,
+      "error_log_degree_pearson": -0.6614589927882002,
+      "error_density_pearson": -0.10917119318912989,
+      "count_error_pearson": -0.004031438205312299,
+      "count_density_pearson": 0.003764746352134575,
+      "count_log_degree_pearson": 0.0015528850912739018,
+      "late_degree_gap": 0.01847696304321289,
+      "final_clipped_error_cv": 0.08636922281986378,
+      "late_masked_one_hop_visible_mean": 1.349368610944077,
+      "late_masked_one_hop_zero_visible_fraction": 0.30757666867107636,
+      "late_masked_two_hop_visible_mean": 7.036680697534576,
+      "late_masked_two_hop_zero_visible_fraction": 0.1476247745039086,
+      "layer_mask_rate_percent_mean": [
+        49.15865384615385,
+        49.519230769230774,
+        50.140224358974365,
+        51.123144805455276
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.9206029882272487,
+        1.1296371938999767,
+        1.0372270405448425,
+        0.843551578211517
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 249.6875,
+          "error_ema_mean": 0.8187740220186802,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250.23677884615384,
+          "error_ema_mean": 0.7577055704135162,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.65264423076923,
+          "error_ema_mean": 0.7650602244270536,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.12274368231047,
+          "error_ema_mean": 0.7779739541410683,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 0.9929651232711966,
+          "error_ema_mean": 0.8970916830003262
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.9996453179715133,
+          "error_ema_mean": 0.8258872646124715
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 1.0006926160000982,
+          "error_ema_mean": 0.7590563105888107
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 0.9995640383739625,
+          "error_ema_mean": 0.7040342196011643
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9987866928865125,
+      "baseline_hard_top10_error_ema_mean": 0.8866486592335744,
+      "pretrain_seconds": 54.84369115100708,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.2931890420150012,
+      "runner_seconds": 69.92116574605461
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "seed": 1,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        211.0,
+        249.9248572287346,
+        294.0
+      ],
+      "count_cv": 0.044507161993628065,
+      "error_ema_mean": 0.7807149677116089,
+      "error_degree_pearson": -0.47999337912333717,
+      "error_log_degree_pearson": -0.670343384725588,
+      "error_density_pearson": -0.0948055177677205,
+      "count_error_pearson": 0.0097835850402627,
+      "count_density_pearson": 0.002475087975586902,
+      "count_log_degree_pearson": -0.012574677826849037,
+      "late_degree_gap": -0.03502476215362549,
+      "final_clipped_error_cv": 0.08585574296927001,
+      "late_masked_one_hop_visible_mean": 1.3484666265784726,
+      "late_masked_one_hop_zero_visible_fraction": 0.2847263980757667,
+      "late_masked_two_hop_visible_mean": 7.039987973541792,
+      "late_masked_two_hop_zero_visible_fraction": 0.12838244137101623,
+      "layer_mask_rate_percent_mean": [
+        49.63942307692308,
+        50.26041666666667,
+        50.080128205128204,
+        49.95988768551945
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.562500000000001,
+        0.543824998417395,
+        1.2309528442097122,
+        0.9175554940792523
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 249.95432692307693,
+          "error_ema_mean": 0.8191430131689861,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.89543269230768,
+          "error_ema_mean": 0.7578861089423299,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.57331730769232,
+          "error_ema_mean": 0.7648868573686252,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.27677496991578,
+          "error_ema_mean": 0.7809441668462237,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 1.0080529915814793,
+          "error_ema_mean": 0.8968294188380241
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.9991643319284395,
+          "error_ema_mean": 0.8266952353075516
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 1.0007797170100752,
+          "error_ema_mean": 0.7602518181411587
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 0.9991203903818526,
+          "error_ema_mean": 0.70395262470804
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.999567708417979,
+      "baseline_hard_top10_error_ema_mean": 0.8871662792142805,
+      "pretrain_seconds": 54.75084464298561,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.28929178102407604,
+      "runner_seconds": 70.27673305093776
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "seed": 2,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        199.0,
+        249.9248572287346,
+        287.0
+      ],
+      "count_cv": 0.0450022917384574,
+      "error_ema_mean": 0.7806387455176046,
+      "error_degree_pearson": -0.46830887234434765,
+      "error_log_degree_pearson": -0.6578014940506686,
+      "error_density_pearson": -0.0997634136690785,
+      "count_error_pearson": -0.005867553223413394,
+      "count_density_pearson": 0.001323784899199075,
+      "count_log_degree_pearson": -0.006195481164078863,
+      "late_degree_gap": -0.023001790046691895,
+      "final_clipped_error_cv": 0.08662869623231585,
+      "late_masked_one_hop_visible_mean": 1.3604930847865302,
+      "late_masked_one_hop_zero_visible_fraction": 0.3003607937462417,
+      "late_masked_two_hop_visible_mean": 7.053517739025857,
+      "late_masked_two_hop_zero_visible_fraction": 0.13619963920625378,
+      "layer_mask_rate_percent_mean": [
+        49.579326923076934,
+        50.24038461538461,
+        50.701121794871796,
+        49.41837144003209
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.4046739469758192,
+        2.4138413992615484,
+        1.7913851566031689,
+        0.9963692216906689
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.26923076923077,
+          "error_ema_mean": 0.8195219064991062,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.53485576923077,
+          "error_ema_mean": 0.758023532680594,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.87740384615384,
+          "error_ema_mean": 0.7657374707408823,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.01805054151623,
+          "error_ema_mean": 0.7792704275368784,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 1.004385222489477,
+          "error_ema_mean": 0.8978274390101433
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 1.0003547723850472,
+          "error_ema_mean": 0.82705615070151
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.9994487047013635,
+          "error_ema_mean": 0.7588775630305413
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.0002671785878723,
+          "error_ema_mean": 0.7065431695104144
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.000132442725347,
+      "baseline_hard_top10_error_ema_mean": 0.8873668606574829,
+      "pretrain_seconds": 54.89612006302923,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.2943135149544105,
+      "runner_seconds": 72.19594980997499
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B2",
+      "seed": 0,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        176.0,
+        249.9248572287346,
+        344.0
+      ],
+      "count_cv": 0.08784755269266316,
+      "error_ema_mean": 0.7883817821893385,
+      "error_degree_pearson": -0.47346441087959584,
+      "error_log_degree_pearson": -0.6462023527879622,
+      "error_density_pearson": -0.15702299494012167,
+      "count_error_pearson": -0.5593412719567126,
+      "count_density_pearson": -0.14553458750084375,
+      "count_log_degree_pearson": 0.8571835353600518,
+      "late_degree_gap": 0.7879389524459839,
+      "final_clipped_error_cv": 0.08370668193588666,
+      "late_masked_one_hop_visible_mean": 1.3385447985568248,
+      "late_masked_one_hop_zero_visible_fraction": 0.30006013229104034,
+      "late_masked_two_hop_visible_mean": 6.90198436560433,
+      "late_masked_two_hop_zero_visible_fraction": 0.10823812387251955,
+      "layer_mask_rate_percent_mean": [
+        49.559294871794876,
+        52.263621794871796,
+        49.47916666666667,
+        48.63618130766145
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.269469512640614,
+        1.4413335830889296,
+        1.3123669354294254,
+        1.6549672078520872
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 248.11658653846155,
+          "error_ema_mean": 0.828232263501447,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 258.21153846153845,
+          "error_ema_mean": 0.7729265464183229,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250.37620192307693,
+          "error_ema_mean": 0.7708602890085715,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 242.98676293622142,
+          "error_ema_mean": 0.7814997581655224,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 0.8077427841250752,
+          "error_ema_mean": 0.8971848525106907
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.933106911237781,
+          "error_ema_mean": 0.8307960777691126
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 1.0230530784051444,
+          "error_ema_mean": 0.7706938387990809
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.134675778763489,
+          "error_ema_mean": 0.7137485227574863
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9285313419252084,
+      "baseline_hard_top10_error_ema_mean": 0.8836913644014536,
+      "pretrain_seconds": 54.63747667300049,
+      "pretrain_peak_allocated_MiB": 794.21435546875,
+      "mask_preparation_seconds": 0.3085061809979379,
+      "runner_seconds": 71.1407560929656
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B2",
+      "seed": 1,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        179.0,
+        249.9248572287346,
+        336.0
+      ],
+      "count_cv": 0.0895668860292803,
+      "error_ema_mean": 0.7894561730027378,
+      "error_degree_pearson": -0.48807217286948773,
+      "error_log_degree_pearson": -0.6627263060164504,
+      "error_density_pearson": -0.1563113221047063,
+      "count_error_pearson": -0.585275579380654,
+      "count_density_pearson": -0.1228067927122398,
+      "count_log_degree_pearson": 0.8612475663863199,
+      "late_degree_gap": 0.8167937994003296,
+      "final_clipped_error_cv": 0.08275066608343608,
+      "late_masked_one_hop_visible_mean": 1.3211064341551413,
+      "late_masked_one_hop_zero_visible_fraction": 0.2970535177390259,
+      "late_masked_two_hop_visible_mean": 6.815995189416716,
+      "late_masked_two_hop_zero_visible_fraction": 0.105832832230908,
+      "layer_mask_rate_percent_mean": [
+        49.258814102564116,
+        51.362179487179496,
+        49.699519230769226,
+        49.618933012434816
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.060185787051223,
+        1.0378071992779352,
+        1.5056055628296114,
+        1.0155626876191066
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 247.64783653846155,
+          "error_ema_mean": 0.8290689857676625,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 257.4879807692308,
+          "error_ema_mean": 0.7732753954254664,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 251.25240384615384,
+          "error_ema_mean": 0.7731599872931838,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 243.30324909747293,
+          "error_ema_mean": 0.7823117364614879,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 0.8089098015634395,
+          "error_ema_mean": 0.8969062703351179
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.9307801412544111,
+          "error_ema_mean": 0.8322550145241661
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 1.023771661737455,
+          "error_ema_mean": 0.7719150322635158
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.1388276543122904,
+          "error_ema_mean": 0.7134365373326146
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9278704826293521,
+      "baseline_hard_top10_error_ema_mean": 0.8841782400199959,
+      "pretrain_seconds": 54.67402645002585,
+      "pretrain_peak_allocated_MiB": 794.21435546875,
+      "mask_preparation_seconds": 0.3330279670190066,
+      "runner_seconds": 69.7086887100013
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B2",
+      "seed": 2,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        184.0,
+        249.9248572287346,
+        339.0
+      ],
+      "count_cv": 0.08901530669636167,
+      "error_ema_mean": 0.7887092914744688,
+      "error_degree_pearson": -0.4911800618103895,
+      "error_log_degree_pearson": -0.667192002927941,
+      "error_density_pearson": -0.13709697320622044,
+      "count_error_pearson": -0.5957187226117722,
+      "count_density_pearson": -0.11935693823838048,
+      "count_log_degree_pearson": 0.86442812070079,
+      "late_degree_gap": 0.6881493330001831,
+      "final_clipped_error_cv": 0.08319983955250551,
+      "late_masked_one_hop_visible_mean": 1.3205051112447386,
+      "late_masked_one_hop_zero_visible_fraction": 0.30156343956704745,
+      "late_masked_two_hop_visible_mean": 6.855983162958509,
+      "late_masked_two_hop_zero_visible_fraction": 0.11395069152134696,
+      "layer_mask_rate_percent_mean": [
+        49.29887820512821,
+        52.02323717948717,
+        49.79967948717949,
+        48.81668672282391
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.297142994596321,
+        2.2883056815507175,
+        1.2938906459899968,
+        2.5955488197090686
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 247.2283653846154,
+          "error_ema_mean": 0.8266990414748971,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 257.6370192307692,
+          "error_ema_mean": 0.7709114373876498,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 251.09254807692307,
+          "error_ema_mean": 0.773727147696683,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 243.73405535499398,
+          "error_ema_mean": 0.7834932700821639,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 0.8049919573060733,
+          "error_ema_mean": 0.8979089831312498
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.9321810131048638,
+          "error_ema_mean": 0.8319555208881846
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 1.0231837299201099,
+          "error_ema_mean": 0.770866422547775
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.1371283987953413,
+          "error_ema_mean": 0.7121961131754281
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9292282480917478,
+      "baseline_hard_top10_error_ema_mean": 0.8825196613062609,
+      "pretrain_seconds": 54.54408142005559,
+      "pretrain_peak_allocated_MiB": 794.21435546875,
+      "mask_preparation_seconds": 0.3136634120019153,
+      "runner_seconds": 69.96195375395473
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "seed": 0,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        206.0,
+        249.9248572287346,
+        292.0
+      ],
+      "count_cv": 0.04767464528693113,
+      "error_ema_mean": 0.7794271053979803,
+      "error_degree_pearson": -0.4629781954128311,
+      "error_log_degree_pearson": -0.6498365894083823,
+      "error_density_pearson": -0.1082421276148129,
+      "count_error_pearson": 0.2930556193085071,
+      "count_density_pearson": -0.05722712527228115,
+      "count_log_degree_pearson": -0.20489747630090785,
+      "late_degree_gap": -0.06928980350494385,
+      "final_clipped_error_cv": 0.08712946556466578,
+      "late_masked_one_hop_visible_mean": 1.3884546001202644,
+      "late_masked_one_hop_zero_visible_fraction": 0.29134095009019845,
+      "late_masked_two_hop_visible_mean": 7.08959711365003,
+      "late_masked_two_hop_zero_visible_fraction": 0.12778111846061335,
+      "layer_mask_rate_percent_mean": [
+        50.42067307692307,
+        50.42067307692308,
+        49.258814102564095,
+        49.83955074207782
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.6196257236135543,
+        0.8660242917154363,
+        1.4678177164841657,
+        1.4662957662602683
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 252.00120192307693,
+          "error_ema_mean": 0.8194721132660141,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.38341346153845,
+          "error_ema_mean": 0.7580792953331883,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 248.73197115384616,
+          "error_ema_mean": 0.7617235431590905,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.58243080625752,
+          "error_ema_mean": 0.7784322741229611,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 1.019139657245941,
+          "error_ema_mean": 0.8970719141264757
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 1.009679889295142,
+          "error_ema_mean": 0.8253945334346379
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.995730580337968,
+          "error_ema_mean": 0.7581063110406707
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 0.9842539972877569,
+          "error_ema_mean": 0.7051843651667798
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0184802999030298,
+      "baseline_hard_top10_error_ema_mean": 0.8804959259233676,
+      "pretrain_seconds": 55.428400293923914,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.2922497330000624,
+      "runner_seconds": 71.34327281406149
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "seed": 1,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        203.0,
+        249.9248572287346,
+        286.0
+      ],
+      "count_cv": 0.04657695960419215,
+      "error_ema_mean": 0.7802946907570314,
+      "error_degree_pearson": -0.47413514263312334,
+      "error_log_degree_pearson": -0.6645045794578315,
+      "error_density_pearson": -0.1017461284703189,
+      "count_error_pearson": 0.2839753386005439,
+      "count_density_pearson": -0.024135890614798428,
+      "count_log_degree_pearson": -0.19471670420842652,
+      "late_degree_gap": -0.04464292526245117,
+      "final_clipped_error_cv": 0.08635109367964987,
+      "late_masked_one_hop_visible_mean": 1.367708959711365,
+      "late_masked_one_hop_zero_visible_fraction": 0.29555021046301866,
+      "late_masked_two_hop_visible_mean": 7.067949488875526,
+      "late_masked_two_hop_zero_visible_fraction": 0.13890559230306676,
+      "layer_mask_rate_percent_mean": [
+        50.080128205128204,
+        49.75961538461538,
+        49.59935897435897,
+        50.50140393100682
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.8847169048620314,
+        1.245213963775645,
+        1.537125488241256,
+        0.9260646915856547
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 251.73317307692307,
+          "error_ema_mean": 0.8198189404434882,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 248.68870192307693,
+          "error_ema_mean": 0.7583894488186791,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.546875,
+          "error_ema_mean": 0.7639935523128281,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.73044524669072,
+          "error_ema_mean": 0.7789752355694914,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 1.0303096812988575,
+          "error_ema_mean": 0.8968184888362885
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 1.0082489558169971,
+          "error_ema_mean": 0.8267876064750506
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.9958639537594953,
+          "error_ema_mean": 0.7590439901465461
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 0.9867066173196094,
+          "error_ema_mean": 0.7044857300225661
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.021159783957138,
+      "baseline_hard_top10_error_ema_mean": 0.8814267675439875,
+      "pretrain_seconds": 55.22237691900227,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.28506906190887094,
+      "runner_seconds": 70.3511155260494
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "seed": 2,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        206.0,
+        249.9248572287346,
+        288.0
+      ],
+      "count_cv": 0.04646027579666602,
+      "error_ema_mean": 0.7800388465531065,
+      "error_degree_pearson": -0.47203340967444835,
+      "error_log_degree_pearson": -0.6629739632207993,
+      "error_density_pearson": -0.08569058957206832,
+      "count_error_pearson": 0.2695304494885218,
+      "count_density_pearson": -0.0029886406630828676,
+      "count_log_degree_pearson": -0.20452654216522445,
+      "late_degree_gap": -0.18290579319000244,
+      "final_clipped_error_cv": 0.08680850366977794,
+      "late_masked_one_hop_visible_mean": 1.3586891160553216,
+      "late_masked_one_hop_zero_visible_fraction": 0.30276608538785327,
+      "late_masked_two_hop_visible_mean": 7.036680697534576,
+      "late_masked_two_hop_zero_visible_fraction": 0.14341551413108838,
+      "layer_mask_rate_percent_mean": [
+        49.81971153846154,
+        50.38060897435898,
+        49.358974358974365,
+        50.381066987565184
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.6866225849192138,
+        2.579160637378123,
+        0.9455467725325298,
+        1.649489385876621
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 251.18269230769232,
+          "error_ema_mean": 0.8177694211212488,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 248.80408653846155,
+          "error_ema_mean": 0.7571750370642314,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.1935096153846,
+          "error_ema_mean": 0.7644087907929833,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.51985559566788,
+          "error_ema_mean": 0.7808030557546375,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 1.016055396873121,
+          "error_ema_mean": 0.8978290868302187
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 1.0092590265074524,
+          "error_ema_mean": 0.8266731125801511
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.9964382760440315,
+          "error_ema_mean": 0.7584295330404425
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 0.9835592277906792,
+          "error_ema_mean": 0.7048119663194632
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.020667143391136,
+      "baseline_hard_top10_error_ema_mean": 0.8802569578359792,
+      "pretrain_seconds": 55.02385755395517,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.304882142925635,
+      "runner_seconds": 70.58772912307177
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "seed": 0,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        207.0,
+        249.9248572287346,
+        297.0
+      ],
+      "count_cv": 0.044888804382340386,
+      "error_ema_mean": 0.778927413325142,
+      "error_degree_pearson": -0.4744095648808186,
+      "error_log_degree_pearson": -0.6640786587424343,
+      "error_density_pearson": -0.12253924169422138,
+      "count_error_pearson": -0.028432802462803504,
+      "count_density_pearson": -0.006319370515723747,
+      "count_log_degree_pearson": 0.018409703180816143,
+      "late_degree_gap": -0.19192278385162354,
+      "final_clipped_error_cv": 0.08732746472047181,
+      "late_masked_one_hop_visible_mean": 1.3674082982561635,
+      "late_masked_one_hop_zero_visible_fraction": 0.2865303668069753,
+      "late_masked_two_hop_visible_mean": 7.05411906193626,
+      "late_masked_two_hop_zero_visible_fraction": 0.12417318099819603,
+      "layer_mask_rate_percent_mean": [
+        50.0,
+        50.0,
+        50.0,
+        49.939831528279186
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.8195669495572264,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.757396036042617,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.7625625276794801,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.6991576413959,
+          "error_ema_mean": 0.7761808388500007,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 0.9947156494287432,
+          "error_ema_mean": 0.8970742970705032
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 1.0000000451782802,
+          "error_ema_mean": 0.8253592678158915
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.9993262189060831,
+          "error_ema_mean": 0.7581292464619591
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.0026026085840734,
+          "error_ema_mean": 0.7017338077642927
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9993033646996364,
+      "baseline_hard_top10_error_ema_mean": 0.8805464336106011,
+      "pretrain_seconds": 54.72787868604064,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.29345513693988323,
+      "runner_seconds": 71.96291179093532
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "seed": 1,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        209.0,
+        249.9248572287346,
+        293.0
+      ],
+      "count_cv": 0.04458429148313615,
+      "error_ema_mean": 0.7817152117980576,
+      "error_degree_pearson": -0.47836721111944763,
+      "error_log_degree_pearson": -0.6647956280284522,
+      "error_density_pearson": -0.09009244971015191,
+      "count_error_pearson": -0.011663103187130664,
+      "count_density_pearson": -0.013487073753998904,
+      "count_log_degree_pearson": 0.024625517685671488,
+      "late_degree_gap": 0.028696298599243164,
+      "final_clipped_error_cv": 0.08505799963965159,
+      "late_masked_one_hop_visible_mean": 1.362898376428142,
+      "late_masked_one_hop_zero_visible_fraction": 0.2958508719182201,
+      "late_masked_two_hop_visible_mean": 7.092303066746843,
+      "late_masked_two_hop_zero_visible_fraction": 0.13409500901984367,
+      "layer_mask_rate_percent_mean": [
+        50.0,
+        50.0,
+        50.0,
+        49.939831528279186
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.8198818168244683,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.7587382504000113,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.7662493460453473,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.6991576413959,
+          "error_ema_mean": 0.781991766319665,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 0.9989669272399279,
+          "error_ema_mean": 0.8968639858067036
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.9995220652979756,
+          "error_ema_mean": 0.8267516436476532
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.999666457226306,
+          "error_ema_mean": 0.7619459817604143
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.002460306397925,
+          "error_ema_mean": 0.705543948641382
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0054553639628805,
+      "baseline_hard_top10_error_ema_mean": 0.8796869192395482,
+      "pretrain_seconds": 54.94210248696618,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.30512863502372056,
+      "runner_seconds": 70.2576750239823
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "seed": 2,
+      "observed_nodes": 3327,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        211.0,
+        249.9248572287346,
+        286.0
+      ],
+      "count_cv": 0.04491955992537652,
+      "error_ema_mean": 0.7815038364213761,
+      "error_degree_pearson": -0.4741395359444362,
+      "error_log_degree_pearson": -0.6626739872179344,
+      "error_density_pearson": -0.10113508094332294,
+      "count_error_pearson": 0.008161661628572193,
+      "count_density_pearson": -0.01068937878423528,
+      "count_log_degree_pearson": 0.007945783812064922,
+      "late_degree_gap": -0.024204134941101074,
+      "final_clipped_error_cv": 0.08601925102784,
+      "late_masked_one_hop_visible_mean": 1.3713168971737824,
+      "late_masked_one_hop_zero_visible_fraction": 0.2988574864702345,
+      "late_masked_two_hop_visible_mean": 7.103427540589296,
+      "late_masked_two_hop_zero_visible_fraction": 0.132291040288635,
+      "layer_mask_rate_percent_mean": [
+        50.0,
+        50.0,
+        50.0,
+        49.939831528279186
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.8195509258657694,
+          "density_mean": 0.06718346163689372
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.7603823688740914,
+          "density_mean": 0.12061235570180279
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250.0,
+          "error_ema_mean": 0.7657850685601051,
+          "density_mean": 0.18187822208676313
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.6991576413959,
+          "error_ema_mean": 0.7802955300942799,
+          "density_mean": 0.343952630217557
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 48,
+          "count_ratio_to_all": 1.0028014131088394,
+          "error_ema_mean": 0.8982267950971922
+        },
+        {
+          "name": "degree1",
+          "nodes": 1331,
+          "count_ratio_to_all": 0.9995401022745909,
+          "error_ema_mean": 0.8274547509641955
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 1470,
+          "count_ratio_to_all": 0.9999740326677875,
+          "error_ema_mean": 0.7606271152188178
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 478,
+          "count_ratio_to_all": 1.0010791381206017,
+          "error_ema_mean": 0.7060339847369174
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0004808958086169,
+      "baseline_hard_top10_error_ema_mean": 0.8805802025952497,
+      "pretrain_seconds": 54.482502687955275,
+      "pretrain_peak_allocated_MiB": 794.20166015625,
+      "mask_preparation_seconds": 0.2976374920690432,
+      "runner_seconds": 69.67041098501068
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "seed": 0,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1740.0,
+        1799.9695694071106,
+        1852.0
+      ],
+      "count_cv": 0.007445400026143474,
+      "error_ema_mean": 0.29265724847710767,
+      "error_degree_pearson": -0.537753418100125,
+      "error_log_degree_pearson": -0.6019590840730119,
+      "error_density_pearson": -0.10750888362604333,
+      "count_error_pearson": 0.0076810573932998135,
+      "count_density_pearson": -0.0005555969694653198,
+      "count_log_degree_pearson": 0.0036346614521604098,
+      "late_degree_gap": -0.05423297882080078,
+      "final_clipped_error_cv": 0.2981977264241275,
+      "late_masked_one_hop_visible_mean": 0.4538292476754015,
+      "late_masked_one_hop_zero_visible_fraction": 0.7193350239504086,
+      "late_masked_two_hop_visible_mean": 5.969118061425754,
+      "late_masked_two_hop_zero_visible_fraction": 0.13506903353057198,
+      "layer_mask_rate_percent_mean": [
+        90.07244277021155,
+        89.90136123428881,
+        90.04047957182468,
+        89.97961529915275
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.30880226713177106,
+        0.3013053757127393,
+        0.29717888491861594,
+        0.30466926703808145
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800.0048681541582,
+          "error_ema_mean": 0.32908272181635695,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.8888212619192,
+          "error_ema_mean": 0.2817979519538692,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.1292351389734,
+          "error_ema_mean": 0.27074718701058564,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.8553459119496,
+          "error_ema_mean": 0.28899374309448056,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9999518438582953,
+          "error_ema_mean": 0.33025738178179476
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 0.9999832211909924,
+          "error_ema_mean": 0.303590573072688
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.000112452155915,
+          "error_ema_mean": 0.20751668057023961
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0001084673310254,
+      "baseline_hard_top10_error_ema_mean": 0.4537191828051639,
+      "pretrain_seconds": 254.68735010595992,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.029202216072008,
+      "runner_seconds": 270.8942217119038
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "seed": 1,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1739.0,
+        1799.9695694071106,
+        1856.0
+      ],
+      "count_cv": 0.007496561555845429,
+      "error_ema_mean": 0.292785164492821,
+      "error_degree_pearson": -0.5396637641304199,
+      "error_log_degree_pearson": -0.6041496848794395,
+      "error_density_pearson": -0.10390347876463911,
+      "count_error_pearson": 0.000659182283733053,
+      "count_density_pearson": 0.005484427490345249,
+      "count_log_degree_pearson": 0.0070072486369865145,
+      "late_degree_gap": -0.20557661056518556,
+      "final_clipped_error_cv": 0.2988662482613676,
+      "late_masked_one_hop_visible_mean": 0.4646604677373908,
+      "late_masked_one_hop_zero_visible_fraction": 0.7162130177514794,
+      "late_masked_two_hop_visible_mean": 6.138337559876021,
+      "late_masked_two_hop_zero_visible_fraction": 0.13475345167652858,
+      "layer_mask_rate_percent_mean": [
+        89.89085289288128,
+        89.95256451129853,
+        90.02985247659623,
+        90.12066583582103
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.28490390647453506,
+        0.3231512791811268,
+        0.33410566977660294,
+        0.3756872912298282
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1799.7858012170386,
+          "error_ema_mean": 0.3287861273478543,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9817407181984,
+          "error_ema_mean": 0.2814182083003962,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.2097788598094,
+          "error_ema_mean": 0.27119608439707654,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9009941164536,
+          "error_ema_mean": 0.28973293401789146,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9999763414989481,
+          "error_ema_mean": 0.3303027849243792
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 0.9999534265891764,
+          "error_ema_mean": 0.3044400002524244
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0001023149599282,
+          "error_ema_mean": 0.2069159733063554
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0001473456083105,
+      "baseline_hard_top10_error_ema_mean": 0.4541722714115108,
+      "pretrain_seconds": 255.7936027359683,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.0441584479995072,
+      "runner_seconds": 273.5764704600442
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "seed": 2,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1746.0,
+        1799.9695694071106,
+        1846.0
+      ],
+      "count_cv": 0.007445753241666418,
+      "error_ema_mean": 0.2934578152831324,
+      "error_degree_pearson": -0.5390565377199411,
+      "error_log_degree_pearson": -0.6009988068744118,
+      "error_density_pearson": -0.1065708641540632,
+      "count_error_pearson": -0.011230524199349542,
+      "count_density_pearson": 0.0074981774730823875,
+      "count_log_degree_pearson": 0.003333732723752945,
+      "late_degree_gap": 0.1508639335632324,
+      "final_clipped_error_cv": 0.2981665238684946,
+      "late_masked_one_hop_visible_mean": 0.4378698224852071,
+      "late_masked_one_hop_zero_visible_fraction": 0.7272132995209918,
+      "late_masked_two_hop_visible_mean": 5.824818258664412,
+      "late_masked_two_hop_zero_visible_fraction": 0.13185686108763034,
+      "layer_mask_rate_percent_mean": [
+        90.04249975852412,
+        89.87527654600082,
+        89.93614081867278,
+        90.13998782714545
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.27385368718894,
+        0.33847143536009183,
+        0.43039708567979296,
+        0.4203299260123387
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1799.7466531440161,
+          "error_ema_mean": 0.3297026788698732,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.8086833029013,
+          "error_ema_mean": 0.28211251770985685,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.140799350781,
+          "error_ema_mean": 0.27212133027195967,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1800.182187056198,
+          "error_ema_mean": 0.2898873808899723,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9999961961952378,
+          "error_ema_mean": 0.3306050201595708
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 0.999896019792684,
+          "error_ema_mean": 0.30517541241508384
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0001349404182764,
+          "error_ema_mean": 0.2082180475914576
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9997729308944553,
+      "baseline_hard_top10_error_ema_mean": 0.45484243779165506,
+      "pretrain_seconds": 254.64097893901635,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.0248926809290424,
+      "runner_seconds": 270.91719534609
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B2",
+      "seed": 0,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1690.0,
+        1799.9695694071106,
+        1940.0
+      ],
+      "count_cv": 0.029723655455480467,
+      "error_ema_mean": 0.32278647443237396,
+      "error_degree_pearson": -0.42219002620950025,
+      "error_log_degree_pearson": -0.43693720860096913,
+      "error_density_pearson": -0.00869338654413472,
+      "count_error_pearson": -0.37619102526526543,
+      "count_density_pearson": -0.035643381457739216,
+      "count_log_degree_pearson": 0.937412796393148,
+      "late_degree_gap": 2.785120701789856,
+      "final_clipped_error_cv": 0.2518051181475022,
+      "late_masked_one_hop_visible_mean": 0.21340095801634265,
+      "late_masked_one_hop_zero_visible_fraction": 0.8574922513384052,
+      "late_masked_two_hop_visible_mean": 3.473947590870668,
+      "late_masked_two_hop_zero_visible_fraction": 0.19625810087348547,
+      "layer_mask_rate_percent_mean": [
+        89.78653530377666,
+        90.27234346771777,
+        90.22500458897295,
+        89.71007352017699
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.40744419853993696,
+        0.2902867968137273,
+        0.3987756623711699,
+        0.41083206565749414
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1795.793509127789,
+          "error_ema_mean": 0.3428735941013748,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1805.1980117670928,
+          "error_ema_mean": 0.3099018676067782,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1804.8638669101238,
+          "error_ema_mean": 0.30829248397931724,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1794.0237370663422,
+          "error_ema_mean": 0.3300738767489298,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9736223172887069,
+          "error_ema_mean": 0.3440909063833112
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0058675601623628,
+          "error_ema_mean": 0.33656431443664786
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0431048829332774,
+          "error_ema_mean": 0.26523367296701184
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9834691281062516,
+      "baseline_hard_top10_error_ema_mean": 0.46846805035342554,
+      "pretrain_seconds": 257.40627889696043,
+      "pretrain_peak_allocated_MiB": 1051.20166015625,
+      "mask_preparation_seconds": 1.0449212730163708,
+      "runner_seconds": 273.82029889000114
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B2",
+      "seed": 1,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1693.0,
+        1799.9695694071106,
+        1940.0
+      ],
+      "count_cv": 0.029667294121103808,
+      "error_ema_mean": 0.3233012046501333,
+      "error_degree_pearson": -0.4169686043589315,
+      "error_log_degree_pearson": -0.4299539180015738,
+      "error_density_pearson": -0.010637577823458214,
+      "count_error_pearson": -0.3684668934805458,
+      "count_density_pearson": -0.033453058525785014,
+      "count_log_degree_pearson": 0.9367373273640754,
+      "late_degree_gap": 2.816448760032654,
+      "final_clipped_error_cv": 0.25234374761448664,
+      "late_masked_one_hop_visible_mean": 0.2102902225979149,
+      "late_masked_one_hop_zero_visible_fraction": 0.8593068469991547,
+      "late_masked_two_hop_visible_mean": 3.4256522964215272,
+      "late_masked_two_hop_zero_visible_fraction": 0.19874894336432797,
+      "layer_mask_rate_percent_mean": [
+        89.7450014488554,
+        90.2230723898405,
+        90.25495367552581,
+        89.77093779284893
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.4021663503794405,
+        0.4290939679317765,
+        0.3727992837471592,
+        0.387002170326937
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1795.571196754564,
+          "error_ema_mean": 0.3436531924466937,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1805.2519780888617,
+          "error_ema_mean": 0.3106319508512464,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1804.8117265165347,
+          "error_ema_mean": 0.30847374579214887,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1794.2442686143233,
+          "error_ema_mean": 0.330441800480662,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9736516411478423,
+          "error_ema_mean": 0.34419174128760344
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0059906289475704,
+          "error_ema_mean": 0.33708779061456506
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0428978277922603,
+          "error_ema_mean": 0.2665270853122765
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9839215811013244,
+      "baseline_hard_top10_error_ema_mean": 0.4692831615224088,
+      "pretrain_seconds": 257.32312141999137,
+      "pretrain_peak_allocated_MiB": 1051.20166015625,
+      "mask_preparation_seconds": 1.0709815679583699,
+      "runner_seconds": 273.2805505680153
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B2",
+      "seed": 2,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1696.0,
+        1799.9695694071106,
+        1935.0
+      ],
+      "count_cv": 0.02966628153191343,
+      "error_ema_mean": 0.32306579420402654,
+      "error_degree_pearson": -0.4202462093862631,
+      "error_log_degree_pearson": -0.4351433884940241,
+      "error_density_pearson": -0.010506988178808237,
+      "count_error_pearson": -0.3758916948112194,
+      "count_density_pearson": -0.035832519796854534,
+      "count_log_degree_pearson": 0.937739170740861,
+      "late_degree_gap": 2.7583003759384157,
+      "final_clipped_error_cv": 0.25244127637979485,
+      "late_masked_one_hop_visible_mean": 0.21621865314173006,
+      "late_masked_one_hop_zero_visible_fraction": 0.8546970977740209,
+      "late_masked_two_hop_visible_mean": 3.505100028176952,
+      "late_masked_two_hop_zero_visible_fraction": 0.19542406311637078,
+      "layer_mask_rate_percent_mean": [
+        89.88312566405871,
+        90.14868272324146,
+        90.2317672859365,
+        89.73036161106762
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.3595367762892617,
+        0.4190021822682364,
+        0.43583405930013014,
+        0.44035280291992074
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1795.901014198783,
+          "error_ema_mean": 0.3434314045473238,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1805.1633191316698,
+          "error_ema_mean": 0.31056036996046943,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1804.5321566240616,
+          "error_ema_mean": 0.3081847230464879,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1794.2826131061067,
+          "error_ema_mean": 0.330082547468288,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9736540848027704,
+          "error_ema_mean": 0.34429831081382356
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0059282880131977,
+          "error_ema_mean": 0.3369733958431129
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0429697203201205,
+          "error_ema_mean": 0.2654908123151118
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9833967243579741,
+      "baseline_hard_top10_error_ema_mean": 0.4686823349604742,
+      "pretrain_seconds": 256.847452931921,
+      "pretrain_peak_allocated_MiB": 1051.20166015625,
+      "mask_preparation_seconds": 1.053743641008623,
+      "runner_seconds": 273.3707676869817
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "seed": 0,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1607.0,
+        1799.9695694071106,
+        1893.0
+      ],
+      "count_cv": 0.023791512176200017,
+      "error_ema_mean": 0.27601282867490257,
+      "error_degree_pearson": -0.5317681364477062,
+      "error_log_degree_pearson": -0.6257802515680378,
+      "error_density_pearson": -0.1775346706826062,
+      "count_error_pearson": 0.8906549591790052,
+      "count_density_pearson": -0.16397964373610296,
+      "count_log_degree_pearson": -0.6671542228902536,
+      "late_degree_gap": -2.1375452041625977,
+      "final_clipped_error_cv": 0.34159087016750855,
+      "late_masked_one_hop_visible_mean": 0.6056128486897718,
+      "late_masked_one_hop_zero_visible_fraction": 0.6667117497886729,
+      "late_masked_two_hop_visible_mean": 7.693840518455903,
+      "late_masked_two_hop_zero_visible_fraction": 0.1277542969850662,
+      "layer_mask_rate_percent_mean": [
+        90.93596059113302,
+        89.89942903515639,
+        89.5284468017274,
+        89.62988725618065
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.9425536599313685,
+        0.2412155415832774,
+        0.46349828634650186,
+        0.52343520569163
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1818.4310344827586,
+          "error_ema_mean": 0.3236858923048627,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1798.1550010144044,
+          "error_ema_mean": 0.2679446277730688,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1789.8573747210387,
+          "error_ema_mean": 0.2503513575615246,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1793.4311219314263,
+          "error_ema_mean": 0.2620597651056744,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 1.010651020412147,
+          "error_ema_mean": 0.322176569068736
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0033591203738126,
+          "error_ema_mean": 0.2820476627357489
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 0.9755603965149461,
+          "error_ema_mean": 0.18055414399206357
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0278768542920127,
+      "baseline_hard_top10_error_ema_mean": 0.43367999913000915,
+      "pretrain_seconds": 259.3012056479929,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.042057271930389,
+      "runner_seconds": 276.92509172006976
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "seed": 1,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1585.0,
+        1799.9695694071106,
+        1888.0
+      ],
+      "count_cv": 0.023820635888901442,
+      "error_ema_mean": 0.27637401600609923,
+      "error_degree_pearson": -0.5279010526776695,
+      "error_log_degree_pearson": -0.6210090441981239,
+      "error_density_pearson": -0.1759765910188244,
+      "count_error_pearson": 0.8894311752804597,
+      "count_density_pearson": -0.1598434163041727,
+      "count_log_degree_pearson": -0.6683949540103679,
+      "late_degree_gap": -2.1654923439025877,
+      "final_clipped_error_cv": 0.34183079689804113,
+      "late_masked_one_hop_visible_mean": 0.6091518737672583,
+      "late_masked_one_hop_zero_visible_fraction": 0.6656861087630319,
+      "late_masked_two_hop_visible_mean": 7.659498450267681,
+      "late_masked_two_hop_zero_visible_fraction": 0.12850943927867003,
+      "layer_mask_rate_percent_mean": [
+        90.93885830194148,
+        89.84146306118309,
+        89.51105700953539,
+        89.70234472364722
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.7882625620826115,
+        0.37749158403999583,
+        0.5682390365295432,
+        0.4519053998993297
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1818.162677484787,
+          "error_ema_mean": 0.3240387998030164,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1798.0537634408602,
+          "error_ema_mean": 0.2681054431044939,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1789.9425847027794,
+          "error_ema_mean": 0.2509314791316597,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1793.7155609657132,
+          "error_ema_mean": 0.2624106717105674,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 1.0106759456924121,
+          "error_ema_mean": 0.32221781324299453
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0034619781711642,
+          "error_ema_mean": 0.2824771970612284
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 0.9753865494297477,
+          "error_ema_mean": 0.18144162985884535
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0276745745594709,
+      "baseline_hard_top10_error_ema_mean": 0.4346356334251637,
+      "pretrain_seconds": 259.08769117400516,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.0326084630796686,
+      "runner_seconds": 275.30627115408424
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "seed": 2,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1594.0,
+        1799.9695694071106,
+        1887.0
+      ],
+      "count_cv": 0.023690006919990302,
+      "error_ema_mean": 0.27726050713181966,
+      "error_degree_pearson": -0.5283833495272842,
+      "error_log_degree_pearson": -0.6214916374714938,
+      "error_density_pearson": -0.17801462780485144,
+      "count_error_pearson": 0.8922135539224798,
+      "count_density_pearson": -0.1659337183225292,
+      "count_log_degree_pearson": -0.6684453531732621,
+      "late_degree_gap": -2.338247203826904,
+      "final_clipped_error_cv": 0.34166908663767664,
+      "late_masked_one_hop_visible_mean": 0.6171428571428572,
+      "late_masked_one_hop_zero_visible_fraction": 0.6628120597351367,
+      "late_masked_two_hop_visible_mean": 7.82655395886165,
+      "late_masked_two_hop_zero_visible_fraction": 0.12912933220625528,
+      "layer_mask_rate_percent_mean": [
+        90.98328986767122,
+        89.79509028200445,
+        89.50332821300562,
+        89.71200571930942
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        0.806481500938837,
+        0.33977324808538856,
+        0.37390923941058396,
+        0.5041947665814345
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1818.6022312373225,
+          "error_ema_mean": 0.3248484343388562,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1797.9444106309597,
+          "error_ema_mean": 0.2695819799897697,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1789.637451815784,
+          "error_ema_mean": 0.2516305534727229,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1793.6904037330087,
+          "error_ema_mean": 0.26297140604400504,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 1.010623101654595,
+          "error_ema_mean": 0.32311812899752795
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0034579929059533,
+          "error_ema_mean": 0.2838202723662228
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 0.9754922326108971,
+          "error_ema_mean": 0.18174107787548954
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0275858306656676,
+      "baseline_hard_top10_error_ema_mean": 0.43453106729967356,
+      "pretrain_seconds": 259.38216424698476,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.0173296550055966,
+      "runner_seconds": 275.50250058202073
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "seed": 0,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1750.0,
+        1799.9695694071106,
+        1854.0
+      ],
+      "count_cv": 0.00742271498447213,
+      "error_ema_mean": 0.2933087673084723,
+      "error_degree_pearson": -0.5418888114313426,
+      "error_log_degree_pearson": -0.6054739099898009,
+      "error_density_pearson": -0.10042203487889027,
+      "count_error_pearson": -0.012005773110096086,
+      "count_density_pearson": -0.0033427680896837984,
+      "count_log_degree_pearson": 0.01350901833306616,
+      "late_degree_gap": 0.01146554946899414,
+      "final_clipped_error_cv": 0.29851198722285505,
+      "late_masked_one_hop_visible_mean": 0.4473710904480135,
+      "late_masked_one_hop_zero_visible_fraction": 0.7239673147365455,
+      "late_masked_two_hop_visible_mean": 5.844451958298113,
+      "late_masked_two_hop_zero_visible_fraction": 0.1319470273316427,
+      "layer_mask_rate_percent_mean": [
+        89.99999999999999,
+        89.9979711909109,
+        89.9979711909109,
+        89.9979711909109
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.1102230246251565e-14,
+        2.220446049250313e-14,
+        2.220446049250313e-14,
+        2.220446049250313e-14
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800.0,
+          "error_ema_mean": 0.3290889797872027,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.28186193884679694,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.2715735367600757,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.29070335471778536,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9999032762166019,
+          "error_ema_mean": 0.3308197899494416
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0000092203021311,
+          "error_ema_mean": 0.30509137688642074
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0001731588123415,
+          "error_ema_mean": 0.2072952566172259
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9998267406840312,
+      "baseline_hard_top10_error_ema_mean": 0.44806595084693807,
+      "pretrain_seconds": 257.4957927700598,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.0054965210147202,
+      "runner_seconds": 274.2903938210802
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "seed": 1,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1743.0,
+        1799.9695694071106,
+        1858.0
+      ],
+      "count_cv": 0.007445370590760174,
+      "error_ema_mean": 0.293124034276649,
+      "error_degree_pearson": -0.542657488095531,
+      "error_log_degree_pearson": -0.6064463007687262,
+      "error_density_pearson": -0.10896540969009294,
+      "count_error_pearson": -0.006601407962618937,
+      "count_density_pearson": -0.0020868366319262734,
+      "count_log_degree_pearson": 0.012424625338976631,
+      "late_degree_gap": 0.030961036682128906,
+      "final_clipped_error_cv": 0.29796529384271997,
+      "late_masked_one_hop_visible_mean": 0.44747252747252747,
+      "late_masked_one_hop_zero_visible_fraction": 0.7251169343477036,
+      "late_masked_two_hop_visible_mean": 5.872279515356438,
+      "late_masked_two_hop_zero_visible_fraction": 0.13176669484361792,
+      "layer_mask_rate_percent_mean": [
+        89.99999999999999,
+        89.9979711909109,
+        89.9979711909109,
+        89.9979711909109
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.1102230246251565e-14,
+        2.220446049250313e-14,
+        2.220446049250313e-14,
+        2.220446049250313e-14
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800.0,
+          "error_ema_mean": 0.32951458111465826,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.28197094890747965,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.27173149171550803,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.2892717324217321,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.9999063918766351,
+          "error_ema_mean": 0.33069749407376825
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 1.0000586565682013,
+          "error_ema_mean": 0.3046607666869229
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0001065096617159,
+          "error_ema_mean": 0.20729336908009785
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 0.9998104005385056,
+      "baseline_hard_top10_error_ema_mean": 0.44653006021923275,
+      "pretrain_seconds": 257.90078692894895,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 0.998065190971829,
+      "runner_seconds": 273.94515254499856
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "seed": 2,
+      "observed_nodes": 19717,
+      "first_logged_full_coverage_step": 100,
+      "count_min_mean_max": [
+        1746.0,
+        1799.9695694071106,
+        1849.0
+      ],
+      "count_cv": 0.007519500552502538,
+      "error_ema_mean": 0.2936989618839874,
+      "error_degree_pearson": -0.537148485012121,
+      "error_log_degree_pearson": -0.5994799197365211,
+      "error_density_pearson": -0.10937404798145715,
+      "count_error_pearson": -0.0007167901233482742,
+      "count_density_pearson": -0.005352295993276017,
+      "count_log_degree_pearson": 0.007976224291125694,
+      "late_degree_gap": 0.12156448364257813,
+      "final_clipped_error_cv": 0.29691595134801907,
+      "late_masked_one_hop_visible_mean": 0.43865877712031554,
+      "late_masked_one_hop_zero_visible_fraction": 0.7234150464919695,
+      "late_masked_two_hop_visible_mean": 5.758681318681319,
+      "late_masked_two_hop_zero_visible_fraction": 0.1339757678219217,
+      "layer_mask_rate_percent_mean": [
+        89.99999999999999,
+        89.9979711909109,
+        89.9979711909109,
+        89.9979711909109
+      ],
+      "layer_mask_rate_percent_temporal_std": [
+        1.1102230246251565e-14,
+        2.220446049250313e-14,
+        2.220446049250313e-14,
+        2.220446049250313e-14
+      ],
+      "layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800.0,
+          "error_ema_mean": 0.3300989538234702,
+          "density_mean": 0.11617964592770336
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.28284302453018634,
+          "density_mean": 0.1776279220972655
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.2719974130751831,
+          "density_mean": 0.230272726037663
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187,
+          "error_ema_mean": 0.2898490712436611,
+          "density_mean": 0.3277129092134933
+        }
+      ],
+      "degree_groups": [
+        {
+          "name": "degree0",
+          "nodes": 0,
+          "count_ratio_to_all": null,
+          "error_ema_mean": null
+        },
+        {
+          "name": "degree1",
+          "nodes": 9094,
+          "count_ratio_to_all": 0.999930278603556,
+          "error_ema_mean": 0.33094766173837
+        },
+        {
+          "name": "degree2to4",
+          "nodes": 5855,
+          "count_ratio_to_all": 0.9999610175705308,
+          "error_ema_mean": 0.30461041803903605
+        },
+        {
+          "name": "degree5plus",
+          "nodes": 4768,
+          "count_ratio_to_all": 1.0001808490989523,
+          "error_ema_mean": 0.20925553649313897
+        }
+      ],
+      "baseline_hard_top10_count_ratio": 1.0000225407036922,
+      "baseline_hard_top10_error_ema_mean": 0.44748139999519737,
+      "pretrain_seconds": 257.7760815169895,
+      "pretrain_peak_allocated_MiB": 1051.1259765625,
+      "mask_preparation_seconds": 1.0302062480477616,
+      "runner_seconds": 273.85910687805153
+    }
+  ],
+  "descriptive_macro": [
+    {
+      "method": "D",
+      "reference": "B0",
+      "differences_pp": [
+        0.2666666666666669,
+        0.0,
+        0.13333333333333344
+      ],
+      "mean_pp": 0.13333333333333344,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.06666666666666672,
+        0.20000000000000018,
+        0.13333333333333344
+      ]
+    },
+    {
+      "method": "D",
+      "reference": "B2",
+      "differences_pp": [
+        -0.13333333333333344,
+        -0.46666666666666706,
+        -0.13333333333333344
+      ],
+      "mean_pp": -0.24444444444444466,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_out_mean_pp": [
+        -0.30000000000000027,
+        -0.13333333333333344,
+        -0.30000000000000027
+      ]
+    },
+    {
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        0.5999999999999969,
+        0.2666666666666669,
+        0.46666666666666706
+      ],
+      "mean_pp": 0.4444444444444436,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_out_mean_pp": [
+        0.366666666666667,
+        0.533333333333332,
+        0.4333333333333319
+      ]
+    },
+    {
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        0.1999999999999965,
+        -0.20000000000000018,
+        0.20000000000000018
+      ],
+      "mean_pp": 0.0666666666666655,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_out_mean_pp": [
+        0.0,
+        0.19999999999999835,
+        -1.8457457784393227e-15
+      ]
+    }
+  ],
+  "density_profiles": [
+    {
+      "dataset": "cora",
+      "nodes": 2708,
+      "degree0_nodes": 0,
+      "zero_density_nodes": 24,
+      "density_q0_q25_q50_q75_q100": [
+        0.0,
+        0.09294020607201166,
+        0.12430749934215268,
+        0.16783562517075828,
+        0.6547859907150269
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "nodes": 3327,
+      "degree0_nodes": 48,
+      "zero_density_nodes": 72,
+      "density_q0_q25_q50_q75_q100": [
+        0.0,
+        0.09897859064706913,
+        0.14488638006150723,
+        0.23028308153152466,
+        0.7666666507720947
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "nodes": 19717,
+      "degree0_nodes": 0,
+      "zero_density_nodes": 0,
+      "density_q0_q25_q50_q75_q100": [
+        0.010025847819633782,
+        0.15214452586106716,
+        0.20251956768333912,
+        0.2610191996726725,
+        0.7696465849876404
+      ]
+    }
+  ],
+  "note": "Exploratory validation analysis, n=3; no test scores or significance claims"
+}

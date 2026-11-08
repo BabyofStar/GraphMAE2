@@ -1,0 +1,9 @@
+{
+  "pretrain_60_epoch_seconds": 43179.168223869056,
+  "full_embedding_seconds": 179.7858413590584,
+  "ten_probes_1000_epochs_seconds": 3804.94021467166,
+  "model_save_60_times_seconds": 16.84156823437661,
+  "B0_one_encoder_estimated_seconds": 47180.73584813415,
+  "B0_B2_six_encoders_baseline_cost_estimated_seconds": 283084.4150888049,
+  "uncertainty": "Linear extrapolation only; includes measured worker/batch adaptation. One early epoch omits later EMA cost, run-to-run shared-GPU changes and B2 adaptation overhead. Six-run estimate is a baseline cost reference, not a launch authorization or validation of B2."
+}

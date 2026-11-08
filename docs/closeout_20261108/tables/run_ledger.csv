@@ -1,0 +1,9 @@
+﻿batch,full_pretrain_runs,scope,metric,evidence_status
+historical60,60,3 datasets x seeds 0..19,historical test summaries,交接README记录；本轮未逐种子复算
+formal120,120,3 datasets x B0/B1/B2/B3 x seeds 10..19,val_selected_test_acc,已独立核验；本轮复算
+v2_dev36,36,3 datasets x B0/B2/D/S x seeds 0..2,best_val_acc,已独立核验；本轮复算
+R9,9,3 datasets x R x seeds 0..2,best_val_acc,已独立核验；本轮复算
+DS9,9,3 datasets x DS x seeds 0..2,best_val_acc,已独立核验；本轮复算
+C9,9,3 datasets x C x seeds 0..2,best_val_acc,已独立核验；本轮复算
+P12,12,Cora x S/H/P/PS x seeds 0..2,best_val_acc,服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组
+J12,12,Cora x S/NA/NR/NC x seeds 0..2,best_val_acc,现有原始产物有限独立核验PASS；未重放Torch随机流或模型

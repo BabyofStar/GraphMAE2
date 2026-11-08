@@ -1,0 +1,2650 @@
+{
+  "date": "2026-11-08 Asia/Shanghai",
+  "formal_groups": [
+    {
+      "batch": "formal120",
+      "dataset": "cora",
+      "method": "B0",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 84.19,
+      "population_sd_percent": 0.5629387178015031,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "cora",
+      "method": "B1",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 82.67,
+      "population_sd_percent": 0.45617978911828017,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "cora",
+      "method": "B2",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 84.54,
+      "population_sd_percent": 0.6069596362197404,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "cora",
+      "method": "B3",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 84.18,
+      "population_sd_percent": 0.6675327707311449,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "citeseer",
+      "method": "B0",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 73.4,
+      "population_sd_percent": 0.33166247903554213,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "citeseer",
+      "method": "B1",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 72.76,
+      "population_sd_percent": 0.5003998401278718,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "citeseer",
+      "method": "B2",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 73.3,
+      "population_sd_percent": 0.22803508501982772,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "citeseer",
+      "method": "B3",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 73.37,
+      "population_sd_percent": 0.22825424421026633,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "pubmed",
+      "method": "B0",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 81.24,
+      "population_sd_percent": 0.2690724809414753,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "pubmed",
+      "method": "B1",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 80.41,
+      "population_sd_percent": 0.4526588119102489,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "pubmed",
+      "method": "B2",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 81.7,
+      "population_sd_percent": 0.41713307229228297,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "formal120",
+      "dataset": "pubmed",
+      "method": "B3",
+      "metric": "val_selected_test_acc",
+      "n": 10,
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mean_percent": 81.13,
+      "population_sd_percent": 0.729451848993475,
+      "sd_ddof": 0,
+      "evidence_status": "已独立核验；本轮复算"
+    }
+  ],
+  "formal_primary": [
+    {
+      "dataset": "cora",
+      "comparison": "B2-B0",
+      "n": 10,
+      "mean_delta_pp": 0.35,
+      "sample_sd_delta_pp": 0.27588242262078083,
+      "ci95_unadjusted_low_pp": 0.1526456037423071,
+      "ci95_unadjusted_high_pp": 0.5473543962576929,
+      "p_two_sided": 0.0030553733706963904,
+      "p_holm_three_datasets": 0.009166120112089837,
+      "wins": 9,
+      "ties": 1,
+      "losses": 0,
+      "source": "sources/formal120/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "comparison": "B2-B0",
+      "n": 10,
+      "mean_delta_pp": -0.1,
+      "sample_sd_delta_pp": 0.36514837167011077,
+      "ci95_unadjusted_low_pp": -0.36121140937815643,
+      "ci95_unadjusted_high_pp": 0.16121140937815645,
+      "p_two_sided": 0.4089688137435976,
+      "p_holm_three_datasets": 0.4089688137435976,
+      "wins": 3,
+      "ties": 2,
+      "losses": 5,
+      "source": "sources/formal120/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "comparison": "B2-B0",
+      "n": 10,
+      "mean_delta_pp": 0.46,
+      "sample_sd_delta_pp": 0.6310485101972924,
+      "ci95_unadjusted_low_pp": 0.00857509022786801,
+      "ci95_unadjusted_high_pp": 0.9114249097721321,
+      "p_two_sided": 0.04660662942784555,
+      "p_holm_three_datasets": 0.09321325885569198,
+      "wins": 9,
+      "ties": 0,
+      "losses": 1,
+      "source": "sources/formal120/analysis_results.json"
+    }
+  ],
+  "formal_per_seed": [
+    {
+      "dataset": "cora",
+      "seed": 10,
+      "B0_test_percent": 84.3,
+      "B2_test_percent": 84.5,
+      "delta_pp": 0.2
+    },
+    {
+      "dataset": "cora",
+      "seed": 11,
+      "B0_test_percent": 85.1,
+      "B2_test_percent": 85.4,
+      "delta_pp": 0.3
+    },
+    {
+      "dataset": "cora",
+      "seed": 12,
+      "B0_test_percent": 84.4,
+      "B2_test_percent": 84.5,
+      "delta_pp": 0.1
+    },
+    {
+      "dataset": "cora",
+      "seed": 13,
+      "B0_test_percent": 83.8,
+      "B2_test_percent": 84.2,
+      "delta_pp": 0.4
+    },
+    {
+      "dataset": "cora",
+      "seed": 14,
+      "B0_test_percent": 84.2,
+      "B2_test_percent": 84.2,
+      "delta_pp": 0.0
+    },
+    {
+      "dataset": "cora",
+      "seed": 15,
+      "B0_test_percent": 83.6,
+      "B2_test_percent": 84.0,
+      "delta_pp": 0.4
+    },
+    {
+      "dataset": "cora",
+      "seed": 16,
+      "B0_test_percent": 84.5,
+      "B2_test_percent": 85.5,
+      "delta_pp": 1.0
+    },
+    {
+      "dataset": "cora",
+      "seed": 17,
+      "B0_test_percent": 84.7,
+      "B2_test_percent": 84.9,
+      "delta_pp": 0.2
+    },
+    {
+      "dataset": "cora",
+      "seed": 18,
+      "B0_test_percent": 83.0,
+      "B2_test_percent": 83.4,
+      "delta_pp": 0.4
+    },
+    {
+      "dataset": "cora",
+      "seed": 19,
+      "B0_test_percent": 84.3,
+      "B2_test_percent": 84.8,
+      "delta_pp": 0.5
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 10,
+      "B0_test_percent": 73.8,
+      "B2_test_percent": 73.8,
+      "delta_pp": 0.0
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 11,
+      "B0_test_percent": 73.4,
+      "B2_test_percent": 73.3,
+      "delta_pp": -0.1
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 12,
+      "B0_test_percent": 73.7,
+      "B2_test_percent": 73.3,
+      "delta_pp": -0.4
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 13,
+      "B0_test_percent": 73.9,
+      "B2_test_percent": 73.0,
+      "delta_pp": -0.9
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 14,
+      "B0_test_percent": 72.8,
+      "B2_test_percent": 73.0,
+      "delta_pp": 0.2
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 15,
+      "B0_test_percent": 73.3,
+      "B2_test_percent": 73.1,
+      "delta_pp": -0.2
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 16,
+      "B0_test_percent": 73.1,
+      "B2_test_percent": 73.5,
+      "delta_pp": 0.4
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 17,
+      "B0_test_percent": 73.1,
+      "B2_test_percent": 73.3,
+      "delta_pp": 0.2
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 18,
+      "B0_test_percent": 73.3,
+      "B2_test_percent": 73.3,
+      "delta_pp": 0.0
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 19,
+      "B0_test_percent": 73.6,
+      "B2_test_percent": 73.4,
+      "delta_pp": -0.2
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 10,
+      "B0_test_percent": 81.5,
+      "B2_test_percent": 80.7,
+      "delta_pp": -0.8
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 11,
+      "B0_test_percent": 81.3,
+      "B2_test_percent": 81.4,
+      "delta_pp": 0.1
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 12,
+      "B0_test_percent": 81.2,
+      "B2_test_percent": 82.2,
+      "delta_pp": 1.0
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 13,
+      "B0_test_percent": 81.4,
+      "B2_test_percent": 81.7,
+      "delta_pp": 0.3
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 14,
+      "B0_test_percent": 81.3,
+      "B2_test_percent": 82.1,
+      "delta_pp": 0.8
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 15,
+      "B0_test_percent": 81.3,
+      "B2_test_percent": 81.6,
+      "delta_pp": 0.3
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 16,
+      "B0_test_percent": 81.4,
+      "B2_test_percent": 81.5,
+      "delta_pp": 0.1
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 17,
+      "B0_test_percent": 81.4,
+      "B2_test_percent": 81.8,
+      "delta_pp": 0.4
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 18,
+      "B0_test_percent": 81.1,
+      "B2_test_percent": 82.0,
+      "delta_pp": 0.9
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 19,
+      "B0_test_percent": 80.5,
+      "B2_test_percent": 82.0,
+      "delta_pp": 1.5
+    }
+  ],
+  "development_groups": [
+    {
+      "batch": "v2_dev36",
+      "dataset": "cora",
+      "method": "B0",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 80.53333333333333,
+      "population_sd_percent": 1.0873004286866705,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        80.2,
+        79.4,
+        82.0
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "cora",
+      "method": "B2",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 80.93333333333334,
+      "population_sd_percent": 0.9843215373488836,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        80.80000000000001,
+        79.80000000000001,
+        82.19999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "cora",
+      "method": "D",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 80.8,
+      "population_sd_percent": 1.0708252269472587,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        80.60000000000001,
+        79.60000000000001,
+        82.19999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "cora",
+      "method": "S",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.66666666666666,
+      "population_sd_percent": 0.4109609335312594,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.6,
+        81.2,
+        82.19999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "citeseer",
+      "method": "B0",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 72.73333333333333,
+      "population_sd_percent": 1.481740718059526,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        72.0,
+        74.8,
+        71.39999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "citeseer",
+      "method": "B2",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 73.2,
+      "population_sd_percent": 1.704894913672587,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        72.2,
+        75.6,
+        71.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "citeseer",
+      "method": "D",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 73.0,
+      "population_sd_percent": 1.275408431313931,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        72.2,
+        74.8,
+        72.0
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "citeseer",
+      "method": "S",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 72.33333333333333,
+      "population_sd_percent": 0.7717224601860194,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        71.6,
+        73.4,
+        72.0
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "pubmed",
+      "method": "B0",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.33333333333333,
+      "population_sd_percent": 0.4109609335312648,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        82.8,
+        83.39999999999999,
+        83.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "pubmed",
+      "method": "B2",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.6,
+      "population_sd_percent": 0.32659863237108927,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        83.2,
+        83.6,
+        84.0
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "pubmed",
+      "method": "D",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.2,
+      "population_sd_percent": 0.16329931618554172,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        83.0,
+        83.2,
+        83.39999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "v2_dev36",
+      "dataset": "pubmed",
+      "method": "S",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.93333333333332,
+      "population_sd_percent": 0.3399346342395173,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        83.6,
+        83.8,
+        84.39999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "batch": "R9",
+      "dataset": "cora",
+      "method": "R",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.0,
+      "population_sd_percent": 0.6531972647421785,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.0,
+        80.2,
+        81.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "batch": "R9",
+      "dataset": "citeseer",
+      "method": "R",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 72.0,
+      "population_sd_percent": 1.0198039027185604,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        71.0,
+        73.4,
+        71.6
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "batch": "R9",
+      "dataset": "pubmed",
+      "method": "R",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.06666666666666,
+      "population_sd_percent": 0.5249338582674549,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        83.8,
+        82.6,
+        82.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "batch": "DS9",
+      "dataset": "cora",
+      "method": "DS",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.53333333333333,
+      "population_sd_percent": 0.4109609335312648,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.6,
+        81.0,
+        82.0
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json"
+    },
+    {
+      "batch": "DS9",
+      "dataset": "citeseer",
+      "method": "DS",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 72.26666666666667,
+      "population_sd_percent": 1.0873004286866748,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        71.39999999999999,
+        73.8,
+        71.6
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json"
+    },
+    {
+      "batch": "DS9",
+      "dataset": "pubmed",
+      "method": "DS",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.73333333333333,
+      "population_sd_percent": 0.24944382578493296,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        84.0,
+        83.39999999999999,
+        83.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json"
+    },
+    {
+      "batch": "C9",
+      "dataset": "cora",
+      "method": "C",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 80.6,
+      "population_sd_percent": 1.070825226947265,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        80.4,
+        79.4,
+        82.0
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json"
+    },
+    {
+      "batch": "C9",
+      "dataset": "citeseer",
+      "method": "C",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 72.86666666666666,
+      "population_sd_percent": 1.8061622912192115,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        72.6,
+        75.2,
+        70.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json"
+    },
+    {
+      "batch": "C9",
+      "dataset": "pubmed",
+      "method": "C",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 83.53333333333333,
+      "population_sd_percent": 0.18856180831641536,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        83.39999999999999,
+        83.39999999999999,
+        83.8
+      ],
+      "evidence_status": "已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json"
+    },
+    {
+      "batch": "P12",
+      "dataset": "cora",
+      "method": "S",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.6,
+      "population_sd_percent": 0.6531972647421843,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.6,
+        80.8,
+        82.4
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "batch": "P12",
+      "dataset": "cora",
+      "method": "H",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.4,
+      "population_sd_percent": 0.32659863237108927,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.0,
+        81.4,
+        81.8
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "batch": "P12",
+      "dataset": "cora",
+      "method": "P",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.13333333333334,
+      "population_sd_percent": 0.6599663291074422,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.0,
+        80.4,
+        82.0
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "batch": "P12",
+      "dataset": "cora",
+      "method": "PS",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.4,
+      "population_sd_percent": 0.4320493798938569,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.0,
+        81.2,
+        82.0
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "batch": "J12",
+      "dataset": "cora",
+      "method": "S",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.6,
+      "population_sd_percent": 0.6531972647421843,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.6,
+        80.8,
+        82.4
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "batch": "J12",
+      "dataset": "cora",
+      "method": "NA",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.73333333333333,
+      "population_sd_percent": 0.49888765156986087,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        82.4,
+        81.2,
+        81.6
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "batch": "J12",
+      "dataset": "cora",
+      "method": "NR",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 81.8,
+      "population_sd_percent": 0.32659863237108927,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        81.4,
+        81.8,
+        82.2
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "batch": "J12",
+      "dataset": "cora",
+      "method": "NC",
+      "metric": "best_val_acc",
+      "n": 3,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_percent": 79.13333333333334,
+      "population_sd_percent": 0.8993825042154717,
+      "sd_ddof": 0,
+      "per_seed_percent": [
+        80.4,
+        78.6,
+        78.4
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    }
+  ],
+  "development_comparisons": [
+    {
+      "dataset": "cora",
+      "method": "D",
+      "reference": "B2",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.2,
+        -0.2,
+        0.0
+      ],
+      "mean_delta_pp": -0.13333333333333333,
+      "wins": 0,
+      "ties": 1,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.1,
+        -0.1,
+        -0.2
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "reference": "B2",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.0,
+        -0.8,
+        0.2
+      ],
+      "mean_delta_pp": -0.2,
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.30000000000000004,
+        0.1,
+        -0.4
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "reference": "B2",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.2,
+        -0.4,
+        -0.6
+      ],
+      "mean_delta_pp": -0.4,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.5,
+        -0.4,
+        -0.30000000000000004
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "B2",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.8,
+        1.4,
+        0.0
+      ],
+      "mean_delta_pp": 0.7333333333333333,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.7,
+        0.4,
+        1.1
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "B2",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.6,
+        -2.2,
+        0.2
+      ],
+      "mean_delta_pp": -0.8666666666666667,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -1.0,
+        -0.19999999999999998,
+        -1.4000000000000001
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "B2",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "mean_delta_pp": 0.3333333333333333,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.30000000000000004,
+        0.4,
+        0.30000000000000004
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "B0",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.4,
+        1.8,
+        0.2
+      ],
+      "mean_delta_pp": 1.1333333333333333,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        1.0,
+        0.7999999999999999,
+        1.6
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "B0",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.4,
+        -1.4,
+        0.6
+      ],
+      "mean_delta_pp": -0.4,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.39999999999999997,
+        0.09999999999999998,
+        -0.8999999999999999
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "B0",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.8,
+        0.4,
+        0.6
+      ],
+      "mean_delta_pp": 0.6,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.5,
+        0.7,
+        0.6000000000000001
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "reference": "S",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -1.0,
+        -1.6,
+        0.0
+      ],
+      "mean_delta_pp": -0.8666666666666667,
+      "wins": 0,
+      "ties": 1,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.8,
+        -0.5,
+        -1.3
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "reference": "S",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.6,
+        1.4,
+        0.0
+      ],
+      "mean_delta_pp": 0.6666666666666666,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.7,
+        0.3,
+        1.0
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "reference": "S",
+      "method_batch": "v2_dev36",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.6,
+        -0.6,
+        -1.0
+      ],
+      "mean_delta_pp": -0.7333333333333333,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.8,
+        -0.8,
+        -0.6
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "R",
+      "method_batch": "v2_dev36",
+      "reference_batch": "R9",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.6,
+        1.0,
+        0.4
+      ],
+      "mean_delta_pp": 0.6666666666666666,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.7,
+        0.5,
+        0.8
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "R",
+      "method_batch": "v2_dev36",
+      "reference_batch": "R9",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.6,
+        0.0,
+        0.4
+      ],
+      "mean_delta_pp": 0.3333333333333333,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.2,
+        0.5,
+        0.3
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "R",
+      "method_batch": "v2_dev36",
+      "reference_batch": "R9",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.2,
+        1.2,
+        1.6
+      ],
+      "mean_delta_pp": 0.8666666666666667,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        1.4,
+        0.7000000000000001,
+        0.5
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/v2_dev36/analysis_results.json; sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "reference": "B2",
+      "method_batch": "R9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.2,
+        0.4,
+        -0.4
+      ],
+      "mean_delta_pp": 0.06666666666666667,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.1,
+        0.30000000000000004
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "reference": "B2",
+      "method_batch": "R9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -1.2,
+        -2.2,
+        -0.2
+      ],
+      "mean_delta_pp": -1.2,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -1.2000000000000002,
+        -0.7,
+        -1.7000000000000002
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "reference": "B2",
+      "method_batch": "R9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.6,
+        -1.0,
+        -1.2
+      ],
+      "mean_delta_pp": -0.5333333333333333,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -1.1,
+        -0.3,
+        -0.2
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "reference": "B0",
+      "method_batch": "R9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.8,
+        0.8,
+        -0.2
+      ],
+      "mean_delta_pp": 0.4666666666666667,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.30000000000000004,
+        0.30000000000000004,
+        0.8
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "reference": "B0",
+      "method_batch": "R9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -1.0,
+        -1.4,
+        0.2
+      ],
+      "mean_delta_pp": -0.7333333333333333,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.6,
+        -0.4,
+        -1.2
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "reference": "B0",
+      "method_batch": "R9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.0,
+        -0.8,
+        -1.0
+      ],
+      "mean_delta_pp": -0.26666666666666666,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.9,
+        0.0,
+        0.09999999999999998
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/R9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "DS",
+      "reference": "S",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.0,
+        -0.2,
+        -0.2
+      ],
+      "mean_delta_pp": -0.13333333333333333,
+      "wins": 0,
+      "ties": 1,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.2,
+        -0.1,
+        -0.1
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "DS",
+      "reference": "S",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.2,
+        0.4,
+        -0.4
+      ],
+      "mean_delta_pp": -0.06666666666666667,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.30000000000000004,
+        0.1
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "DS",
+      "reference": "S",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.4,
+        -0.4,
+        -0.6
+      ],
+      "mean_delta_pp": -0.2,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.5,
+        -0.09999999999999998,
+        0.0
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "DS",
+      "reference": "B2",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.8,
+        1.2,
+        -0.2
+      ],
+      "mean_delta_pp": 0.6,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.5,
+        0.30000000000000004,
+        1.0
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "DS",
+      "reference": "B2",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.8,
+        -1.8,
+        -0.2
+      ],
+      "mean_delta_pp": -0.9333333333333333,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -1.0,
+        -0.5,
+        -1.3
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "DS",
+      "reference": "B2",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.8,
+        -0.2,
+        -0.2
+      ],
+      "mean_delta_pp": 0.13333333333333333,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.2,
+        0.30000000000000004,
+        0.30000000000000004
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "DS",
+      "reference": "D",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.0,
+        1.4,
+        -0.2
+      ],
+      "mean_delta_pp": 0.7333333333333333,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.6,
+        0.4,
+        1.2
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "DS",
+      "reference": "D",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.8,
+        -1.0,
+        -0.4
+      ],
+      "mean_delta_pp": -0.7333333333333333,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.7,
+        -0.6000000000000001,
+        -0.9
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "DS",
+      "reference": "D",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.0,
+        0.2,
+        0.4
+      ],
+      "mean_delta_pp": 0.5333333333333333,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.30000000000000004,
+        0.7,
+        0.6
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "DS",
+      "reference": "B0",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.4,
+        1.6,
+        0.0
+      ],
+      "mean_delta_pp": 1.0,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.8,
+        0.7,
+        1.5
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "DS",
+      "reference": "B0",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.6,
+        -1.0,
+        0.2
+      ],
+      "mean_delta_pp": -0.4666666666666667,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        -0.19999999999999998,
+        -0.8
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "DS",
+      "reference": "B0",
+      "method_batch": "DS9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.2,
+        0.0,
+        0.0
+      ],
+      "mean_delta_pp": 0.4,
+      "wins": 1,
+      "ties": 2,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        0.6,
+        0.6
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "C",
+      "reference": "S",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -1.2,
+        -1.8,
+        -0.2
+      ],
+      "mean_delta_pp": -1.0666666666666667,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -1.0,
+        -0.7,
+        -1.5
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "C",
+      "reference": "S",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.0,
+        1.8,
+        -1.2
+      ],
+      "mean_delta_pp": 0.5333333333333333,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.30000000000000004,
+        -0.09999999999999998,
+        1.4
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "C",
+      "reference": "S",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.2,
+        -0.4,
+        -0.6
+      ],
+      "mean_delta_pp": -0.4,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.5,
+        -0.4,
+        -0.30000000000000004
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "C",
+      "reference": "B2",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.4,
+        -0.4,
+        -0.2
+      ],
+      "mean_delta_pp": -0.3333333333333333,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.4
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "C",
+      "reference": "B2",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.4,
+        -0.4,
+        -1.0
+      ],
+      "mean_delta_pp": -0.3333333333333333,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.7,
+        -0.3,
+        0.0
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "C",
+      "reference": "B2",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.2,
+        -0.2,
+        -0.2
+      ],
+      "mean_delta_pp": -0.06666666666666667,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.2,
+        0.0,
+        0.0
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "C",
+      "reference": "B0",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.2,
+        0.0,
+        0.0
+      ],
+      "mean_delta_pp": 0.06666666666666667,
+      "wins": 1,
+      "ties": 2,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        0.1,
+        0.1
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "C",
+      "reference": "B0",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.6,
+        0.4,
+        -0.6
+      ],
+      "mean_delta_pp": 0.13333333333333333,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.09999999999999998,
+        0.0,
+        0.5
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "C",
+      "reference": "B0",
+      "method_batch": "C9",
+      "reference_batch": "v2_dev36",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.6,
+        0.0,
+        0.0
+      ],
+      "mean_delta_pp": 0.2,
+      "wins": 1,
+      "ties": 2,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        0.3,
+        0.3
+      ],
+      "evidence_status": "已独立核验；本轮复算 / 已独立核验；本轮复算",
+      "source": "sources/DS_C9/analysis_results.json; sources/v2_dev36/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "reference": "S",
+      "method_batch": "P12",
+      "reference_batch": "P12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.6,
+        -0.4,
+        -0.4
+      ],
+      "mean_delta_pp": -0.4666666666666667,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        -0.5,
+        -0.5
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "reference": "H",
+      "method_batch": "P12",
+      "reference_batch": "P12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.0,
+        -1.0,
+        0.2
+      ],
+      "mean_delta_pp": -0.26666666666666666,
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        0.1,
+        -0.5
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "P",
+      "reference": "PS",
+      "method_batch": "P12",
+      "reference_batch": "P12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "mean_delta_pp": -0.26666666666666666,
+      "wins": 0,
+      "ties": 2,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        0.0,
+        -0.4
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "H",
+      "reference": "S",
+      "method_batch": "P12",
+      "reference_batch": "P12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.6,
+        0.6,
+        -0.6
+      ],
+      "mean_delta_pp": -0.2,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "PS",
+      "reference": "S",
+      "method_batch": "P12",
+      "reference_batch": "P12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.6,
+        0.4,
+        -0.4
+      ],
+      "mean_delta_pp": -0.2,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.5,
+        -0.09999999999999998
+      ],
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组",
+      "source": "sources/P12/server_return.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "NA",
+      "reference": "S",
+      "method_batch": "J12",
+      "reference_batch": "J12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        0.8,
+        0.4,
+        -0.8
+      ],
+      "mean_delta_pp": 0.13333333333333333,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.2,
+        0.0,
+        0.6000000000000001
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "NA",
+      "reference": "NR",
+      "method_batch": "J12",
+      "reference_batch": "J12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        1.0,
+        -0.6,
+        -0.6
+      ],
+      "mean_delta_pp": -0.06666666666666667,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.6,
+        0.2,
+        0.2
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "NA",
+      "reference": "NC",
+      "method_batch": "J12",
+      "reference_batch": "J12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        2.0,
+        2.6,
+        3.2
+      ],
+      "mean_delta_pp": 2.6,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        2.9000000000000004,
+        2.6,
+        2.3
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "NR",
+      "reference": "S",
+      "method_batch": "J12",
+      "reference_batch": "J12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -0.2,
+        1.0,
+        -0.2
+      ],
+      "mean_delta_pp": 0.2,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.4,
+        -0.2,
+        0.4
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "NC",
+      "reference": "S",
+      "method_batch": "J12",
+      "reference_batch": "J12",
+      "n": 3,
+      "metric": "best_val_acc",
+      "differences_pp": [
+        -1.2,
+        -2.2,
+        -4.0
+      ],
+      "mean_delta_pp": -2.466666666666667,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -3.1,
+        -2.6,
+        -1.7000000000000002
+      ],
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型",
+      "source": "sources/J12/analysis_results.json"
+    }
+  ],
+  "mechanism": [
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 1.7319033968398492,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 0.0,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 1.6989493490362528,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 1.2326768218434292,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 0.0,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 1.375422961571131,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 0.3327380063087053,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 0.0,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "n": 3,
+      "metric": "true_density_layer_sampling_rate_temporal_std_pp",
+      "value_pp": 0.3371690285855577,
+      "aggregation": "mean of 4 true density layers, then 3 seeds",
+      "source": "sources/R9/analysis_results.json"
+    }
+  ],
+  "run_ledger": [
+    {
+      "batch": "historical60",
+      "full_pretrain_runs": 60,
+      "scope": "3 datasets x seeds 0..19",
+      "metric": "historical test summaries",
+      "evidence_status": "交接README记录；本轮未逐种子复算"
+    },
+    {
+      "batch": "formal120",
+      "full_pretrain_runs": 120,
+      "scope": "3 datasets x B0/B1/B2/B3 x seeds 10..19",
+      "metric": "val_selected_test_acc",
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "v2_dev36",
+      "full_pretrain_runs": 36,
+      "scope": "3 datasets x B0/B2/D/S x seeds 0..2",
+      "metric": "best_val_acc",
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "R9",
+      "full_pretrain_runs": 9,
+      "scope": "3 datasets x R x seeds 0..2",
+      "metric": "best_val_acc",
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "DS9",
+      "full_pretrain_runs": 9,
+      "scope": "3 datasets x DS x seeds 0..2",
+      "metric": "best_val_acc",
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "C9",
+      "full_pretrain_runs": 9,
+      "scope": "3 datasets x C x seeds 0..2",
+      "metric": "best_val_acc",
+      "evidence_status": "已独立核验；本轮复算"
+    },
+    {
+      "batch": "P12",
+      "full_pretrain_runs": 12,
+      "scope": "Cora x S/H/P/PS x seeds 0..2",
+      "metric": "best_val_acc",
+      "evidence_status": "服务器独立审计PASS；完整报告与回执已本地核对，未重审全部原始排名数组"
+    },
+    {
+      "batch": "J12",
+      "full_pretrain_runs": 12,
+      "scope": "Cora x S/NA/NR/NC x seeds 0..2",
+      "metric": "best_val_acc",
+      "evidence_status": "现有原始产物有限独立核验PASS；未重放Torch随机流或模型"
+    }
+  ],
+  "formal_equal_dataset_mean_delta_pp": 0.23666666666666666,
+  "note": "Formal tests and exploratory validation are separate tables. P/J S controls remain batch-specific.",
+  "arxiv_A": {
+    "dataset": "ogbn-arxiv",
+    "method": "B0",
+    "metric": "val_selected_test_acc",
+    "independent_pretrain_runs": 1,
+    "pretrain_seed": 0,
+    "linear_probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "mean_percent": 71.54208587947247,
+    "population_sd_percent": 0.054289570834629874,
+    "sd_ddof": 0,
+    "scope": "Ten classifiers of one encoder; resource-adapted batch256 and zero loader workers",
+    "evidence_status": "Existing artifacts finite audit PASS; no fresh local weight replay",
+    "source": "sources/arxiv_A/audit.json"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL_CHECKS_PASS_SERVER_FOLLOWUP_NOT_RUN",
+  "python310_syntax": "PASS",
+  "checks": 4,
+  "checks_scope": [
+    "Whitelist excludes test scores/weights/private files; exported hashes match",
+    "Export budget reports missing members instead of claiming completion",
+    "Memory/cache accounting is not misreported as available memory",
+    "Unapproved network hosts rejected before request"
+  ],
+  "offline_local_integration": "PASS",
+  "server_measurement_pending": true,
+  "training_started": false,
+  "original_preflight_sha256": "2e410e377ffc2f6e769dff68f594eef34f0f3ce3efcdb432abd70573cf1618cd"
+}

@@ -1,0 +1,195 @@
+{
+  "status": "USER_RETURNED_SAVED_SUMMARY_RECOMPUTED_RAW_ARTIFACT_AUDIT_PENDING",
+  "date": "2026-11-06 Asia/Shanghai",
+  "batch": "j_development12_k72xhtjv",
+  "source": "User returned saved validation groups, paired comparisons, structural gate and per-run coupling summaries; no raw pair plans or mask matrices read locally.",
+  "groups": [
+    {
+      "method": "S",
+      "per_seed_val_percent": [
+        81.6,
+        80.8,
+        82.4
+      ],
+      "mean_val_percent": 81.6,
+      "population_std_percent": 0.6531972647421843,
+      "pair_disagreement_fraction_per_seed": [
+        0.5013724112426036,
+        0.5007429733727811,
+        0.5005436390532544
+      ],
+      "mean_pair_disagreement_fraction": 0.5008863412228797
+    },
+    {
+      "method": "NA",
+      "per_seed_val_percent": [
+        82.4,
+        81.2,
+        81.6
+      ],
+      "mean_val_percent": 81.73333333333333,
+      "population_std_percent": 0.49888765156986087,
+      "pair_disagreement_fraction_per_seed": [
+        0.998512573964497,
+        0.9984944526627219,
+        0.9985014792899408
+      ],
+      "mean_pair_disagreement_fraction": 0.9985028353057199
+    },
+    {
+      "method": "NR",
+      "per_seed_val_percent": [
+        81.4,
+        81.8,
+        82.2
+      ],
+      "mean_val_percent": 81.8,
+      "population_std_percent": 0.32659863237108927,
+      "pair_disagreement_fraction_per_seed": [
+        0.998512573964497,
+        0.9984944526627219,
+        0.9985014792899408
+      ],
+      "mean_pair_disagreement_fraction": 0.9985028353057199
+    },
+    {
+      "method": "NC",
+      "per_seed_val_percent": [
+        80.4,
+        78.6,
+        78.4
+      ],
+      "mean_val_percent": 79.13333333333334,
+      "population_std_percent": 0.8993825042154717,
+      "pair_disagreement_fraction_per_seed": [
+        0.0014874260355029587,
+        0.0015055473372781066,
+        0.0014985207100591715
+      ],
+      "mean_pair_disagreement_fraction": 0.001497164694280079
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "NA",
+      "reference": "S",
+      "differences_pp": [
+        0.8,
+        0.4,
+        -0.8
+      ],
+      "mean_pp": 0.13333333333333333,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.2,
+        0.0,
+        0.6000000000000001
+      ]
+    },
+    {
+      "method": "NA",
+      "reference": "NR",
+      "differences_pp": [
+        1.0,
+        -0.6,
+        -0.6
+      ],
+      "mean_pp": -0.06666666666666665,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.6,
+        0.2,
+        0.2
+      ]
+    },
+    {
+      "method": "NA",
+      "reference": "NC",
+      "differences_pp": [
+        2.0,
+        2.6,
+        3.2
+      ],
+      "mean_pp": 2.6,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        2.9000000000000004,
+        2.6,
+        2.3
+      ]
+    },
+    {
+      "method": "NR",
+      "reference": "S",
+      "differences_pp": [
+        -0.2,
+        1.0,
+        -0.2
+      ],
+      "mean_pp": 0.19999999999999998,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.4,
+        -0.2,
+        0.4
+      ]
+    },
+    {
+      "method": "NC",
+      "reference": "S",
+      "differences_pp": [
+        -1.2,
+        -2.2,
+        -4.0
+      ],
+      "mean_pp": -2.466666666666667,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -3.1,
+        -2.6,
+        -1.7000000000000002
+      ]
+    }
+  ],
+  "structural_gate": {
+    "status": "PASS",
+    "passed": true,
+    "reasons": [],
+    "semantic": {
+      "mean_pair_cosine": 0.15944403867628534,
+      "graph_matching_pair_fraction": 0.4896449704142012,
+      "pairs": 1352
+    },
+    "random": {
+      "mean_pair_cosine": 0.057339023958516894,
+      "graph_matching_pair_fraction": 0.0,
+      "pairs": 1352
+    },
+    "thresholds": {
+      "min_graph_matching_fraction": 0.1,
+      "min_cosine_difference": 1e-06
+    },
+    "test_scores_used": false,
+    "validation_scores_used": false
+  },
+  "semantic_graph_matched_pairs": 662,
+  "no_test_metrics_opened": true,
+  "no_new_training_started": true,
+  "decisions": [
+    "NA main mean is slightly positive but seed-sensitive; do not auto-expand.",
+    "NR mean gain is driven by one seed; do not silently promote auxiliary NR into the primary candidate.",
+    "NC is lower than S for all three observed seeds; retain as negative mechanism control, not a performance candidate.",
+    "Pair similarity and joint-mask dependence manipulation worked in returned summaries; no confirmed semantic-pair accuracy advantage."
+  ],
+  "raw_artifact_audit": "PENDING: source/input/environment/checkpoint evidence, deterministic pair plans, full mask matrices, all-epoch quota/coupling/count reconstruction; saved summary is not an independent raw artifact audit."
+}

@@ -1,0 +1,11 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-07 14:25:50,256 - INFO - ----- Using best configs from configs/ogbn-arxiv.yaml -----
+2026-11-07 14:25:50,441 - INFO - --- to undirected graph ---
+2026-11-07 14:25:51,097 - INFO - ### scaling features ###
+=== Use sce_loss and alpha_l=6 ===
+num_encoder_params: 3428356, num_decoder_params: 131456, num_params_in_total: 6184710
+CAPACITY infer_capacity batch=256 split=train PASS seconds=0.539
+CAPACITY infer_capacity batch=256 split=valid PASS seconds=0.322
+CAPACITY infer_capacity batch=256 split=test PASS seconds=0.310
+MEASUREMENT_STAGE_STATUS=PASS_CAPACITY_CHECK

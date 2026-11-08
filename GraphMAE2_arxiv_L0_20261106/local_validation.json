@@ -1,0 +1,8 @@
+{
+  "status": "LOCAL_LOGIC_AND_SYNTAX_PASS_SERVER_NOT_RUN",
+  "reference_source_files": 55,
+  "historical_large_files": 6,
+  "static_budget_and_sampler_readback": "PASS",
+  "no_model_or_dataset_loaded": true,
+  "note": "Windows local read-only logic check with runtime probe skipped; server environment, resource, cache and queue still unmeasured."
+}

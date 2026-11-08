@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "path": "frozen_contract.json",
+      "bytes": 13279,
+      "sha256": "6d0a23f6dc738797cf1754247c0aa1b79d8f6884b158abc8426d00b6ffdb1d17"
+    },
+    {
+      "path": "input_identity.json",
+      "bytes": 2056,
+      "sha256": "97311f79ea31da69409c3ace1b395aa0f6d68f7bf5e613fd7bf3019e0b191a2a"
+    },
+    {
+      "path": "measurement.json",
+      "bytes": 7698,
+      "sha256": "dff409cd9b778656a0a318cb25da14f969e2f427f63c6ee45417bfdea336e807"
+    },
+    {
+      "path": "pretrain.json",
+      "bytes": 9875,
+      "sha256": "e5f1dd7ca8ef8fa5c2e56d01d06c342a528ee9cebf5f2979895915d3afec4eaf"
+    },
+    {
+      "path": "pretrain.log",
+      "bytes": 967,
+      "sha256": "14083dae433c2341c95ba49eb582cbfb7c3f8db4d2c2a80335e1e57d1e65758c"
+    },
+    {
+      "path": "pretrain_batches.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pretrain_resources.jsonl",
+      "bytes": 5106,
+      "sha256": "79d807d127485d52bc52cf19a3cf7da44ef9d54f56e52e2db711c41102c67a25"
+    },
+    {
+      "path": "source_identity.json",
+      "bytes": 5932,
+      "sha256": "a7a4c6876fb1be334d402a65513637266c13ca517097ea20123409e334a404ed"
+    },
+    {
+      "path": "source_snapshot.tar",
+      "bytes": 727040,
+      "sha256": "9dafaff33cc720d26aec4c6f7f930030d36236eb6cfc9a4cbd197f0db26d3f5e"
+    },
+    {
+      "path": "train_capacity_512.json",
+      "bytes": 9082,
+      "sha256": "14a0dbf83759f60e71d929d28c27b6b9b3967cccccc3a346e06436a51e6fea74"
+    },
+    {
+      "path": "train_capacity_512.log",
+      "bytes": 1161,
+      "sha256": "2ef2fdf736a2c7f5cfd89afab739c648cd4e23d151f9d559c9b2c0cb00d7ae51"
+    },
+    {
+      "path": "train_capacity_512_resources.jsonl",
+      "bytes": 8462,
+      "sha256": "5c216f5b6436fd74b97ab8d5a501f5f801d4e5393962cfe867115d68996555ab"
+    }
+  ],
+  "scope": "Small engineering evidence only; large measured assets remain at recorded paths"
+}

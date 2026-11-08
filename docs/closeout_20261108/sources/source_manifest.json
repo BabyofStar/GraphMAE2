@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-06 Asia/Shanghai",
+  "files": [
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\formal120_x6CfgE_analysis\\analysis_results.json",
+      "snapshot": "sources/formal120/analysis_results.json",
+      "bytes": 210539,
+      "sha256": "7ef8bc313975eb3bad8790dca2ec4a9c484f16ddaa9d9bf48c6ea11a7277aa19"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\formal120_x6CfgE_analysis\\audit.json",
+      "snapshot": "sources/formal120/audit.json",
+      "bytes": 14736,
+      "sha256": "00d801126b1e47ed2121a5694ed9c72e727084ca14317632fc5400eaae1b0a6a"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\formal120_x6CfgE_analysis\\analysis_plan.md",
+      "snapshot": "sources/formal120/analysis_plan.md",
+      "bytes": 4030,
+      "sha256": "d073f46af4f3dfa873785c1bf7dec2feda23a0448adaba247bbc79ff1efb7644"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\formal120_x6CfgE_analysis\\formal120_report.md",
+      "snapshot": "sources/formal120/formal120_report.md",
+      "bytes": 10714,
+      "sha256": "d932e5a9956e10232bdd8d296056175579f82c28166686420697dbdf5327be27"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\v2_development36_analysis\\analysis_results.json",
+      "snapshot": "sources/v2_dev36/analysis_results.json",
+      "bytes": 126810,
+      "sha256": "819be86e6069ac92c6283341eff417638f60ae0f8e17f4eff03cbf02807cd925"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\v2_development36_analysis\\audit.json",
+      "snapshot": "sources/v2_dev36/audit.json",
+      "bytes": 834,
+      "sha256": "6b508e230b342b197a12c7cb9f0103cea2df23d201f5a59077bf32f09525d84b"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\v2_development36_analysis\\analysis_plan.md",
+      "snapshot": "sources/v2_dev36/analysis_plan.md",
+      "bytes": 3150,
+      "sha256": "7c00a7fb97972b6b1acf00fe61c40dc8040c00918c7ae401dc9fe037d5676d3c"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-09-28\\5-ccf-a-jcr-q1\\outputs\\v2_development36_analysis\\v2_development36_report.md",
+      "snapshot": "sources/v2_dev36/v2_development36_report.md",
+      "bytes": 10080,
+      "sha256": "ca025bc9908ab74c3c4b6645ac83186e5646d751b1641a2809220369f7477f12"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\r9_github_analysis_20261105\\analysis_results.json",
+      "snapshot": "sources/R9/analysis_results.json",
+      "bytes": 77327,
+      "sha256": "10ebcf3b67346148f0333e6a4c0705ea0f47e7061e719578493b3a18d7e38ee5"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\r9_github_analysis_20261105\\audit.json",
+      "snapshot": "sources/R9/audit.json",
+      "bytes": 873,
+      "sha256": "b7ece72dce91e78083574ca4e68f88c27b93eb620760b99d0b813997410190d0"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\r9_github_analysis_20261105\\analysis_plan.md",
+      "snapshot": "sources/R9/analysis_plan.md",
+      "bytes": 2009,
+      "sha256": "d5bbe113fa623644729a8d6e34bd2636b68993eec41d29886160fcda8fb27e1b"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\r9_github_analysis_20261105\\R9审计与机制分析.md",
+      "snapshot": "sources/R9/R9审计与机制分析.md",
+      "bytes": 7107,
+      "sha256": "5f1e379cb5997eeaa2d77b0ea6e395e772d1ac0e2b80e7c1273cca8186477bfc"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\dsc9_github_analysis_20261105\\analysis_results.json",
+      "snapshot": "sources/DS_C9/analysis_results.json",
+      "bytes": 260083,
+      "sha256": "bbbc519b118747922a9ee41d9dac35e3152f5d7f6ba98477f1b64ffe1e8b77c7"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\dsc9_github_analysis_20261105\\audit.json",
+      "snapshot": "sources/DS_C9/audit.json",
+      "bytes": 1302,
+      "sha256": "7e336fe559323e96a043c3b8789e1bc1106b87816df14c612ecbcf0a032e8a7e"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\dsc9_github_analysis_20261105\\analysis_plan.md",
+      "snapshot": "sources/DS_C9/analysis_plan.md",
+      "bytes": 2434,
+      "sha256": "58ce7278c31e4bfcad993f9b8db635b33dc864236c7725f196b1fbd9089ae22d"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\dsc9_github_analysis_20261105\\DS9_C9审计与机制分析.md",
+      "snapshot": "sources/DS_C9/DS9_C9审计与机制分析.md",
+      "bytes": 11891,
+      "sha256": "27e6403dfb28c533745a9d10932028e6609f18427579f7f15252db9aad7284eb"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\dsc9_github_analysis_20261105\\download_manifest.json",
+      "snapshot": "sources/DS_C9/download_manifest.json",
+      "bytes": 178429,
+      "sha256": "6bd9e9722abc8f504401c8a9730adc75209239fbbfd645fe59ca78cf4e20cfa8"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\dsc9_github_analysis_20261105\\report_provenance.json",
+      "snapshot": "sources/DS_C9/report_provenance.json",
+      "bytes": 425,
+      "sha256": "b2d2ee281a4cf1060ad06d7a232fec57284a4686bc034bae79007f1ee8f1f8fa"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\p12_server_audit_20261106\\server_return.json",
+      "snapshot": "sources/P12/server_return.json",
+      "bytes": 5222,
+      "sha256": "2dda923cb9fb707c94e75f92e25f3828f2c88bc5335de4b4a17b34a43c20b450"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\p12_server_audit_20261106\\P12审计回传结论.md",
+      "snapshot": "sources/P12/P12审计回传结论.md",
+      "bytes": 1672,
+      "sha256": "559758e68bc8cef9590af8508398bc8df808a0098b5240c3e8e759c142377360"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\j12_summary_analysis_20261106\\analysis_results.json",
+      "snapshot": "sources/J12/analysis_results.json",
+      "bytes": 5141,
+      "sha256": "bf4608d4ea69c6b9e40d5844277be2f8551b348a6b11faac090a54269d01b555"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\j12_summary_analysis_20261106\\J12逐种子与机制结论.md",
+      "snapshot": "sources/J12/J12逐种子与机制结论.md",
+      "bytes": 3799,
+      "sha256": "645064ecac69c622017d3125e4d847a54d94563b8276fb4adc641038acdba5e7"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\outputs\\README.md",
+      "snapshot": "sources/handoff/README.md",
+      "bytes": 46781,
+      "sha256": "05471522850e16bf2bd1a7a2f6b3d956d35289fc0758119387bab0ea3e1ecc93"
+    },
+    {
+      "source": "C:\\Users\\18870\\Desktop\\GraphMAE2\\GraphMAE2_后续收尾计划_20261106.md",
+      "snapshot": "sources/plan/GraphMAE2_后续收尾计划_20261106.md",
+      "bytes": 23279,
+      "sha256": "f4792beb36066bdfc690346a9cf8648ad6e36939bd255b57fd4ee160813f5b9b"
+    },
+    {
+      "source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-02\\xia\\work\\r9_github_audit_20261105\\download_manifest.json",
+      "snapshot": "sources/R9/download_manifest.json",
+      "bytes": 76719,
+      "sha256": "c159f7440851b3c6acabaf25075e4a83748b29491913164f86a630bef0ed7806"
+    }
+  ],
+  "archives": [
+    {
+      "path": "C:\\Users\\18870\\Desktop\\GraphMAE2\\formal120_x6CfgE_results.tar.gz",
+      "bytes": 10151148,
+      "sha256": "2f9a797f5e15eb833ae4f612d1e0f56243030657e7025bf495ba97c753dbb036",
+      "expected_sha256": "2f9a797f5e15eb833ae4f612d1e0f56243030657e7025bf495ba97c753dbb036",
+      "full_run_metrics": 120,
+      "included_in_deliverable": false
+    },
+    {
+      "path": "C:\\Users\\18870\\Desktop\\GraphMAE2\\v2_development36_results.tar.gz",
+      "bytes": 6604463,
+      "sha256": "e523cba3998593b9a95050a42088dfde6533de82fee39f371d9e840a46884199",
+      "expected_sha256": "e523cba3998593b9a95050a42088dfde6533de82fee39f371d9e840a46884199",
+      "full_run_metrics": 36,
+      "included_in_deliverable": false
+    }
+  ],
+  "note": "Snapshots retain historical dates and text. Current scope is defined by the 2026-11-06 closeout plan."
+}

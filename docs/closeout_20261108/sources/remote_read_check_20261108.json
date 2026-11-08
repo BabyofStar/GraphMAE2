@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-08 Asia/Shanghai",
+  "remote_sync_verified": false,
+  "public_main": {
+    "url": "https://github.com/BabyofStar/GraphMAE2",
+    "result": "Retrieved page shows README date2026-11-04; cached page, not proof of target branch or current server synchronization"
+  },
+  "target_branch": {
+    "url": "https://github.com/BabyofStar/GraphMAE2/tree/feat/structure-curriculum",
+    "result": "Cache miss / unavailable"
+  },
+  "old_server_commit": {
+    "url": "https://github.com/BabyofStar/GraphMAE2/commit/8062dd851552c4f519924d75a28e85dc068c58ab",
+    "result": "Cache miss / unavailable"
+  },
+  "API_branch": {
+    "url": "https://api.github.com/repos/BabyofStar/GraphMAE2/branches/feat%2Fstructure-curriculum",
+    "result": "Unavailable"
+  }
+}

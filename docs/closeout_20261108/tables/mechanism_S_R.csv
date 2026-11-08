@@ -1,0 +1,10 @@
+﻿dataset,method,n,metric,value_pp,aggregation,source
+cora,B0,3,true_density_layer_sampling_rate_temporal_std_pp,1.7319033968398492,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+cora,S,3,true_density_layer_sampling_rate_temporal_std_pp,0.0,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+cora,R,3,true_density_layer_sampling_rate_temporal_std_pp,1.6989493490362528,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+citeseer,B0,3,true_density_layer_sampling_rate_temporal_std_pp,1.2326768218434292,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+citeseer,S,3,true_density_layer_sampling_rate_temporal_std_pp,0.0,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+citeseer,R,3,true_density_layer_sampling_rate_temporal_std_pp,1.375422961571131,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+pubmed,B0,3,true_density_layer_sampling_rate_temporal_std_pp,0.3327380063087053,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+pubmed,S,3,true_density_layer_sampling_rate_temporal_std_pp,0.0,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json
+pubmed,R,3,true_density_layer_sampling_rate_temporal_std_pp,0.3371690285855577,"mean of 4 true density layers, then 3 seeds",sources/R9/analysis_results.json

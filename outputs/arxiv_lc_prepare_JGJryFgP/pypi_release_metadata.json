@@ -1,0 +1,118 @@
+{
+  "info": {
+    "author": "Kimon Fountoulakis, Meng Liu, David Gleich, Michael W. Mahoney",
+    "author_email": "kimon.fountoulakis@uwaterloo.ca",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "License :: OSI Approved :: GNU General Public License (GPL)",
+      "Programming Language :: Python :: 3.5"
+    ],
+    "description": "Check our Github page for a more detailed description.\n\n\n",
+    "description_content_type": "",
+    "docs_url": null,
+    "download_url": "",
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "dynamic": null,
+    "home_page": "https://github.com/kfoynt/LocalGraphClustering",
+    "keywords": "local graph clustering",
+    "license": "GPL",
+    "license_expression": null,
+    "license_files": null,
+    "maintainer": "",
+    "maintainer_email": "",
+    "name": "localgraphclustering",
+    "package_url": "https://pypi.org/project/localgraphclustering/",
+    "platform": "",
+    "project_url": "https://pypi.org/project/localgraphclustering/",
+    "project_urls": {
+      "Homepage": "https://github.com/kfoynt/LocalGraphClustering"
+    },
+    "provides_extra": null,
+    "release_url": "https://pypi.org/project/localgraphclustering/0.6.1/",
+    "requires_dist": [
+      "numpy (>=1.12.0)",
+      "scipy (>=0.18.1)",
+      "networkx (>=1.11)",
+      "matplotlib (>=2.0.0)",
+      "typing",
+      "matplotlib",
+      "pandas",
+      "plotly",
+      "sklearn",
+      "joblib"
+    ],
+    "requires_python": "",
+    "summary": "Package for local graph clustering",
+    "version": "0.6.1",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 7289704,
+  "ownership": {
+    "organization": null,
+    "roles": [
+      {
+        "role": "Owner",
+        "user": "LM19952012"
+      },
+      {
+        "role": "Owner",
+        "user": "kfoynt"
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": "",
+      "core-metadata": {
+        "sha256": "85eceb908dcaec45ab7206390e5a6498266c6a1e932f23ea357c2f3fec418c23"
+      },
+      "digests": {
+        "blake2b_256": "20105fcf005381b80347c18710ab0641ccdfc3e64ffd427d666626bab4141c6a",
+        "md5": "c0d0a9ac686e99ace05d9d0e686dc1a0",
+        "sha256": "08a5b44581af83d1f935cb9b91b90d2fbc47556186fa9195c1ed8ee925c5cac1"
+      },
+      "downloads": -1,
+      "filename": "localgraphclustering-0.6.1-py2.py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "c0d0a9ac686e99ace05d9d0e686dc1a0",
+      "packagetype": "bdist_wheel",
+      "python_version": "py2.py3",
+      "requires_python": null,
+      "size": 9609518,
+      "upload_time": "2020-05-20T21:28:24",
+      "upload_time_iso_8601": "2020-05-20T21:28:24.097091Z",
+      "url": "https://files.pythonhosted.org/packages/20/10/5fcf005381b80347c18710ab0641ccdfc3e64ffd427d666626bab4141c6a/localgraphclustering-0.6.1-py2.py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": "",
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "93295e7e93cff4db00bfed5d716601c548829558e17c7b042967b68fd47a76fa",
+        "md5": "fd1456ef10e6b51ee712a77788cfc11b",
+        "sha256": "9b8f1091e9e7ed00e6259ac8d730d2211cbbf820416f092c259fe34ddb2c5ef3"
+      },
+      "downloads": -1,
+      "filename": "localgraphclustering-0.6.1.tar.gz",
+      "has_sig": false,
+      "md5_digest": "fd1456ef10e6b51ee712a77788cfc11b",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": null,
+      "size": 9452739,
+      "upload_time": "2020-05-20T21:28:33",
+      "upload_time_iso_8601": "2020-05-20T21:28:33.133586Z",
+      "url": "https://files.pythonhosted.org/packages/93/29/5e7e93cff4db00bfed5d716601c548829558e17c7b042967b68fd47a76fa/localgraphclustering-0.6.1.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}

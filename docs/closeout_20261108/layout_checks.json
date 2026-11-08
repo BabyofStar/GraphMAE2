@@ -1,0 +1,43 @@
+{
+  "desktop": {
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "images": [
+      {
+        "complete": true,
+        "width": 3000,
+        "height": 1550
+      },
+      {
+        "complete": true,
+        "width": 3125,
+        "height": 1550
+      },
+      {
+        "complete": true,
+        "width": 3125,
+        "height": 1550
+      }
+    ],
+    "h2": [
+      "摘要",
+      "1. 研究问题与复现范围",
+      "2. 原方法与本项目修改的边界",
+      "3. 主方案B2：对数度数引导的输入掩码课程",
+      "4. 实验设置与记录",
+      "5. 正式测试结果",
+      "6. 开发探索、机制线索与负结果",
+      "7. ogbn-arxiv：B0资源适配复现",
+      "8. 复现工程、证据状态与保存范围",
+      "9. 局限与结论",
+      "参考文献",
+      "附录：历史基线与本轮交付"
+    ],
+    "bodyHeight": 15143
+  },
+  "mobile": {
+    "documentWidth": 390,
+    "viewportWidth": 390
+  },
+  "externalRequests": []
+}

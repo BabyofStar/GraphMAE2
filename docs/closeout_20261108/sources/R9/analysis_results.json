@@ -1,0 +1,3049 @@
+{
+  "groups": [
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "per_seed_val_percent": [
+        80.2,
+        79.4,
+        82.0
+      ],
+      "mean_val_percent": 80.53333333333333,
+      "population_std_percent": 1.0873004286866688
+    },
+    {
+      "dataset": "cora",
+      "method": "B2",
+      "per_seed_val_percent": [
+        80.80000000000001,
+        79.80000000000001,
+        82.19999999999999
+      ],
+      "mean_val_percent": 80.93333333333334,
+      "population_std_percent": 0.9843215373488895
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "per_seed_val_percent": [
+        80.60000000000001,
+        79.60000000000001,
+        82.19999999999999
+      ],
+      "mean_val_percent": 80.80000000000001,
+      "population_std_percent": 1.0708252269472636
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "per_seed_val_percent": [
+        81.6,
+        81.2,
+        82.19999999999999
+      ],
+      "mean_val_percent": 81.66666666666667,
+      "population_std_percent": 0.4109609335312613
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "per_seed_val_percent": [
+        81.0,
+        80.2,
+        81.8
+      ],
+      "mean_val_percent": 81.0,
+      "population_std_percent": 0.6531972647421769
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "per_seed_val_percent": [
+        72.0,
+        74.8,
+        71.39999999999999
+      ],
+      "mean_val_percent": 72.73333333333333,
+      "population_std_percent": 1.481740718059526
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B2",
+      "per_seed_val_percent": [
+        72.2,
+        75.6,
+        71.8
+      ],
+      "mean_val_percent": 73.2,
+      "population_std_percent": 1.7048949136725913
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "per_seed_val_percent": [
+        72.2,
+        74.8,
+        72.0
+      ],
+      "mean_val_percent": 73.0,
+      "population_std_percent": 1.2754084313139338
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "per_seed_val_percent": [
+        71.6,
+        73.4,
+        72.0
+      ],
+      "mean_val_percent": 72.33333333333333,
+      "population_std_percent": 0.7717224601860158
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "per_seed_val_percent": [
+        71.0,
+        73.4,
+        71.6
+      ],
+      "mean_val_percent": 72.0,
+      "population_std_percent": 1.019803902718558
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "per_seed_val_percent": [
+        82.8,
+        83.39999999999999,
+        83.8
+      ],
+      "mean_val_percent": 83.33333333333333,
+      "population_std_percent": 0.41096093353126545
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B2",
+      "per_seed_val_percent": [
+        83.2,
+        83.6,
+        84.0
+      ],
+      "mean_val_percent": 83.6,
+      "population_std_percent": 0.32659863237109066
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "per_seed_val_percent": [
+        83.0,
+        83.2,
+        83.39999999999999
+      ],
+      "mean_val_percent": 83.2,
+      "population_std_percent": 0.16329931618554533
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "per_seed_val_percent": [
+        83.6,
+        83.8,
+        84.39999999999999
+      ],
+      "mean_val_percent": 83.93333333333332,
+      "population_std_percent": 0.3399346342395193
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "per_seed_val_percent": [
+        83.8,
+        82.6,
+        82.8
+      ],
+      "mean_val_percent": 83.06666666666666,
+      "population_std_percent": 0.5249338582674545
+    }
+  ],
+  "comparisons": [
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "R",
+      "differences_pp": [
+        0.6,
+        1.0,
+        0.4
+      ],
+      "mean_pp": 0.6666666666666666,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.7,
+        0.5,
+        0.8
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "reference": "B0",
+      "differences_pp": [
+        0.8,
+        0.8,
+        -0.2
+      ],
+      "mean_pp": 0.4666666666666667,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.30000000000000004,
+        0.30000000000000004,
+        0.8
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "reference": "B2",
+      "differences_pp": [
+        0.2,
+        0.4,
+        -0.4
+      ],
+      "mean_pp": 0.06666666666666667,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.1,
+        0.30000000000000004
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        1.4,
+        1.8,
+        0.2
+      ],
+      "mean_pp": 1.1333333333333333,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        1.0,
+        0.7999999999999999,
+        1.6
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        0.8,
+        1.4,
+        0.0
+      ],
+      "mean_pp": 0.7333333333333333,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.7,
+        0.4,
+        1.1
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "D",
+      "reference": "S",
+      "differences_pp": [
+        -1.0,
+        -1.6,
+        0.0
+      ],
+      "mean_pp": -0.8666666666666667,
+      "wins": 0,
+      "ties": 1,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.8,
+        -0.5,
+        -1.3
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "R",
+      "differences_pp": [
+        0.6,
+        0.0,
+        0.4
+      ],
+      "mean_pp": 0.3333333333333333,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.2,
+        0.5,
+        0.3
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "reference": "B0",
+      "differences_pp": [
+        -1.0,
+        -1.4,
+        0.2
+      ],
+      "mean_pp": -0.7333333333333333,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.6,
+        -0.4,
+        -1.2
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "reference": "B2",
+      "differences_pp": [
+        -1.2,
+        -2.2,
+        -0.2
+      ],
+      "mean_pp": -1.2,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -1.2000000000000002,
+        -0.7,
+        -1.7000000000000002
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        -0.4,
+        -1.4,
+        0.6
+      ],
+      "mean_pp": -0.39999999999999997,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.39999999999999997,
+        0.09999999999999998,
+        -0.8999999999999999
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        -0.6,
+        -2.2,
+        0.2
+      ],
+      "mean_pp": -0.8666666666666667,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -1.0,
+        -0.19999999999999998,
+        -1.4000000000000001
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "D",
+      "reference": "S",
+      "differences_pp": [
+        0.6,
+        1.4,
+        0.0
+      ],
+      "mean_pp": 0.6666666666666666,
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.7,
+        0.3,
+        1.0
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "R",
+      "differences_pp": [
+        -0.2,
+        1.2,
+        1.6
+      ],
+      "mean_pp": 0.8666666666666667,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        1.4,
+        0.7000000000000001,
+        0.5
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "reference": "B0",
+      "differences_pp": [
+        1.0,
+        -0.8,
+        -1.0
+      ],
+      "mean_pp": -0.26666666666666666,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -0.9,
+        0.0,
+        0.09999999999999998
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "reference": "B2",
+      "differences_pp": [
+        0.6,
+        -1.0,
+        -1.2
+      ],
+      "mean_pp": -0.5333333333333333,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        -1.1,
+        -0.3,
+        -0.2
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "B0",
+      "differences_pp": [
+        0.8,
+        0.4,
+        0.6
+      ],
+      "mean_pp": 0.6,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.5,
+        0.7,
+        0.6000000000000001
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "reference": "B2",
+      "differences_pp": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "mean_pp": 0.33333333333333337,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "leave_one_seed_out_mean_pp": [
+        0.30000000000000004,
+        0.4,
+        0.30000000000000004
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "D",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        -0.6,
+        -1.0
+      ],
+      "mean_pp": -0.7333333333333333,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.8,
+        -0.8,
+        -0.6
+      ]
+    }
+  ],
+  "equal_dataset_deltas_pp": {
+    "S_minus_R": 0.6222222222222222,
+    "R_minus_B0": -0.17777777777777776,
+    "R_minus_B2": -0.5555555555555556,
+    "S_minus_B0": 0.4444444444444444,
+    "S_minus_B2": 0.06666666666666665,
+    "D_minus_S": -0.3111111111111111
+  },
+  "diagnostics": [
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "seed": 0,
+      "count_min_mean_max": [
+        919,
+        1000,
+        1068
+      ],
+      "count_cv": 0.02236209997986775,
+      "error_ema_mean": 0.3977778853306566,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.449822912686391,
+        1.7185310259988997,
+        1.741125807051994,
+        1.46543621385061
+      ],
+      "pretrain_seconds": 130.83401400898583,
+      "final_probe_seconds": 0.7687445119954646,
+      "peak_allocated_MiB": 416.294921875,
+      "runner_seconds": 149.1883860770613,
+      "preparation_seconds": 0.20637142204213887,
+      "late_masked_one_hop_visible_mean": 1.9432791728212704,
+      "late_masked_one_hop_zero_visible_fraction": 0.17355982274741508,
+      "late_masked_two_hop_visible_mean": 17.857459379615953,
+      "late_masked_two_hop_zero_visible_fraction": 0.033382570162481535,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 999.5849335302806
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.3781388478582
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 999.4460856720827
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 1000.5908419497785
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 0,
+      "count_min_mean_max": [
+        930,
+        1000,
+        1083
+      ],
+      "count_cv": 0.022388044129421306,
+      "error_ema_mean": 0.3964287198315123,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 132.64637398300692,
+      "final_probe_seconds": 0.7627491099992767,
+      "peak_allocated_MiB": 416.294921875,
+      "runner_seconds": 147.73521527496632,
+      "preparation_seconds": 0.21244294301141053,
+      "late_masked_one_hop_visible_mean": 1.9682422451994093,
+      "late_masked_one_hop_zero_visible_fraction": 0.17695716395864106,
+      "late_masked_two_hop_visible_mean": 17.896602658788776,
+      "late_masked_two_hop_zero_visible_fraction": 0.035598227474150666,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.5228951255539
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.5228951255539
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "seed": 0,
+      "count_min_mean_max": [
+        930,
+        1000,
+        1083
+      ],
+      "count_cv": 0.022388044129421306,
+      "error_ema_mean": 0.39976078367611856,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.752088060990676,
+        1.1894874588558613,
+        1.5318906140919786,
+        1.7946063002393764
+      ],
+      "pretrain_seconds": 323.75645162095316,
+      "final_probe_seconds": 1.0998847868759185,
+      "peak_allocated_MiB": 416.31640625,
+      "runner_seconds": 338.17535327211954,
+      "preparation_seconds": 0.22024650708772242,
+      "late_masked_one_hop_visible_mean": 1.962333825701625,
+      "late_masked_one_hop_zero_visible_fraction": 0.186410635155096,
+      "late_masked_two_hop_visible_mean": 17.901181683899555,
+      "late_masked_two_hop_zero_visible_fraction": 0.04076809453471197,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1000.2924667651404
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.9527326440177
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.9512555391433
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 999.8035450516986
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          171,
+          167,
+          170,
+          169
+        ],
+        [
+          177,
+          146,
+          173,
+          181
+        ],
+        [
+          165,
+          181,
+          178,
+          153
+        ],
+        [
+          164,
+          183,
+          156,
+          174
+        ]
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "seed": 1,
+      "count_min_mean_max": [
+        932,
+        1000,
+        1071
+      ],
+      "count_cv": 0.021998925715680247,
+      "error_ema_mean": 0.4027854565288899,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.8672938206752532,
+        1.7390786941244494,
+        2.017839768963717,
+        2.1716438858241656
+      ],
+      "pretrain_seconds": 130.9583092899993,
+      "final_probe_seconds": 0.7580153630115092,
+      "peak_allocated_MiB": 416.294921875,
+      "runner_seconds": 145.79958044202067,
+      "preparation_seconds": 0.2172653659945354,
+      "late_masked_one_hop_visible_mean": 1.9503692762186116,
+      "late_masked_one_hop_zero_visible_fraction": 0.17666174298375184,
+      "late_masked_two_hop_visible_mean": 17.9288035450517,
+      "late_masked_two_hop_zero_visible_fraction": 0.03308714918759232,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1000.165435745938
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.5790251107828
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.8626292466765
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 1000.3929098966026
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 1,
+      "count_min_mean_max": [
+        921,
+        1000,
+        1083
+      ],
+      "count_cv": 0.021835002999364913,
+      "error_ema_mean": 0.3992023930019607,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 132.29236708802637,
+      "final_probe_seconds": 0.7299869129201397,
+      "peak_allocated_MiB": 416.294921875,
+      "runner_seconds": 147.17784524010494,
+      "preparation_seconds": 0.2112879779888317,
+      "late_masked_one_hop_visible_mean": 1.9522895125553914,
+      "late_masked_one_hop_zero_visible_fraction": 0.17488921713441655,
+      "late_masked_two_hop_visible_mean": 17.92791728212703,
+      "late_masked_two_hop_zero_visible_fraction": 0.03589364844903988,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.5228951255539
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.5228951255539
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "seed": 1,
+      "count_min_mean_max": [
+        921,
+        1000,
+        1083
+      ],
+      "count_cv": 0.021835002999364913,
+      "error_ema_mean": 0.4024001843814616,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.9577318598217541,
+        1.3046574725595075,
+        1.8026932509425164,
+        2.200049754492605
+      ],
+      "pretrain_seconds": 216.55279300687835,
+      "final_probe_seconds": 1.3413726708386093,
+      "peak_allocated_MiB": 416.31640625,
+      "runner_seconds": 231.23754607117735,
+      "preparation_seconds": 0.21712068584747612,
+      "late_masked_one_hop_visible_mean": 1.9590841949778435,
+      "late_masked_one_hop_zero_visible_fraction": 0.17503692762186115,
+      "late_masked_two_hop_visible_mean": 17.895125553914326,
+      "late_masked_two_hop_zero_visible_fraction": 0.03589364844903988,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 999.7976366322009
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 998.9098966026588
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 1000.5096011816839
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 1000.7828655834564
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          171,
+          167,
+          170,
+          169
+        ],
+        [
+          177,
+          146,
+          173,
+          181
+        ],
+        [
+          165,
+          181,
+          178,
+          153
+        ],
+        [
+          164,
+          183,
+          156,
+          174
+        ]
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "B0",
+      "seed": 2,
+      "count_min_mean_max": [
+        921,
+        1000,
+        1070
+      ],
+      "count_cv": 0.02234876962368985,
+      "error_ema_mean": 0.39636265139812205,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.5674245643445428,
+        1.7010245076867232,
+        1.9315524560542565,
+        1.4120671048171867
+      ],
+      "pretrain_seconds": 130.2337100849254,
+      "final_probe_seconds": 0.7630483849206939,
+      "peak_allocated_MiB": 416.294921875,
+      "runner_seconds": 144.72566949599423,
+      "preparation_seconds": 0.2079158970154822,
+      "late_masked_one_hop_visible_mean": 1.9389955686853766,
+      "late_masked_one_hop_zero_visible_fraction": 0.1791728212703102,
+      "late_masked_two_hop_visible_mean": 17.897341211226,
+      "late_masked_two_hop_zero_visible_fraction": 0.03500738552437223,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 999.9423929098966
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.9468242245199
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 1000.2038404726735
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.9069423929099
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "S",
+      "seed": 2,
+      "count_min_mean_max": [
+        910,
+        1000,
+        1072
+      ],
+      "count_cv": 0.022461011682251782,
+      "error_ema_mean": 0.393755831113264,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 132.0194298780989,
+      "final_probe_seconds": 0.7806116989813745,
+      "peak_allocated_MiB": 416.294921875,
+      "runner_seconds": 146.90129500604235,
+      "preparation_seconds": 0.21297234995290637,
+      "late_masked_one_hop_visible_mean": 1.9548005908419497,
+      "late_masked_one_hop_zero_visible_fraction": 0.18316100443131464,
+      "late_masked_two_hop_visible_mean": 17.899409158050222,
+      "late_masked_two_hop_zero_visible_fraction": 0.03707533234859675,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1001.4771048744461
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 998.5228951255539
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 998.5228951255539
+        }
+      ]
+    },
+    {
+      "dataset": "cora",
+      "method": "R",
+      "seed": 2,
+      "count_min_mean_max": [
+        910,
+        1000,
+        1072
+      ],
+      "count_cv": 0.022461011682251782,
+      "error_ema_mean": 0.3960959174955041,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.8772296781562683,
+        1.769285090729401,
+        1.7473093859041764,
+        1.4603632616509135
+      ],
+      "pretrain_seconds": 332.8086418618914,
+      "final_probe_seconds": 1.2022358099929988,
+      "peak_allocated_MiB": 416.31640625,
+      "runner_seconds": 346.5998282430228,
+      "preparation_seconds": 0.21189446584321558,
+      "late_masked_one_hop_visible_mean": 1.9673559822747415,
+      "late_masked_one_hop_zero_visible_fraction": 0.18714918759231905,
+      "late_masked_two_hop_visible_mean": 17.84416543574594,
+      "late_masked_two_hop_zero_visible_fraction": 0.03781388478581979,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 677,
+          "count_mean": 999.794682422452
+        },
+        {
+          "layer": 1,
+          "nodes": 677,
+          "count_mean": 1000.4682422451995
+        },
+        {
+          "layer": 2,
+          "nodes": 677,
+          "count_mean": 999.9778434268833
+        },
+        {
+          "layer": 3,
+          "nodes": 677,
+          "count_mean": 999.7592319054653
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          171,
+          167,
+          170,
+          169
+        ],
+        [
+          177,
+          146,
+          173,
+          181
+        ],
+        [
+          165,
+          181,
+          178,
+          153
+        ],
+        [
+          164,
+          183,
+          156,
+          174
+        ]
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "seed": 0,
+      "count_min_mean_max": [
+        214,
+        249.9248572287346,
+        289
+      ],
+      "count_cv": 0.04474557256082422,
+      "error_ema_mean": 0.7798790151842873,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.9206029882272487,
+        1.1296371938999767,
+        1.0372270405448425,
+        0.843551578211517
+      ],
+      "pretrain_seconds": 54.84369115100708,
+      "final_probe_seconds": 1.0919456320116296,
+      "peak_allocated_MiB": 794.20166015625,
+      "runner_seconds": 69.92116574605461,
+      "preparation_seconds": 0.2931890420150012,
+      "late_masked_one_hop_visible_mean": 1.349368610944077,
+      "late_masked_one_hop_zero_visible_fraction": 0.30757666867107636,
+      "late_masked_two_hop_visible_mean": 7.036680697534576,
+      "late_masked_two_hop_zero_visible_fraction": 0.1476247745039086,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 0.9929651232711966,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 249.6875
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250.23677884615384
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.65264423076923
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.12274368231047
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "seed": 0,
+      "count_min_mean_max": [
+        207,
+        249.9248572287346,
+        297
+      ],
+      "count_cv": 0.044888804382340386,
+      "error_ema_mean": 0.778927413325142,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 54.72787868604064,
+      "final_probe_seconds": 1.0753193510463461,
+      "peak_allocated_MiB": 794.20166015625,
+      "runner_seconds": 71.96291179093532,
+      "preparation_seconds": 0.29345513693988323,
+      "late_masked_one_hop_visible_mean": 1.3674082982561635,
+      "late_masked_one_hop_zero_visible_fraction": 0.2865303668069753,
+      "late_masked_two_hop_visible_mean": 7.05411906193626,
+      "late_masked_two_hop_zero_visible_fraction": 0.12417318099819603,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 0.9947156494287432,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.6991576413959
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "seed": 0,
+      "count_min_mean_max": [
+        207,
+        249.9248572287346,
+        297
+      ],
+      "count_cv": 0.044888804382340386,
+      "error_ema_mean": 0.7807624969963989,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.9700560907694935,
+        0.9533657078758645,
+        0.9878868594501554,
+        1.9123942945944994
+      ],
+      "pretrain_seconds": 98.84052825300023,
+      "final_probe_seconds": 1.6788479459937662,
+      "peak_allocated_MiB": 794.22705078125,
+      "runner_seconds": 113.63034606305882,
+      "preparation_seconds": 0.29864585888572037,
+      "late_masked_one_hop_visible_mean": 1.3674082982561635,
+      "late_masked_one_hop_zero_visible_fraction": 0.30547203848466625,
+      "late_masked_two_hop_visible_mean": 7.072158749248347,
+      "late_masked_two_hop_zero_visible_fraction": 0.13619963920625378,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 1.0097201593505711,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.75480769230768
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.23317307692307
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250.0216346153846
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.68953068592057
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          208,
+          209,
+          208,
+          207
+        ],
+        [
+          228,
+          197,
+          183,
+          224
+        ],
+        [
+          203,
+          226,
+          219,
+          184
+        ],
+        [
+          193,
+          200,
+          222,
+          216
+        ]
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "seed": 1,
+      "count_min_mean_max": [
+        211,
+        249.9248572287346,
+        294
+      ],
+      "count_cv": 0.044507161993628065,
+      "error_ema_mean": 0.7807149677116089,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.562500000000001,
+        0.543824998417395,
+        1.2309528442097122,
+        0.9175554940792523
+      ],
+      "pretrain_seconds": 54.75084464298561,
+      "final_probe_seconds": 1.1282312230905518,
+      "peak_allocated_MiB": 794.20166015625,
+      "runner_seconds": 70.27673305093776,
+      "preparation_seconds": 0.28929178102407604,
+      "late_masked_one_hop_visible_mean": 1.3484666265784726,
+      "late_masked_one_hop_zero_visible_fraction": 0.2847263980757667,
+      "late_masked_two_hop_visible_mean": 7.039987973541792,
+      "late_masked_two_hop_zero_visible_fraction": 0.12838244137101623,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 1.0080529915814793,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 249.95432692307693
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.89543269230768
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.57331730769232
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.27677496991578
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "seed": 1,
+      "count_min_mean_max": [
+        209,
+        249.9248572287346,
+        293
+      ],
+      "count_cv": 0.04458429148313615,
+      "error_ema_mean": 0.7817152117980576,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 54.94210248696618,
+      "final_probe_seconds": 1.1071083610877395,
+      "peak_allocated_MiB": 794.20166015625,
+      "runner_seconds": 70.2576750239823,
+      "preparation_seconds": 0.30512863502372056,
+      "late_masked_one_hop_visible_mean": 1.362898376428142,
+      "late_masked_one_hop_zero_visible_fraction": 0.2958508719182201,
+      "late_masked_two_hop_visible_mean": 7.092303066746843,
+      "late_masked_two_hop_zero_visible_fraction": 0.13409500901984367,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 0.9989669272399279,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.6991576413959
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "seed": 1,
+      "count_min_mean_max": [
+        209,
+        249.9248572287346,
+        293
+      ],
+      "count_cv": 0.04458429148313615,
+      "error_ema_mean": 0.7811998800898874,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.5403852906221518,
+        1.4130762891465072,
+        1.7738265470563217,
+        1.6184709989436032
+      ],
+      "pretrain_seconds": 101.11909606307745,
+      "final_probe_seconds": 1.7776559530757368,
+      "peak_allocated_MiB": 794.22705078125,
+      "runner_seconds": 116.37898959009908,
+      "preparation_seconds": 0.2985961730591953,
+      "late_masked_one_hop_visible_mean": 1.3577871316897174,
+      "late_masked_one_hop_zero_visible_fraction": 0.29374624173180997,
+      "late_masked_two_hop_visible_mean": 7.084485868911605,
+      "late_masked_two_hop_zero_visible_fraction": 0.1380036079374624,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 0.9977999098015634,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.15745192307693
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.77644230769232
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250.07331730769232
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.69193742478942
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          208,
+          209,
+          208,
+          207
+        ],
+        [
+          228,
+          197,
+          183,
+          224
+        ],
+        [
+          203,
+          226,
+          219,
+          184
+        ],
+        [
+          193,
+          200,
+          222,
+          216
+        ]
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "B0",
+      "seed": 2,
+      "count_min_mean_max": [
+        199,
+        249.9248572287346,
+        287
+      ],
+      "count_cv": 0.045002291738457406,
+      "error_ema_mean": 0.7806387455176046,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.4046739469758192,
+        2.4138413992615484,
+        1.791385156603169,
+        0.9963692216906689
+      ],
+      "pretrain_seconds": 54.89612006302923,
+      "final_probe_seconds": 1.1060580239864066,
+      "peak_allocated_MiB": 794.20166015625,
+      "runner_seconds": 72.19594980997499,
+      "preparation_seconds": 0.2943135149544105,
+      "late_masked_one_hop_visible_mean": 1.3604930847865302,
+      "late_masked_one_hop_zero_visible_fraction": 0.3003607937462417,
+      "late_masked_two_hop_visible_mean": 7.053517739025857,
+      "late_masked_two_hop_zero_visible_fraction": 0.13619963920625378,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 1.004385222489477,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250.26923076923077
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.53485576923077
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.87740384615384
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.01805054151623
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "S",
+      "seed": 2,
+      "count_min_mean_max": [
+        211,
+        249.9248572287346,
+        286
+      ],
+      "count_cv": 0.04491955992537652,
+      "error_ema_mean": 0.7815038364213761,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 54.482502687955275,
+      "final_probe_seconds": 1.1044540670700371,
+      "peak_allocated_MiB": 794.20166015625,
+      "runner_seconds": 69.67041098501068,
+      "preparation_seconds": 0.2976374920690432,
+      "late_masked_one_hop_visible_mean": 1.3713168971737824,
+      "late_masked_one_hop_zero_visible_fraction": 0.2988574864702345,
+      "late_masked_two_hop_visible_mean": 7.103427540589296,
+      "late_masked_two_hop_zero_visible_fraction": 0.132291040288635,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 1.0028014131088394,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 250
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 249.6991576413959
+        }
+      ]
+    },
+    {
+      "dataset": "citeseer",
+      "method": "R",
+      "seed": 2,
+      "count_min_mean_max": [
+        211,
+        249.9248572287346,
+        286
+      ],
+      "count_cv": 0.04491955992537652,
+      "error_ema_mean": 0.7813340333943471,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        1.1557990173679211,
+        1.5102625661034272,
+        1.3355535497422486,
+        1.333998327181379
+      ],
+      "pretrain_seconds": 131.26952365785837,
+      "final_probe_seconds": 1.5765607811044902,
+      "peak_allocated_MiB": 794.22705078125,
+      "runner_seconds": 144.9367733350955,
+      "preparation_seconds": 0.31872117100283504,
+      "late_masked_one_hop_visible_mean": 1.3508719182200841,
+      "late_masked_one_hop_zero_visible_fraction": 0.3021647624774504,
+      "late_masked_two_hop_visible_mean": 7.009621166566447,
+      "late_masked_two_hop_zero_visible_fraction": 0.14010823812387252,
+      "isolated_nodes": 48,
+      "isolated_node_count_ratio": 0.9995504359591101,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 832,
+          "count_mean": 249.86418269230768
+        },
+        {
+          "layer": 1,
+          "nodes": 832,
+          "count_mean": 249.84855769230768
+        },
+        {
+          "layer": 2,
+          "nodes": 832,
+          "count_mean": 249.90504807692307
+        },
+        {
+          "layer": 3,
+          "nodes": 831,
+          "count_mean": 250.08182912154032
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          208,
+          209,
+          208,
+          207
+        ],
+        [
+          228,
+          197,
+          183,
+          224
+        ],
+        [
+          203,
+          226,
+          219,
+          184
+        ],
+        [
+          193,
+          200,
+          222,
+          216
+        ]
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "seed": 0,
+      "count_min_mean_max": [
+        1740,
+        1799.9695694071106,
+        1852
+      ],
+      "count_cv": 0.007445400026143474,
+      "error_ema_mean": 0.29265724847710767,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.30880226713177106,
+        0.3013053757127393,
+        0.2971788849186159,
+        0.30466926703808145
+      ],
+      "pretrain_seconds": 254.68735010595992,
+      "final_probe_seconds": 1.1913276420673355,
+      "peak_allocated_MiB": 1051.1259765625,
+      "runner_seconds": 270.8942217119038,
+      "preparation_seconds": 1.029202216072008,
+      "late_masked_one_hop_visible_mean": 0.4538292476754015,
+      "late_masked_one_hop_zero_visible_fraction": 0.7193350239504086,
+      "late_masked_two_hop_visible_mean": 5.969118061425754,
+      "late_masked_two_hop_zero_visible_fraction": 0.13506903353057198,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800.0048681541582
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.8888212619192
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.1292351389734
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.8553459119496
+        }
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "seed": 0,
+      "count_min_mean_max": [
+        1750,
+        1799.9695694071106,
+        1854
+      ],
+      "count_cv": 0.007422714984472131,
+      "error_ema_mean": 0.2933087673084723,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 257.4957927700598,
+      "final_probe_seconds": 1.1678972400259227,
+      "peak_allocated_MiB": 1051.1259765625,
+      "runner_seconds": 274.2903938210802,
+      "preparation_seconds": 1.0054965210147202,
+      "late_masked_one_hop_visible_mean": 0.44737109044801354,
+      "late_masked_one_hop_zero_visible_fraction": 0.7239673147365455,
+      "late_masked_two_hop_visible_mean": 5.844451958298112,
+      "late_masked_two_hop_zero_visible_fraction": 0.1319470273316427,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        }
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "seed": 0,
+      "count_min_mean_max": [
+        1750,
+        1799.9695694071106,
+        1854
+      ],
+      "count_cv": 0.007422714984472131,
+      "error_ema_mean": 0.2927671957753681,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.29869700216022566,
+        0.297194587980991,
+        0.31477652891521507,
+        0.30080933821010647
+      ],
+      "pretrain_seconds": 554.4438239489682,
+      "final_probe_seconds": 2.5374377509579062,
+      "peak_allocated_MiB": 1051.2783203125,
+      "runner_seconds": 573.1355908950791,
+      "preparation_seconds": 0.9730084389448166,
+      "late_masked_one_hop_visible_mean": 0.45925049309664695,
+      "late_masked_one_hop_zero_visible_fraction": 0.7196167934629473,
+      "late_masked_two_hop_visible_mean": 6.030239504085658,
+      "late_masked_two_hop_zero_visible_fraction": 0.12565793181177798,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1799.9186612576066
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.8947048082775
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.3093933860823
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.7555285047677
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          1271,
+          1212,
+          1239,
+          1208
+        ],
+        [
+          1239,
+          1210,
+          1201,
+          1279
+        ],
+        [
+          1240,
+          1231,
+          1241,
+          1217
+        ],
+        [
+          1180,
+          1276,
+          1248,
+          1225
+        ]
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "seed": 1,
+      "count_min_mean_max": [
+        1739,
+        1799.9695694071106,
+        1856
+      ],
+      "count_cv": 0.007496561555845429,
+      "error_ema_mean": 0.292785164492821,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.284903906474535,
+        0.3231512791811268,
+        0.33410566977660294,
+        0.3756872912298282
+      ],
+      "pretrain_seconds": 255.7936027359683,
+      "final_probe_seconds": 1.2583127850666642,
+      "peak_allocated_MiB": 1051.1259765625,
+      "runner_seconds": 273.5764704600442,
+      "preparation_seconds": 1.0441584479995072,
+      "late_masked_one_hop_visible_mean": 0.46466046773739084,
+      "late_masked_one_hop_zero_visible_fraction": 0.7162130177514793,
+      "late_masked_two_hop_visible_mean": 6.138337559876021,
+      "late_masked_two_hop_zero_visible_fraction": 0.1347534516765286,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1799.7858012170386
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9817407181984
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.2097788598094
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9009941164536
+        }
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "seed": 1,
+      "count_min_mean_max": [
+        1743,
+        1799.9695694071106,
+        1858
+      ],
+      "count_cv": 0.007445370590760174,
+      "error_ema_mean": 0.293124034276649,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 257.90078692894895,
+      "final_probe_seconds": 1.1818127749720588,
+      "peak_allocated_MiB": 1051.1259765625,
+      "runner_seconds": 273.94515254499856,
+      "preparation_seconds": 0.998065190971829,
+      "late_masked_one_hop_visible_mean": 0.44747252747252747,
+      "late_masked_one_hop_zero_visible_fraction": 0.7251169343477036,
+      "late_masked_two_hop_visible_mean": 5.872279515356438,
+      "late_masked_two_hop_zero_visible_fraction": 0.13176669484361792,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        }
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "seed": 1,
+      "count_min_mean_max": [
+        1743,
+        1799.9695694071106,
+        1858
+      ],
+      "count_cv": 0.007445370590760174,
+      "error_ema_mean": 0.2932196111816399,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.3875741616506461,
+        0.3532544087718401,
+        0.4687962681485306,
+        0.3847163259012506
+      ],
+      "pretrain_seconds": 522.901794024976,
+      "final_probe_seconds": 2.1519509439822286,
+      "peak_allocated_MiB": 1051.2783203125,
+      "runner_seconds": 539.0313697990496,
+      "preparation_seconds": 0.9826629140879959,
+      "late_masked_one_hop_visible_mean": 0.45494505494505494,
+      "late_masked_one_hop_zero_visible_fraction": 0.7190983375598761,
+      "late_masked_two_hop_visible_mean": 5.950318399549169,
+      "late_masked_two_hop_zero_visible_fraction": 0.1349563257255565,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1799.9620689655173
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1800.2193142625279
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.8709677419354
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.8259281801581
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          1271,
+          1212,
+          1239,
+          1208
+        ],
+        [
+          1239,
+          1210,
+          1201,
+          1279
+        ],
+        [
+          1240,
+          1231,
+          1241,
+          1217
+        ],
+        [
+          1180,
+          1276,
+          1248,
+          1225
+        ]
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "B0",
+      "seed": 2,
+      "count_min_mean_max": [
+        1746,
+        1799.9695694071106,
+        1846
+      ],
+      "count_cv": 0.007445753241666418,
+      "error_ema_mean": 0.2934578152831324,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.27385368718894004,
+        0.33847143536009183,
+        0.43039708567979296,
+        0.4203299260123387
+      ],
+      "pretrain_seconds": 254.64097893901635,
+      "final_probe_seconds": 1.2238151400815696,
+      "peak_allocated_MiB": 1051.1259765625,
+      "runner_seconds": 270.91719534609,
+      "preparation_seconds": 1.0248926809290424,
+      "late_masked_one_hop_visible_mean": 0.4378698224852071,
+      "late_masked_one_hop_zero_visible_fraction": 0.7272132995209918,
+      "late_masked_two_hop_visible_mean": 5.824818258664412,
+      "late_masked_two_hop_zero_visible_fraction": 0.1318568610876303,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1799.7466531440161
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.8086833029013
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1800.140799350781
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1800.182187056198
+        }
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "S",
+      "seed": 2,
+      "count_min_mean_max": [
+        1746,
+        1799.9695694071106,
+        1849
+      ],
+      "count_cv": 0.007519500552502538,
+      "error_ema_mean": 0.2936989618839874,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pretrain_seconds": 257.7760815169895,
+      "final_probe_seconds": 1.2291683470830321,
+      "peak_allocated_MiB": 1051.1259765625,
+      "runner_seconds": 273.85910687805153,
+      "preparation_seconds": 1.0302062480477616,
+      "late_masked_one_hop_visible_mean": 0.4386587771203156,
+      "late_masked_one_hop_zero_visible_fraction": 0.7234150464919695,
+      "late_masked_two_hop_visible_mean": 5.758681318681319,
+      "late_masked_two_hop_zero_visible_fraction": 0.13397576782192167,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1799.9594238182187
+        }
+      ]
+    },
+    {
+      "dataset": "pubmed",
+      "method": "R",
+      "seed": 2,
+      "count_min_mean_max": [
+        1746,
+        1799.9695694071106,
+        1849
+      ],
+      "count_cv": 0.007519500552502538,
+      "error_ema_mean": 0.2930828680429756,
+      "true_density_layer_sampling_rate_temporal_std_pp": [
+        0.3035766029766152,
+        0.26921781974429193,
+        0.32043354129607804,
+        0.3469817572709012
+      ],
+      "pretrain_seconds": 542.5729798548855,
+      "final_probe_seconds": 1.9936149530112743,
+      "peak_allocated_MiB": 1051.2783203125,
+      "runner_seconds": 558.3899236561265,
+      "preparation_seconds": 1.0159668740816414,
+      "late_masked_one_hop_visible_mean": 0.4487348548887011,
+      "late_masked_one_hop_zero_visible_fraction": 0.7222203437588053,
+      "late_masked_two_hop_visible_mean": 5.913981403212173,
+      "late_masked_two_hop_zero_visible_fraction": 0.13630881938574246,
+      "isolated_nodes": 0,
+      "isolated_node_count_ratio": null,
+      "density_layers": [
+        {
+          "layer": 0,
+          "nodes": 4930,
+          "count_mean": 1800.0991886409736
+        },
+        {
+          "layer": 1,
+          "nodes": 4929,
+          "count_mean": 1799.9318320146074
+        },
+        {
+          "layer": 2,
+          "nodes": 4929,
+          "count_mean": 1799.6191925339826
+        },
+        {
+          "layer": 3,
+          "nodes": 4929,
+          "count_mean": 1800.2280381416108
+        }
+      ],
+      "S_R_count_multisets_identical": true,
+      "S_R_counts_identical_under_group_position_mapping": true,
+      "random_group_sampling_rate_temporal_std_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "group_vs_density_contingency": [
+        [
+          1271,
+          1212,
+          1239,
+          1208
+        ],
+        [
+          1239,
+          1210,
+          1201,
+          1279
+        ],
+        [
+          1240,
+          1231,
+          1241,
+          1217
+        ],
+        [
+          1180,
+          1276,
+          1248,
+          1225
+        ]
+      ]
+    }
+  ],
+  "R_runs": [
+    {
+      "dataset": "cora",
+      "seed": 0,
+      "best_val_acc": 0.81,
+      "best_val_epoch": 117,
+      "checkpoint_sha256": "89859dec0d6005e4d57680116aa3973f1438116848544d71992eb6fbb6eff389",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "cora",
+        "method": "R",
+        "seed": 0,
+        "count_min_mean_max": [
+          930,
+          1000,
+          1083
+        ],
+        "count_cv": 0.022388044129421306,
+        "error_ema_mean": 0.39976078367611856,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          1.752088060990676,
+          1.1894874588558613,
+          1.5318906140919786,
+          1.7946063002393764
+        ],
+        "pretrain_seconds": 323.75645162095316,
+        "final_probe_seconds": 1.0998847868759185,
+        "peak_allocated_MiB": 416.31640625,
+        "runner_seconds": 338.17535327211954,
+        "preparation_seconds": 0.22024650708772242,
+        "late_masked_one_hop_visible_mean": 1.962333825701625,
+        "late_masked_one_hop_zero_visible_fraction": 0.186410635155096,
+        "late_masked_two_hop_visible_mean": 17.901181683899555,
+        "late_masked_two_hop_zero_visible_fraction": 0.04076809453471197,
+        "isolated_nodes": 0,
+        "isolated_node_count_ratio": null,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 677,
+            "count_mean": 1000.2924667651404
+          },
+          {
+            "layer": 1,
+            "nodes": 677,
+            "count_mean": 1000.9527326440177
+          },
+          {
+            "layer": 2,
+            "nodes": 677,
+            "count_mean": 998.9512555391433
+          },
+          {
+            "layer": 3,
+            "nodes": 677,
+            "count_mean": 999.8035450516986
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            171,
+            167,
+            170,
+            169
+          ],
+          [
+            177,
+            146,
+            173,
+            181
+          ],
+          [
+            165,
+            181,
+            178,
+            153
+          ],
+          [
+            164,
+            183,
+            156,
+            174
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "cora",
+      "seed": 1,
+      "best_val_acc": 0.802,
+      "best_val_epoch": 299,
+      "checkpoint_sha256": "af90af5b64c25921f4a8bfef361d2535e880f4acdf153da91995fb211ae688da",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "cora",
+        "method": "R",
+        "seed": 1,
+        "count_min_mean_max": [
+          921,
+          1000,
+          1083
+        ],
+        "count_cv": 0.021835002999364913,
+        "error_ema_mean": 0.4024001843814616,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          1.9577318598217541,
+          1.3046574725595075,
+          1.8026932509425164,
+          2.200049754492605
+        ],
+        "pretrain_seconds": 216.55279300687835,
+        "final_probe_seconds": 1.3413726708386093,
+        "peak_allocated_MiB": 416.31640625,
+        "runner_seconds": 231.23754607117735,
+        "preparation_seconds": 0.21712068584747612,
+        "late_masked_one_hop_visible_mean": 1.9590841949778435,
+        "late_masked_one_hop_zero_visible_fraction": 0.17503692762186115,
+        "late_masked_two_hop_visible_mean": 17.895125553914326,
+        "late_masked_two_hop_zero_visible_fraction": 0.03589364844903988,
+        "isolated_nodes": 0,
+        "isolated_node_count_ratio": null,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 677,
+            "count_mean": 999.7976366322009
+          },
+          {
+            "layer": 1,
+            "nodes": 677,
+            "count_mean": 998.9098966026588
+          },
+          {
+            "layer": 2,
+            "nodes": 677,
+            "count_mean": 1000.5096011816839
+          },
+          {
+            "layer": 3,
+            "nodes": 677,
+            "count_mean": 1000.7828655834564
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            171,
+            167,
+            170,
+            169
+          ],
+          [
+            177,
+            146,
+            173,
+            181
+          ],
+          [
+            165,
+            181,
+            178,
+            153
+          ],
+          [
+            164,
+            183,
+            156,
+            174
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "cora",
+      "seed": 2,
+      "best_val_acc": 0.818,
+      "best_val_epoch": 236,
+      "checkpoint_sha256": "dbbef0bd2d8ba07c8af76a030c14aca6f9b277e6540b51758129b145047ab01b",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "cora",
+        "method": "R",
+        "seed": 2,
+        "count_min_mean_max": [
+          910,
+          1000,
+          1072
+        ],
+        "count_cv": 0.022461011682251782,
+        "error_ema_mean": 0.3960959174955041,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          1.8772296781562683,
+          1.769285090729401,
+          1.7473093859041764,
+          1.4603632616509135
+        ],
+        "pretrain_seconds": 332.8086418618914,
+        "final_probe_seconds": 1.2022358099929988,
+        "peak_allocated_MiB": 416.31640625,
+        "runner_seconds": 346.5998282430228,
+        "preparation_seconds": 0.21189446584321558,
+        "late_masked_one_hop_visible_mean": 1.9673559822747415,
+        "late_masked_one_hop_zero_visible_fraction": 0.18714918759231905,
+        "late_masked_two_hop_visible_mean": 17.84416543574594,
+        "late_masked_two_hop_zero_visible_fraction": 0.03781388478581979,
+        "isolated_nodes": 0,
+        "isolated_node_count_ratio": null,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 677,
+            "count_mean": 999.794682422452
+          },
+          {
+            "layer": 1,
+            "nodes": 677,
+            "count_mean": 1000.4682422451995
+          },
+          {
+            "layer": 2,
+            "nodes": 677,
+            "count_mean": 999.9778434268833
+          },
+          {
+            "layer": 3,
+            "nodes": 677,
+            "count_mean": 999.7592319054653
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            171,
+            167,
+            170,
+            169
+          ],
+          [
+            177,
+            146,
+            173,
+            181
+          ],
+          [
+            165,
+            181,
+            178,
+            153
+          ],
+          [
+            164,
+            183,
+            156,
+            174
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 0,
+      "best_val_acc": 0.71,
+      "best_val_epoch": 9,
+      "checkpoint_sha256": "9fec7f7e499f5cdacc4d9043e46af3f7c7c288e80a950fc5a4ca893b31b52a24",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "citeseer",
+        "method": "R",
+        "seed": 0,
+        "count_min_mean_max": [
+          207,
+          249.9248572287346,
+          297
+        ],
+        "count_cv": 0.044888804382340386,
+        "error_ema_mean": 0.7807624969963989,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          0.9700560907694935,
+          0.9533657078758645,
+          0.9878868594501554,
+          1.9123942945944994
+        ],
+        "pretrain_seconds": 98.84052825300023,
+        "final_probe_seconds": 1.6788479459937662,
+        "peak_allocated_MiB": 794.22705078125,
+        "runner_seconds": 113.63034606305882,
+        "preparation_seconds": 0.29864585888572037,
+        "late_masked_one_hop_visible_mean": 1.3674082982561635,
+        "late_masked_one_hop_zero_visible_fraction": 0.30547203848466625,
+        "late_masked_two_hop_visible_mean": 7.072158749248347,
+        "late_masked_two_hop_zero_visible_fraction": 0.13619963920625378,
+        "isolated_nodes": 48,
+        "isolated_node_count_ratio": 1.0097201593505711,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 832,
+            "count_mean": 250.75480769230768
+          },
+          {
+            "layer": 1,
+            "nodes": 832,
+            "count_mean": 249.23317307692307
+          },
+          {
+            "layer": 2,
+            "nodes": 832,
+            "count_mean": 250.0216346153846
+          },
+          {
+            "layer": 3,
+            "nodes": 831,
+            "count_mean": 249.68953068592057
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            208,
+            209,
+            208,
+            207
+          ],
+          [
+            228,
+            197,
+            183,
+            224
+          ],
+          [
+            203,
+            226,
+            219,
+            184
+          ],
+          [
+            193,
+            200,
+            222,
+            216
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 1,
+      "best_val_acc": 0.734,
+      "best_val_epoch": 2,
+      "checkpoint_sha256": "b71d990637569a07f545408f660d9d523df218c1412b9aa932dd79c1938fe30a",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "citeseer",
+        "method": "R",
+        "seed": 1,
+        "count_min_mean_max": [
+          209,
+          249.9248572287346,
+          293
+        ],
+        "count_cv": 0.04458429148313615,
+        "error_ema_mean": 0.7811998800898874,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          1.5403852906221518,
+          1.4130762891465072,
+          1.7738265470563217,
+          1.6184709989436032
+        ],
+        "pretrain_seconds": 101.11909606307745,
+        "final_probe_seconds": 1.7776559530757368,
+        "peak_allocated_MiB": 794.22705078125,
+        "runner_seconds": 116.37898959009908,
+        "preparation_seconds": 0.2985961730591953,
+        "late_masked_one_hop_visible_mean": 1.3577871316897174,
+        "late_masked_one_hop_zero_visible_fraction": 0.29374624173180997,
+        "late_masked_two_hop_visible_mean": 7.084485868911605,
+        "late_masked_two_hop_zero_visible_fraction": 0.1380036079374624,
+        "isolated_nodes": 48,
+        "isolated_node_count_ratio": 0.9977999098015634,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 832,
+            "count_mean": 250.15745192307693
+          },
+          {
+            "layer": 1,
+            "nodes": 832,
+            "count_mean": 249.77644230769232
+          },
+          {
+            "layer": 2,
+            "nodes": 832,
+            "count_mean": 250.07331730769232
+          },
+          {
+            "layer": 3,
+            "nodes": 831,
+            "count_mean": 249.69193742478942
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            208,
+            209,
+            208,
+            207
+          ],
+          [
+            228,
+            197,
+            183,
+            224
+          ],
+          [
+            203,
+            226,
+            219,
+            184
+          ],
+          [
+            193,
+            200,
+            222,
+            216
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "citeseer",
+      "seed": 2,
+      "best_val_acc": 0.716,
+      "best_val_epoch": 10,
+      "checkpoint_sha256": "479b4ad73c80742890bc76813e22985e8f09b01cf941a6605af6d7b1a36fddd2",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "citeseer",
+        "method": "R",
+        "seed": 2,
+        "count_min_mean_max": [
+          211,
+          249.9248572287346,
+          286
+        ],
+        "count_cv": 0.04491955992537652,
+        "error_ema_mean": 0.7813340333943471,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          1.1557990173679211,
+          1.5102625661034272,
+          1.3355535497422486,
+          1.333998327181379
+        ],
+        "pretrain_seconds": 131.26952365785837,
+        "final_probe_seconds": 1.5765607811044902,
+        "peak_allocated_MiB": 794.22705078125,
+        "runner_seconds": 144.9367733350955,
+        "preparation_seconds": 0.31872117100283504,
+        "late_masked_one_hop_visible_mean": 1.3508719182200841,
+        "late_masked_one_hop_zero_visible_fraction": 0.3021647624774504,
+        "late_masked_two_hop_visible_mean": 7.009621166566447,
+        "late_masked_two_hop_zero_visible_fraction": 0.14010823812387252,
+        "isolated_nodes": 48,
+        "isolated_node_count_ratio": 0.9995504359591101,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 832,
+            "count_mean": 249.86418269230768
+          },
+          {
+            "layer": 1,
+            "nodes": 832,
+            "count_mean": 249.84855769230768
+          },
+          {
+            "layer": 2,
+            "nodes": 832,
+            "count_mean": 249.90504807692307
+          },
+          {
+            "layer": 3,
+            "nodes": 831,
+            "count_mean": 250.08182912154032
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            208,
+            209,
+            208,
+            207
+          ],
+          [
+            228,
+            197,
+            183,
+            224
+          ],
+          [
+            203,
+            226,
+            219,
+            184
+          ],
+          [
+            193,
+            200,
+            222,
+            216
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 0,
+      "best_val_acc": 0.838,
+      "best_val_epoch": 90,
+      "checkpoint_sha256": "c404c0c76ec02ce4dc55c81d5cffc4df4aaebf70fc97e156a1a5076c66c02d0a",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "pubmed",
+        "method": "R",
+        "seed": 0,
+        "count_min_mean_max": [
+          1750,
+          1799.9695694071106,
+          1854
+        ],
+        "count_cv": 0.007422714984472131,
+        "error_ema_mean": 0.2927671957753681,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          0.29869700216022566,
+          0.297194587980991,
+          0.31477652891521507,
+          0.30080933821010647
+        ],
+        "pretrain_seconds": 554.4438239489682,
+        "final_probe_seconds": 2.5374377509579062,
+        "peak_allocated_MiB": 1051.2783203125,
+        "runner_seconds": 573.1355908950791,
+        "preparation_seconds": 0.9730084389448166,
+        "late_masked_one_hop_visible_mean": 0.45925049309664695,
+        "late_masked_one_hop_zero_visible_fraction": 0.7196167934629473,
+        "late_masked_two_hop_visible_mean": 6.030239504085658,
+        "late_masked_two_hop_zero_visible_fraction": 0.12565793181177798,
+        "isolated_nodes": 0,
+        "isolated_node_count_ratio": null,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 4930,
+            "count_mean": 1799.9186612576066
+          },
+          {
+            "layer": 1,
+            "nodes": 4929,
+            "count_mean": 1799.8947048082775
+          },
+          {
+            "layer": 2,
+            "nodes": 4929,
+            "count_mean": 1800.3093933860823
+          },
+          {
+            "layer": 3,
+            "nodes": 4929,
+            "count_mean": 1799.7555285047677
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            1271,
+            1212,
+            1239,
+            1208
+          ],
+          [
+            1239,
+            1210,
+            1201,
+            1279
+          ],
+          [
+            1240,
+            1231,
+            1241,
+            1217
+          ],
+          [
+            1180,
+            1276,
+            1248,
+            1225
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 1,
+      "best_val_acc": 0.826,
+      "best_val_epoch": 499,
+      "checkpoint_sha256": "b6f2e334a09885cdfeeef3d76becd95798fd514cfaaf4214e0b7a2171c1ebd28",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "pubmed",
+        "method": "R",
+        "seed": 1,
+        "count_min_mean_max": [
+          1743,
+          1799.9695694071106,
+          1858
+        ],
+        "count_cv": 0.007445370590760174,
+        "error_ema_mean": 0.2932196111816399,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          0.3875741616506461,
+          0.3532544087718401,
+          0.4687962681485306,
+          0.3847163259012506
+        ],
+        "pretrain_seconds": 522.901794024976,
+        "final_probe_seconds": 2.1519509439822286,
+        "peak_allocated_MiB": 1051.2783203125,
+        "runner_seconds": 539.0313697990496,
+        "preparation_seconds": 0.9826629140879959,
+        "late_masked_one_hop_visible_mean": 0.45494505494505494,
+        "late_masked_one_hop_zero_visible_fraction": 0.7190983375598761,
+        "late_masked_two_hop_visible_mean": 5.950318399549169,
+        "late_masked_two_hop_zero_visible_fraction": 0.1349563257255565,
+        "isolated_nodes": 0,
+        "isolated_node_count_ratio": null,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 4930,
+            "count_mean": 1799.9620689655173
+          },
+          {
+            "layer": 1,
+            "nodes": 4929,
+            "count_mean": 1800.2193142625279
+          },
+          {
+            "layer": 2,
+            "nodes": 4929,
+            "count_mean": 1799.8709677419354
+          },
+          {
+            "layer": 3,
+            "nodes": 4929,
+            "count_mean": 1799.8259281801581
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            1271,
+            1212,
+            1239,
+            1208
+          ],
+          [
+            1239,
+            1210,
+            1201,
+            1279
+          ],
+          [
+            1240,
+            1231,
+            1241,
+            1217
+          ],
+          [
+            1180,
+            1276,
+            1248,
+            1225
+          ]
+        ]
+      }
+    },
+    {
+      "dataset": "pubmed",
+      "seed": 2,
+      "best_val_acc": 0.828,
+      "best_val_epoch": 102,
+      "checkpoint_sha256": "8c7ef252839d73e2c0f3f8cb8c135e0c3dcabd15bd00c8b41acb0a8edca178e0",
+      "node_arrays": 9,
+      "resource": {
+        "dataset": "pubmed",
+        "method": "R",
+        "seed": 2,
+        "count_min_mean_max": [
+          1746,
+          1799.9695694071106,
+          1849
+        ],
+        "count_cv": 0.007519500552502538,
+        "error_ema_mean": 0.2930828680429756,
+        "true_density_layer_sampling_rate_temporal_std_pp": [
+          0.3035766029766152,
+          0.26921781974429193,
+          0.32043354129607804,
+          0.3469817572709012
+        ],
+        "pretrain_seconds": 542.5729798548855,
+        "final_probe_seconds": 1.9936149530112743,
+        "peak_allocated_MiB": 1051.2783203125,
+        "runner_seconds": 558.3899236561265,
+        "preparation_seconds": 1.0159668740816414,
+        "late_masked_one_hop_visible_mean": 0.4487348548887011,
+        "late_masked_one_hop_zero_visible_fraction": 0.7222203437588053,
+        "late_masked_two_hop_visible_mean": 5.913981403212173,
+        "late_masked_two_hop_zero_visible_fraction": 0.13630881938574246,
+        "isolated_nodes": 0,
+        "isolated_node_count_ratio": null,
+        "density_layers": [
+          {
+            "layer": 0,
+            "nodes": 4930,
+            "count_mean": 1800.0991886409736
+          },
+          {
+            "layer": 1,
+            "nodes": 4929,
+            "count_mean": 1799.9318320146074
+          },
+          {
+            "layer": 2,
+            "nodes": 4929,
+            "count_mean": 1799.6191925339826
+          },
+          {
+            "layer": 3,
+            "nodes": 4929,
+            "count_mean": 1800.2280381416108
+          }
+        ],
+        "S_R_count_multisets_identical": true,
+        "S_R_counts_identical_under_group_position_mapping": true,
+        "random_group_sampling_rate_temporal_std_pp": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "group_vs_density_contingency": [
+          [
+            1271,
+            1212,
+            1239,
+            1208
+          ],
+          [
+            1239,
+            1210,
+            1201,
+            1279
+          ],
+          [
+            1240,
+            1231,
+            1241,
+            1217
+          ],
+          [
+            1180,
+            1276,
+            1248,
+            1225
+          ]
+        ]
+      }
+    }
+  ],
+  "pretrain_sum_seconds": 2824.2656322924886,
+  "runner_sum_seconds": 2961.515720924828,
+  "batch_wall_seconds": 3047.74160874309,
+  "note": "Exploratory validation n=3; one fixed random grouping per graph; no significance/causal/equivalence claim"
+}

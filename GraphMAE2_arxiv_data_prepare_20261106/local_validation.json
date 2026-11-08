@@ -1,0 +1,16 @@
+{
+  "status": "LOCAL_CHECKS_PASS_SERVER_DATA_PREPARATION_NOT_RUN",
+  "python310_syntax": "PASS",
+  "checks": 5,
+  "check_scope": [
+    "Raw data and disjoint complete split identities",
+    "Overlapping split rejection",
+    "ZIP path traversal rejection before writes",
+    "HTML rejection instead of saving a cluster binary",
+    "Verified download reuse and mutation detection"
+  ],
+  "actual_official_download_executed_locally": false,
+  "cluster_content_loaded": false,
+  "training_started": false,
+  "environment_changed": false
+}

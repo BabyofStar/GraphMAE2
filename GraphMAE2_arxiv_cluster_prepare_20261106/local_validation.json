@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL_CHECKS_PASS_SERVER_CLUSTER_GENERATION_NOT_RUN",
+  "python310_syntax": "PASS",
+  "checks": 5,
+  "check_scope": [
+    "Upstream prefix-then-stable-sort rule and exact ACL arguments",
+    "Fixed split-ordered pilot roots",
+    "Numeric NPZ roundtrip without pickle",
+    "Worker result completion",
+    "Own-worker time-cap enforcement"
+  ],
+  "native_library_probe_executed_locally": false,
+  "dependency_installation_executed_locally": false,
+  "server_preprocessing_pending": true,
+  "base_environment_policy": "New isolated venv with inherited frozen core versions; no installs in graphmae2 prefix",
+  "training_started": false
+}

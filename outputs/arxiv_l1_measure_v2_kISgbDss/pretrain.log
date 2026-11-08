@@ -1,0 +1,79 @@
+/home/jovyan/work/envs/graphmae2/lib/python3.10/site-packages/outdated/__init__.py:36: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+2026-11-07 14:13:37,203 - INFO - ----- Using best configs from configs/ogbn-arxiv.yaml -----
+2026-11-07 14:13:37,382 - INFO - --- to undirected graph ---
+2026-11-07 14:13:38,061 - INFO - ### scaling features ###
+=== Use sce_loss and alpha_l=6 ===
+num_encoder_params: 3428356, num_decoder_params: 131456, num_params_in_total: 6184710
+PRETRAIN 1/662 roots=256/169343 elapsed=1.2
+PRETRAIN 2/662 roots=512/169343 elapsed=1.9
+PRETRAIN 3/662 roots=768/169343 elapsed=2.6
+PRETRAIN 10/662 roots=2560/169343 elapsed=13.4
+PRETRAIN 20/662 roots=5120/169343 elapsed=27.1
+PRETRAIN 30/662 roots=7680/169343 elapsed=36.0
+PRETRAIN 40/662 roots=10240/169343 elapsed=45.3
+PRETRAIN 50/662 roots=12800/169343 elapsed=62.3
+PRETRAIN 60/662 roots=15360/169343 elapsed=73.2
+PRETRAIN 70/662 roots=17920/169343 elapsed=83.7
+PRETRAIN 80/662 roots=20480/169343 elapsed=96.6
+PRETRAIN 90/662 roots=23040/169343 elapsed=105.9
+PRETRAIN 100/662 roots=25600/169343 elapsed=122.3
+PRETRAIN 110/662 roots=28160/169343 elapsed=132.5
+PRETRAIN 120/662 roots=30720/169343 elapsed=143.1
+PRETRAIN 130/662 roots=33280/169343 elapsed=152.5
+PRETRAIN 140/662 roots=35840/169343 elapsed=163.0
+PRETRAIN 150/662 roots=38400/169343 elapsed=171.7
+PRETRAIN 160/662 roots=40960/169343 elapsed=185.1
+PRETRAIN 170/662 roots=43520/169343 elapsed=194.5
+PRETRAIN 180/662 roots=46080/169343 elapsed=204.5
+PRETRAIN 190/662 roots=48640/169343 elapsed=214.8
+PRETRAIN 200/662 roots=51200/169343 elapsed=223.1
+PRETRAIN 210/662 roots=53760/169343 elapsed=231.4
+PRETRAIN 220/662 roots=56320/169343 elapsed=247.2
+PRETRAIN 230/662 roots=58880/169343 elapsed=271.9
+PRETRAIN 240/662 roots=61440/169343 elapsed=282.4
+PRETRAIN 250/662 roots=64000/169343 elapsed=290.0
+PRETRAIN 260/662 roots=66560/169343 elapsed=303.8
+PRETRAIN 270/662 roots=69120/169343 elapsed=319.2
+PRETRAIN 280/662 roots=71680/169343 elapsed=342.0
+PRETRAIN 290/662 roots=74240/169343 elapsed=361.4
+PRETRAIN 300/662 roots=76800/169343 elapsed=373.2
+PRETRAIN 310/662 roots=79360/169343 elapsed=382.6
+PRETRAIN 320/662 roots=81920/169343 elapsed=394.3
+PRETRAIN 330/662 roots=84480/169343 elapsed=401.6
+PRETRAIN 340/662 roots=87040/169343 elapsed=409.8
+PRETRAIN 350/662 roots=89600/169343 elapsed=418.4
+PRETRAIN 360/662 roots=92160/169343 elapsed=426.1
+PRETRAIN 370/662 roots=94720/169343 elapsed=437.8
+PRETRAIN 380/662 roots=97280/169343 elapsed=446.2
+PRETRAIN 390/662 roots=99840/169343 elapsed=458.3
+PRETRAIN 400/662 roots=102400/169343 elapsed=468.2
+PRETRAIN 410/662 roots=104960/169343 elapsed=479.0
+PRETRAIN 420/662 roots=107520/169343 elapsed=490.7
+PRETRAIN 430/662 roots=110080/169343 elapsed=504.4
+PRETRAIN 440/662 roots=112640/169343 elapsed=520.3
+PRETRAIN 450/662 roots=115200/169343 elapsed=532.9
+PRETRAIN 460/662 roots=117760/169343 elapsed=541.1
+PRETRAIN 470/662 roots=120320/169343 elapsed=547.9
+PRETRAIN 480/662 roots=122880/169343 elapsed=555.2
+PRETRAIN 490/662 roots=125440/169343 elapsed=564.2
+PRETRAIN 500/662 roots=128000/169343 elapsed=573.7
+PRETRAIN 510/662 roots=130560/169343 elapsed=581.3
+PRETRAIN 520/662 roots=133120/169343 elapsed=592.1
+PRETRAIN 530/662 roots=135680/169343 elapsed=601.0
+PRETRAIN 540/662 roots=138240/169343 elapsed=609.4
+PRETRAIN 550/662 roots=140800/169343 elapsed=617.4
+PRETRAIN 560/662 roots=143360/169343 elapsed=625.9
+PRETRAIN 570/662 roots=145920/169343 elapsed=633.2
+PRETRAIN 580/662 roots=148480/169343 elapsed=641.7
+PRETRAIN 590/662 roots=151040/169343 elapsed=649.3
+PRETRAIN 600/662 roots=153600/169343 elapsed=657.7
+PRETRAIN 610/662 roots=156160/169343 elapsed=665.2
+PRETRAIN 620/662 roots=158720/169343 elapsed=673.8
+PRETRAIN 630/662 roots=161280/169343 elapsed=681.6
+PRETRAIN 640/662 roots=163840/169343 elapsed=689.6
+PRETRAIN 650/662 roots=166400/169343 elapsed=707.5
+PRETRAIN 660/662 roots=168960/169343 elapsed=718.7
+=== Use sce_loss and alpha_l=6 ===
+num_encoder_params: 3428356, num_decoder_params: 131456, num_params_in_total: 6184710
+MEASUREMENT_STAGE_STATUS=PASS_ONE_FULL_PRETRAIN_EPOCH

@@ -1,0 +1,10 @@
+{
+  "stage": "linear_probe",
+  "probe_seed": 9,
+  "probe_index": 10,
+  "total_probes": 10,
+  "epochs": 1000,
+  "total_epochs": 1000,
+  "wall_seconds": 339.12784573994577,
+  "estimated_probe_stage_remaining_seconds": 0.0
+}

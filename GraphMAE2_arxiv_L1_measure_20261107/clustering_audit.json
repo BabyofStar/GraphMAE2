@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FINITE_CLUSTER_RETURN_AUDIT",
+  "input_sha256": "ec5c30f0f913ef1f60bfc0ba11f66647769fa7115b5a72612cf64d700a91fe42",
+  "zip_crc_pass": true,
+  "local_pilot_arrays_verified": 256,
+  "reported_reference_tiny_graph_checks": 6,
+  "reported_reference_arxiv_checks": 9,
+  "reported_parallel_checks": 256,
+  "processed_graph": {
+    "nodes": 169343,
+    "edges_with_self_loops": 2484941,
+    "feature_shape": [
+      169343,
+      128
+    ],
+    "csr_indptr_sha256": "f3795e9169e9246ad50925bd2ee2bd941e2fa9b50a3f6c0af6e1bc205e43bc4a",
+    "csr_indices_sha256": "baf50afc37d978d95d9b4990e5f2c574e92efb07700341f4017f358fb727305b",
+    "split_sha256": {
+      "train": "f537262ebef28fadc8b27b320e0707fcb3fb5eaeabb365ac8d41850ee14ae683",
+      "valid": "885303bdd89d5e3270982a9750439a1df049c968262c1b2d65f03557bb950b69",
+      "test": "fd7d97cf32b0587be3d055323f67f0fd16370baa434fa2cec5a87733142487fb"
+    }
+  },
+  "cluster_file_server_receipt": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS/lc_ego_graphs/ogbn-arxiv-lc-ego-graphs-256.pt",
+    "bytes": 232390624,
+    "sha256": "799109e42902360542306d8fede242cfc166accbf0f9e834a5348b6741150aa7",
+    "nodes": 169343,
+    "generation_seconds": 993.6328127589077,
+    "split_order": [
+      "train",
+      "valid",
+      "test"
+    ],
+    "source": "Self-generated from frozen upstream ACL procedure; not the unavailable author precomputed file",
+    "save_readback_equal": true
+  },
+  "base_core_versions_unchanged": true,
+  "reported_no_oom": true,
+  "last_progress_is_periodic_heartbeat_not_final_status": true,
+  "limits": [
+    "The 232 MB complete cluster file remains on the server; local verification covers reports and the 256-root numeric pilot.",
+    "Full file SHA256, split coverage and exact pilot inclusion will be checked again by the L1 kit before training.",
+    "Self-generated frozen upstream ACL procedure; byte identity with unavailable author-precomputed assets is not claimed.",
+    "No pretraining or classifier accuracy was produced by this preparation."
+  ]
+}

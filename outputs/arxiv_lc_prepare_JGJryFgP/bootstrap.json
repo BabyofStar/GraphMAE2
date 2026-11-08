@@ -1,0 +1,51 @@
+{
+  "stage": "Isolated clustering preparation",
+  "time_beijing": "2026-11-07T21:13:03.033248+08:00",
+  "project": "/home/jovyan/work/GraphMAE2",
+  "asset_root": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_prepare_jcmKhIqS",
+  "output_dir": "/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP",
+  "training_started": false,
+  "base_before": {
+    "prefix": "/home/jovyan/work/envs/graphmae2",
+    "versions": {
+      "torch": "2.1.2+cu118",
+      "dgl": "1.1.3+cu118",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.4.2"
+    }
+  },
+  "native_implementation": "Pinned 0.6.1 source rebuilt in isolation",
+  "clustering_implementation_files": [
+    {
+      "path": "/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/preprocess_env/lib/python3.10/site-packages/localgraphclustering/GraphLocal.py",
+      "sha256": "b15143fdd5dd1a9efdb3dfa673319713882332deaf1e5fcdac54e3d2897491ff"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/preprocess_env/lib/python3.10/site-packages/localgraphclustering/approximate_PageRank.py",
+      "sha256": "fb40bc3626513790c657b12112d149db942d9864c59f1be0a71cc303a459d452"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/preprocess_env/lib/python3.10/site-packages/localgraphclustering/cpp/aclpagerank_cpp.py",
+      "sha256": "b8756921a077222aeb2ea2ccbb76ba1d640187bdef3e8eb69bb7cce21ee33eaf"
+    },
+    {
+      "path": "/home/jovyan/work/GraphMAE2/outputs/arxiv_lc_prepare_JGJryFgP/preprocess_env/lib/python3.10/site-packages/localgraphclustering/src/lib/graph_lib_test/libgraph.so",
+      "sha256": "badb0ceebddfea308c488c1370414ea8ea7f65e594ca47dd9cc5933909e7f1f7"
+    }
+  ],
+  "clustering_status": "COMPLETE_SELF_GENERATED_UPSTREAM_LC",
+  "status": "CLUSTERS_READY_FOR_L1",
+  "base_after": {
+    "prefix": "/home/jovyan/work/envs/graphmae2",
+    "versions": {
+      "torch": "2.1.2+cu118",
+      "dgl": "1.1.3+cu118",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.4.2"
+    }
+  },
+  "base_core_versions_unchanged": true,
+  "wall_seconds": 1179.0830505930353
+}

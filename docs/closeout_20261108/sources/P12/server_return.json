@@ -1,0 +1,211 @@
+{
+  "status": "SERVER_INDEPENDENT_AUDIT_PASS_USER_RETURN",
+  "date": "2026-11-06 Asia/Shanghai",
+  "source": "User returned output of the standalone audit_p12.py running on the server; full raw audit artifacts have not been transferred locally.",
+  "audit_directory": "/home/jovyan/work/GraphMAE2/outputs/p12_independent_audit_oci0zhx7",
+  "batch": "p_development12_by02jzbr",
+  "groups": [
+    {
+      "method": "S",
+      "per_seed_val_percent": [
+        81.6,
+        80.8,
+        82.4
+      ],
+      "mean_val_percent": 81.6,
+      "population_std_percent": 0.6531972647421843
+    },
+    {
+      "method": "H",
+      "per_seed_val_percent": [
+        81.0,
+        81.4,
+        81.8
+      ],
+      "mean_val_percent": 81.4,
+      "population_std_percent": 0.32659863237108927
+    },
+    {
+      "method": "P",
+      "per_seed_val_percent": [
+        81.0,
+        80.4,
+        82.0
+      ],
+      "mean_val_percent": 81.13333333333334,
+      "population_std_percent": 0.6599663291074422
+    },
+    {
+      "method": "PS",
+      "per_seed_val_percent": [
+        81.0,
+        81.2,
+        82.0
+      ],
+      "mean_val_percent": 81.4,
+      "population_std_percent": 0.4320493798938569
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "P",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        -0.4,
+        -0.4
+      ],
+      "mean_pp": -0.4666666666666667,
+      "wins": 0,
+      "ties": 0,
+      "losses": 3,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "method": "P",
+      "reference": "H",
+      "differences_pp": [
+        0.0,
+        -1.0,
+        0.2
+      ],
+      "mean_pp": -0.26666666666666666,
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        0.1,
+        -0.5
+      ]
+    },
+    {
+      "method": "P",
+      "reference": "PS",
+      "differences_pp": [
+        0.0,
+        -0.8,
+        0.0
+      ],
+      "mean_pp": -0.26666666666666666,
+      "wins": 0,
+      "ties": 2,
+      "losses": 1,
+      "leave_one_seed_out_mean_pp": [
+        -0.4,
+        0.0,
+        -0.4
+      ]
+    },
+    {
+      "method": "H",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        0.6,
+        -0.6
+      ],
+      "mean_pp": -0.19999999999999998,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.6,
+        0.0
+      ]
+    },
+    {
+      "method": "PS",
+      "reference": "S",
+      "differences_pp": [
+        -0.6,
+        0.4,
+        -0.4
+      ],
+      "mean_pp": -0.19999999999999998,
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "leave_one_seed_out_mean_pp": [
+        0.0,
+        -0.5,
+        -0.09999999999999998
+      ]
+    }
+  ],
+  "measurement_gate": {
+    "status": "PASS",
+    "rows": [
+      {
+        "step": 50,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9446085672082718,
+        "score_std": 0.16225604712963104,
+        "age_pearson": -0.13467759417971764,
+        "count_pearson": 0.35111676551271903,
+        "error_pearson": -0.2415100385276628
+      },
+      {
+        "step": 60,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9512555391432792,
+        "score_std": 0.1613973081111908,
+        "age_pearson": -0.1866440740031489,
+        "count_pearson": 0.41891306668924516,
+        "error_pearson": -0.3094509460177425
+      },
+      {
+        "step": 70,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9497784342688331,
+        "score_std": 0.1567421555519104,
+        "age_pearson": -0.19512502900359932,
+        "count_pearson": 0.485572909760577,
+        "error_pearson": -0.3497149280938446
+      },
+      {
+        "step": 80,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9560561299852289,
+        "score_std": 0.15122860670089722,
+        "age_pearson": -0.2688865739109326,
+        "count_pearson": 0.5586693136293603,
+        "error_pearson": -0.3795103776344146
+      },
+      {
+        "step": 90,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9549483013293943,
+        "score_std": 0.14342831075191498,
+        "age_pearson": -0.2526075105154593,
+        "count_pearson": 0.624611716715896,
+        "error_pearson": -0.39491892709641174
+      },
+      {
+        "step": 99,
+        "seen_five_fraction": 1.0,
+        "positive_fraction": 0.9549483013293943,
+        "score_std": 0.13606606423854828,
+        "age_pearson": -0.251968527961338,
+        "count_pearson": 0.6721038166450093,
+        "error_pearson": -0.40538540627527225
+      }
+    ]
+  },
+  "audit_counts": {
+    "source_file_bytes": 768,
+    "runs": 16,
+    "node_arrays": 132,
+    "feedback_records": 296,
+    "rank_trace_snapshots": 222,
+    "cross_arm_weight_multisets": 592
+  },
+  "test_metrics_opened": false,
+  "model_weights_opened": false,
+  "decision": "Stop P expansion; new joint-mask hypothesis is a separate 12-run authorization."
+}

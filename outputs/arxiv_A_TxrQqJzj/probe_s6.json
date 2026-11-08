@@ -1,0 +1,20 @@
+{
+  "status": "PASS_FULL_PROBE",
+  "probe_seed": 6,
+  "pretrain_seed": 0,
+  "epochs_completed": 1000,
+  "best_val_epoch": 214,
+  "best_val_acc": 0.7267357965032384,
+  "val_selected_test_acc": 0.716457831821081,
+  "pretrain_checkpoint_sha256": "0614f90fe882ecf16be284d8d2b9e04b2b1a6a69a98f49b526e33ff8386a1c9e",
+  "embedding_sha256": "c653ce924b3cb34ee7d8a90a2e3005396537ef31b7efa45c2af6c0695bed6fac",
+  "job_id": "arxiv_A_TxrQqJzj",
+  "contract_sha256": "7c0236cc9dab51d74c9a731e07f4b79ea5c8728f6c81b51b6eeea2a0e95ddd3f",
+  "attempt": "a0001",
+  "best_head": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/probe_s6_best_a0001.pt",
+    "sha256": "4819aa7d5107f4242a5a2e46095dd1958e7855e55b728f5ea0f4103c19d0e7af",
+    "strict_state_readback_equal": true
+  },
+  "wall_seconds": 460.95940108201467
+}

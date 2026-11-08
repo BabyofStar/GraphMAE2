@@ -1,0 +1,15 @@
+{
+  "source": "User-pasted terminal log; previous complete return ZIP not yet read locally",
+  "output_dir": "/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_bRXuuKq7",
+  "final_status": "HELD_OR_STOPPED_DURING_PRETRAIN",
+  "worker_status": "STOPPED_PRESERVED",
+  "completed_pretrain_epoch_not_proven": true,
+  "worker_error": "Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm).",
+  "shared_memory_size_not_yet_measured": true,
+  "capacity_512_status": "PASS_CAPACITY_CHECK",
+  "contradicted_by_allocator_logs": [
+    "Device 0 OOM 16951281344 / 16777216000",
+    "Device 0 OOM 17171789056 / 16777216000"
+  ],
+  "response": "Preserve prior attempt; disable graph-loader subprocesses, begin at batch256, reject soft allocator OOM, and attach original return evidence when available"
+}

@@ -1,0 +1,26 @@
+{
+  "input_sha256": "e523cba3998593b9a95050a42088dfde6533de82fee39f371d9e840a46884199",
+  "input_bytes": 6604463,
+  "members": 411,
+  "verified_export_files": 410,
+  "uncompressed_member_bytes": 18207337,
+  "gzip_bytes_read_with_crc": 18933760,
+  "status": "PASS",
+  "completed_runs": 36,
+  "source_snapshot_byte_checks": 1008,
+  "source_files_per_snapshot": [
+    28
+  ],
+  "distinct_source_manifests": 1,
+  "distinct_runtime_signatures": 1,
+  "git_heads": [
+    "9f693f995993ed33b9372b48cd2322b956eaf14c"
+  ],
+  "analysis_numpy": "2.3.5",
+  "node_arrays_verified": 216,
+  "model_weights_in_package": false,
+  "test_metrics_in_package": false,
+  "checkpoint_scope": "server hash/reload logs only; local model weights were not supplied",
+  "stored_summaries_independently_recomputed": true,
+  "independent_decimal_crosscheck": true
+}

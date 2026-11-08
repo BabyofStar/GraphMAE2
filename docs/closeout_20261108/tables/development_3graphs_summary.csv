@@ -1,0 +1,22 @@
+﻿batch,dataset,method,metric,n,seeds,mean_percent,population_sd_percent,sd_ddof,per_seed_percent,evidence_status,source
+v2_dev36,cora,B0,best_val_acc,3,"[0, 1, 2]",80.53333333333333,1.0873004286866705,0,"[80.2, 79.4, 82.0]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,cora,B2,best_val_acc,3,"[0, 1, 2]",80.93333333333334,0.9843215373488836,0,"[80.80000000000001, 79.80000000000001, 82.19999999999999]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,cora,D,best_val_acc,3,"[0, 1, 2]",80.8,1.0708252269472587,0,"[80.60000000000001, 79.60000000000001, 82.19999999999999]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,cora,S,best_val_acc,3,"[0, 1, 2]",81.66666666666666,0.4109609335312594,0,"[81.6, 81.2, 82.19999999999999]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,citeseer,B0,best_val_acc,3,"[0, 1, 2]",72.73333333333333,1.481740718059526,0,"[72.0, 74.8, 71.39999999999999]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,citeseer,B2,best_val_acc,3,"[0, 1, 2]",73.2,1.704894913672587,0,"[72.2, 75.6, 71.8]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,citeseer,D,best_val_acc,3,"[0, 1, 2]",73.0,1.275408431313931,0,"[72.2, 74.8, 72.0]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,citeseer,S,best_val_acc,3,"[0, 1, 2]",72.33333333333333,0.7717224601860194,0,"[71.6, 73.4, 72.0]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,pubmed,B0,best_val_acc,3,"[0, 1, 2]",83.33333333333333,0.4109609335312648,0,"[82.8, 83.39999999999999, 83.8]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,pubmed,B2,best_val_acc,3,"[0, 1, 2]",83.6,0.32659863237108927,0,"[83.2, 83.6, 84.0]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,pubmed,D,best_val_acc,3,"[0, 1, 2]",83.2,0.16329931618554172,0,"[83.0, 83.2, 83.39999999999999]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+v2_dev36,pubmed,S,best_val_acc,3,"[0, 1, 2]",83.93333333333332,0.3399346342395173,0,"[83.6, 83.8, 84.39999999999999]",已独立核验；本轮复算,sources/v2_dev36/analysis_results.json
+R9,cora,R,best_val_acc,3,"[0, 1, 2]",81.0,0.6531972647421785,0,"[81.0, 80.2, 81.8]",已独立核验；本轮复算,sources/R9/analysis_results.json
+R9,citeseer,R,best_val_acc,3,"[0, 1, 2]",72.0,1.0198039027185604,0,"[71.0, 73.4, 71.6]",已独立核验；本轮复算,sources/R9/analysis_results.json
+R9,pubmed,R,best_val_acc,3,"[0, 1, 2]",83.06666666666666,0.5249338582674549,0,"[83.8, 82.6, 82.8]",已独立核验；本轮复算,sources/R9/analysis_results.json
+DS9,cora,DS,best_val_acc,3,"[0, 1, 2]",81.53333333333333,0.4109609335312648,0,"[81.6, 81.0, 82.0]",已独立核验；本轮复算,sources/DS_C9/analysis_results.json
+DS9,citeseer,DS,best_val_acc,3,"[0, 1, 2]",72.26666666666667,1.0873004286866748,0,"[71.39999999999999, 73.8, 71.6]",已独立核验；本轮复算,sources/DS_C9/analysis_results.json
+DS9,pubmed,DS,best_val_acc,3,"[0, 1, 2]",83.73333333333333,0.24944382578493296,0,"[84.0, 83.39999999999999, 83.8]",已独立核验；本轮复算,sources/DS_C9/analysis_results.json
+C9,cora,C,best_val_acc,3,"[0, 1, 2]",80.6,1.070825226947265,0,"[80.4, 79.4, 82.0]",已独立核验；本轮复算,sources/DS_C9/analysis_results.json
+C9,citeseer,C,best_val_acc,3,"[0, 1, 2]",72.86666666666666,1.8061622912192115,0,"[72.6, 75.2, 70.8]",已独立核验；本轮复算,sources/DS_C9/analysis_results.json
+C9,pubmed,C,best_val_acc,3,"[0, 1, 2]",83.53333333333333,0.18856180831641536,0,"[83.39999999999999, 83.39999999999999, 83.8]",已独立核验；本轮复算,sources/DS_C9/analysis_results.json

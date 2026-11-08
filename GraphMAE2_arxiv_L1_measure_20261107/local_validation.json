@@ -1,0 +1,28 @@
+{
+  "status": "PASS_LOCAL_LOGIC_ONLY",
+  "date": "2026-11-07 Asia/Shanghai",
+  "tests_passed": 9,
+  "tests_failed": 0,
+  "Python_3_10_AST_pass": [
+    "measure_common.py",
+    "measure_driver.py",
+    "measure_worker.py"
+  ],
+  "shell_files_LF_only": true,
+  "test_source": "C:\\Users\\18870\\Documents\\Codex\\2026-11-06\\yi-j\\work\\test_L1_measurement.py",
+  "test_source_sha256": "b9d7fedbd445b276a05fdbe5e1d51f41ff39ea8c2cef052396d059ae2eff57bd",
+  "checks": [
+    "Official split order retained rather than sorted global IDs",
+    "Changed pilot, duplicate ego nodes and wrong root identities rejected",
+    "Only explicit CUDA OOM permits a smaller capacity candidate",
+    "Time cap does not select smaller batches automatically",
+    "Timeout terminates only the process group created by the measurement",
+    "Return bundle excludes checkpoints, complete embeddings and the live run log",
+    "Final YAML overrides and unselected full budget preserved",
+    "Explicit ego root positions work after DGL batch metadata is discarded"
+  ],
+  "limits": [
+    "No local Torch, DGL or CUDA is available; GPU, full epoch, saved-model replay and classifier runtime remain unexecuted.",
+    "This delivery prepares a bounded server measurement; it does not select or start the full large-graph budget."
+  ]
+}

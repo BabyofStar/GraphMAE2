@@ -1,0 +1,12 @@
+STAGE_START=train_capacity_256 LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_v2_kISgbDss/train_capacity_256.log
+STAGE_END=train_capacity_256 STATUS=PASS_CAPACITY_CHECK
+STAGE_START=pretrain LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_v2_kISgbDss/pretrain.log
+STAGE_END=pretrain STATUS=PASS_ONE_FULL_PRETRAIN_EPOCH
+STAGE_START=infer_capacity_256 LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_v2_kISgbDss/infer_capacity_256.log
+STAGE_END=infer_capacity_256 STATUS=PASS_CAPACITY_CHECK
+STAGE_START=inference LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_v2_kISgbDss/inference.log
+STAGE_END=inference STATUS=PASS_FULL_EMBEDDING_EXTRACTION
+STAGE_START=classifier LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_v2_kISgbDss/classifier.log
+STAGE_END=classifier STATUS=PASS_CLASSIFIER_TIMING
+L1_MEASUREMENT_STATUS=PASS_L1_L1B_B0_MEASUREMENT
+RETURN_FILE=/home/jovyan/work/GraphMAE2/outputs/arxiv_l1_measure_v2_kISgbDss/measurement_return.zip

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg width="1250" height="620" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1250 620" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1250" height="620"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-620)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1250" height="620" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="48" y="575" style="font-family: Arial, sans-serif; font-weight: 700; font-size: 25px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,1150) scale(1,-1)">S / R mechanism contrast on development validation</text>
+			<text x="48" y="547" style="font-family: Arial, sans-serif; font-size: 14px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,1094) scale(1,-1)">Exploratory evidence, n=3 training seeds; one fixed random grouping per graph.</text>
+			<text x="70" y="505" style="font-family: Arial, sans-serif; font-weight: 700; font-size: 16px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,1010) scale(1,-1)">A. Variation in true-density-layer masking rates</text>
+			<text x="70" y="480" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,960) scale(1,-1)">Temporal SD (pp), averaged over 4 layers and 3 seeds</text>
+			<g transform="">
+				<path d="M 77,180 L 562,180 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 77,246.25 L 562,246.25 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 77,312.5 L 562,312.5 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 77,378.75 L 562,378.75 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 77,445 L 562,445 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<g transform="">
+					<rect x="108.08974358974359" y="180.0" width="24.87179487179486" height="229.47720008128" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+					<rect x="269.7564102564103" y="180.0" width="24.87179487179486" height="163.32967889425436" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+					<rect x="431.4230769230769" y="180.0" width="24.87179487179486" height="44.087785835903446" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+					<rect x="182.7051282051282" y="180.0" width="24.87179487179486" height="225.1107887473035" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+					<rect x="344.37179487179486" y="180.0" width="24.87179487179486" height="182.2435424081749" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+					<rect x="506.03846153846155" y="180.0" width="24.87179487179492" height="44.67489628758639" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 77,180 L 562,180 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 77,180 L 77,175 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 238.666667,180 L 238.666667,175 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 400.333333,180 L 400.333333,175 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 562,180 L 562,175 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,157.833333,175)">
+							<text x="-13.002000000000002" y="-12.0" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-24) scale(1,-1)">Cora</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,319.5,175)">
+							<text x="-22.338" y="-12.0" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-24) scale(1,-1)">Citeseer</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,481.166667,175)">
+							<text x="-22.344" y="-12.0" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-24) scale(1,-1)">PubMed</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 77,180 L 77,445 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 77,180 L 72,180 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 77,246.25 L 72,246.25 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 77,312.5 L 72,312.5 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 77,378.75 L 72,378.75 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 77,445 L 72,445 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,72,180)">
+							<text x="-6.672000000000001" y="-4.800000000000001" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-9) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,72,246.25)">
+							<text x="-16.68" y="-4.800000000000001" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-9) scale(1,-1)">0.5</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,72,312.5)">
+							<text x="-6.672000000000001" y="-4.800000000000001" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-9) scale(1,-1)">1</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,72,378.75)">
+							<text x="-16.68" y="-4.800000000000001" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-9) scale(1,-1)">1.5</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,72,445)">
+							<text x="-6.672000000000001" y="-4.800000000000001" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-9) scale(1,-1)">2</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<rect x="155" y="125" width="12" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+			<text x="176" y="125" style="font-family: Arial, sans-serif; font-size: 13px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,250) scale(1,-1)">B0</text>
+			<rect x="265" y="125" width="12" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<text x="286" y="125" style="font-family: Arial, sans-serif; font-size: 13px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,250) scale(1,-1)">S</text>
+			<rect x="375" y="125" width="12" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+			<text x="396" y="125" style="font-family: Arial, sans-serif; font-size: 13px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,250) scale(1,-1)">R</text>
+			<text x="70" y="96" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,192) scale(1,-1)">S fixes true-density quotas, so its variation is zero.</text>
+			<text x="660" y="505" style="font-family: Arial, sans-serif; font-weight: 700; font-size: 16px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,1010) scale(1,-1)">B. S - R paired validation changes</text>
+			<text x="660" y="480" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,960) scale(1,-1)">Validation accuracy difference (pp); points are individual seeds</text>
+			<g transform="">
+				<g transform="">
+					<g transform="">
+						<path d="M 686,180 L 1176,180 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 767.666667,180 L 767.666667,176 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 931,180 L 931,176 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 1094.333333,180 L 1094.333333,176 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,767.666667,175)">
+							<text x="-11.918500000000002" y="-11.0" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-22) scale(1,-1)">Cora</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,931,175)">
+							<text x="-20.476499999999998" y="-11.0" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-22) scale(1,-1)">Citeseer</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,1094.333333,175)">
+							<text x="-20.482" y="-11.0" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-22) scale(1,-1)">PubMed</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 686,180 L 686,445 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 686,180 L 682,180 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 686,228.181818 L 682,228.181818 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 686,276.363636 L 682,276.363636 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 686,324.545455 L 682,324.545455 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 686,372.727273 L 682,372.727273 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 686,420.909091 L 682,420.909091 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,681,180)">
+							<text x="-18.953" y="-4.4" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-8) scale(1,-1)">-0.4</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,681,228.181818)">
+							<text x="-6.1160000000000005" y="-4.4" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-8) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,681,276.363636)">
+							<text x="-15.290000000000001" y="-4.4" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-8) scale(1,-1)">0.4</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,681,324.545455)">
+							<text x="-15.290000000000001" y="-4.4" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-8) scale(1,-1)">0.8</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,681,372.727273)">
+							<text x="-15.290000000000001" y="-4.4" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-8) scale(1,-1)">1.2</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,681,420.909091)">
+							<text x="-15.290000000000001" y="-4.4" style="font-family: Arial, sans-serif; font-size: 11px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,-8) scale(1,-1)">1.6</text>
+						</g>
+					</g>
+				</g>
+				<path d="M 686,228.181818 L 1176,228.181818 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 686,276.363636 L 1176,276.363636 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 686,324.545455 L 1176,324.545455 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 686,372.727273 L 1176,372.727273 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<path d="M 686,420.909091 L 1176,420.909091 Z" style="stroke: rgb(86%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+				<g transform="">
+					<circle cx="744.8" cy="300.45454545454544" r="3.5" style="stroke: rgb(14%,38%,65%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+					<circle cx="908.1333333333333" cy="300.45454545454544" r="3.5" style="stroke: rgb(14%,38%,65%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+					<circle cx="1071.4666666666667" cy="204.0909090909091" r="3.5" style="stroke: rgb(14%,38%,65%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,65%); fill-rule: evenodd;"/>
+					<circle cx="767.6666666666666" cy="348.6363636363636" r="3.5" style="stroke: rgb(71%,36%,12%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+					<circle cx="931.0" cy="228.1818181818182" r="3.5" style="stroke: rgb(71%,36%,12%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+					<circle cx="1094.3333333333335" cy="372.72727272727275" r="3.5" style="stroke: rgb(71%,36%,12%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(71%,36%,12%); fill-rule: evenodd;"/>
+					<circle cx="790.5333333333333" cy="276.3636363636364" r="3.5" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+					<circle cx="953.8666666666667" cy="276.3636363636364" r="3.5" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+					<circle cx="1117.2" cy="420.9090909090909" r="3.5" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+				</g>
+			</g>
+			<path d="M 686,228.181818 L 1176,228.181818 Z" style="stroke: rgb(32%,40%,47%); stroke-linecap: butt; stroke-width: 1.1;"/>
+			<path d="M 748.666667,308.484848 L 786.666667,308.484848 Z" style="stroke: rgb(9%,16%,25%); stroke-linecap: butt; stroke-width: 2.5;"/>
+			<text x="732.4766666666667" y="126" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,252) scale(1,-1)">Mean +0.667</text>
+			<path d="M 912,268.333333 L 950,268.333333 Z" style="stroke: rgb(9%,16%,25%); stroke-linecap: butt; stroke-width: 2.5;"/>
+			<text x="895.81" y="126" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,252) scale(1,-1)">Mean +0.333</text>
+			<path d="M 1075.333333,332.575758 L 1113.333333,332.575758 Z" style="stroke: rgb(9%,16%,25%); stroke-linecap: butt; stroke-width: 2.5;"/>
+			<text x="1059.1433333333334" y="126" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(9%,16%,25%); stroke:none;" transform="translate(0,252) scale(1,-1)">Mean +0.867</text>
+			<text x="660" y="96" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,192) scale(1,-1)">Dots: seed 0 (blue), seed 1 (orange), seed 2 (teal).</text>
+			<text x="660" y="79" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,158) scale(1,-1)">Black bars show means; no confidence intervals or causal fit.</text>
+			<text x="48" y="63" style="font-family: Arial, sans-serif; font-size: 13px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,126) scale(1,-1)">S - R means do not replace S - B2: the equal-dataset S - B2 change is only +0.0667 pp.</text>
+			<text x="48" y="39" style="font-family: Arial, sans-serif; font-size: 12px;fill: rgb(32%,40%,47%); stroke:none;" transform="translate(0,78) scale(1,-1)">S and R have identical count multisets in all 9 matched runs; count uniformity alone does not explain the difference.</text>
+		</g>
+	</g>
+</svg>

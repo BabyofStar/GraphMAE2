@@ -1,0 +1,53 @@
+{
+  "epoch": 36,
+  "batches": 662,
+  "roots": 169343,
+  "loss_mean": 2.113817202540683,
+  "epoch_seconds": 825.9535186870489,
+  "learning_rate": 0.0009264761936218492,
+  "next_learning_rate": 0.0008637287570313158,
+  "trace_path": "/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/traces/pretrain_e0036_a0001.jsonl",
+  "trace_sha256": "3a7d542bd82dc10f3846792882b0e65e7afcf259c7f13dea0abb3ddb9fe73776",
+  "resources": {
+    "time_beijing": "2026-11-08T07:10:16.129182+08:00",
+    "dev_shm": {
+      "total_bytes": 67108864,
+      "available_bytes": 67108864
+    },
+    "memory.current": "33790435328\n",
+    "memory.peak": "34365947904\n",
+    "memory.max": "34359738368\n",
+    "memory.stat": "anon 1677266944\nfile 31300587520\nkernel 812326912\nkernel_stack 262144\npagetables 6639616\nsec_pagetables 0\npercpu 10000\nsock 0\nvmalloc 32768\nshmem 17571840\nzswap 0\nzswapped 0\nfile_mapped 330776576\nfile_dirty 12288\nfile_writeback 0\nswapcached 0\nanon_thp 94371840\nfile_thp 0\nshmem_thp 0\ninactive_anon 0\nactive_anon 1694838784\ninactive_file 20389621760\nactive_file 10893393920\nunevictable 0\nslab_reclaimable 803727864\nslab_unreclaimable 1541840\nslab 805269704\nworkingset_refault_anon 0\nworkingset_refault_file 6764141\nworkingset_activate_anon 0\nworkingset_activate_file 6755582\nworkingset_restore_anon 0\nworkingset_restore_file 1739\nworkingset_nodereclaim 0\npgscan 16552615\npgsteal 16552578\npgscan_kswapd 0\npgscan_direct 16552615\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 16552578\npgsteal_khugepaged 0\npgfault 736870844\npgmajfault 11406\npgrefill 4404392\npgactivate 7\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 3372\nthp_collapse_alloc 115\nthp_swpout 0\nthp_swpout_fallback 0\n",
+    "memory.events": "low 0\nhigh 0\nmax 112927\noom 0\noom_kill 0\noom_group_kill 0\n",
+    "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=6384647\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=6384647\n",
+    "cpu.max": "400000 100000\n",
+    "process_lifetime_max_rss_KiB": 1995172,
+    "process_status": "VmHWM:\t 1995172 kB\nVmRSS:\t 1903012 kB\nThreads:\t5",
+    "cuda": {
+      "name": "NVIDIA A800 80GB PCIe",
+      "visible_total_bytes": 16777216000,
+      "reported_free_bytes": 3672537088,
+      "reported_total_bytes": 16777216000,
+      "allocated_bytes": 132646400,
+      "reserved_bytes": 12629049344,
+      "peak_allocated_bytes": 6765092864,
+      "peak_reserved_bytes": 12629049344
+    }
+  },
+  "attempt": "a0001",
+  "checkpoint": {
+    "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0036_a0001.pt",
+    "bytes": 90111178,
+    "sha256": "47ed406d13420a393442d9c03e2dea0dfeac4d46479563091c256bad20b14cc8",
+    "completed_epochs": 36,
+    "job_id": "arxiv_A_TxrQqJzj",
+    "contract_sha256": "7c0236cc9dab51d74c9a731e07f4b79ea5c8728f6c81b51b6eeea2a0e95ddd3f"
+  },
+  "rotated_checkpoints": [
+    {
+      "path": "/home/jovyan/work/GraphMAE2_artifacts/arxiv_A_TxrQqJzj/resume_e0034_a0001.pt",
+      "bytes": 90111178,
+      "sha256": "15953ce4e562165b3649c60fb09546be113895d66fc97f42955d05abfef2219c"
+    }
+  ]
+}

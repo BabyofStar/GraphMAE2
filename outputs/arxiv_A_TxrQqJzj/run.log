@@ -1,0 +1,8 @@
+STAGE_START=pretrain LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/attempts/a0001/pretrain.log
+STAGE_END=pretrain STATUS=PASS_FULL_PRETRAIN
+STAGE_START=inference LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/attempts/a0001/inference.log
+STAGE_END=inference STATUS=PASS_FULL_EMBEDDING_EXTRACTION
+STAGE_START=classifier LOG=/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/attempts/a0001/classifier.log
+STAGE_END=classifier STATUS=PASS_TEN_FULL_PROBES
+FORMAL_A_STATUS=PASS_A_FULL_RUN
+RETURN_FILE=/home/jovyan/work/GraphMAE2/outputs/arxiv_A_TxrQqJzj/A_return_a0001.zip
